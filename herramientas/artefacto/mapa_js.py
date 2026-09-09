@@ -33,7 +33,12 @@ JS = r"""
          de una misma ciudad distan décimas de unidad y separarlos exigiría acercarse a
          escala de calle sobre una costa dibujada a 1:50M, es decir, al vacío. Ahí el
          grupo deja de ser geográfico y se abre como lista de museos de la ciudad. */
-      const MIN_W = 8;
+      /* Tope de acercamiento. Estaba en 8, y con ese tope los museos de una misma ciudad
+         no llegaban nunca a separarse: el Louvre y el Museo de Orsay están a 0,061 px de
+         lienzo, que exige un ancho de vista de 1,6 para verse aparte. Bajándolo, al
+         acercarse del todo cada museo aparece en su sitio real y el abanico deja de hacer
+         falta; sigue estando para los acercamientos intermedios. */
+      const MIN_W = 1.2;
       /* Los marcadores se dibujan a tamaño constante en pantalla (escala 1/s). Muy
          acercado eso los dejaba diminutos en un espacio vacío enorme, así que a partir de
          la vista de Europa se les deja crecer de forma logarítmica hasta algo más del
@@ -79,11 +84,24 @@ JS = r"""
         off = off || 0;
         if (!idxs || !idxs.length) return vistaEuropa();
         const xs = idxs.map(i => SEDES[i].x + off), ys = idxs.map(i => SEDES[i].y);
-        const MIN_CAJA = 42;   // evita acercarse en exceso a una sede suelta
+        /* Caja mínima. Para una sede suelta, un cuadro regional: no tiene sentido caer
+           encima de un solo punto. Para varias, la que haga falta para que se separen de
+           verdad, porque si no el encuadre se quedaba corto y había que conformarse con
+           el abanico aunque el mapa ya pudiera colocarlas en su sitio. */
+        let minCaja = 42;
+        if (idxs.length > 1) {
+          let dmin = Infinity;
+          for (let i = 0; i < idxs.length; i++)
+            for (let j = i + 1; j < idxs.length; j++)
+              dmin = Math.min(dmin, Math.hypot(SEDES[idxs[i]].x - SEDES[idxs[j]].x,
+                                               SEDES[idxs[i]].y - SEDES[idxs[j]].y));
+          if (dmin > 0 && isFinite(dmin))
+            minCaja = Math.min(minCaja, Math.max(MIN_W, dmin * anchoMarco() / (SEP_PX * 1.5)));
+        }
         const cx = (Math.min(...xs) + Math.max(...xs)) / 2;
         const cy = (Math.min(...ys) + Math.max(...ys)) / 2;
-        const w = Math.max(Math.max(...xs) - Math.min(...xs), MIN_CAJA);
-        const h = Math.max(Math.max(...ys) - Math.min(...ys), MIN_CAJA * 0.55);
+        const w = Math.max(Math.max(...xs) - Math.min(...xs), minCaja);
+        const h = Math.max(Math.max(...ys) - Math.min(...ys), minCaja * 0.55);
         return encajar(cx - w/2, cy - h/2, cx + w/2, cy + h/2, 1.3);
       }
 
@@ -292,12 +310,14 @@ JS = r"""
           const sd = SEDES[c.sedes[0]];
           const g = marca(c.x, c.y, inv);
 
-          const cabe = () => holgura(c0) > radioFan(obrasDe(sd).length, 30, 34) * 2 + 14;
-          if (solo && (grupoAbierto === c.sedes[0] || (vista.w < 90 && cabe()))) fanObras(g, sd);
+          const radioObras = solo ? radioFan(obrasDe(sd).length, 30, 34) : 0;
+          const cabe = solo && holgura(c0) > radioObras * 2 + 14;
+          const abanicoObras = solo && (grupoAbierto === c.sedes[0] || (vista.w < 90 && cabe));
+          if (abanicoObras) fanObras(g, sd);
           if (!solo && ciudadAbierta === claveGrupo(c0)) fanSedes(g, c);
 
           const cls = 'sede' + (solo ? '' : ' grupo') + (solo && sedeSel === c.sedes[0] ? ' sel' : '');
-          g.appendChild(punto(cls, 0, 0, c.n, solo
+          const p = punto(cls, 0, 0, c.n, solo
             ? `${sd.nombre}, ${sd.ciudad}: ${obrasDe(sd).length} obra${obrasDe(sd).length>1?'s':''}`
             : `${c.sedes.length} sedes agrupadas, ${c.n} obras`,
             ev => {
@@ -327,7 +347,18 @@ JS = r"""
               sedeSel = -1; abrirCiudad(c); dibujar();
               if (abriendo) irAVista(destino, true);
             },
-            () => mostrarTarjeta(solo ? { sede: sd } : { grupo: c })));
+            () => mostrarTarjeta(solo ? { sede: sd } : { grupo: c }));
+
+          /* Al acercarse hasta ver cada museo en su sitio real desaparecía el abanico y
+             con él los rótulos, así que el mapa dejaba de decir cuál era cuál. Con sitio
+             de sobra alrededor, cada sede lleva su nombre debajo. */
+          if (solo && holgura(c0) > 96) {
+            const etq = nodo('text', { class:'sede-etq', x:0,
+              y: (abanicoObras ? radioObras + 14 : R(c.n) + 12), 'font-size':8.5 });
+            etq.textContent = nombreCorto(sd.nombre);
+            p.appendChild(etq);
+          }
+          g.appendChild(p);
           capaSedes.appendChild(g);
         }); });
 
