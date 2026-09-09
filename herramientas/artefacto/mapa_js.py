@@ -538,10 +538,16 @@ JS = r"""
         });
       }
 
+      /* Elegir un museo dentro del abanico de una ciudad. Sus obras NO caben alrededor del
+         punto —ver el comentario de fanSedes—, así que aparecen en la lista de la derecha,
+         que se despliega, y en el panel de debajo. Antes solo se repintaba el mapa y el
+         efecto era que pulsar un museo no hacía nada visible. */
       function elegirEnCiudad(idx){
         sedeSel = idx;
-        document.querySelectorAll('.sede-item').forEach(el =>
-          el.classList.toggle('sel', +el.dataset.i === idx));
+        grupoAbierto = idx;
+        if (modo === 'sedes') pintarLista(); else
+          document.querySelectorAll('.sede-item').forEach(el =>
+            el.classList.toggle('sel', +el.dataset.i === idx));
         pintarDetalle(SEDES[idx]);
         dibujar();
       }
@@ -574,7 +580,7 @@ JS = r"""
           tarjeta.innerHTML =
             `<div class="tj-txt"><strong>${esc(q.sede.nombre)}</strong>` +
             `<span>${esc(q.sede.ciudad)}, ${esc(q.sede.pais)}</span>` +
-            `<em>${n} obra${n>1?'s':''} · pulsa para desplegar</em></div>`;
+            `<em>${n} obra${n>1?'s':''} · pulsa para verlas</em></div>`;
           tarjeta.className = 'mapa-tarjeta';
         } else {
           const c = q.grupo;

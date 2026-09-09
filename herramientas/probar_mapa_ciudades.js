@@ -94,12 +94,22 @@ if (huboAcercamiento) ck(true, 'antes de desplegar, los clics acercan');
 else console.log('   (el primer grupo era de una sola ciudad: se desplegó directamente, que es lo correcto)');
 
 console.log('\n== elegir un museo del abanico ==');
-const antesObras=obras();
 const aba=sedes().filter(x=>tiene(x,'sede-abanico'));
 ck(aba.length>1,`${aba.length} museos desplegados`);
 if(aba.length){
+  /* Sus obras no caben alrededor del punto dentro del abanico de una ciudad, así que
+     salen en la lista de la derecha y en el panel de debajo. Contar miniaturas sobre el
+     mapa daba un falso verde: subían por las de OTRAS sedes, no por la elegida. */
+  const desplegable = () => store['sedeLista'].children.find(c => (c.className||'') === 'libro-obras');
   aba[0]._ev.click({stopPropagation:noop}); drenar(300);
-  ck(obras()>antesObras,`las obras del museo elegido aparecen: ${antesObras} -> ${obras()}`);
+  const d = desplegable();
+  ck(!!d, 'al elegir un museo sus obras se despliegan en la lista');
+  if (d) {
+    const n = (d.innerHTML.match(/class="libro-obra"/g) || []).length;
+    console.log(`   ${n} obras del museo elegido en la lista`);
+    ck(n > 0 && (d.innerHTML.match(/<img src="/g)||[]).length === n,
+       `cada una con su miniatura (${n})`);
+  }
   ck(store['sedeDetalle'].innerHTML.includes('obra-min'),'el panel de abajo también se actualiza');
 }
 
