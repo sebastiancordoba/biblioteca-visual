@@ -103,13 +103,18 @@ console.log('\n== Flechas del banner ==');
   check((antes.oyentes.click || []).length === 1 && (despues.oyentes.click || []).length === 1,
     'las dos flechas tienen manejador');
 
+  check(antes.hidden === true, 'en la primera obra no se enseña la flecha de atrás');
+
   const primera = actual();
   despues.oyentes.click[0]({ stopPropagation(){} });
   const segunda = actual();
   check(segunda && segunda !== primera, 'la flecha de después pasa a otra obra');
 
+  check(antes.hidden === false, 'a partir de la segunda obra sí aparece');
+
   antes.oyentes.click[0]({ stopPropagation(){} });
   check(actual() === primera, 'la flecha de antes vuelve exactamente a la anterior');
+  check(antes.hidden === true, 'al volver a la primera se esconde de nuevo');
 
   /* En la primera obra no hay nada detrás: la flecha no debe repintar ni sortear. */
   const cuantas = lienzo.children.length;
