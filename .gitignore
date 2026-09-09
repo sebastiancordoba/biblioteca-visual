@@ -1,0 +1,10 @@
+# Las imágenes NO se versionan: son 871 MB inmutables (la regla del proyecto es no
+# recomprimirlas ni reescalarlas nunca), iCloud ya las respalda, y 54 de las 72 se
+# vuelven a bajar con `python3 herramientas/download.py herramientas/<libro>.tsv`.
+*.jpg
+*.jpeg
+*.png
+
+.DS_Store
+__pycache__/
+*.pyc

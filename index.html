@@ -1,0 +1,2527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinturas: Biblioteca Visual de los Grandes Libros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-body: #07080a;
+      --bg-surface: #0e1014;
+      --bg-card: #12141a;
+      --border-subtle: rgba(180, 150, 70, 0.18);
+      --accent-gold: #c5a046;
+      --accent-gold-hover: #d8b456;
+      --text-title: #f1f2f5;
+      --text-body: #949ba8;
+      --text-muted: #5a6170;
+      --font-serif: 'Cinzel', serif;
+      --font-sans: 'Inter', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-body);
+      color: var(--text-body);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+
+    /* HEADER SOBRIO Y ELEGANTE */
+    header {
+      padding: 50px 20px 30px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-subtle);
+      background: linear-gradient(180deg, #0a0b0e 0%, var(--bg-body) 100%);
+    }
+
+    .header-tag {
+      font-family: var(--font-serif);
+      font-size: 0.75rem;
+      letter-spacing: 4px;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: block;
+      opacity: 0.9;
+    }
+
+    h1 {
+      font-family: var(--font-serif);
+      color: var(--text-title);
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+    }
+
+    .header-sub {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-weight: 300;
+    }
+
+    /* NAV TABS CON ICONOS SVG MINIMALISTAS */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .tab-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-body);
+      padding: 10px 24px;
+      border-radius: 4px;
+      font-family: var(--font-serif);
+      font-size: 0.85rem;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+    }
+
+    .tab-btn svg {
+      opacity: 0.7;
+      transition: opacity 0.25s;
+    }
+
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--accent-gold);
+      color: #050608;
+      border-color: var(--accent-gold);
+      font-weight: 600;
+    }
+
+    .tab-btn.active svg, .tab-btn:hover svg {
+      opacity: 1;
+      stroke: #050608;
+    }
+
+    /* SELECTOR DE LIBRO (NIVEL SUPERIOR) */
+    .book-switch {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      margin-bottom: 26px;
+      flex-wrap: wrap;
+    }
+
+    .book-btn {
+      background: none;
+      border: none;
+      border-bottom: 1px solid transparent;
+      color: var(--text-muted);
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      padding: 4px 2px 8px;
+      cursor: pointer;
+      transition: color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .book-btn:hover {
+      color: var(--text-title);
+    }
+
+    .book-btn.active {
+      color: var(--accent-gold);
+      border-bottom-color: var(--accent-gold);
+    }
+
+    .book-btn .book-count {
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.5px;
+      opacity: 0.55;
+      margin-left: 6px;
+    }
+
+    /* NAV DE SECCIONES: UNA POR LIBRO, SOLO LA ACTIVA SE MUESTRA */
+    .book-nav {
+      display: none;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .book-nav.active {
+      display: flex;
+    }
+
+    /* ESTADO VACÍO PARA LIBROS EN PREPARACIÓN */
+    .empty-book {
+      text-align: center;
+      padding: 90px 24px;
+      border: 1px dashed var(--border-subtle);
+      border-radius: 6px;
+      background: var(--bg-surface);
+    }
+
+    .empty-book h2 {
+      font-family: var(--font-serif);
+      color: var(--text-title);
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+
+    .empty-book p {
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto;
+      font-weight: 300;
+      font-size: 0.95rem;
+    }
+
+    /* MAIN CONTAINER */
+    .container {
+      max-width: 1400px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* CUADRÍCULA DE 3 COLUMNAS */
+    .grid-3col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 1100px) {
+      .grid-3col {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 680px) {
+      .grid-3col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .artwork-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 16px 36px rgba(0,0,0,0.55);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .artwork-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent-gold);
+    }
+
+    /* CONTENEDOR DE VISTA PREVIA CON IMAGEN COMPLETA SIN RECORTES (OBJECT-FIT: CONTAIN) */
+    .artwork-thumb-wrapper {
+      position: relative;
+      background: #040507;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      cursor: zoom-in;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+    }
+
+    .artwork-thumb-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.35s ease;
+    }
+
+    .artwork-thumb-wrapper:hover img {
+      transform: scale(1.03);
+    }
+
+    /* SOLO LA LUPA SOBRIA SIN TEXTO */
+    .zoom-overlay-btn {
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      background: rgba(8, 10, 14, 0.82);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-title);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s ease;
+    }
+
+    .artwork-thumb-wrapper:hover .zoom-overlay-btn {
+      background: var(--accent-gold);
+      color: #050608;
+      border-color: var(--accent-gold);
+    }
+
+    /* BARRA DE THUMBNAILS PARA OBRAS MULTI-VISTA */
+    .thumb-strip {
+      display: flex;
+      gap: 8px;
+      padding: 8px 16px;
+      background: #080a0e;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .thumb-strip-btn {
+      width: 48px;
+      height: 32px;
+      object-fit: contain;
+      background: #020304;
+      border-radius: 3px;
+      border: 1px solid var(--border-subtle);
+      cursor: pointer;
+      opacity: 0.65;
+      transition: all 0.2s;
+    }
+
+    .thumb-strip-btn.active, .thumb-strip-btn:hover {
+      opacity: 1;
+      border-color: var(--accent-gold);
+    }
+
+    /* CONTENIDO SOBRIO DE LA TARJETA Y BOTÓN "VER MÁS ANÁLISIS" */
+    .artwork-body {
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+    }
+
+    .artwork-header-row {
+      margin-bottom: 12px;
+    }
+
+    .artwork-num {
+      font-family: var(--font-serif);
+      font-size: 0.75rem;
+      color: var(--accent-gold);
+      letter-spacing: 2px;
+    }
+
+    .artwork-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      color: var(--text-title);
+      font-weight: 500;
+      margin: 4px 0 3px;
+      line-height: 1.3;
+    }
+
+    .artwork-artist {
+      font-size: 0.9rem;
+      color: var(--accent-gold);
+      font-weight: 400;
+    }
+
+    .artwork-meta-line {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .artwork-snippet {
+      font-size: 0.88rem;
+      color: var(--text-body);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    /* FILA DE ACCIONES EN TARJETA: ANALISIS + LINK WIKIPEDIA */
+    .card-actions-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .read-more-btn {
+      background: none;
+      border: 1px solid var(--border-subtle);
+      color: var(--accent-gold);
+      font-family: var(--font-serif);
+      font-size: 0.76rem;
+      letter-spacing: 1px;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.25s;
+    }
+
+    .read-more-btn:hover {
+      background: rgba(197, 160, 70, 0.1);
+      border-color: var(--accent-gold);
+      color: var(--text-title);
+    }
+
+    .wiki-link-btn {
+      color: var(--text-muted);
+      font-size: 0.76rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.25s;
+    }
+
+    .wiki-link-btn:hover {
+      color: var(--accent-gold);
+    }
+
+    .wiki-link-btn svg {
+      opacity: 0.7;
+    }
+
+    /* PANEL EXPANDIBLE DE DETALLES EN LA TARJETA */
+    .card-extra-drawer {
+      display: none;
+      background: rgba(8, 10, 14, 0.7);
+      border-top: 1px solid var(--border-subtle);
+      padding: 18px 22px;
+      font-size: 0.84rem;
+      color: var(--text-body);
+      line-height: 1.65;
+    }
+
+    .card-extra-drawer.active {
+      display: block;
+    }
+
+    .card-extra-drawer h4 {
+      font-family: var(--font-serif);
+      color: var(--accent-gold);
+      font-size: 0.85rem;
+      margin: 12px 0 4px;
+    }
+
+    .card-extra-drawer p {
+      margin-bottom: 10px;
+    }
+
+    .file-tag {
+      font-family: monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 3px 8px;
+      border-radius: 3px;
+      word-break: break-all;
+    }
+
+    /* ENSAYO SECTION SOBRIA */
+    .essay-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 50px 60px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .essay-box h2 {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      color: var(--text-title);
+      margin-bottom: 25px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 16px;
+      font-weight: 500;
+    }
+
+    .essay-box h3 {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      color: var(--accent-gold);
+      margin: 35px 0 15px;
+      font-weight: 500;
+    }
+
+    .essay-box p {
+      font-size: 1rem;
+      color: var(--text-body);
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .essay-quote {
+      border-left: 2px solid var(--accent-gold);
+      background: rgba(197, 160, 70, 0.04);
+      padding: 18px 24px;
+      margin: 25px 0;
+      font-style: italic;
+      color: var(--text-title);
+    }
+
+    /* VISOR MODAL EN PANTALLA COMPLETA & CONTROLES SOBRIOS */
+    .zoom-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: #020304;
+      user-select: none;
+      touch-action: none;
+      overflow: hidden;
+    }
+
+    .zoom-modal.active {
+      display: block;
+    }
+
+    /* ELEMENTOS FLOTANTES FLUIDOS OCULTABLES SI NO SE MUEVE EL RATÓN */
+    .auto-hide-ui {
+      opacity: 1;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+
+    .zoom-modal.user-inactive .auto-hide-ui,
+    .zoom-modal.user-inactive .zoom-desc-panel {
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+
+    /* OCULTAR CURSOR DEL RATÓN AUTOMÁTICAMENTE CUANDO LA INTERFAZ SE VUELVE INACTIVA */
+    .zoom-modal.user-inactive,
+    .zoom-modal.user-inactive * {
+      cursor: none !important;
+    }
+
+    /* BARRA DE CONTROLES FLOTANTE SOBRIA CON ICONOS */
+    .zoom-controls-bar {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10001;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(10, 12, 16, 0.88);
+      border: 1px solid var(--border-subtle);
+      padding: 6px 18px;
+      border-radius: 30px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    .zoom-ctrl-btn {
+      background: none;
+      border: none;
+      color: var(--text-title);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+
+    .zoom-ctrl-btn:hover {
+      background: rgba(255,255,255,0.08);
+      color: var(--accent-gold);
+    }
+
+    .zoom-ctrl-btn svg {
+      stroke: currentColor;
+    }
+
+    .zoom-scale-text {
+      font-family: monospace;
+      font-size: 0.82rem;
+      color: var(--accent-gold);
+      min-width: 60px;
+      text-align: center;
+    }
+
+    /* BOTONES DERECHA: PANTALLA COMPLETA Y CERRAR */
+    .top-right-actions {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 10001;
+      display: flex;
+      gap: 10px;
+    }
+
+    .action-circle-btn {
+      background: rgba(10, 12, 16, 0.88);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-title);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      transition: all 0.2s;
+    }
+
+    .action-circle-btn:hover {
+      background: var(--accent-gold);
+      color: #050608;
+      border-color: var(--accent-gold);
+    }
+
+    .action-circle-btn svg {
+      stroke: currentColor;
+    }
+
+    /* FLECHAS NAVEGACIÓN MINIMALISTAS ENTRE TODAS LAS IMÁGENES Y VISTAS DE LA COLECCIÓN */
+    .nav-arrow-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10001;
+      background: rgba(10, 12, 16, 0.85);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-title);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      transition: all 0.2s;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    }
+
+    .nav-arrow-btn:hover {
+      background: var(--accent-gold);
+      color: #050608;
+      border-color: var(--accent-gold);
+    }
+
+    .nav-arrow-btn svg {
+      stroke: currentColor;
+    }
+
+    .nav-arrow-btn.left {
+      left: 20px;
+    }
+
+    .nav-arrow-btn.right {
+      right: 20px;
+    }
+
+    /* CONTENEDOR VIEWPORT Y ARRASTRE */
+    .zoom-viewport {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: grab;
+    }
+
+    .zoom-viewport.dragging {
+      cursor: grabbing !important;
+    }
+
+    /* IMAGEN DE TARGET CON TRANSFORMACIÓN LERP Y ANCLAJE AL CENTRO DEL VIEWPORT */
+    .zoom-target-img {
+      max-width: 100vw;
+      max-height: 100vh;
+      object-fit: contain;
+      transform-origin: center center;
+      will-change: transform;
+      box-shadow: 0 0 60px rgba(0,0,0,0.95);
+      user-select: none;
+      -webkit-user-drag: none;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      image-rendering: high-quality;
+    }
+
+    /* LEYENDA INFERIOR DISCRETA CON INDICADOR */
+    .zoom-caption-box {
+      position: absolute;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10001;
+      background: rgba(10, 12, 16, 0.88);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-title);
+      padding: 8px 22px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-family: var(--font-serif);
+      backdrop-filter: blur(8px);
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s;
+    }
+
+    .zoom-caption-box:hover {
+      border-color: var(--accent-gold);
+      background: rgba(180, 150, 70, 0.15);
+    }
+
+    /* PANEL EXPANDIBLE DE DESCRIPCIÓN TRANSPARENTE CON GLASSMORPHISM (MOVER EL RATÓN ABAJO EN EL VISOR) */
+    .zoom-desc-panel {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      z-index: 10002;
+      width: 90%;
+      max-width: 840px;
+      max-height: 52vh;
+      background: rgba(6, 8, 12, 0.55);
+      border: 1px solid rgba(197, 160, 70, 0.32);
+      border-radius: 12px;
+      padding: 24px 30px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      color: #e6e8ee;
+      overflow-y: auto;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.65);
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, 25px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+    }
+
+    .zoom-modal:not(.user-inactive).hover-bottom .zoom-desc-panel,
+    .zoom-desc-panel:hover {
+      opacity: 1 !important;
+      pointer-events: auto !important;
+      transform: translate(-50%, 0) !important;
+    }
+
+    .zoom-desc-panel h3 {
+      font-family: var(--font-serif);
+      color: var(--accent-gold);
+      font-size: 1.35rem;
+      margin-bottom: 4px;
+      font-weight: 600;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.95);
+    }
+
+    .zoom-desc-panel .desc-artist-meta {
+      font-size: 0.84rem;
+      color: #b0b7c6;
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(197, 160, 70, 0.25);
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+    }
+
+    .zoom-desc-panel h4 {
+      font-family: var(--font-serif);
+      color: #ffffff;
+      font-size: 0.98rem;
+      margin: 18px 0 6px;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.95);
+    }
+
+    .zoom-desc-panel p {
+      font-size: 0.92rem;
+      line-height: 1.72;
+      margin-bottom: 14px;
+      color: #e1e4eb;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="header-tag" id="bookTag">Colección Génesis</span>
+    <h1 id="bookTitle">Obras Maestras del Génesis</h1>
+    <p class="header-sub" id="bookSub">Estudio visual en 3 columnas de las representaciones pictóricas del Génesis y análisis del cambio narrativo tras la Torre de Babel.</p>
+
+    <!-- SELECTOR DE LIBRO -->
+    <div class="book-switch">
+      <button class="book-btn active" onclick="switchBook('genesis', this)">Génesis<span class="book-count">31</span></button>
+      <button class="book-btn" onclick="switchBook('gilgamesh', this)">Gilgamesh<span class="book-count">9</span></button>
+      <button class="book-btn" onclick="switchBook('iliada', this)">La Ilíada<span class="book-count">17</span></button>
+    </div>
+
+    <!-- NAV DE SECCIONES POR LIBRO -->
+    <nav id="nav-genesis" class="book-nav active">
+      <button class="tab-btn active" onclick="switchTab('genesis-gallery', this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        Colección (31)
+      </button>
+      <button class="tab-btn" onclick="switchTab('genesis-essay', this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+        Ensayo Post-Babel
+      </button>
+    </nav>
+
+    <nav id="nav-gilgamesh" class="book-nav">
+      <button class="tab-btn active" onclick="switchTab('gilgamesh-gallery', this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        Colección (9)
+      </button>
+    </nav>
+
+    <nav id="nav-iliada" class="book-nav">
+      <button class="tab-btn active" onclick="switchTab('iliada-gallery', this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        Colección (17)
+      </button>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- GALLERY TAB (3 COLUMNAS) -->
+    <div id="genesis-gallery" class="tab-content active">
+      <div class="grid-3col" id="genesis-grid"></div>
+    </div>
+
+    <!-- ESSAY TAB -->
+    <div id="genesis-essay" class="tab-content">
+      <article class="essay-box">
+        <h2>¿Por qué el Génesis cambia tan radicalmente después de la Torre de Babel?</h2>
+        
+        <p>El libro del Génesis presenta una de las transiciones más dramáticas de toda la literatura universal entre los capítulos 11 (La Torre de Babel) y 12 (La vocación de Abram). Comprender esta ruptura requiere examinar el texto desde la perspectiva teológica, literaria y antropológica.</p>
+
+        <h3>1. La Gran Fractura: De la Historia Primordial a la Historia Patriarcal</h3>
+        <p>El relato bíblico se divide en dos bloques conceptuales completamente distintos:</p>
+
+        <p>• <strong>Génesis 1 a 11 (Historia Primordial):</strong> Es cósmica y universal. Trata de la humanidad entera como un colectivo (Adán = "humano hecho de tierra"). Examina los grandes orígenes: la existencia del universo, la conciencia, la culpa, el fratricidio, el Diluvio y el lenguaje.</p>
+        <p>• <strong>Génesis 12 a 50 (Historia Patriarcal):</strong> Da un giro de 180 grados. Abandona la historia global para enfocarse en <em>una sola familia</em> (Abraham, Isaac, Jacob y sus 12 hijos) y en una geografía concreta (Ur, Canaán, Egipto).</p>
+
+        <h3>2. Babel como el Clímax de la Soberbia Colectiva</h3>
+        <p>En Génesis 11, la humanidad intenta unificarse bajo un solo proyecto técnico e imperial:</p>
+        <div class="essay-quote">
+          "Vamos, edifiquémonos una ciudad y una torre cuya cúspide llegue al cielo; y hagámonos un nombre, por si fuéramos esparcidos sobre la faz de toda la tierra..." (Génesis 11:4)
+        </div>
+        <p>Babel representa la soberbia colectiva (<em>hybris</em>): el intento del ser humano por salvarse a sí mismo mediante el poder técnico centralizado. La dispersión y confusión de las lenguas no es una venganza caprichosa, sino una intervención divina para desarticular la tiranía y la uniformidad forzada.</p>
+
+        <h3>3. El Cambio de Pedagogía Divina: De la Masa al Pacto Individual</h3>
+        <p>Tras la secuencia de fracasos de la humanidad en masa (Edén → Caín → Diluvio → Babel), Dios cambia radicalmente de estrategia:</p>
+        <p><strong>En lugar de intentar redimir a la masa colectiva de una sola vez, Dios elige a un individuo insignificante y a su familia para bendecir a todas las naciones.</strong></p>
+
+        <div class="essay-quote">
+          "Vete de tu tierra... y haré de ti una nación grande... y serán benditas en ti todas las familias de la tierra." (Génesis 12:1-3)
+        </div>
+
+        <p>La renovación de la humanidad ya no vendrá impuesta desde arriba con megaproyectos políticos como la Torre de Babel, sino desde abajo a través del pacto personal, la responsabilidad ética y la fe familiar.</p>
+      </article>
+    </div>
+
+    <!-- GILGAMESH -->
+    <div id="gilgamesh-gallery" class="tab-content">
+      <div class="grid-3col" id="gilgamesh-grid"></div>
+      <div class="empty-book" id="gilgamesh-empty">
+        <h2>Gilgamesh — en preparación</h2>
+        <p>La colección de relieves asirios, sellos cilíndricos, tablillas cuneiformes y pintura moderna sobre la epopeya de Uruk todavía no tiene obras cargadas. Coloca las imágenes en la carpeta <strong>Gilgamesh/</strong> y añádelas a <code>BOOKS.gilgamesh</code>.</p>
+      </div>
+    </div>
+
+    <!-- LA ILÍADA -->
+    <div id="iliada-gallery" class="tab-content">
+      <div class="grid-3col" id="iliada-grid"></div>
+      <div class="empty-book" id="iliada-empty">
+        <h2>La Ilíada — en preparación</h2>
+        <p>La colección de cerámica ática, escultura helenística, hallazgos de Micenas y Troya, y pintura neoclásica sobre la guerra troyana todavía no tiene obras cargadas. Coloca las imágenes en la carpeta <strong>Ilíada/</strong> y añádelas a <code>BOOKS.iliada</code>.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- VISOR MODAL EN PANTALLA COMPLETA & PANEL FLOTANTE DE ANÁLISIS COMPLETO -->
+  <div id="zoomModal" class="zoom-modal">
+    
+    <!-- BARRA SUPERIOR DE CONTROLES FLOTANTE CON SVG MINIMALISTAS -->
+    <div class="zoom-controls-bar auto-hide-ui">
+      <button class="zoom-ctrl-btn" onclick="zoomDelta(-1)" title="Alejar (-)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      </button>
+      <span id="zoomScaleText" class="zoom-scale-text">100%</span>
+      <button class="zoom-ctrl-btn" onclick="zoomDelta(1)" title="Acercar (+)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      </button>
+      <button class="zoom-ctrl-btn" onclick="resetZoom()" title="Ver Completa" style="font-size: 0.72rem; font-family: var(--font-serif); width: auto; padding: 0 8px; letter-spacing: 1px;">ORIGINAL</button>
+    </div>
+
+    <!-- BOTONES DERECHA: PANTALLA COMPLETA Y CERRAR -->
+    <div class="top-right-actions auto-hide-ui">
+      <button class="action-circle-btn" onclick="toggleFullscreen()" title="Pantalla Completa (F)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 2-2v-3M3 16v3a2 2 0 0 2 2h3"></path></svg>
+      </button>
+      <button class="action-circle-btn" onclick="closeZoomModal()" title="Cerrar (Esc)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- FLECHAS LATERALES DE NAVEGACIÓN SECUENCIAL ENTRE TODAS LAS IMÁGENES Y VISTAS DE LA COLECCIÓN -->
+    <button class="nav-arrow-btn left auto-hide-ui" onclick="navigateSequential(-1)" title="Anterior imagen/detalle (Flecha Izquierda)">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button class="nav-arrow-btn right auto-hide-ui" onclick="navigateSequential(1)" title="Siguiente imagen/detalle (Flecha Derecha)">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+
+    <!-- VIEWPORT INTERACTIVO Y ARRASTRE TIPO ESCRITORIO -->
+    <div id="zoomViewport" class="zoom-viewport">
+      <img id="zoomTargetImg" class="zoom-target-img" src="" alt="Detail View">
+    </div>
+
+    <!-- LEYENDA INFERIOR DISCRETA CON INDICADOR -->
+    <div id="zoomCaptionBox" class="zoom-caption-box auto-hide-ui">
+      <span id="zoomCaptionText">Inspección de Detalle</span>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </div>
+
+    <!-- PANEL EXPANDIBLE DE DESCRIPCIÓN TRANSPARENTE CON GLASSMORPHISM (MOVER EL RATÓN ABAJO EN EL VISOR) -->
+    <div id="zoomDescPanel" class="zoom-desc-panel">
+      <h3 id="panelTitle">Título de la Obra</h3>
+      <div class="desc-artist-meta">
+        <span id="panelMeta">Artista | Técnica | Ubicación</span>
+        <a id="panelWikiLink" href="#" target="_blank" rel="noopener" class="wiki-link-btn" title="Ver en Wikipedia">
+          Ver en Wikipedia <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+      </div>
+      
+      <h4>Análisis Artístico y Teológico</h4>
+      <p id="panelAnalysis">Cargando análisis detallado...</p>
+
+      <h4>Detalles Históricos y Curiosidades</h4>
+      <p id="panelHistory">Cargando contexto histórico...</p>
+
+      <h4>Biografía del Pintor y Contexto de la Época</h4>
+      <p id="panelBio">Cargando biografía...</p>
+    </div>
+
+  </div>
+
+  <script>
+    let activeSubView = {};
+
+    
+    
+    /* ────────── REGISTRO DE LIBROS ──────────
+       Cada libro es autónomo: sus propios arrays de datos e índices, de modo que las
+       flechas del visor nunca saltan de un libro a otro. Para dar de alta un libro se
+       añade su entrada aquí, su carpeta de imágenes, su <nav class="book-nav"> y su
+       <div class="tab-content"> en la grilla. */
+    const BOOKS = {
+      genesis: {
+        tag: 'Colección Génesis',
+        title: 'Obras Maestras del Génesis',
+        sub: 'Estudio visual en 3 columnas de las representaciones pictóricas del Génesis y análisis del cambio narrativo tras la Torre de Babel.',
+        firstTab: 'genesis-gallery',
+        headings: ['Lo que hace que destaque', 'Contexto histórico', 'Biografía del artista'],
+        details: [],
+        groups: []
+      },
+      gilgamesh: {
+        tag: 'Colección Gilgamesh',
+        title: 'La Epopeya de Gilgamesh',
+        sub: 'Relieves asirios, sellos cilíndricos, tablillas cuneiformes y relecturas modernas del poema más antiguo conservado de la humanidad.',
+        firstTab: 'gilgamesh-gallery',
+        headings: ['Lo que hace que destaque', 'Contexto histórico y arqueológico', 'Procedencia'],
+        details: [],
+        groups: []
+      },
+      iliada: {
+        tag: 'Colección Ilíada',
+        title: 'La Ilíada de Homero',
+        sub: 'Cerámica ática, escultura helenística, arqueología de Micenas y Troya, y la pintura neoclásica y romántica de la cólera de Aquiles.',
+        firstTab: 'iliada-gallery',
+        headings: ['Lo que hace que destaque', 'Contexto histórico', 'Autoría y procedencia'],
+        details: [],
+        groups: []
+      }
+    };
+
+    /* ==== DATOS GENERADOS POR inject.py — NO EDITAR A MANO ==== */
+    BOOKS.genesis.details = [
+      {
+        "title": "La Creación de Adán",
+        "artist": "Miguel Ángel Buonarroti (1512)",
+        "meta": "Fresco | 280 cm × 570 cm | Capilla Sixtina, El Vaticano",
+        "wikiUrl": "https://es.wikipedia.org/wiki/La_creaci%C3%B3n_de_Ad%C3%A1n",
+        "snippet": "El espacio milimétrico entre los dedos captura la tensión del momento previo a la chispa de la conciencia. El manto divino representa la sección de un cerebro humano.",
+        "analysis": "El espacio infinitesimal entre los dedos de Dios y Adán representa el momento supremo del arte occidental: la transmisión de la chispa del ánima (alma espiritual e intelecto humano). Adán yace recostado pasivamente en una meseta terrenal desnuda, encarnando la materia inerte a la espera del soplo divino. Dios el Padre, caracterizado como un anciano majestuoso de barba plateada pero de musculatura sobrehumana, avanza envuelto en un gran manto carmesí impulsado por ángeles celestiales.",
+        "history": "Un descubrimiento neuroanatómico contemporáneo destaca que el manto rojo divino posee la forma exacta de una sección sagital del encéfalo humano (mostrando el lóbulo frontal, el quiasma óptico y la arteria basilar). La figura femenina bajo el brazo izquierdo de Dios ha sido identificada como Eva esperando en la mente divina antes de su creación o como María con el Niño Jesús. Los dos dedos jamás se tocan, simbolizando la distancia insuperable entre el Creador trascendente y la criatura mortal.",
+        "bio": "Miguel Ángel Buonarroti (1475–1564) se consideraba a sí mismo primordialmente un escultor. Aceptó a regañadientes el encargo de pintar el techo de la Capilla Sixtina hecho por el Papa Julio II en 1508. Trabajando suspendido en andamios de madera que él mismo diseñó, pintó más de 500 metros cuadrados durante cuatro años de agotamiento físico continuo, transformando la anatomía del cuerpo humano en el lenguaje supremo de la teología y la belleza."
+      },
+      {
+        "title": "La Expulsión del Paraíso",
+        "artist": "Masaccio (1427)",
+        "meta": "Fresco | 208 cm × 88 cm | Capilla Brancacci, Basílica de Santa Maria del Carmine, Florencia, Italia",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Expulsi%C3%B3n_de_Ad%C3%A1n_y_Eva_del_Para%C3%ADso_terrenal",
+        "snippet": "Realismo emocional crudo: Adán oculta su rostro por vergüenza ontológica y Eva echa la cabeza atrás en un alarido de dolor físico y culpa.",
+        "analysis": "Masaccio ejecutó con este fresco la ruptura definitiva con el estilo gótico internacional y el nacimiento del realismo psicológico renacentista. Tras probar el fruto prohibido, Adán y Eva son arrojados violentamente fuera del Edén por un ángel vindicativo vestido de rojo con espada desenvainada. Adán se cubre el rostro con ambas manos en un gesto de vergüenza ontológica; Eva se cubre el seno y el sexo imitando la pose clásica de la Venus Pudica mientras echa la cabeza atrás en un desgarrador alarido de dolor físico.",
+        "history": "Durante la Contrarreforma en el siglo XVII, por orden del Gran Duque Cosme III de Médici, se añadieron hojas de higuera sobre los genitales de Adán y Eva por considerarlos impúdicos. Estas hojas taparon la obra durante más de tres siglos hasta la restauración magistral de 1988, que devolvió la desnudez trágica original de Masaccio y la luz que coincide exactamente con la ventana real de la capilla.",
+        "bio": "Masaccio (Tommaso di Ser Giovanni, 1401–1428) falleció trágicamente a los 26 años en Roma. A pesar de su corta vida, su dominio pionero de la perspectiva matemática y del volumen por claroscuro convirtieron a la Capilla Brancacci en la escuela donde aprendieron Leonardo da Vinci, Rafael y Miguel Ángel."
+      },
+      {
+        "title": "Caín y Abel",
+        "artist": "Tiziano Vecellio (1544)",
+        "meta": "Óleo sobre lienzo | 298 cm × 282 cm | Sacristía de Santa Maria della Salute, Venecia, Italia",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Cain_and_Abel_(Titian)",
+        "snippet": "Violencia cinética del primer asesinato. Caín pisa a su hermano alzando el garrote en puro resentimiento descontrolado (vista de techo <em>di sotto in sù</em>).",
+        "analysis": "En este monumental lienzo diseñado para ser contemplado desde abajo en el techo de la iglesia de Santo Spirito in Isola, Tiziano captura la furia kinética del primer fratricidio de la historia. Caín pisa brutalmente la pierna de su hermano caído Abel mientras alza un pesado garrote para propinar el golpe fatal, impulsado por el rencor acumulado al ver rechazadas sus ofrendas agrícolas frente al favor divino otorgado al ganado de Abel.",
+        "history": "La escena está envuelta en una perspectiva teatral conocida como \"di sotto in sù\" (vista de abajo hacia arriba en escorzo extremo). Las figuras parecen desplomarse físicamente sobre la cabeza del espectador, transmitiendo el colapso del orden moral cósmico. La paleta cromática utiliza contrastes dramáticos de sombras nocturnas y humo rojizo que emana del altar del sacrificio.",
+        "bio": "Tiziano Vecellio (c. 1488–1576) fue el líder indiscutible del Renacimiento Veneciano. Su longeva carrera de más de siete décadas lo llevó a ser el pintor personal del Emperador Carlos V y de Felipe II. Innovó aplicando óleo sobre tela con pinceladas gruesas y enérgicas aplicadas a veces directamente con los dedos."
+      },
+      {
+        "title": "El Diluvio Universal",
+        "artist": "Miguel Ángel Buonarroti (1509)",
+        "meta": "Fresco | 280 cm × 560 cm | Capilla Sixtina, El Vaticano",
+        "wikiUrl": "https://es.wikipedia.org/wiki/B%C3%B3veda_de_la_Capilla_Sixtina#El_Diluvio_Universal",
+        "snippet": "El Arca queda relegada al fondo. Todo el enfoque está en la desesperación humana: familias luchando por peñascos o aferrándose a ramas secas.",
+        "analysis": "Miguel Ángel abordó el cataclismo del Diluvio desde la vivencia dramática de las víctimas terrenales antes que desde la perspectiva triunfal del Arca. La embarcación de Noé aparece relegada al plano posterior, agitada por las olas como una nave solitaria, mientras el centro de atención se divide en cuatro grupos desgarradores de seres humanos que buscan refugio desesperado.",
+        "history": "Fue una de las primeras composiciones que ejecutó en la Sixtina. Al no estar habituado a la técnica del fresco a gran escala, la mezcla de cal y arena retuvo humedad y apareció moho sobre la pintura fresca. Desesperado, el artista acudió al Papa exclamando que él no era pintor, hasta que Giuliano da Sangallo le enseñó la proporción exacta de la pasta fresca para salvar el fresco.",
+        "bio": "Este fresco retrata la ambivalencia de la condición humana en situaciones de colapso extremo: la crueldad desalmada de quienes pelean a puñetazos por abordar una barca volcada coexiste con gestos de sublime compasión, como el de un padre abatido que arriesga su vida cargando sobre los hombros el cuerpo inerte de su hijo ahogado."
+      },
+      {
+        "title": "La Torre de Babel",
+        "artist": "Pieter Bruegel el Viejo (1563)",
+        "meta": "Óleo sobre tabla | 114 cm × 155 cm | Kunsthistorisches Museum, Viena, Austria",
+        "wikiUrl": "https://es.wikipedia.org/wiki/La_torre_de_Babel_(Brueghel)",
+        "snippet": "Ingeniería insostenible inspirada en el Coliseo Romano. Los arcos inferiores colapsan mientras miles de trabajadores microscópicos tiran de poleas.",
+        "analysis": "Bruegel el Viejo transformó el pasaje de Génesis 11 en una alegoría monumental de la soberbia humana (hybris) y la miopía técnica. Inspirado en su viaje a Italia en 1553 donde contempló las ruinas del Coliseo Romano, concibió la Torre de Babel no como una estela oriental fantasiosa, sino como una megaestructura cilíndrica de ingeniería romana en cuyo interior se alojan habitaciones y fortalezas.",
+        "history": "La torre es una paradoja constructiva irrealizable: el lado izquierdo está escorado e inclinado debido a que los arcos de los niveles inferiores ya colapsan bajo el peso aplastante, mientras en la cima los albañiles continúan levantando pisos superiores. En la esquina inferior izquierda, el rey Nimrod (el tirano impulsor de la torre) camina escoltado por guardias mientras los canteros se postran a sus pies.",
+        "bio": "Pieter Bruegel el Viejo (c. 1525–1569) fue el maestro supremo de la pintura flamenca del siglo XVI. Conocido por sus vívidas escenas de festejos campesinos y paisajes minuciosos, dominó la técnica del detalle de la escuela de los Países Bajos y fue un agudo observador de la naturaleza moral del ser humano."
+      },
+      {
+        "title": "Caín",
+        "artist": "Fernand Cormon (1880)",
+        "meta": "Óleo sobre lienzo monumental (3.84 m × 7.00 m) | Musée d’Orsay, París, Francia",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Cain_(Cormon)",
+        "snippet": "Visión descarnada del exilio. Caín lidera a su tribu a través de un páramo estéril con cuerpos demacrados cargando la maldición en clave prehistórica.",
+        "analysis": "Exhibido con un éxito atronador en el Salón de París de 1880, Cormon reinterpretó el exilio bíblico de Caín a través de los descubrimientos paleontológicos y antropológicos del siglo XIX. Caín no es representado como un villano teatral de túnicas convencionales, sino como un anciano patriarca tribal de la Edad de Piedra arrastrando una existencia errante.",
+        "history": "Bajo un sol abrasador de mediodía en un desierto calcinado, Caín avanza a la cabeza con la mirada perdida en el vacío y los puños apretados, acosado por el peso remordedor del primer homicidio. Sus hijos demacrados y desnudos cargan a hombros camillas de madera con sus esposas e hijos pequeños, junto a trozos ensangrentados de carne de caza. Inspiró versos memorables de Victor Hugo en su poema La Conscience.",
+        "bio": "Fernand Cormon (1845–1924) fue una de las figuras señeras de la pintura académica e histórica en Francia. Su famoso atelier en París fue el crisol donde se formaron jóvenes rebeldes del arte vanguardista, entre ellos Vincent van Gogh, Henri de Toulouse-Lautrec y Émile Bernard."
+      },
+      {
+        "title": "Elohim creando a Adán",
+        "artist": "William Blake (1795)",
+        "meta": "Acuarela y estampa a color | 43 cm × 53 cm | Tate Britain, Londres, Reino Unido",
+        "wikiUrl": "https://en.wikipedia.org/wiki/William_Blake",
+        "snippet": "Creación como agonía existencial. Adán es forzado dolorosamente a existir, atado a la materia con una serpiente enroscada en la pierna desde el nacimiento.",
+        "analysis": "William Blake invierte drásticamente la visión optimista renacentista de la creación del hombre. Fiel a su propia mitología poético-espiritual, para Blake el acto creativo de Elohim (el demiurgo de la materia física al que denominaba Urizen) no representa un regalo benigno de vida, sino la dolorosa prisión del espíritu inmortal dentro del cuerpo mortal de carne y huesos.",
+        "history": "Elohim vuela sobre la vasta extensión de la materia primordial con alas de murciélago sombrías y rostro desencajado por el dolor cósmico. Moldea el cuerpo de Adán del barro oscuro mientras Adán yace de espaldas en agonía existencial. Alrededor de la pierna derecha del recién creado Adán ya se enrosca la serpiente del conocimiento y la caída, simbolizando que el sufrimiento quedó sellado desde el nacimiento.",
+        "bio": "William Blake (1757–1827) fue un poeta, pintor, visionario y grabador inglés. Ignorado por sus contemporáneos debido a que afirmaba conversar diariamente con ángeles y profetas, Blake creó una de las obras poéticas y visuales más radicalmente independientes de la historia del arte, repudiando el racionalismo ilustrado."
+      },
+      {
+        "title": "Sombra y oscuridad - la tarde del diluvio",
+        "artist": "J.M.W. Turner (1843)",
+        "meta": "Óleo sobre lienzo | 78.5 cm × 78.5 cm | Tate Britain, Londres, Reino Unido",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Light_and_Colour_(Goethe%27s_Theory)_%E2%80%93_The_Morning_after_the_Deluge_%E2%80%93_Moses_Writing_the_Book_of_Genesis",
+        "snippet": "Deconstrucción total de la naturaleza. Luz, agua y tierra se disuelven volviendo al caos primordial anterior al \"hágase la luz\".",
+        "analysis": "Turner disuelve el paisaje tradicional en un vórtice atmosférico de lluvia torrencial, viento helado y penumbra absoluta. En el centro exacto de la composición, diminuta e impenetrable, flota el Arca de Noé como la única chispa de salvación en medio del juicio divino. Una fina procesión de sombras de animales avanza hacia el fondo perdiéndose en el horizonte de la tormenta.",
+        "history": "Turner contrapuso esta obra con su pareja díptica (Luz y Color: La mañana después del Diluvio), basando su tratamiento de la paleta en la Teoría de los Colores de Goethe, asociando los tonos oscuros a la desolación. Cuando fue expuesto en la Royal Academy en 1843, el crítico John Ruskin lo defendió apasionadamente declarando que Turner era el único artista que comprendía la verdadera majestad impetuosa de la naturaleza.",
+        "bio": "J.M.W. Turner (1775–1851), el \"Pintor de la Luz\", fue la figura dominante del paisajismo británico. Se dice que en una ocasión se hizo atar al mástil de un barco en medio de una tempestad en el mar del Norte durante cuatro horas para experimentar personalmente la furia de los elementos antes de pintarla."
+      },
+      {
+        "title": "La confusión de las lenguas",
+        "artist": "Gustave Doré (1865)",
+        "meta": "Grabado Xilográfico | Biblioteca Nacional de Francia, París, Francia",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Gustave_Dor%C3%A9%27s_illustrations_for_La_Grande_Bible_de_Tours",
+        "snippet": "Escala opresiva e industrial. Líneas geométricas duras de la torre inacabada frente a cuerpos diminutos despeñándose en la penumbra.",
+        "analysis": "Gustave Doré esculpió en la madera de este grabado una de las imágenes más sobrecogedoras e influyentes de la literatura ilustrada mundial. Doré retrata el momento preciso en que la voz divina quiebra la unidad del idioma humano en las laderas de Babel. La monumental estructura de piedra se eleva con arcos gigantescos hasta perderse en el torbellino de nubes negras en la cumbre.",
+        "history": "En el plano inferior, la multitud estalla en un pánico caótico: familias enteras se abrazan sin comprender las palabras que salen de sus propias bocas, constructores abandonan sus herramientas y algunos caen despeñados desde las cornisas. Sus 241 grabados para la Biblia moldearon la imaginación religiosa e inspiraron directamente la escenografía de las grandes producciones del cine bíblico de Hollywood.",
+        "bio": "Gustave Doré (1832–1883) fue un prodigioso dibujante, grabador y pintor francés. Niño prodigio que publicó sus primeras caricaturas a los 15 años, llegó a ilustrar las obras cumbres de la literatura universal: La Divina Comedia de Dante, El Quijote de Cervantes, El Paraíso Perdido de Milton y los Cuentos de Perrault."
+      },
+      {
+        "title": "El Diluvio Universal",
+        "artist": "Jan van Scorel (c. 1530)",
+        "meta": "Óleo sobre tabla | 109 cm × 178 cm | Museo Nacional del Prado, Madrid, España",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Jan_van_Scorel",
+        "snippet": "Manierismo nórdico supremo: figuras de musculatura miguelangelesca huyen descalzas en un primer plano de luz dramática mientras el agua devora la tierra.",
+        "analysis": "Obra cumbre del Manierismo nórdico. Jan van Scorel sintetiza la musculatura monumental inspirada en las esculturas romanas y Miguel Ángel con un sobrecogedor paisaje nocturno holandés. En el primer plano, dramáticamente iluminado por la luz lunar, una multitud aterrorizada huye descalza del avance implacable del agua cargando ancianos y niños en la penumbra.",
+        "history": "Integrada en la Colección Real Española desde al menos 1593, figurando en el inventario histórico del Real Sitio de San Lorenzo de El Escorial antes de incorporarse al Museo del Prado (Inv. P001515). En la lejanía oscura se vislumbra el Arca de Noé resguardada bajo un rayo celaje.",
+        "bio": "Jan van Scorel (1495–1562), importante pintor y clérigo holandés que introdujo las formas del Alto Renacimiento italiano en el norte de Europa tras su estancia en Roma como conservador supremo de las colecciones de arte vaticanas del Papa Adriano VI."
+      },
+      {
+        "title": "Tras el diluvio (El sol)",
+        "artist": "George Frederic Watts (1891)",
+        "meta": "Óleo sobre lienzo | 104 cm × 127 cm | Watts Gallery, Compton, Surrey, Reino Unido",
+        "wikiUrl": "https://en.wikipedia.org/wiki/After_the_Deluge_(Watts)",
+        "snippet": "Simbolismo poético: Watts prescinde de figuras o barcos para pintar el primer rayo de sol del cuadragésimo primer día rompiendo la tempestad sobre el mar.",
+        "analysis": "Genialidad del Simbolismo victoriano. Watts prescinde radicalmente de figuras humanas, barcos o animales para retratar el instante místico del cuadragésimo primer día: el momento en que las nubes de la tormenta apocalíptica se abren y un Sol incandescente estalla en el horizonte sobre un mar sereno, simbolizando la luz de la Creación reemergente.",
+        "history": "Watts dedicó cinco años (1886-1891) a perfeccionar este lienzo, exponiéndolo originalmente con el título simplificado de El Sol. Su renuncia a la representación antropomórfica para concentrarse en la vibración pura del color y la luz fue admirada como un presagio audaz del arte abstracto moderno.",
+        "bio": "George Frederic Watts (1817–1904), destacado pintor y escultor simbolista británico conocido como el \"Miguel Ángel victoriano\", empeñado en volcar las grandes alegorías filosóficas y morales en lienzos de visión poética."
+      },
+      {
+        "title": "La disminución de las aguas del diluvio",
+        "artist": "Francis Danby (1840)",
+        "meta": "Óleo sobre lienzo | 147 cm × 234 cm | Tate Britain, Londres, Reino Unido",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Francis_Danby",
+        "snippet": "Sublimismo romántico monumental: la luz de una luna sangrienta revela una ciénaga silenciosa de árboles gigantes ahogados mientras el Arca reposa en el Ararat.",
+        "analysis": "Cúspide del Sublimismo Romántico británico. Danby retrata el sosiego sepulcral tras la catástrofe: una luna llena de brillo cobrizo ilumina una ciénaga infinita de aguas muertas plagada de árboles gigantescos ahogados y restos de seres antediluvianos, mientras en el horizonte el Arca descansa pacíficamente sobre la cima del Monte Ararat.",
+        "history": "Exhibida en 1840 en la Royal Academy con una acogida entusiasta. Danby desplegó una maestría técnica prodigiosa en los reflejos cromáticos del agua estancada y en el fino destello del amanecer que empieza a dorar la montaña sagrada.",
+        "bio": "Francis Danby (1793–1861), maestro irlando-británico del romanticismo poético y apocalíptico, figura central de la Escuela de Bristol célebre por sus visiones atardecidas y cataclismos bíblicos teatrales."
+      },
+      {
+        "title": "La disminución de las aguas del diluvio",
+        "artist": "Thomas Cole (1829)",
+        "meta": "Óleo sobre lienzo | 121.3 cm × 189.2 cm | Smithsonian American Art Museum, Washington D.C., EE.UU.",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Subsiding_of_the_Waters_of_the_Deluge",
+        "snippet": "Simbolismo de esperanza y regeneración: los picos rocosos reemergen bajo un cielo iluminado por la promesa divina mientras un cráneo solitario yace sobre las rocas.",
+        "analysis": "Manifiesto fundador del paisajismo estadounidense. Cole retrata la purificación de la Tierra: los picos rocosos reemergen lavados del pecado bajo un cielo celestial donde la luz pura abre paso a las nubes en retirada. En el primer plano, sobre una roca solitaria, descansa un cráneo humano como memento mori de la civilización destruida.",
+        "history": "Pintada en 1829 tras su estancia de estudios en Europa, fue celebrada como una viva metáfora de la esperanza y el renacimiento espiritual. La figura distante del Arca navegando en calma encarna la promesa del pacto divino.",
+        "bio": "Thomas Cole (1801–1848), genial pintor anglo-estadounidense y patriarca fundador de la célebre Escuela del Río Hudson, pionero en elevar la pintura de paisaje a la categoría de alegoría moral y espiritual."
+      },
+      {
+        "title": "Adán y Eva",
+        "artist": "Lucas Cranach el Viejo (c. 1538)",
+        "meta": "Óleo sobre tabla de tilo | 50 × 34,5 cm | Galería Nacional de Praga (DO 5380)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Lucas_Cranach_el_Viejo",
+        "snippet": "El pecado original convertido en escena cortesana: cuerpos alargados, elegantes y sin culpa aparente, pintados por el amigo íntimo de Lutero.",
+        "analysis": "Cranach pintó este asunto decenas de veces y creó con él un tipo físico inconfundible: cuerpos esbeltos y alargados, hombros estrechos, vientres redondeados, una desnudez elegante y cortesana que no tiene nada de la angustia italiana. Adán se lleva la mano al cabello en un gesto de perplejidad casi cómico mientras Eva le tiende la manzana; la serpiente se enrosca discretamente en el árbol y los animales del Edén rodean la escena con una precisión de grabado naturalista. La caída se representa aquí no como tragedia sino como un instante de duda amable.",
+        "history": "Cranach fue amigo íntimo de Lutero —fue padrino de su hijo y grabó sus retratos más difundidos— y su taller de Wittenberg fue el motor visual de la Reforma. Que un pintor tan comprometido con la doctrina protestante repitiera incansablemente el desnudo del Edén tiene su lógica: era el único asunto que permitía pintar cuerpos desnudos con justificación bíblica plena, y sus versiones fueron un éxito comercial en las cortes alemanas.",
+        "bio": "Lucas Cranach el Viejo (1472–1553) dirigió una de las empresas artísticas más eficientes de su siglo: un taller casi industrial con hijos y ayudantes que producía retratos y tablas en serie, firmadas con el emblema de la serpiente alada. Fue además boticario, editor y alcalde de Wittenberg."
+      },
+      {
+        "title": "Adán y Eva",
+        "artist": "Alberto Durero (1504 y 1507)",
+        "meta": "Buril sobre cobre, 26,5 × 20,9 cm (Morgan Library, 2006.80) | y óleo sobre tabla, 209 × 81 cm (Museo del Prado, P02177)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Ad%C3%A1n_y_Eva_(D%C3%BArero)",
+        "snippet": "Durero usó el Edén como excusa para imponer al norte de Europa el canon clásico de proporciones. La caída del hombre como tratado de anatomía ideal.",
+        "analysis": "El grabado de 1504 es una demostración técnica y teórica: Durero construyó ambos cuerpos con compás y regla según las proporciones de Vitruvio que había estudiado en Venecia, y colocó junto a ellos cuatro animales —el alce, el buey, el conejo y el gato— que representan los cuatro humores del temperamento humano, en perfecto equilibrio antes de la caída. El gato acecha al ratón a los pies de Eva: en el instante en que ella muerda el fruto, ese equilibrio se romperá. Las tablas del Prado, tres años posteriores, trasladan esa misma investigación al óleo y a tamaño natural, sobre fondo negro y sin paisaje alguno.",
+        "history": "Durero firmó el grabado con una tablilla colgada de la rama —«Albertus Durer Noricus faciebat 1504»— porque sabía que estaba haciendo algo sin precedentes en el norte. Las tablas del Prado fueron regaladas por la reina Cristina de Suecia a Felipe IV, y estuvieron a punto de ser destruidas por pudor: se salvaron escondidas en las salas reservadas de la Academia de San Fernando hasta el siglo XIX.",
+        "bio": "Alberto Durero (1471–1528), hijo de un orfebre húngaro instalado en Núremberg, fue el primer artista del norte que se pensó a sí mismo como intelectual y no como artesano. Viajó dos veces a Italia, escribió tratados sobre proporción y perspectiva, y llevó el grabado a un nivel técnico que no ha vuelto a superarse."
+      },
+      {
+        "title": "El Anciano de los Días",
+        "artist": "William Blake (1794)",
+        "meta": "Grabado en relieve iluminado a mano | c. 23 × 17 cm | Frontispicio de «Europe: A Prophecy»",
+        "wikiUrl": "https://es.wikipedia.org/wiki/El_anciano_de_los_d%C3%ADas",
+        "snippet": "Dios inclinado sobre el abismo midiendo el mundo con un compás. Para Blake, el acto de crear midiendo no es un don: es el nacimiento de la tiranía.",
+        "analysis": "Urizen —el demiurgo racionalista de la mitología propia de Blake— se asoma desde un disco solar y baja el brazo para trazar los límites del mundo con un compás de agrimensor, mientras el viento le echa el cabello y la barba hacia un lado. La imagen ilustra el versículo de Proverbios «cuando trazaba un círculo sobre la faz del abismo», pero Blake invierte su sentido: para él, encerrar la creación dentro de una medida es el gesto que aprisiona la imaginación. El compás es el instrumento de Newton y de la Ilustración, y Blake lo detestaba.",
+        "history": "Blake inventó para estos libros una técnica propia, el grabado en relieve iluminado: escribía e ilustraba directamente sobre la plancha con un barniz resistente al ácido, de modo que texto e imagen nacían juntos, y después coloreaba cada ejemplar a mano. Ningún ejemplar es igual a otro. Se dice que esta imagen se le apareció flotando en lo alto de la escalera de su casa en Lambeth, y que la consideró siempre su estampa preferida: en su lecho de muerte todavía estaba retocando un ejemplar.",
+        "bio": "Complementa a «Elohim creando a Adán», ya presente en la colección, y completa la teología invertida de Blake: crear el mundo material y crear al hombre son, en su mitología, dos actos del mismo dios equivocado."
+      },
+      {
+        "title": "El sacrificio de Isaac",
+        "artist": "Caravaggio (c. 1603)",
+        "meta": "Óleo sobre lienzo | 104 × 135 cm | Galleria degli Uffizi, Florencia",
+        "wikiUrl": "https://es.wikipedia.org/wiki/El_sacrificio_de_Isaac_(Caravaggio)",
+        "snippet": "El primer cuadro de Génesis 12-50 de la colección, y el más brutal: Caravaggio pinta a un niño real, con la cara aplastada contra la piedra, gritando.",
+        "analysis": "Caravaggio elimina toda solemnidad. Abraham sujeta la cabeza de Isaac contra el altar con la mano abierta, aplastándole la mejilla contra la piedra, y el cuchillo ya está en posición; el niño grita con la boca abierta y los ojos desorbitados, y su grito es lo único que ocupa el centro exacto del lienzo. El ángel irrumpe por la izquierda y agarra físicamente la muñeca del padre —no basta una señal, hace falta la fuerza— mientras señala con la otra mano el carnero. La luz cae de lado y deja media escena en tinieblas, como siempre en Caravaggio.",
+        "history": "Fue pintado para el cardenal Maffeo Barberini, futuro papa Urbano VIII, que pagó por él cien escudos en varios plazos entre 1603 y 1604. Existe una segunda versión atribuida en Princeton. El pasaje de Génesis 22 —la Aqedah, la «atadura» de Isaac— es el episodio más incómodo del libro y el que ha generado más literatura filosófica: Kierkegaard construyó sobre él Temor y temblor entero.",
+        "bio": "Michelangelo Merisi da Caravaggio (1571–1610) trabajó siempre del natural, con modelos tomados de la calle y sin dibujo previo, lo que escandalizó a sus contemporáneos tanto como su vida violenta. Huyó de Roma en 1606 tras matar a un hombre y murió a los treinta y ocho años en la playa de Porto Ercole."
+      },
+      {
+        "title": "El sacrificio de Isaac",
+        "artist": "Rembrandt van Rijn (1635)",
+        "meta": "Óleo sobre lienzo | 193 × 133 cm | Museo del Hermitage, San Petersburgo",
+        "wikiUrl": "https://es.wikipedia.org/wiki/El_sacrificio_de_Isaac_(Rembrandt)",
+        "snippet": "El mismo instante que Caravaggio, resuelto al revés: el ángel sorprende a Abraham, el cuchillo cae por el aire y la mano del padre tapa por completo el rostro del hijo.",
+        "analysis": "Compararlo con el Caravaggio de al lado es una lección entera de historia del arte. Rembrandt elige el segundo exacto en que el ángel agarra la muñeca de Abraham y el cuchillo, ya soltado, queda suspendido en el aire cayendo. La mano enorme del padre cubre íntegramente la cara de Isaac —no vemos su expresión, solo la garganta ofrecida y el cuerpo blanco arqueado—, y toda la emoción se traslada al rostro de Abraham, que se vuelve hacia el ángel con la boca entreabierta y los ojos vacíos de quien todavía no ha entendido.",
+        "history": "Rembrandt lo pintó a los veintinueve años, en pleno éxito en Ámsterdam. Existe una segunda versión en Múnich, firmada «Rembrandt corrigió y repintó», que se considera obra de su taller retocada por él. La elección de tapar el rostro de la víctima con la mano del verdugo es un hallazgo narrativo que reaparece en toda su obra tardía: lo que no se muestra pesa más que lo que se muestra.",
+        "bio": "Rembrandt Harmenszoon van Rijn (1606–1669) pintó y grabó asuntos bíblicos durante toda su vida con una libertad interpretativa inusual para un protestante de su época, tratándolos siempre como escenas domésticas y psicológicas antes que como teofanías."
+      },
+      {
+        "title": "La Trinidad (La hospitalidad de Abraham)",
+        "artist": "Andréi Rubliov (1425–1427)",
+        "meta": "Temple sobre tabla | 141,5 × 114 cm | Galería Tretiakov, Moscú (Inv. 13012)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Trinidad_(Rubl%C3%B3v)",
+        "snippet": "Los tres viajeros que Abraham hospeda junto al encinar de Mamré, convertidos en el icono más famoso jamás pintado. Toda la composición gira alrededor de un hueco.",
+        "analysis": "Génesis 18 cuenta que tres hombres se presentaron ante la tienda de Abraham y él les lavó los pies y les dio de comer; la tradición cristiana leyó en ellos la Trinidad. Rubliov elimina a Abraham y a Sara y deja solo a los tres ángeles sentados alrededor de una mesa, inclinados unos hacia otros en un círculo que no se cierra: el lado del espectador queda abierto. En el centro hay una copa, y las siluetas de los dos ángeles laterales dibujan a su vez la forma de otra copa mayor. La perspectiva es invertida —las líneas convergen hacia fuera, hacia quien mira—, de modo que el espacio del icono se abre hacia la sala en lugar de hundirse en la tabla.",
+        "history": "Fue pintado para el monasterio de la Trinidad y San Sergio en memoria de San Sergio de Rádonezh. Durante siglos estuvo cubierto por una funda de plata dorada que solo dejaba ver los rostros y las manos, y ennegrecido por el aceite de las lámparas; se restauró en 1904 y el color original —el lapislázuli intenso de los mantos, el oro del fondo— reapareció intacto. En 2023 fue trasladado desde la Tretiakov a la Iglesia ortodoxa rusa, una decisión que los conservadores del museo advirtieron que ponía en riesgo su integridad material.",
+        "bio": "Andréi Rubliov (c. 1360–1430) fue monje y pintor de iconos, y su obra marca el punto más alto de la pintura medieval rusa. La Iglesia ortodoxa lo canonizó en 1988. Tarkovski le dedicó en 1966 una película que es, entre otras cosas, una meditación sobre el silencio del artista frente a la violencia de su tiempo."
+      },
+      {
+        "title": "La lucha de Jacob con el ángel",
+        "artist": "Eugène Delacroix (1854–1861)",
+        "meta": "Óleo y cera sobre muro | c. 751 × 485 cm | Capilla de los Santos Ángeles, Saint-Sulpice, París",
+        "wikiUrl": "https://es.wikipedia.org/wiki/La_lucha_de_Jacob_con_el_%C3%A1ngel",
+        "snippet": "El testamento de Delacroix: un combate diminuto al pie de árboles gigantescos. La lucha decisiva de una vida ocurre en un rincón del paisaje.",
+        "analysis": "Jacob embiste al ángel con todo el cuerpo, la cabeza baja, el hombro por delante, en la postura de quien empuja un muro; el ángel apenas se mueve y ni siquiera lo mira. Delacroix subordina la escena a un bosque de robles descomunales que ocupa la mitad superior del muro y empequeñece a las dos figuras, y a la izquierda la caravana de Jacob se aleja indiferente por el vado, sin enterarse de nada. La decisión de escala es el sentido de la obra: el combate del que depende el nombre de Israel sucede al margen, sin testigos.",
+        "history": "Delacroix trabajó doce años en esta capilla, ya enfermo, y la consideró su obra culminante. Se hizo instalar una vivienda cerca para no perder tiempo en desplazamientos. El fresco impresionó profundamente a los jóvenes que después harían el impresionismo, y Cézanne, Degas y Van Gogh acudieron a copiarlo. En Génesis 32 Jacob sale cojo del combate y recibe un nombre nuevo: Israel, «el que lucha con Dios».",
+        "bio": "Eugène Delacroix (1798–1863) fue la cabeza del romanticismo francés y el antagonista declarado del clasicismo de Ingres. Esta imagen procede de una fotografía tomada en la propia iglesia, ya que la obra es un muro y no existe reproducción de museo posible."
+      },
+      {
+        "title": "Jacob luchando con el ángel",
+        "artist": "Rembrandt van Rijn (c. 1659)",
+        "meta": "Óleo sobre lienzo | 137 × 116 cm | Gemäldegalerie, Berlín",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Jacob_Wrestling_with_the_Angel_(Rembrandt)",
+        "snippet": "El mismo combate que Delacroix, entendido como un abrazo. No hay violencia: el ángel sostiene a Jacob con una ternura desconcertante.",
+        "analysis": "Rembrandt suprime el paisaje, el vado, la caravana y la noche: solo quedan dos cuerpos entrelazados emergiendo de la penumbra. Y sobre todo suprime la lucha. El ángel rodea a Jacob con los brazos y apoya la mejilla casi sobre su hombro, con una expresión de compasión serena, mientras Jacob cierra los ojos y se abandona. Solo la mano del ángel, apoyada en la cadera de Jacob —el punto exacto que quedará dislocado—, recuerda que esto es un combate y no un consuelo. La ambigüedad es deliberada y define la lectura de Rembrandt del pasaje: no se vence a Dios, se resiste hasta ser bendecido.",
+        "history": "Pertenece a la última etapa del pintor, la de la pincelada espesa y las composiciones despojadas, cuando ya había perdido la casa, la fortuna y el favor del público de Ámsterdam. Colgarlo junto al Delacroix permite ver dos temperamentos opuestos ante el mismo versículo: el romántico lo convierte en paisaje y el barroco tardío, en intimidad.",
+        "bio": "Rembrandt (1606–1669) trató siempre el Antiguo Testamento como teatro doméstico. Vivía en el barrio judío de Ámsterdam y tomaba de sus vecinos los modelos y los tipos físicos de sus patriarcas."
+      },
+      {
+        "title": "La visión tras el sermón",
+        "artist": "Paul Gauguin (1888)",
+        "meta": "Óleo sobre lienzo | 72,2 × 91 cm | National Galleries of Scotland, Edimburgo",
+        "wikiUrl": "https://es.wikipedia.org/wiki/La_visi%C3%B3n_despu%C3%A9s_del_serm%C3%B3n",
+        "snippet": "Un campo rojo bermellón donde no debería haberlo. El cuadro que rompió con el impresionismo usando como pretexto la lucha de Jacob con el ángel.",
+        "analysis": "Unas campesinas bretonas con cofia blanca salen de misa y ven, al fondo, la escena del sermón que acaban de oír: Jacob y el ángel luchando sobre un prado de un rojo bermellón imposible. Un tronco de manzano cruza el lienzo en diagonal separando el mundo real del visionario, recurso tomado directamente de la estampa japonesa. Gauguin abandona aquí la observación del natural: el color deja de describir la luz y pasa a expresar un estado mental. Es el acta de nacimiento del sintetismo y, con él, de buena parte de la pintura del siglo XX.",
+        "history": "Gauguin lo pintó en Pont-Aven y quiso donarlo a la iglesia del pueblo vecino de Nizon; el párroco lo rechazó, sospechando que se burlaba de sus feligresas. Escribió a Van Gogh describiéndolo con orgullo y explicándole que el paisaje y la lucha «solo existen en la imaginación de la gente que reza».",
+        "bio": "Paul Gauguin (1848–1903) fue agente de bolsa hasta los treinta y cinco años, cuando abandonó su trabajo y a su familia para pintar. Murió en las Marquesas, enfermo y arruinado, tras años de conflicto con la administración colonial francesa."
+      },
+      {
+        "title": "Agar en el desierto",
+        "artist": "Jean-Baptiste-Camille Corot (1835)",
+        "meta": "Óleo sobre lienzo | 180,3 × 270,5 cm | Metropolitan Museum of Art, Nueva York (38.64)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Camille_Corot",
+        "snippet": "La esclava egipcia repudiada y su hijo, abandonados bajo un cielo enorme. Corot pinta la sed y la desolación convirtiendo el desierto en el verdadero protagonista.",
+        "analysis": "Agar levanta los brazos al cielo en un grito mientras Ismael yace desfallecido bajo un arbusto, y sobre ellos el ángel aparece diminuto en el aire. Pero lo que domina el lienzo —casi tres metros de ancho— es la extensión pedregosa y el cielo que la aplasta: Corot subordina la figura al paisaje y hace que la escala del abandono sea geográfica antes que emocional. La gama es sobria, casi monocroma, con el verde grisáceo que sería su marca.",
+        "history": "Génesis 21 cuenta que Sara exigió a Abraham que expulsara a Agar y a Ismael tras el nacimiento de Isaac, y que Dios abrió los ojos de Agar para que viera un pozo. El episodio es incómodo y esencial: de Ismael desciende, según la tradición, el linaje árabe. Corot presentó el cuadro en el Salón de 1835 como pieza de gran formato para consagrarse como pintor histórico; el público lo aplaudió por el paisaje y apenas reparó en el asunto bíblico.",
+        "bio": "Camille Corot (1796–1875) fue el puente entre el paisaje clásico y el impresionismo. Trabajó al aire libre décadas antes de que fuera costumbre, y fue tan generoso con los pintores jóvenes y necesitados que se decía que había firmado más cuadros de los que pintó."
+      },
+      {
+        "title": "La túnica de José",
+        "artist": "Diego Velázquez (1630)",
+        "meta": "Óleo sobre lienzo | 223 × 250 cm | Monasterio de San Lorenzo de El Escorial",
+        "wikiUrl": "https://es.wikipedia.org/wiki/La_t%C3%BAnica_de_Jos%C3%A9",
+        "snippet": "Los hermanos muestran a Jacob la túnica ensangrentada y mienten. Velázquez pinta el momento en que un padre se cree la mentira.",
+        "analysis": "Los hijos de Jacob presentan a su padre la túnica de José manchada de sangre de cabrito, insinuando que una fiera lo ha devorado. Velázquez organiza la escena como un interrogatorio: Jacob se echa hacia atrás con los brazos abiertos, los hijos gesticulan con distintos grados de convicción —uno señala, otro mira al suelo, otro observa la reacción del padre—, y el perro ladra a los mentirosos, único personaje que no se deja engañar. El suelo embaldosado en perspectiva y el escorzo de las figuras revelan lo que el pintor acababa de aprender en Italia.",
+        "history": "Fue pintado en Roma durante el primer viaje italiano de Velázquez, junto con La fragua de Vulcano, y ambos son ejercicios deliberados: quiso demostrar que dominaba el desnudo masculino, la perspectiva y la composición de muchas figuras, las tres cosas que en Madrid no había tenido ocasión de practicar. Se conservan en El Escorial desde el siglo XIX.",
+        "bio": "Diego Velázquez (1599–1660) tenía treinta y un años y ya era pintor de cámara de Felipe IV. El episodio de José (Génesis 37-50) cierra el libro y es la novela más larga y estructurada del Antiguo Testamento: traición fraterna, esclavitud, ascenso político en Egipto y perdón final."
+      },
+      {
+        "title": "La destrucción de Sodoma y Gomorra",
+        "artist": "John Martin (1852)",
+        "meta": "Óleo sobre lienzo | 136,3 × 212,3 cm | Laing Art Gallery, Newcastle upon Tyne",
+        "wikiUrl": "https://en.wikipedia.org/wiki/John_Martin_(painter)",
+        "snippet": "Fuego que cae del cielo sobre dos ciudades enteras, y en primer plano la mujer de Lot volviéndose a mirar. El apocalipsis como espectáculo de masas.",
+        "analysis": "Martin lleva el sublime romántico a su extremo: un cielo entero convertido en incendio, relámpagos que caen en cortinas sobre la llanura y unas ciudades reducidas a siluetas incandescentes al fondo. En primer término, Lot y sus hijas huyen mientras la esposa se detiene y se vuelve —el instante exacto anterior a convertirse en estatua de sal—. La desproporción entre las figuras minúsculas y la escala del cataclismo es el asunto verdadero del cuadro.",
+        "history": "Martin fue el pintor más popular de la Inglaterra victoriana entre el gran público y el más despreciado por la crítica, que lo consideraba un fabricante de efectos. Sus grabados apocalípticos se vendieron por decenas de miles y moldearon la iconografía del fin del mundo hasta el cine: la estética de las superproducciones bíblicas de Hollywood procede de él en línea directa.",
+        "bio": "John Martin (1789–1854) completa en esta colección el arco del juicio divino: junto al Diluvio de Miguel Ángel, de Van Scorel y de Turner, Sodoma es la segunda gran destrucción del Génesis, y la única que ocurre ya dentro de la historia patriarcal."
+      },
+      {
+        "title": "El jardín de las delicias",
+        "artist": "Hieronymus Bosch, El Bosco (c. 1490–1500)",
+        "meta": "Óleo sobre tabla | 205,5 × 384,9 cm abierto | Museo Nacional del Prado, Madrid (P02823)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/El_jard%C3%ADn_de_las_delicias",
+        "snippet": "El Edén, el mundo y el infierno en una sola tabla, a 30.000 píxeles de ancho. La obra que mejor recompensa el zoom de esta colección.",
+        "analysis": "El tríptico se lee de izquierda a derecha como una historia del género humano: en la tabla izquierda, Dios presenta Eva a Adán en un Paraíso ya recorrido por animales extraños y presagios inquietantes; en la central, una humanidad desnuda e innumerable se entrega a un carnaval erótico entre frutas gigantes y criaturas imposibles; en la derecha, un infierno musical nocturno donde los instrumentos se han convertido en instrumentos de tortura. No hay consenso sobre si el panel central es una advertencia moral o la representación de una inocencia perdida: cinco siglos de interpretaciones no lo han cerrado.",
+        "history": "Aparece documentado en 1517 en el palacio de Bruselas de los Nassau, pasó a Felipe II —que lo compró en almoneda en 1591 y lo llevó a El Escorial— y de allí al Prado en 1939. Fray José de Sigüenza lo defendió en 1605 de quienes lo tachaban de herético con un argumento que sigue siendo el mejor: que en los demás cuadros se pinta al hombre por fuera, y en este por dentro.",
+        "bio": "De Hieronymus van Aken, El Bosco (c. 1450–1516), se sabe muy poco: vivió toda su vida en 's-Hertogenbosch, perteneció a la Hermandad de Nuestra Señora y murió acomodado. Esta imagen procede de la campaña de digitalización del Prado y es de resolución extraordinaria, lo que la convierte en la mejor pieza de la colección para inspeccionar en detalle extremo."
+      },
+      {
+        "title": "Lot y sus hijas",
+        "artist": "Peter Paul Rubens (c. 1613–1614)",
+        "meta": "Óleo sobre lienzo | 108 × 146 cm | Staatliches Museum Schwerin, Alemania",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Lot_(B%C3%ADblia)",
+        "snippet": "Génesis 19, la parte del episodio que casi nunca se cita: lo que ocurre en la cueva después de que Sodoma arda.",
+        "analysis": "Rubens sitúa la escena en una gruta rocosa, iluminada por una sola fuente de luz, y compone las tres figuras en un triángulo apretado que no deja salida visual. Las hijas rodean al padre, una le acerca la copa y la otra lo sostiene por detrás; Lot ya está ebrio y su rostro tiene la vaguedad blanda del alcohol. La carnación de Rubens, habitualmente celebratoria, aquí resulta incómoda a propósito: el pintor no juzga ni excusa, solo describe con una franqueza que resulta más perturbadora que cualquier condena.",
+        "history": "El pasaje es el reverso oscuro de la destrucción de Sodoma que John Martin pinta en esta misma colección: las hijas, creyendo que no queda nadie más en la tierra, emborrachan a su padre para concebir de él. De esa unión nacen, según el texto, los pueblos de Moab y Amón —los enemigos históricos de Israel—, de modo que el relato funciona además como una explicación etiológica y polémica del origen de los vecinos.",
+        "bio": "Rubens (1577–1640) trató el asunto varias veces. Que un pintor tan asociado a la exuberancia y al triunfo se detuviera en un episodio de incesto y embriaguez indica hasta qué punto el Antiguo Testamento le servía para explorar zonas que la pintura devocional tenía vedadas."
+      },
+      {
+        "title": "Eliezer y Rebeca",
+        "artist": "Nicolas Poussin (1648)",
+        "meta": "Óleo sobre lienzo | 118 × 197 cm | Musée du Louvre, París (INV 7270)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Nicolas_Poussin",
+        "snippet": "Génesis 24: el criado de Abraham reconoce a la esposa de Isaac por un gesto de cortesía junto al pozo. Poussin lo convierte en un friso de serenidad absoluta.",
+        "analysis": "Eliezer había pedido una señal: que la muchacha destinada a Isaac fuera la que le ofreciera de beber y diera además agua a sus camellos. Poussin elimina los camellos —decisión que le reprocharon sus contemporáneos y que él defendió como necesaria para no distraer— y organiza a las jóvenes del pozo en una banda horizontal de figuras clásicas, cada una en una actitud distinta, como un relieve romano desplegado. El instante elegido es el más quieto posible: Rebeca acaba de escuchar la petición y todavía no ha respondido.",
+        "history": "Fue pintado para Jean Pointel, banquero y coleccionista lionés amigo del pintor. Se convirtió en el cuadro más copiado por los alumnos de la Academia francesa durante dos siglos, precisamente por su claridad compositiva: era el modelo de cómo distribuir muchas figuras sin desorden.",
+        "bio": "Nicolas Poussin (1594–1665) pasó casi toda su vida en Roma pintando para un círculo reducido de coleccionistas eruditos. Su método era casi teatral: modelaba figuritas de cera, las disponía en una caja escenario y estudiaba la luz sobre ellas antes de tocar el lienzo."
+      },
+      {
+        "title": "Isaac bendice a Jacob",
+        "artist": "José de Ribera (1637)",
+        "meta": "Óleo sobre lienzo | 129 × 289 cm | Museo Nacional del Prado, Madrid",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Isaac_y_Jacob",
+        "snippet": "Génesis 27: el engaño fundacional. Un padre ciego palpa unas manos cubiertas de piel de cabrito y bendice al hijo equivocado.",
+        "analysis": "Ribera construye la escena sobre el tacto, porque el tacto es el sentido con el que Isaac es engañado. El anciano ciego alarga la mano y palpa el brazo de Jacob, cubierto con la piel del cabrito que lo hace pasar por el velludo Esaú; Rebeca, la madre que ha urdido el engaño, aparece a la derecha vigilando con el dedo en los labios. El formato apaisado extremo obliga a leer la escena de izquierda a derecha, como una frase. El naturalismo tenebrista de Ribera —la piel arrugada, las uñas, la ropa raída— vuelve tangible lo que el texto solo insinúa.",
+        "history": "El episodio es moralmente escandaloso y la Biblia no lo censura: Jacob obtiene la primogenitura mediante una estafa y aun así es el elegido. Es uno de los pasajes que mejor ilustran el argumento del ensayo Post-Babel de esta colección — que a partir de Génesis 12 el relato abandona los arquetipos cósmicos y entra en la psicología familiar, con sus favoritismos, engaños y rencores.",
+        "bio": "José de Ribera (1591–1652), valenciano establecido en Nápoles, fue llamado allí «lo Spagnoletto». Aunque nunca regresó a España, trabajó casi siempre para los virreyes españoles, y por eso sus obras mayores acabaron en el Prado y en El Escorial."
+      },
+      {
+        "title": "El sueño de Jacob",
+        "artist": "José de Ribera (1639)",
+        "meta": "Óleo sobre lienzo | 179 × 233 cm | Museo Nacional del Prado, Madrid",
+        "wikiUrl": "https://es.wikipedia.org/wiki/El_sue%C3%B1o_de_Jacob",
+        "snippet": "Génesis 28, la escala que une el cielo y la tierra. Ribera no pinta la escala: pinta a un hombre dormido en el suelo y una luz. Ahí está toda la audacia.",
+        "analysis": "La tradición había representado siempre este pasaje con una escalera de mano poblada de ángeles subiendo y bajando. Ribera la suprime entera. Lo que queda es un joven dormido sobre la tierra desnuda, la cabeza apoyada en una piedra, el bastón caído, y a la izquierda un resplandor dorado en el que apenas se adivinan formas alígeras disolviéndose en la luz. La visión no se muestra: se sugiere como algo que ocurre dentro del que duerme. El tratamiento de la carne, del pelo revuelto y de la tela basta es de un naturalismo extremo, y contrasta violentamente con esa zona de pura pintura luminosa.",
+        "history": "Es una de las obras más modernas del siglo XVII español y ha sido leída como un antecedente lejano del romanticismo. La imagen de esta colección procede de la campaña de digitalización del Prado y supera los 680 megapíxeles, lo que permite acercarse hasta el grano del lienzo y la pincelada individual.",
+        "bio": "Ribera pintó el cuadro para el virrey de Nápoles. El pasaje —«ciertamente el Señor está en este lugar y yo no lo sabía»— da nombre a Betel, y es el momento en que el estafador de Génesis 27 recibe por primera vez la promesa divina directamente."
+      },
+      {
+        "title": "El invierno, o El Diluvio",
+        "artist": "Nicolas Poussin (1660–1664)",
+        "meta": "Óleo sobre lienzo | 118 × 160 cm | Musée du Louvre, París (INV 7306)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Las_cuatro_estaciones_(Poussin)",
+        "snippet": "El último cuadro de Poussin y uno de los más sombríos de la pintura francesa: el Diluvio sin arca, sin dios y sin esperanza, resuelto entero en gris y plomo.",
+        "analysis": "Poussin renuncia a todo lo que el asunto invitaba a pintar. No hay arca protagonista, no hay ángeles, no hay musculatura miguelangelesca: solo una luz plomiza, una roca, una barca que zozobra, un caballo que se ahoga y una serpiente que repta por una piedra en primer término. La paleta se reduce casi a la monocromía —grises verdosos, negros, un relámpago blanco— y las figuras son minúsculas frente a la masa de agua. Es un cuadro construido por sustracción: cada elemento que un pintor barroco habría añadido está deliberadamente ausente, y esa ausencia es la que produce el desamparo.",
+        "history": "Forma parte de Las cuatro estaciones, la serie que Poussin pintó ya anciano y con la mano temblorosa para el duque de Richelieu, y en la que cada estación lleva además un episodio bíblico: la primavera es el Paraíso terrenal, el verano Rut y Booz, el otoño los exploradores de Canaán y el invierno el Diluvio. El ciclo entero es una historia de la humanidad en cuatro tiempos, y el invierno es su final. Fue el último cuadro que terminó. La crítica del siglo XIX lo consagró como su obra maestra: para muchos románticos franceses, este Diluvio era el cuadro más sublime del Louvre.",
+        "bio": "Nicolas Poussin (1594–1665) murió en Roma un año después de acabar la serie. Junto a su «Eliezer y Rebeca», también en esta colección y también en el Louvre, muestra sus dos registros opuestos: la claridad serena del relato patriarcal y la desolación sin retórica del cataclismo."
+      }
+    ];
+    BOOKS.genesis.groups = [
+      [
+        {
+          "src": "./Génesis/01_La_Creacion_de_Adan_Wikipedia_Cropped.jpg",
+          "title": "La Creación de Adán — Miguel Ángel (Wikipedia Master, 1512)"
+        },
+        {
+          "src": "./Génesis/01_La_Creacion_de_Adan_Miguel_Angel_1512.jpg",
+          "title": "La Creación de Adán (Vista Techo Sixtina) — Miguel Ángel (1512)"
+        },
+        {
+          "src": "./Génesis/01b_La_Creacion_de_Adan_Manos_Miguel_Angel_1512.jpg",
+          "title": "La Creación de Adán (Detalle Manos) — Miguel Ángel (1512)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/02_La_Expulsion_del_Paraiso_Masaccio_Wikipedia_Master.jpg",
+          "title": "La Expulsión del Paraíso — Masaccio (Wikipedia Master, 1427)"
+        },
+        {
+          "src": "./Génesis/02_La_Expulsion_del_Paraiso_Masaccio_1427.jpg",
+          "title": "La Expulsión del Paraíso — Masaccio (Fresco Restaurado, 1427)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/03_Cain_y_Abel_Tiziano_1544.jpg",
+          "title": "Caín y Abel — Tiziano (1544)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/04_El_Diluvio_Miguel_Angel_1509.jpg",
+          "title": "El Diluvio Universal — Miguel Ángel (1509)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/05_La_Torre_de_Babel_Pieter_Bruegel_1563.jpg",
+          "title": "La Torre de Babel — Pieter Bruegel el Viejo (1563)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/06_Cain_Fernand_Cormon_1880.jpg",
+          "title": "Caín — Fernand Cormon (1880)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/07_Elohim_Creando_a_Adan_William_Blake_1795.jpg",
+          "title": "Elohim creando a Adán — William Blake (1795)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/08_Sombra_y_Oscuridad_el_Diluvio_JMW_Turner_1843.jpg",
+          "title": "Sombra y oscuridad: La tarde del diluvio — J.M.W. Turner (1843)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/09_La_Confusion_de_las_Lenguas_Gustave_Dore_1865.jpg",
+          "title": "La confusión de las lenguas — Gustave Doré (1865)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/10_El_Diluvio_Jan_van_Scorel_1530.jpg",
+          "title": "El Diluvio Universal — Jan van Scorel (c. 1530)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg",
+          "title": "Tras el diluvio (El sol) — George Frederic Watts (1891)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/12_La_disminucion_de_las_aguas_Francis_Danby_1840.jpg",
+          "title": "La disminución de las aguas del diluvio — Francis Danby (1840)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/13_La_disminucion_de_las_aguas_Thomas_Cole_1829.jpg",
+          "title": "La disminución de las aguas del diluvio — Thomas Cole (1829)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/14_Adan_y_Eva_Lucas_Cranach_el_Viejo_1538.jpg",
+          "title": "Adán y Eva — Lucas Cranach el Viejo (c. 1538)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/15_Adan_y_Eva_Grabado_Alberto_Durero_1504.jpg",
+          "title": "Adán y Eva (grabado) — Alberto Durero (1504)"
+        },
+        {
+          "src": "./Génesis/15b_Adan_y_Eva_Alberto_Durero_1507.jpg",
+          "title": "Adán y Eva (tablas del Prado) — Alberto Durero (1507)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/16_El_Anciano_de_los_Dias_William_Blake_1794.jpg",
+          "title": "El Anciano de los Días — William Blake (1794)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/17_El_Sacrificio_de_Isaac_Caravaggio_1603.jpg",
+          "title": "El sacrificio de Isaac — Caravaggio (c. 1603)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/18_El_Sacrificio_de_Isaac_Rembrandt_1635.jpg",
+          "title": "El sacrificio de Isaac — Rembrandt (1635)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/19_La_Trinidad_de_Abraham_Andrei_Rublev_1425.jpg",
+          "title": "La Trinidad (La hospitalidad de Abraham) — Andréi Rubliov (1425-1427)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/20_Jacob_Luchando_con_el_Angel_Eugene_Delacroix_1861.jpg",
+          "title": "La lucha de Jacob con el ángel — Eugène Delacroix (1861)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/21_Jacob_Luchando_con_el_Angel_Rembrandt_1659.jpg",
+          "title": "Jacob luchando con el ángel — Rembrandt (c. 1659)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/22_La_Vision_tras_el_Sermon_Paul_Gauguin_1888.jpg",
+          "title": "La visión tras el sermón — Paul Gauguin (1888)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/23_Agar_en_el_Desierto_Camille_Corot_1835.jpg",
+          "title": "Agar en el desierto — Camille Corot (1835)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/24_La_Tunica_de_Jose_Diego_Velazquez_1630.jpg",
+          "title": "La túnica de José — Diego Velázquez (1630)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/25_La_Destruccion_de_Sodoma_y_Gomorra_John_Martin_1852.jpg",
+          "title": "La destrucción de Sodoma y Gomorra — John Martin (1852)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/26_El_Jardin_de_las_Delicias_El_Bosco_1505.jpg",
+          "title": "El jardín de las delicias — El Bosco (c. 1490-1500), tríptico completo"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/27_Lot_y_sus_Hijas_Peter_Paul_Rubens_1614.jpg",
+          "title": "Lot y sus hijas — Peter Paul Rubens (c. 1614)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/28_Eliezer_y_Rebeca_Nicolas_Poussin_1648.jpg",
+          "title": "Eliezer y Rebeca — Nicolas Poussin (1648)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg",
+          "title": "Isaac bendice a Jacob — José de Ribera (1637)"
+        },
+        {
+          "src": "./Génesis/29b_Isaac_Bendice_a_Jacob_Detalle_Jose_de_Ribera_1637.jpg",
+          "title": "Isaac bendice a Jacob (detalle) — José de Ribera"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg",
+          "title": "El sueño de Jacob — José de Ribera (1639)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg",
+          "title": "El invierno o El Diluvio — Nicolas Poussin (1660-1664)"
+        },
+        {
+          "src": "./Génesis/31b_El_Invierno_o_El_Diluvio_Detalle_Nicolas_Poussin_1664.jpg",
+          "title": "El invierno o El Diluvio (detalle) — Nicolas Poussin"
+        }
+      ]
+    ];
+
+    BOOKS.gilgamesh.details = [
+      {
+        "title": "Tablilla XI: el Diluvio",
+        "artist": "Biblioteca de Asurbanipal, Nínive (s. VII a.C.)",
+        "meta": "Arcilla con escritura cuneiforme | 15,2 × 13,3 cm | British Museum, Londres (K.3375)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Tablilla_del_Diluvio",
+        "snippet": "El objeto que obligó a reescribir la historia de la literatura: el relato del Diluvio mil años anterior al texto del Génesis, en once centímetros de arcilla cocida.",
+        "analysis": "Un fragmento de arcilla del tamaño de una mano que contiene el episodio más célebre de toda la literatura mesopotámica. En él, el superviviente Utnapishtim narra a Gilgamesh cómo el dios Ea le advirtió en secreto a través de un muro de cañas que construyera una nave, cómo embarcó en ella «la semilla de todo ser viviente», cómo la tormenta duró seis días y siete noches hasta que «toda la humanidad había vuelto a ser arcilla», y cómo la nave encalló en el monte Nimush. Desde allí soltó sucesivamente una paloma, una golondrina y un cuervo; solo el cuervo no regresó, señal de que las aguas habían bajado. Los paralelismos con Génesis 6-9 son tan literales —la nave calafateada con betún, las aves exploradoras, el sacrificio final cuyo aroma atrae a los dioses— que la lectura de esta tablilla transformó de raíz el estudio comparado del texto bíblico.",
+        "history": "El 3 de diciembre de 1872, George Smith, un grabador de billetes autodidacta que trabajaba clasificando fragmentos en el British Museum, descifró estas líneas y comprendió lo que tenía delante. Según la crónica de sus colegas, se levantó de la mesa y comenzó a desvestirse de pura excitación. La conferencia que pronunció ese mismo mes ante la Society of Biblical Archaeology, con el primer ministro Gladstone entre el público, provocó una conmoción teológica en toda Europa. El museo financió de inmediato una expedición a Nínive para buscar las líneas que faltaban, y Smith —con una fortuna difícil de creer— las encontró.",
+        "bio": "La tablilla procede de la biblioteca que Asurbanipal reunió en Nínive, cerca de la actual Mosul. La ciudad fue arrasada en 612 a.C. y el incendio que destruyó el palacio coció la arcilla de las tablillas, conservándolas precisamente al destruirlo todo lo demás. La versión estándar de la epopeya se atribuye al exorcista Sîn-lēqi-unninni, que hacia 1200 a.C. compiló y reelaboró poemas sumerios sobre Bilgamesh muy anteriores."
+      },
+      {
+        "title": "El héroe dominando un león",
+        "artist": "Palacio de Sargón II, Dur-Sharrukin (713 a.C.)",
+        "meta": "Relieve en alabastro yesoso | 4,42 m de altura | Museo del Louvre, París (AO 19862)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Dur_Sharrukin",
+        "snippet": "Un coloso de cuatro metros y medio que aplasta un león contra la cadera. La imagen que el mundo moderno adoptó como el rostro de Gilgamesh.",
+        "analysis": "Un héroe barbado de musculatura desmesurada estrecha contra su costado un león adulto, sujetándolo casi con desdén mientras empuña un arma curva en la mano libre. El escultor asirio resolvió la escena sin esfuerzo aparente: el león se retuerce, el hombre no. Toda la carga expresiva está en la desproporción entre la fiera —representada con enorme precisión anatómica— y la calma del cuerpo que la domina, un recurso de propaganda real que traduce en piedra la idea de que el orden humano contiene al caos animal.",
+        "history": "La identificación de esta figura con Gilgamesh es tradicional y muy popular, pero los asiriólogos la consideran dudosa: hoy se prefiere el nombre neutro de «héroe dominando un león», ya que el motivo aparece repetido como guardián en las fachadas del palacio sin inscripción que lo nombre. Aun así, fue esta imagen la que fijó en el imaginario occidental el aspecto físico del rey de Uruk. Fue excavada por Paul-Émile Botta entre 1843 y 1844 en la primera gran excavación asiria de la historia, cuyos hallazgos llegaron a París en barcaza por el Tigris y el mar.",
+        "bio": "Dur-Sharrukin («la fortaleza de Sargón») fue fundada de la nada por Sargón II en 713 a.C. como capital nueva del imperio asirio. El rey murió en batalla en 705 a.C., antes de que la ciudad estuviera terminada, y la corte la abandonó de inmediato: quedó como una capital intacta y deshabitada, lo que explica la excepcional conservación de sus relieves."
+      },
+      {
+        "title": "Gilgamesh y Huwawa",
+        "artist": "Placa babilónica antigua (c. 1800 a.C.)",
+        "meta": "Terracota moldeada | Ashmolean Museum, Universidad de Oxford",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Humbaba",
+        "snippet": "El combate contra el guardián del Bosque de los Cedros, modelado en barro por un artesano anónimo cuatro mil años antes de que existiera la palabra «héroe».",
+        "analysis": "Una placa de terracota de producción popular —moldeada en serie, no tallada por encargo real— que representa el episodio central de la primera mitad de la epopeya: Gilgamesh y Enkidu abatiendo a Huwawa (Humbaba), el ogro que el dios Enlil puso a custodiar el Bosque de los Cedros. Estas placas baratas se vendían por millares y se colgaban en casas particulares, lo que las convierte en el testimonio más elocuente de que la historia de Gilgamesh no era literatura de élite sino cultura popular viva en la Mesopotamia del segundo milenio.",
+        "history": "El episodio tiene una carga moral que la epopeya no resuelve: Huwawa suplica por su vida y Gilgamesh está a punto de perdonarlo, hasta que Enkidu le insiste en matarlo. La tala del bosque sagrado y el asesinato de su guardián son la falta por la que los dioses condenarán después a Enkidu a morir, en lo que constituye probablemente la primera reflexión conservada sobre la depredación del entorno natural como culpa.",
+        "bio": "El Bosque de los Cedros del poema se sitúa en los montes del Líbano o del Amanus, la fuente real de la madera que Mesopotamia —una llanura de barro sin piedra ni árboles— importaba a un coste enorme. La expedición mítica de Gilgamesh calca las expediciones madereras reales de los reyes sumerios y acadios."
+      },
+      {
+        "title": "La máscara de Humbaba",
+        "artist": "Ur, periodo paleobabilónico (2004–1595 a.C.)",
+        "meta": "Terracota | Museo de Sulaymaniyah, Kurdistán iraquí",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Humbaba",
+        "snippet": "Un rostro hecho de una sola línea continua que imita las entrañas de un animal de sacrificio: el monstruo y el arte adivinatorio son la misma cosa.",
+        "analysis": "El rostro del guardián del Bosque de los Cedros está modelado como un único surco enrollado sobre sí mismo, sin principio ni final visibles. No es un capricho decorativo: la epopeya describe la cara de Humbaba como un laberinto de intestinos, y los adivinos babilonios leían el porvenir en las circunvoluciones de las vísceras de los corderos sacrificados. La máscara es a la vez la imagen de un monstruo y un instrumento técnico de la hepatoscopia, la disciplina que interpretaba los pliegues de las entrañas.",
+        "history": "Encontrar en el rostro del enemigo la misma forma con la que se lee el destino resume la lógica religiosa mesopotámica: lo monstruoso no es lo ajeno, sino lo que revela el orden oculto del mundo. Se conservan varios ejemplares de estas máscaras y amuletos, colgados en umbrales y puertas con función apotropaica —proteger la casa mostrando algo aún más temible que la amenaza.",
+        "bio": "Procede de Ur, en el sur de Irak. La pieza se conserva en el Museo de Sulaymaniyah, institución que en las últimas décadas ha recuperado por compra y negociación numerosas antigüedades saqueadas para evitar que salieran definitivamente del país."
+      },
+      {
+        "title": "La Tablilla del Sueño",
+        "artist": "Mesopotamia, periodo paleobabilónico (c. 1600 a.C.)",
+        "meta": "Arcilla con escritura cuneiforme | 15 × 13 cm | Restituida a la República de Irak en 2021",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Tablilla_del_Sue%C3%B1o_de_Gilgamesh",
+        "snippet": "Los sueños premonitorios de Gilgamesh, en una tablilla saqueada en la guerra, vendida con documentación falsa a una cadena de manualidades y devuelta a Irak en 2021.",
+        "analysis": "El fragmento recoge el pasaje en que Gilgamesh relata a su madre, la diosa Ninsun, los sueños que anuncian la llegada de Enkidu: un meteorito que cae del cielo y un hacha, objetos que la ciudad entera rodea y que él abraza «como a una esposa». Ninsun los interpreta como el anuncio de un compañero que será su igual. Es uno de los episodios más singulares del poema, porque funda la amistad —y no la conquista— como motor narrativo.",
+        "history": "Su historia moderna es un relato en sí mismo. Saqueada de Irak, entró en Estados Unidos con documentación de procedencia falsificada y fue adquirida en 2014 por la cadena Hobby Lobby para el Museum of the Bible de Washington por cerca de 1,7 millones de dólares. Las autoridades federales la incautaron en 2019, un tribunal ordenó su decomiso y en septiembre de 2021 fue restituida oficialmente a la República de Irak. Se ha convertido en el caso emblemático del tráfico ilícito de antigüedades mesopotámicas.",
+        "bio": "Su resolución fotográfica es menor que la del resto de la colección porque la pieza ha estado sujeta a litigio y custodia judicial, y no existen todavía campañas de digitalización de museo sobre ella."
+      },
+      {
+        "title": "El relieve de la Reina de la Noche",
+        "artist": "Babilonia, periodo paleobabilónico (1800–1750 a.C.)",
+        "meta": "Terracota con restos de policromía | 49 × 37 × 5 cm | British Museum, Londres",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Relieve_Burney",
+        "snippet": "La diosa desnuda de pies de ave, alas caídas y ojos incrustados, flanqueada por leones y búhos. Probablemente la Ishtar que Gilgamesh se atreve a rechazar.",
+        "analysis": "Una mujer desnuda, frontal y perfectamente simétrica, se yergue sobre dos leones recostados y entre dos búhos. Tiene garras de rapaz en lugar de pies, alas plegadas hacia abajo —detalle que la distingue de las diosas benéficas, que las llevan extendidas— y sostiene en ambas manos la vara y el anillo, insignias del poder divino. Conserva restos del rojo intenso que cubría el cuerpo y del negro del fondo, de modo que originalmente la figura ardía sobre la oscuridad. Su identidad se discute desde hace un siglo: Ishtar, su hermana Ereshkigal, señora del inframundo, o la demonio Lilitu.",
+        "history": "El vínculo con la epopeya es directo si se trata de Ishtar. En la Tablilla VI, la diosa se ofrece a Gilgamesh y él la rechaza con una enumeración despiadada de los amantes que ella ha destruido antes. Humillada, Ishtar exige a su padre Anu el Toro Celeste para arrasar Uruk, y la matanza del toro es la falta que sella la condena a muerte de Enkidu. Es uno de los pocos momentos de la literatura antigua en que un héroe rechaza a una diosa y paga por ello.",
+        "bio": "La pieza toma su nombre alternativo del marchante Sidney Burney, que la poseyó desde 1935. El British Museum la adquirió en 2003 por su 250 aniversario. Los análisis confirmaron que la arcilla y los pigmentos son antiguos, zanjando un largo debate sobre su autenticidad."
+      },
+      {
+        "title": "El Vaso de Warka",
+        "artist": "Uruk, periodo protoliterario (c. 3200–3000 a.C.)",
+        "meta": "Alabastro tallado | 105 cm de altura | Museo Nacional de Irak, Bagdad",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Vaso_de_Warka",
+        "snippet": "La primera escena narrativa de la historia del arte, tallada en la ciudad cuyas murallas la epopeya atribuye a Gilgamesh.",
+        "analysis": "Un metro de alabastro dividido en tres franjas horizontales que se leen de abajo arriba como un relato: primero las aguas y las plantas, después los rebaños de ovejas y carneros, luego una procesión de hombres desnudos que portan ofrendas y, en la cima, la entrega de esos dones a la diosa Inanna ante las puertas de su templo. Es la composición narrativa continua más antigua que se conserva: alguien decidió, hace cinco mil años, que una imagen podía contar una secuencia en el tiempo y no solo mostrar una escena.",
+        "history": "El vaso fue saqueado del Museo Nacional de Irak durante el asalto de abril de 2003. Cuatro meses después, tres hombres lo devolvieron en el maletero de un coche, roto en catorce fragmentos. Había sido restaurado ya en la Antigüedad —conserva grapas de reparación de hace milenios— y volvió a serlo tras su regreso. Su historia material resume la de Mesopotamia entera: destrucción, pérdida y recomposición paciente.",
+        "bio": "Uruk fue la mayor ciudad del mundo hacia 3000 a.C., con unos 40.000 habitantes y seis kilómetros de muralla. La epopeya se abre y se cierra invitando a contemplar precisamente esa muralla: es lo único que Gilgamesh, derrotado en su búsqueda de la inmortalidad, deja tras de sí."
+      },
+      {
+        "title": "Lamassu, el guardián de la puerta",
+        "artist": "Palacio de Sargón II, Dur-Sharrukin (713 a.C.)",
+        "meta": "Alabastro yesoso | c. 4 m de altura | Museo del Louvre, París (procedente de la sala del trono de Khorsabad)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Lamassu",
+        "snippet": "Toro alado con rostro humano y cinco patas: de frente está quieto, de perfil camina. Un truco de escultor para que el guardián nunca esté en reposo.",
+        "analysis": "El lamassu combina el cuerpo de toro, las alas de águila y la cabeza humana coronada con la tiara de cuernos de la divinidad. Su rasgo más ingenioso es anatómicamente imposible: tiene cinco patas. Visto de frente, aparecen dos patas firmemente plantadas y la criatura está en reposo; visto de perfil desde el pasillo, se ven cuatro en zancada y la criatura avanza. El escultor resolvió con una sola pieza dos puntos de vista incompatibles, siglos antes de que existiera una teoría de la perspectiva.",
+        "history": "Estas figuras se emplazaban por pares flanqueando las puertas para repeler a los espíritus hostiles. Varios lamassu de Nimrud y Nínive fueron destruidos con martillos neumáticos y explosivos por el Estado Islámico entre 2015 y 2016, lo que ha convertido a los ejemplares conservados en museos europeos y norteamericanos en el registro principal de un arte que ya no puede visitarse en su lugar de origen.",
+        "bio": "El mundo del que sale la epopeya de Gilgamesh es este: una arquitectura concebida como un cuerpo protegido, con umbrales vigilados por criaturas híbridas. La muralla y la puerta —lo que separa la ciudad del caos exterior— son el objeto último del orgullo del rey de Uruk."
+      },
+      {
+        "title": "Sello cilíndrico del héroe y el toro",
+        "artist": "Mesopotamia, periodo acadio (c. 2334–2154 a.C.)",
+        "meta": "Serpentina tallada en hueco | Morgan Library & Museum, Nueva York",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Sello_cil%C3%ADndrico",
+        "snippet": "Un cilindro de piedra de pocos centímetros que, rodado sobre arcilla húmeda, imprime una escena de combate sin principio ni fin.",
+        "analysis": "El motivo del héroe barbado y desnudo que lucha con un búfalo mientras un hombre-toro somete a un león es el más repetido de la glíptica acadia, y es también el repertorio visual del que se nutren las lecturas iconográficas de Gilgamesh y Enkidu. La composición está pensada para ser cíclica: al rodar el cilindro, las figuras se encadenan indefinidamente, de modo que el combate no tiene desenlace. Talladas en hueco y en negativo sobre piedra dura de pocos centímetros, estas miniaturas exigían una destreza comparable a la de la orfebrería fina.",
+        "history": "El sello cilíndrico fue simultáneamente firma personal, amuleto y documento legal: se rodaba sobre el barro fresco de contratos, cartas y precintos de vasijas para autentificarlos. Era el objeto más íntimo de un mesopotámico, se llevaba colgado al cuello y acompañaba a su dueño a la tumba.",
+        "bio": "La colección de sellos de Pierpont Morgan, reunida a comienzos del siglo XX, es una de las más completas del mundo y ha sido fundamental para establecer la cronología del arte mesopotámico, ya que muchos ejemplares llevan inscrito el nombre y el oficio de su propietario."
+      }
+    ];
+    BOOKS.gilgamesh.groups = [
+      [
+        {
+          "src": "./Gilgamesh/01_Tablilla_XI_del_Diluvio_Biblioteca_de_Asurbanipal_650aC.jpg",
+          "title": "Tablilla XI del Diluvio — Biblioteca de Asurbanipal (s. VII a.C.)"
+        },
+        {
+          "src": "./Gilgamesh/01b_Tablilla_XI_del_Diluvio_Detalle_Biblioteca_de_Asurbanipal_650aC.jpg",
+          "title": "Tablilla XI del Diluvio (detalle del cuneiforme) — Nínive"
+        }
+      ],
+      [
+        {
+          "src": "./Gilgamesh/02_Gilgamesh_Dominando_un_Leon_Khorsabad_713aC.jpg",
+          "title": "Héroe dominando un león — Khorsabad (713 a.C.)"
+        },
+        {
+          "src": "./Gilgamesh/02b_Gilgamesh_Dominando_un_Leon_Vista_de_Sala_Khorsabad_713aC.jpg",
+          "title": "Héroe dominando un león (vista de sala) — Museo del Louvre"
+        }
+      ],
+      [
+        {
+          "src": "./Gilgamesh/03_Gilgamesh_y_Huwawa_Relieve_Babilonico_1800aC.jpg",
+          "title": "Gilgamesh y Huwawa — placa babilónica (c. 1800 a.C.)"
+        }
+      ],
+      [
+        {
+          "src": "./Gilgamesh/04_Mascara_de_Humbaba_Ur_1800aC.jpg",
+          "title": "Máscara de Humbaba — Ur (c. 1800 a.C.)"
+        }
+      ],
+      [
+        {
+          "src": "./Gilgamesh/05_Tablilla_del_Sueno_de_Gilgamesh_1600aC.jpg",
+          "title": "Tablilla del Sueño de Gilgamesh (c. 1600 a.C.)"
+        }
+      ],
+      [
+        {
+          "src": "./Gilgamesh/06_Relieve_de_la_Reina_de_la_Noche_Babilonia_1750aC.jpg",
+          "title": "Relieve de la Reina de la Noche — Babilonia (c. 1750 a.C.)"
+        }
+      ],
+      [
+        {
+          "src": "./Gilgamesh/07_Vaso_de_Warka_Uruk_3000aC.jpg",
+          "title": "Vaso de Warka — Uruk (c. 3000 a.C.)"
+        },
+        {
+          "src": "./Gilgamesh/07b_Vaso_de_Warka_Registro_Superior_Uruk_3000aC.jpg",
+          "title": "Vaso de Warka, registro superior (detalle) — Museo de Irak"
+        }
+      ],
+      [
+        {
+          "src": "./Gilgamesh/08_Lamassu_del_Palacio_de_Sargon_II_Khorsabad_713aC.jpg",
+          "title": "Lamassu del palacio de Sargón II — Khorsabad (713 a.C.)"
+        }
+      ],
+      [
+        {
+          "src": "./Gilgamesh/09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg",
+          "title": "Sello cilíndrico acadio del héroe y el toro (c. 2300 a.C.)"
+        }
+      ]
+    ];
+
+    BOOKS.iliada.details = [
+      {
+        "title": "Aquiles y Áyax jugando a los dados",
+        "artist": "Exekias (c. 540–530 a.C.)",
+        "meta": "Ánfora ática de figuras negras | 61 cm de altura | Museo Gregoriano Etrusco, Museos Vaticanos (inv. 16757)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Exequias_(alfarero)",
+        "snippet": "Los dos mejores guerreros del ejército griego, inclinados sobre un tablero. La escena más famosa de la cerámica griega no aparece en la Ilíada: se la inventó el pintor.",
+        "analysis": "Aquiles, con el yelmo puesto, y Áyax, con la cabeza descubierta, se inclinan sobre un tablero apoyando las lanzas. De sus bocas salen inscritas las palabras del juego: «tesara» (cuatro) dice Aquiles, «tria» (tres) responde Áyax. Toda la composición trabaja sobre una simetría deliberadamente rota: los escudos apoyados detrás encuadran a las dos figuras como un frontón, pero Aquiles conserva el yelmo y Áyax no, y ese único desequilibrio basta para que el ojo entienda quién domina la partida. El silencio absoluto de la escena, en un arte que solía representar combates, es lo que la ha vuelto inagotable.",
+        "history": "El episodio no figura en la Ilíada ni en ningún texto conservado: es una invención del propio Exekias, o el eco de una tradición perdida. Su fuerza reside en la ironía trágica —los dos héroes se distraen con un juego mientras la guerra sigue, y ambos morirán ante Troya, Áyax por su propia mano tras enloquecer al perder las armas de Aquiles. La pieza se halló en Vulci, en Etruria: la cerámica ática de lujo se exportaba masivamente a las tumbas etruscas, y por eso los mejores vasos griegos se conservan hoy en Italia.",
+        "bio": "Exekias es el maestro indiscutible de la técnica de figuras negras, y de los poquísimos ceramistas antiguos que firmó como alfarero y como pintor a la vez. Su gama expresiva —el detalle incisivo del cabello y de los bordados de las capas, la contención psicológica de las escenas— llevó la técnica a un punto que ya no podía superarse, poco antes de que la figura roja la sustituyera."
+      },
+      {
+        "title": "Júpiter y Tetis",
+        "artist": "Jean-Auguste-Dominique Ingres (1811)",
+        "meta": "Óleo sobre lienzo | 330 × 257 cm | Musée Granet, Aix-en-Provence, Francia",
+        "wikiUrl": "https://es.wikipedia.org/wiki/J%C3%BApiter_y_Tetis",
+        "snippet": "El Canto I de la Ilíada en un solo gesto: la nereida que toca la barbilla del dios para arrancarle la promesa que costará la vida a miles de griegos.",
+        "analysis": "Ingres ilustra el ruego con que arranca el poema: Tetis sube al Olimpo a pedir a Zeus que haga perder a los griegos para que Agamenón pague la humillación infligida a su hijo Aquiles. La deformación anatómica es deliberada y famosa: el brazo de Tetis carece de hueso, su cuello se alarga imposiblemente, sus dedos se derraman sobre la barba del dios como si fueran de cera. Zeus, en cambio, es un bloque frontal, hierático, casi arcaico, que no la mira. La súplica se resuelve en una diferencia de materia: lo blando que se enrosca contra lo pétreo que no cede.",
+        "history": "El cuadro fue el envío final de Ingres desde la Academia de Francia en Roma y fue recibido con desconcierto y hostilidad; se le reprochó precisamente aquello que hoy se admira, las licencias anatómicas y la frialdad del conjunto. Permaneció sin vender durante años hasta que el Estado lo adquirió en 1834. La escena elegida es la bisagra de todo el poema: es esta promesa arrancada la que desencadena las derrotas griegas, la muerte de Patroclo y, en cadena, la de Héctor.",
+        "bio": "Jean-Auguste-Dominique Ingres (1780–1867), discípulo de David y campeón del clasicismo frente al romanticismo de Delacroix, sostuvo toda su vida que el dibujo era «la probidad del arte». Sus distorsiones de la figura —el cuello largo, las vértebras de más— no eran errores sino decisiones de composición, y lo convirtieron a posteriori en un antecedente reivindicado por Picasso y Matisse."
+      },
+      {
+        "title": "La cólera de Aquiles",
+        "artist": "Jacques-Louis David (1819)",
+        "meta": "Óleo sobre lienzo | 105 × 145 cm | Kimbell Art Museum, Fort Worth, Texas",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Jacques-Louis_David",
+        "snippet": "Cuatro rostros, cuatro reacciones distintas al mismo horror. David pinta el instante exacto en que Aquiles descubre que la boda de Ifigenia es una mentira.",
+        "analysis": "Aquiles echa mano a la espada al comprender que la boda con Ifigenia era el pretexto para llevarla al sacrificio. David resuelve el drama sin acción: los cuatro personajes están casi inmóviles y todo ocurre en las miradas. Agamenón, con el brazo extendido, detiene al héroe solo con el peso de su autoridad y sostiene la mirada; Clitemnestra observa de reojo, ya calculando la venganza que dará origen a la Orestíada; Ifigenia baja los ojos, resignada. Es una lección de composición clásica: la tensión máxima obtenida con el mínimo movimiento.",
+        "history": "David lo pintó en Bruselas, en el exilio al que se vio obligado tras la caída de Napoleón por haber votado la muerte de Luis XVI. El tema, un padre que sacrifica a su hija por razón de Estado, difícilmente puede leerse al margen de esa circunstancia. El episodio pertenece a la prehistoria de la Ilíada —el sacrificio en Áulide que permite zarpar a la flota— y explica de dónde viene la desconfianza de Aquiles hacia Agamenón que estallará en el Canto I.",
+        "bio": "Jacques-Louis David (1748–1825) fue el pintor del neoclasicismo, de la Revolución francesa y después del Imperio. Diputado convencido, organizador de las fiestas revolucionarias y autor de La muerte de Marat, murió desterrado en Bruselas sin que se le permitiera regresar a Francia."
+      },
+      {
+        "title": "Andrómaca llorando a Héctor",
+        "artist": "Jacques-Louis David (1783)",
+        "meta": "Óleo sobre lienzo | 275 × 203 cm | Musée du Louvre, París (depósito ENSBA)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Jacques-Louis_David",
+        "snippet": "La obra con la que David entró en la Academia: la viuda de Héctor y el niño Astianacte junto al cadáver, en el duelo más doméstico de todo el poema.",
+        "analysis": "El cuerpo de Héctor yace en diagonal sobre el lecho fúnebre, iluminado con una crudeza casi anatómica, y Andrómaca se vuelve hacia el espectador con el gesto suspendido del llanto. A sus pies, el pequeño Astianacte tira de ella sin comprender. David sitúa deliberadamente las armas y el yelmo al fondo, apagados, para que el peso de la escena recaiga en lo civil y no en lo heroico: no es la muerte del mejor guerrero de Troya, es la de un marido y un padre. El espectador conoce lo que los personajes ignoran: el niño será arrojado desde las murallas cuando la ciudad caiga.",
+        "history": "Fue la obra de recepción con que David ingresó en la Academia Real en 1783 y consolidó el giro del gusto francés hacia el rigor moral del neoclasicismo, en contra del rococó. El encuentro de Héctor y Andrómaca en el Canto VI, con el niño asustado por el penacho del yelmo de su padre, es el pasaje más citado de la Ilíada como contrapeso doméstico a la carnicería del campo de batalla.",
+        "bio": "David tenía treinta y cinco años al pintarlo, recién vuelto de Roma. Dos años después presentaría El juramento de los Horacios, el cuadro que definiría la estética de toda una generación europea."
+      },
+      {
+        "title": "El triunfo de Aquiles",
+        "artist": "Franz von Matsch (1892)",
+        "meta": "Fresco monumental | Escalinata del palacio Achilleion, Corfú, Grecia",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Achilleion_(Corfu)",
+        "snippet": "Aquiles arrastra el cuerpo de Héctor ante las murallas de Troya, en un friso de más de cinco metros pintado para el palacio de la emperatriz Sissi.",
+        "analysis": "Un formato apaisado extremo —más del doble de ancho que de alto— que obliga a leer la escena como un friso antiguo. Aquiles conduce el carro a galope tendido arrastrando el cadáver de Héctor atado por los tobillos, mientras sobre la muralla las mujeres troyanas levantan los brazos. La composición carga todo el movimiento hacia la derecha y deja el cuerpo ultrajado en el centro exacto, de modo que la mirada no puede evitarlo. Es el momento del poema en que el héroe cruza la línea: la profanación del cadáver es la falta que los propios dioses le reprochan.",
+        "history": "Fue encargado para el Achilleion, el palacio que la emperatriz Isabel de Austria —Sissi— se hizo construir en Corfú en 1890 y que dedicó por entero a Aquiles, en quien veía la figura del héroe herido e incomprendido. Tras el asesinato de la emperatriz en 1898, el palacio fue comprado por el káiser Guillermo II, que hizo erigir en el jardín un Aquiles victorioso de ocho metros para contrarrestar el melancólico Aquiles moribundo que había elegido Sissi.",
+        "bio": "Franz von Matsch (1861–1942) formó con Gustav Klimt y su hermano Ernst la llamada «Compañía de Artistas», que decoró buena parte de los grandes edificios de la Ringstrasse vienesa. La sociedad se disolvió cuando Klimt derivó hacia la Secesión; Matsch permaneció fiel al historicismo académico."
+      },
+      {
+        "title": "Aquiles llorando la muerte de Patroclo",
+        "artist": "Gavin Hamilton (1760–1763)",
+        "meta": "Óleo sobre lienzo | 252 × 391 cm | National Galleries of Scotland, Edimburgo",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Gavin_Hamilton_(artist)",
+        "snippet": "El duelo que reorienta toda la Ilíada: Aquiles vuelve a la guerra no por Helena ni por Agamenón, sino por su amigo muerto.",
+        "analysis": "Hamilton dispone el cuerpo de Patroclo tendido en horizontal, lavado y preparado por las esclavas, mientras Aquiles se arroja sobre él con los brazos abiertos en un gesto de abandono absoluto. La luz cae sobre el cadáver y deja al héroe en penumbra, invirtiendo la jerarquía habitual. El pintor construye la escena como un relieve romano —figuras alineadas en un plano poco profundo, paralelo al lienzo—, un recurso arqueológico que después haría suyo David.",
+        "history": "Forma parte de un ciclo de seis grandes lienzos sobre la Ilíada que Hamilton pintó en Roma entre 1760 y 1775, difundidos por toda Europa mediante grabados que influyeron decisivamente en la formación del neoclasicismo. El episodio es el eje moral del poema: la cólera del Canto I era contra Agamenón y mantenía a Aquiles fuera del combate; la del Canto XVIII, provocada por esta muerte, lo devuelve a la batalla sabiendo que sellará su propia condena.",
+        "bio": "Gavin Hamilton (1723–1798) fue pintor, arqueólogo y marchante escocés instalado en Roma, donde excavó villas romanas y vendió antigüedades a los coleccionistas británicos que hacían el Grand Tour. Su doble condición de excavador y pintor explica el rigor arqueológico de sus composiciones."
+      },
+      {
+        "title": "Príamo pide a Aquiles el cuerpo de Héctor",
+        "artist": "Alexander Andreyevich Ivanov (1824)",
+        "meta": "Óleo sobre lienzo | 119 × 125 cm | Galería Estatal Tretiakov, Moscú",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Aleksandr_Ivanov",
+        "snippet": "El anciano rey besa la mano del hombre que ha matado a su hijo. El final real de la Ilíada, y una de las escenas más desarmantes de la literatura.",
+        "analysis": "Príamo ha cruzado de noche las líneas enemigas, solo, para arrodillarse ante Aquiles y suplicarle el cuerpo de Héctor. Ivanov elige el instante en que el rey le besa las manos «que habían matado a tantos de sus hijos», y la escena se sostiene sobre la asimetría de las posturas: el anciano doblado y el joven sentado, inmóvil, que aún no ha decidido. Lo que sigue en el poema es un llanto compartido —cada uno por sus propios muertos— y una comida en común: la Ilíada, que empieza con la palabra «cólera», termina con un funeral y con un enemigo tratado como huésped.",
+        "history": "Ivanov pintó el cuadro a los veinte años como trabajo académico en San Petersburgo, y le valió la medalla de oro y la beca que lo llevaría a Italia. El pasaje del Canto XXIV es la razón por la que muchos lectores consideran la Ilíada un poema sobre la piedad y no sobre la guerra.",
+        "bio": "Alexander Ivanov (1806–1858) pasó casi toda su vida en Roma consagrado a un solo lienzo, La aparición de Cristo ante el pueblo, en el que trabajó veinte años. Murió pocas semanas después de exponerlo por fin en Rusia."
+      },
+      {
+        "title": "La procesión del caballo de Troya",
+        "artist": "Giovanni Domenico Tiepolo (c. 1760)",
+        "meta": "Óleo sobre lienzo | 39 × 67 cm | National Gallery, Londres",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Giovanni_Domenico_Tiepolo",
+        "snippet": "La ciudad entera arrastra hacia dentro de sus propias murallas la máquina que la destruirá, en una fiesta pintada como una comedia veneciana.",
+        "analysis": "Tiepolo pinta el episodio como una celebración popular: multitudes minúsculas, banderas, polvo, y el caballo alzándose desmesurado sobre la marea humana que lo empuja hacia la puerta. Es un cuadro sobre el entusiasmo colectivo y su ceguera —nadie mira hacia arriba, nadie sospecha—, y la ironía se sostiene precisamente en la ligereza festiva de la pincelada. Se conserva junto a su pareja, La construcción del caballo, de modo que las dos telas cuentan la trampa entera, de la carpintería griega a la algarabía troyana.",
+        "history": "Ambas piezas son bocetos de pequeño formato para una serie mayor. El episodio no aparece en la Ilíada, que termina con el funeral de Héctor: procede de la Odisea y sobre todo de la Eneida de Virgilio, y es el complemento inevitable del ciclo troyano en la imaginación europea.",
+        "bio": "Giandomenico Tiepolo (1727–1804), hijo y principal colaborador de Giambattista, trabajó con su padre en Würzburg y en Madrid. Tras la muerte del padre desarrolló una obra propia, más irónica y popular, célebre por sus escenas de Polichinela y por una mirada mordaz sobre la Venecia en decadencia."
+      },
+      {
+        "title": "El juicio de Paris",
+        "artist": "Peter Paul Rubens (c. 1632–1635)",
+        "meta": "Óleo sobre tabla de roble | 144,8 × 193,7 cm | National Gallery, Londres (NG194)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/El_juicio_de_Paris_(Rubens)",
+        "snippet": "La manzana que desencadena diez años de guerra. Rubens pintó el origen de la Ilíada como un concurso de belleza a la orilla de un bosque flamenco.",
+        "analysis": "Paris, sentado a la izquierda con Mercurio, debe entregar la manzana «para la más hermosa» a Juno, Venus o Minerva. Rubens las dispone en tres cuartos, de espaldas y de frente, resolviendo de una sola vez el viejo problema académico de mostrar el desnudo desde todos los ángulos. Los atributos identifican a cada una: el pavo real de Juno, la armadura y la lechuza de Minerva, el pequeño Cupido junto a Venus. Sobre el grupo, la Discordia asoma entre nubes oscuras anunciando lo que vendrá.",
+        "history": "Rubens volvió una y otra vez sobre este asunto: se conservan al menos cuatro versiones suyas, y la de la National Gallery londinense es la más temprana de las tardías. Años después pintaría otra para Felipe IV destinada a la Torre de la Parada —hoy en el Prado—, en la que la Venus es un retrato reconocible de Hélène Fourment, su segunda esposa. El episodio es el motor causal de todo el ciclo troyano: la promesa que Venus hace a Paris de darle la mujer más bella del mundo es lo que acaba poniendo a Helena en Troya.",
+        "bio": "Peter Paul Rubens (1577–1640) fue además diplomático al servicio de los Habsburgo y dirigió en Amberes el taller más productivo de Europa. Pintó esta obra ya anciano y aquejado de gota, en los últimos años de su vida."
+      },
+      {
+        "title": "La máscara de Agamenón",
+        "artist": "Micenas, Círculo de Tumbas A (c. 1550–1500 a.C.)",
+        "meta": "Lámina de oro repujado | 26 cm de altura | Museo Arqueológico Nacional de Atenas (NAMA 624)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/M%C3%A1scara_de_Agamen%C3%B3n",
+        "snippet": "«He contemplado el rostro de Agamenón», telegrafió Schliemann. Se equivocaba por tres siglos, y aun así el nombre se quedó para siempre.",
+        "analysis": "Una lámina de oro batida sobre el rostro de un difunto, con los ojos a la vez cerrados y abiertos —los párpados marcados y las pupilas incisas—, orejas recortadas aparte y un bigote de puntas levantadas. La técnica es sencilla, casi tosca, y sin embargo el resultado tiene una frontalidad hipnótica. A diferencia de las otras máscaras del mismo conjunto, más esquemáticas, esta individualiza los rasgos hasta el punto de parecer un retrato, lo que ha alimentado durante siglo y medio la sospecha de que Schliemann la retocó o la introdujo.",
+        "history": "Heinrich Schliemann la desenterró en 1876 en el Círculo de Tumbas A de Micenas y anunció haber hallado la tumba de Agamenón. La datación posterior la sitúa hacia 1550-1500 a.C., unos tres siglos antes de la fecha tradicional de la guerra de Troya, de modo que no puede pertenecer al rey homérico. El nombre, sin embargo, resultó imposible de retirar. La disputa sobre su autenticidad sigue viva entre los arqueólogos.",
+        "bio": "Micenas es la «rica en oro» de Homero, y las excavaciones confirmaron esa riqueza aunque desmintieran la cronología. Lo que Schliemann demostró, pese a sus métodos destructivos y a sus anuncios precipitados, es que detrás del poema había una civilización real de la Edad del Bronce que nadie sospechaba."
+      },
+      {
+        "title": "La Puerta de los Leones",
+        "artist": "Ciudadela de Micenas (c. 1250 a.C.)",
+        "meta": "Piedra caliza | Dintel monolítico de unas 20 toneladas | Micenas, Argólida, Grecia",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Puerta_de_los_Leones",
+        "snippet": "La única escultura monumental micénica que nunca llegó a enterrarse: lleva tres mil doscientos años en pie, a la vista de todos.",
+        "analysis": "Sobre un dintel monolítico de unas veinte toneladas se abre un triángulo de descarga —solución constructiva que evita que el peso del muro aplaste el dintel— ocupado por dos felinos afrontados que apoyan las patas sobre un altar y flanquean una columna minoica de fuste invertido, más ancha arriba que abajo. Las cabezas, trabajadas aparte probablemente en un material más noble, se han perdido; miraban hacia el visitante que entraba. El conjunto es a la vez ingeniería y emblema heráldico, quizá el escudo de la dinastía que gobernaba la ciudadela.",
+        "history": "Los muros de bloques ciclópeos que la flanquean impresionaron tanto a los griegos posteriores que estos atribuyeron su construcción a los Cíclopes, incapaces de imaginar que hombres los hubieran levantado. La puerta nunca estuvo sepultada: siguió visible durante toda la Antigüedad, la Edad Media y la época moderna, de modo que Pausanias la describió en el siglo II y los viajeros la dibujaron mucho antes de que Schliemann excavara.",
+        "bio": "Micenas domina la llanura de la Argólida desde una colina entre dos barrancos. La civilización micénica colapsó hacia 1200-1100 a.C. en el derrumbe general de la Edad del Bronce; los siglos oscuros que siguieron son los que separan los hechos que pudieron inspirar el poema de la composición de la Ilíada, hacia el siglo VIII a.C."
+      },
+      {
+        "title": "El casco de colmillos de jabalí",
+        "artist": "Grecia micénica (c. 1400 a.C.)",
+        "meta": "Colmillos de jabalí sobre armazón de cuero | Museo Arqueológico Nacional de Atenas",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boar%27s_tusk_helmet",
+        "snippet": "La prueba material de que Homero recordaba con exactitud objetos que llevaban quinientos años sin fabricarse cuando compuso el poema.",
+        "analysis": "Un casco construido con láminas cortadas de colmillos de jabalí, cosidas en hileras alternas sobre un armazón de cuero y fieltro. Hacen falta los colmillos de treinta o cuarenta animales para uno solo, lo que lo convertía en un objeto de prestigio extraordinario más que en una pieza de combate práctica. La superficie resultante, escamada y nacarada, es inconfundible.",
+        "history": "Aquí reside su importancia para la lectura de la Ilíada. En el Canto X, Homero describe con detalle preciso el casco que recibe Ulises: de cuero, con hileras de blancos colmillos de jabalí a uno y otro lado. Estos cascos dejaron de fabricarse hacia el siglo XII a.C., siglos antes de que se compusiera el poema, y no se conocía ninguno hasta que la arqueología los sacó a la luz en el siglo XX. La coincidencia demostró que la tradición oral había transmitido durante medio milenio la memoria material exacta de un mundo desaparecido.",
+        "bio": "El hallazgo es uno de los argumentos centrales del debate sobre cuánto de la Ilíada es memoria histórica y cuánto invención poética. Junto a la copa de Néstor y a ciertos topónimos del Catálogo de las Naves, el casco pertenece al estrato más antiguo y verificable del poema."
+      },
+      {
+        "title": "Laocoonte y sus hijos",
+        "artist": "Agesandro, Polidoro y Atenodoro de Rodas (c. 40 a.C.)",
+        "meta": "Mármol | 208 cm de altura | Museos Vaticanos, Roma (inv. 1059)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Grupo_de_Laocoonte",
+        "snippet": "El sacerdote que advirtió a Troya contra el caballo, estrangulado por serpientes. Desenterrado en 1506, cambió el rumbo del arte europeo en una tarde.",
+        "analysis": "Laocoonte y sus dos hijos se retuercen atrapados por dos serpientes marinas en una composición piramidal que estalla en todas direcciones. La musculatura del torso está llevada a un punto de tensión que no existe en el cuerpo humano real: cada haz muscular se contrae a la vez, algo anatómicamente imposible, para que el dolor sea legible desde cualquier ángulo. Es la obra maestra del barroco helenístico y el manifiesto de una estética del pathos frente a la serenidad clásica.",
+        "history": "Fue desenterrada en Roma en enero de 1506, en una viña junto a la Domus Aurea. Miguel Ángel acudió corriendo a verla el mismo día y su efecto sobre él fue inmediato y duradero: la torsión y la tensión muscular de la Capilla Sixtina salen de aquí. El papa Julio II la compró de inmediato y la instaló en el Belvedere, donde se convirtió en la escultura antigua más célebre y más discutida de Europa. Lessing la tomó en 1766 como eje de su tratado Laocoonte, sobre los límites entre la pintura y la poesía.",
+        "bio": "El episodio no está en la Ilíada sino en el Libro II de la Eneida: Laocoonte advierte a los troyanos de que desconfíen del caballo —«temo a los griegos incluso cuando traen regalos»— y los dioses favorables a los aqueos lo silencian enviando las serpientes. Su muerte es la señal que convence a Troya de introducir la máquina."
+      },
+      {
+        "title": "Guerrero del frontón del templo de Afaya",
+        "artist": "Templo de Afaya, Egina (c. 500–480 a.C.)",
+        "meta": "Mármol de Paros | Gliptoteca de Múnich, Alemania",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Templo_de_Afaya",
+        "snippet": "Guerreros que caen sonriendo: el momento exacto, hacia 480 a.C., en que la escultura griega aprende a expresar y todavía no se atreve.",
+        "analysis": "Los dos frontones del templo representaban las expediciones griegas contra Troya, y sus figuras muestran una de las transiciones más fascinantes de la historia del arte. Los guerreros del frontón oeste, más antiguos, conservan la «sonrisa arcaica» incluso mientras mueren atravesados; los del frontón este, apenas una década posteriores, ya tienen rostros graves y cuerpos que reaccionan al dolor. En el mismo edificio conviven el arcaísmo y el severo, el antes y el después de la revolución clásica.",
+        "history": "Las esculturas fueron halladas en 1811 y compradas por el príncipe heredero Luis de Baviera. Antes de instalarlas encargó su restauración al escultor danés Bertel Thorvaldsen, que completó libremente los fragmentos que faltaban según el gusto neoclásico. Aquellas adiciones se retiraron en la restauración de los años sesenta del siglo XX, y hoy las piezas se exhiben fragmentarias.",
+        "bio": "Egina es la isla que se ve desde Atenas, y sus héroes —Áyax Telamonio y Aquiles entre ellos— descienden en la genealogía mítica del rey Éaco. El templo celebraba, por tanto, la participación de la estirpe local en la guerra de Troya."
+      },
+      {
+        "title": "Las murallas de Troya",
+        "artist": "Hisarlik, Anatolia noroccidental",
+        "meta": "Piedra y adobe | Nueve ciudades superpuestas, c. 3000 a.C. – 500 d.C. | Provincia de Çanakkale, Turquía",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Troya",
+        "snippet": "Nueve ciudades apiladas en una sola colina. Schliemann atravesó a golpe de zanja justamente la que buscaba.",
+        "analysis": "Lo que hoy se ve en Hisarlik no es una ciudad sino un montículo artificial formado por la superposición de al menos nueve asentamientos a lo largo de tres milenios y medio. Los muros en talud, de mampostería cuidada, corresponden a Troya VI, el nivel más monumental y el mejor candidato a la ciudad homérica. La colina domina la entrada de los Dardanelos, y esa posición —el peaje entre el Egeo y el mar Negro— basta para explicar por qué fue destruida y reconstruida tantas veces.",
+        "history": "Heinrich Schliemann excavó allí desde 1871 convencido de que la Ilíada era historia. Para llegar rápido a los niveles profundos abrió una gran trinchera norte-sur que arrasó buena parte de los estratos intermedios: destruyó, con toda probabilidad, precisamente la Troya que buscaba. El «Tesoro de Príamo» que anunció en 1873 pertenece a Troya II, mil años anterior a cualquier fecha posible para la guerra.",
+        "bio": "El yacimiento es Patrimonio de la Humanidad desde 1998. Las excavaciones posteriores, dirigidas por Manfred Korfmann desde 1988, revelaron una ciudad baja mucho más extensa de lo supuesto, lo que reabrió el debate sobre si Troya VI fue una capital capaz de sostener un asedio prolongado."
+      },
+      {
+        "title": "La muerte de Sarpedón",
+        "artist": "Eufronio, ceramista y pintor ático (c. 515 a.C.)",
+        "meta": "Crátera de cáliz ática de figuras rojas | 45,7 cm de altura | Museo Nacional Cerite, Cerveteri, Italia",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Crat%C3%A9ra_de_Eufronio",
+        "snippet": "Canto XVI. El Sueño y la Muerte levantan el cuerpo del hijo de Zeus. La pieza de cerámica griega más famosa del mundo, y la más disputada.",
+        "analysis": "Sarpedón, hijo de Zeus y rey de los licios, ha caído ante Patroclo. Hipnos y Tánatos —el Sueño y la Muerte, alados y armados— lo levantan del suelo mientras Hermes dirige la operación y dos guerreros observan. La sangre brota de las heridas en chorros dibujados con precisión; el cuerpo cuelga inerte con un peso que se percibe físicamente. Eufronio fue de los primeros en aprovechar la técnica de figuras rojas para dibujar la anatomía con líneas interiores en lugar de incisiones, y aquí musculatura, costillas y tendones se leen con una exactitud nueva en el arte griego.",
+        "history": "Su historia moderna es una novela: excavada clandestinamente en Cerveteri en 1971, fue comprada por el Metropolitan de Nueva York en 1972 por un millón de dólares —precio récord entonces— con una procedencia inventada. Tras décadas de investigación de los carabinieri italianos, el museo aceptó en 2006 devolverla, y desde 2008 está en Italia. En Homero, la muerte de Sarpedón es el momento en que Zeus se plantea salvar a su propio hijo y Hera le recuerda que ni siquiera un dios puede alterar el destino.",
+        "bio": "Eufronio (activo c. 520–470 a.C.) es el maestro del grupo de los «Pioneros» de la cerámica ática. Firmó como pintor una docena de vasos y, ya mayor, como alfarero: parece que abandonó el pincel al perder vista y siguió al frente del taller."
+      },
+      {
+        "title": "Tetis recibe las armas de Aquiles",
+        "artist": "Anton van Dyck (c. 1630–1632)",
+        "meta": "Óleo sobre lienzo | Bildergalerie de Sanssouci, Potsdam (GK I 7762)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Escudo_de_Aquiles",
+        "snippet": "Canto XVIII. La madre baja a la fragua a encargar la armadura con la que su hijo irá a morir. En el escudo, Hefesto graba el mundo entero.",
+        "analysis": "Van Dyck compone la escena sobre el contraste entre la carnación nacarada de Tetis y la penumbra rojiza de la forja: la nereida recibe de manos del dios cojo el casco y el escudo recién terminados, mientras los cíclopes trabajan al fondo. La luz procede del metal incandescente, no del cielo. Es un tema que Rubens había fijado en sus bocetos para la serie de Aquiles y que Van Dyck, su discípulo más brillante, resuelve con una elegancia más fría y aristocrática.",
+        "history": "El pasaje contiene la écfrasis más famosa de la literatura: Homero dedica más de ciento treinta versos a describir las escenas que Hefesto graba en el escudo —dos ciudades, una en paz con bodas y juicios, otra en guerra; la siembra, la siega, la vendimia, una danza, y el océano rodeándolo todo—. Es decir: en mitad de un poema de guerra, el objeto que llevará al héroe a matar contiene la imagen completa de la vida civil que la guerra destruye.",
+        "bio": "Anton van Dyck (1599–1641) fue el ayudante más precoz del taller de Rubens y después el retratista de la corte de Carlos I de Inglaterra. Su manera de pintar la piel y las telas definió el retrato aristocrático europeo durante siglo y medio."
+      }
+    ];
+    BOOKS.iliada.groups = [
+      [
+        {
+          "src": "./Ilíada/01_Aquiles_y_Ayax_Jugando_a_los_Dados_Exekias_540aC.jpg",
+          "title": "Aquiles y Áyax jugando a los dados — Exekias (c. 540 a.C.)"
+        },
+        {
+          "src": "./Ilíada/01b_Aquiles_y_Ayax_Jugando_a_los_Dados_Detalle_Exekias_540aC.jpg",
+          "title": "Aquiles y Áyax jugando a los dados (detalle) — Exekias"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/02_Jupiter_y_Tetis_Ingres_1811.jpg",
+          "title": "Júpiter y Tetis — Ingres (1811)"
+        },
+        {
+          "src": "./Ilíada/02b_Jupiter_y_Tetis_Detalle_Ingres_1811.jpg",
+          "title": "Júpiter y Tetis (detalle) — Ingres"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/03_La_Colera_de_Aquiles_Jacques_Louis_David_1819.jpg",
+          "title": "La cólera de Aquiles — Jacques-Louis David (1819)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/04_Andromaca_Llorando_a_Hector_Jacques_Louis_David_1783.jpg",
+          "title": "Andrómaca llorando a Héctor — Jacques-Louis David (1783)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/05_El_Triunfo_de_Aquiles_Franz_von_Matsch_1892.jpg",
+          "title": "El triunfo de Aquiles — Franz von Matsch (1892)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/06_Aquiles_Llorando_a_Patroclo_Gavin_Hamilton_1763.jpg",
+          "title": "Aquiles llorando la muerte de Patroclo — Gavin Hamilton (1763)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/07_Priamo_Pide_a_Aquiles_el_Cuerpo_de_Hector_Alexander_Ivanov_1824.jpg",
+          "title": "Príamo pide a Aquiles el cuerpo de Héctor — Alexander Ivanov (1824)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/08_La_Procesion_del_Caballo_de_Troya_Giandomenico_Tiepolo_1760.jpg",
+          "title": "La procesión del caballo de Troya — Giandomenico Tiepolo (c. 1760)"
+        },
+        {
+          "src": "./Ilíada/08b_La_Construccion_del_Caballo_de_Troya_Giandomenico_Tiepolo_1760.jpg",
+          "title": "La construcción del caballo de Troya — Giandomenico Tiepolo (c. 1760)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/09_El_Juicio_de_Paris_Peter_Paul_Rubens_1635.jpg",
+          "title": "El juicio de Paris — Peter Paul Rubens (c. 1635)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/10_Mascara_de_Agamenon_Micenas_1550aC.jpg",
+          "title": "Máscara de Agamenón — Micenas (c. 1550 a.C.)"
+        },
+        {
+          "src": "./Ilíada/10b_Mascara_de_Agamenon_Vista_Frontal_Micenas_1550aC.jpg",
+          "title": "Máscara de Agamenón (vista frontal) — Museo Arqueológico Nacional de Atenas"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/11_Puerta_de_los_Leones_Micenas_1250aC.jpg",
+          "title": "Puerta de los Leones — Micenas (c. 1250 a.C.)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/12_Casco_de_Colmillos_de_Jabali_Micenas_1400aC.jpg",
+          "title": "Casco de colmillos de jabalí — Micenas (c. 1400 a.C.)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/13_Laocoonte_y_sus_Hijos_Escuela_de_Rodas_40aC.jpg",
+          "title": "Laocoonte y sus hijos — escuela de Rodas (c. 40 a.C.)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/14_Fronton_del_Templo_de_Afaya_Egina_490aC.jpg",
+          "title": "Frontón del templo de Afaya — Egina (c. 490 a.C.)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/15_Murallas_de_Troya_Hisarlik_2500aC.jpg",
+          "title": "Murallas de Troya — Hisarlik, Turquía"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/16_La_Muerte_de_Sarpedon_Cratera_de_Eufronio_515aC.jpg",
+          "title": "La muerte de Sarpedón — crátera de Eufronio (c. 515 a.C.)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/17_Tetis_Recibe_las_Armas_de_Aquiles_Anton_van_Dyck_1632.jpg",
+          "title": "Tetis recibe de Hefesto las armas para Aquiles — Anton van Dyck (c. 1630-1632)"
+        }
+      ]
+    ];
+    /* ==== FIN DATOS GENERADOS ==== */
+
+    let currentBook = 'genesis';
+    const bookDetails = () => BOOKS[currentBook].details;
+    const bookGroups  = () => BOOKS[currentBook].groups;
+
+    let currentArtworkGroupIndex = 0;
+    let currentSubViewIndex = 0;
+
+    /* OBTENER LISTA PLANA DE TODAS LAS IMÁGENES Y VISTAS DE LA COLECCIÓN */
+    function getAllViewsList() {
+      const list = [];
+      bookGroups().forEach((group, groupIdx) => {
+        group.forEach((view, subViewIdx) => {
+          list.push({ groupIdx, subViewIdx, item: view });
+        });
+      });
+      return list;
+    }
+
+    /* CAMBIO DE SECCIÓN DENTRO DE UN LIBRO */
+    function switchTab(tabId, btnElement) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      // solo se desactivan los botones del nav del libro activo, no los de los otros libros
+      btnElement.closest('.book-nav')
+        .querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      btnElement.classList.add('active');
+    }
+
+    /* ────────── RENDERIZADO DE TARJETAS DESDE DATOS ──────────
+       Génesis conserva sus tarjetas escritas a mano. Los libros nuevos se dibujan desde
+       BOOKS[libro].details + .groups, de modo que dar de alta una obra es escribirla en UN
+       solo sitio y no en tres. Los ids se namespacian por libro (thumb-iliada-0, drawer-iliada-0)
+       para que no choquen entre colecciones. */
+    const SVG_LUPA = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>';
+    const SVG_WIKI = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>';
+
+    const esc = (t) => String(t == null ? '' : t)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+    function renderBookGrid(bookId) {
+      const book = BOOKS[bookId];
+      const grid = document.getElementById(bookId + '-grid');
+      const empty = document.getElementById(bookId + '-empty');
+      if (!grid) return;
+
+      // ya renderizado: no repetir trabajo en cada cambio de libro
+      if (grid.dataset.rendered === '1') return;
+
+      const h = book.headings || ['Lo que hace que destaque', 'Contexto histórico', 'Procedencia'];
+      const n = Math.min(book.details.length, book.groups.length);
+      if (n === 0) { if (empty) empty.style.display = ''; return; }
+      if (empty) empty.style.display = 'none';
+
+      const html = [];
+      for (let i = 0; i < n; i++) {
+        const d = book.details[i];
+        const views = book.groups[i];
+        const wrapperId = `thumb-${bookId}-${i}`;
+        const drawerKey = `${bookId}-${i}`;
+        const main = views[0];
+
+        const strip = views.length > 1 ? `
+          <div class="thumb-strip">
+            ${views.map((v, j) => `<img src="${esc(v.src)}" class="thumb-strip-btn${j === 0 ? ' active' : ''}" onclick="swapCardThumb('${wrapperId}', '${esc(v.src)}', this, ${i}, ${j})" title="${esc(v.title)}">`).join('')}
+          </div>` : '';
+
+        const wiki = d.wikiUrl ? `
+                <a href="${esc(d.wikiUrl)}" target="_blank" rel="noopener" class="wiki-link-btn" title="Ver en Wikipedia">Wikipedia ${SVG_WIKI}</a>` : '';
+
+        html.push(`
+        <article class="artwork-card">
+          <div class="artwork-thumb-wrapper" id="${wrapperId}" onclick="openZoomForArtwork(${i}, activeSubView[${i}] || 0)">
+            <img src="${esc(main.src)}" alt="${esc(d.title)} - ${esc(d.artist)}">
+            <div class="zoom-overlay-btn" title="Ver en detalle">${SVG_LUPA}</div>
+          </div>${strip}
+          <div class="artwork-body">
+            <div>
+              <div class="artwork-header-row">
+                <span class="artwork-num">OBRA ${String(i + 1).padStart(2, '0')}</span>
+                <div class="artwork-title">${esc(d.title)}</div>
+                <div class="artwork-artist">${esc(d.artist)}</div>
+              </div>
+              <div class="artwork-meta-line">${esc(d.meta)}</div>
+              <p class="artwork-snippet">${esc(d.snippet || d.analysis)}</p>
+              <div class="card-actions-row">
+                <button class="read-more-btn" onclick="toggleCardDrawer('${drawerKey}', this)">
+                  <span>Ver análisis completo</span> ▾
+                </button>${wiki}
+              </div>
+              <div id="drawer-${drawerKey}" class="card-extra-drawer">
+                <h4>${esc(h[0])}</h4>
+                <p>${esc(d.analysis)}</p>
+                <h4>${esc(h[1])}</h4>
+                <p>${esc(d.history)}</p>
+                <h4>${esc(h[2])}</h4>
+                <p>${esc(d.bio)}</p>
+              </div>
+            </div>
+            <div class="file-tag">${esc(main.src.split('/').pop())}</div>
+          </div>
+        </article>`);
+      }
+
+      grid.innerHTML = html.join('\n');
+      grid.dataset.rendered = '1';
+    }
+
+    /* CAMBIO DE LIBRO */
+    function switchBook(bookId, btnElement) {
+      const book = BOOKS[bookId];
+      if (!book) return;
+      currentBook = bookId;
+
+      document.getElementById('bookTag').innerText = book.tag;
+      document.getElementById('bookTitle').innerText = book.title;
+      document.getElementById('bookSub').innerText = book.sub;
+
+      document.querySelectorAll('.book-btn').forEach(el => el.classList.remove('active'));
+      btnElement.classList.add('active');
+
+      document.querySelectorAll('.book-nav').forEach(el => el.classList.remove('active'));
+      const nav = document.getElementById('nav-' + bookId);
+      nav.classList.add('active');
+
+      // volver siempre a la primera sección del libro
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      nav.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(book.firstTab).classList.add('active');
+      const firstBtn = nav.querySelector('.tab-btn');
+      if (firstBtn) firstBtn.classList.add('active');
+
+      renderBookGrid(bookId);
+
+      // los índices del visor son relativos al libro: se reinician al cambiar
+      currentArtworkGroupIndex = 0;
+      currentSubViewIndex = 0;
+      activeSubView = {};
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    /* ALTERNAR PANEL EXTENDIDO EN TARJETAS */
+    function toggleCardDrawer(index, btnEl) {
+      const drawer = document.getElementById(`drawer-${index}`);
+      drawer.classList.toggle('active');
+      const span = btnEl.querySelector('span');
+      if (drawer.classList.contains('active')) {
+        span.innerText = 'Ocultar análisis';
+        btnEl.innerHTML = '<span>Ocultar análisis</span> ▴';
+      } else {
+        span.innerText = 'Ver análisis completo';
+        btnEl.innerHTML = '<span>Ver análisis completo</span> ▾';
+      }
+    }
+
+    /* CAMBIO DE IMAGEN EN TARJETA DE LA GALERÍA */
+    function swapCardThumb(wrapperId, newSrc, thumbBtn, groupIdx, subViewIdx) {
+      const wrap = document.getElementById(wrapperId);
+      const img = wrap.querySelector('img');
+      img.src = newSrc;
+      activeSubView[groupIdx] = subViewIdx;
+      
+      const parent = thumbBtn.parentElement;
+      parent.querySelectorAll('.thumb-strip-btn').forEach(b => b.classList.remove('active'));
+      thumbBtn.classList.add('active');
+    }
+
+    function openZoomForArtwork(groupIdx, viewIdx = 0) {
+      currentArtworkGroupIndex = groupIdx;
+      currentSubViewIndex = viewIdx;
+      updateModalImageAndArrows();
+    }
+
+    /* NAVEGACIÓN SECUENCIAL CONTINUA POR TODAS LAS IMÁGENES Y VISTAS */
+    function navigateSequential(direction) {
+      const allViews = getAllViewsList();
+      let currentFlatIndex = allViews.findIndex(
+        v => v.groupIdx === currentArtworkGroupIndex && v.subViewIdx === currentSubViewIndex
+      );
+      if (currentFlatIndex === -1) currentFlatIndex = 0;
+
+      let nextFlatIndex = (currentFlatIndex + direction + allViews.length) % allViews.length;
+      const target = allViews[nextFlatIndex];
+
+      currentArtworkGroupIndex = target.groupIdx;
+      currentSubViewIndex = target.subViewIdx;
+      activeSubView[currentArtworkGroupIndex] = currentSubViewIndex;
+
+      if (document.activeElement) document.activeElement.blur();
+      updateModalImageAndArrows();
+    }
+
+    function updateModalImageAndArrows() {
+      const group = bookGroups()[currentArtworkGroupIndex];
+      const item = group[currentSubViewIndex];
+      
+      const navLeft = document.querySelector('.nav-arrow-btn.left');
+      const navRight = document.querySelector('.nav-arrow-btn.right');
+      navLeft.style.display = 'flex';
+      navRight.style.display = 'flex';
+
+      // Cargar información detallada en el panel del visor
+      const details = bookDetails()[currentArtworkGroupIndex];
+      document.getElementById('panelTitle').innerText = details.title;
+      document.getElementById('panelMeta').innerText = `${details.artist} | ${details.meta}`;
+      document.getElementById('panelAnalysis').innerText = details.analysis;
+      document.getElementById('panelHistory').innerText = details.history;
+      document.getElementById('panelBio').innerText = details.bio;
+
+      const wikiLinkEl = document.getElementById('panelWikiLink');
+      if (details.wikiUrl) {
+        wikiLinkEl.href = details.wikiUrl;
+        wikiLinkEl.style.display = 'inline-flex';
+      } else {
+        wikiLinkEl.style.display = 'none';
+      }
+
+      openZoomModal(item.src, item.title);
+    }
+
+    /* MOTOR DE INTERACCIÓN CON INTERPOLACIÓN CINEMÁTICA LERP Y ANCLAJE AL PUNTO EN PANTALLA */
+    let zoomScale = 1.0;
+    let targetZoomScale = 1.0;
+    const minScale = 1.0;
+    const maxScale = 40.0;
+    let translateX = 0;
+    let translateY = 0;
+    let targetTranslateX = 0;
+    let targetTranslateY = 0;
+
+    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
+    let inactivityTimer = null;
+    let lastMouseX = -1;
+    let lastMouseY = -1;
+    let isMouseOverTextPanel = false;
+
+    let keysPressed = {};
+    let panAnimationFrame = null;
+
+    const zoomModal = document.getElementById('zoomModal');
+    const zoomViewport = document.getElementById('zoomViewport');
+    const zoomTargetImg = document.getElementById('zoomTargetImg');
+    const zoomScaleText = document.getElementById('zoomScaleText');
+    const zoomCaptionText = document.getElementById('zoomCaptionText');
+    const zoomDescPanel = document.getElementById('zoomDescPanel');
+    const zoomCaptionBox = document.getElementById('zoomCaptionBox');
+
+    function openZoomModal(imgSrc, caption) {
+      zoomTargetImg.src = imgSrc;
+      zoomCaptionText.innerHTML = `${caption} &nbsp; <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="18 15 12 9 6 15"></polyline></svg>`;
+      zoomModal.classList.add('active');
+      resetZoom();
+      startShortInactivityTimer();
+    }
+
+    function closeZoomModal() {
+      zoomModal.classList.remove('active');
+      zoomModal.classList.remove('hover-bottom');
+      if (document.fullscreenElement) {
+        document.exitFullscreen().catch(() => {});
+      }
+      if (inactivityTimer) clearTimeout(inactivityTimer);
+      
+      keysPressed = {};
+      if (panAnimationFrame) {
+        cancelAnimationFrame(panAnimationFrame);
+        panAnimationFrame = null;
+      }
+    }
+
+    function updateTransform() {
+      if (zoomScale <= 1.0001 && targetZoomScale <= 1.0001) {
+        translateX = 0;
+        translateY = 0;
+        targetTranslateX = 0;
+        targetTranslateY = 0;
+      }
+
+      zoomTargetImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${zoomScale})`;
+      zoomScaleText.innerText = Math.round(zoomScale * 100) + '%';
+    }
+
+    function resetZoom() {
+      targetZoomScale = 1.0;
+      targetTranslateX = 0;
+      targetTranslateY = 0;
+      if (document.activeElement) document.activeElement.blur();
+      
+      if (!panAnimationFrame) {
+        panAnimationFrame = requestAnimationFrame(updateAnimationLoop);
+      }
+    }
+
+    /* BUCLE DE ANIMACIÓN CONTINUA A 60FPS: CON ANCLAJE AL CENTRO DE LA PANTALLA ACTUAL */
+    function updateAnimationLoop() {
+      if (!zoomModal.classList.contains('active')) {
+        panAnimationFrame = null;
+        return;
+      }
+
+      let isKeyActive = false;
+      const panSpeed = 6.5;
+      const zoomStepPerFrame = 0.007;
+
+      // 1. TECLAS WASD DESPLAZAN EL TARGET DE PANNING
+      if (keysPressed['w']) { targetTranslateY += panSpeed; isKeyActive = true; }
+      if (keysPressed['s']) { targetTranslateY -= panSpeed; isKeyActive = true; }
+      if (keysPressed['a']) { targetTranslateX += panSpeed; isKeyActive = true; }
+      if (keysPressed['d']) { targetTranslateX -= panSpeed; isKeyActive = true; }
+
+      // 2. TECLAS +/- MODIFICAN EL ZOOM CON ANCLAJE EN EL CENTRO DEL VIEWPORT
+      if (keysPressed['+'] || keysPressed['='] || keysPressed['numpadadd']) {
+        const prevZoom = targetZoomScale;
+        const factor = zoomStepPerFrame * Math.sqrt(targetZoomScale);
+        targetZoomScale = Math.min(maxScale, targetZoomScale + factor);
+        
+        const ratio = targetZoomScale / prevZoom;
+        targetTranslateX *= ratio;
+        targetTranslateY *= ratio;
+        isKeyActive = true;
+      }
+      if (keysPressed['-'] || keysPressed['_'] || keysPressed['numpadsubtract']) {
+        const prevZoom = targetZoomScale;
+        const factor = zoomStepPerFrame * Math.sqrt(targetZoomScale);
+        targetZoomScale = Math.max(minScale, targetZoomScale - factor);
+        
+        const ratio = targetZoomScale / prevZoom;
+        targetTranslateX *= ratio;
+        targetTranslateY *= ratio;
+        isKeyActive = true;
+      }
+
+      // 3. INTERPOLACIÓN SUAVE (LERP) HACIA LOS VALORES OBJETIVO
+      const lerp = 0.18;
+      const zoomDiff = targetZoomScale - zoomScale;
+      const xDiff = targetTranslateX - translateX;
+      const yDiff = targetTranslateY - translateY;
+
+      if (Math.abs(zoomDiff) > 0.0001 || Math.abs(xDiff) > 0.01 || Math.abs(yDiff) > 0.01 || isKeyActive) {
+        zoomScale += zoomDiff * lerp;
+        translateX += xDiff * lerp;
+        translateY += yDiff * lerp;
+        updateTransform();
+        panAnimationFrame = requestAnimationFrame(updateAnimationLoop);
+      } else {
+        zoomScale = targetZoomScale;
+        translateX = targetTranslateX;
+        translateY = targetTranslateY;
+        updateTransform();
+        panAnimationFrame = null;
+      }
+    }
+
+    /* BOTONES DE ZOOM EN PANTALLA (+ / -) ANCLADOS AL CENTRO DE LA PANTALLA */
+    function zoomDelta(direction) {
+      const prevZoom = targetZoomScale;
+      const factor = 0.12 * Math.sqrt(targetZoomScale);
+      const step = direction > 0 ? factor : -factor;
+      targetZoomScale = Math.min(Math.max(minScale, targetZoomScale + step), maxScale);
+      
+      const ratio = targetZoomScale / prevZoom;
+      targetTranslateX *= ratio;
+      targetTranslateY *= ratio;
+
+      if (document.activeElement) document.activeElement.blur();
+      
+      if (!panAnimationFrame) {
+        panAnimationFrame = requestAnimationFrame(updateAnimationLoop);
+      }
+
+      if (!zoomModal.classList.contains('user-inactive')) {
+        startShortInactivityTimer();
+      }
+    }
+
+    /* DETECTAR SI EL RATÓN ESTÁ SOBRE EL PANEL DE TEXTO O LEYENDA */
+    zoomDescPanel.addEventListener('mouseenter', () => {
+      isMouseOverTextPanel = true;
+      if (inactivityTimer) clearTimeout(inactivityTimer);
+      zoomModal.classList.remove('user-inactive');
+      zoomModal.classList.add('hover-bottom');
+    });
+
+    zoomDescPanel.addEventListener('mouseleave', () => {
+      isMouseOverTextPanel = false;
+      startShortInactivityTimer();
+    });
+
+    zoomCaptionBox.addEventListener('mouseenter', () => {
+      isMouseOverTextPanel = true;
+      if (inactivityTimer) clearTimeout(inactivityTimer);
+      zoomModal.classList.remove('user-inactive');
+      zoomModal.classList.add('hover-bottom');
+    });
+
+    zoomCaptionBox.addEventListener('mouseleave', () => {
+      isMouseOverTextPanel = false;
+      startShortInactivityTimer();
+    });
+
+    /* TEMPORIZADOR INTELIGENTE DE INACTIVIDAD (1.2 SEGUNDOS) CON RESPETO A LA LECTURA DEL TEXTO */
+    function startShortInactivityTimer() {
+      if (inactivityTimer) clearTimeout(inactivityTimer);
+      
+      inactivityTimer = setTimeout(() => {
+        if (zoomModal.classList.contains('active') && !isDragging) {
+          // Si el ratón está encima del texto que el usuario está leyendo, NO OCULTAR NADA
+          if (isMouseOverTextPanel) return;
+
+          zoomModal.classList.add('user-inactive');
+          zoomModal.classList.remove('hover-bottom');
+          if (document.activeElement) document.activeElement.blur();
+        }
+      }, 1200);
+    }
+
+    /* PANTALLA COMPLETA REAL DEL NAVEGADOR CON OCULTACIÓN AUTOMÁTICA DE ELEMENTOS SOBREPUESTOS */
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        zoomModal.requestFullscreen().then(() => {
+          if (!isMouseOverTextPanel) {
+            zoomModal.classList.add('user-inactive');
+            zoomModal.classList.remove('hover-bottom');
+          }
+          if (document.activeElement) document.activeElement.blur();
+          if (inactivityTimer) clearTimeout(inactivityTimer);
+        }).catch(err => {
+          console.log(`Error activando pantalla completa: ${err.message}`);
+        });
+      } else {
+        document.exitFullscreen().catch(() => {});
+      }
+      if (document.activeElement) document.activeElement.blur();
+    }
+
+    document.addEventListener('fullscreenchange', () => {
+      if (document.fullscreenElement && zoomModal.classList.contains('active')) {
+        if (!isMouseOverTextPanel) {
+          zoomModal.classList.add('user-inactive');
+          zoomModal.classList.remove('hover-bottom');
+        }
+        if (document.activeElement) document.activeElement.blur();
+        if (inactivityTimer) clearTimeout(inactivityTimer);
+      }
+    });
+
+    /* SOLO EL MOVIMIENTO REAL DEL CURSOR RE-ACTIVA LA INTERFAZ */
+    window.addEventListener('mousemove', (e) => {
+      if (!zoomModal.classList.contains('active')) return;
+
+      if (e.clientX !== lastMouseX || e.clientY !== lastMouseY) {
+        lastMouseX = e.clientX;
+        lastMouseY = e.clientY;
+
+        zoomModal.classList.remove('user-inactive');
+        startShortInactivityTimer();
+
+        if (e.clientY > window.innerHeight - 130) {
+          zoomModal.classList.add('hover-bottom');
+        } else {
+          const panelRect = zoomDescPanel.getBoundingClientRect();
+          if (!(e.clientX >= panelRect.left && e.clientX <= panelRect.right && e.clientY >= panelRect.top && e.clientY <= panelRect.bottom)) {
+            zoomModal.classList.remove('hover-bottom');
+          }
+        }
+      }
+    });
+
+    /* PREVENIR ARRASTRE NATIVO */
+    zoomTargetImg.addEventListener('dragstart', (e) => e.preventDefault());
+
+    /* ARRASTRAR Y SOLTAR COMO ESCRITORIO CON LERP */
+    zoomViewport.addEventListener('mousedown', (e) => {
+      if (e.button !== 0) return;
+      isDragging = true;
+      startX = e.clientX - targetTranslateX;
+      startY = e.clientY - targetTranslateY;
+      zoomViewport.classList.add('dragging');
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      targetTranslateX = e.clientX - startX;
+      targetTranslateY = e.clientY - startY;
+      if (!panAnimationFrame) {
+        panAnimationFrame = requestAnimationFrame(updateAnimationLoop);
+      }
+    });
+
+    window.addEventListener('mouseup', () => {
+      if (isDragging) {
+        isDragging = false;
+        zoomViewport.classList.remove('dragging');
+        startShortInactivityTimer();
+      }
+    });
+
+    /* MOUSE WHEEL ZOOM ANCLADO AL CENTRO DEL VIEWPORT */
+    zoomViewport.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      
+      const prevZoom = targetZoomScale;
+      const speedFactor = 0.04 * Math.sqrt(targetZoomScale);
+      const delta = e.deltaY < 0 ? speedFactor : -speedFactor;
+      targetZoomScale = Math.min(Math.max(minScale, targetZoomScale + delta), maxScale);
+
+      const ratio = targetZoomScale / prevZoom;
+      targetTranslateX *= ratio;
+      targetTranslateY *= ratio;
+
+      if (!panAnimationFrame) {
+        panAnimationFrame = requestAnimationFrame(updateAnimationLoop);
+      }
+
+      if (!zoomModal.classList.contains('user-inactive')) {
+        startShortInactivityTimer();
+      }
+    }, { passive: false });
+
+    const animKeys = ['w', 'a', 's', 'd', '+', '=', '-', '_', 'numpadadd', 'numpadsubtract'];
+
+    document.addEventListener('keydown', (e) => {
+      if (!zoomModal.classList.contains('active')) return;
+
+      const key = e.key.toLowerCase();
+
+      if (animKeys.includes(key)) {
+        keysPressed[key] = true;
+        if (!panAnimationFrame) {
+          panAnimationFrame = requestAnimationFrame(updateAnimationLoop);
+        }
+      }
+
+      if (e.key === 'Escape') closeZoomModal();
+      if (e.key === 'ArrowRight') navigateSequential(1);
+      if (e.key === 'ArrowLeft') navigateSequential(-1);
+      if (e.key === '0') resetZoom();
+      if (key === 'f') toggleFullscreen();
+
+      if (!zoomModal.classList.contains('user-inactive')) {
+        startShortInactivityTimer();
+      }
+    });
+
+    // el libro inicial se dibuja al cargar; los demás, al seleccionarlos
+    renderBookGrid('genesis');
+
+    document.addEventListener('keyup', (e) => {
+      const key = e.key.toLowerCase();
+      if (animKeys.includes(key)) {
+        keysPressed[key] = false;
+      }
+    });
+
+    window.addEventListener('blur', () => {
+      keysPressed = {};
+    });
+  </script>
+</body>
+</html>
