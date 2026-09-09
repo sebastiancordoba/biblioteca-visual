@@ -74,7 +74,10 @@ for i,(a,l,it) in enumerate(filas):
         x,y=xy(lon,lat)
         sedes[k]={"k":k,"nombre":nom,"ciudad":ciu,"pais":PAIS[ciu],
                   "cont":CONTINENTE.get(PAIS[ciu],"Otros"),
-                  "x":round(x,1),"y":round(y,1),"obras":[]}
+                  # Cuatro decimales, no uno: los museos de una misma ciudad distan centésimas de píxel
+                  # de lienzo (el Louvre y Orsay, 0,061), así que redondear a 0,1 los apilaba en el
+                  # mismo punto y hacía imposible respetar su disposición real.
+                  "x":round(x,4),"y":round(y,4),"obras":[]}
     sedes[k]["obras"].append({"i":i,"t":it["title"],"a":etiqueta(a),"libro":l,
                               "autor":it["artist"]})
 lista=sorted(sedes.values(),key=lambda s:(-len(s["obras"]),s["ciudad"]))

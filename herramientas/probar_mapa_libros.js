@@ -106,12 +106,44 @@ console.log('\n== inercia y suavidad ==');
 ck(js.includes('function deslizar'),'el arrastre tiene inercia al soltar');
 {
   /* No se comprueba una cifra concreta sino el criterio: cada muesca de rueda debe
-     mover el zoom poco, para que la suavidad la ponga la interpolación y no el salto. */
+     mover el zoom poco, para que la suavidad la ponga la interpolación y no el salto.
+     Los márgenes se ensancharon al pedir «un poco más rápido»: la velocidad subió, pero
+     el criterio de que ninguna muesca dé un salto grande sigue vigente. */
   const m = js.match(/Math\.abs\(ev\.deltaY\)\s*\/\s*(\d+)/);
   const tope = js.match(/clamp\(Math\.abs\(ev\.deltaY\)\s*\/\s*\d+\s*,\s*[\d.]+\s*,\s*([\d.]+)\)/);
   const div = m ? +m[1] : 0, max = tope ? +tope[1] : 1;
   console.log(`   divisor de rueda ${div} · salto máximo por muesca ${(max*100).toFixed(0)}%`);
-  ck(div >= 300 && max <= 0.15, `los pasos de rueda son finos (divisor ${div}, tope ${(max*100).toFixed(0)}%)`);
+  ck(div >= 250 && max <= 0.2, `los pasos de rueda son finos (divisor ${div}, tope ${(max*100).toFixed(0)}%)`);
+}
+
+console.log('\n== la sede elegida también despliega sus obras ==');
+{
+  const bloque = () => store['sedeLista'].children.find(c => (c.className||'') === 'libro-obras');
+  oyentes.togSedes.click(); drenar(300);
+  ck(!bloque(), 'sin sede elegida no hay desplegable');
+
+  const primera = store['sedeLista'].children.find(c => (c.className||'').includes('sede-item'));
+  ck(!!primera, 'la lista de sedes tiene entradas');
+  if (primera) {
+    primera._ev && primera._ev.click ? primera._ev.click() : null;
+    // el manejador vive en el botón interior, que el simulacro no crea desde innerHTML:
+    // se dispara el que quedó registrado por querySelector('button')
+    if (oyentes.x && oyentes.x.click) oyentes.x.click();
+    drenar(500);
+    const b = bloque();
+    ck(!!b, 'al pulsar una sede se despliegan sus obras');
+    if (b) {
+      const h = b.innerHTML;
+      const n = (h.match(/class="libro-obra"/g) || []).length;
+      const imgs = (h.match(/<img src="/g) || []).length;
+      console.log(`   ${n} obras de la sede, ${imgs} con miniatura`);
+      ck(n > 0 && imgs === n, `cada obra con su miniatura (${n})`);
+      ck((h.match(/data-obra="\d+"/g) || []).length === n, 'cada una sabe qué obra abrir');
+    }
+    if (oyentes.x && oyentes.x.click) oyentes.x.click();
+    drenar(400);
+    ck(!bloque(), 'volver a pulsarla la repliega');
+  }
 }
 
 console.log('\n== pellizco ==');

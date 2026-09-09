@@ -144,6 +144,18 @@ console.log('\n== dispersión: nada se pisa con nada ==');
     ck(peor > 0, `dentro de un abanico las miniaturas no se solapan (${peor.toFixed(1)} px)`);
   }
 
+  /* El abanico ya no reparte los museos en círculo sino que conserva su geometría real
+     ampliada, así que los radios desde el centro tienen que ser distintos entre sí: en un
+     círculo serían todos iguales. Es la comprobación que distingue las dos disposiciones
+     sin necesidad de conocer las coordenadas. */
+  if (museos.length > 2) {
+    const radios = museos.map(m => Math.hypot(m.x, m.y));
+    const med = radios.reduce((a,b)=>a+b,0) / radios.length;
+    const disp = Math.sqrt(radios.reduce((a,r)=>a+(r-med)**2,0)/radios.length) / med;
+    console.log(`   radios desde el centro: ${radios.map(r=>r.toFixed(0)).join(', ')} · dispersión ${(disp*100).toFixed(0)}%`);
+    ck(disp > 0.05, `los museos guardan su geometría real, no un círculo (dispersión ${(disp*100).toFixed(0)}%)`);
+  }
+
   const minis = sedes().filter(x=>tiene(x,'obra-pin')).map(centro).filter(Boolean);
 
   /* Y las miniaturas del museo abierto tampoco deben invadir a los museos vecinos. */

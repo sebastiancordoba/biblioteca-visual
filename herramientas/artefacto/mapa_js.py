@@ -84,20 +84,14 @@ JS = r"""
         off = off || 0;
         if (!idxs || !idxs.length) return vistaEuropa();
         const xs = idxs.map(i => SEDES[i].x + off), ys = idxs.map(i => SEDES[i].y);
-        /* Caja mínima. Para una sede suelta, un cuadro regional: no tiene sentido caer
-           encima de un solo punto. Para varias, la que haga falta para que se separen de
-           verdad, porque si no el encuadre se quedaba corto y había que conformarse con
-           el abanico aunque el mapa ya pudiera colocarlas en su sitio. */
-        let minCaja = 42;
-        if (idxs.length > 1) {
-          let dmin = Infinity;
-          for (let i = 0; i < idxs.length; i++)
-            for (let j = i + 1; j < idxs.length; j++)
-              dmin = Math.min(dmin, Math.hypot(SEDES[idxs[i]].x - SEDES[idxs[j]].x,
-                                               SEDES[idxs[i]].y - SEDES[idxs[j]].y));
-          if (dmin > 0 && isFinite(dmin))
-            minCaja = Math.min(minCaja, Math.max(MIN_W, dmin * anchoMarco() / (SEP_PX * 1.5)));
-        }
+        /* Caja mínima. Una sede suelta no tiene geometría interna que enseñar, así que
+           se encuadra en un cuadro regional: no tiene sentido caer encima de un punto.
+           Varias sedes sí la tienen, y se encuadran más apretado, a escala metropolitana.
+           No se baja de ahí a propósito: los museos de una ciudad se separarían del todo
+           hacia un ancho de 2, y a esa escala el mapa base no tiene ya nada que dibujar
+           —ni costa ni frontera—, así que se llegaría a un rectángulo vacío con dos
+           puntos. Quien quiera bajar más lo hace acercándose a mano. */
+        const minCaja = idxs.length > 1 ? 8 : 42;
         const cx = (Math.min(...xs) + Math.max(...xs)) / 2;
         const cy = (Math.min(...ys) + Math.max(...ys)) / 2;
         const w = Math.max(Math.max(...xs) - Math.min(...xs), minCaja);
@@ -197,9 +191,12 @@ JS = r"""
       }
 
       /* Interpolación con umbral relativo al tamaño de la vista: con un umbral fijo, muy
-         acercado la animación se cortaba de golpe y muy alejado se arrastraba. */
+         acercado la animación se cortaba de golpe y muy alejado se arrastraba.
+         k gobierna lo rápido que el mapa alcanza su destino: subirlo acelera por igual la
+         rueda, el pellizco, los botones y los vuelos al pulsar un grupo, sin tocar el
+         tamaño de cada paso, que es lo que mantiene el movimiento suave. */
       function paso(){
-        const k = 0.15;
+        const k = 0.22;
         const eps = Math.max(vista.w, vista.h) * 0.0004;
         let quieto = true;
         for (const p of ['x','y','w','h']) {
@@ -449,12 +446,63 @@ JS = r"""
            museos se ensancha para que esas miniaturas no invadan a los vecinos. */
         const abierto = c.sedes.indexOf(sedeSel);
         const radObras = abierto >= 0 ? radioFan(obrasDe(SEDES[sedeSel]).length, 30, 34) : 0;
-        const rad = n <= 1 ? 46 : radioFan(n, Math.max(34, radObras + 28), 52);
+        const sep = Math.max(34, radObras + 28);
+        const rad = n <= 1 ? 46 : radioFan(n, sep, 52);
+
+        /* Disposición verdadera, no un círculo inventado. A la escala a la que una ciudad
+           cabe en pantalla sus museos están a centésimas de píxel de lienzo unos de otros
+           —el Louvre y Orsay, a 0,061—, así que colocarlos tal cual los apila. Ampliarlos
+           conservando las distancias exactas tampoco cabe: en París el museo más lejano
+           está veinte veces más lejos que el par más cercano, y estirar hasta separar ese
+           par manda al otro fuera del marco.
+
+           Se conserva entonces lo que de verdad informa a esta ampliación: el RUMBO exacto
+           de cada museo respecto al centro de la ciudad —quién está al norte, quién al
+           este— y el ORDEN de las distancias. Los radios se reparten por rango entre un
+           mínimo legible y el borde del marco. Es una ampliación, no un plano a escala, y
+           como tal dice la verdad sobre la disposición sin mentir sobre la métrica. */
+        const esc = escala();
+        const cx = c.sedes.reduce((a,i)=>a+SEDES[i].x,0)/n;
+        const cy = c.sedes.reduce((a,i)=>a+SEDES[i].y,0)/n;
+
+        const rumbos = c.sedes.map(i => {
+          const ex = SEDES[i].x - cx, ey = SEDES[i].y - cy;
+          return { i, ex, ey, r: Math.hypot(ex, ey) };
+        });
+        const orden = rumbos.slice().sort((a, b) => a.r - b.r);
+        const radioMin = Math.max(52, sep);
+        const radioMax = Math.max(radioMin,
+          Math.min(Math.min(anchoMarco(), altoMarco()) * 0.4, radioMin + 34 * (n - 1)));
+        const radioDe = {};
+        orden.forEach((o, k) => {
+          radioDe[o.i] = n <= 1 ? radioMin
+            : radioMin + (radioMax - radioMin) * (k / (n - 1));
+        });
+
+        /* Con todos los rumbos distintos esto separa bien; si dos museos coinciden en
+           dirección y en rango quedarían pegados, y entonces el círculo es preferible. */
+        const sitio = rumbos.map(o => {
+          const m = o.r || 1;
+          return { x: (o.ex / m) * radioDe[o.i], y: (o.ey / m) * radioDe[o.i] };
+        });
+        let juntos = 0;
+        for (let i = 0; i < n; i++)
+          for (let j = i + 1; j < n; j++)
+            if (Math.hypot(sitio[i].x - sitio[j].x, sitio[i].y - sitio[j].y) < sep) juntos++;
+        const real = n > 1 && rumbos.every(o => o.r > 0) && juntos === 0;
+
         c.sedes.forEach((idx, j) => {
           const sd = SEDES[idx];
-          const ang = (-Math.PI / 2) + (n === 1 ? 0 : j * (2 * Math.PI / n));
-          const dx = Math.cos(ang), dy = Math.sin(ang);
-          const sx = dx * rad, sy = dy * rad;
+          let sx, sy, dx, dy;
+          if (real) {
+            sx = sitio[j].x; sy = sitio[j].y;
+            const m = Math.hypot(sx, sy) || 1;
+            dx = sx / m; dy = sy / m;
+          } else {
+            const ang = (-Math.PI / 2) + (n === 1 ? 0 : j * (2 * Math.PI / n));
+            dx = Math.cos(ang); dy = Math.sin(ang);
+            sx = dx * rad; sy = dy * rad;
+          }
           cont.appendChild(nodo('line', { class:'hilo hilo-sede', x1:0, y1:0, x2:sx, y2:sy, 'stroke-width':0.9 }));
           if (sedeSel === idx) fanObras(cont, sd, sx, sy);
           const k = obrasDe(sd).length;
@@ -546,8 +594,18 @@ JS = r"""
             li.innerHTML = `<button type="button"><span class="sede-n">${obrasDe(sd).length}</span>` +
               `<span class="sede-txt"><strong>${esc(sd.nombre)}</strong>` +
               `<em>${esc(sd.ciudad)} · ${esc(sd.pais)}</em></span></button>`;
-            li.querySelector('button').addEventListener('click', () => elegirSede(idx, true));
+            /* Vuelve a pulsarla y se repliega, como los libros: si no, la única forma de
+               cerrar el desplegable sería elegir otra sede. */
+            li.querySelector('button').addEventListener('click', () => {
+              if (sedeSel === idx) {
+                sedeSel = -1; grupoAbierto = -1;
+                detalle.innerHTML = '';
+                pintarLista(); dibujar();
+              } else elegirSede(idx, true);
+            });
             lista.appendChild(li);
+            /* La sede elegida despliega aquí mismo lo que guarda, igual que los libros. */
+            if (sedeSel === idx) lista.appendChild(obrasDeSede(idx));
           });
         } else {
           nota.textContent = 'Elige un libro para ver solo dónde está su arte. Vuelve a pulsarlo para verlos todos.';
@@ -603,7 +661,9 @@ JS = r"""
         return html;
       }
 
-      /* Obras de un libro, en orden cronológico, tal como las conoce el mapa. */
+      /* Desplegable de obras con miniatura, el mismo para un libro y para una sede: al
+         pulsar cualquiera de los dos en la lista se ve ahí mismo lo que contiene, sin
+         tener que bajar al panel de debajo del mapa. */
       function obrasDelLibro(nom){
         const vistas = new Set();
         const obras = [];
@@ -613,14 +673,23 @@ JS = r"""
           obras.push({ o: o, sede: sd });
         }));
         obras.sort((a, b) => a.o.i - b.o.i);
+        return desplegable(obras);
+      }
 
+      function obrasDeSede(idx){
+        const sd = SEDES[idx];
+        return desplegable(sd.obras.slice().sort((a, b) => a.i - b.i)
+                             .map(o => ({ o: o, sede: sd })));
+      }
+
+      function desplegable(obras){
         const li = document.createElement('li');
         li.className = 'libro-obras';
         li.innerHTML = obras.map(({ o, sede }) =>
           `<button class="libro-obra" type="button" data-obra="${o.i}" title="${esc(o.t)} — ${esc(sede.nombre)}">` +
           `<img src="${BOOKS.mapa.groups[o.i][0].src}" alt="${esc(o.t)}" loading="lazy">` +
           `<span class="libro-obra-t">${esc(o.t)}</span>` +
-          `<span class="libro-obra-m">${esc(o.a)} · ${esc(sede.ciudad)}</span></button>`).join('');
+          `<span class="libro-obra-m">${esc(o.a)} · ${esc(o.libro)}</span></button>`).join('');
         li.querySelectorAll('.libro-obra').forEach(b => {
           b.addEventListener('click', ev => { ev.stopPropagation(); abrirObra(+b.dataset.obra); });
           b.addEventListener('mouseenter', () => {
@@ -757,7 +826,7 @@ JS = r"""
             /* Mismo recorrido que el pellizco del trackpad: se acota el salto por
                fotograma para que el gesto se sienta igual de fluido en los dos sitios. */
             zoomEn(vista.x + (mx / r.width) * vista.w, vista.y + (my / r.height) * vista.h,
-                   clamp(d / pinza, 0.82, 1.22));
+                   clamp(d / pinza, 0.78, 1.28));
             pinza = d;
           }
         } else if (arrastrando && ev.touches.length === 1) {
@@ -788,17 +857,17 @@ JS = r"""
              donde la rueda da centenares. Con el divisor de la rueda se quedaba clavado
              en el paso mínimo y el gesto parecía no responder. La exponencial es la
              relación natural del gesto: separar los dedos el doble acerca el doble. */
-          zoomEn(cx, cy, clamp(Math.exp(-ev.deltaY / 90), 0.82, 1.22));
+          zoomEn(cx, cy, clamp(Math.exp(-ev.deltaY / 70), 0.78, 1.28));
           return;
         }
-        const paso = clamp(Math.abs(ev.deltaY) / 430, 0.022, 0.12);  // pasos finos: acumulan suave
+        const paso = clamp(Math.abs(ev.deltaY) / 300, 0.03, 0.16);   // pasos finos: acumulan suave
         zoomEn(cx, cy, ev.deltaY < 0 ? 1 + paso : 1 / (1 + paso));
       }, { passive: false });
       marco.addEventListener('click', () => { if (!movido) ocultarTarjeta(); });
 
       const centro = () => ({ x: vista.x + vista.w/2, y: vista.y + vista.h/2 });
-      document.getElementById('mZoomIn').addEventListener('click', () => { const c=centro(); zoomEn(c.x,c.y,1.45); });
-      document.getElementById('mZoomOut').addEventListener('click', () => { const c=centro(); zoomEn(c.x,c.y,1/1.45); });
+      document.getElementById('mZoomIn').addEventListener('click', () => { const c=centro(); zoomEn(c.x,c.y,1.7); });
+      document.getElementById('mZoomOut').addEventListener('click', () => { const c=centro(); zoomEn(c.x,c.y,1/1.7); });
 
       /* ---------- botones por continente ----------
          Se construyen a partir de las sedes, así que un continente se activa solo cuando
@@ -880,7 +949,7 @@ JS = r"""
         const mas = pulsadas['+'] || pulsadas['='];
         const menos = pulsadas['-'] || pulsadas['_'];
         if (mas !== menos) {
-          const base = Math.pow(1.011, dt);
+          const base = Math.pow(1.016, dt);
           const f = mas ? base : 1 / base;
           const cx = vista.x + vista.w / 2, cy = vista.y + vista.h / 2;
           const w = clamp(vista.w / f, MIN_W, MAPA_W * 1.3);
