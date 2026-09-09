@@ -28,6 +28,7 @@ código y nombres de archivo incluidos.
 Pinturas/
 ├── index.html          ← el visor, sirve para TODOS los libros
 ├── CLAUDE.md
+├── .gitignore          ← deja las imágenes fuera de git (ver «Control de versiones»)
 ├── herramientas/       ← scripts de búsqueda, descarga y generación (ver abajo)
 └── <Libro>/            ← una carpeta por libro (Génesis/, Gilgamesh/, Ilíada/…)
     ├── NN_*.jpg        ← las imágenes
@@ -238,3 +239,40 @@ tarjeta y en el panel del visor: **qué la hace destacar** (lectura formal y sim
 histórico** (encargo, restauraciones, procedencia, anécdotas) y **biografía del artista**. El tono es
 ensayístico y específico —datos concretos, fechas, dimensiones, número de inventario cuando existe—,
 no descripción genérica.
+
+## Control de versiones (git)
+
+El repositorio versiona **el texto y el código, no las imágenes**. Son 724 KB de fichas,
+generadores, comprobadores, ensayos y manifiestos frente a 871 MB de JPEG, y meter los másteres
+en el historial no aportaría nada: la regla del proyecto es que una imagen guardada **no se
+modifica nunca** —ni se recomprime ni se reescala—, así que no tienen versiones que seguir, y
+iCloud ya las respalda. `.gitignore` excluye `*.jpg`, `*.jpeg`, `*.png`, `.DS_Store` y
+`__pycache__/`.
+
+Lo que sí protege el historial es precisamente lo frágil: las fichas de `data_<libro>.py`, el
+visor, y el bloque generado de `index.html` que se reescribe entero en cada pasada de `inject.py`.
+
+**Punto pendiente:** de las 72 imágenes, 54 se pueden volver a bajar desde los TSV de
+`herramientas/` con `download.py`; las 18 restantes —las primeras del Génesis, `01`–`13`, previas
+a los manifiestos— no están en ningún TSV, así que hoy solo existen en disco. Conviene añadirles
+su manifiesto para que la colección sea reproducible desde el repositorio.
+
+## La versión publicada (artefacto)
+
+Además del `index.html` local hay una versión compartible publicada como artefacto,
+**Los Tres Libros** (`claude.ai/code/artifact/9cce8cc2-80fd-429b-88f8-bf8d0eb8605d`). No es un
+archivo distinto que haya que mantener a mano: se construye **desde el `index.html` real** y solo
+cambia lo que el formato obliga o lo que solo tiene sentido al compartir.
+
+- Una página publicada debe caber entera en 16 MB y no puede cargar imágenes de dominios externos
+  —tampoco de Wikimedia—, así que las imágenes van incrustadas en base64 a 900 px, una sola copia
+  referenciada por índice desde un array `IMG`.
+- El visor no se reescribe: la cuadrícula, el zoom a 40×, `W A S D` y las flechas quedan idénticos.
+- Se añaden tres cosas que solo existen en la versión compartida: el botón **Ver original** de cada
+  obra (que abre el archivo completo en Commons), la cronología conjunta de los tres libros, y el
+  mapa navegable de sedes.
+
+**El aviso de «estas imágenes son vistas previas» no va en la página.** Se probó y sobra: ocupa la
+cabecera con una explicación técnica antes de que se vea una sola obra, y el botón *Ver original*
+ya lleva a la resolución completa. Si hay que explicar la diferencia, se explica al compartir el
+enlace, no dentro del artefacto.
