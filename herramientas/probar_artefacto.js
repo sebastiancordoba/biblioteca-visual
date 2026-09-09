@@ -120,5 +120,39 @@ for(const id of ['genesis','gilgamesh','iliada','cronologia']){
   ck((h.match(/<article class="artwork-card">/g)||[]).length===BOOKS[id].details.length,`${id}: tarjetas`);
 }
 ck(js.includes('maxScale = 40.0')&&js.includes("['w', 'a', 's', 'd'"),'visor de obra intacto');
+
+/* El botón ORIGINAL del visor: en la versión publicada las imágenes van incrustadas como
+   vistas previas, así que el original tiene que ser la URL de Commons. Si una obra nueva
+   entra sin enlace, el botón se esconde y el usuario no llega al archivo completo. */
+console.log('\n== enlace al original ==');
+{
+  ck(/<a class="zoom-ctrl-btn" id="btnOriginal"[^>]*target="_blank"/.test(html), 'el enlace existe');
+  /* Excepciones: obras cuyo archivo local no coincide en dimensiones con ningún archivo
+     de Commons, así que no se puede afirmar de cuál salió. Sin enlace el botón se
+     esconde, que es preferible a apuntar a otra cosa. Ver «Identificar de qué archivo
+     salió una imagen antigua» en CLAUDE.md. */
+  const SIN_ORIGEN = {
+    'La Torre de Babel':
+      'el local es de 8000x5853; en Commons el de Viena está a 39683x29617 — CANDIDATO A MEJORA',
+    'Elohim creando a Adán':
+      'el local es de 6072x4923 y en Commons no pasa de 2024x1641, exactamente un tercio: el local está reescalado',
+    'Sombra y oscuridad - la tarde del diluvio':
+      'la institucional es de 1198x1200; las de 24 MP son fotos de sala (ya documentado en verificar.js)',
+    'El Diluvio Universal':
+      'ningún archivo de Commons coincide en dimensiones con el local',
+  };
+  let sinEnlace = [], anotadas = 0, total = 0;
+  for (const id of ['genesis','gilgamesh','iliada']) {
+    for (const d of BOOKS[id].details) {
+      total++;
+      if (d.orig && /^https:\/\//.test(d.orig)) continue;
+      if (SIN_ORIGEN[d.title]) { anotadas++; console.log(`   aviso  ${d.title} — ${SIN_ORIGEN[d.title]}`); }
+      else sinEnlace.push(`${id}: ${d.title}`);
+    }
+  }
+  if (sinEnlace.length) console.log('   SIN ENLACE Y SIN DOCUMENTAR:\n   ' + sinEnlace.join('\n   '));
+  ck(sinEnlace.length===0,
+     `${total - anotadas} de ${total} obras enlazan a su archivo original (${anotadas} excepciones documentadas)`);
+}
 console.log('\n'+(bad?`*** ${bad} FALLAS ***`:'*** TODO CORRECTO ***'));
 process.exit(bad?1:0);

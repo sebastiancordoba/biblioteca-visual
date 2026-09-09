@@ -197,6 +197,12 @@ Python 3.9 del sistema no tiene certificados CA y `urllib` falla con `CERTIFICAT
   procedencia y la lista de archivos e imágenes). **Aquí es donde se escribe una obra nueva.**
 - **`inject.py`** — vuelca esas fichas en `index.html`. Es idempotente y puede reejecutarse.
 - **`readme.py`** — regenera el `README.md` de cada libro desde las mismas fichas.
+- **`enlaces.py`** — mantiene `artefacto/datos/enlaces.json`, que dice de qué archivo de
+  Commons salió cada imagen. **De esto depende el botón «Original» del visor**: si una obra
+  no está ahí, el botón se esconde y no hay forma de llegar al archivo completo. Resuelve
+  solo lo que falta, tomando el título de los manifiestos `*.tsv`; las imágenes anteriores a
+  los manifiestos van en `artefacto/datos/titulos_extra.tsv`.
+  `python3 herramientas/enlaces.py` — y ejecutarlo **después** de `inject.py`.
 - **`construir_artefacto.sh`** — reconstruye la versión publicable de cabo a rabo. Se detiene en el
   primer paso que falle: antes se encadenaban silenciando la salida y un paso roto dejaba publicar
   un intermedio caducado.
@@ -239,6 +245,15 @@ Antes de dar por buena una obra conviene leer los campos `artist`, `institution`
 proporción no cuadre con las medidas reales del cuadro. También hay que mirar el campo `source`:
 si dice `Pinterest` o similar, se descarta.
 
+### Identificar de qué archivo salió una imagen antigua
+
+Las primeras obras del Génesis se guardaron antes de que existieran los manifiestos, así que
+no consta su origen. Adivinar por el nombre es justo lo que produce las atribuciones falsas
+que documenta este archivo. Lo que sí es fiable: **buscar en Commons y quedarse con el
+candidato cuyo ancho y alto coincidan exactamente** con los del archivo local
+(`sips -g pixelWidth -g pixelHeight`). Mismas dimensiones al píxel es el mismo archivo.
+El resultado se anota en `artefacto/datos/titulos_extra.tsv`.
+
 ## Qué buscar a continuación
 
 `MAPA_DE_COBERTURA.md` lleva la cuenta de qué **capítulos del Génesis, cantos de la Ilíada y
@@ -267,6 +282,12 @@ node herramientas/probar_render.js      # ejecuta el renderizador y revisa el HT
 ```
 
 7. Marcar la fila en `MAPA_DE_COBERTURA.md`.
+
+8. Resolver el enlace al archivo original, del que depende el botón «Original» del visor:
+
+```sh
+python3 herramientas/enlaces.py            # añade lo que falte desde los TSV
+```
 
 El bloque de `index.html` delimitado por
 `/* ==== DATOS GENERADOS POR inject.py — NO EDITAR A MANO ==== */` se reescribe entero en cada

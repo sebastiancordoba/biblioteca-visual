@@ -9,7 +9,8 @@ const html = fs.readFileSync(require('path').join(__dirname,'..','index.html'), 
 const js = html.split('<script>')[1].split('</script>')[0];
 
 const { noop, ejecutar } = require('./dom_falso.js');
-const { BOOKS, document } = ejecutar(html, '{BOOKS}');
+const { BOOKS, document, urlOriginal, openZoomForArtwork } =
+  ejecutar(html, '{BOOKS, urlOriginal, openZoomForArtwork}');
 
 let fails = 0;
 const check = (ok, msg) => { console.log((ok ? '  ok    ' : '  FALLA ') + msg); if (!ok) fails++; };
@@ -90,6 +91,30 @@ console.log('\n== Portada ==');
     'la portada reúne todas las obras de todos los libros');
   check(BOOKS.inicio.details.every(d => d.libro && d.libroId),
     'cada obra de la portada sabe de qué libro viene');
+}
+
+console.log('\n== Botón Original del visor ==');
+{
+  /* Llamaba a resetZoom(): al 100% no hacía nada visible, y encima el nombre prometía
+     abrir el archivo original. Ahora lo abre de verdad. */
+  check(/<a class="zoom-ctrl-btn" id="btnOriginal"[^>]*target="_blank"/.test(html),
+    'el control Original es un enlace real, no un resetZoom disfrazado');
+  check(/onclick="resetZoom\(\)"[^>]*>AJUSTAR</.test(html),
+    'el que reajusta el zoom se llama AJUSTAR, que es lo que hace');
+
+  let malas = 0, comprobadas = 0;
+  for (const id of Object.keys(BOOKS)) {
+    if (!BOOKS[id].details.length) continue;
+    for (let i = 0; i < BOOKS[id].details.length; i += 7) {
+      openZoomForArtwork.call(null, i, 0);
+      // openZoomForArtwork usa currentBook; se fija abriendo desde ese libro
+      const u = urlOriginal();
+      comprobadas++;
+      if (!u || (!u.startsWith('http') && !fs.existsSync(decodeURIComponent(u)))) malas++;
+    }
+    break;   // basta con un libro: la ruta de resolución es la misma para todos
+  }
+  check(malas === 0, `el original resuelve a un archivo real (${comprobadas} comprobadas, ${malas} rotas)`);
 }
 
 console.log('\n== Flechas del banner ==');

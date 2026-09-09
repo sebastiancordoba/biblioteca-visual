@@ -1,366 +1,562 @@
 {
  "Gilgamesh/01_Tablilla_XI_del_Diluvio_Biblioteca_de_Asurbanipal_650aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ATablet_XI_or_the_Flood_Tablet_of_the_Epic_of_Gilgamesh%2C_currently_housed_in_the_British_Museum_in_London.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Tablet_XI_or_the_Flood_Tablet_of_the_Epic_of_Gilgamesh%2C_currently_housed_in_the_British_Museum_in_London.jpg",
-  "w": 6016,
   "h": 4016,
-  "mp": 24.2
+  "mp": 24.2,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Tablet_XI_or_the_Flood_Tablet_of_the_Epic_of_Gilgamesh%2C_currently_housed_in_the_British_Museum_in_London.jpg",
+  "w": 6016
  },
  "Gilgamesh/01b_Tablilla_XI_del_Diluvio_Detalle_Biblioteca_de_Asurbanipal_650aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ALibrary_of_Ashurbanipal_The_Flood_Tablet.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Library_of_Ashurbanipal_The_Flood_Tablet.jpg",
-  "w": 2274,
   "h": 2499,
-  "mp": 5.7
+  "mp": 5.7,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Library_of_Ashurbanipal_The_Flood_Tablet.jpg",
+  "w": 2274
  },
  "Gilgamesh/02_Gilgamesh_Dominando_un_Leon_Khorsabad_713aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AHero_mastering_a_lion%2C_AO19862_%281817%29.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Hero_mastering_a_lion%2C_AO19862_%281817%29.jpg",
-  "w": 3264,
   "h": 4928,
-  "mp": 16.1
+  "mp": 16.1,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Hero_mastering_a_lion%2C_AO19862_%281817%29.jpg",
+  "w": 3264
  },
  "Gilgamesh/02b_Gilgamesh_Dominando_un_Leon_Vista_de_Sala_Khorsabad_713aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AHero_mastering_a_lion-AO_19862-Paris_2016_%2830109929844%29.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Hero_mastering_a_lion-AO_19862-Paris_2016_%2830109929844%29.jpg",
-  "w": 3000,
   "h": 4000,
-  "mp": 12.0
+  "mp": 12.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Hero_mastering_a_lion-AO_19862-Paris_2016_%2830109929844%29.jpg",
+  "w": 3000
  },
  "Gilgamesh/03_Gilgamesh_y_Huwawa_Relieve_Babilonico_1800aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AGilgamesh_and_Huwawa_Ashmolean.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Gilgamesh_and_Huwawa_Ashmolean.jpg",
-  "w": 3522,
   "h": 3442,
-  "mp": 12.1
+  "mp": 12.1,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Gilgamesh_and_Huwawa_Ashmolean.jpg",
+  "w": 3522
  },
  "Gilgamesh/04_Mascara_de_Humbaba_Ur_1800aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ATerracotta_mask_of_Humbaba_%28Huwawa%29._From_Ur%2C_Iraq._Old-Babylonian_period_2004-1595_BCE._Sulaymaniyah_Museum.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/7/71/Terracotta_mask_of_Humbaba_%28Huwawa%29._From_Ur%2C_Iraq._Old-Babylonian_period_2004-1595_BCE._Sulaymaniyah_Museum.jpg",
-  "w": 3515,
   "h": 3276,
-  "mp": 11.5
+  "mp": 11.5,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/71/Terracotta_mask_of_Humbaba_%28Huwawa%29._From_Ur%2C_Iraq._Old-Babylonian_period_2004-1595_BCE._Sulaymaniyah_Museum.jpg",
+  "w": 3515
  },
  "Gilgamesh/05_Tablilla_del_Sueno_de_Gilgamesh_1600aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AGilgamesh_Dream_Tablet.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Gilgamesh_Dream_Tablet.jpg",
-  "w": 1407,
   "h": 1821,
-  "mp": 2.6
+  "mp": 2.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Gilgamesh_Dream_Tablet.jpg",
+  "w": 1407
  },
  "Gilgamesh/06_Relieve_de_la_Reina_de_la_Noche_Babilonia_1750aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AQueen_of_the_night_relief_-_British_Museum.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Queen_of_the_night_relief_-_British_Museum.jpg",
-  "w": 2228,
   "h": 2941,
-  "mp": 6.6
+  "mp": 6.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Queen_of_the_night_relief_-_British_Museum.jpg",
+  "w": 2228
  },
  "Gilgamesh/07_Vaso_de_Warka_Uruk_3000aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AWarka_vase_%28background_retouched%29.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/6/67/Warka_vase_%28background_retouched%29.jpg",
-  "w": 2824,
   "h": 6632,
-  "mp": 18.7
+  "mp": 18.7,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/6/67/Warka_vase_%28background_retouched%29.jpg",
+  "w": 2824
  },
  "Gilgamesh/07b_Vaso_de_Warka_Registro_Superior_Uruk_3000aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ATop_register%2C_Warka_Vase%2C_Uruk%2C_c._3000_BCE%2C_Iraq_Museum.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/d/de/Top_register%2C_Warka_Vase%2C_Uruk%2C_c._3000_BCE%2C_Iraq_Museum.jpg",
-  "w": 4398,
   "h": 3956,
-  "mp": 17.4
+  "mp": 17.4,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/de/Top_register%2C_Warka_Vase%2C_Uruk%2C_c._3000_BCE%2C_Iraq_Museum.jpg",
+  "w": 4398
  },
  "Gilgamesh/08_Lamassu_del_Palacio_de_Sargon_II_Khorsabad_713aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ALamassu_%28Winged_Bull%29_of_Throne_Room_of_Palace_of_Sargon_II%2C_Khorsabad%2C_Assyria_%2827681700183%29.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/4/46/Lamassu_%28Winged_Bull%29_of_Throne_Room_of_Palace_of_Sargon_II%2C_Khorsabad%2C_Assyria_%2827681700183%29.jpg",
-  "w": 3456,
   "h": 5184,
-  "mp": 17.9
+  "mp": 17.9,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/46/Lamassu_%28Winged_Bull%29_of_Throne_Room_of_Palace_of_Sargon_II%2C_Khorsabad%2C_Assyria_%2827681700183%29.jpg",
+  "w": 3456
  },
  "Gilgamesh/09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ANude_bearded_hero_wrestling_with_water_buffalo%2C_bull_man_fighting_lion%2C_Mesopotamia%2C_Akkadian_period%2C_c._2334-2154_BC%2C_serpentine_cylinder_seal_-_Morgan_Library_%26_Museum_-_New_York_City_-_DSC06594.jpg",
+  "h": 3648,
+  "mp": 20.0,
   "original": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Nude_bearded_hero_wrestling_with_water_buffalo%2C_bull_man_fighting_lion%2C_Mesopotamia%2C_Akkadian_period%2C_c._2334-2154_BC%2C_serpentine_cylinder_seal_-_Morgan_Library_%26_Museum_-_New_York_City_-_DSC06594.jpg",
-  "w": 5472,
-  "h": 3648,
-  "mp": 20.0
+  "w": 5472
  },
- "Ilíada/01_Aquiles_y_Ayax_Jugando_a_los_Dados_Exekias_540aC.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AAchilles_and_Ajax_playing_dice%2C_Attic_black-figured_amphora%2C_signed_by_Exekias_as_both_painter_and_potter%2C_540-530_BC%2C_inv._16757_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01049.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/4/47/Achilles_and_Ajax_playing_dice%2C_Attic_black-figured_amphora%2C_signed_by_Exekias_as_both_painter_and_potter%2C_540-530_BC%2C_inv._16757_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01049.jpg",
-  "w": 3648,
-  "h": 5472,
-  "mp": 20.0
+ "Gilgamesh/10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Ashurbanipal%27s_lion-hunt_scene,_wall_relief,_7th_century_BC,_from_Nineveh,_the_British_Museum.jpg",
+  "h": 4016,
+  "mp": 24.2,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/37/Ashurbanipal%27s_lion-hunt_scene%2C_wall_relief%2C_7th_century_BC%2C_from_Nineveh%2C_the_British_Museum.jpg",
+  "w": 6016
  },
- "Ilíada/01b_Aquiles_y_Ayax_Jugando_a_los_Dados_Detalle_Exekias_540aC.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AAchilles_and_Ajax_playing_dice%2C_detail%2C_Attic_black-figured_amphora%2C_signed_by_Exekias_as_both_painter_and_potter%2C_540-530_BC%2C_inv._16757_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01051.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Achilles_and_Ajax_playing_dice%2C_detail%2C_Attic_black-figured_amphora%2C_signed_by_Exekias_as_both_painter_and_potter%2C_540-530_BC%2C_inv._16757_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01051.jpg",
-  "w": 5472,
-  "h": 3648,
-  "mp": 20.0
+ "Gilgamesh/11_El_Toro_Celeste_Placa_Votiva_Bruselas_2250aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:O.1054_color.jpg",
+  "h": 2652,
+  "mp": 5.8,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/6/65/O.1054_color.jpg",
+  "w": 2172
  },
- "Ilíada/02_Jupiter_y_Tetis_Ingres_1811.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AJean_Auguste_Dominique_Ingres_-_Jupiter_et_Th%C3%A9tis_01.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/0/03/Jean_Auguste_Dominique_Ingres_-_Jupiter_et_Th%C3%A9tis_01.jpg",
-  "w": 4000,
-  "h": 5138,
-  "mp": 20.6
+ "Génesis/01_La_Creacion_de_Adan_Wikipedia_Cropped.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Michelangelo_-_Creation_of_Adam_(cropped).jpg",
+  "h": 1599,
+  "mp": 5.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg",
+  "w": 3524
  },
- "Ilíada/02b_Jupiter_y_Tetis_Detalle_Ingres_1811.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AJean_Auguste_Dominique_Ingres_-_Jupiter_et_Th%C3%A9tis_02.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Jean_Auguste_Dominique_Ingres_-_Jupiter_et_Th%C3%A9tis_02.jpg",
-  "w": 6000,
-  "h": 4000,
-  "mp": 24.0
+ "Génesis/01b_La_Creacion_de_Adan_Manos_Miguel_Angel_1512.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Creation_of_Adam_(Michelangelo)_Detail.jpg",
+  "h": 1047,
+  "mp": 1.5,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/39/Creation_of_Adam_%28Michelangelo%29_Detail.jpg",
+  "w": 1400
  },
- "Ilíada/03_La_Colera_de_Aquiles_Jacques_Louis_David_1819.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AJacques-Louis_David_-_The_Anger_of_Achilles_-_Google_Art_Project.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Jacques-Louis_David_-_The_Anger_of_Achilles_-_Google_Art_Project.jpg",
-  "w": 4201,
-  "h": 2994,
-  "mp": 12.6
+ "Génesis/02_La_Expulsion_del_Paraiso_Masaccio_Wikipedia_Master.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Masaccio_expulsion-1427.jpg",
+  "h": 2559,
+  "mp": 2.7,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/2/21/Masaccio_expulsion-1427.jpg",
+  "w": 1043
  },
- "Ilíada/04_Andromaca_Llorando_a_Hector_Jacques_Louis_David_1783.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AJacques-Louis_David_-_The_Grief_of_Andromache_-_WGA06106.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Jacques-Louis_David_-_The_Grief_of_Andromache_-_WGA06106.jpg",
-  "w": 3508,
-  "h": 4149,
-  "mp": 14.6
+ "Génesis/03_Cain_y_Abel_Tiziano_1544.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Titian_-_Cain_and_Abel_-_WGA22778.jpg",
+  "h": 1045,
+  "mp": 1.1,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/46/Titian_-_Cain_and_Abel_-_WGA22778.jpg",
+  "w": 1006
  },
- "Ilíada/05_El_Triunfo_de_Aquiles_Franz_von_Matsch_1892.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AThe_Triumph_of_Achilles_by_Franz_von_Matsch.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/b/b9/The_Triumph_of_Achilles_by_Franz_von_Matsch.jpg",
-  "w": 5638,
-  "h": 2639,
-  "mp": 14.9
+ "Génesis/04_El_Diluvio_Miguel_Angel_1509.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:El_Diluvio.jpg",
+  "h": 2887,
+  "mp": 12.5,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/59/El_Diluvio.jpg",
+  "w": 4328
  },
- "Ilíada/06_Aquiles_Llorando_a_Patroclo_Gavin_Hamilton_1763.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AAchilles_Lamenting_the_Death_of_Patroclus_by_Gavin_Hamilton_the_National_Galleries_of_Scotland.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/5/55/Achilles_Lamenting_the_Death_of_Patroclus_by_Gavin_Hamilton_the_National_Galleries_of_Scotland.jpg",
-  "w": 2660,
-  "h": 1786,
-  "mp": 4.8
+ "Génesis/06_Cain_Fernand_Cormon_1880.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Ca%C3%AFn_Fernand_Cormon.jpg",
+  "h": 2777,
+  "mp": 13.8,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/45/Ca%C3%AFn_Fernand_Cormon.jpg",
+  "w": 4984
  },
- "Ilíada/07_Priamo_Pide_a_Aquiles_el_Cuerpo_de_Hector_Alexander_Ivanov_1824.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AAlexandr_Ivanov_005.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Alexandr_Ivanov_005.jpg",
-  "w": 2048,
-  "h": 1669,
-  "mp": 3.4
+ "Génesis/09_La_Confusion_de_las_Lenguas_Gustave_Dore_1865.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Confusion_of_Tongues_(89393754).jpg",
+  "h": 3844,
+  "mp": 11.9,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Confusion_of_Tongues_%2889393754%29.jpg",
+  "w": 3088
  },
- "Ilíada/08_La_Procesion_del_Caballo_de_Troya_Giandomenico_Tiepolo_1760.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AGiovanni_Domenico_Tiepolo_-_The_Procession_of_the_Trojan_Horse_in_Troy_-_WGA22382.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/1/18/Giovanni_Domenico_Tiepolo_-_The_Procession_of_the_Trojan_Horse_in_Troy_-_WGA22382.jpg",
-  "w": 7101,
-  "h": 4138,
-  "mp": 29.4
+ "Génesis/11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Watts_%E2%80%93_After_the_Deluge.jpg",
+  "h": 693,
+  "mp": 0.8,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Watts_%E2%80%93_After_the_Deluge.jpg",
+  "w": 1200
  },
- "Ilíada/08b_La_Construccion_del_Caballo_de_Troya_Giandomenico_Tiepolo_1760.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AGD_Tiepolo_Construction_du_cheval_de_Troie.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/5/5d/GD_Tiepolo_Construction_du_cheval_de_Troie.jpg",
-  "w": 7143,
-  "h": 4181,
-  "mp": 29.9
+ "Génesis/12_La_disminucion_de_las_aguas_Francis_Danby_1840.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Francis_Danby_-_The_Deluge_-_Google_Art_Project.jpg",
+  "h": 1576,
+  "mp": 3.9,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Francis_Danby_-_The_Deluge_-_Google_Art_Project.jpg",
+  "w": 2500
  },
- "Ilíada/09_El_Juicio_de_Paris_Peter_Paul_Rubens_1635.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3ARubens_-_Judgement_of_Paris.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Rubens_-_Judgement_of_Paris.jpg",
-  "w": 5707,
-  "h": 4226,
-  "mp": 24.1
- },
- "Ilíada/10_Mascara_de_Agamenon_Micenas_1550aC.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AGold_death-mask_known_as_%E2%80%98Mask_of_Agamemnon%2C%E2%80%99_Mycenae%2C_Grave_Circle_A%2C_Grave_V%2C_16th_cent._BC._%2828423089016%29.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Gold_death-mask_known_as_%E2%80%98Mask_of_Agamemnon%2C%E2%80%99_Mycenae%2C_Grave_Circle_A%2C_Grave_V%2C_16th_cent._BC._%2828423089016%29.jpg",
-  "w": 5184,
-  "h": 3456,
-  "mp": 17.9
- },
- "Ilíada/10b_Mascara_de_Agamenon_Vista_Frontal_Micenas_1550aC.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AFuneral_mask_Mycenae_%22Agamemnon%22%2C_NAMA_624%2C_225545.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Funeral_mask_Mycenae_%22Agamemnon%22%2C_NAMA_624%2C_225545.jpg",
-  "w": 2619,
-  "h": 3491,
-  "mp": 9.1
- },
- "Ilíada/11_Puerta_de_los_Leones_Micenas_1250aC.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3ALion_Gate%2C_Mycenae%2C_201505.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Lion_Gate%2C_Mycenae%2C_201505.jpg",
-  "w": 5941,
-  "h": 3953,
-  "mp": 23.5
- },
- "Ilíada/12_Casco_de_Colmillos_de_Jabali_Micenas_1400aC.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AMycenaean_boar%27s_tusk_helmet_at_the_National_Archaeological_Museum_of_Athens_on_October_6%2C_2021.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Mycenaean_boar%27s_tusk_helmet_at_the_National_Archaeological_Museum_of_Athens_on_October_6%2C_2021.jpg",
-  "w": 3246,
-  "h": 4869,
-  "mp": 15.8
- },
- "Ilíada/13_Laocoonte_y_sus_Hijos_Escuela_de_Rodas_40aC.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3ALaocoon_and_His_Sons%2C_Vatican.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Laocoon_and_His_Sons%2C_Vatican.jpg",
-  "w": 2736,
-  "h": 3648,
-  "mp": 10.0
- },
- "Ilíada/14_Fronton_del_Templo_de_Afaya_Egina_490aC.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3AAphaia_pediment_Laomedon_E-XI_Glyptothek_Munich_85_n2.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Aphaia_pediment_Laomedon_E-XI_Glyptothek_Munich_85_n2.jpg",
-  "w": 4320,
-  "h": 3240,
-  "mp": 14.0
- },
- "Ilíada/15_Murallas_de_Troya_Hisarlik_2500aC.jpg": {
-  "commons": "https://commons.wikimedia.org/wiki/File%3ALegendary_walls_of_Troy_%288708672267%29.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Legendary_walls_of_Troy_%288708672267%29.jpg",
-  "w": 4288,
-  "h": 2848,
-  "mp": 12.2
+ "Génesis/13_La_disminucion_de_las_aguas_Thomas_Cole_1829.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Thomas_Cole_-_Subsiding_of_the_Waters_of_the_Deluge_-_Smithsonian.jpg",
+  "h": 2985,
+  "mp": 11.9,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/82/Thomas_Cole_-_Subsiding_of_the_Waters_of_the_Deluge_-_Smithsonian.jpg",
+  "w": 4000
  },
  "Génesis/14_Adan_y_Eva_Lucas_Cranach_el_Viejo_1538.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ALucas_Cranach_the_Elder_-_Adam_and_Eve_-_Google_Art_Project.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Lucas_Cranach_the_Elder_-_Adam_and_Eve_-_Google_Art_Project.jpg",
-  "w": 8577,
   "h": 12443,
-  "mp": 106.7
+  "mp": 106.7,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Lucas_Cranach_the_Elder_-_Adam_and_Eve_-_Google_Art_Project.jpg",
+  "w": 8577
  },
  "Génesis/15_Adan_y_Eva_Grabado_Alberto_Durero_1504.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AAlbrecht_D%C3%BCrer%2C_Adam_and_Eve%2C_1504%2C_Engraving.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Albrecht_D%C3%BCrer%2C_Adam_and_Eve%2C_1504%2C_Engraving.jpg",
-  "w": 2872,
   "h": 3648,
-  "mp": 10.5
+  "mp": 10.5,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Albrecht_D%C3%BCrer%2C_Adam_and_Eve%2C_1504%2C_Engraving.jpg",
+  "w": 2872
  },
  "Génesis/15b_Adan_y_Eva_Alberto_Durero_1507.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AAlbrecht_D%C3%BCrer_-_Adam_and_Eve_%28Prado%29.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/8/89/Albrecht_D%C3%BCrer_-_Adam_and_Eve_%28Prado%29.jpg",
-  "w": 2360,
   "h": 3043,
-  "mp": 7.2
+  "mp": 7.2,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/89/Albrecht_D%C3%BCrer_-_Adam_and_Eve_%28Prado%29.jpg",
+  "w": 2360
  },
  "Génesis/16_El_Anciano_de_los_Dias_William_Blake_1794.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AWilliam_Blake_-_Europe._A_Prophecy%2C_Frontispiece_Proof_Impression_-_Google_Art_Project.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/2/22/William_Blake_-_Europe._A_Prophecy%2C_Frontispiece_Proof_Impression_-_Google_Art_Project.jpg",
-  "w": 3206,
   "h": 4468,
-  "mp": 14.3
+  "mp": 14.3,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/2/22/William_Blake_-_Europe._A_Prophecy%2C_Frontispiece_Proof_Impression_-_Google_Art_Project.jpg",
+  "w": 3206
  },
  "Génesis/17_El_Sacrificio_de_Isaac_Caravaggio_1603.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ASacrifice_of_Isaac-Caravaggio_%28Uffizi%29.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/6/60/Sacrifice_of_Isaac-Caravaggio_%28Uffizi%29.jpg",
-  "w": 7972,
   "h": 6142,
-  "mp": 49.0
+  "mp": 49.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/6/60/Sacrifice_of_Isaac-Caravaggio_%28Uffizi%29.jpg",
+  "w": 7972
  },
  "Génesis/18_El_Sacrificio_de_Isaac_Rembrandt_1635.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ARembrandt_Abraham%27s_Sacrifice_%28Hermitage%29.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/1/10/Rembrandt_Abraham%27s_Sacrifice_%28Hermitage%29.jpg",
-  "w": 2471,
   "h": 3633,
-  "mp": 9.0
+  "mp": 9.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/10/Rembrandt_Abraham%27s_Sacrifice_%28Hermitage%29.jpg",
+  "w": 2471
  },
  "Génesis/19_La_Trinidad_de_Abraham_Andrei_Rublev_1425.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AAndrey_Rublev_-_%D0%A1%D0%B2._%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%B0_-_Google_Art_Project.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Andrey_Rublev_-_%D0%A1%D0%B2._%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%B0_-_Google_Art_Project.jpg",
-  "w": 3231,
   "h": 4000,
-  "mp": 12.9
+  "mp": 12.9,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Andrey_Rublev_-_%D0%A1%D0%B2._%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%B0_-_Google_Art_Project.jpg",
+  "w": 3231
  },
  "Génesis/20_Jacob_Luchando_con_el_Angel_Eugene_Delacroix_1861.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AEug%C3%A8ne_Delacroix_%E2%80%94_Jacob_Wrestling_with_the_Angel.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Eug%C3%A8ne_Delacroix_%E2%80%94_Jacob_Wrestling_with_the_Angel.jpg",
-  "w": 5388,
   "h": 8025,
-  "mp": 43.2
+  "mp": 43.2,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Eug%C3%A8ne_Delacroix_%E2%80%94_Jacob_Wrestling_with_the_Angel.jpg",
+  "w": 5388
  },
  "Génesis/21_Jacob_Luchando_con_el_Angel_Rembrandt_1659.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ARembrandt_-_Jacob_Wrestling_with_the_Angel_-_Google_Art_Project.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rembrandt_-_Jacob_Wrestling_with_the_Angel_-_Google_Art_Project.jpg",
-  "w": 4000,
   "h": 4771,
-  "mp": 19.1
+  "mp": 19.1,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rembrandt_-_Jacob_Wrestling_with_the_Angel_-_Google_Art_Project.jpg",
+  "w": 4000
  },
  "Génesis/22_La_Vision_tras_el_Sermon_Paul_Gauguin_1888.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ALa_vision_apr%C3%A8s_le_sermon_%28Paul_Gauguin%29.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/5/56/La_vision_apr%C3%A8s_le_sermon_%28Paul_Gauguin%29.jpg",
-  "w": 5000,
   "h": 3918,
-  "mp": 19.6
+  "mp": 19.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/56/La_vision_apr%C3%A8s_le_sermon_%28Paul_Gauguin%29.jpg",
+  "w": 5000
  },
  "Génesis/23_Agar_en_el_Desierto_Camille_Corot_1835.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AHagar_in_the_Wilderness_MET_DT2013.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/3/35/Hagar_in_the_Wilderness_MET_DT2013.jpg",
-  "w": 3811,
   "h": 2817,
-  "mp": 10.7
+  "mp": 10.7,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/35/Hagar_in_the_Wilderness_MET_DT2013.jpg",
+  "w": 3811
  },
  "Génesis/24_La_Tunica_de_Jose_Diego_Velazquez_1630.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ADiego_Vel%C3%A1zquez_065.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Diego_Vel%C3%A1zquez_065.jpg",
-  "w": 3147,
   "h": 2408,
-  "mp": 7.6
+  "mp": 7.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Diego_Vel%C3%A1zquez_065.jpg",
+  "w": 3147
  },
  "Génesis/25_La_Destruccion_de_Sodoma_y_Gomorra_John_Martin_1852.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AJohn_Martin_-_Sodom_and_Gomorrah.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e1/John_Martin_-_Sodom_and_Gomorrah.jpg",
-  "w": 3597,
   "h": 2293,
-  "mp": 8.2
+  "mp": 8.2,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e1/John_Martin_-_Sodom_and_Gomorrah.jpg",
+  "w": 3597
  },
  "Génesis/26_El_Jardin_de_las_Delicias_El_Bosco_1505.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AThe_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/6/6d/The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg",
-  "w": 30000,
   "h": 17078,
-  "mp": 512.3
+  "mp": 512.3,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/6/6d/The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg",
+  "w": 30000
  },
  "Génesis/27_Lot_y_sus_Hijas_Peter_Paul_Rubens_1614.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3APeter_Paul_Rubens_-_Lot_and_his_daughters_in_a_rock_grotto_%28Schwerin%29.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/7/75/Peter_Paul_Rubens_-_Lot_and_his_daughters_in_a_rock_grotto_%28Schwerin%29.jpg",
-  "w": 5608,
   "h": 4089,
-  "mp": 22.9
+  "mp": 22.9,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/75/Peter_Paul_Rubens_-_Lot_and_his_daughters_in_a_rock_grotto_%28Schwerin%29.jpg",
+  "w": 5608
  },
  "Génesis/28_Eliezer_y_Rebeca_Nicolas_Poussin_1648.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AEli%C3%A9zer_et_R%C3%A9becca_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7270_%3B_MR_2315.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Eli%C3%A9zer_et_R%C3%A9becca_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7270_%3B_MR_2315.jpg",
-  "w": 10889,
   "h": 6444,
-  "mp": 70.2
+  "mp": 70.2,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Eli%C3%A9zer_et_R%C3%A9becca_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7270_%3B_MR_2315.jpg",
+  "w": 10889
  },
  "Génesis/29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AJos%C3%A9_de_Ribera_012.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/8/82/Jos%C3%A9_de_Ribera_012.jpg",
-  "w": 3051,
   "h": 1157,
-  "mp": 3.5
+  "mp": 3.5,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/82/Jos%C3%A9_de_Ribera_012.jpg",
+  "w": 3051
  },
  "Génesis/29b_Isaac_Bendice_a_Jacob_Detalle_Jose_de_Ribera_1637.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AJos%C3%A9_de_Ribera_013.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Jos%C3%A9_de_Ribera_013.jpg",
-  "w": 2024,
   "h": 2469,
-  "mp": 5.0
+  "mp": 5.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Jos%C3%A9_de_Ribera_013.jpg",
+  "w": 2024
  },
  "Génesis/30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AEl_sue%C3%B1o_de_Jacob%2C_by_Jos%C3%A9_de_Ribera%2C_from_Prado_in_Google_Earth.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/8/85/El_sue%C3%B1o_de_Jacob%2C_by_Jos%C3%A9_de_Ribera%2C_from_Prado_in_Google_Earth.jpg",
-  "w": 30000,
   "h": 22691,
-  "mp": 680.7
+  "mp": 680.7,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/85/El_sue%C3%B1o_de_Jacob%2C_by_Jos%C3%A9_de_Ribera%2C_from_Prado_in_Google_Earth.jpg",
+  "w": 30000
+ },
+ "Génesis/31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Nicolas_Poussin_-_L%27Hiver_ou_Le_D%C3%A9luge.jpg",
+  "h": 1492,
+  "mp": 3.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/33/Nicolas_Poussin_-_L%27Hiver_ou_Le_D%C3%A9luge.jpg",
+  "w": 2024
+ },
+ "Génesis/31b_El_Invierno_o_El_Diluvio_Detalle_Nicolas_Poussin_1664.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Nicolas_Poussin_-_L%27Hiver_ou_Le_D%C3%A9luge_(d%C3%A9tail).jpg",
+  "h": 2464,
+  "mp": 5.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Nicolas_Poussin_-_L%27Hiver_ou_Le_D%C3%A9luge_%28d%C3%A9tail%29.jpg",
+  "w": 2024
+ },
+ "Génesis/32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Bellini_-_L%27Ivresse_de_No%C3%A9,_1515_vers,_896.1.13.jpg",
+  "h": 3371,
+  "mp": 17.4,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bellini_-_L%27Ivresse_de_No%C3%A9%2C_1515_vers%2C_896.1.13.jpg",
+  "w": 5160
+ },
+ "Génesis/33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_The_Meeting_of_Abraham_and_Melchizedek_-_WGA20435.jpg",
+  "h": 12937,
+  "mp": 209.7,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Peter_Paul_Rubens_-_The_Meeting_of_Abraham_and_Melchizedek_-_WGA20435.jpg",
+  "w": 16208
+ },
+ "Génesis/34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Synagogue,_Dura_Europos_(%D8%AF%D9%88%D8%B1%D8%A7_%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D9%88%D8%B3),_Syria-Looking_west-PHBZ024_2016_0873-Dumbarton_Oaks.jpg",
+  "h": 3207,
+  "mp": 15.3,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/0/05/Synagogue%2C_Dura_Europos_%28%D8%AF%D9%88%D8%B1%D8%A7_%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D9%88%D8%B3%29%2C_Syria-Looking_west-PHBZ024_2016_0873-Dumbarton_Oaks.jpg",
+  "w": 4772
+ },
+ "Génesis/34b_El_Sacrificio_de_Isaac_Panel_Dura_Europos_Siria_244.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Dura_Europos_Synagogue_Sacrifice_of_Isaac.jpg",
+  "h": 582,
+  "mp": 0.2,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Dura_Europos_Synagogue_Sacrifice_of_Isaac.jpg",
+  "w": 297
+ },
+ "Génesis/35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Joseph_Accused_by_Potiphar%27s_Wife.jpg",
+  "h": 17480,
+  "mp": 280.8,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/45/Joseph_Accused_by_Potiphar%27s_Wife.jpg",
+  "w": 16063
+ },
+ "Génesis/36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Jacob_blessing_Ephraim_and_Manasseh_(Gem%C3%A4ldegalerie_Alte_Meister_Kassel).jpg",
+  "h": 5931,
+  "mp": 41.5,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/16/Rembrandt_van_Rijn_-_Jacob_blessing_Ephraim_and_Manasseh_%28Gem%C3%A4ldegalerie_Alte_Meister_Kassel%29.jpg",
+  "w": 7000
+ },
+ "Génesis/37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Collection_Motais_de_Narbonne_-_Jacob_et_Rachel_au_puits_(1720)_-_Fran%C3%A7ois_Lemoyne_(71).jpg",
+  "h": 6273,
+  "mp": 31.3,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/37/Collection_Motais_de_Narbonne_-_Jacob_et_Rachel_au_puits_%281720%29_-_Fran%C3%A7ois_Lemoyne_%2871%29.jpg",
+  "w": 4991
+ },
+ "Génesis/38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Joseph_Interpreting_the_Dreams_of_Pharaoh_MET_DP164851.jpg",
+  "h": 3798,
+  "mp": 12.3,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Joseph_Interpreting_the_Dreams_of_Pharaoh_MET_DP164851.jpg",
+  "w": 3234
+ },
+ "Génesis/39_Adan_y_Eva_Lucas_Cranach_Museo_Soumaya_1531.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Lucas_Cranach_(I)_-_Adam_und_Eva_(Museo_Soumaya).jpg",
+  "h": 10954,
+  "mp": 80.8,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Lucas_Cranach_%28I%29_-_Adam_und_Eva_%28Museo_Soumaya%29.jpg",
+  "w": 7374
+ },
+ "Génesis/40_El_Diluvio_Cristobal_de_Villalpando_1684.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:El_Diluvio_-_Crist%C3%B3bal_de_Villalpando_-_(Capilla_del_Esp%C3%ADritu_Santo_de_Ochavo_Catedral_de_Puebla,_Puebla,_M%C3%A9xico).jpg",
+  "h": 2000,
+  "mp": 6.2,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/c2/El_Diluvio_-_Crist%C3%B3bal_de_Villalpando_-_%28Capilla_del_Esp%C3%ADritu_Santo_de_Ochavo_Catedral_de_Puebla%2C_Puebla%2C_M%C3%A9xico%29.jpg",
+  "w": 3100
+ },
+ "Ilíada/01_Aquiles_y_Ayax_Jugando_a_los_Dados_Exekias_540aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AAchilles_and_Ajax_playing_dice%2C_Attic_black-figured_amphora%2C_signed_by_Exekias_as_both_painter_and_potter%2C_540-530_BC%2C_inv._16757_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01049.jpg",
+  "h": 5472,
+  "mp": 20.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/47/Achilles_and_Ajax_playing_dice%2C_Attic_black-figured_amphora%2C_signed_by_Exekias_as_both_painter_and_potter%2C_540-530_BC%2C_inv._16757_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01049.jpg",
+  "w": 3648
+ },
+ "Ilíada/01b_Aquiles_y_Ayax_Jugando_a_los_Dados_Detalle_Exekias_540aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AAchilles_and_Ajax_playing_dice%2C_detail%2C_Attic_black-figured_amphora%2C_signed_by_Exekias_as_both_painter_and_potter%2C_540-530_BC%2C_inv._16757_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01051.jpg",
+  "h": 3648,
+  "mp": 20.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Achilles_and_Ajax_playing_dice%2C_detail%2C_Attic_black-figured_amphora%2C_signed_by_Exekias_as_both_painter_and_potter%2C_540-530_BC%2C_inv._16757_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01051.jpg",
+  "w": 5472
+ },
+ "Ilíada/02_Jupiter_y_Tetis_Ingres_1811.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AJean_Auguste_Dominique_Ingres_-_Jupiter_et_Th%C3%A9tis_01.jpg",
+  "h": 5138,
+  "mp": 20.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/0/03/Jean_Auguste_Dominique_Ingres_-_Jupiter_et_Th%C3%A9tis_01.jpg",
+  "w": 4000
+ },
+ "Ilíada/02b_Jupiter_y_Tetis_Detalle_Ingres_1811.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AJean_Auguste_Dominique_Ingres_-_Jupiter_et_Th%C3%A9tis_02.jpg",
+  "h": 4000,
+  "mp": 24.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Jean_Auguste_Dominique_Ingres_-_Jupiter_et_Th%C3%A9tis_02.jpg",
+  "w": 6000
+ },
+ "Ilíada/03_La_Colera_de_Aquiles_Jacques_Louis_David_1819.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AJacques-Louis_David_-_The_Anger_of_Achilles_-_Google_Art_Project.jpg",
+  "h": 2994,
+  "mp": 12.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Jacques-Louis_David_-_The_Anger_of_Achilles_-_Google_Art_Project.jpg",
+  "w": 4201
+ },
+ "Ilíada/04_Andromaca_Llorando_a_Hector_Jacques_Louis_David_1783.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AJacques-Louis_David_-_The_Grief_of_Andromache_-_WGA06106.jpg",
+  "h": 4149,
+  "mp": 14.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Jacques-Louis_David_-_The_Grief_of_Andromache_-_WGA06106.jpg",
+  "w": 3508
+ },
+ "Ilíada/05_El_Triunfo_de_Aquiles_Franz_von_Matsch_1892.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AThe_Triumph_of_Achilles_by_Franz_von_Matsch.jpg",
+  "h": 2639,
+  "mp": 14.9,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/b9/The_Triumph_of_Achilles_by_Franz_von_Matsch.jpg",
+  "w": 5638
+ },
+ "Ilíada/06_Aquiles_Llorando_a_Patroclo_Gavin_Hamilton_1763.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AAchilles_Lamenting_the_Death_of_Patroclus_by_Gavin_Hamilton_the_National_Galleries_of_Scotland.jpg",
+  "h": 1786,
+  "mp": 4.8,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/55/Achilles_Lamenting_the_Death_of_Patroclus_by_Gavin_Hamilton_the_National_Galleries_of_Scotland.jpg",
+  "w": 2660
+ },
+ "Ilíada/07_Priamo_Pide_a_Aquiles_el_Cuerpo_de_Hector_Alexander_Ivanov_1824.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AAlexandr_Ivanov_005.jpg",
+  "h": 1669,
+  "mp": 3.4,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Alexandr_Ivanov_005.jpg",
+  "w": 2048
+ },
+ "Ilíada/08_La_Procesion_del_Caballo_de_Troya_Giandomenico_Tiepolo_1760.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AGiovanni_Domenico_Tiepolo_-_The_Procession_of_the_Trojan_Horse_in_Troy_-_WGA22382.jpg",
+  "h": 4138,
+  "mp": 29.4,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/18/Giovanni_Domenico_Tiepolo_-_The_Procession_of_the_Trojan_Horse_in_Troy_-_WGA22382.jpg",
+  "w": 7101
+ },
+ "Ilíada/08b_La_Construccion_del_Caballo_de_Troya_Giandomenico_Tiepolo_1760.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AGD_Tiepolo_Construction_du_cheval_de_Troie.jpg",
+  "h": 4181,
+  "mp": 29.9,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/5d/GD_Tiepolo_Construction_du_cheval_de_Troie.jpg",
+  "w": 7143
+ },
+ "Ilíada/09_El_Juicio_de_Paris_Peter_Paul_Rubens_1635.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3ARubens_-_Judgement_of_Paris.jpg",
+  "h": 4226,
+  "mp": 24.1,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Rubens_-_Judgement_of_Paris.jpg",
+  "w": 5707
+ },
+ "Ilíada/10_Mascara_de_Agamenon_Micenas_1550aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AGold_death-mask_known_as_%E2%80%98Mask_of_Agamemnon%2C%E2%80%99_Mycenae%2C_Grave_Circle_A%2C_Grave_V%2C_16th_cent._BC._%2828423089016%29.jpg",
+  "h": 3456,
+  "mp": 17.9,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Gold_death-mask_known_as_%E2%80%98Mask_of_Agamemnon%2C%E2%80%99_Mycenae%2C_Grave_Circle_A%2C_Grave_V%2C_16th_cent._BC._%2828423089016%29.jpg",
+  "w": 5184
+ },
+ "Ilíada/10b_Mascara_de_Agamenon_Vista_Frontal_Micenas_1550aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AFuneral_mask_Mycenae_%22Agamemnon%22%2C_NAMA_624%2C_225545.jpg",
+  "h": 3491,
+  "mp": 9.1,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Funeral_mask_Mycenae_%22Agamemnon%22%2C_NAMA_624%2C_225545.jpg",
+  "w": 2619
+ },
+ "Ilíada/11_Puerta_de_los_Leones_Micenas_1250aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3ALion_Gate%2C_Mycenae%2C_201505.jpg",
+  "h": 3953,
+  "mp": 23.5,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Lion_Gate%2C_Mycenae%2C_201505.jpg",
+  "w": 5941
+ },
+ "Ilíada/12_Casco_de_Colmillos_de_Jabali_Micenas_1400aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AMycenaean_boar%27s_tusk_helmet_at_the_National_Archaeological_Museum_of_Athens_on_October_6%2C_2021.jpg",
+  "h": 4869,
+  "mp": 15.8,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Mycenaean_boar%27s_tusk_helmet_at_the_National_Archaeological_Museum_of_Athens_on_October_6%2C_2021.jpg",
+  "w": 3246
+ },
+ "Ilíada/13_Laocoonte_y_sus_Hijos_Escuela_de_Rodas_40aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3ALaocoon_and_His_Sons%2C_Vatican.jpg",
+  "h": 3648,
+  "mp": 10.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Laocoon_and_His_Sons%2C_Vatican.jpg",
+  "w": 2736
+ },
+ "Ilíada/14_Fronton_del_Templo_de_Afaya_Egina_490aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3AAphaia_pediment_Laomedon_E-XI_Glyptothek_Munich_85_n2.jpg",
+  "h": 3240,
+  "mp": 14.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Aphaia_pediment_Laomedon_E-XI_Glyptothek_Munich_85_n2.jpg",
+  "w": 4320
+ },
+ "Ilíada/15_Murallas_de_Troya_Hisarlik_2500aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File%3ALegendary_walls_of_Troy_%288708672267%29.jpg",
+  "h": 2848,
+  "mp": 12.2,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Legendary_walls_of_Troy_%288708672267%29.jpg",
+  "w": 4288
  },
  "Ilíada/16_La_Muerte_de_Sarpedon_Cratera_de_Eufronio_515aC.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3AEuphronios_-_ARV_14_extra_-_Hypnos_and_Thanatos_carrying_the_body_of_Sarpedon_-_warriors_arming_-_Cerveteri_MAN_-_01.jpg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Euphronios_-_ARV_14_extra_-_Hypnos_and_Thanatos_carrying_the_body_of_Sarpedon_-_warriors_arming_-_Cerveteri_MAN_-_01.jpg",
-  "w": 7797,
   "h": 5460,
-  "mp": 42.6
+  "mp": 42.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Euphronios_-_ARV_14_extra_-_Hypnos_and_Thanatos_carrying_the_body_of_Sarpedon_-_warriors_arming_-_Cerveteri_MAN_-_01.jpg",
+  "w": 7797
  },
  "Ilíada/17_Tetis_Recibe_las_Armas_de_Aquiles_Anton_van_Dyck_1632.jpg": {
   "commons": "https://commons.wikimedia.org/wiki/File%3ADyck%2C_Anthony_van_-_Thetis_receiving_armour_for_Achilles_from_Hephaestus_-_Bildergalerie_Sanssouci.jpeg",
-  "original": "https://upload.wikimedia.org/wikipedia/commons/9/91/Dyck%2C_Anthony_van_-_Thetis_receiving_armour_for_Achilles_from_Hephaestus_-_Bildergalerie_Sanssouci.jpeg",
-  "w": 10142,
   "h": 7415,
-  "mp": 75.2
+  "mp": 75.2,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/9/91/Dyck%2C_Anthony_van_-_Thetis_receiving_armour_for_Achilles_from_Hephaestus_-_Bildergalerie_Sanssouci.jpeg",
+  "w": 10142
+ },
+ "Ilíada/18_Aquiles_y_Pentesilea_Exekias_530aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Exekias_-_ABV_144_8_-_Achilles_and_Penthesilea_-_Memnon_between_two_of_his_soldiers_-_London_BM_1849-0518-10_-_04.jpg",
+  "h": 5472,
+  "mp": 20.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Exekias_-_ABV_144_8_-_Achilles_and_Penthesilea_-_Memnon_between_two_of_his_soldiers_-_London_BM_1849-0518-10_-_04.jpg",
+  "w": 3648
+ },
+ "Ilíada/19_Los_Amores_de_Paris_y_Helena_Jacques_Louis_David_1788.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Les_Amours_de_P%C3%A2ris_et_d%27H%C3%A9l%C3%A8ne,_David,_1788.jpg",
+  "h": 3248,
+  "mp": 15.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Les_Amours_de_P%C3%A2ris_et_d%27H%C3%A9l%C3%A8ne%2C_David%2C_1788.jpg",
+  "w": 4808
+ },
+ "Ilíada/20_Briseida_Llevada_ante_Agamenon_Giambattista_Tiepolo_1757.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Tiepolo_045.jpg",
+  "h": 2338,
+  "mp": 5.9,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/53/Giovanni_Battista_Tiepolo_045.jpg",
+  "w": 2536
+ },
+ "Ilíada/21_Juegos_Funebres_en_Honor_de_Patroclo_Carle_Vernet_1790.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Games_in_honor_of_Patroclus_during_his_funeral_Antoine_Charles_Horace_Vernet,_1790.jpg",
+  "h": 1841,
+  "mp": 5.7,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Games_in_honor_of_Patroclus_during_his_funeral_Antoine_Charles_Horace_Vernet%2C_1790.jpg",
+  "w": 3072
  }
 }

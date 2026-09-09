@@ -861,6 +861,14 @@
       stroke: currentColor;
     }
 
+    .mp-tag {
+      font-family: var(--font-sans);
+      font-size: .62rem;
+      opacity: .72;
+      font-variant-numeric: tabular-nums;
+      margin-left: 3px;
+    }
+
     .zoom-scale-text {
       font-family: monospace;
       font-size: 0.82rem;
@@ -1249,7 +1257,8 @@
       <button class="zoom-ctrl-btn" onclick="zoomDelta(1)" title="Acercar (+)">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
       </button>
-      <button class="zoom-ctrl-btn" onclick="resetZoom()" title="Ver Completa" style="font-size: 0.72rem; font-family: var(--font-serif); width: auto; padding: 0 8px; letter-spacing: 1px;">ORIGINAL</button>
+      <button class="zoom-ctrl-btn" onclick="resetZoom()" title="Ver la obra completa (0)" style="font-size: 0.72rem; font-family: var(--font-serif); width: auto; padding: 0 8px; letter-spacing: 1px;">AJUSTAR</button>
+      <a class="zoom-ctrl-btn" id="btnOriginal" href="#" target="_blank" rel="noopener" title="Abrir el archivo en máxima resolución" style="font-size: 0.72rem; font-family: var(--font-serif); width: auto; padding: 0 8px; letter-spacing: 1px; text-decoration: none;">ORIGINAL <span class="mp-tag" id="btnOriginalMp"></span></a>
     </div>
 
     <!-- BOTONES DERECHA: PANTALLA COMPLETA Y CERRAR -->
@@ -3201,6 +3210,8 @@
       document.getElementById('panelHistory').innerText = details.history;
       document.getElementById('panelBio').innerText = details.bio;
 
+      actualizarBotonOriginal();
+
       const wikiLinkEl = document.getElementById('panelWikiLink');
       if (details.wikiUrl) {
         wikiLinkEl.href = details.wikiUrl;
@@ -3274,6 +3285,34 @@
 
       zoomTargetImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${zoomScale})`;
       zoomScaleText.innerText = Math.round(zoomScale * 100) + '%';
+    }
+
+    /* El archivo a resolución completa de la obra que se está viendo.
+       En la versión publicable las imágenes van incrustadas como vistas previas y el
+       original vive en Commons (`orig`); en la versión local el original es el propio
+       archivo del disco. Un data: URI no sirve: el visor de artefactos no navega a él. */
+    function urlOriginal(){
+      const d = bookDetails()[currentArtworkGroupIndex] || {};
+      if (d.orig) return d.orig;
+      const grupo = bookGroups()[currentArtworkGroupIndex] || [];
+      const src = (grupo[currentSubViewIndex] || {}).src || '';
+      return src.startsWith('data:') ? null : src;
+    }
+
+    /* Es un enlace, no un botón con window.open: el visor de artefactos corre en un iframe
+       en caja de arena, donde una ventana emergente puede quedar bloqueada sin avisar,
+       mientras que un <a target="_blank"> es lo que ya usan las tarjetas y funciona.
+       Sin original alcanzable no se enseña: un control que no lleva a ninguna parte es
+       peor que no tenerlo. */
+    function actualizarBotonOriginal(){
+      const b = document.getElementById('btnOriginal');
+      if (!b) return;
+      const d = bookDetails()[currentArtworkGroupIndex] || {};
+      const url = urlOriginal();
+      b.hidden = !url;
+      if (url) b.href = url;
+      const mp = document.getElementById('btnOriginalMp');
+      if (mp) mp.innerText = d.mp || '';
     }
 
     function resetZoom() {
