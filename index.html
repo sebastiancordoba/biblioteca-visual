@@ -189,6 +189,62 @@
       font-size: 0.95rem;
     }
 
+    /* AUTORES
+       Solo aparecen los que tienen nombre propio: buena parte de la colección —los
+       relieves de Nínive, las tablillas de Uruk, la máscara de Micenas— es anónima, y
+       fingir una autoría sería peor que decir que no la hay. */
+    .autor-intro { color: var(--text-muted); font-size: .9rem; max-width: 70ch; margin: 0 0 26px; }
+
+    .autor-rejilla {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 22px;
+    }
+
+    .autor-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .autor-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border-subtle); }
+    .autor-imgs figure { margin: 0; background: #050608; position: relative; }
+    .autor-imgs img { width: 100%; height: 168px; object-fit: cover; display: block; }
+    .autor-imgs figcaption {
+      position: absolute; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(180deg, rgba(4,5,7,0), rgba(4,5,7,.92));
+      color: var(--text-body); font-size: .62rem; letter-spacing: .3px;
+      padding: 14px 8px 5px; text-align: center;
+    }
+    .autor-imgs .obra { cursor: zoom-in; }
+    .autor-imgs .obra:hover img { opacity: .82; }
+
+    .autor-txt { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 6px; }
+    .autor-txt h3 {
+      font-family: var(--font-serif); font-size: 1.14rem; font-weight: 500;
+      color: var(--text-title); margin: 0; line-height: 1.25;
+    }
+    .autor-vida {
+      font-size: .7rem; letter-spacing: 1.6px; text-transform: uppercase;
+      color: var(--accent-gold); font-variant-numeric: tabular-nums;
+    }
+    .autor-oficio { font-size: .8rem; color: var(--text-muted); }
+    .autor-bio { font-size: .86rem; line-height: 1.62; color: var(--text-body); margin: 8px 0 0; }
+
+    .autor-obras {
+      margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-subtle);
+      display: flex; flex-wrap: wrap; gap: 6px;
+    }
+    .autor-obra {
+      background: none; border: 1px solid var(--border-subtle); border-radius: 3px;
+      color: var(--text-body); font-family: inherit; font-size: .7rem;
+      padding: 4px 9px; cursor: pointer; transition: color .2s, border-color .2s;
+    }
+    .autor-obra:hover { color: var(--accent-gold); border-color: var(--accent-gold); }
+
     /* BIBLIOTECA
        Una pestaña por libro no escala: con veinte libros la barra superior sería una lista.
        Los libros dejan de ser secciones de primer nivel y viven dentro de la Biblioteca,
@@ -1110,6 +1166,10 @@
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
         Los libros
       </button>
+      <button class="tab-btn" onclick="switchTab('autores-gallery', this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        Autores
+      </button>
     </nav>
 
     <nav id="nav-genesis" class="book-nav">
@@ -1163,6 +1223,11 @@
       </div>
       <div class="biblio-rejilla" id="bibliotecaLibros"></div>
       <p class="biblio-vacio" id="biblioVacio" hidden>Ningún libro coincide con esa búsqueda.</p>
+    </div>
+
+    <div id="autores-gallery" class="tab-content">
+      <p class="autor-intro" id="autorIntro"></p>
+      <div class="autor-rejilla" id="autoresRejilla"></div>
     </div>
 
     <div id="genesis-gallery" class="tab-content">
@@ -2726,6 +2791,691 @@
         }
       ]
     ];
+
+    const AUTORES = [
+      {
+        "clave": "laocoonte",
+        "nombre": "Agesandro, Polidoro y Atenodoro",
+        "anios": "activos c. siglo I a.C.",
+        "oficio": "Escultores rodios",
+        "bio": "Plinio el Viejo los nombra como autores del Laocoonte y dice que trabajaron los tres en una sola pieza de mármol, algo que la restauración moderna ha desmentido: son varios bloques. No se conserva ninguna otra obra firmada por ellos, ni retrato, ni más datos que esa línea de Plinio y las firmas halladas en Sperlonga.",
+        "retrato": null,
+        "retratoPie": "",
+        "obras": [
+          {
+            "libro": "iliada",
+            "title": "Laocoonte y sus hijos"
+          }
+        ]
+      },
+      {
+        "clave": "durero",
+        "nombre": "Alberto Durero",
+        "anios": "1471–1528",
+        "oficio": "Pintor, grabador y teórico alemán",
+        "bio": "Hijo de orfebre, llevó el grabado a una precisión que nadie había alcanzado y fue el primer artista del norte en pensarse a sí mismo como intelectual: escribió tratados sobre proporción humana, perspectiva y fortificación. Firmaba con un monograma que se falsificó tanto en vida que llegó a pleitear por él en Venecia.",
+        "retrato": "./Autores/durero.jpg",
+        "retratoPie": "Autorretrato, Alte Pinakothek",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "Adán y Eva"
+          }
+        ]
+      },
+      {
+        "clave": "ivanov",
+        "nombre": "Aleksandr Ivánov",
+        "anios": "1806–1858",
+        "oficio": "Pintor ruso",
+        "bio": "Pasó veinte años en Roma pintando un solo cuadro, «La aparición de Cristo al pueblo», para el que hizo más de seiscientos estudios. Volvió a San Petersburgo con él en 1858 y murió de cólera semanas después de exponerlo, con una acogida tibia.",
+        "retrato": "./Autores/ivanov.jpg",
+        "retratoPie": "Retrato de época",
+        "obras": [
+          {
+            "libro": "iliada",
+            "title": "Príamo pide a Aquiles el cuerpo de Héctor"
+          }
+        ]
+      },
+      {
+        "clave": "rubliov",
+        "nombre": "Andréi Rubliov",
+        "anios": "c. 1360–1428",
+        "oficio": "Monje e iconógrafo ruso",
+        "bio": "Monje del monasterio de Andrónikov, es el único pintor de iconos al que la Iglesia ortodoxa rusa ha canonizado, en 1988. De su vida apenas se sabe nada seguro y la atribución de casi toda su obra se discute; solo la Trinidad está documentada como suya sin dudas serias.",
+        "retrato": "./Autores/rubliov.jpg",
+        "retratoPie": "Efigie póstuma, miniatura del siglo XVI",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "La Trinidad (La hospitalidad de Abraham)"
+          }
+        ]
+      },
+      {
+        "clave": "van_dyck",
+        "nombre": "Antoon van Dyck",
+        "anios": "1599–1641",
+        "oficio": "Pintor flamenco",
+        "bio": "Niño prodigio de Amberes y principal colaborador de Rubens antes de los veinte años, acabó en Londres como pintor de cámara de Carlos I. Su manera de retratar —figura alargada, pose desenvuelta, mirada de lado— fijó el modelo del retrato aristocrático inglés durante siglo y medio.",
+        "retrato": "./Autores/van_dyck.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "iliada",
+            "title": "Tetis recibe las armas de Aquiles"
+          }
+        ]
+      },
+      {
+        "clave": "corot",
+        "nombre": "Camille Corot",
+        "anios": "1796–1875",
+        "oficio": "Pintor francés",
+        "bio": "Puente entre el paisaje neoclásico y el impresionismo, pintaba del natural pequeños estudios que hoy se aprecian más que sus grandes composiciones de salón. Tuvo fama de generoso hasta lo temerario: mantuvo a la viuda de Millet y a Daumier ciego, y firmó cuadros de amigos necesitados para que pudieran venderlos, lo que ha convertido su catálogo en un problema de atribución permanente.",
+        "retrato": "./Autores/corot.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "Agar en el desierto"
+          }
+        ]
+      },
+      {
+        "clave": "caravaggio",
+        "nombre": "Caravaggio",
+        "anios": "1571–1610",
+        "oficio": "Pintor lombardo",
+        "bio": "Pintaba del natural, sin dibujo previo, con modelos de la calle y una luz de foco que sacaba las figuras de la oscuridad. Mató a un hombre en una reyerta en 1606 y pasó sus últimos cuatro años huyendo por Nápoles, Malta y Sicilia con una condena de muerte encima. Murió a los treinta y ocho en circunstancias que aún se discuten.",
+        "retrato": "./Autores/caravaggio.jpg",
+        "retratoPie": "Retrato por Ottavio Leoni",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "El sacrificio de Isaac"
+          }
+        ]
+      },
+      {
+        "clave": "vernet",
+        "nombre": "Carle Vernet",
+        "anios": "1758–1836",
+        "oficio": "Pintor y litógrafo francés",
+        "bio": "Segundo de una dinastía de tres pintores —hijo de Joseph, padre de Horace—, se especializó en el caballo y en la batalla. La ejecución de su hermana durante el Terror lo apartó de la pintura durante años; volvió con Napoleón, para quien pintó campañas, y terminó como uno de los primeros litógrafos franceses.",
+        "retrato": "./Autores/vernet.jpg",
+        "retratoPie": "Retrato por Robert Lefèvre",
+        "obras": [
+          {
+            "libro": "iliada",
+            "title": "Juegos fúnebres en honor de Patroclo"
+          }
+        ]
+      },
+      {
+        "clave": "villalpando",
+        "nombre": "Cristóbal de Villalpando",
+        "anios": "c. 1649–1714",
+        "oficio": "Pintor novohispano",
+        "bio": "El pintor más ambicioso del barroco novohispano, activo en la Ciudad de México y en Puebla. Trabajaba a una escala enorme —la cúpula del Ochavo de la catedral poblana, la sacristía de la catedral metropolitana— con una pincelada suelta y un color encendido que no dependen ya de los modelos europeos que le llegaban grabados.",
+        "retrato": null,
+        "retratoPie": "",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "El Diluvio"
+          }
+        ]
+      },
+      {
+        "clave": "velazquez",
+        "nombre": "Diego Velázquez",
+        "anios": "1599–1660",
+        "oficio": "Pintor sevillano",
+        "bio": "Pintor de cámara de Felipe IV desde los veinticuatro años, pasó la vida en la corte ocupado además en cargos palaciegos que le robaban tiempo de taller. Dos viajes a Italia le cambiaron la manera. Su obra es escasa —poco más de un centenar de cuadros— y de una economía de medios que solo se aprecia de cerca: manchas sueltas que a distancia se vuelven encaje y plata.",
+        "retrato": "./Autores/velazquez.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "La túnica de José"
+          }
+        ]
+      },
+      {
+        "clave": "bosco",
+        "nombre": "El Bosco",
+        "anios": "c. 1450–1516",
+        "oficio": "Pintor brabanzón",
+        "bio": "Vivió toda su vida en la misma ciudad, Bolduque, de la que tomó el nombre con que firmaba. No se conserva ni un solo escrito suyo, de modo que todo lo que se dice sobre el significado de sus criaturas es interpretación. Felipe II reunió sus tablas y por eso el Prado tiene hoy la mejor colección del mundo de un pintor que nunca pisó España.",
+        "retrato": "./Autores/bosco.jpg",
+        "retratoPie": "Efigie póstuma",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "El jardín de las delicias"
+          }
+        ]
+      },
+      {
+        "clave": "eufronio",
+        "nombre": "Eufronio",
+        "anios": "activo c. 520–470 a.C.",
+        "oficio": "Ceramista y pintor de vasos ateniense",
+        "bio": "De la primera generación que pintó de figuras rojas, invirtiendo la técnica: en vez de siluetas negras sobre arcilla, arcilla clara reservada sobre fondo negro, lo que permitía dibujar la anatomía con pincel en lugar de rascarla. Firmó como pintor de joven y como alfarero de mayor, quizá porque la vista dejó de acompañarle.",
+        "retrato": null,
+        "retratoPie": "",
+        "obras": [
+          {
+            "libro": "iliada",
+            "title": "La muerte de Sarpedón"
+          }
+        ]
+      },
+      {
+        "clave": "delacroix",
+        "nombre": "Eugène Delacroix",
+        "anios": "1798–1863",
+        "oficio": "Pintor francés",
+        "bio": "Cabeza del romanticismo francés frente al clasicismo de Ingres, con quien mantuvo una rivalidad que dividió a la crítica de su tiempo. Un viaje a Marruecos en 1832 le dio un repertorio de luz y color que explotó el resto de su vida. Su diario, publicado póstumamente, es uno de los grandes textos de un pintor sobre su oficio.",
+        "retrato": "./Autores/delacroix.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "La lucha de Jacob con el ángel"
+          }
+        ]
+      },
+      {
+        "clave": "exekias",
+        "nombre": "Exequias",
+        "anios": "activo c. 550–525 a.C.",
+        "oficio": "Ceramista y pintor de vasos ateniense",
+        "bio": "El mayor pintor de figuras negras del Ática, y uno de los pocos que firmaba a la vez como alfarero y como pintor, señal de que hacía el vaso entero. Prefería el instante anterior o posterior a la acción —Aquiles y Áyax jugando a los dados mientras fuera hay guerra— en vez de la acción misma, y esa elección es lo que lo separa de todos sus contemporáneos.",
+        "retrato": null,
+        "retratoPie": "",
+        "obras": [
+          {
+            "libro": "iliada",
+            "title": "Aquiles y Áyax jugando a los dados"
+          },
+          {
+            "libro": "iliada",
+            "title": "Aquiles y Pentesilea"
+          }
+        ]
+      },
+      {
+        "clave": "cormon",
+        "nombre": "Fernand Cormon",
+        "anios": "1845–1924",
+        "oficio": "Pintor francés",
+        "bio": "Pintor de historia y prehistoria de gran formato, hoy se le recuerda sobre todo por su taller: por él pasaron Van Gogh, Toulouse-Lautrec y Émile Bernard. Enseñaba de manera académica a alumnos que iban a romper con lo académico, y los dejó hacer.",
+        "retrato": "./Autores/cormon.jpg",
+        "retratoPie": "Fotografía, c. 1910",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "Caín"
+          }
+        ]
+      },
+      {
+        "clave": "danby",
+        "nombre": "Francis Danby",
+        "anios": "1793–1861",
+        "oficio": "Pintor irlandés",
+        "bio": "Formó en Bristol un grupo de paisajistas y luego compitió en Londres con John Martin en el género del desastre bíblico a gran escala. Un escándalo doméstico lo obligó a marcharse al continente durante once años, tiempo que pasó en Suiza construyendo barcas de vela, y su carrera nunca se recuperó del todo.",
+        "retrato": "./Autores/danby.jpg",
+        "retratoPie": "Retrato de época",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "La disminución de las aguas del diluvio"
+          }
+        ]
+      },
+      {
+        "clave": "matsch",
+        "nombre": "Franz von Matsch",
+        "anios": "1861–1942",
+        "oficio": "Pintor y escultor austríaco",
+        "bio": "Formó con Gustav Klimt y su hermano Ernst la «Compañía de Artistas» que decoró teatros y museos por todo el imperio austrohúngaro. Cuando Klimt rompió hacia la Secesión, Matsch se quedó en el academicismo y prosperó como retratista de la corte, lo que explica que hoy se le recuerde mucho menos.",
+        "retrato": "./Autores/matsch.jpg",
+        "retratoPie": "Autorretrato, 1904",
+        "obras": [
+          {
+            "libro": "iliada",
+            "title": "El triunfo de Aquiles"
+          }
+        ]
+      },
+      {
+        "clave": "lemoyne",
+        "nombre": "François Lemoyne",
+        "anios": "1688–1737",
+        "oficio": "Pintor francés",
+        "bio": "Primer pintor del rey y autor del techo del Salón de Hércules de Versalles, que le costó cuatro años. Al día siguiente de recibir un encargo mayor se quitó la vida con su espada, agotado por el trabajo y por la muerte de su mujer. Fue maestro de Boucher y uno de los que llevaron la pintura francesa del gran estilo al rococó.",
+        "retrato": "./Autores/lemoyne.jpg",
+        "retratoPie": "Retrato de época",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "Jacob y Raquel en el pozo"
+          }
+        ]
+      },
+      {
+        "clave": "hamilton",
+        "nombre": "Gavin Hamilton",
+        "anios": "1723–1798",
+        "oficio": "Pintor y anticuario escocés",
+        "bio": "Pintor, arqueólogo y marchante en Roma, excavó en Hadriano y en Ostia y vendió a la aristocracia británica buena parte de las antigüedades que hoy están en Inglaterra. Sus escenas homéricas, difundidas por grabado, fueron una de las fuentes del neoclasicismo europeo, David incluido.",
+        "retrato": "./Autores/hamilton.jpg",
+        "retratoPie": "Retrato de época",
+        "obras": [
+          {
+            "libro": "iliada",
+            "title": "Aquiles llorando la muerte de Patroclo"
+          }
+        ]
+      },
+      {
+        "clave": "watts",
+        "nombre": "George Frederic Watts",
+        "anios": "1817–1904",
+        "oficio": "Pintor y escultor inglés",
+        "bio": "Pintor de alegorías morales en una Inglaterra que prefería la anécdota, rechazó dos veces el título de barón y regaló buena parte de su obra a la nación. Quiso pintar «ideas, no cosas». Su galería en Compton, levantada por él mismo, sigue siendo el mejor sitio para verlo.",
+        "retrato": "./Autores/watts.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "Tras el diluvio: el día cuadragésimo primero"
+          }
+        ]
+      },
+      {
+        "clave": "tiepolo_g",
+        "nombre": "Giambattista Tiepolo",
+        "anios": "1696–1770",
+        "oficio": "Pintor veneciano",
+        "bio": "El último gran fresquista italiano, capaz de resolver bóvedas enteras con cielos altísimos y figuras vistas en escorzo desde abajo. Trabajó en Venecia, en Wurzburgo y finalmente en Madrid, donde murió al servicio de Carlos III mientras el gusto giraba ya hacia el neoclasicismo que su obra hacía parecer antigua.",
+        "retrato": "./Autores/tiepolo_g.jpg",
+        "retratoPie": "Autorretrato dentro del fresco de Wurzburgo",
+        "obras": [
+          {
+            "libro": "iliada",
+            "title": "Briseida llevada ante Agamenón"
+          }
+        ]
+      },
+      {
+        "clave": "tiepolo_d",
+        "nombre": "Giandomenico Tiepolo",
+        "anios": "1727–1804",
+        "oficio": "Pintor veneciano",
+        "bio": "Hijo y principal colaborador de Giambattista, lo acompañó a Wurzburgo y a Madrid. Cuando quedó libre de la sombra paterna desarrolló una obra propia, más irónica y terrena, poblada de payasos y escenas de la Venecia que se acababa.",
+        "retrato": "./Autores/tiepolo_d.jpg",
+        "retratoPie": "Retratado por su padre en el fresco de Wurzburgo",
+        "obras": [
+          {
+            "libro": "iliada",
+            "title": "La procesión del caballo de Troya"
+          }
+        ]
+      },
+      {
+        "clave": "bellini",
+        "nombre": "Giovanni Bellini",
+        "anios": "c. 1430–1516",
+        "oficio": "Pintor veneciano",
+        "bio": "Fundó la escuela veneciana del color junto a su hermano Gentile y su cuñado Mantegna, y tuvo por alumnos a Giorgione y a Tiziano. Adoptó el óleo cuando en Venecia todavía se pintaba al temple y con él consiguió una luz húmeda que se convirtió en la marca de la ciudad. Siguió cambiando de estilo hasta pasados los ochenta años.",
+        "retrato": "./Autores/bellini.jpg",
+        "retratoPie": "Retrato de época",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "La embriaguez de Noé"
+          }
+        ]
+      },
+      {
+        "clave": "dore",
+        "nombre": "Gustave Doré",
+        "anios": "1832–1883",
+        "oficio": "Ilustrador, grabador y pintor francés",
+        "bio": "El ilustrador más difundido del siglo XIX: la Biblia, Dante, Cervantes, Milton y Perrault pasaron por su mano y por un taller de más de cuarenta grabadores que trasladaban sus dibujos a la madera. Su imaginería fijó durante generaciones el aspecto que «debían» tener el infierno de Dante y el Diluvio. Ambicionaba ser reconocido como pintor y nunca lo consiguió del todo.",
+        "retrato": "./Autores/dore.jpg",
+        "retratoPie": "Fotografía de Nadar",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "La confusión de las lenguas"
+          }
+        ]
+      },
+      {
+        "clave": "turner",
+        "nombre": "J. M. W. Turner",
+        "anios": "1775–1851",
+        "oficio": "Pintor y acuarelista inglés",
+        "bio": "Entró en la Royal Academy con catorce años y acabó dejando al Estado británico casi trescientos lienzos y treinta mil obras sobre papel. Su pintura tardía disuelve el motivo en luz y atmósfera hasta un punto que sus contemporáneos leyeron como obra sin acabar. Vivió sus últimos años bajo nombre falso en Chelsea, donde los vecinos lo conocían como «el almirante Booth».",
+        "retrato": "./Autores/turner.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "Sombra y oscuridad - la tarde del diluvio"
+          }
+        ]
+      },
+      {
+        "clave": "david",
+        "nombre": "Jacques-Louis David",
+        "anios": "1748–1825",
+        "oficio": "Pintor francés",
+        "bio": "Pintor de la Revolución y luego de Napoleón, fue diputado, votó la muerte del rey y organizó las fiestas cívicas del nuevo régimen. Con la Restauración se exilió a Bruselas, donde murió sin volver a Francia. Su neoclasicismo de contornos duros y gesto contenido fue durante treinta años el estilo oficial de un país en revolución permanente.",
+        "retrato": "./Autores/david.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "iliada",
+            "title": "La cólera de Aquiles"
+          },
+          {
+            "libro": "iliada",
+            "title": "Andrómaca llorando a Héctor"
+          },
+          {
+            "libro": "iliada",
+            "title": "Los amores de Paris y Helena"
+          }
+        ]
+      },
+      {
+        "clave": "scorel",
+        "nombre": "Jan van Scorel",
+        "anios": "1495–1562",
+        "oficio": "Pintor neerlandés",
+        "bio": "Viajó a Jerusalén y luego a Roma, donde el papa Adriano VI —neerlandés como él— lo puso al frente de las colecciones de arte del Vaticano. Volvió al norte convertido en el gran introductor del Renacimiento italiano en los Países Bajos, y fue además canónigo, ingeniero de drenajes y organista.",
+        "retrato": "./Autores/scorel.jpg",
+        "retratoPie": "Retrato por Antonio Moro",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "El Diluvio Universal"
+          }
+        ]
+      },
+      {
+        "clave": "ingres",
+        "nombre": "Jean-Auguste-Dominique Ingres",
+        "anios": "1780–1867",
+        "oficio": "Pintor francés",
+        "bio": "Alumno de David y guardián del clasicismo frente al romanticismo de Delacroix, defendía que el dibujo es la probidad del arte. Deformaba sin embargo la anatomía sin escrúpulo cuando la línea lo pedía —cuellos y espaldas imposibles—, algo que sus críticos le echaron en cara y que sus herederos del siglo XX celebraron. Tocaba el violín lo bastante bien como para dejar una expresión al idioma francés.",
+        "retrato": "./Autores/ingres.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "iliada",
+            "title": "Júpiter y Tetis"
+          }
+        ]
+      },
+      {
+        "clave": "john_martin",
+        "nombre": "John Martin",
+        "anios": "1789–1854",
+        "oficio": "Pintor y grabador inglés",
+        "bio": "Especialista en la catástrofe bíblica de formato descomunal, con multitudes diminutas aplastadas por arquitecturas y cataclismos. Tuvo un éxito popular enorme gracias a las estampas, y un desprecio crítico casi igual de grande. Dedicó años a proyectos de ingeniería para el alcantarillado de Londres que nadie le compró.",
+        "retrato": "./Autores/john_martin.jpg",
+        "retratoPie": "Retrato por Henry Warren",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "La destrucción de Sodoma y Gomorra"
+          }
+        ]
+      },
+      {
+        "clave": "ribera",
+        "nombre": "José de Ribera",
+        "anios": "1591–1652",
+        "oficio": "Pintor valenciano",
+        "bio": "Nació en Játiva y se instaló muy joven en Nápoles, entonces española, donde vivió el resto de su vida y donde se le llamó «lo Spagnoletto». Llevó el naturalismo de Caravaggio a un extremo táctil: pieles gastadas, pies sucios, arrugas, en santos y filósofos tratados como campesinos.",
+        "retrato": "./Autores/ribera.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "Isaac bendice a Jacob"
+          },
+          {
+            "libro": "genesis",
+            "title": "El sueño de Jacob"
+          }
+        ]
+      },
+      {
+        "clave": "breu",
+        "nombre": "Jörg Breu el Joven",
+        "anios": "c. 1510–1547",
+        "oficio": "Pintor y dibujante de Augsburgo",
+        "bio": "Hijo y continuador del taller de su padre en Augsburgo, trabajó sobre todo en diseños para vidriera y en pequeñas tablas de tema bíblico. Murió joven y su obra se ha confundido a menudo con la paterna, un problema habitual en los talleres familiares alemanes del XVI.",
+        "retrato": null,
+        "retratoPie": "",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "José interpreta los sueños del faraón"
+          }
+        ]
+      },
+      {
+        "clave": "cranach",
+        "nombre": "Lucas Cranach el Viejo",
+        "anios": "1472–1553",
+        "oficio": "Pintor y grabador alemán",
+        "bio": "Pintor de corte en Wittenberg, amigo de Lutero y padrino de uno de sus hijos, fue también impresor, boticario y alcalde de la ciudad. Su taller funcionaba casi como una industria: repitió el tema de Adán y Eva decenas de veces con variaciones mínimas, y esa producción en serie es la razón de que el mismo cuadro exista en tantos museos.",
+        "retrato": "./Autores/cranach.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "Adán y Eva"
+          },
+          {
+            "libro": "genesis",
+            "title": "Adán y Eva"
+          }
+        ]
+      },
+      {
+        "clave": "masaccio",
+        "nombre": "Masaccio",
+        "anios": "1401–1428",
+        "oficio": "Pintor florentino",
+        "bio": "Murió a los veintisiete años y cambió la pintura europea en menos de una década. Fue el primero en aplicar a la figura pintada la perspectiva que Brunelleschi había demostrado en arquitectura y en hacer que la luz de un fresco viniera de donde de verdad entra la luz en la capilla. Vasari cuenta que durante un siglo los pintores florentinos —Miguel Ángel entre ellos— fueron a la Brancacci a copiarlo.",
+        "retrato": "./Autores/masaccio.jpg",
+        "retratoPie": "Autorretrato, en la Capilla Brancacci",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "La Expulsión del Paraíso"
+          }
+        ]
+      },
+      {
+        "clave": "miguel_angel",
+        "nombre": "Miguel Ángel Buonarroti",
+        "anios": "1475–1564",
+        "oficio": "Escultor, pintor y arquitecto florentino",
+        "bio": "Se consideraba escultor antes que pintor y aceptó el encargo de la Capilla Sixtina a regañadientes: Julio II lo apartó del proyecto que de verdad le importaba, su propia tumba, para mandarlo a pintar un techo. Trabajó en él de 1508 a 1512, de pie y con la cabeza hacia atrás —no tumbado, como cuenta la leyenda—, y salió con la vista dañada durante meses. En sus 343 figuras el cuerpo humano hace todo el trabajo: no hay paisaje, ni arquitectura pintada, ni atributos; solo anatomía y gesto.",
+        "retrato": "./Autores/miguel_angel.jpg",
+        "retratoPie": "Retrato por Daniele da Volterra",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "La Creación de Adán"
+          },
+          {
+            "libro": "genesis",
+            "title": "El Diluvio Universal"
+          }
+        ]
+      },
+      {
+        "clave": "poussin",
+        "nombre": "Nicolas Poussin",
+        "anios": "1594–1665",
+        "oficio": "Pintor francés",
+        "bio": "Francés de nacimiento y romano de vida: pasó en Roma casi cuarenta años y volvió a París solo dos, mal avenido con la corte. Trabajaba para un círculo pequeño de coleccionistas eruditos, componía con figuritas de cera dispuestas en cajas y defendía que la pintura se dirige a la inteligencia. Su nombre acabó designando toda una manera de entender el clasicismo.",
+        "retrato": "./Autores/poussin.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "Eliezer y Rebeca"
+          },
+          {
+            "libro": "genesis",
+            "title": "El invierno, o El Diluvio"
+          }
+        ]
+      },
+      {
+        "clave": "gauguin",
+        "nombre": "Paul Gauguin",
+        "anios": "1848–1903",
+        "oficio": "Pintor francés",
+        "bio": "Fue agente de bolsa hasta los treinta y cinco años y lo dejó todo por pintar. Buscó en Bretaña primero y en Polinesia después una vida que creía anterior a la civilización europea, y construyó allí una obra de color plano y contorno marcado que abrió camino al simbolismo y al fauvismo. Murió en las Marquesas, endeudado y enfermo.",
+        "retrato": "./Autores/gauguin.jpg",
+        "retratoPie": "Fotografía, 1891",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "La visión tras el sermón"
+          }
+        ]
+      },
+      {
+        "clave": "rubens",
+        "nombre": "Peter Paul Rubens",
+        "anios": "1577–1640",
+        "oficio": "Pintor flamenco",
+        "bio": "Además de pintor fue diplomático al servicio de los Habsburgo y negoció la paz entre España e Inglaterra, que le valió el título de caballero de las dos coronas. Hablaba seis lenguas y dirigía en Amberes el taller más productivo de Europa, con Van Dyck entre sus colaboradores. Sus bocetos de su propia mano suelen preferirse hoy a los grandes lienzos acabados por el taller.",
+        "retrato": "./Autores/rubens.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "Lot y sus hijas"
+          },
+          {
+            "libro": "genesis",
+            "title": "El encuentro de Abraham y Melquisedec"
+          },
+          {
+            "libro": "iliada",
+            "title": "El juicio de Paris"
+          }
+        ]
+      },
+      {
+        "clave": "bruegel",
+        "nombre": "Pieter Bruegel el Viejo",
+        "anios": "c. 1525–1569",
+        "oficio": "Pintor y grabador flamenco",
+        "bio": "Viajó a Italia cruzando los Alpes y volvió sin apenas rastro italiano en su pintura, salvo el paisaje de montaña, que no olvidó nunca. Se le llamó «el campesino» por sus escenas de aldea, pero trabajaba para coleccionistas cultos de Amberes y Bruselas. Sus dos hijos siguieron pintando y copiando sus composiciones durante décadas, lo que ha complicado para siempre distinguir originales de repeticiones.",
+        "retrato": "./Autores/bruegel.jpg",
+        "retratoPie": "«El pintor y el comprador», tenido por autorretrato",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "La Torre de Babel"
+          }
+        ]
+      },
+      {
+        "clave": "rembrandt",
+        "nombre": "Rembrandt van Rijn",
+        "anios": "1606–1669",
+        "oficio": "Pintor y grabador neerlandés",
+        "bio": "Se pintó a sí mismo unas ochenta veces a lo largo de cuarenta años, de joven acomodado a anciano arruinado, en la serie de autorretratos más extensa del arte europeo. Llegó a la cima del mercado de Ámsterdam y quebró en 1656; el inventario de su bancarrota, que se conserva, es una de las mejores descripciones que existen del taller de un pintor del siglo XVII.",
+        "retrato": "./Autores/rembrandt.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "El sacrificio de Isaac"
+          },
+          {
+            "libro": "genesis",
+            "title": "Jacob luchando con el ángel"
+          },
+          {
+            "libro": "genesis",
+            "title": "Jacob bendice a los hijos de José"
+          },
+          {
+            "libro": "genesis",
+            "title": "José acusado por la mujer de Putifar"
+          }
+        ]
+      },
+      {
+        "clave": "cole",
+        "nombre": "Thomas Cole",
+        "anios": "1801–1848",
+        "oficio": "Pintor angloamericano",
+        "bio": "Nacido en Lancashire y emigrado a los diecisiete años, fundó la Escuela del Río Hudson, la primera corriente pictórica propiamente estadounidense. Alternó el paisaje observado con ciclos alegóricos sobre el auge y la caída de los imperios, en los que la naturaleza siempre sobrevive a la civilización que la ocupó.",
+        "retrato": "./Autores/cole.jpg",
+        "retratoPie": "Retrato de época",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "La disminución de las aguas del diluvio"
+          }
+        ]
+      },
+      {
+        "clave": "tiziano",
+        "nombre": "Tiziano Vecellio",
+        "anios": "c. 1488–1576",
+        "oficio": "Pintor veneciano",
+        "bio": "Pintor de Carlos V y de Felipe II, fue el primer artista europeo que trabajó para media Europa sin moverse de Venecia. Su última manera, de pincelada suelta y forma deshecha, desconcertó a sus contemporáneos: Vasari escribió que de cerca sus cuadros tardíos no se entendían y solo funcionaban a distancia. Murió durante la peste de 1576, muy anciano, sin que se sepa su edad exacta.",
+        "retrato": "./Autores/tiziano.jpg",
+        "retratoPie": "Autorretrato",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "Caín y Abel"
+          }
+        ]
+      },
+      {
+        "clave": "blake",
+        "nombre": "William Blake",
+        "anios": "1757–1827",
+        "oficio": "Poeta, grabador y pintor inglés",
+        "bio": "Inventó una técnica propia —el grabado en relieve iluminado— para no depender de impresores ni editores: escribía e ilustraba directamente sobre la plancha y coloreaba a mano cada ejemplar, de modo que no hay dos copias iguales de ninguno de sus libros. Vendió poquísimo en vida y murió en la pobreza. Su mitología personal, con Urizen como dios de la razón y la medida, invierte la teología cristiana: para Blake, crear el mundo midiéndolo es el primer acto de tiranía.",
+        "retrato": "./Autores/blake.jpg",
+        "retratoPie": "Retrato por Thomas Phillips",
+        "obras": [
+          {
+            "libro": "genesis",
+            "title": "Elohim creando a Adán"
+          },
+          {
+            "libro": "genesis",
+            "title": "El Anciano de los Días"
+          }
+        ]
+      }
+    ];
     /* ==== FIN DATOS GENERADOS ==== */
 
     /* ══════════════ PORTADA ══════════════
@@ -3057,6 +3807,61 @@
       }
     })();
 
+    /* ---------- Autores ----------
+       Cada autor se enlaza con sus obras por el campo `artist` de la ficha, así que al
+       añadir una obra suya aparece aquí sola. Se muestran dos imágenes: su retrato y una
+       obra suya de la colección. Cuando de un artista no se conserva retrato —Exequias,
+       Eufronio, los escultores del Laocoonte— se dice, en vez de poner cualquier cosa. */
+    function obraDe(o) {
+      const b = BOOKS[o.libro];
+      if (!b) return null;
+      const i = b.details.findIndex(d => d.title === o.title);
+      if (i < 0 || !b.groups[i] || !b.groups[i][0]) return null;
+      return { i, libro: o.libro, src: b.groups[i][0].src, title: o.title };
+    }
+
+    function pintarAutores(){
+      const rej = document.getElementById('autoresRejilla');
+      if (!rej || typeof AUTORES === 'undefined') return;
+      const intro = document.getElementById('autorIntro');
+      const conRetrato = AUTORES.filter(a => a.retrato).length;
+      if (intro) intro.innerText =
+        `${AUTORES.length} autores con nombre propio. El resto de la colección es anónima ` +
+        `—los relieves de Nínive, las tablillas de Uruk, la máscara de Micenas, los frescos ` +
+        `de Dura Europos— y por eso no aparece aquí. De ${conRetrato} se conserva retrato.`;
+
+      rej.innerHTML = AUTORES.map(a => {
+        const obras = a.obras.map(obraDe).filter(Boolean);
+        const muestra = obras[0];
+        const retrato = a.retrato
+          ? `<figure><img src="${a.retrato}" alt="Retrato de ${esc(a.nombre)}" loading="lazy">` +
+            `<figcaption>${esc(a.retratoPie || 'Retrato')}</figcaption></figure>`
+          : `<figure><img src="${muestra ? muestra.src : ''}" alt="" loading="lazy">` +
+            `<figcaption>No se conserva retrato</figcaption></figure>`;
+        const suya = muestra
+          ? `<figure class="obra" data-libro="${muestra.libro}" data-i="${muestra.i}">` +
+            `<img src="${muestra.src}" alt="${esc(muestra.title)}" loading="lazy">` +
+            `<figcaption>${esc(muestra.title)}</figcaption></figure>`
+          : '';
+        const lista = obras.map(o =>
+          `<button class="autor-obra" type="button" data-libro="${o.libro}" data-i="${o.i}">` +
+          `${esc(o.title)}</button>`).join('');
+        return `<article class="autor-card">` +
+          `<div class="autor-imgs">${retrato}${suya}</div>` +
+          `<div class="autor-txt"><h3>${esc(a.nombre)}</h3>` +
+          `<span class="autor-vida">${esc(a.anios)}</span>` +
+          `<span class="autor-oficio">${esc(a.oficio)}</span>` +
+          `<p class="autor-bio">${esc(a.bio)}</p>` +
+          `<div class="autor-obras">${lista}</div></div></article>`;
+      }).join('');
+
+      rej.querySelectorAll('.autor-obra, .autor-imgs .obra').forEach(el =>
+        el.addEventListener('click', () => {
+          currentBook = el.dataset.libro;
+          openZoomForArtwork(+el.dataset.i, 0);
+        }));
+    }
+
     /* ---------- Biblioteca: el índice de libros ---------- */
     function pintarBiblioteca(filtro){
       const rejilla = document.getElementById('bibliotecaLibros');
@@ -3091,6 +3896,7 @@
       const buscar = document.getElementById('biblioBuscar');
       if (buscar) buscar.addEventListener('input', () => pintarBiblioteca(buscar.value));
       pintarBiblioteca('');
+      pintarAutores();
     })();
 
     /* El banner de la portada ocupa lo que queda de ventana. Se mide dónde empieza el

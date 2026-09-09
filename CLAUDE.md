@@ -245,6 +245,31 @@ Antes de dar por buena una obra conviene leer los campos `artist`, `institution`
 proporción no cuadre con las medidas reales del cuadro. También hay que mirar el campo `source`:
 si dice `Pinterest` o similar, se descarta.
 
+### Autores
+
+La Biblioteca tiene una segunda pestaña, **Autores**, con los 42 artistas de nombre propio de
+la colección. Solo salen ellos: los relieves de Nínive, las tablillas de Uruk, la máscara de
+Micenas y los frescos de Dura Europos son anónimos, y fingir una autoría sería peor que decir
+que no la hay. Cada autor se enlaza con sus obras por el campo `artist` de la ficha —sin listas
+escritas a mano—, de modo que al añadir una obra suya aparece ahí solo.
+
+Las biografías están en `herramientas/data_autores.py`. **Las fechas se comprueban contra
+Wikidata** con `python3 herramientas/verificar_autores.py`; hoy 39 de 42 coinciden exactamente y
+las 3 restantes están declaradas como excepciones con su motivo. Ese script cazó dos errores
+que no se habrían visto de otro modo:
+
+- «William Turner» en la Wikipedia en español es un **naturalista del siglo XVI**, no el pintor.
+  El enlace equivocado habría puesto el retrato de otra persona en la ficha.
+- Wikidata da 1669 como nacimiento de Villalpando; la Wikipedia en español y la bibliografía
+  dan «c. 1649». Se conserva 1649 y la discrepancia queda anotada.
+
+Los retratos los baja `herramientas/retratos.py` a `Autores/`. Es una **excepción deliberada a
+la regla de máxima resolución**: son ilustración de interfaz, no piezas de la colección, y se
+ven a 168 px, así que se piden a Commons ya reducidos a 640 px. El pie de cada uno dice qué es
+—autorretrato, retrato por otro, fotografía o efigie póstuma— porque no es lo mismo, y de cinco
+artistas (Exequias, Eufronio, Villalpando, Jörg Breu y los escultores del Laocoonte) **no se
+conserva retrato**: se dice, en vez de poner una obra suya haciéndola pasar por su cara.
+
 ### Identificar de qué archivo salió una imagen antigua
 
 Las primeras obras del Génesis se guardaron antes de que existieran los manifiestos, así que

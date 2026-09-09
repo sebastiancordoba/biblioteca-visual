@@ -11,6 +11,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 TMP  = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "build")
 TH   = os.path.join(TMP, "th2")
 LADO, CALIDAD = 820, 42
+# Los retratos de autor ilustran una tarjeta de 168 px de alto: a 820 px pesarían
+# treinta y siete veces más de lo que hace falta.
+LADO_AUTOR = 400
 os.chdir(ROOT); os.makedirs(TH, exist_ok=True)
 
 # Si cambian el lado o la calidad hay que rehacerlas todas: si no, quedan mezcladas
@@ -21,7 +24,7 @@ ajustes_cambiaron = (not os.path.exists(sello)) or io.open(sello).read().strip()
 
 doc = io.open("index.html", encoding="utf-8").read()
 rutas = sorted({m.group(1) for m in
-                re.finditer(r'\./((?:Génesis|Gilgamesh|Ilíada)/[^\'"]+\.jpg)', doc)})
+                re.finditer(r'\./((?:Génesis|Gilgamesh|Ilíada|Autores)/[^\'"]+\.jpg)', doc)})
 
 nuevas = saltadas = 0
 for rel in rutas:
@@ -33,7 +36,8 @@ for rel in rutas:
             and os.path.exists(destino)
             and os.path.getmtime(destino) >= os.path.getmtime(origen)):
         saltadas += 1; continue
-    subprocess.run(["sips", "-Z", str(LADO), "-s", "format", "jpeg",
+    lado = LADO_AUTOR if rel.startswith("Autores/") else LADO
+    subprocess.run(["sips", "-Z", str(lado), "-s", "format", "jpeg",
                     "-s", "formatOptions", str(CALIDAD),
                     origen, "--out", destino],
                    check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

@@ -183,7 +183,7 @@ def idx(rel):
         datos[rel]="data:image/jpeg;base64,"+base64.b64encode(open(p,"rb").read()).decode()
         orden.append(rel)
     return orden.index(rel)
-doc,n=re.subn(r'"\./((?:Génesis|Gilgamesh|Ilíada)/[^"]+\.jpg)"',
+doc,n=re.subn(r'"\./((?:Génesis|Gilgamesh|Ilíada|Autores)/[^"]+\.jpg)"',
               lambda m: f'IMG[{idx(m.group(1))}]', doc)
 mapa=("    /* Las vistas previas, una sola vez: cronología y mapa reutilizan estas entradas. */\n"
       "    const IMG = [\n" + ",\n".join(f'      "{datos[r]}"' for r in orden) + "\n    ];\n\n")

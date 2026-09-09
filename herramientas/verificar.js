@@ -181,6 +181,46 @@ console.log('\n== Flechas del teclado en el banner ==');
   document.getElementById('inicio-gallery').classList.add('active');
 }
 
+console.log('\n== Autores ==');
+{
+  const m = /const AUTORES = (\[[\s\S]*?\n    \]);/.exec(html);
+  check(!!m, 'los autores están inyectados en la página');
+  if (m) {
+    const A = JSON.parse(m[1]);
+    check(A.length > 0, `${A.length} autores con obra en la colección`);
+    check(A.every(a => a.nombre && a.anios && a.oficio && a.bio),
+      'todos tienen nombre, fechas, oficio y biografía');
+    check(A.every(a => a.bio.length > 120), 'ninguna biografía es un relleno de una línea');
+
+    /* Cada autor tiene que enlazar con obras que existan de verdad: el vínculo se hace por
+       el campo `artist` de la ficha, y si alguien cambia ese texto el autor se quedaría
+       colgado sin que se note. */
+    let colgados = [], sinObra = [];
+    for (const a of A) {
+      if (!a.obras.length) { sinObra.push(a.nombre); continue; }
+      for (const o of a.obras) {
+        const b = BOOKS[o.libro];
+        if (!b || !b.details.some(d => d.title === o.title)) colgados.push(`${a.nombre} → ${o.title}`);
+      }
+    }
+    if (colgados.length) console.log('   ' + colgados.join('\n   '));
+    check(colgados.length === 0, 'todas las obras enlazadas desde un autor existen');
+    check(sinObra.length === 0, `ningún autor sin obra (${sinObra.join(', ') || 'ninguno'})`);
+
+    const conRetrato = A.filter(a => a.retrato);
+    const rotos = conRetrato.filter(a => !fs.existsSync(decodeURIComponent(a.retrato)));
+    check(rotos.length === 0, `los ${conRetrato.length} retratos existen en disco`);
+    check(conRetrato.every(a => a.retratoPie),
+      'cada retrato dice qué es: autorretrato, retrato de otro, fotografía o efigie póstuma');
+
+    /* Nadie anónimo debe colarse: la sección es de autores con nombre propio. */
+    const anonimos = A.filter(a => /Nínive|Micenas|Uruk|Dura Europos|Babilon|Palacio|Templo|Hisarlik/i.test(a.nombre));
+    check(anonimos.length === 0, 'no hay atribuciones culturales coladas como autores');
+
+    check(html.includes("switchTab('autores-gallery'"), 'la pestaña Autores está en la Biblioteca');
+  }
+}
+
 console.log('\n== Nomenclatura de las obras ==');
 {
   /* Una obra se llama como se llama. Cuando dos comparten título —hay dos «Adán y Eva» de

@@ -41,7 +41,7 @@ def sub(m):
         faltan.append(rel); return m.group(0)
     return u
 
-doc, n = re.subn(r'\./((?:Génesis|Gilgamesh|Ilíada)/[^\'"]+\.jpg)', sub, doc)
+doc, n = re.subn(r'\./((?:Génesis|Gilgamesh|Ilíada|Autores)/[^\'"]+\.jpg)', sub, doc)
 print(f"rutas sustituidas: {n} · distintas: {len(cache)} · sin previa: {len(set(faltan))}")
 
 io.open(os.path.join(TMP,"doc.part"),"w",encoding="utf-8").write(doc)

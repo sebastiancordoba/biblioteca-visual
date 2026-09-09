@@ -11,6 +11,8 @@ from data_genesis import GENESIS
 from data_gilgamesh import GILGAMESH
 from data_iliada import ILIADA
 from cronologia import año as _anio, etiqueta as _etq
+from data_autores import AUTORES as _AUTORES
+from retratos import RETRATOS as _RETRATOS, SIN_RETRATO as _SIN_RETRATO
 
 ROOT = "/Users/sebastiancordoba/Library/Mobile Documents/com~apple~CloudDocs/Documents/Pinturas"
 INI = "    /* ==== DATOS GENERADOS POR inject.py — NO EDITAR A MANO ==== */"
@@ -81,6 +83,35 @@ def main():
         d = json.dumps(details, ensure_ascii=False, indent=2).replace("\n", "\n    ")
         g = json.dumps(groups,  ensure_ascii=False, indent=2).replace("\n", "\n    ")
         blocks.append(f"    BOOKS.{book_id}.details = {d};\n    BOOKS.{book_id}.groups = {g};")
+
+    # ---- autores ----
+    # Cada autor se enlaza con sus obras por el campo `artist` de las fichas, sin listas
+    # escritas a mano: al añadir una obra suya aparece aquí sola. Solo salen los autores
+    # que de verdad tienen alguna obra en la colección.
+    porPatron = {}
+    for libro, arr in (("genesis", GENESIS), ("gilgamesh", GILGAMESH), ("iliada", ILIADA)):
+        for i, e in enumerate(arr):
+            porPatron.setdefault(e["artist"].rsplit(" (", 1)[0].strip(), []).append(
+                {"libro": libro, "title": e["title"]})
+    autores = []
+    for a in _AUTORES:
+        suyas = []
+        for pat in a["patron"]:
+            suyas += porPatron.get(pat, [])
+        if not suyas: continue
+        ret = os.path.join(ROOT, "Autores", a["clave"] + ".jpg")
+        autores.append({
+            "clave": a["clave"], "nombre": a["nombre"], "anios": a["anios"],
+            "oficio": a["oficio"], "bio": a["bio"],
+            "retrato": ("./Autores/" + a["clave"] + ".jpg") if os.path.exists(ret) else None,
+            "retratoPie": _RETRATOS.get(a["clave"], ("", ""))[1],
+            "obras": suyas,
+        })
+    autores.sort(key=lambda x: x["nombre"])
+    print(f"autores: {len(autores)} con obra en la colección, "
+          f"{sum(1 for x in autores if x['retrato'])} con retrato")
+    blocks.append("    const AUTORES = " +
+                  json.dumps(autores, ensure_ascii=False, indent=2).replace("\n", "\n    ") + ";")
 
     generated = INI + "\n" + "\n\n".join(blocks) + "\n" + FIN
 
