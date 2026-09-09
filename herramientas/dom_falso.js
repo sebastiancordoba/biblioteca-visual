@@ -11,7 +11,10 @@ const noop = () => {};
 function crearEl(id) {
   const hijos = [], clases = new Set(), oyentes = {};
   const self = {
-    id, style: {}, dataset: {}, children: hijos, oyentes,
+    id, dataset: {}, children: hijos, oyentes,
+    /* style con setProperty: la página fija variables CSS (--alto-cabecera) y con un
+       objeto pelado la prueba reventaba por el simulacro, no por un fallo real. */
+    style: { setProperty(){}, removeProperty(){}, getPropertyValue: () => '' },
     innerHTML: '', innerText: '', textContent: '', className: '',
     classList: {
       add: (...c) => c.forEach(x => clases.add(x)),

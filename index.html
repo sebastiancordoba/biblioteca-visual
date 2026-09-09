@@ -189,10 +189,94 @@
       font-size: 0.95rem;
     }
 
+    /* BIBLIOTECA
+       Una pestaña por libro no escala: con veinte libros la barra superior sería una lista.
+       Los libros dejan de ser secciones de primer nivel y viven dentro de la Biblioteca,
+       de modo que arriba siempre hay las mismas cinco entradas, haya tres libros o treinta. */
+    .biblio-rejilla {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 18px;
+    }
+
+    .biblio-card {
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      align-items: stretch;
+      gap: 0;
+      text-align: left;
+      background: var(--bg-card, #0d0f13);
+      border: 1px solid var(--border-subtle);
+      border-radius: 5px;
+      overflow: hidden;
+      cursor: pointer;
+      color: inherit;
+      font: inherit;
+      transition: border-color .2s, transform .2s;
+    }
+
+    .biblio-card:hover, .biblio-card:focus-visible {
+      border-color: var(--accent-gold);
+      transform: translateY(-2px);
+    }
+
+    .biblio-portada {
+      background-size: cover;
+      background-position: center;
+      min-height: 118px;
+      border-right: 1px solid var(--border-subtle);
+    }
+
+    .biblio-texto { padding: 14px 16px; display: flex; flex-direction: column; gap: 5px; }
+    .biblio-texto b { font-family: var(--font-serif); font-size: 1.06rem; color: var(--text-title); }
+    .biblio-texto span {
+      font-size: 0.79rem; line-height: 1.5; color: var(--text-muted, #8d94a3);
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .biblio-texto em {
+      margin-top: auto; font-style: normal; font-size: 0.7rem; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--accent-gold);
+    }
+
+    /* El buscador solo aparece cuando de verdad hace falta: con tres libros estorba. */
+    .biblio-filtro { margin-bottom: 20px; }
+    .biblio-filtro input {
+      width: 100%; max-width: 360px; padding: 9px 13px;
+      background: #0d0f13; color: var(--text-body);
+      border: 1px solid var(--border-subtle); border-radius: 4px;
+      font-family: var(--font-sans); font-size: 0.86rem;
+    }
+    .biblio-filtro input:focus { outline: none; border-color: var(--accent-gold); }
+    .biblio-vacio { color: var(--text-muted, #8d94a3); font-size: 0.88rem; }
+
+    /* Vuelta a la Biblioteca: dentro de un libro su botón ya no está en la barra. */
+    #volverBiblioteca {
+      display: none;
+      position: absolute; left: 20px; top: 18px;
+      align-items: center; gap: 6px;
+      background: none; border: none; cursor: pointer;
+      color: var(--text-muted, #8d94a3);
+      font-family: var(--font-sans); font-size: 0.78rem; letter-spacing: 1px;
+    }
+    #volverBiblioteca:hover { color: var(--accent-gold); }
+    body[data-tipo="libro"] #volverBiblioteca { display: inline-flex; }
+    header { position: relative; }
+
     /* En la portada la cabecera se encoge: el banner es la identidad de la página y con
        la cabecera entera arrancaba a 435 px, o sea fuera de la primera pantalla en un
        portátil. La pestaña única de la portada tampoco navega a ningún sitio. */
-    body[data-libro="inicio"] header { padding: 26px 20px 14px; }
+    /* El banner tiene que verse entero al entrar, sin desplazarse: se le da lo que queda
+       de ventana por debajo de la cabecera, medida de verdad en vez de estimada. */
+    body[data-libro="inicio"] .banner {
+      aspect-ratio: auto;
+      height: clamp(280px, calc(100dvh - var(--alto-cabecera, 300px)), 620px);
+      min-height: 0;
+    }
+
+    body[data-libro="inicio"] header { padding: 22px 20px 12px; }
+    /* El hueco por defecto entre cabecera y contenido son 40 px, que en la portada solo
+       sirven para robarle alto al banner. */
+    body[data-libro="inicio"] .container { margin-top: 14px; }
     body[data-libro="inicio"] h1 { font-size: 1.7rem; }
     body[data-libro="inicio"] .header-sub { display: none; }
     body[data-libro="inicio"] #nav-inicio { display: none; }
@@ -253,6 +337,26 @@
 
     .banner-lamina.dentro { opacity: 1; transform: translateX(0) scale(1); }
     .banner-lamina.sale   { opacity: 0; transform: translateX(-22%) scale(1.04); }
+    /* Al retroceder, la lámina entra por donde se fue y la saliente se va por la derecha:
+       si no, ir hacia atrás se ve igual que ir hacia delante. */
+    .banner-lamina.desde-izq { transform: translateX(-100%) scale(1.06); }
+    .banner-lamina.sale-der  { opacity: 0; transform: translateX(22%) scale(1.04); }
+
+    .banner-flecha {
+      position: absolute; top: 50%; transform: translateY(-50%); z-index: 4;
+      width: 34px; height: 34px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(8, 10, 14, .72);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-body);
+      cursor: pointer;
+      opacity: 0; transition: opacity .25s, background .2s, color .2s, border-color .2s;
+    }
+    .banner-flecha.izq { left: 14px; }
+    .banner-flecha.der { right: 14px; }
+    .banner:hover .banner-flecha, .banner-flecha:focus-visible { opacity: 1; }
+    .banner-flecha:hover { background: var(--accent-gold); color: #050608; border-color: var(--accent-gold); }
+    @media (hover: none) { .banner-flecha { opacity: 1; } }
 
     /* Velo para que el texto se lea sobre cualquier pintura */
     .banner::after {
@@ -310,7 +414,7 @@
 
     .banner-progreso {
       position: absolute; left: 0; right: 0; bottom: 0; z-index: 3;
-      height: 2px; background: rgba(255,255,255,.07);
+      height: 1px; background: rgba(255,255,255,.07);
     }
 
     .banner-progreso span {
@@ -974,12 +1078,15 @@
     <h1 id="bookTitle">La colección</h1>
     <p class="header-sub" id="bookSub">Pintura, escultura, cerámica y arqueología reunidas en torno a los libros fundacionales, en la mayor resolución que existe de cada obra.</p>
 
+    <button type="button" id="volverBiblioteca" onclick="switchBook('biblioteca')">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      Todos los libros
+    </button>
+
     <!-- SELECTOR DE LIBRO -->
     <div class="book-switch">
       <button class="book-btn active" onclick="switchBook('inicio', this)">Inicio</button>
-      <button class="book-btn" onclick="switchBook('genesis', this)">Génesis<span class="book-count">40</span></button>
-      <button class="book-btn" onclick="switchBook('gilgamesh', this)">Gilgamesh<span class="book-count">10</span></button>
-      <button class="book-btn" onclick="switchBook('iliada', this)">La Ilíada<span class="book-count">21</span></button>
+      <button class="book-btn" id="btnBiblioteca" onclick="switchBook('biblioteca', this)">Biblioteca<span class="book-count" id="cuentaLibros"></span></button>
     </div>
 
     <!-- NAV DE SECCIONES POR LIBRO -->
@@ -987,6 +1094,13 @@
       <button class="tab-btn active" onclick="switchTab('inicio-gallery', this)">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
         La colección
+      </button>
+    </nav>
+
+    <nav id="nav-biblioteca" class="book-nav">
+      <button class="tab-btn active" onclick="switchTab('biblioteca-gallery', this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+        Los libros
       </button>
     </nav>
 
@@ -1004,7 +1118,7 @@
     <nav id="nav-gilgamesh" class="book-nav">
       <button class="tab-btn active" onclick="switchTab('gilgamesh-gallery', this)">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-        Colección (10)
+        Colección (11)
       </button>
     </nav>
 
@@ -1023,10 +1137,24 @@
       <section class="banner" id="banner" aria-label="Obra destacada">
         <div class="banner-lienzo" id="bannerLienzo"></div>
         <div class="banner-info" id="bannerInfo"></div>
+        <button class="banner-flecha izq" id="bannerAntes" type="button" aria-label="Obra anterior">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="banner-flecha der" id="bannerDespues" type="button" aria-label="Obra siguiente">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
         <div class="banner-progreso"><span id="bannerProg"></span></div>
       </section>
       <div class="inicio-cifras" id="inicioCifras"></div>
       <div class="inicio-libros" id="inicioLibros"></div>
+    </div>
+
+    <div id="biblioteca-gallery" class="tab-content">
+      <div class="biblio-filtro" id="biblioFiltro" hidden>
+        <input type="search" id="biblioBuscar" placeholder="Buscar un libro…" aria-label="Buscar un libro">
+      </div>
+      <div class="biblio-rejilla" id="bibliotecaLibros"></div>
+      <p class="biblio-vacio" id="biblioVacio" hidden>Ningún libro coincide con esa búsqueda.</p>
     </div>
 
     <div id="genesis-gallery" class="tab-content">
@@ -2082,6 +2210,18 @@
         "fecha": "2334 a.C."
       },
       {
+        "title": "El héroe abate al toro",
+        "artist": "Mesopotamia acadia, reinado de Naram-Sin (c. 2255–2219 a.C.)",
+        "meta": "Terracota moldeada con restos de policromía | 13,5 × 11 cm | inv. O.1054 | Museos Reales de Arte e Historia, Bruselas",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Toro_celestial",
+        "snippet": "Tablilla VI: Ishtar, despechada, pide a su padre el Toro Celeste para destruir Uruk. Gilgamesh y Enkidu lo matan, y esa muerte es la que condena a Enkidu.",
+        "analysis": "El héroe agarra al animal por un cuerno y por una pata trasera y lo voltea entero: el toro queda cabeza abajo, con el hocico contra el borde inferior de la placa, en una diagonal que atraviesa el campo de esquina a esquina. Es una solución de una economía notable para un objeto de trece centímetros. La cara del héroe se presenta de frente mientras el cuerpo se ve de perfil —la convención mesopotámica— y la barba rizada en bucles superpuestos y el mechón sobre la frente son los rasgos con que la glíptica acadia identifica al héroe desnudo. Conserva restos de la policromía rojiza original, que casi nunca sobrevive en la terracota.",
+        "history": "En la tablilla VI, Gilgamesh rechaza a Ishtar recordándole cómo acabaron sus amantes anteriores; ella sube al cielo y exige a Anu el Toro Celeste, cuyos bufidos abren grietas en la tierra que se tragan a cientos de hombres de Uruk. Enkidu lo sujeta por la cola, Gilgamesh lo remata entre la nuca y los cuernos, y después Enkidu le arranca un cuarto trasero y se lo arroja a la diosa a la cara. Los dioses reunidos deciden que alguien debe pagar por el Toro y por Humbaba, y el condenado es Enkidu: el episodio más triunfal del poema es el que pone en marcha su desenlace.",
+        "bio": "Hay que decirlo con precisión: el propio museo advierte de que la figura puede ser Gilgamesh venciendo al Toro Celeste o bien Lakhmu, el dios acadio de las aguas subterráneas, sometiendo al hombre-toro Kusarikku. La iconografía mesopotámica rara vez rotula a sus héroes, y buena parte de lo que llamamos «Gilgamesh» en el arte es una identificación por analogía con el texto, no una firma. Se incluye por eso con la duda declarada, y no a pesar de ella: es la imagen antigua más próxima al episodio que existe.",
+        "anio": -2255,
+        "fecha": "2255 a.C."
+      },
+      {
         "title": "La caza de leones de Asurbanipal",
         "artist": "Palacio Norte de Nínive (c. 645 a.C.)",
         "meta": "Relieve en alabastro | British Museum, Londres",
@@ -2159,6 +2299,12 @@
         {
           "src": "./Gilgamesh/09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg",
           "title": "Sello cilíndrico acadio del héroe y el toro (c. 2300 a.C.)"
+        }
+      ],
+      [
+        {
+          "src": "./Gilgamesh/11_El_Toro_Celeste_Placa_Votiva_Bruselas_2250aC.jpg",
+          "title": "Placa votiva del héroe y el toro — Mesopotamia, reinado de Naram-Sin (c. 2255–2219 a.C.)"
         }
       ],
       [
@@ -2582,6 +2728,17 @@
       details: [], groups: []
     };
 
+    /* La Biblioteca tampoco es un libro: es el índice de todos ellos. Al añadir un libro
+       nuevo aparece aquí solo, sin tocar la barra de arriba, que se queda siempre en
+       Inicio · Biblioteca · Cronología · Mapa · Cobertura. */
+    BOOKS.biblioteca = {
+      tag: 'La colección por libros',
+      title: 'Biblioteca',
+      sub: 'Cada libro con sus obras. Elige uno para ver su colección completa.',
+      firstTab: 'biblioteca-gallery',
+      details: [], groups: []
+    };
+
     librosReales().forEach(id => {
       BOOKS[id].details.forEach((d, i) => {
         BOOKS.inicio.details.push(Object.assign({}, d, { libro: BOOKS[id].corto, libroId: id }));
@@ -2728,6 +2885,10 @@
       /* Baraja completa en vez de sorteo suelto: así no repite una obra hasta haberlas
          mostrado todas, que es lo que se espera de un banner de museo. */
       let baraja = [], actual = null, lamina = null, temporizador = null, t0 = 0;
+      /* El sorteo por sí solo no permite retroceder: se guarda lo ya mostrado y un puntero,
+         de modo que la flecha de atrás recorre el historial real y no vuelve a sortear. */
+      const vistas = [];
+      let pos = -1;
 
       function siguiente(){
         if (!baraja.length) {
@@ -2741,13 +2902,27 @@
         return baraja.shift();
       }
 
-      function pintar(i){
+      function avanzar(){
+        if (pos < vistas.length - 1) { pos++; return vistas[pos]; }
+        const i = siguiente();
+        vistas.push(i); pos = vistas.length - 1;
+        return i;
+      }
+
+      function retroceder(){
+        if (pos <= 0) return null;
+        pos--;
+        return vistas[pos];
+      }
+
+      function pintar(i, haciaAtras){
+        if (i == null) return;
         actual = i;
         const d = BOOKS.inicio.details[i];
         const src = BOOKS.inicio.groups[i][0].src;
 
         const nueva = document.createElement('div');
-        nueva.className = 'banner-lamina';
+        nueva.className = 'banner-lamina' + (haciaAtras ? ' desde-izq' : '');
         ['banner-fondo', 'banner-obra'].forEach(cls => {
           const capa = document.createElement('div');
           capa.className = cls;
@@ -2757,10 +2932,11 @@
         lienzo.appendChild(nueva);
         const vieja = lamina;
         requestAnimationFrame(() => requestAnimationFrame(() => {
+          nueva.classList.remove('desde-izq');
           nueva.classList.add('dentro');
           if (vieja) {
             vieja.classList.remove('dentro');
-            vieja.classList.add('sale');
+            vieja.classList.add(haciaAtras ? 'sale-der' : 'sale');
             setTimeout(() => vieja.remove(), 1300);
           }
         }));
@@ -2781,12 +2957,26 @@
       }
 
       function abrir(i){ currentBook = 'inicio'; openZoomForArtwork(i, 0); }
+
+      /* Las flechas van dentro del banner, que abre el visor al pulsarlo: sin detener la
+         propagación, pasar de obra abriría además la que se acaba de dejar atrás. */
+      function flecha(id, mover, haciaAtras){
+        const b = document.getElementById(id);
+        if (!b) return;
+        b.addEventListener('click', ev => {
+          ev.stopPropagation();
+          const i = mover();
+          if (i != null) pintar(i, haciaAtras);
+        });
+      }
+      flecha('bannerAntes', retroceder, true);
+      flecha('bannerDespues', avanzar, false);
       banner.addEventListener('click', () => { if (actual !== null) abrir(actual); });
 
       function latido(){
         const pasado = Date.now() - t0;
         if (prog) prog.style.width = Math.min(100, pasado / PAUSA * 100) + '%';
-        if (pasado >= PAUSA) pintar(siguiente());
+        if (pasado >= PAUSA) pintar(avanzar(), false);
         temporizador = requestAnimationFrame(latido);
       }
 
@@ -2800,7 +2990,9 @@
       setInterval(ciclo, 400);
 
       document.body.dataset.libro = 'inicio';
-      pintar(siguiente());
+      document.body.dataset.tipo = 'inicio';
+      medirCabecera();
+      pintar(avanzar(), false);
       ciclo();
 
       /* Cifras y accesos a cada libro, generados desde BOOKS */
@@ -2829,6 +3021,57 @@
       }
     })();
 
+    /* ---------- Biblioteca: el índice de libros ---------- */
+    function pintarBiblioteca(filtro){
+      const rejilla = document.getElementById('bibliotecaLibros');
+      if (!rejilla) return;
+      const q = (filtro || '').trim().toLowerCase();
+      const ids = librosReales().filter(id =>
+        !q || (BOOKS[id].corto + ' ' + BOOKS[id].sub).toLowerCase().includes(q));
+
+      rejilla.innerHTML = ids.map(id => {
+        const b = BOOKS[id];
+        const portada = (b.groups[0] && b.groups[0][0]) ? b.groups[0][0].src : '';
+        return `<button class="biblio-card" type="button" data-libro="${id}">` +
+               `<span class="biblio-portada" style="background-image:url('${portada}')"></span>` +
+               `<span class="biblio-texto"><b>${esc(b.corto)}</b>` +
+               `<span>${esc(b.sub)}</span>` +
+               `<em>${b.details.length} obras</em></span></button>`;
+      }).join('');
+      rejilla.querySelectorAll('.biblio-card').forEach(c =>
+        c.addEventListener('click', () => switchBook(c.dataset.libro)));
+
+      const vacio = document.getElementById('biblioVacio');
+      if (vacio) vacio.hidden = ids.length > 0;
+
+      /* El buscador solo se muestra cuando la lista deja de leerse de un vistazo. */
+      const caja = document.getElementById('biblioFiltro');
+      if (caja) caja.hidden = librosReales().length <= 6;
+    }
+
+    (function(){
+      const cuenta = document.getElementById('cuentaLibros');
+      if (cuenta) cuenta.innerText = librosReales().length;
+      const buscar = document.getElementById('biblioBuscar');
+      if (buscar) buscar.addEventListener('input', () => pintarBiblioteca(buscar.value));
+      pintarBiblioteca('');
+    })();
+
+    /* El banner de la portada ocupa lo que queda de ventana. Se mide dónde empieza el
+       banner, no cuánto abulta la cabecera: entre ambos hay márgenes y una barra de
+       secciones que cambia de alto según el libro, y sumarlos a ojo dejaba el botón
+       «Ver en detalle» cortado por el borde inferior. */
+    function medirCabecera(){
+      const b = document.getElementById('banner');
+      if (!b || typeof b.getBoundingClientRect !== 'function') return;
+      const r = b.getBoundingClientRect();
+      const arriba = r.top + (window.scrollY || 0);
+      if (arriba > 0)
+        document.documentElement.style.setProperty('--alto-cabecera', Math.round(arriba + 26) + 'px');
+    }
+    window.addEventListener('resize', medirCabecera);
+    window.addEventListener('load', medirCabecera);
+
     /* Barras de ordenación: se activan una sola vez, para todos los libros. */
     document.querySelectorAll('.orden-bar').forEach(bar => {
       const libro = bar.dataset.libro;
@@ -2848,12 +3091,17 @@
       currentBook = bookId;
 
       document.body.dataset.libro = bookId;
+      /* Los libros ya no tienen botón propio arriba: dentro de uno sigue marcada la
+         Biblioteca, y aparece el enlace de vuelta. */
+      document.body.dataset.tipo = book.esLibro ? 'libro' : bookId;
       document.getElementById('bookTag').innerText = book.tag;
       document.getElementById('bookTitle').innerText = book.title;
       document.getElementById('bookSub').innerText = book.sub;
 
       document.querySelectorAll('.book-btn').forEach(el => el.classList.remove('active'));
-      btnElement.classList.add('active');
+      const marcar = btnElement ||
+        document.getElementById(book.esLibro || bookId === 'biblioteca' ? 'btnBiblioteca' : '');
+      if (marcar) marcar.classList.add('active');
 
       document.querySelectorAll('.book-nav').forEach(el => el.classList.remove('active'));
       const nav = document.getElementById('nav-' + bookId);
@@ -2873,6 +3121,7 @@
       currentSubViewIndex = 0;
       activeSubView = {};
 
+      medirCabecera();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 

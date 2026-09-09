@@ -10,8 +10,14 @@ import io, os, re, subprocess
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 TMP  = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "build")
 TH   = os.path.join(TMP, "th2")
-LADO, CALIDAD = 900, 46
+LADO, CALIDAD = 820, 42
 os.chdir(ROOT); os.makedirs(TH, exist_ok=True)
+
+# Si cambian el lado o la calidad hay que rehacerlas todas: si no, quedan mezcladas
+# unas con los ajustes viejos y otras con los nuevos, y el peso no baja.
+sello = os.path.join(TH, ".ajustes")
+firma = f"{LADO}x{CALIDAD}"
+ajustes_cambiaron = (not os.path.exists(sello)) or io.open(sello).read().strip() != firma
 
 doc = io.open("index.html", encoding="utf-8").read()
 rutas = sorted({m.group(1) for m in
@@ -23,7 +29,9 @@ for rel in rutas:
     destino = os.path.join(TH, rel.replace("/", "__"))
     if not os.path.exists(origen):
         print(f"  FALTA el original {rel}"); continue
-    if os.path.exists(destino) and os.path.getmtime(destino) >= os.path.getmtime(origen):
+    if (not ajustes_cambiaron
+            and os.path.exists(destino)
+            and os.path.getmtime(destino) >= os.path.getmtime(origen)):
         saltadas += 1; continue
     subprocess.run(["sips", "-Z", str(LADO), "-s", "format", "jpeg",
                     "-s", "formatOptions", str(CALIDAD),
@@ -31,6 +39,8 @@ for rel in rutas:
                    check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     nuevas += 1
 
-print(f"previas: {nuevas} generadas · {saltadas} ya al día · {len(rutas)} en total")
+io.open(sello, "w").write(firma)
+print(f"previas: {nuevas} generadas · {saltadas} ya al día · {len(rutas)} en total "
+      f"({LADO} px, calidad {CALIDAD})")
 faltan = [r for r in rutas if not os.path.exists(os.path.join(TH, r.replace('/', '__')))]
 assert not faltan, "sin vista previa: " + ", ".join(faltan)

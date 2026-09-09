@@ -113,6 +113,18 @@ GILGAMESH = [
  "history": "El sello cilíndrico fue simultáneamente firma personal, amuleto y documento legal: se rodaba sobre el barro fresco de contratos, cartas y precintos de vasijas para autentificarlos. Era el objeto más íntimo de un mesopotámico, se llevaba colgado al cuello y acompañaba a su dueño a la tumba.",
  "bio": "La colección de sellos de Pierpont Morgan, reunida a comienzos del siglo XX, es una de las más completas del mundo y ha sido fundamental para establecer la cronología del arte mesopotámico, ya que muchos ejemplares llevan inscrito el nombre y el oficio de su propietario."
 },
+{
+ "files": ["11_El_Toro_Celeste_Placa_Votiva_Bruselas_2250aC.jpg"],
+ "views": ["Placa votiva del héroe y el toro — Mesopotamia, reinado de Naram-Sin (c. 2255–2219 a.C.)"],
+ "title": "El héroe abate al toro",
+ "artist": "Mesopotamia acadia, reinado de Naram-Sin (c. 2255–2219 a.C.)",
+ "meta": "Terracota moldeada con restos de policromía | 13,5 × 11 cm | inv. O.1054 | Museos Reales de Arte e Historia, Bruselas",
+ "wikiUrl": "https://es.wikipedia.org/wiki/Toro_celestial",
+ "snippet": "Tablilla VI: Ishtar, despechada, pide a su padre el Toro Celeste para destruir Uruk. Gilgamesh y Enkidu lo matan, y esa muerte es la que condena a Enkidu.",
+ "analysis": "El héroe agarra al animal por un cuerno y por una pata trasera y lo voltea entero: el toro queda cabeza abajo, con el hocico contra el borde inferior de la placa, en una diagonal que atraviesa el campo de esquina a esquina. Es una solución de una economía notable para un objeto de trece centímetros. La cara del héroe se presenta de frente mientras el cuerpo se ve de perfil —la convención mesopotámica— y la barba rizada en bucles superpuestos y el mechón sobre la frente son los rasgos con que la glíptica acadia identifica al héroe desnudo. Conserva restos de la policromía rojiza original, que casi nunca sobrevive en la terracota.",
+ "history": "En la tablilla VI, Gilgamesh rechaza a Ishtar recordándole cómo acabaron sus amantes anteriores; ella sube al cielo y exige a Anu el Toro Celeste, cuyos bufidos abren grietas en la tierra que se tragan a cientos de hombres de Uruk. Enkidu lo sujeta por la cola, Gilgamesh lo remata entre la nuca y los cuernos, y después Enkidu le arranca un cuarto trasero y se lo arroja a la diosa a la cara. Los dioses reunidos deciden que alguien debe pagar por el Toro y por Humbaba, y el condenado es Enkidu: el episodio más triunfal del poema es el que pone en marcha su desenlace.",
+ "bio": "Hay que decirlo con precisión: el propio museo advierte de que la figura puede ser Gilgamesh venciendo al Toro Celeste o bien Lakhmu, el dios acadio de las aguas subterráneas, sometiendo al hombre-toro Kusarikku. La iconografía mesopotámica rara vez rotula a sus héroes, y buena parte de lo que llamamos «Gilgamesh» en el arte es una identificación por analogía con el texto, no una firma. Se incluye por eso con la duda declarada, y no a pesar de ella: es la imagen antigua más próxima al episodio que existe."
+},
 ]
 
 from data_lote5 import GILGAMESH_L6

@@ -11,7 +11,7 @@ const cola=[];
 const rAF=f=>{cola.push(f);return cola.length;};
 const cAF=id=>{cola[id-1]=null;};
 function drenar(max){let n=0;while(cola.length&&n<max){const f=cola.shift();if(f)f();n++;}return n;}
-function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{},innerHTML:'',_tc:'',
+function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{setProperty(){},removeProperty(){},getPropertyValue:()=>''},innerHTML:'',_tc:'',
  hidden:true,children:[],offsetWidth:210,offsetHeight:120,_attrs:{},
  get textContent(){return this._tc;},set textContent(v){this._tc=v;this.children=[];},
  get clientWidth(){return (id==='mapaMarco'&&OCULTO)?0:900;},

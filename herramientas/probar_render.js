@@ -18,6 +18,9 @@ for(const id of Object.keys(BOOKS)){
   const ok = cards===n;
   console.log(`${ok?'  ok    ':'  FALLA '}${id}: ${cards} tarjetas generadas para ${n} obras`);
   if(!ok) fails++;
+  /* Inicio y Biblioteca no tienen obras propias: son índices, no colecciones, y su
+     cuadrícula no existe. Comprobado que salen 0 tarjetas, no hay nada más que mirar. */
+  if(n===0) continue;
   // toda tarjeta debe traer imagen, título, drawer y enlace de zoom
   for(const campo of ['<img src="./','artwork-title','id="drawer-'+id+'-0"','openZoomForArtwork(0']){
     const tiene=h.includes(campo);

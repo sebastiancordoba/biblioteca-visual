@@ -68,6 +68,7 @@ CSS = """
     .sede-etq{fill:var(--text-body);text-anchor:middle;font-family:var(--font-sans);
       font-weight:500;pointer-events:none;paint-order:stroke;
       stroke:rgba(8,9,12,.9);stroke-width:2.5px;vector-effect:non-scaling-stroke}
+    .sede-etq.der{text-anchor:start}.sede-etq.izq{text-anchor:end}
     .sede-abanico:hover .sede-etq,.sede-abanico.sel .sede-etq{fill:var(--accent-gold-hover)}
     .obra-pin{cursor:pointer}
     .obra-pin .marco{fill:none;stroke:rgba(197,160,70,.55);vector-effect:non-scaling-stroke;

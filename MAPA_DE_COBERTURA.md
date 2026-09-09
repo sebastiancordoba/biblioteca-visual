@@ -112,7 +112,7 @@ iconografía es arqueológica.
 | I | Las murallas de Uruk | ✓ Vaso de Warka (07), Lamassu (08) |
 | II–V | Humbaba y el Bosque de los Cedros | ✓ Placa (03), máscara (04) |
 | I | Los sueños de Gilgamesh | ✓ Tablilla del Sueño (05) |
-| VI | Ishtar rechazada; el Toro Celeste | ✓ Reina de la Noche (06); **falta** el Toro Celeste |
+| VI | Ishtar rechazada; el Toro Celeste | ✓ Reina de la Noche (06); placa votiva del héroe y el toro, Bruselas O.1054 (11) — el museo admite que puede ser Lakhmu y Kusarikku, no Gilgamesh |
 | VI | El héroe y las fieras | ✓ Relieve de Khorsabad (02), sello cilíndrico (09) |
 | XI | El Diluvio | ✓ Tablilla XI (01) |
 | VII–X | **La muerte de Enkidu; el viaje al inframundo** | · sin obra |

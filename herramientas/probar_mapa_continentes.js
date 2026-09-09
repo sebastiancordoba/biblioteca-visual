@@ -9,7 +9,7 @@ const noop=()=>{};const store={};const oyentes={};
 let OCULTO=true,RO=null;const cola=[];
 const rAF=f=>{cola.push(f);return cola.length;};const cAF=i=>{cola[i-1]=null;};
 const drenar=m=>{let n=0;while(cola.length&&n<m){const f=cola.shift();if(f)f();n++;}return n;};
-function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{},_html:'',_tc:'',
+function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{setProperty(){},removeProperty(){},getPropertyValue:()=>''},_html:'',_tc:'',
  hidden:true,children:[],offsetWidth:210,offsetHeight:120,_attrs:{},_ev:{},disabled:false,title:'',
  get innerHTML(){return this._html;},set innerHTML(v){this._html=v;this.children=[];},
  get textContent(){return this._tc;},set textContent(v){this._tc=v;this.children=[];},

@@ -5,7 +5,7 @@ const fs=require('fs');
 const html=fs.readFileSync(require('path').join(__dirname,'..','build','los-tres-libros.html'),'utf8');
 const js=html.split('<script>')[1].split('</script>')[0];
 const noop=()=>{};const store={};const nodos=[];
-function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{},innerHTML:'',innerText:'',
+function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{setProperty(){},removeProperty(){},getPropertyValue:()=>''},innerHTML:'',innerText:'',
  textContent:'',hidden:true,children:[],offsetWidth:210,offsetHeight:120,
  clientWidth:900,clientHeight:560,
  classList:{_s:new Set(),add(c){this._s.add(c)},remove(c){this._s.delete(c)},

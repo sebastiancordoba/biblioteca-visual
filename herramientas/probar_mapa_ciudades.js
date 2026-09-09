@@ -10,7 +10,7 @@ const noop=()=>{};const store={};const oyentes={};
 let OCULTO=true,RO=null;const cola=[];
 const rAF=f=>{cola.push(f);return cola.length;};const cAF=i=>{cola[i-1]=null;};
 const drenar=m=>{let n=0;while(cola.length&&n<m){const f=cola.shift();if(f)f();n++;}return n;};
-function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{},innerHTML:'',_tc:'',
+function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{setProperty(){},removeProperty(){},getPropertyValue:()=>''},innerHTML:'',_tc:'',
  hidden:true,children:[],offsetWidth:210,offsetHeight:120,_attrs:{},_ev:{},
  get textContent(){return this._tc;},set textContent(v){this._tc=v;this.children=[];},
  get clientWidth(){return (id==='mapaMarco'&&OCULTO)?0:900;},
@@ -80,6 +80,50 @@ if(aba.length){
   aba[0]._ev.click({stopPropagation:noop}); drenar(300);
   ck(obras()>antesObras,`las obras del museo elegido aparecen: ${antesObras} -> ${obras()}`);
   ck(store['sedeDetalle'].innerHTML.includes('obra-min'),'el panel de abajo también se actualiza');
+}
+
+console.log('\n== dispersión: nada se pisa con nada ==');
+{
+  /* El abanico se dibujaba en un arco de 115° encima del punto y con radio fijo, así que
+     con cuatro o cinco museos los círculos y las miniaturas se montaban unos sobre otros.
+     Se miden las distancias reales entre centros. */
+  const centro = el => {
+    const c = (el.children||[]).find(x => x.tag==='circle' && (x.getAttribute('class')||'')==='pt');
+    if (c) return { x:+c.getAttribute('cx'), y:+c.getAttribute('cy'), r:+c.getAttribute('r') };
+    const im = (el.children||[]).find(x => x.tag==='image');
+    if (im) { const w=+im.getAttribute('width');
+      return { x:+im.getAttribute('x')+w/2, y:+im.getAttribute('y')+w/2, r:w/2 }; }
+    return null;
+  };
+  const puntos = cls => sedes().filter(x=>tiene(x,cls)).map(centro).filter(Boolean);
+
+  const museos = puntos('sede-abanico');
+  const minSep = ps => { let m = Infinity;
+    for (let i=0;i<ps.length;i++) for (let j=i+1;j<ps.length;j++)
+      m = Math.min(m, Math.hypot(ps[i].x-ps[j].x, ps[i].y-ps[j].y) - ps[i].r - ps[j].r);
+    return m; };
+
+  if (museos.length > 1) {
+    const sep = minSep(museos);
+    console.log(`   ${museos.length} museos · separación mínima entre bordes: ${sep.toFixed(1)} px`);
+    ck(sep > 6, `los museos del abanico no se tocan (${sep.toFixed(1)} px de holgura)`);
+  }
+
+  const minis = sedes().filter(x=>tiene(x,'obra-pin')).map(centro).filter(Boolean);
+  if (minis.length > 1) {
+    const sep = minSep(minis);
+    console.log(`   ${minis.length} miniaturas · separación mínima entre bordes: ${sep.toFixed(1)} px`);
+    ck(sep > 0, `las miniaturas de la obra no se solapan (${sep.toFixed(1)} px de holgura)`);
+  }
+
+  /* Y las miniaturas del museo abierto tampoco deben invadir a los museos vecinos. */
+  if (minis.length && museos.length > 1) {
+    let m = Infinity;
+    for (const a of minis) for (const b of museos)
+      m = Math.min(m, Math.hypot(a.x-b.x, a.y-b.y) - a.r - b.r);
+    console.log(`   miniaturas frente a museos vecinos: ${m.toFixed(1)} px`);
+    ck(m > -6, `las obras abiertas no invaden los museos vecinos (${m.toFixed(1)} px)`);
+  }
 }
 
 console.log('\n== volver a pulsar el grupo lo pliega ==');

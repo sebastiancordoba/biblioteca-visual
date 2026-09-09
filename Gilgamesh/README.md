@@ -4,7 +4,7 @@ Relieves asirios, sellos cilíndricos, tablillas cuneiformes y objetos de culto 
 
 ---
 
-## 🏛️ Galería de la Colección (10 obras)
+## 🏛️ Galería de la Colección (11 obras)
 
 | N° | Obra | Autoría / Procedencia | Ubicación | Wikipedia | Archivo |
 |---|---|---|---|---|---|
@@ -17,7 +17,8 @@ Relieves asirios, sellos cilíndricos, tablillas cuneiformes y objetos de culto 
 | 7 | **El Vaso de Warka** | Uruk, periodo protoliterario (c. 3200–3000 a.C.) | Museo Nacional de Irak, Bagdad | [Wikipedia](https://es.wikipedia.org/wiki/Vaso_de_Warka) | [`07_Vaso_de_Warka_Uruk_3000aC.jpg`](./07_Vaso_de_Warka_Uruk_3000aC.jpg) |
 | 8 | **Lamassu, el guardián de la puerta** | Palacio de Sargón II, Dur-Sharrukin (713 a.C.) | Museo del Louvre, París (procedente de la sala del trono de Khorsabad) | [Wikipedia](https://es.wikipedia.org/wiki/Lamassu) | [`08_Lamassu_del_Palacio_de_Sargon_II_Khorsabad_713aC.jpg`](./08_Lamassu_del_Palacio_de_Sargon_II_Khorsabad_713aC.jpg) |
 | 9 | **Sello cilíndrico del héroe y el toro** | Mesopotamia, periodo acadio (c. 2334–2154 a.C.) | Morgan Library & Museum, Nueva York | [Wikipedia](https://es.wikipedia.org/wiki/Sello_cil%C3%ADndrico) | [`09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg`](./09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg) |
-| 10 | **La caza de leones de Asurbanipal** | Palacio Norte de Nínive (c. 645 a.C.) | British Museum, Londres | [Wikipedia](https://es.wikipedia.org/wiki/Cacer%C3%ADa_de_leones_de_Asurbanipal) | [`10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg`](./10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg) |
+| 10 | **El héroe abate al toro** | Mesopotamia acadia, reinado de Naram-Sin (c. 2255–2219 a.C.) | Museos Reales de Arte e Historia, Bruselas | [Wikipedia](https://es.wikipedia.org/wiki/Toro_celestial) | [`11_El_Toro_Celeste_Placa_Votiva_Bruselas_2250aC.jpg`](./11_El_Toro_Celeste_Placa_Votiva_Bruselas_2250aC.jpg) |
+| 11 | **La caza de leones de Asurbanipal** | Palacio Norte de Nínive (c. 645 a.C.) | British Museum, Londres | [Wikipedia](https://es.wikipedia.org/wiki/Cacer%C3%ADa_de_leones_de_Asurbanipal) | [`10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg`](./10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg) |
 
 ---
 
@@ -254,7 +255,33 @@ La colección de sellos de Pierpont Morgan, reunida a comienzos del siglo XX, es
 
 ---
 
-### 10. La caza de leones de Asurbanipal — Palacio Norte de Nínive (c. 645 a.C.)
+### 10. El héroe abate al toro — Mesopotamia acadia, reinado de Naram-Sin (c. 2255–2219 a.C.)
+
+![El héroe abate al toro](./11_El_Toro_Celeste_Placa_Votiva_Bruselas_2250aC.jpg)
+*Placa votiva del héroe y el toro — Mesopotamia, reinado de Naram-Sin (c. 2255–2219 a.C.)*
+
+#### Ficha Técnica
+
+- Terracota moldeada con restos de policromía
+- 13,5 × 11 cm
+- inv. O.1054
+- Museos Reales de Arte e Historia, Bruselas
+
+#### Lo que hace que destaque
+
+El héroe agarra al animal por un cuerno y por una pata trasera y lo voltea entero: el toro queda cabeza abajo, con el hocico contra el borde inferior de la placa, en una diagonal que atraviesa el campo de esquina a esquina. Es una solución de una economía notable para un objeto de trece centímetros. La cara del héroe se presenta de frente mientras el cuerpo se ve de perfil —la convención mesopotámica— y la barba rizada en bucles superpuestos y el mechón sobre la frente son los rasgos con que la glíptica acadia identifica al héroe desnudo. Conserva restos de la policromía rojiza original, que casi nunca sobrevive en la terracota.
+
+#### Contexto Histórico y Arqueológico
+
+En la tablilla VI, Gilgamesh rechaza a Ishtar recordándole cómo acabaron sus amantes anteriores; ella sube al cielo y exige a Anu el Toro Celeste, cuyos bufidos abren grietas en la tierra que se tragan a cientos de hombres de Uruk. Enkidu lo sujeta por la cola, Gilgamesh lo remata entre la nuca y los cuernos, y después Enkidu le arranca un cuarto trasero y se lo arroja a la diosa a la cara. Los dioses reunidos deciden que alguien debe pagar por el Toro y por Humbaba, y el condenado es Enkidu: el episodio más triunfal del poema es el que pone en marcha su desenlace.
+
+#### Autoría y Procedencia
+
+Hay que decirlo con precisión: el propio museo advierte de que la figura puede ser Gilgamesh venciendo al Toro Celeste o bien Lakhmu, el dios acadio de las aguas subterráneas, sometiendo al hombre-toro Kusarikku. La iconografía mesopotámica rara vez rotula a sus héroes, y buena parte de lo que llamamos «Gilgamesh» en el arte es una identificación por analogía con el texto, no una firma. Se incluye por eso con la duda declarada, y no a pesar de ella: es la imagen antigua más próxima al episodio que existe.
+
+---
+
+### 11. La caza de leones de Asurbanipal — Palacio Norte de Nínive (c. 645 a.C.)
 
 ![La caza de leones de Asurbanipal](./10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg)
 *La caza de leones de Asurbanipal — Nínive (c. 645 a.C.)*

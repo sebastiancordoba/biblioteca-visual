@@ -10,7 +10,7 @@ let OCULTO=true,RO=null;const cola=[];
 const rAF=f=>{cola.push(f);return cola.length;};const cAF=i=>{cola[i-1]=null;};
 const drenar=m=>{let n=0;while(cola.length&&n<m){const f=cola.shift();if(f)f();n++;}return n;};
 let creados=0;
-function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{},_html:'',_tc:'',
+function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{setProperty(){},removeProperty(){},getPropertyValue:()=>''},_html:'',_tc:'',
  hidden:true,children:[],offsetWidth:210,offsetHeight:120,_attrs:{},_ev:{},
  get innerHTML(){return this._html;},set innerHTML(v){this._html=v;this.children=[];},
  get textContent(){return this._tc;},set textContent(v){this._tc=v;this.children=[];},
@@ -61,6 +61,9 @@ ck(items().length===nSedes,'volver a Sedes restaura la lista');
 console.log('\n== filtrar el mapa por libro ==');
 oyentes.togLibros.click(); drenar(300);
 const sinFiltro=marcas().length;
+const obrasTodas=marcas().reduce((t,m)=>{
+  const n=(m.children||[]).find(c=>c.tag==='text');
+  return t+(Number(n&&n._tc)||0);},0);
 /* En el simulacro, querySelector('button') devuelve siempre el mismo nodo, así que el
    último manejador registrado es el del tercer libro: La Ilíada. */
 ck(!!(oyentes.x&&oyentes.x.click),'las entradas de libro tienen manejador');
@@ -70,7 +73,18 @@ console.log(`   marcadores: ${sinFiltro} sin filtro -> ${conFiltro} filtrando po
 ck(conFiltro>0 && conFiltro<sinFiltro,'filtrar por libro reduce las sedes del mapa');
 ck(store['sedeDetalle'].innerHTML.includes('obra-min'),'el panel de abajo muestra las obras de ese libro');
 oyentes.x.click(); drenar(500);
-ck(marcas().length===sinFiltro,'volver a pulsarlo restaura todas las sedes');
+/* El número de círculos depende de la escala, y filtrar mueve el encuadre: al quitar el
+   filtro el mapa no vuelve al mismo sitio, así que contar marcadores da falsos fallos.
+   Lo que sí tiene que volver es la suma de obras representadas. */
+const obrasEnMapa = () => marcas().reduce((t,m) => {
+  const n = (m.children||[]).find(c => c.tag === 'text');
+  return t + (Number(n && n._tc) || 0);
+}, 0);
+/* Y hay que medir en el mismo encuadre: en la vista del mundo el lienzo se repite en
+   horizontal, así que las mismas sedes se cuentan una vez por copia visible. */
+oyentes.mTodo.click(); drenar(400);
+console.log(`   obras en el mapa: ${obrasTodas} sin filtro · ${obrasEnMapa()} tras quitar el filtro`);
+ck(obrasEnMapa()===obrasTodas,'volver a pulsarlo restaura todas las sedes');
 oyentes.togSedes.click();
 
 console.log('\n== fluidez: acercar no reconstruye marcadores ==');

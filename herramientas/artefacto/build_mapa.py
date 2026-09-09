@@ -31,6 +31,7 @@ PAIS={"Ciudad del Vaticano":"Vaticano","Florencia":"Italia","Venecia":"Italia","
  "Potsdam":"Alemania","Atenas":"Grecia","Corfú":"Grecia","Argólida":"Grecia",
  "Hisarlik, Çanakkale":"Turquía","Bagdad":"Irak","Sulaymaniyah":"Irak",
  "Ciudad de México":"México","Puebla":"México","Damasco":"Siria","Besanzón":"Francia","Kassel":"Alemania","Berlín":"Alemania",
+ "Bruselas":"Bélgica",
  "Nueva York":"Estados Unidos","Washington D.C.":"Estados Unidos","Fort Worth":"Estados Unidos",
  "New Haven":"Estados Unidos"}
 
@@ -38,6 +39,7 @@ PAIS={"Ciudad del Vaticano":"Vaticano","Florencia":"Italia","Venecia":"Italia","
 # mañana entra una pieza en El Cairo, África se enciende sola.
 CONTINENTE={"Vaticano":"Europa","Italia":"Europa","Austria":"Europa","Francia":"Europa",
  "Reino Unido":"Europa","España":"Europa","Chequia":"Europa","Rusia":"Europa",
+ "Bélgica":"Europa",
  "Grecia":"Europa","Alemania":"Europa","Países Bajos":"Europa","Portugal":"Europa",
  "Irak":"Asia","Siria":"Asia","Turquía":"Asia","Israel":"Asia","Irán":"Asia",
  "Estados Unidos":"América del Norte","México":"América del Norte","Canadá":"América del Norte",

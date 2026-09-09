@@ -65,11 +65,12 @@ if va in doc:
     print("aviso de límite de previa: añadido")
 
 # ---------- pestañas nuevas ----------
-# El anclaje no puede llevar la cuenta de obras escrita a mano: cambia cada vez que se
-# añade una a la colección, y entonces la sustitución falla y se publica un intermedio
-# caducado sin que se note.
-m = re.search(r'<button class="book-btn" onclick="switchBook\(\'iliada\', this\)">[^<]*<span class="book-count">\d+</span></button>', doc)
-assert m, "no se encontró el botón de La Ilíada"
+# El anclaje no puede llevar nada escrito a mano —ni la cuenta de obras ni el nombre de
+# un libro concreto—: ambos cambian y entonces la sustitución falla y se publica un
+# intermedio caducado sin que se note. Cronología y Cobertura van detrás de la Biblioteca,
+# que es el último botón fijo de la barra.
+m = re.search(r'<button class="book-btn" id="btnBiblioteca"[^>]*>.*?</button>', doc, re.S)
+assert m, "no se encontró el botón de la Biblioteca"
 anc = m.group(0)
 doc=doc.replace(anc, anc+
  '\n      <button class="book-btn" onclick="switchBook(\'cronologia\', this)">Cronología</button>'

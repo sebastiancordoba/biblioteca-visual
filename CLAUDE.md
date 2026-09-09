@@ -115,6 +115,22 @@ tarjeta), que es de donde salían los descuadres de índices.
 Los ids se separan por libro (`thumb-iliada-3`, `drawer-genesis-7`) para que no choquen entre
 colecciones.
 
+### La Biblioteca, y por qué los libros no son pestañas
+
+Una pestaña por libro no escala: con veinte libros la barra superior sería una lista. Los libros
+**no son secciones de primer nivel**. Arriba hay siempre las mismas cinco entradas —Inicio,
+Biblioteca, Cronología, Mapa, Cobertura— y los libros viven dentro de la Biblioteca, que se genera
+sola desde los marcados con `esLibro`. Añadir un libro no toca la navegación.
+
+Dentro de un libro aparece el enlace «Todos los libros» y sigue marcada la Biblioteca, porque el
+libro ya no tiene botón propio. `switchBook` acepta que no se le pase el botón pulsado y resuelve
+él cuál marcar.
+
+El buscador de la Biblioteca solo aparece por encima de seis libros: con tres estorba.
+
+`verificar.js` comprueba la propiedad que motivó todo esto —que ningún libro tenga botón en la
+barra superior—, de modo que si algún día vuelve a colarse uno, salta.
+
 ### La portada
 
 La pestaña de inicio no es un libro más: `BOOKS.inicio` se **construye sola** concatenando todos
@@ -133,6 +149,14 @@ Dos detalles que no son arbitrarios:
 
 El bucle solo corre con la portada a la vista: en otra pestaña no tiene sentido gastar fotogramas
 ni adelantar obras que nadie ve.
+
+Las flechas de anterior y siguiente recorren un **historial** (`vistas` más un puntero), no vuelven
+a sortear: si no, «atrás» daba una obra nueva en vez de la que se acababa de ver. La lámina entra
+por el lado del que viene, para que retroceder no se vea igual que avanzar.
+
+El banner ocupa lo que queda de ventana. Se mide **dónde empieza el banner**, no cuánto abulta la
+cabecera: entre ambos hay márgenes y una barra de secciones que cambia de alto según el libro, y
+sumarlos a ojo dejaba el botón «Ver en detalle» cortado por el borde inferior.
 
 ## El visor de zoom
 
@@ -317,7 +341,7 @@ falle:
 
 | paso | qué hace |
 |---|---|
-| `previas.py` | genera las vistas previas de 900 px que se incrustan; solo trabaja sobre lo que falta o ha cambiado |
+| `previas.py` | genera las vistas previas de 820 px que se incrustan; solo trabaja sobre lo que falta o ha cambiado |
 | `build_mapa.py` | proyecta el mapa (Mercator), agrupa sedes y escribe el panel |
 | `build.py` | extrae cabecera y cuerpo del `index.html` real, añade enlaces a Commons y la cronología |
 | `build2.py` | parchea el visor y las pestañas |
@@ -336,6 +360,13 @@ llegar a 17 obras, y un `let currentBook = 'genesis'` que dejó de existir al a�
 ambos casos el paso falló en silencio y se publicó un intermedio caducado. Por lo mismo, **las
 cifras que se escriben en los rótulos se derivan de los datos**, nunca se copian a mano: el mapa
 anunció «34 sedes en 13 países» cuando ya iban 43 en 15.
+
+**El peso importa más de lo que parece.** El artefacto cabe de sobra en los 16 MB, pero eso no es
+el límite real: a 10,7 MB la página se quedaba en blanco más de treinta segundos en el visor y no
+llegaba a ser usable. Bajar las previas de 900 px / calidad 46 a **820 px / calidad 42** la dejó en
+8,4 MB y en unos diez segundos. Si vuelve a acercarse a los 10 MB, lo primero que hay que tocar son
+`LADO` y `CALIDAD` de `previas.py` —cambiarlos invalida las previas ya generadas y las rehace
+todas—, no el número de obras.
 
 **El aviso de «estas imágenes son vistas previas» no va en la página.** Se probó y sobra: ocupa la
 cabecera con una explicación técnica antes de que se vea una sola obra, y el botón *Ver original*

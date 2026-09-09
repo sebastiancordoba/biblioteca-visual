@@ -92,6 +92,62 @@ console.log('\n== Portada ==');
     'cada obra de la portada sabe de qué libro viene');
 }
 
+console.log('\n== Flechas del banner ==');
+{
+  const lienzo = document.getElementById('bannerLienzo');
+  const antes = document.getElementById('bannerAntes');
+  const despues = document.getElementById('bannerDespues');
+  const fondoDe = l => ((/url\("(.+)"\)/.exec(((l.children||[])[0]||{style:{}}).style.backgroundImage || '') || [])[1]);
+  const actual = () => fondoDe(lienzo.children[lienzo.children.length - 1]);
+
+  check((antes.oyentes.click || []).length === 1 && (despues.oyentes.click || []).length === 1,
+    'las dos flechas tienen manejador');
+
+  const primera = actual();
+  despues.oyentes.click[0]({ stopPropagation(){} });
+  const segunda = actual();
+  check(segunda && segunda !== primera, 'la flecha de después pasa a otra obra');
+
+  antes.oyentes.click[0]({ stopPropagation(){} });
+  check(actual() === primera, 'la flecha de antes vuelve exactamente a la anterior');
+
+  /* En la primera obra no hay nada detrás: la flecha no debe repintar ni sortear. */
+  const cuantas = lienzo.children.length;
+  antes.oyentes.click[0]({ stopPropagation(){} });
+  check(lienzo.children.length === cuantas && actual() === primera,
+    'en la primera obra la flecha de antes no hace nada');
+}
+
+console.log('\n== Biblioteca ==');
+{
+  const reales = Object.keys(BOOKS).filter(k => BOOKS[k].esLibro);
+  const botones = [...html.matchAll(/class="book-btn[^"]*"[^>]*onclick="switchBook\('([a-z]+)'/g)].map(m => m[1]);
+
+  /* Esta es la propiedad que se pidió: que añadir libros no alargue la barra de arriba.
+     Si algún día vuelve a colarse un botón por libro, esto lo caza. */
+  const conLibro = botones.filter(b => reales.includes(b));
+  check(conLibro.length === 0,
+    `ningún libro tiene botón propio en la barra superior (${botones.join(', ')})`);
+  check(botones.includes('biblioteca'), 'la Biblioteca sí está en la barra');
+
+  const rejilla = document.getElementById('bibliotecaLibros');
+  const tarjetas = (rejilla.innerHTML.match(/biblio-card/g) || []).length;
+  check(tarjetas === reales.length, `una tarjeta por libro (${tarjetas} de ${reales.length})`);
+  check(reales.every(id => rejilla.innerHTML.includes(`data-libro="${id}"`)),
+    'cada libro es alcanzable desde la Biblioteca');
+  const portadas = [...rejilla.innerHTML.matchAll(/biblio-portada" style="background-image:url\('([^']+)'\)/g)]
+    .map(m => decodeURIComponent(m[1]));
+  check(portadas.length === reales.length && portadas.every(u => fs.existsSync(u)),
+    `cada tarjeta lleva portada existente (${portadas.length})`);
+
+  /* El buscador solo tiene sentido cuando la lista deja de leerse de un vistazo. */
+  check(document.getElementById('biblioFiltro').hidden === (reales.length <= 6),
+    `el buscador aparece solo con más de 6 libros (ahora ${reales.length}, oculto=${document.getElementById('biblioFiltro').hidden})`);
+
+  check(BOOKS.biblioteca && BOOKS.biblioteca.firstTab === 'biblioteca-gallery',
+    'la Biblioteca es una sección de primer nivel');
+}
+
 console.log('\n== Índices del marcado de Génesis (tarjetas a mano) ==');
 for (const m of html.matchAll(/swapCardThumb\('thumb-(\d+)',\s*'([^']+)',\s*this,\s*(\d+),\s*(\d+)\)/g)) {
   const [, n, src, g, s] = m;

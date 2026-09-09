@@ -7,7 +7,7 @@ const RUTA='/Users/sebastiancordoba/Library/Mobile Documents/com~apple~CloudDocs
 const html=fs.readFileSync(RUTA,'utf8');
 const js=html.split('<script>')[1].split('</script>')[0];
 const noop=()=>{};const store={};const barras=[];
-function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{},innerHTML:'',_ev:{},
+function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{setProperty(){},removeProperty(){},getPropertyValue:()=>''},innerHTML:'',_ev:{},
  classList:{_s:new Set(),add(c){this._s.add(c)},remove(c){this._s.delete(c)},
    contains(c){return this._s.has(c)},toggle(c,v){v?this._s.add(c):this._s.delete(c)}},
  setAttribute:noop,getAttribute:()=>null,appendChild:noop,

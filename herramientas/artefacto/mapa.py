@@ -50,6 +50,7 @@ MUSEOS = {
  "besanzon":   ("Musée des Beaux-Arts","Besanzón",47.2378,6.0241),
  "kassel":     ("Gemäldegalerie Alte Meister","Kassel",51.3130,9.4210),
  "berlin":     ("Gemäldegalerie","Berlín",52.5085,13.3650),
+ "mrah":       ("Museos Reales de Arte e Historia","Bruselas",50.8400,4.3925),
  # Norteamérica
  "met":        ("Metropolitan Museum of Art","Nueva York",40.7794,-73.9632),
  "morgan":     ("Morgan Library & Museum","Nueva York",40.7492,-73.9815),
@@ -76,6 +77,7 @@ REGLAS = [
  ("soumaya","soumaya"),("catedral de puebla","puebla"),("ochavo","puebla"),
  ("damasco","damasco"),("besanzon","besanzon"),("kassel","kassel"),
  ("gemaldegalerie, berlin","berlin"),("gemaldegalerie","kassel"),
+ ("museos reales de arte e historia","mrah"),("bruselas","mrah"),
  ("metropolitan","met"),("morgan library","morgan"),("smithsonian","smithsonian"),
  ("kimbell","kimbell"),("yale","yale"),
 ]

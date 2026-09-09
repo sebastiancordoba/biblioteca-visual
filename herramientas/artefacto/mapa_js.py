@@ -351,9 +351,11 @@ JS = r"""
       function fanObras(cont, sd, cx = 0, cy = 0){
         const lista = obrasDe(sd);
         const n = lista.length;
-        const rad = 26 + n * 3;
+        /* 30 px de separación para miniaturas de 22: con el radio anterior (26 + 3n) el
+           arco era más corto que la propia miniatura y se solapaban entre ellas. */
+        const rad = n <= 1 ? 34 : radioFan(n, 30, 34);
         lista.forEach((o, j) => {
-          const ang = (-Math.PI / 2) + (j - (n - 1) / 2) * (n === 1 ? 0 : Math.min(1.05, 2.4 / n));
+          const ang = (-Math.PI / 2) + (n === 1 ? 0 : j * (2 * Math.PI / n));
           const ox = cx + Math.cos(ang) * rad, oy = cy + Math.sin(ang) * rad;
           cont.appendChild(nodo('line', { class:'hilo', x1:cx, y1:cy, x2:ox, y2:oy, 'stroke-width':0.8 }));
           const lado = 22;
@@ -376,23 +378,51 @@ JS = r"""
         });
       }
 
+      /* Radio necesario para repartir n elementos por una circunferencia dejando al menos
+         `sep` píxeles entre vecinos. El abanico crece con lo que tiene que contener en vez
+         de amontonarlo: con un radio fijo, cinco museos de París se pisaban unos a otros. */
+      const radioFan = (n, sep, minimo) => Math.max(minimo, (sep * n) / (2 * Math.PI));
+
+      /* Etiqueta que sale hacia fuera del nodo, no siempre por debajo. Dos rótulos vecinos
+         se solapaban («SainBiblioteca Nacional de…») porque ambos caían bajo su punto;
+         irradiando desde el centro, cada uno se aleja del otro por construcción. */
+      function etiquetaRadial(g, texto, sx, sy, rr, dx, dy){
+        let x = sx, y = sy + rr + 11, cls = 'sede-etq';
+        if (Math.abs(dx) > 0.35) {                       // costados: el texto se ancla al lado
+          cls += dx > 0 ? ' der' : ' izq';
+          x = sx + dx * (rr + 7); y = sy + 3;
+        } else {                                         // arriba y abajo: centrado
+          y = sy + (dy < 0 ? -(rr + 7) : rr + 12);
+        }
+        const etq = nodo('text', { class: cls, x, y, 'font-size':8.5 });
+        etq.textContent = texto;
+        g.appendChild(etq);
+      }
+
       /* Abanico de museos de una ciudad. Las posiciones son sintéticas: a esta escala la
-         geografía ya no distingue el Louvre de Saint-Sulpice. */
+         geografía ya no distingue el Louvre de Saint-Sulpice. Se reparten por toda la
+         circunferencia, no por un arco de 115° encima del punto, que es donde se
+         apelotonaban. */
       function fanSedes(cont, c){
-        const n = c.sedes.length, rad = 30 + n * 7;
+        const n = c.sedes.length;
+        /* Si hay un museo abierto, sus obras ocupan sitio alrededor de él: el abanico de
+           museos se ensancha para que esas miniaturas no invadan a los vecinos. */
+        const abierto = c.sedes.indexOf(sedeSel);
+        const radObras = abierto >= 0 ? radioFan(obrasDe(SEDES[sedeSel]).length, 30, 34) : 0;
+        const rad = n <= 1 ? 46 : radioFan(n, Math.max(34, radObras + 28), 52);
         c.sedes.forEach((idx, j) => {
           const sd = SEDES[idx];
-          const ang = (-Math.PI / 2) + (j - (n - 1) / 2) * (n === 1 ? 0 : Math.min(1.15, 2.5 / n));
-          const sx = Math.cos(ang) * rad, sy = Math.sin(ang) * rad;
+          const ang = (-Math.PI / 2) + (n === 1 ? 0 : j * (2 * Math.PI / n));
+          const dx = Math.cos(ang), dy = Math.sin(ang);
+          const sx = dx * rad, sy = dy * rad;
           cont.appendChild(nodo('line', { class:'hilo hilo-sede', x1:0, y1:0, x2:sx, y2:sy, 'stroke-width':0.9 }));
           if (sedeSel === idx) fanObras(cont, sd, sx, sy);
+          const k = obrasDe(sd).length;
           const g = punto('sede sede-abanico' + (sedeSel === idx ? ' sel' : ''), sx, sy,
-            obrasDe(sd).length, `${sd.nombre}: ${obrasDe(sd).length} obra${obrasDe(sd).length>1?'s':''}`,
+            k, `${sd.nombre}: ${k} obra${k>1?'s':''}`,
             ev => { ev.stopPropagation(); elegirEnCiudad(idx); },
             () => mostrarTarjeta({ sede: sd }));
-          const etq = nodo('text', { class:'sede-etq', x:sx, y:sy + R(obrasDe(sd).length) + 11, 'font-size':8.5 });
-          etq.textContent = nombreCorto(sd.nombre);
-          g.appendChild(etq);
+          etiquetaRadial(g, nombreCorto(sd.nombre), sx, sy, R(k), dx, dy);
           cont.appendChild(g);
         });
       }
