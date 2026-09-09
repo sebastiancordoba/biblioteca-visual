@@ -189,6 +189,189 @@
       font-size: 0.95rem;
     }
 
+    /* PORTADA: BANNER DE MUSEO
+       Una obra cualquiera de cualquier libro, que se releva cada siete segundos
+       entrando por la derecha. Con muchos libros, una pestaña por libro no escala:
+       la portada es la entrada única y se construye sola desde los libros que existan. */
+    .banner {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 21 / 9;
+      min-height: 340px;
+      overflow: hidden;
+      background: #040507;
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+      cursor: zoom-in;
+    }
+
+    @media (max-width: 700px) { .banner { aspect-ratio: 4 / 3; min-height: 260px; } }
+
+    .banner-lienzo { position: absolute; inset: 0; }
+
+    /* La colección va de una tablilla apaisada a un Cranach de 7374 x 10954: recortar
+       a "cover" dejaba de algunas obras poco más que una franja. La lámina lleva por
+       detrás la misma imagen ampliada y desenfocada, que hace de fondo, y encima la
+       obra entera contenida, desplazada a la derecha para no quedar bajo el texto. */
+    .banner-lamina {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transform: translateX(100%) scale(1.06);
+      transition: transform 1.15s cubic-bezier(.22,.61,.36,1), opacity 1.15s ease;
+    }
+
+    .banner-fondo {
+      position: absolute; inset: -6%;
+      background-size: cover;
+      background-position: center;
+      filter: blur(26px) saturate(.7) brightness(.42);
+    }
+
+    .banner-obra {
+      position: absolute;
+      top: 6%; bottom: 6%; right: 3%;
+      width: 62%;
+      background-size: contain;
+      background-position: right center;
+      background-repeat: no-repeat;
+      filter: drop-shadow(0 18px 44px rgba(0,0,0,.65));
+    }
+
+    @media (max-width: 700px) {
+      .banner-obra { width: 92%; right: 4%; top: 4%; bottom: 34%; background-position: center top; }
+    }
+
+    .banner-lamina.dentro { opacity: 1; transform: translateX(0) scale(1); }
+    .banner-lamina.sale   { opacity: 0; transform: translateX(-22%) scale(1.04); }
+
+    /* Velo para que el texto se lea sobre cualquier pintura */
+    .banner::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(4,5,7,.94) 0%, rgba(4,5,7,.72) 30%, rgba(4,5,7,0) 58%);
+      pointer-events: none;
+    }
+
+    .banner-info {
+      position: absolute;
+      left: 0; bottom: 0;
+      z-index: 2;
+      max-width: 620px;
+      padding: 40px 44px;
+    }
+
+    .banner-libro {
+      font-family: var(--font-serif);
+      font-size: .66rem;
+      letter-spacing: 3.4px;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .banner-titulo {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 3.4vw, 2.5rem);
+      font-weight: 500;
+      color: var(--text-title);
+      line-height: 1.15;
+      margin: 0 0 8px;
+      text-shadow: 0 2px 18px rgba(0,0,0,.9);
+    }
+
+    .banner-autor { color: var(--text-body); font-size: 1rem; margin: 0 0 6px; }
+    .banner-meta  { color: var(--text-muted); font-size: .8rem; margin: 0 0 18px; }
+
+    .banner-ver {
+      background: none;
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold);
+      font-family: var(--font-serif);
+      font-size: .72rem;
+      letter-spacing: 1.6px;
+      padding: 8px 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background .2s, color .2s;
+    }
+
+    .banner-ver:hover { background: var(--accent-gold); color: #050608; }
+
+    .banner-progreso {
+      position: absolute; left: 0; right: 0; bottom: 0; z-index: 3;
+      height: 2px; background: rgba(255,255,255,.07);
+    }
+
+    .banner-progreso span {
+      display: block; height: 100%; width: 0;
+      background: var(--accent-gold);
+    }
+
+    /* Cifras y accesos a los libros */
+    .inicio-cifras {
+      display: flex; flex-wrap: wrap; gap: 0;
+      border-bottom: 1px solid var(--border-subtle);
+      margin: 34px 0 0;
+    }
+
+    .inicio-cifras div {
+      flex: 1 1 150px; padding: 16px 22px 20px;
+      border-right: 1px solid var(--border-subtle);
+    }
+
+    .inicio-cifras div:last-child { border-right: 0; }
+
+    .inicio-cifras b {
+      display: block; font-size: 1.7rem; color: var(--text-title);
+      font-weight: 400; letter-spacing: -.02em; font-variant-numeric: tabular-nums;
+    }
+
+    .inicio-cifras span {
+      font-family: var(--font-serif); font-size: .62rem; letter-spacing: 2.2px;
+      text-transform: uppercase; color: var(--text-muted);
+    }
+
+    .inicio-libros {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px; margin-top: 34px;
+    }
+
+    .libro-card {
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-radius: 6px; padding: 22px 24px; cursor: pointer; text-align: left;
+      font-family: inherit; transition: border-color .25s, transform .25s;
+    }
+
+    .libro-card:hover { border-color: var(--accent-gold); transform: translateY(-2px); }
+
+    .libro-card b {
+      display: block; font-family: var(--font-serif); font-size: 1.2rem;
+      font-weight: 500; color: var(--text-title); margin-bottom: 6px;
+    }
+
+    .libro-card span { color: var(--text-muted); font-size: .84rem; line-height: 1.5; }
+
+    .libro-card em {
+      display: block; font-style: normal; color: var(--accent-gold);
+      font-size: .72rem; letter-spacing: 1.4px; margin-top: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* BARRA DE ORDENACIÓN DE CADA GALERÍA */
+    .orden-bar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:26px;
+      padding-bottom:14px;border-bottom:1px solid var(--border-subtle)}
+    .orden-etq{font-family:var(--font-serif);font-size:.62rem;letter-spacing:2.4px;
+      text-transform:uppercase;color:var(--text-muted);margin-right:8px}
+    .orden-btn{background:none;border:1px solid transparent;color:var(--text-muted);
+      font-family:var(--font-serif);font-size:.7rem;letter-spacing:1.4px;padding:5px 12px;
+      border-radius:3px;cursor:pointer;transition:color .2s,border-color .2s,background .2s}
+    .orden-btn:hover{color:var(--text-title);border-color:var(--border-subtle)}
+    .orden-btn.activo{color:var(--accent-gold);border-color:var(--accent-gold);
+      background:rgba(197,160,70,.08)}
+
     /* MAIN CONTAINER */
     .container {
       max-width: 1400px;
@@ -779,22 +962,30 @@
 <body>
 
   <header>
-    <span class="header-tag" id="bookTag">Colección Génesis</span>
-    <h1 id="bookTitle">Obras Maestras del Génesis</h1>
-    <p class="header-sub" id="bookSub">Estudio visual en 3 columnas de las representaciones pictóricas del Génesis y análisis del cambio narrativo tras la Torre de Babel.</p>
+    <span class="header-tag" id="bookTag">Los Tres Libros</span>
+    <h1 id="bookTitle">La colección</h1>
+    <p class="header-sub" id="bookSub">Pintura, escultura, cerámica y arqueología reunidas en torno a los libros fundacionales, en la mayor resolución que existe de cada obra.</p>
 
     <!-- SELECTOR DE LIBRO -->
     <div class="book-switch">
-      <button class="book-btn active" onclick="switchBook('genesis', this)">Génesis<span class="book-count">31</span></button>
-      <button class="book-btn" onclick="switchBook('gilgamesh', this)">Gilgamesh<span class="book-count">9</span></button>
-      <button class="book-btn" onclick="switchBook('iliada', this)">La Ilíada<span class="book-count">17</span></button>
+      <button class="book-btn active" onclick="switchBook('inicio', this)">Inicio</button>
+      <button class="book-btn" onclick="switchBook('genesis', this)">Génesis<span class="book-count">40</span></button>
+      <button class="book-btn" onclick="switchBook('gilgamesh', this)">Gilgamesh<span class="book-count">10</span></button>
+      <button class="book-btn" onclick="switchBook('iliada', this)">La Ilíada<span class="book-count">21</span></button>
     </div>
 
     <!-- NAV DE SECCIONES POR LIBRO -->
-    <nav id="nav-genesis" class="book-nav active">
+    <nav id="nav-inicio" class="book-nav active">
+      <button class="tab-btn active" onclick="switchTab('inicio-gallery', this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        La colección
+      </button>
+    </nav>
+
+    <nav id="nav-genesis" class="book-nav">
       <button class="tab-btn active" onclick="switchTab('genesis-gallery', this)">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-        Colección (31)
+        Colección (40)
       </button>
       <button class="tab-btn" onclick="switchTab('genesis-essay', this)">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
@@ -805,14 +996,14 @@
     <nav id="nav-gilgamesh" class="book-nav">
       <button class="tab-btn active" onclick="switchTab('gilgamesh-gallery', this)">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-        Colección (9)
+        Colección (10)
       </button>
     </nav>
 
     <nav id="nav-iliada" class="book-nav">
       <button class="tab-btn active" onclick="switchTab('iliada-gallery', this)">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-        Colección (17)
+        Colección (21)
       </button>
     </nav>
   </header>
@@ -820,7 +1011,25 @@
   <div class="container">
 
     <!-- GALLERY TAB (3 COLUMNAS) -->
-    <div id="genesis-gallery" class="tab-content active">
+    <div id="inicio-gallery" class="tab-content active">
+      <section class="banner" id="banner" aria-label="Obra destacada">
+        <div class="banner-lienzo" id="bannerLienzo"></div>
+        <div class="banner-info" id="bannerInfo"></div>
+        <div class="banner-progreso"><span id="bannerProg"></span></div>
+      </section>
+      <div class="inicio-cifras" id="inicioCifras"></div>
+      <div class="inicio-libros" id="inicioLibros"></div>
+    </div>
+
+    <div id="genesis-gallery" class="tab-content">
+      <div class="orden-bar" data-libro="genesis">
+        <span class="orden-etq">Ordenar por</span>
+        <button type="button" class="orden-btn activo" data-orden="coleccion">Colección</button>
+        <button type="button" class="orden-btn" data-orden="cronologia">Cronología</button>
+        <button type="button" class="orden-btn" data-orden="artista">Artista</button>
+        <button type="button" class="orden-btn" data-orden="titulo">Título</button>
+        <button type="button" class="orden-btn" data-orden="sede">Sede</button>
+      </div>
       <div class="grid-3col" id="genesis-grid"></div>
     </div>
 
@@ -858,6 +1067,14 @@
 
     <!-- GILGAMESH -->
     <div id="gilgamesh-gallery" class="tab-content">
+      <div class="orden-bar" data-libro="gilgamesh">
+        <span class="orden-etq">Ordenar por</span>
+        <button type="button" class="orden-btn activo" data-orden="coleccion">Colección</button>
+        <button type="button" class="orden-btn" data-orden="cronologia">Cronología</button>
+        <button type="button" class="orden-btn" data-orden="artista">Artista</button>
+        <button type="button" class="orden-btn" data-orden="titulo">Título</button>
+        <button type="button" class="orden-btn" data-orden="sede">Sede</button>
+      </div>
       <div class="grid-3col" id="gilgamesh-grid"></div>
       <div class="empty-book" id="gilgamesh-empty">
         <h2>Gilgamesh — en preparación</h2>
@@ -867,6 +1084,14 @@
 
     <!-- LA ILÍADA -->
     <div id="iliada-gallery" class="tab-content">
+      <div class="orden-bar" data-libro="iliada">
+        <span class="orden-etq">Ordenar por</span>
+        <button type="button" class="orden-btn activo" data-orden="coleccion">Colección</button>
+        <button type="button" class="orden-btn" data-orden="cronologia">Cronología</button>
+        <button type="button" class="orden-btn" data-orden="artista">Artista</button>
+        <button type="button" class="orden-btn" data-orden="titulo">Título</button>
+        <button type="button" class="orden-btn" data-orden="sede">Sede</button>
+      </div>
       <div class="grid-3col" id="iliada-grid"></div>
       <div class="empty-book" id="iliada-empty">
         <h2>La Ilíada — en preparación</h2>
@@ -954,6 +1179,7 @@
        <div class="tab-content"> en la grilla. */
     const BOOKS = {
       genesis: {
+        esLibro: true, corto: 'Génesis',
         tag: 'Colección Génesis',
         title: 'Obras Maestras del Génesis',
         sub: 'Estudio visual en 3 columnas de las representaciones pictóricas del Génesis y análisis del cambio narrativo tras la Torre de Babel.',
@@ -963,6 +1189,7 @@
         groups: []
       },
       gilgamesh: {
+        esLibro: true, corto: 'Gilgamesh',
         tag: 'Colección Gilgamesh',
         title: 'La Epopeya de Gilgamesh',
         sub: 'Relieves asirios, sellos cilíndricos, tablillas cuneiformes y relecturas modernas del poema más antiguo conservado de la humanidad.',
@@ -972,6 +1199,7 @@
         groups: []
       },
       iliada: {
+        esLibro: true, corto: 'Ilíada',
         tag: 'Colección Ilíada',
         title: 'La Ilíada de Homero',
         sub: 'Cerámica ática, escultura helenística, arqueología de Micenas y Troya, y la pintura neoclásica y romántica de la cólera de Aquiles.',
@@ -992,7 +1220,9 @@
         "snippet": "El espacio milimétrico entre los dedos captura la tensión del momento previo a la chispa de la conciencia. El manto divino representa la sección de un cerebro humano.",
         "analysis": "El espacio infinitesimal entre los dedos de Dios y Adán representa el momento supremo del arte occidental: la transmisión de la chispa del ánima (alma espiritual e intelecto humano). Adán yace recostado pasivamente en una meseta terrenal desnuda, encarnando la materia inerte a la espera del soplo divino. Dios el Padre, caracterizado como un anciano majestuoso de barba plateada pero de musculatura sobrehumana, avanza envuelto en un gran manto carmesí impulsado por ángeles celestiales.",
         "history": "Un descubrimiento neuroanatómico contemporáneo destaca que el manto rojo divino posee la forma exacta de una sección sagital del encéfalo humano (mostrando el lóbulo frontal, el quiasma óptico y la arteria basilar). La figura femenina bajo el brazo izquierdo de Dios ha sido identificada como Eva esperando en la mente divina antes de su creación o como María con el Niño Jesús. Los dos dedos jamás se tocan, simbolizando la distancia insuperable entre el Creador trascendente y la criatura mortal.",
-        "bio": "Miguel Ángel Buonarroti (1475–1564) se consideraba a sí mismo primordialmente un escultor. Aceptó a regañadientes el encargo de pintar el techo de la Capilla Sixtina hecho por el Papa Julio II en 1508. Trabajando suspendido en andamios de madera que él mismo diseñó, pintó más de 500 metros cuadrados durante cuatro años de agotamiento físico continuo, transformando la anatomía del cuerpo humano en el lenguaje supremo de la teología y la belleza."
+        "bio": "Miguel Ángel Buonarroti (1475–1564) se consideraba a sí mismo primordialmente un escultor. Aceptó a regañadientes el encargo de pintar el techo de la Capilla Sixtina hecho por el Papa Julio II en 1508. Trabajando suspendido en andamios de madera que él mismo diseñó, pintó más de 500 metros cuadrados durante cuatro años de agotamiento físico continuo, transformando la anatomía del cuerpo humano en el lenguaje supremo de la teología y la belleza.",
+        "anio": 1512,
+        "fecha": "1512"
       },
       {
         "title": "La Expulsión del Paraíso",
@@ -1002,7 +1232,9 @@
         "snippet": "Realismo emocional crudo: Adán oculta su rostro por vergüenza ontológica y Eva echa la cabeza atrás en un alarido de dolor físico y culpa.",
         "analysis": "Masaccio ejecutó con este fresco la ruptura definitiva con el estilo gótico internacional y el nacimiento del realismo psicológico renacentista. Tras probar el fruto prohibido, Adán y Eva son arrojados violentamente fuera del Edén por un ángel vindicativo vestido de rojo con espada desenvainada. Adán se cubre el rostro con ambas manos en un gesto de vergüenza ontológica; Eva se cubre el seno y el sexo imitando la pose clásica de la Venus Pudica mientras echa la cabeza atrás en un desgarrador alarido de dolor físico.",
         "history": "Durante la Contrarreforma en el siglo XVII, por orden del Gran Duque Cosme III de Médici, se añadieron hojas de higuera sobre los genitales de Adán y Eva por considerarlos impúdicos. Estas hojas taparon la obra durante más de tres siglos hasta la restauración magistral de 1988, que devolvió la desnudez trágica original de Masaccio y la luz que coincide exactamente con la ventana real de la capilla.",
-        "bio": "Masaccio (Tommaso di Ser Giovanni, 1401–1428) falleció trágicamente a los 26 años en Roma. A pesar de su corta vida, su dominio pionero de la perspectiva matemática y del volumen por claroscuro convirtieron a la Capilla Brancacci en la escuela donde aprendieron Leonardo da Vinci, Rafael y Miguel Ángel."
+        "bio": "Masaccio (Tommaso di Ser Giovanni, 1401–1428) falleció trágicamente a los 26 años en Roma. A pesar de su corta vida, su dominio pionero de la perspectiva matemática y del volumen por claroscuro convirtieron a la Capilla Brancacci en la escuela donde aprendieron Leonardo da Vinci, Rafael y Miguel Ángel.",
+        "anio": 1427,
+        "fecha": "1427"
       },
       {
         "title": "Caín y Abel",
@@ -1012,7 +1244,9 @@
         "snippet": "Violencia cinética del primer asesinato. Caín pisa a su hermano alzando el garrote en puro resentimiento descontrolado (vista de techo <em>di sotto in sù</em>).",
         "analysis": "En este monumental lienzo diseñado para ser contemplado desde abajo en el techo de la iglesia de Santo Spirito in Isola, Tiziano captura la furia kinética del primer fratricidio de la historia. Caín pisa brutalmente la pierna de su hermano caído Abel mientras alza un pesado garrote para propinar el golpe fatal, impulsado por el rencor acumulado al ver rechazadas sus ofrendas agrícolas frente al favor divino otorgado al ganado de Abel.",
         "history": "La escena está envuelta en una perspectiva teatral conocida como \"di sotto in sù\" (vista de abajo hacia arriba en escorzo extremo). Las figuras parecen desplomarse físicamente sobre la cabeza del espectador, transmitiendo el colapso del orden moral cósmico. La paleta cromática utiliza contrastes dramáticos de sombras nocturnas y humo rojizo que emana del altar del sacrificio.",
-        "bio": "Tiziano Vecellio (c. 1488–1576) fue el líder indiscutible del Renacimiento Veneciano. Su longeva carrera de más de siete décadas lo llevó a ser el pintor personal del Emperador Carlos V y de Felipe II. Innovó aplicando óleo sobre tela con pinceladas gruesas y enérgicas aplicadas a veces directamente con los dedos."
+        "bio": "Tiziano Vecellio (c. 1488–1576) fue el líder indiscutible del Renacimiento Veneciano. Su longeva carrera de más de siete décadas lo llevó a ser el pintor personal del Emperador Carlos V y de Felipe II. Innovó aplicando óleo sobre tela con pinceladas gruesas y enérgicas aplicadas a veces directamente con los dedos.",
+        "anio": 1544,
+        "fecha": "1544"
       },
       {
         "title": "El Diluvio Universal",
@@ -1022,7 +1256,9 @@
         "snippet": "El Arca queda relegada al fondo. Todo el enfoque está en la desesperación humana: familias luchando por peñascos o aferrándose a ramas secas.",
         "analysis": "Miguel Ángel abordó el cataclismo del Diluvio desde la vivencia dramática de las víctimas terrenales antes que desde la perspectiva triunfal del Arca. La embarcación de Noé aparece relegada al plano posterior, agitada por las olas como una nave solitaria, mientras el centro de atención se divide en cuatro grupos desgarradores de seres humanos que buscan refugio desesperado.",
         "history": "Fue una de las primeras composiciones que ejecutó en la Sixtina. Al no estar habituado a la técnica del fresco a gran escala, la mezcla de cal y arena retuvo humedad y apareció moho sobre la pintura fresca. Desesperado, el artista acudió al Papa exclamando que él no era pintor, hasta que Giuliano da Sangallo le enseñó la proporción exacta de la pasta fresca para salvar el fresco.",
-        "bio": "Este fresco retrata la ambivalencia de la condición humana en situaciones de colapso extremo: la crueldad desalmada de quienes pelean a puñetazos por abordar una barca volcada coexiste con gestos de sublime compasión, como el de un padre abatido que arriesga su vida cargando sobre los hombros el cuerpo inerte de su hijo ahogado."
+        "bio": "Este fresco retrata la ambivalencia de la condición humana en situaciones de colapso extremo: la crueldad desalmada de quienes pelean a puñetazos por abordar una barca volcada coexiste con gestos de sublime compasión, como el de un padre abatido que arriesga su vida cargando sobre los hombros el cuerpo inerte de su hijo ahogado.",
+        "anio": 1509,
+        "fecha": "1509"
       },
       {
         "title": "La Torre de Babel",
@@ -1032,7 +1268,9 @@
         "snippet": "Ingeniería insostenible inspirada en el Coliseo Romano. Los arcos inferiores colapsan mientras miles de trabajadores microscópicos tiran de poleas.",
         "analysis": "Bruegel el Viejo transformó el pasaje de Génesis 11 en una alegoría monumental de la soberbia humana (hybris) y la miopía técnica. Inspirado en su viaje a Italia en 1553 donde contempló las ruinas del Coliseo Romano, concibió la Torre de Babel no como una estela oriental fantasiosa, sino como una megaestructura cilíndrica de ingeniería romana en cuyo interior se alojan habitaciones y fortalezas.",
         "history": "La torre es una paradoja constructiva irrealizable: el lado izquierdo está escorado e inclinado debido a que los arcos de los niveles inferiores ya colapsan bajo el peso aplastante, mientras en la cima los albañiles continúan levantando pisos superiores. En la esquina inferior izquierda, el rey Nimrod (el tirano impulsor de la torre) camina escoltado por guardias mientras los canteros se postran a sus pies.",
-        "bio": "Pieter Bruegel el Viejo (c. 1525–1569) fue el maestro supremo de la pintura flamenca del siglo XVI. Conocido por sus vívidas escenas de festejos campesinos y paisajes minuciosos, dominó la técnica del detalle de la escuela de los Países Bajos y fue un agudo observador de la naturaleza moral del ser humano."
+        "bio": "Pieter Bruegel el Viejo (c. 1525–1569) fue el maestro supremo de la pintura flamenca del siglo XVI. Conocido por sus vívidas escenas de festejos campesinos y paisajes minuciosos, dominó la técnica del detalle de la escuela de los Países Bajos y fue un agudo observador de la naturaleza moral del ser humano.",
+        "anio": 1563,
+        "fecha": "1563"
       },
       {
         "title": "Caín",
@@ -1042,7 +1280,9 @@
         "snippet": "Visión descarnada del exilio. Caín lidera a su tribu a través de un páramo estéril con cuerpos demacrados cargando la maldición en clave prehistórica.",
         "analysis": "Exhibido con un éxito atronador en el Salón de París de 1880, Cormon reinterpretó el exilio bíblico de Caín a través de los descubrimientos paleontológicos y antropológicos del siglo XIX. Caín no es representado como un villano teatral de túnicas convencionales, sino como un anciano patriarca tribal de la Edad de Piedra arrastrando una existencia errante.",
         "history": "Bajo un sol abrasador de mediodía en un desierto calcinado, Caín avanza a la cabeza con la mirada perdida en el vacío y los puños apretados, acosado por el peso remordedor del primer homicidio. Sus hijos demacrados y desnudos cargan a hombros camillas de madera con sus esposas e hijos pequeños, junto a trozos ensangrentados de carne de caza. Inspiró versos memorables de Victor Hugo en su poema La Conscience.",
-        "bio": "Fernand Cormon (1845–1924) fue una de las figuras señeras de la pintura académica e histórica en Francia. Su famoso atelier en París fue el crisol donde se formaron jóvenes rebeldes del arte vanguardista, entre ellos Vincent van Gogh, Henri de Toulouse-Lautrec y Émile Bernard."
+        "bio": "Fernand Cormon (1845–1924) fue una de las figuras señeras de la pintura académica e histórica en Francia. Su famoso atelier en París fue el crisol donde se formaron jóvenes rebeldes del arte vanguardista, entre ellos Vincent van Gogh, Henri de Toulouse-Lautrec y Émile Bernard.",
+        "anio": 1880,
+        "fecha": "1880"
       },
       {
         "title": "Elohim creando a Adán",
@@ -1052,7 +1292,9 @@
         "snippet": "Creación como agonía existencial. Adán es forzado dolorosamente a existir, atado a la materia con una serpiente enroscada en la pierna desde el nacimiento.",
         "analysis": "William Blake invierte drásticamente la visión optimista renacentista de la creación del hombre. Fiel a su propia mitología poético-espiritual, para Blake el acto creativo de Elohim (el demiurgo de la materia física al que denominaba Urizen) no representa un regalo benigno de vida, sino la dolorosa prisión del espíritu inmortal dentro del cuerpo mortal de carne y huesos.",
         "history": "Elohim vuela sobre la vasta extensión de la materia primordial con alas de murciélago sombrías y rostro desencajado por el dolor cósmico. Moldea el cuerpo de Adán del barro oscuro mientras Adán yace de espaldas en agonía existencial. Alrededor de la pierna derecha del recién creado Adán ya se enrosca la serpiente del conocimiento y la caída, simbolizando que el sufrimiento quedó sellado desde el nacimiento.",
-        "bio": "William Blake (1757–1827) fue un poeta, pintor, visionario y grabador inglés. Ignorado por sus contemporáneos debido a que afirmaba conversar diariamente con ángeles y profetas, Blake creó una de las obras poéticas y visuales más radicalmente independientes de la historia del arte, repudiando el racionalismo ilustrado."
+        "bio": "William Blake (1757–1827) fue un poeta, pintor, visionario y grabador inglés. Ignorado por sus contemporáneos debido a que afirmaba conversar diariamente con ángeles y profetas, Blake creó una de las obras poéticas y visuales más radicalmente independientes de la historia del arte, repudiando el racionalismo ilustrado.",
+        "anio": 1795,
+        "fecha": "1795"
       },
       {
         "title": "Sombra y oscuridad - la tarde del diluvio",
@@ -1062,7 +1304,9 @@
         "snippet": "Deconstrucción total de la naturaleza. Luz, agua y tierra se disuelven volviendo al caos primordial anterior al \"hágase la luz\".",
         "analysis": "Turner disuelve el paisaje tradicional en un vórtice atmosférico de lluvia torrencial, viento helado y penumbra absoluta. En el centro exacto de la composición, diminuta e impenetrable, flota el Arca de Noé como la única chispa de salvación en medio del juicio divino. Una fina procesión de sombras de animales avanza hacia el fondo perdiéndose en el horizonte de la tormenta.",
         "history": "Turner contrapuso esta obra con su pareja díptica (Luz y Color: La mañana después del Diluvio), basando su tratamiento de la paleta en la Teoría de los Colores de Goethe, asociando los tonos oscuros a la desolación. Cuando fue expuesto en la Royal Academy en 1843, el crítico John Ruskin lo defendió apasionadamente declarando que Turner era el único artista que comprendía la verdadera majestad impetuosa de la naturaleza.",
-        "bio": "J.M.W. Turner (1775–1851), el \"Pintor de la Luz\", fue la figura dominante del paisajismo británico. Se dice que en una ocasión se hizo atar al mástil de un barco en medio de una tempestad en el mar del Norte durante cuatro horas para experimentar personalmente la furia de los elementos antes de pintarla."
+        "bio": "J.M.W. Turner (1775–1851), el \"Pintor de la Luz\", fue la figura dominante del paisajismo británico. Se dice que en una ocasión se hizo atar al mástil de un barco en medio de una tempestad en el mar del Norte durante cuatro horas para experimentar personalmente la furia de los elementos antes de pintarla.",
+        "anio": 1843,
+        "fecha": "1843"
       },
       {
         "title": "La confusión de las lenguas",
@@ -1072,7 +1316,9 @@
         "snippet": "Escala opresiva e industrial. Líneas geométricas duras de la torre inacabada frente a cuerpos diminutos despeñándose en la penumbra.",
         "analysis": "Gustave Doré esculpió en la madera de este grabado una de las imágenes más sobrecogedoras e influyentes de la literatura ilustrada mundial. Doré retrata el momento preciso en que la voz divina quiebra la unidad del idioma humano en las laderas de Babel. La monumental estructura de piedra se eleva con arcos gigantescos hasta perderse en el torbellino de nubes negras en la cumbre.",
         "history": "En el plano inferior, la multitud estalla en un pánico caótico: familias enteras se abrazan sin comprender las palabras que salen de sus propias bocas, constructores abandonan sus herramientas y algunos caen despeñados desde las cornisas. Sus 241 grabados para la Biblia moldearon la imaginación religiosa e inspiraron directamente la escenografía de las grandes producciones del cine bíblico de Hollywood.",
-        "bio": "Gustave Doré (1832–1883) fue un prodigioso dibujante, grabador y pintor francés. Niño prodigio que publicó sus primeras caricaturas a los 15 años, llegó a ilustrar las obras cumbres de la literatura universal: La Divina Comedia de Dante, El Quijote de Cervantes, El Paraíso Perdido de Milton y los Cuentos de Perrault."
+        "bio": "Gustave Doré (1832–1883) fue un prodigioso dibujante, grabador y pintor francés. Niño prodigio que publicó sus primeras caricaturas a los 15 años, llegó a ilustrar las obras cumbres de la literatura universal: La Divina Comedia de Dante, El Quijote de Cervantes, El Paraíso Perdido de Milton y los Cuentos de Perrault.",
+        "anio": 1865,
+        "fecha": "1865"
       },
       {
         "title": "El Diluvio Universal",
@@ -1082,7 +1328,9 @@
         "snippet": "Manierismo nórdico supremo: figuras de musculatura miguelangelesca huyen descalzas en un primer plano de luz dramática mientras el agua devora la tierra.",
         "analysis": "Obra cumbre del Manierismo nórdico. Jan van Scorel sintetiza la musculatura monumental inspirada en las esculturas romanas y Miguel Ángel con un sobrecogedor paisaje nocturno holandés. En el primer plano, dramáticamente iluminado por la luz lunar, una multitud aterrorizada huye descalza del avance implacable del agua cargando ancianos y niños en la penumbra.",
         "history": "Integrada en la Colección Real Española desde al menos 1593, figurando en el inventario histórico del Real Sitio de San Lorenzo de El Escorial antes de incorporarse al Museo del Prado (Inv. P001515). En la lejanía oscura se vislumbra el Arca de Noé resguardada bajo un rayo celaje.",
-        "bio": "Jan van Scorel (1495–1562), importante pintor y clérigo holandés que introdujo las formas del Alto Renacimiento italiano en el norte de Europa tras su estancia en Roma como conservador supremo de las colecciones de arte vaticanas del Papa Adriano VI."
+        "bio": "Jan van Scorel (1495–1562), importante pintor y clérigo holandés que introdujo las formas del Alto Renacimiento italiano en el norte de Europa tras su estancia en Roma como conservador supremo de las colecciones de arte vaticanas del Papa Adriano VI.",
+        "anio": 1530,
+        "fecha": "1530"
       },
       {
         "title": "Tras el diluvio (El sol)",
@@ -1092,7 +1340,9 @@
         "snippet": "Simbolismo poético: Watts prescinde de figuras o barcos para pintar el primer rayo de sol del cuadragésimo primer día rompiendo la tempestad sobre el mar.",
         "analysis": "Genialidad del Simbolismo victoriano. Watts prescinde radicalmente de figuras humanas, barcos o animales para retratar el instante místico del cuadragésimo primer día: el momento en que las nubes de la tormenta apocalíptica se abren y un Sol incandescente estalla en el horizonte sobre un mar sereno, simbolizando la luz de la Creación reemergente.",
         "history": "Watts dedicó cinco años (1886-1891) a perfeccionar este lienzo, exponiéndolo originalmente con el título simplificado de El Sol. Su renuncia a la representación antropomórfica para concentrarse en la vibración pura del color y la luz fue admirada como un presagio audaz del arte abstracto moderno.",
-        "bio": "George Frederic Watts (1817–1904), destacado pintor y escultor simbolista británico conocido como el \"Miguel Ángel victoriano\", empeñado en volcar las grandes alegorías filosóficas y morales en lienzos de visión poética."
+        "bio": "George Frederic Watts (1817–1904), destacado pintor y escultor simbolista británico conocido como el \"Miguel Ángel victoriano\", empeñado en volcar las grandes alegorías filosóficas y morales en lienzos de visión poética.",
+        "anio": 1891,
+        "fecha": "1891"
       },
       {
         "title": "La disminución de las aguas del diluvio",
@@ -1102,7 +1352,9 @@
         "snippet": "Sublimismo romántico monumental: la luz de una luna sangrienta revela una ciénaga silenciosa de árboles gigantes ahogados mientras el Arca reposa en el Ararat.",
         "analysis": "Cúspide del Sublimismo Romántico británico. Danby retrata el sosiego sepulcral tras la catástrofe: una luna llena de brillo cobrizo ilumina una ciénaga infinita de aguas muertas plagada de árboles gigantescos ahogados y restos de seres antediluvianos, mientras en el horizonte el Arca descansa pacíficamente sobre la cima del Monte Ararat.",
         "history": "Exhibida en 1840 en la Royal Academy con una acogida entusiasta. Danby desplegó una maestría técnica prodigiosa en los reflejos cromáticos del agua estancada y en el fino destello del amanecer que empieza a dorar la montaña sagrada.",
-        "bio": "Francis Danby (1793–1861), maestro irlando-británico del romanticismo poético y apocalíptico, figura central de la Escuela de Bristol célebre por sus visiones atardecidas y cataclismos bíblicos teatrales."
+        "bio": "Francis Danby (1793–1861), maestro irlando-británico del romanticismo poético y apocalíptico, figura central de la Escuela de Bristol célebre por sus visiones atardecidas y cataclismos bíblicos teatrales.",
+        "anio": 1840,
+        "fecha": "1840"
       },
       {
         "title": "La disminución de las aguas del diluvio",
@@ -1112,7 +1364,9 @@
         "snippet": "Simbolismo de esperanza y regeneración: los picos rocosos reemergen bajo un cielo iluminado por la promesa divina mientras un cráneo solitario yace sobre las rocas.",
         "analysis": "Manifiesto fundador del paisajismo estadounidense. Cole retrata la purificación de la Tierra: los picos rocosos reemergen lavados del pecado bajo un cielo celestial donde la luz pura abre paso a las nubes en retirada. En el primer plano, sobre una roca solitaria, descansa un cráneo humano como memento mori de la civilización destruida.",
         "history": "Pintada en 1829 tras su estancia de estudios en Europa, fue celebrada como una viva metáfora de la esperanza y el renacimiento espiritual. La figura distante del Arca navegando en calma encarna la promesa del pacto divino.",
-        "bio": "Thomas Cole (1801–1848), genial pintor anglo-estadounidense y patriarca fundador de la célebre Escuela del Río Hudson, pionero en elevar la pintura de paisaje a la categoría de alegoría moral y espiritual."
+        "bio": "Thomas Cole (1801–1848), genial pintor anglo-estadounidense y patriarca fundador de la célebre Escuela del Río Hudson, pionero en elevar la pintura de paisaje a la categoría de alegoría moral y espiritual.",
+        "anio": 1829,
+        "fecha": "1829"
       },
       {
         "title": "Adán y Eva",
@@ -1122,7 +1376,9 @@
         "snippet": "El pecado original convertido en escena cortesana: cuerpos alargados, elegantes y sin culpa aparente, pintados por el amigo íntimo de Lutero.",
         "analysis": "Cranach pintó este asunto decenas de veces y creó con él un tipo físico inconfundible: cuerpos esbeltos y alargados, hombros estrechos, vientres redondeados, una desnudez elegante y cortesana que no tiene nada de la angustia italiana. Adán se lleva la mano al cabello en un gesto de perplejidad casi cómico mientras Eva le tiende la manzana; la serpiente se enrosca discretamente en el árbol y los animales del Edén rodean la escena con una precisión de grabado naturalista. La caída se representa aquí no como tragedia sino como un instante de duda amable.",
         "history": "Cranach fue amigo íntimo de Lutero —fue padrino de su hijo y grabó sus retratos más difundidos— y su taller de Wittenberg fue el motor visual de la Reforma. Que un pintor tan comprometido con la doctrina protestante repitiera incansablemente el desnudo del Edén tiene su lógica: era el único asunto que permitía pintar cuerpos desnudos con justificación bíblica plena, y sus versiones fueron un éxito comercial en las cortes alemanas.",
-        "bio": "Lucas Cranach el Viejo (1472–1553) dirigió una de las empresas artísticas más eficientes de su siglo: un taller casi industrial con hijos y ayudantes que producía retratos y tablas en serie, firmadas con el emblema de la serpiente alada. Fue además boticario, editor y alcalde de Wittenberg."
+        "bio": "Lucas Cranach el Viejo (1472–1553) dirigió una de las empresas artísticas más eficientes de su siglo: un taller casi industrial con hijos y ayudantes que producía retratos y tablas en serie, firmadas con el emblema de la serpiente alada. Fue además boticario, editor y alcalde de Wittenberg.",
+        "anio": 1538,
+        "fecha": "1538"
       },
       {
         "title": "Adán y Eva",
@@ -1132,7 +1388,9 @@
         "snippet": "Durero usó el Edén como excusa para imponer al norte de Europa el canon clásico de proporciones. La caída del hombre como tratado de anatomía ideal.",
         "analysis": "El grabado de 1504 es una demostración técnica y teórica: Durero construyó ambos cuerpos con compás y regla según las proporciones de Vitruvio que había estudiado en Venecia, y colocó junto a ellos cuatro animales —el alce, el buey, el conejo y el gato— que representan los cuatro humores del temperamento humano, en perfecto equilibrio antes de la caída. El gato acecha al ratón a los pies de Eva: en el instante en que ella muerda el fruto, ese equilibrio se romperá. Las tablas del Prado, tres años posteriores, trasladan esa misma investigación al óleo y a tamaño natural, sobre fondo negro y sin paisaje alguno.",
         "history": "Durero firmó el grabado con una tablilla colgada de la rama —«Albertus Durer Noricus faciebat 1504»— porque sabía que estaba haciendo algo sin precedentes en el norte. Las tablas del Prado fueron regaladas por la reina Cristina de Suecia a Felipe IV, y estuvieron a punto de ser destruidas por pudor: se salvaron escondidas en las salas reservadas de la Academia de San Fernando hasta el siglo XIX.",
-        "bio": "Alberto Durero (1471–1528), hijo de un orfebre húngaro instalado en Núremberg, fue el primer artista del norte que se pensó a sí mismo como intelectual y no como artesano. Viajó dos veces a Italia, escribió tratados sobre proporción y perspectiva, y llevó el grabado a un nivel técnico que no ha vuelto a superarse."
+        "bio": "Alberto Durero (1471–1528), hijo de un orfebre húngaro instalado en Núremberg, fue el primer artista del norte que se pensó a sí mismo como intelectual y no como artesano. Viajó dos veces a Italia, escribió tratados sobre proporción y perspectiva, y llevó el grabado a un nivel técnico que no ha vuelto a superarse.",
+        "anio": 1504,
+        "fecha": "1504"
       },
       {
         "title": "El Anciano de los Días",
@@ -1142,7 +1400,9 @@
         "snippet": "Dios inclinado sobre el abismo midiendo el mundo con un compás. Para Blake, el acto de crear midiendo no es un don: es el nacimiento de la tiranía.",
         "analysis": "Urizen —el demiurgo racionalista de la mitología propia de Blake— se asoma desde un disco solar y baja el brazo para trazar los límites del mundo con un compás de agrimensor, mientras el viento le echa el cabello y la barba hacia un lado. La imagen ilustra el versículo de Proverbios «cuando trazaba un círculo sobre la faz del abismo», pero Blake invierte su sentido: para él, encerrar la creación dentro de una medida es el gesto que aprisiona la imaginación. El compás es el instrumento de Newton y de la Ilustración, y Blake lo detestaba.",
         "history": "Blake inventó para estos libros una técnica propia, el grabado en relieve iluminado: escribía e ilustraba directamente sobre la plancha con un barniz resistente al ácido, de modo que texto e imagen nacían juntos, y después coloreaba cada ejemplar a mano. Ningún ejemplar es igual a otro. Se dice que esta imagen se le apareció flotando en lo alto de la escalera de su casa en Lambeth, y que la consideró siempre su estampa preferida: en su lecho de muerte todavía estaba retocando un ejemplar.",
-        "bio": "Complementa a «Elohim creando a Adán», ya presente en la colección, y completa la teología invertida de Blake: crear el mundo material y crear al hombre son, en su mitología, dos actos del mismo dios equivocado."
+        "bio": "Complementa a «Elohim creando a Adán», ya presente en la colección, y completa la teología invertida de Blake: crear el mundo material y crear al hombre son, en su mitología, dos actos del mismo dios equivocado.",
+        "anio": 1794,
+        "fecha": "1794"
       },
       {
         "title": "El sacrificio de Isaac",
@@ -1152,7 +1412,9 @@
         "snippet": "El primer cuadro de Génesis 12-50 de la colección, y el más brutal: Caravaggio pinta a un niño real, con la cara aplastada contra la piedra, gritando.",
         "analysis": "Caravaggio elimina toda solemnidad. Abraham sujeta la cabeza de Isaac contra el altar con la mano abierta, aplastándole la mejilla contra la piedra, y el cuchillo ya está en posición; el niño grita con la boca abierta y los ojos desorbitados, y su grito es lo único que ocupa el centro exacto del lienzo. El ángel irrumpe por la izquierda y agarra físicamente la muñeca del padre —no basta una señal, hace falta la fuerza— mientras señala con la otra mano el carnero. La luz cae de lado y deja media escena en tinieblas, como siempre en Caravaggio.",
         "history": "Fue pintado para el cardenal Maffeo Barberini, futuro papa Urbano VIII, que pagó por él cien escudos en varios plazos entre 1603 y 1604. Existe una segunda versión atribuida en Princeton. El pasaje de Génesis 22 —la Aqedah, la «atadura» de Isaac— es el episodio más incómodo del libro y el que ha generado más literatura filosófica: Kierkegaard construyó sobre él Temor y temblor entero.",
-        "bio": "Michelangelo Merisi da Caravaggio (1571–1610) trabajó siempre del natural, con modelos tomados de la calle y sin dibujo previo, lo que escandalizó a sus contemporáneos tanto como su vida violenta. Huyó de Roma en 1606 tras matar a un hombre y murió a los treinta y ocho años en la playa de Porto Ercole."
+        "bio": "Michelangelo Merisi da Caravaggio (1571–1610) trabajó siempre del natural, con modelos tomados de la calle y sin dibujo previo, lo que escandalizó a sus contemporáneos tanto como su vida violenta. Huyó de Roma en 1606 tras matar a un hombre y murió a los treinta y ocho años en la playa de Porto Ercole.",
+        "anio": 1603,
+        "fecha": "1603"
       },
       {
         "title": "El sacrificio de Isaac",
@@ -1162,7 +1424,9 @@
         "snippet": "El mismo instante que Caravaggio, resuelto al revés: el ángel sorprende a Abraham, el cuchillo cae por el aire y la mano del padre tapa por completo el rostro del hijo.",
         "analysis": "Compararlo con el Caravaggio de al lado es una lección entera de historia del arte. Rembrandt elige el segundo exacto en que el ángel agarra la muñeca de Abraham y el cuchillo, ya soltado, queda suspendido en el aire cayendo. La mano enorme del padre cubre íntegramente la cara de Isaac —no vemos su expresión, solo la garganta ofrecida y el cuerpo blanco arqueado—, y toda la emoción se traslada al rostro de Abraham, que se vuelve hacia el ángel con la boca entreabierta y los ojos vacíos de quien todavía no ha entendido.",
         "history": "Rembrandt lo pintó a los veintinueve años, en pleno éxito en Ámsterdam. Existe una segunda versión en Múnich, firmada «Rembrandt corrigió y repintó», que se considera obra de su taller retocada por él. La elección de tapar el rostro de la víctima con la mano del verdugo es un hallazgo narrativo que reaparece en toda su obra tardía: lo que no se muestra pesa más que lo que se muestra.",
-        "bio": "Rembrandt Harmenszoon van Rijn (1606–1669) pintó y grabó asuntos bíblicos durante toda su vida con una libertad interpretativa inusual para un protestante de su época, tratándolos siempre como escenas domésticas y psicológicas antes que como teofanías."
+        "bio": "Rembrandt Harmenszoon van Rijn (1606–1669) pintó y grabó asuntos bíblicos durante toda su vida con una libertad interpretativa inusual para un protestante de su época, tratándolos siempre como escenas domésticas y psicológicas antes que como teofanías.",
+        "anio": 1635,
+        "fecha": "1635"
       },
       {
         "title": "La Trinidad (La hospitalidad de Abraham)",
@@ -1172,7 +1436,9 @@
         "snippet": "Los tres viajeros que Abraham hospeda junto al encinar de Mamré, convertidos en el icono más famoso jamás pintado. Toda la composición gira alrededor de un hueco.",
         "analysis": "Génesis 18 cuenta que tres hombres se presentaron ante la tienda de Abraham y él les lavó los pies y les dio de comer; la tradición cristiana leyó en ellos la Trinidad. Rubliov elimina a Abraham y a Sara y deja solo a los tres ángeles sentados alrededor de una mesa, inclinados unos hacia otros en un círculo que no se cierra: el lado del espectador queda abierto. En el centro hay una copa, y las siluetas de los dos ángeles laterales dibujan a su vez la forma de otra copa mayor. La perspectiva es invertida —las líneas convergen hacia fuera, hacia quien mira—, de modo que el espacio del icono se abre hacia la sala en lugar de hundirse en la tabla.",
         "history": "Fue pintado para el monasterio de la Trinidad y San Sergio en memoria de San Sergio de Rádonezh. Durante siglos estuvo cubierto por una funda de plata dorada que solo dejaba ver los rostros y las manos, y ennegrecido por el aceite de las lámparas; se restauró en 1904 y el color original —el lapislázuli intenso de los mantos, el oro del fondo— reapareció intacto. En 2023 fue trasladado desde la Tretiakov a la Iglesia ortodoxa rusa, una decisión que los conservadores del museo advirtieron que ponía en riesgo su integridad material.",
-        "bio": "Andréi Rubliov (c. 1360–1430) fue monje y pintor de iconos, y su obra marca el punto más alto de la pintura medieval rusa. La Iglesia ortodoxa lo canonizó en 1988. Tarkovski le dedicó en 1966 una película que es, entre otras cosas, una meditación sobre el silencio del artista frente a la violencia de su tiempo."
+        "bio": "Andréi Rubliov (c. 1360–1430) fue monje y pintor de iconos, y su obra marca el punto más alto de la pintura medieval rusa. La Iglesia ortodoxa lo canonizó en 1988. Tarkovski le dedicó en 1966 una película que es, entre otras cosas, una meditación sobre el silencio del artista frente a la violencia de su tiempo.",
+        "anio": 1425,
+        "fecha": "1425"
       },
       {
         "title": "La lucha de Jacob con el ángel",
@@ -1182,7 +1448,9 @@
         "snippet": "El testamento de Delacroix: un combate diminuto al pie de árboles gigantescos. La lucha decisiva de una vida ocurre en un rincón del paisaje.",
         "analysis": "Jacob embiste al ángel con todo el cuerpo, la cabeza baja, el hombro por delante, en la postura de quien empuja un muro; el ángel apenas se mueve y ni siquiera lo mira. Delacroix subordina la escena a un bosque de robles descomunales que ocupa la mitad superior del muro y empequeñece a las dos figuras, y a la izquierda la caravana de Jacob se aleja indiferente por el vado, sin enterarse de nada. La decisión de escala es el sentido de la obra: el combate del que depende el nombre de Israel sucede al margen, sin testigos.",
         "history": "Delacroix trabajó doce años en esta capilla, ya enfermo, y la consideró su obra culminante. Se hizo instalar una vivienda cerca para no perder tiempo en desplazamientos. El fresco impresionó profundamente a los jóvenes que después harían el impresionismo, y Cézanne, Degas y Van Gogh acudieron a copiarlo. En Génesis 32 Jacob sale cojo del combate y recibe un nombre nuevo: Israel, «el que lucha con Dios».",
-        "bio": "Eugène Delacroix (1798–1863) fue la cabeza del romanticismo francés y el antagonista declarado del clasicismo de Ingres. Esta imagen procede de una fotografía tomada en la propia iglesia, ya que la obra es un muro y no existe reproducción de museo posible."
+        "bio": "Eugène Delacroix (1798–1863) fue la cabeza del romanticismo francés y el antagonista declarado del clasicismo de Ingres. Esta imagen procede de una fotografía tomada en la propia iglesia, ya que la obra es un muro y no existe reproducción de museo posible.",
+        "anio": 1854,
+        "fecha": "1854"
       },
       {
         "title": "Jacob luchando con el ángel",
@@ -1192,7 +1460,9 @@
         "snippet": "El mismo combate que Delacroix, entendido como un abrazo. No hay violencia: el ángel sostiene a Jacob con una ternura desconcertante.",
         "analysis": "Rembrandt suprime el paisaje, el vado, la caravana y la noche: solo quedan dos cuerpos entrelazados emergiendo de la penumbra. Y sobre todo suprime la lucha. El ángel rodea a Jacob con los brazos y apoya la mejilla casi sobre su hombro, con una expresión de compasión serena, mientras Jacob cierra los ojos y se abandona. Solo la mano del ángel, apoyada en la cadera de Jacob —el punto exacto que quedará dislocado—, recuerda que esto es un combate y no un consuelo. La ambigüedad es deliberada y define la lectura de Rembrandt del pasaje: no se vence a Dios, se resiste hasta ser bendecido.",
         "history": "Pertenece a la última etapa del pintor, la de la pincelada espesa y las composiciones despojadas, cuando ya había perdido la casa, la fortuna y el favor del público de Ámsterdam. Colgarlo junto al Delacroix permite ver dos temperamentos opuestos ante el mismo versículo: el romántico lo convierte en paisaje y el barroco tardío, en intimidad.",
-        "bio": "Rembrandt (1606–1669) trató siempre el Antiguo Testamento como teatro doméstico. Vivía en el barrio judío de Ámsterdam y tomaba de sus vecinos los modelos y los tipos físicos de sus patriarcas."
+        "bio": "Rembrandt (1606–1669) trató siempre el Antiguo Testamento como teatro doméstico. Vivía en el barrio judío de Ámsterdam y tomaba de sus vecinos los modelos y los tipos físicos de sus patriarcas.",
+        "anio": 1659,
+        "fecha": "1659"
       },
       {
         "title": "La visión tras el sermón",
@@ -1202,7 +1472,9 @@
         "snippet": "Un campo rojo bermellón donde no debería haberlo. El cuadro que rompió con el impresionismo usando como pretexto la lucha de Jacob con el ángel.",
         "analysis": "Unas campesinas bretonas con cofia blanca salen de misa y ven, al fondo, la escena del sermón que acaban de oír: Jacob y el ángel luchando sobre un prado de un rojo bermellón imposible. Un tronco de manzano cruza el lienzo en diagonal separando el mundo real del visionario, recurso tomado directamente de la estampa japonesa. Gauguin abandona aquí la observación del natural: el color deja de describir la luz y pasa a expresar un estado mental. Es el acta de nacimiento del sintetismo y, con él, de buena parte de la pintura del siglo XX.",
         "history": "Gauguin lo pintó en Pont-Aven y quiso donarlo a la iglesia del pueblo vecino de Nizon; el párroco lo rechazó, sospechando que se burlaba de sus feligresas. Escribió a Van Gogh describiéndolo con orgullo y explicándole que el paisaje y la lucha «solo existen en la imaginación de la gente que reza».",
-        "bio": "Paul Gauguin (1848–1903) fue agente de bolsa hasta los treinta y cinco años, cuando abandonó su trabajo y a su familia para pintar. Murió en las Marquesas, enfermo y arruinado, tras años de conflicto con la administración colonial francesa."
+        "bio": "Paul Gauguin (1848–1903) fue agente de bolsa hasta los treinta y cinco años, cuando abandonó su trabajo y a su familia para pintar. Murió en las Marquesas, enfermo y arruinado, tras años de conflicto con la administración colonial francesa.",
+        "anio": 1888,
+        "fecha": "1888"
       },
       {
         "title": "Agar en el desierto",
@@ -1212,7 +1484,9 @@
         "snippet": "La esclava egipcia repudiada y su hijo, abandonados bajo un cielo enorme. Corot pinta la sed y la desolación convirtiendo el desierto en el verdadero protagonista.",
         "analysis": "Agar levanta los brazos al cielo en un grito mientras Ismael yace desfallecido bajo un arbusto, y sobre ellos el ángel aparece diminuto en el aire. Pero lo que domina el lienzo —casi tres metros de ancho— es la extensión pedregosa y el cielo que la aplasta: Corot subordina la figura al paisaje y hace que la escala del abandono sea geográfica antes que emocional. La gama es sobria, casi monocroma, con el verde grisáceo que sería su marca.",
         "history": "Génesis 21 cuenta que Sara exigió a Abraham que expulsara a Agar y a Ismael tras el nacimiento de Isaac, y que Dios abrió los ojos de Agar para que viera un pozo. El episodio es incómodo y esencial: de Ismael desciende, según la tradición, el linaje árabe. Corot presentó el cuadro en el Salón de 1835 como pieza de gran formato para consagrarse como pintor histórico; el público lo aplaudió por el paisaje y apenas reparó en el asunto bíblico.",
-        "bio": "Camille Corot (1796–1875) fue el puente entre el paisaje clásico y el impresionismo. Trabajó al aire libre décadas antes de que fuera costumbre, y fue tan generoso con los pintores jóvenes y necesitados que se decía que había firmado más cuadros de los que pintó."
+        "bio": "Camille Corot (1796–1875) fue el puente entre el paisaje clásico y el impresionismo. Trabajó al aire libre décadas antes de que fuera costumbre, y fue tan generoso con los pintores jóvenes y necesitados que se decía que había firmado más cuadros de los que pintó.",
+        "anio": 1835,
+        "fecha": "1835"
       },
       {
         "title": "La túnica de José",
@@ -1222,7 +1496,9 @@
         "snippet": "Los hermanos muestran a Jacob la túnica ensangrentada y mienten. Velázquez pinta el momento en que un padre se cree la mentira.",
         "analysis": "Los hijos de Jacob presentan a su padre la túnica de José manchada de sangre de cabrito, insinuando que una fiera lo ha devorado. Velázquez organiza la escena como un interrogatorio: Jacob se echa hacia atrás con los brazos abiertos, los hijos gesticulan con distintos grados de convicción —uno señala, otro mira al suelo, otro observa la reacción del padre—, y el perro ladra a los mentirosos, único personaje que no se deja engañar. El suelo embaldosado en perspectiva y el escorzo de las figuras revelan lo que el pintor acababa de aprender en Italia.",
         "history": "Fue pintado en Roma durante el primer viaje italiano de Velázquez, junto con La fragua de Vulcano, y ambos son ejercicios deliberados: quiso demostrar que dominaba el desnudo masculino, la perspectiva y la composición de muchas figuras, las tres cosas que en Madrid no había tenido ocasión de practicar. Se conservan en El Escorial desde el siglo XIX.",
-        "bio": "Diego Velázquez (1599–1660) tenía treinta y un años y ya era pintor de cámara de Felipe IV. El episodio de José (Génesis 37-50) cierra el libro y es la novela más larga y estructurada del Antiguo Testamento: traición fraterna, esclavitud, ascenso político en Egipto y perdón final."
+        "bio": "Diego Velázquez (1599–1660) tenía treinta y un años y ya era pintor de cámara de Felipe IV. El episodio de José (Génesis 37-50) cierra el libro y es la novela más larga y estructurada del Antiguo Testamento: traición fraterna, esclavitud, ascenso político en Egipto y perdón final.",
+        "anio": 1630,
+        "fecha": "1630"
       },
       {
         "title": "La destrucción de Sodoma y Gomorra",
@@ -1232,7 +1508,9 @@
         "snippet": "Fuego que cae del cielo sobre dos ciudades enteras, y en primer plano la mujer de Lot volviéndose a mirar. El apocalipsis como espectáculo de masas.",
         "analysis": "Martin lleva el sublime romántico a su extremo: un cielo entero convertido en incendio, relámpagos que caen en cortinas sobre la llanura y unas ciudades reducidas a siluetas incandescentes al fondo. En primer término, Lot y sus hijas huyen mientras la esposa se detiene y se vuelve —el instante exacto anterior a convertirse en estatua de sal—. La desproporción entre las figuras minúsculas y la escala del cataclismo es el asunto verdadero del cuadro.",
         "history": "Martin fue el pintor más popular de la Inglaterra victoriana entre el gran público y el más despreciado por la crítica, que lo consideraba un fabricante de efectos. Sus grabados apocalípticos se vendieron por decenas de miles y moldearon la iconografía del fin del mundo hasta el cine: la estética de las superproducciones bíblicas de Hollywood procede de él en línea directa.",
-        "bio": "John Martin (1789–1854) completa en esta colección el arco del juicio divino: junto al Diluvio de Miguel Ángel, de Van Scorel y de Turner, Sodoma es la segunda gran destrucción del Génesis, y la única que ocurre ya dentro de la historia patriarcal."
+        "bio": "John Martin (1789–1854) completa en esta colección el arco del juicio divino: junto al Diluvio de Miguel Ángel, de Van Scorel y de Turner, Sodoma es la segunda gran destrucción del Génesis, y la única que ocurre ya dentro de la historia patriarcal.",
+        "anio": 1852,
+        "fecha": "1852"
       },
       {
         "title": "El jardín de las delicias",
@@ -1242,7 +1520,9 @@
         "snippet": "El Edén, el mundo y el infierno en una sola tabla, a 30.000 píxeles de ancho. La obra que mejor recompensa el zoom de esta colección.",
         "analysis": "El tríptico se lee de izquierda a derecha como una historia del género humano: en la tabla izquierda, Dios presenta Eva a Adán en un Paraíso ya recorrido por animales extraños y presagios inquietantes; en la central, una humanidad desnuda e innumerable se entrega a un carnaval erótico entre frutas gigantes y criaturas imposibles; en la derecha, un infierno musical nocturno donde los instrumentos se han convertido en instrumentos de tortura. No hay consenso sobre si el panel central es una advertencia moral o la representación de una inocencia perdida: cinco siglos de interpretaciones no lo han cerrado.",
         "history": "Aparece documentado en 1517 en el palacio de Bruselas de los Nassau, pasó a Felipe II —que lo compró en almoneda en 1591 y lo llevó a El Escorial— y de allí al Prado en 1939. Fray José de Sigüenza lo defendió en 1605 de quienes lo tachaban de herético con un argumento que sigue siendo el mejor: que en los demás cuadros se pinta al hombre por fuera, y en este por dentro.",
-        "bio": "De Hieronymus van Aken, El Bosco (c. 1450–1516), se sabe muy poco: vivió toda su vida en 's-Hertogenbosch, perteneció a la Hermandad de Nuestra Señora y murió acomodado. Esta imagen procede de la campaña de digitalización del Prado y es de resolución extraordinaria, lo que la convierte en la mejor pieza de la colección para inspeccionar en detalle extremo."
+        "bio": "De Hieronymus van Aken, El Bosco (c. 1450–1516), se sabe muy poco: vivió toda su vida en 's-Hertogenbosch, perteneció a la Hermandad de Nuestra Señora y murió acomodado. Esta imagen procede de la campaña de digitalización del Prado y es de resolución extraordinaria, lo que la convierte en la mejor pieza de la colección para inspeccionar en detalle extremo.",
+        "anio": 1490,
+        "fecha": "1490"
       },
       {
         "title": "Lot y sus hijas",
@@ -1252,7 +1532,9 @@
         "snippet": "Génesis 19, la parte del episodio que casi nunca se cita: lo que ocurre en la cueva después de que Sodoma arda.",
         "analysis": "Rubens sitúa la escena en una gruta rocosa, iluminada por una sola fuente de luz, y compone las tres figuras en un triángulo apretado que no deja salida visual. Las hijas rodean al padre, una le acerca la copa y la otra lo sostiene por detrás; Lot ya está ebrio y su rostro tiene la vaguedad blanda del alcohol. La carnación de Rubens, habitualmente celebratoria, aquí resulta incómoda a propósito: el pintor no juzga ni excusa, solo describe con una franqueza que resulta más perturbadora que cualquier condena.",
         "history": "El pasaje es el reverso oscuro de la destrucción de Sodoma que John Martin pinta en esta misma colección: las hijas, creyendo que no queda nadie más en la tierra, emborrachan a su padre para concebir de él. De esa unión nacen, según el texto, los pueblos de Moab y Amón —los enemigos históricos de Israel—, de modo que el relato funciona además como una explicación etiológica y polémica del origen de los vecinos.",
-        "bio": "Rubens (1577–1640) trató el asunto varias veces. Que un pintor tan asociado a la exuberancia y al triunfo se detuviera en un episodio de incesto y embriaguez indica hasta qué punto el Antiguo Testamento le servía para explorar zonas que la pintura devocional tenía vedadas."
+        "bio": "Rubens (1577–1640) trató el asunto varias veces. Que un pintor tan asociado a la exuberancia y al triunfo se detuviera en un episodio de incesto y embriaguez indica hasta qué punto el Antiguo Testamento le servía para explorar zonas que la pintura devocional tenía vedadas.",
+        "anio": 1613,
+        "fecha": "1613"
       },
       {
         "title": "Eliezer y Rebeca",
@@ -1262,7 +1544,9 @@
         "snippet": "Génesis 24: el criado de Abraham reconoce a la esposa de Isaac por un gesto de cortesía junto al pozo. Poussin lo convierte en un friso de serenidad absoluta.",
         "analysis": "Eliezer había pedido una señal: que la muchacha destinada a Isaac fuera la que le ofreciera de beber y diera además agua a sus camellos. Poussin elimina los camellos —decisión que le reprocharon sus contemporáneos y que él defendió como necesaria para no distraer— y organiza a las jóvenes del pozo en una banda horizontal de figuras clásicas, cada una en una actitud distinta, como un relieve romano desplegado. El instante elegido es el más quieto posible: Rebeca acaba de escuchar la petición y todavía no ha respondido.",
         "history": "Fue pintado para Jean Pointel, banquero y coleccionista lionés amigo del pintor. Se convirtió en el cuadro más copiado por los alumnos de la Academia francesa durante dos siglos, precisamente por su claridad compositiva: era el modelo de cómo distribuir muchas figuras sin desorden.",
-        "bio": "Nicolas Poussin (1594–1665) pasó casi toda su vida en Roma pintando para un círculo reducido de coleccionistas eruditos. Su método era casi teatral: modelaba figuritas de cera, las disponía en una caja escenario y estudiaba la luz sobre ellas antes de tocar el lienzo."
+        "bio": "Nicolas Poussin (1594–1665) pasó casi toda su vida en Roma pintando para un círculo reducido de coleccionistas eruditos. Su método era casi teatral: modelaba figuritas de cera, las disponía en una caja escenario y estudiaba la luz sobre ellas antes de tocar el lienzo.",
+        "anio": 1648,
+        "fecha": "1648"
       },
       {
         "title": "Isaac bendice a Jacob",
@@ -1272,7 +1556,9 @@
         "snippet": "Génesis 27: el engaño fundacional. Un padre ciego palpa unas manos cubiertas de piel de cabrito y bendice al hijo equivocado.",
         "analysis": "Ribera construye la escena sobre el tacto, porque el tacto es el sentido con el que Isaac es engañado. El anciano ciego alarga la mano y palpa el brazo de Jacob, cubierto con la piel del cabrito que lo hace pasar por el velludo Esaú; Rebeca, la madre que ha urdido el engaño, aparece a la derecha vigilando con el dedo en los labios. El formato apaisado extremo obliga a leer la escena de izquierda a derecha, como una frase. El naturalismo tenebrista de Ribera —la piel arrugada, las uñas, la ropa raída— vuelve tangible lo que el texto solo insinúa.",
         "history": "El episodio es moralmente escandaloso y la Biblia no lo censura: Jacob obtiene la primogenitura mediante una estafa y aun así es el elegido. Es uno de los pasajes que mejor ilustran el argumento del ensayo Post-Babel de esta colección — que a partir de Génesis 12 el relato abandona los arquetipos cósmicos y entra en la psicología familiar, con sus favoritismos, engaños y rencores.",
-        "bio": "José de Ribera (1591–1652), valenciano establecido en Nápoles, fue llamado allí «lo Spagnoletto». Aunque nunca regresó a España, trabajó casi siempre para los virreyes españoles, y por eso sus obras mayores acabaron en el Prado y en El Escorial."
+        "bio": "José de Ribera (1591–1652), valenciano establecido en Nápoles, fue llamado allí «lo Spagnoletto». Aunque nunca regresó a España, trabajó casi siempre para los virreyes españoles, y por eso sus obras mayores acabaron en el Prado y en El Escorial.",
+        "anio": 1637,
+        "fecha": "1637"
       },
       {
         "title": "El sueño de Jacob",
@@ -1282,7 +1568,9 @@
         "snippet": "Génesis 28, la escala que une el cielo y la tierra. Ribera no pinta la escala: pinta a un hombre dormido en el suelo y una luz. Ahí está toda la audacia.",
         "analysis": "La tradición había representado siempre este pasaje con una escalera de mano poblada de ángeles subiendo y bajando. Ribera la suprime entera. Lo que queda es un joven dormido sobre la tierra desnuda, la cabeza apoyada en una piedra, el bastón caído, y a la izquierda un resplandor dorado en el que apenas se adivinan formas alígeras disolviéndose en la luz. La visión no se muestra: se sugiere como algo que ocurre dentro del que duerme. El tratamiento de la carne, del pelo revuelto y de la tela basta es de un naturalismo extremo, y contrasta violentamente con esa zona de pura pintura luminosa.",
         "history": "Es una de las obras más modernas del siglo XVII español y ha sido leída como un antecedente lejano del romanticismo. La imagen de esta colección procede de la campaña de digitalización del Prado y supera los 680 megapíxeles, lo que permite acercarse hasta el grano del lienzo y la pincelada individual.",
-        "bio": "Ribera pintó el cuadro para el virrey de Nápoles. El pasaje —«ciertamente el Señor está en este lugar y yo no lo sabía»— da nombre a Betel, y es el momento en que el estafador de Génesis 27 recibe por primera vez la promesa divina directamente."
+        "bio": "Ribera pintó el cuadro para el virrey de Nápoles. El pasaje —«ciertamente el Señor está en este lugar y yo no lo sabía»— da nombre a Betel, y es el momento en que el estafador de Génesis 27 recibe por primera vez la promesa divina directamente.",
+        "anio": 1639,
+        "fecha": "1639"
       },
       {
         "title": "El invierno, o El Diluvio",
@@ -1292,7 +1580,117 @@
         "snippet": "El último cuadro de Poussin y uno de los más sombríos de la pintura francesa: el Diluvio sin arca, sin dios y sin esperanza, resuelto entero en gris y plomo.",
         "analysis": "Poussin renuncia a todo lo que el asunto invitaba a pintar. No hay arca protagonista, no hay ángeles, no hay musculatura miguelangelesca: solo una luz plomiza, una roca, una barca que zozobra, un caballo que se ahoga y una serpiente que repta por una piedra en primer término. La paleta se reduce casi a la monocromía —grises verdosos, negros, un relámpago blanco— y las figuras son minúsculas frente a la masa de agua. Es un cuadro construido por sustracción: cada elemento que un pintor barroco habría añadido está deliberadamente ausente, y esa ausencia es la que produce el desamparo.",
         "history": "Forma parte de Las cuatro estaciones, la serie que Poussin pintó ya anciano y con la mano temblorosa para el duque de Richelieu, y en la que cada estación lleva además un episodio bíblico: la primavera es el Paraíso terrenal, el verano Rut y Booz, el otoño los exploradores de Canaán y el invierno el Diluvio. El ciclo entero es una historia de la humanidad en cuatro tiempos, y el invierno es su final. Fue el último cuadro que terminó. La crítica del siglo XIX lo consagró como su obra maestra: para muchos románticos franceses, este Diluvio era el cuadro más sublime del Louvre.",
-        "bio": "Nicolas Poussin (1594–1665) murió en Roma un año después de acabar la serie. Junto a su «Eliezer y Rebeca», también en esta colección y también en el Louvre, muestra sus dos registros opuestos: la claridad serena del relato patriarcal y la desolación sin retórica del cataclismo."
+        "bio": "Nicolas Poussin (1594–1665) murió en Roma un año después de acabar la serie. Junto a su «Eliezer y Rebeca», también en esta colección y también en el Louvre, muestra sus dos registros opuestos: la claridad serena del relato patriarcal y la desolación sin retórica del cataclismo.",
+        "anio": 1660,
+        "fecha": "1660"
+      },
+      {
+        "title": "La embriaguez de Noé",
+        "artist": "Giovanni Bellini (c. 1515)",
+        "meta": "Óleo sobre lienzo | 103 × 157 cm | Musée des Beaux-Arts, Besanzón, Francia",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Giovanni_Bellini",
+        "snippet": "Génesis 9: el patriarca que sobrevivió al Diluvio, borracho y desnudo ante sus hijos. Bellini lo pintó a los ochenta y tantos años, sin piedad y sin condena.",
+        "analysis": "Noé yace dormido y desnudo, con la copa aún cerca y el rostro congestionado por el vino. Cam lo descubre y señala; Sem y Jafet se acercan de espaldas, con un paño extendido, para cubrirlo sin mirar. Bellini comprime a los cuatro en un primer plano casi sin fondo, de modo que el espectador queda a la misma distancia incómoda que los hijos. La carne del anciano está pintada con una veracidad implacable —flacidez, manchas, la boca entreabierta— que no busca el escarnio sino la constatación.",
+        "history": "Es una de las últimas obras de Bellini, pintada rondando los ochenta y cinco años, y sorprende por su crudeza en un artista asociado a Vírgenes serenas. El episodio explica la maldición de Canaán, hijo de Cam, que la tradición usó durante siglos para justificar la esclavitud: uno de los pasajes del Génesis con consecuencias históricas más graves y peor leídas.",
+        "bio": "Giovanni Bellini (c. 1430–1516) fue el patriarca de la pintura veneciana y maestro de Giorgione y Tiziano —cuyo Caín y Abel abre esta misma colección—. Fue de los primeros italianos en adoptar el óleo, que le permitió las transiciones de luz y carne que aquí se ven.",
+        "anio": 1515,
+        "fecha": "1515"
+      },
+      {
+        "title": "El encuentro de Abraham y Melquisedec",
+        "artist": "Peter Paul Rubens (1625)",
+        "meta": "Óleo sobre tabla (modello) | 66 × 82 cm | National Gallery of Art, Washington",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Melquisedec",
+        "snippet": "Génesis 14: el rey-sacerdote de Salem sale al paso de Abraham con pan y vino. Un encuentro de tres versículos que la teología cristiana convirtió en piedra angular.",
+        "analysis": "Melquisedec desciende una escalinata rodeado de servidores que portan panes y jarras, y Abraham, con armadura, alza la mano al recibirlos. Rubens organiza la escena en dos diagonales que se cruzan justo en el pan ofrecido, y la ilumina desde arriba a la izquierda, de modo que la comitiva sacerdotal aparece bañada en luz y el bando guerrero queda en penumbra. Es una tabla pequeña, un modello preparatorio, pintada con la soltura y la pincelada visible que Rubens reservaba para sus bocetos y que muchos prefieren a las versiones acabadas.",
+        "history": "Melquisedec aparece en tres versículos y desaparece sin genealogía ni muerte registrada, y esa ausencia deliberada hizo que la Epístola a los Hebreos lo leyera como prefiguración de un sacerdocio eterno. El pan y el vino que ofrece se interpretaron desde muy pronto como anuncio de la eucaristía, lo que convirtió esta escena marginal en uno de los temas más pintados del Antiguo Testamento.",
+        "bio": "La imagen de esta colección procede de una digitalización excepcional: más de 200 megapíxeles para una tabla de 66 centímetros, lo que permite seguir cada pincelada del boceto.",
+        "anio": 1625,
+        "fecha": "1625"
+      },
+      {
+        "title": "La sinagoga de Dura Europos",
+        "artist": "Dura Europos, Siria (244–245 d.C.)",
+        "meta": "Pintura mural sobre yeso | sala reconstruida | Museo Nacional de Damasco, Siria",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Sinagoga_de_Dura_Europos",
+        "snippet": "La obra más antigua de esta colección después de la Antigüedad mesopotámica y griega: un ciclo bíblico pintado en el siglo III, con el sacrificio de Isaac sobre el nicho de la Torá.",
+        "analysis": "El muro oeste conserva el nicho de la Torá y, encima, un panel con el sacrificio de Isaac: Abraham de espaldas, el altar, el carnero trabado en la zarza y una mano que baja del cielo. Alrededor, decenas de escenas del Éxodo, de Ezequiel y de Ester cubren la sala entera de arriba abajo. Lo excepcional no es la calidad —el dibujo es esquemático y frontal— sino su existencia: durante siglos se dio por hecho que el judaísmo antiguo no producía imágenes figurativas, y esta sala lo desmintió de golpe.",
+        "history": "Dura Europos, ciudad de guarnición a orillas del Éufrates, fue abandonada tras el asedio persa de 256 d.C. y sepultada por la arena. Al excavarla en 1932 apareció la sinagoga casi intacta, con sus muros pintados; fue desmontada y trasladada al Museo Nacional de Damasco, donde se reconstruyó la sala completa. Es la sinagoga decorada más antigua que se conserva y el conjunto de pintura bíblica más antiguo conocido.",
+        "bio": "La segunda imagen es una placa de la excavación Yale-Académie des Inscriptions, tomada en 1933-1934 con el nicho todavía en su sitio, antes del traslado a Damasco: el sacrificio de Isaac se ve arriba a la derecha del panel, con Abraham de espaldas, el altar, el carnero y la tienda. Se prefirió a la única toma en color disponible en Commons, de 297 × 582 píxeles. Su lugar en esta colección es cronológico además de temático: entre el Laocoonte (40 a.C.) y la Trinidad de Rubliov (1425) había un vacío de casi mil quinientos años, el mayor de la secuencia. Dura Europos lo parte por la mitad.",
+        "anio": 244,
+        "fecha": "244"
+      },
+      {
+        "title": "José acusado por la mujer de Putifar",
+        "artist": "Rembrandt van Rijn y taller (1655)",
+        "meta": "Óleo sobre lienzo | 105,7 × 97,8 cm | National Gallery of Art, Washington",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Jos%C3%A9_y_la_esposa_de_Putifar",
+        "snippet": "Génesis 39: la falsa acusación. Rembrandt no pinta la seducción sino la denuncia, y coloca el manto —la única prueba— en el centro exacto del cuadro.",
+        "analysis": "Casi todos los pintores eligieron el momento escabroso: la mujer agarrando el manto de José. Rembrandt elige el siguiente, el jurídico. Ella está sentada en el lecho, señalando la prenda; Putifar escucha de pie; José permanece detrás, en penumbra, sin defenderse. La composición sitúa el manto rojo en el centro luminoso, porque el manto es la única prueba y toda la escena gira alrededor de un objeto que no dice la verdad. Nadie mira a nadie a los ojos.",
+        "history": "Existen dos versiones casi idénticas, una en Berlín y esta en Washington. El catálogo del museo la registra como obra de Rembrandt o de su taller, y la de Berlín se considera generalmente la autógrafa: una ambigüedad de atribución que sigue sin resolverse. El episodio abre la caída de José en la cárcel, de donde saldrá para interpretar los sueños del faraón.",
+        "bio": "La imagen procede de una digitalización de 280 megapíxeles de la National Gallery of Art, la de mayor resolución de toda esta colección después del Ribera del Prado.",
+        "anio": 1655,
+        "fecha": "1655"
+      },
+      {
+        "title": "Jacob bendice a los hijos de José",
+        "artist": "Rembrandt van Rijn (1656)",
+        "meta": "Óleo sobre lienzo | 175,5 × 210,5 cm | Gemäldegalerie Alte Meister, Kassel, Alemania",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Jacob_Blessing_the_Sons_of_Joseph",
+        "snippet": "Génesis 48: el patriarca ciego y moribundo cruza las manos y bendice al menor. La última vez que el Génesis repite su gesto fundacional, y la más serena.",
+        "analysis": "Jacob, incorporado en el lecho y casi ciego, posa la mano derecha sobre Efraín, el menor, en vez de sobre Manasés. José intenta corregir el gesto sujetándole el brazo; el anciano no cede. Rembrandt baña la escena en una luz dorada y cálida que borra los bordes, y sustituye el conflicto por una ternura casi doméstica: Asenat, la esposa egipcia de José, observa desde la derecha —una figura que Rembrandt añadió y que no está en el texto—.",
+        "history": "Es el último eslabón de un patrón que recorre todo el Génesis: siempre se bendice al menor. Isaac sobre Ismael, Jacob sobre Esaú, Efraín sobre Manasés. Colgado junto al «Isaac bendice a Jacob» de Ribera que ya está en esta colección, el paralelo se ve de golpe: el mismo gesto, el mismo engaño de la primogenitura, pero aquí sin engaño ninguno — el anciano sabe perfectamente lo que hace.",
+        "bio": "Rembrandt lo pintó en 1656, el año de su bancarrota, cuando el inventario de sus bienes se subastó en Ámsterdam. Es una de las obras más luminosas y apacibles de toda su carrera.",
+        "anio": 1656,
+        "fecha": "1656"
+      },
+      {
+        "title": "Jacob y Raquel en el pozo",
+        "artist": "François Lemoyne (1720)",
+        "meta": "Óleo sobre lienzo | Colección Motais de Narbonne, Francia",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Raquel",
+        "snippet": "Génesis 29: Jacob llega huyendo, ve a Raquel junto al pozo, aparta él solo la piedra que cubre la boca y rompe a llorar.",
+        "analysis": "Lemoyne pinta el instante anterior al reconocimiento: Jacob, recién llegado de Harán, se inclina hacia la muchacha que guía el rebaño, y ella todavía no sabe quién es. La luz cae sobre los hombros de Raquel y sobre el brocal, dejando el resto en una penumbra dorada de fondo teatral. El gesto de Jacob —el brazo tendido, el cuerpo aún en movimiento— conserva la urgencia del viajero que acaba de llegar.",
+        "history": "El pasaje es el único momento del Génesis en que un patriarca se enamora a primera vista, y trae consigo el episodio más largo de servidumbre del libro: catorce años de trabajo por Raquel, con el engaño de Labán y la sustitución por Lía de por medio. Es también un eco invertido de Génesis 24, donde otro encuentro junto a un pozo —Eliezer y Rebeca, ya en esta colección— fija a la esposa del padre de Jacob.",
+        "bio": "François Lemoyne (1688–1737) fue primer pintor de Luis XV y decorador del salón de Hércules en Versalles. Se suicidó a los cuarenta y ocho años, poco después de terminar aquel techo, agotado por el encargo.",
+        "anio": 1720,
+        "fecha": "1720"
+      },
+      {
+        "title": "José interpreta los sueños del faraón",
+        "artist": "Jörg Breu el Joven (c. 1534–1547)",
+        "meta": "Temple de cola sobre lienzo | 171,8 × 145,4 cm | Metropolitan Museum of Art, Nueva York (89.15.20)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Jos%C3%A9_(patriarca)",
+        "snippet": "Génesis 41: siete vacas gordas, siete flacas, siete espigas llenas y siete secas. El sueño que saca a José de la cárcel y lo pone a gobernar Egipto.",
+        "analysis": "Breu despliega la escena como una crónica: el faraón entronizado escucha, la corte se agolpa, y en segundo plano aparecen dibujados los propios sueños —las vacas saliendo del Nilo, las espigas—, de modo que la interpretación y lo interpretado conviven en la misma superficie. La técnica, temple de cola sobre lienzo, era propia de las telas pintadas alemanas del Renacimiento tardío: barata, ligera, pensada para colgarse como tapiz, y muy frágil, lo que hace rara su supervivencia.",
+        "history": "El pasaje es el gozne de la historia de José: de esclavo y preso pasa a segundo del reino, y la previsión de las siete vacas flacas es lo que llevará a sus hermanos a Egipto a pedir grano — el reencuentro que cierra el Génesis. Es, además, el primer relato de gestión de una crisis alimentaria de la literatura occidental.",
+        "bio": "Jörg Breu el Joven (c. 1510–1547) trabajó en Augsburgo, entonces la ciudad más rica del Imperio, heredando el taller de su padre. Murió a los treinta y siete años.",
+        "anio": 1534,
+        "fecha": "1534"
+      },
+      {
+        "title": "Adán y Eva (Soumaya)",
+        "artist": "Lucas Cranach el Viejo (c. 1531)",
+        "meta": "Óleo sobre tabla | Museo Soumaya, Ciudad de México",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Museo_Soumaya",
+        "snippet": "El mismo asunto que Cranach pintó decenas de veces, aquí en formato vertical y a ochenta megapíxeles. La obra de esta colección que está más cerca de casa.",
+        "analysis": "Adán y Eva ocupan una tabla estrecha y alta, de pie a ambos lados del árbol, con la serpiente enroscada arriba y el ciervo y el león acechando al fondo. El formato vertical comprime la escena y obliga a los cuerpos a esa verticalidad alargada que es la firma de Cranach: hombros estrechos, caderas altas, piernas larguísimas. Eva sostiene ya la manzana y mira al espectador, no a Adán — un detalle que convierte al que mira en cómplice.",
+        "history": "Es una de las varias versiones que salieron del taller de Wittenberg, donde el asunto se producía casi en serie. Junto a la tabla de Praga que también está en esta colección permite ver cómo Cranach variaba el mismo esquema: allí horizontal y con el gesto de la duda, aquí vertical y con la mirada directa.",
+        "bio": "Se conserva en el Museo Soumaya de Ciudad de México, la mayor colección de arte europeo antiguo de América Latina. Es, con diferencia, la obra de la colección expuesta más cerca de casa.",
+        "anio": 1531,
+        "fecha": "1531"
+      },
+      {
+        "title": "El Diluvio",
+        "artist": "Cristóbal de Villalpando (c. 1684–1686)",
+        "meta": "Óleo sobre lienzo | Capilla del Ochavo, Catedral de Puebla, México",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Crist%C3%B3bal_de_Villalpando",
+        "snippet": "El octavo diluvio de esta colección, y el único pintado en América: un maestro novohispano resolviendo el cataclismo con el color y el vértigo del barroco mexicano.",
+        "analysis": "Villalpando organiza la catástrofe en diagonales ascendentes y disuelve los contornos en una pincelada suelta y luminosa, muy distinta del tenebrismo español del que partía. Las figuras se amontonan en el primer plano trepando a las rocas mientras el agua sube, y el arca queda relegada al fondo — la misma decisión narrativa que tomó Miguel Ángel en la Sixtina, con la que abre esta colección. El color, sin embargo, no se parece a nada europeo: rosas, verdes ácidos y azules que son marca de la escuela mexicana del XVII.",
+        "history": "Forma parte del ciclo de la Capilla del Ochavo de la Catedral de Puebla, un espacio octogonal que Villalpando decoró en los años ochenta del siglo XVII. Su presencia aquí cambia el equilibrio de la colección: el Diluvio era ya el episodio más representado —Miguel Ángel, Turner, van Scorel, Watts, Danby, Cole, Poussin—, todos europeos. Este es el primero pintado al otro lado del Atlántico.",
+        "bio": "Cristóbal de Villalpando (c. 1649–1714) fue el pintor más importante del barroco novohispano y autor de la cúpula de la capilla de los Reyes de Puebla y de los enormes lienzos de la sacristía de la Catedral de México. Trabajó a una escala y con una libertad cromática que no tienen equivalente en la España de su tiempo.",
+        "anio": 1684,
+        "fecha": "1684"
       }
     ];
     BOOKS.genesis.groups = [
@@ -1505,6 +1903,64 @@
           "src": "./Génesis/31b_El_Invierno_o_El_Diluvio_Detalle_Nicolas_Poussin_1664.jpg",
           "title": "El invierno o El Diluvio (detalle) — Nicolas Poussin"
         }
+      ],
+      [
+        {
+          "src": "./Génesis/32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg",
+          "title": "La embriaguez de Noé — Giovanni Bellini (c. 1515)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg",
+          "title": "El encuentro de Abraham y Melquisedec — Peter Paul Rubens (1625)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg",
+          "title": "Sinagoga de Dura Europos, muro oeste — Siria (244-245 d.C.)"
+        },
+        {
+          "src": "./Génesis/34b_El_Sacrificio_de_Isaac_Panel_Dura_Europos_Siria_244.jpg",
+          "title": "El nicho de la Torá con el sacrificio de Isaac — fotografía de la excavación de Yale (1933-1934)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg",
+          "title": "José acusado por la mujer de Putifar — Rembrandt y taller (1655)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg",
+          "title": "Jacob bendice a los hijos de José — Rembrandt (1656)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg",
+          "title": "Jacob y Raquel en el pozo — François Lemoyne (1720)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg",
+          "title": "José interpreta los sueños del faraón — Jörg Breu el Joven (c. 1534-47)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/39_Adan_y_Eva_Lucas_Cranach_Museo_Soumaya_1531.jpg",
+          "title": "Adán y Eva — Lucas Cranach el Viejo (c. 1531)"
+        }
+      ],
+      [
+        {
+          "src": "./Génesis/40_El_Diluvio_Cristobal_de_Villalpando_1684.jpg",
+          "title": "El Diluvio — Cristóbal de Villalpando (c. 1684-86)"
+        }
       ]
     ];
 
@@ -1517,7 +1973,9 @@
         "snippet": "El objeto que obligó a reescribir la historia de la literatura: el relato del Diluvio mil años anterior al texto del Génesis, en once centímetros de arcilla cocida.",
         "analysis": "Un fragmento de arcilla del tamaño de una mano que contiene el episodio más célebre de toda la literatura mesopotámica. En él, el superviviente Utnapishtim narra a Gilgamesh cómo el dios Ea le advirtió en secreto a través de un muro de cañas que construyera una nave, cómo embarcó en ella «la semilla de todo ser viviente», cómo la tormenta duró seis días y siete noches hasta que «toda la humanidad había vuelto a ser arcilla», y cómo la nave encalló en el monte Nimush. Desde allí soltó sucesivamente una paloma, una golondrina y un cuervo; solo el cuervo no regresó, señal de que las aguas habían bajado. Los paralelismos con Génesis 6-9 son tan literales —la nave calafateada con betún, las aves exploradoras, el sacrificio final cuyo aroma atrae a los dioses— que la lectura de esta tablilla transformó de raíz el estudio comparado del texto bíblico.",
         "history": "El 3 de diciembre de 1872, George Smith, un grabador de billetes autodidacta que trabajaba clasificando fragmentos en el British Museum, descifró estas líneas y comprendió lo que tenía delante. Según la crónica de sus colegas, se levantó de la mesa y comenzó a desvestirse de pura excitación. La conferencia que pronunció ese mismo mes ante la Society of Biblical Archaeology, con el primer ministro Gladstone entre el público, provocó una conmoción teológica en toda Europa. El museo financió de inmediato una expedición a Nínive para buscar las líneas que faltaban, y Smith —con una fortuna difícil de creer— las encontró.",
-        "bio": "La tablilla procede de la biblioteca que Asurbanipal reunió en Nínive, cerca de la actual Mosul. La ciudad fue arrasada en 612 a.C. y el incendio que destruyó el palacio coció la arcilla de las tablillas, conservándolas precisamente al destruirlo todo lo demás. La versión estándar de la epopeya se atribuye al exorcista Sîn-lēqi-unninni, que hacia 1200 a.C. compiló y reelaboró poemas sumerios sobre Bilgamesh muy anteriores."
+        "bio": "La tablilla procede de la biblioteca que Asurbanipal reunió en Nínive, cerca de la actual Mosul. La ciudad fue arrasada en 612 a.C. y el incendio que destruyó el palacio coció la arcilla de las tablillas, conservándolas precisamente al destruirlo todo lo demás. La versión estándar de la epopeya se atribuye al exorcista Sîn-lēqi-unninni, que hacia 1200 a.C. compiló y reelaboró poemas sumerios sobre Bilgamesh muy anteriores.",
+        "anio": -650,
+        "fecha": "650 a.C."
       },
       {
         "title": "El héroe dominando un león",
@@ -1527,7 +1985,9 @@
         "snippet": "Un coloso de cuatro metros y medio que aplasta un león contra la cadera. La imagen que el mundo moderno adoptó como el rostro de Gilgamesh.",
         "analysis": "Un héroe barbado de musculatura desmesurada estrecha contra su costado un león adulto, sujetándolo casi con desdén mientras empuña un arma curva en la mano libre. El escultor asirio resolvió la escena sin esfuerzo aparente: el león se retuerce, el hombre no. Toda la carga expresiva está en la desproporción entre la fiera —representada con enorme precisión anatómica— y la calma del cuerpo que la domina, un recurso de propaganda real que traduce en piedra la idea de que el orden humano contiene al caos animal.",
         "history": "La identificación de esta figura con Gilgamesh es tradicional y muy popular, pero los asiriólogos la consideran dudosa: hoy se prefiere el nombre neutro de «héroe dominando un león», ya que el motivo aparece repetido como guardián en las fachadas del palacio sin inscripción que lo nombre. Aun así, fue esta imagen la que fijó en el imaginario occidental el aspecto físico del rey de Uruk. Fue excavada por Paul-Émile Botta entre 1843 y 1844 en la primera gran excavación asiria de la historia, cuyos hallazgos llegaron a París en barcaza por el Tigris y el mar.",
-        "bio": "Dur-Sharrukin («la fortaleza de Sargón») fue fundada de la nada por Sargón II en 713 a.C. como capital nueva del imperio asirio. El rey murió en batalla en 705 a.C., antes de que la ciudad estuviera terminada, y la corte la abandonó de inmediato: quedó como una capital intacta y deshabitada, lo que explica la excepcional conservación de sus relieves."
+        "bio": "Dur-Sharrukin («la fortaleza de Sargón») fue fundada de la nada por Sargón II en 713 a.C. como capital nueva del imperio asirio. El rey murió en batalla en 705 a.C., antes de que la ciudad estuviera terminada, y la corte la abandonó de inmediato: quedó como una capital intacta y deshabitada, lo que explica la excepcional conservación de sus relieves.",
+        "anio": -713,
+        "fecha": "713 a.C."
       },
       {
         "title": "Gilgamesh y Huwawa",
@@ -1537,7 +1997,9 @@
         "snippet": "El combate contra el guardián del Bosque de los Cedros, modelado en barro por un artesano anónimo cuatro mil años antes de que existiera la palabra «héroe».",
         "analysis": "Una placa de terracota de producción popular —moldeada en serie, no tallada por encargo real— que representa el episodio central de la primera mitad de la epopeya: Gilgamesh y Enkidu abatiendo a Huwawa (Humbaba), el ogro que el dios Enlil puso a custodiar el Bosque de los Cedros. Estas placas baratas se vendían por millares y se colgaban en casas particulares, lo que las convierte en el testimonio más elocuente de que la historia de Gilgamesh no era literatura de élite sino cultura popular viva en la Mesopotamia del segundo milenio.",
         "history": "El episodio tiene una carga moral que la epopeya no resuelve: Huwawa suplica por su vida y Gilgamesh está a punto de perdonarlo, hasta que Enkidu le insiste en matarlo. La tala del bosque sagrado y el asesinato de su guardián son la falta por la que los dioses condenarán después a Enkidu a morir, en lo que constituye probablemente la primera reflexión conservada sobre la depredación del entorno natural como culpa.",
-        "bio": "El Bosque de los Cedros del poema se sitúa en los montes del Líbano o del Amanus, la fuente real de la madera que Mesopotamia —una llanura de barro sin piedra ni árboles— importaba a un coste enorme. La expedición mítica de Gilgamesh calca las expediciones madereras reales de los reyes sumerios y acadios."
+        "bio": "El Bosque de los Cedros del poema se sitúa en los montes del Líbano o del Amanus, la fuente real de la madera que Mesopotamia —una llanura de barro sin piedra ni árboles— importaba a un coste enorme. La expedición mítica de Gilgamesh calca las expediciones madereras reales de los reyes sumerios y acadios.",
+        "anio": -1800,
+        "fecha": "1800 a.C."
       },
       {
         "title": "La máscara de Humbaba",
@@ -1547,7 +2009,9 @@
         "snippet": "Un rostro hecho de una sola línea continua que imita las entrañas de un animal de sacrificio: el monstruo y el arte adivinatorio son la misma cosa.",
         "analysis": "El rostro del guardián del Bosque de los Cedros está modelado como un único surco enrollado sobre sí mismo, sin principio ni final visibles. No es un capricho decorativo: la epopeya describe la cara de Humbaba como un laberinto de intestinos, y los adivinos babilonios leían el porvenir en las circunvoluciones de las vísceras de los corderos sacrificados. La máscara es a la vez la imagen de un monstruo y un instrumento técnico de la hepatoscopia, la disciplina que interpretaba los pliegues de las entrañas.",
         "history": "Encontrar en el rostro del enemigo la misma forma con la que se lee el destino resume la lógica religiosa mesopotámica: lo monstruoso no es lo ajeno, sino lo que revela el orden oculto del mundo. Se conservan varios ejemplares de estas máscaras y amuletos, colgados en umbrales y puertas con función apotropaica —proteger la casa mostrando algo aún más temible que la amenaza.",
-        "bio": "Procede de Ur, en el sur de Irak. La pieza se conserva en el Museo de Sulaymaniyah, institución que en las últimas décadas ha recuperado por compra y negociación numerosas antigüedades saqueadas para evitar que salieran definitivamente del país."
+        "bio": "Procede de Ur, en el sur de Irak. La pieza se conserva en el Museo de Sulaymaniyah, institución que en las últimas décadas ha recuperado por compra y negociación numerosas antigüedades saqueadas para evitar que salieran definitivamente del país.",
+        "anio": -2004,
+        "fecha": "2004 a.C."
       },
       {
         "title": "La Tablilla del Sueño",
@@ -1557,7 +2021,9 @@
         "snippet": "Los sueños premonitorios de Gilgamesh, en una tablilla saqueada en la guerra, vendida con documentación falsa a una cadena de manualidades y devuelta a Irak en 2021.",
         "analysis": "El fragmento recoge el pasaje en que Gilgamesh relata a su madre, la diosa Ninsun, los sueños que anuncian la llegada de Enkidu: un meteorito que cae del cielo y un hacha, objetos que la ciudad entera rodea y que él abraza «como a una esposa». Ninsun los interpreta como el anuncio de un compañero que será su igual. Es uno de los episodios más singulares del poema, porque funda la amistad —y no la conquista— como motor narrativo.",
         "history": "Su historia moderna es un relato en sí mismo. Saqueada de Irak, entró en Estados Unidos con documentación de procedencia falsificada y fue adquirida en 2014 por la cadena Hobby Lobby para el Museum of the Bible de Washington por cerca de 1,7 millones de dólares. Las autoridades federales la incautaron en 2019, un tribunal ordenó su decomiso y en septiembre de 2021 fue restituida oficialmente a la República de Irak. Se ha convertido en el caso emblemático del tráfico ilícito de antigüedades mesopotámicas.",
-        "bio": "Su resolución fotográfica es menor que la del resto de la colección porque la pieza ha estado sujeta a litigio y custodia judicial, y no existen todavía campañas de digitalización de museo sobre ella."
+        "bio": "Su resolución fotográfica es menor que la del resto de la colección porque la pieza ha estado sujeta a litigio y custodia judicial, y no existen todavía campañas de digitalización de museo sobre ella.",
+        "anio": -1600,
+        "fecha": "1600 a.C."
       },
       {
         "title": "El relieve de la Reina de la Noche",
@@ -1567,7 +2033,9 @@
         "snippet": "La diosa desnuda de pies de ave, alas caídas y ojos incrustados, flanqueada por leones y búhos. Probablemente la Ishtar que Gilgamesh se atreve a rechazar.",
         "analysis": "Una mujer desnuda, frontal y perfectamente simétrica, se yergue sobre dos leones recostados y entre dos búhos. Tiene garras de rapaz en lugar de pies, alas plegadas hacia abajo —detalle que la distingue de las diosas benéficas, que las llevan extendidas— y sostiene en ambas manos la vara y el anillo, insignias del poder divino. Conserva restos del rojo intenso que cubría el cuerpo y del negro del fondo, de modo que originalmente la figura ardía sobre la oscuridad. Su identidad se discute desde hace un siglo: Ishtar, su hermana Ereshkigal, señora del inframundo, o la demonio Lilitu.",
         "history": "El vínculo con la epopeya es directo si se trata de Ishtar. En la Tablilla VI, la diosa se ofrece a Gilgamesh y él la rechaza con una enumeración despiadada de los amantes que ella ha destruido antes. Humillada, Ishtar exige a su padre Anu el Toro Celeste para arrasar Uruk, y la matanza del toro es la falta que sella la condena a muerte de Enkidu. Es uno de los pocos momentos de la literatura antigua en que un héroe rechaza a una diosa y paga por ello.",
-        "bio": "La pieza toma su nombre alternativo del marchante Sidney Burney, que la poseyó desde 1935. El British Museum la adquirió en 2003 por su 250 aniversario. Los análisis confirmaron que la arcilla y los pigmentos son antiguos, zanjando un largo debate sobre su autenticidad."
+        "bio": "La pieza toma su nombre alternativo del marchante Sidney Burney, que la poseyó desde 1935. El British Museum la adquirió en 2003 por su 250 aniversario. Los análisis confirmaron que la arcilla y los pigmentos son antiguos, zanjando un largo debate sobre su autenticidad.",
+        "anio": -1800,
+        "fecha": "1800 a.C."
       },
       {
         "title": "El Vaso de Warka",
@@ -1577,7 +2045,9 @@
         "snippet": "La primera escena narrativa de la historia del arte, tallada en la ciudad cuyas murallas la epopeya atribuye a Gilgamesh.",
         "analysis": "Un metro de alabastro dividido en tres franjas horizontales que se leen de abajo arriba como un relato: primero las aguas y las plantas, después los rebaños de ovejas y carneros, luego una procesión de hombres desnudos que portan ofrendas y, en la cima, la entrega de esos dones a la diosa Inanna ante las puertas de su templo. Es la composición narrativa continua más antigua que se conserva: alguien decidió, hace cinco mil años, que una imagen podía contar una secuencia en el tiempo y no solo mostrar una escena.",
         "history": "El vaso fue saqueado del Museo Nacional de Irak durante el asalto de abril de 2003. Cuatro meses después, tres hombres lo devolvieron en el maletero de un coche, roto en catorce fragmentos. Había sido restaurado ya en la Antigüedad —conserva grapas de reparación de hace milenios— y volvió a serlo tras su regreso. Su historia material resume la de Mesopotamia entera: destrucción, pérdida y recomposición paciente.",
-        "bio": "Uruk fue la mayor ciudad del mundo hacia 3000 a.C., con unos 40.000 habitantes y seis kilómetros de muralla. La epopeya se abre y se cierra invitando a contemplar precisamente esa muralla: es lo único que Gilgamesh, derrotado en su búsqueda de la inmortalidad, deja tras de sí."
+        "bio": "Uruk fue la mayor ciudad del mundo hacia 3000 a.C., con unos 40.000 habitantes y seis kilómetros de muralla. La epopeya se abre y se cierra invitando a contemplar precisamente esa muralla: es lo único que Gilgamesh, derrotado en su búsqueda de la inmortalidad, deja tras de sí.",
+        "anio": -3200,
+        "fecha": "3200 a.C."
       },
       {
         "title": "Lamassu, el guardián de la puerta",
@@ -1587,7 +2057,9 @@
         "snippet": "Toro alado con rostro humano y cinco patas: de frente está quieto, de perfil camina. Un truco de escultor para que el guardián nunca esté en reposo.",
         "analysis": "El lamassu combina el cuerpo de toro, las alas de águila y la cabeza humana coronada con la tiara de cuernos de la divinidad. Su rasgo más ingenioso es anatómicamente imposible: tiene cinco patas. Visto de frente, aparecen dos patas firmemente plantadas y la criatura está en reposo; visto de perfil desde el pasillo, se ven cuatro en zancada y la criatura avanza. El escultor resolvió con una sola pieza dos puntos de vista incompatibles, siglos antes de que existiera una teoría de la perspectiva.",
         "history": "Estas figuras se emplazaban por pares flanqueando las puertas para repeler a los espíritus hostiles. Varios lamassu de Nimrud y Nínive fueron destruidos con martillos neumáticos y explosivos por el Estado Islámico entre 2015 y 2016, lo que ha convertido a los ejemplares conservados en museos europeos y norteamericanos en el registro principal de un arte que ya no puede visitarse en su lugar de origen.",
-        "bio": "El mundo del que sale la epopeya de Gilgamesh es este: una arquitectura concebida como un cuerpo protegido, con umbrales vigilados por criaturas híbridas. La muralla y la puerta —lo que separa la ciudad del caos exterior— son el objeto último del orgullo del rey de Uruk."
+        "bio": "El mundo del que sale la epopeya de Gilgamesh es este: una arquitectura concebida como un cuerpo protegido, con umbrales vigilados por criaturas híbridas. La muralla y la puerta —lo que separa la ciudad del caos exterior— son el objeto último del orgullo del rey de Uruk.",
+        "anio": -713,
+        "fecha": "713 a.C."
       },
       {
         "title": "Sello cilíndrico del héroe y el toro",
@@ -1597,7 +2069,21 @@
         "snippet": "Un cilindro de piedra de pocos centímetros que, rodado sobre arcilla húmeda, imprime una escena de combate sin principio ni fin.",
         "analysis": "El motivo del héroe barbado y desnudo que lucha con un búfalo mientras un hombre-toro somete a un león es el más repetido de la glíptica acadia, y es también el repertorio visual del que se nutren las lecturas iconográficas de Gilgamesh y Enkidu. La composición está pensada para ser cíclica: al rodar el cilindro, las figuras se encadenan indefinidamente, de modo que el combate no tiene desenlace. Talladas en hueco y en negativo sobre piedra dura de pocos centímetros, estas miniaturas exigían una destreza comparable a la de la orfebrería fina.",
         "history": "El sello cilíndrico fue simultáneamente firma personal, amuleto y documento legal: se rodaba sobre el barro fresco de contratos, cartas y precintos de vasijas para autentificarlos. Era el objeto más íntimo de un mesopotámico, se llevaba colgado al cuello y acompañaba a su dueño a la tumba.",
-        "bio": "La colección de sellos de Pierpont Morgan, reunida a comienzos del siglo XX, es una de las más completas del mundo y ha sido fundamental para establecer la cronología del arte mesopotámico, ya que muchos ejemplares llevan inscrito el nombre y el oficio de su propietario."
+        "bio": "La colección de sellos de Pierpont Morgan, reunida a comienzos del siglo XX, es una de las más completas del mundo y ha sido fundamental para establecer la cronología del arte mesopotámico, ya que muchos ejemplares llevan inscrito el nombre y el oficio de su propietario.",
+        "anio": -2334,
+        "fecha": "2334 a.C."
+      },
+      {
+        "title": "La caza de leones de Asurbanipal",
+        "artist": "Palacio Norte de Nínive (c. 645 a.C.)",
+        "meta": "Relieve en alabastro | British Museum, Londres",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Cacer%C3%ADa_de_leones_de_Asurbanipal",
+        "snippet": "El relieve más admirado de todo el arte asirio, y del mismo palacio y la misma biblioteca de donde salió la Tablilla del Diluvio.",
+        "analysis": "Los leones se retuercen, se desangran y se arrastran con las patas traseras inutilizadas, y el escultor los observó con una atención anatómica que no dedicó a ningún ser humano del palacio: el rey y sus arqueros son figuras rígidas y protocolarias, mientras las fieras tienen músculo, peso y agonía. Esa asimetría es el asunto real del relieve. Los leones eran soltados desde jaulas en una arena cerrada, así que no se representa una cacería sino una ejecución ritual del caos por el rey.",
+        "history": "Procede del Palacio Norte de Nínive, el mismo edificio en cuya biblioteca apareció la Tablilla XI del Diluvio que abre esta colección. Ambos objetos fueron cocidos y conservados por el mismo incendio: el que arrasó la ciudad en 612 a.C.",
+        "bio": "Su relación con la epopeya no es de ilustración sino de mundo: el motivo del héroe que somete al león, que en esta colección aparece en el relieve de Khorsabad y en el sello acadio, alcanza aquí su forma más elaborada. Es el lenguaje visual con el que Mesopotamia pensaba la relación entre el rey, la fiera y el orden.",
+        "anio": -645,
+        "fecha": "645 a.C."
       }
     ];
     BOOKS.gilgamesh.groups = [
@@ -1666,6 +2152,12 @@
           "src": "./Gilgamesh/09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg",
           "title": "Sello cilíndrico acadio del héroe y el toro (c. 2300 a.C.)"
         }
+      ],
+      [
+        {
+          "src": "./Gilgamesh/10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg",
+          "title": "La caza de leones de Asurbanipal — Nínive (c. 645 a.C.)"
+        }
       ]
     ];
 
@@ -1678,7 +2170,9 @@
         "snippet": "Los dos mejores guerreros del ejército griego, inclinados sobre un tablero. La escena más famosa de la cerámica griega no aparece en la Ilíada: se la inventó el pintor.",
         "analysis": "Aquiles, con el yelmo puesto, y Áyax, con la cabeza descubierta, se inclinan sobre un tablero apoyando las lanzas. De sus bocas salen inscritas las palabras del juego: «tesara» (cuatro) dice Aquiles, «tria» (tres) responde Áyax. Toda la composición trabaja sobre una simetría deliberadamente rota: los escudos apoyados detrás encuadran a las dos figuras como un frontón, pero Aquiles conserva el yelmo y Áyax no, y ese único desequilibrio basta para que el ojo entienda quién domina la partida. El silencio absoluto de la escena, en un arte que solía representar combates, es lo que la ha vuelto inagotable.",
         "history": "El episodio no figura en la Ilíada ni en ningún texto conservado: es una invención del propio Exekias, o el eco de una tradición perdida. Su fuerza reside en la ironía trágica —los dos héroes se distraen con un juego mientras la guerra sigue, y ambos morirán ante Troya, Áyax por su propia mano tras enloquecer al perder las armas de Aquiles. La pieza se halló en Vulci, en Etruria: la cerámica ática de lujo se exportaba masivamente a las tumbas etruscas, y por eso los mejores vasos griegos se conservan hoy en Italia.",
-        "bio": "Exekias es el maestro indiscutible de la técnica de figuras negras, y de los poquísimos ceramistas antiguos que firmó como alfarero y como pintor a la vez. Su gama expresiva —el detalle incisivo del cabello y de los bordados de las capas, la contención psicológica de las escenas— llevó la técnica a un punto que ya no podía superarse, poco antes de que la figura roja la sustituyera."
+        "bio": "Exekias es el maestro indiscutible de la técnica de figuras negras, y de los poquísimos ceramistas antiguos que firmó como alfarero y como pintor a la vez. Su gama expresiva —el detalle incisivo del cabello y de los bordados de las capas, la contención psicológica de las escenas— llevó la técnica a un punto que ya no podía superarse, poco antes de que la figura roja la sustituyera.",
+        "anio": -540,
+        "fecha": "540 a.C."
       },
       {
         "title": "Júpiter y Tetis",
@@ -1688,7 +2182,9 @@
         "snippet": "El Canto I de la Ilíada en un solo gesto: la nereida que toca la barbilla del dios para arrancarle la promesa que costará la vida a miles de griegos.",
         "analysis": "Ingres ilustra el ruego con que arranca el poema: Tetis sube al Olimpo a pedir a Zeus que haga perder a los griegos para que Agamenón pague la humillación infligida a su hijo Aquiles. La deformación anatómica es deliberada y famosa: el brazo de Tetis carece de hueso, su cuello se alarga imposiblemente, sus dedos se derraman sobre la barba del dios como si fueran de cera. Zeus, en cambio, es un bloque frontal, hierático, casi arcaico, que no la mira. La súplica se resuelve en una diferencia de materia: lo blando que se enrosca contra lo pétreo que no cede.",
         "history": "El cuadro fue el envío final de Ingres desde la Academia de Francia en Roma y fue recibido con desconcierto y hostilidad; se le reprochó precisamente aquello que hoy se admira, las licencias anatómicas y la frialdad del conjunto. Permaneció sin vender durante años hasta que el Estado lo adquirió en 1834. La escena elegida es la bisagra de todo el poema: es esta promesa arrancada la que desencadena las derrotas griegas, la muerte de Patroclo y, en cadena, la de Héctor.",
-        "bio": "Jean-Auguste-Dominique Ingres (1780–1867), discípulo de David y campeón del clasicismo frente al romanticismo de Delacroix, sostuvo toda su vida que el dibujo era «la probidad del arte». Sus distorsiones de la figura —el cuello largo, las vértebras de más— no eran errores sino decisiones de composición, y lo convirtieron a posteriori en un antecedente reivindicado por Picasso y Matisse."
+        "bio": "Jean-Auguste-Dominique Ingres (1780–1867), discípulo de David y campeón del clasicismo frente al romanticismo de Delacroix, sostuvo toda su vida que el dibujo era «la probidad del arte». Sus distorsiones de la figura —el cuello largo, las vértebras de más— no eran errores sino decisiones de composición, y lo convirtieron a posteriori en un antecedente reivindicado por Picasso y Matisse.",
+        "anio": 1811,
+        "fecha": "1811"
       },
       {
         "title": "La cólera de Aquiles",
@@ -1698,7 +2194,9 @@
         "snippet": "Cuatro rostros, cuatro reacciones distintas al mismo horror. David pinta el instante exacto en que Aquiles descubre que la boda de Ifigenia es una mentira.",
         "analysis": "Aquiles echa mano a la espada al comprender que la boda con Ifigenia era el pretexto para llevarla al sacrificio. David resuelve el drama sin acción: los cuatro personajes están casi inmóviles y todo ocurre en las miradas. Agamenón, con el brazo extendido, detiene al héroe solo con el peso de su autoridad y sostiene la mirada; Clitemnestra observa de reojo, ya calculando la venganza que dará origen a la Orestíada; Ifigenia baja los ojos, resignada. Es una lección de composición clásica: la tensión máxima obtenida con el mínimo movimiento.",
         "history": "David lo pintó en Bruselas, en el exilio al que se vio obligado tras la caída de Napoleón por haber votado la muerte de Luis XVI. El tema, un padre que sacrifica a su hija por razón de Estado, difícilmente puede leerse al margen de esa circunstancia. El episodio pertenece a la prehistoria de la Ilíada —el sacrificio en Áulide que permite zarpar a la flota— y explica de dónde viene la desconfianza de Aquiles hacia Agamenón que estallará en el Canto I.",
-        "bio": "Jacques-Louis David (1748–1825) fue el pintor del neoclasicismo, de la Revolución francesa y después del Imperio. Diputado convencido, organizador de las fiestas revolucionarias y autor de La muerte de Marat, murió desterrado en Bruselas sin que se le permitiera regresar a Francia."
+        "bio": "Jacques-Louis David (1748–1825) fue el pintor del neoclasicismo, de la Revolución francesa y después del Imperio. Diputado convencido, organizador de las fiestas revolucionarias y autor de La muerte de Marat, murió desterrado en Bruselas sin que se le permitiera regresar a Francia.",
+        "anio": 1819,
+        "fecha": "1819"
       },
       {
         "title": "Andrómaca llorando a Héctor",
@@ -1708,7 +2206,9 @@
         "snippet": "La obra con la que David entró en la Academia: la viuda de Héctor y el niño Astianacte junto al cadáver, en el duelo más doméstico de todo el poema.",
         "analysis": "El cuerpo de Héctor yace en diagonal sobre el lecho fúnebre, iluminado con una crudeza casi anatómica, y Andrómaca se vuelve hacia el espectador con el gesto suspendido del llanto. A sus pies, el pequeño Astianacte tira de ella sin comprender. David sitúa deliberadamente las armas y el yelmo al fondo, apagados, para que el peso de la escena recaiga en lo civil y no en lo heroico: no es la muerte del mejor guerrero de Troya, es la de un marido y un padre. El espectador conoce lo que los personajes ignoran: el niño será arrojado desde las murallas cuando la ciudad caiga.",
         "history": "Fue la obra de recepción con que David ingresó en la Academia Real en 1783 y consolidó el giro del gusto francés hacia el rigor moral del neoclasicismo, en contra del rococó. El encuentro de Héctor y Andrómaca en el Canto VI, con el niño asustado por el penacho del yelmo de su padre, es el pasaje más citado de la Ilíada como contrapeso doméstico a la carnicería del campo de batalla.",
-        "bio": "David tenía treinta y cinco años al pintarlo, recién vuelto de Roma. Dos años después presentaría El juramento de los Horacios, el cuadro que definiría la estética de toda una generación europea."
+        "bio": "David tenía treinta y cinco años al pintarlo, recién vuelto de Roma. Dos años después presentaría El juramento de los Horacios, el cuadro que definiría la estética de toda una generación europea.",
+        "anio": 1783,
+        "fecha": "1783"
       },
       {
         "title": "El triunfo de Aquiles",
@@ -1718,7 +2218,9 @@
         "snippet": "Aquiles arrastra el cuerpo de Héctor ante las murallas de Troya, en un friso de más de cinco metros pintado para el palacio de la emperatriz Sissi.",
         "analysis": "Un formato apaisado extremo —más del doble de ancho que de alto— que obliga a leer la escena como un friso antiguo. Aquiles conduce el carro a galope tendido arrastrando el cadáver de Héctor atado por los tobillos, mientras sobre la muralla las mujeres troyanas levantan los brazos. La composición carga todo el movimiento hacia la derecha y deja el cuerpo ultrajado en el centro exacto, de modo que la mirada no puede evitarlo. Es el momento del poema en que el héroe cruza la línea: la profanación del cadáver es la falta que los propios dioses le reprochan.",
         "history": "Fue encargado para el Achilleion, el palacio que la emperatriz Isabel de Austria —Sissi— se hizo construir en Corfú en 1890 y que dedicó por entero a Aquiles, en quien veía la figura del héroe herido e incomprendido. Tras el asesinato de la emperatriz en 1898, el palacio fue comprado por el káiser Guillermo II, que hizo erigir en el jardín un Aquiles victorioso de ocho metros para contrarrestar el melancólico Aquiles moribundo que había elegido Sissi.",
-        "bio": "Franz von Matsch (1861–1942) formó con Gustav Klimt y su hermano Ernst la llamada «Compañía de Artistas», que decoró buena parte de los grandes edificios de la Ringstrasse vienesa. La sociedad se disolvió cuando Klimt derivó hacia la Secesión; Matsch permaneció fiel al historicismo académico."
+        "bio": "Franz von Matsch (1861–1942) formó con Gustav Klimt y su hermano Ernst la llamada «Compañía de Artistas», que decoró buena parte de los grandes edificios de la Ringstrasse vienesa. La sociedad se disolvió cuando Klimt derivó hacia la Secesión; Matsch permaneció fiel al historicismo académico.",
+        "anio": 1892,
+        "fecha": "1892"
       },
       {
         "title": "Aquiles llorando la muerte de Patroclo",
@@ -1728,7 +2230,9 @@
         "snippet": "El duelo que reorienta toda la Ilíada: Aquiles vuelve a la guerra no por Helena ni por Agamenón, sino por su amigo muerto.",
         "analysis": "Hamilton dispone el cuerpo de Patroclo tendido en horizontal, lavado y preparado por las esclavas, mientras Aquiles se arroja sobre él con los brazos abiertos en un gesto de abandono absoluto. La luz cae sobre el cadáver y deja al héroe en penumbra, invirtiendo la jerarquía habitual. El pintor construye la escena como un relieve romano —figuras alineadas en un plano poco profundo, paralelo al lienzo—, un recurso arqueológico que después haría suyo David.",
         "history": "Forma parte de un ciclo de seis grandes lienzos sobre la Ilíada que Hamilton pintó en Roma entre 1760 y 1775, difundidos por toda Europa mediante grabados que influyeron decisivamente en la formación del neoclasicismo. El episodio es el eje moral del poema: la cólera del Canto I era contra Agamenón y mantenía a Aquiles fuera del combate; la del Canto XVIII, provocada por esta muerte, lo devuelve a la batalla sabiendo que sellará su propia condena.",
-        "bio": "Gavin Hamilton (1723–1798) fue pintor, arqueólogo y marchante escocés instalado en Roma, donde excavó villas romanas y vendió antigüedades a los coleccionistas británicos que hacían el Grand Tour. Su doble condición de excavador y pintor explica el rigor arqueológico de sus composiciones."
+        "bio": "Gavin Hamilton (1723–1798) fue pintor, arqueólogo y marchante escocés instalado en Roma, donde excavó villas romanas y vendió antigüedades a los coleccionistas británicos que hacían el Grand Tour. Su doble condición de excavador y pintor explica el rigor arqueológico de sus composiciones.",
+        "anio": 1760,
+        "fecha": "1760"
       },
       {
         "title": "Príamo pide a Aquiles el cuerpo de Héctor",
@@ -1738,7 +2242,9 @@
         "snippet": "El anciano rey besa la mano del hombre que ha matado a su hijo. El final real de la Ilíada, y una de las escenas más desarmantes de la literatura.",
         "analysis": "Príamo ha cruzado de noche las líneas enemigas, solo, para arrodillarse ante Aquiles y suplicarle el cuerpo de Héctor. Ivanov elige el instante en que el rey le besa las manos «que habían matado a tantos de sus hijos», y la escena se sostiene sobre la asimetría de las posturas: el anciano doblado y el joven sentado, inmóvil, que aún no ha decidido. Lo que sigue en el poema es un llanto compartido —cada uno por sus propios muertos— y una comida en común: la Ilíada, que empieza con la palabra «cólera», termina con un funeral y con un enemigo tratado como huésped.",
         "history": "Ivanov pintó el cuadro a los veinte años como trabajo académico en San Petersburgo, y le valió la medalla de oro y la beca que lo llevaría a Italia. El pasaje del Canto XXIV es la razón por la que muchos lectores consideran la Ilíada un poema sobre la piedad y no sobre la guerra.",
-        "bio": "Alexander Ivanov (1806–1858) pasó casi toda su vida en Roma consagrado a un solo lienzo, La aparición de Cristo ante el pueblo, en el que trabajó veinte años. Murió pocas semanas después de exponerlo por fin en Rusia."
+        "bio": "Alexander Ivanov (1806–1858) pasó casi toda su vida en Roma consagrado a un solo lienzo, La aparición de Cristo ante el pueblo, en el que trabajó veinte años. Murió pocas semanas después de exponerlo por fin en Rusia.",
+        "anio": 1824,
+        "fecha": "1824"
       },
       {
         "title": "La procesión del caballo de Troya",
@@ -1748,7 +2254,9 @@
         "snippet": "La ciudad entera arrastra hacia dentro de sus propias murallas la máquina que la destruirá, en una fiesta pintada como una comedia veneciana.",
         "analysis": "Tiepolo pinta el episodio como una celebración popular: multitudes minúsculas, banderas, polvo, y el caballo alzándose desmesurado sobre la marea humana que lo empuja hacia la puerta. Es un cuadro sobre el entusiasmo colectivo y su ceguera —nadie mira hacia arriba, nadie sospecha—, y la ironía se sostiene precisamente en la ligereza festiva de la pincelada. Se conserva junto a su pareja, La construcción del caballo, de modo que las dos telas cuentan la trampa entera, de la carpintería griega a la algarabía troyana.",
         "history": "Ambas piezas son bocetos de pequeño formato para una serie mayor. El episodio no aparece en la Ilíada, que termina con el funeral de Héctor: procede de la Odisea y sobre todo de la Eneida de Virgilio, y es el complemento inevitable del ciclo troyano en la imaginación europea.",
-        "bio": "Giandomenico Tiepolo (1727–1804), hijo y principal colaborador de Giambattista, trabajó con su padre en Würzburg y en Madrid. Tras la muerte del padre desarrolló una obra propia, más irónica y popular, célebre por sus escenas de Polichinela y por una mirada mordaz sobre la Venecia en decadencia."
+        "bio": "Giandomenico Tiepolo (1727–1804), hijo y principal colaborador de Giambattista, trabajó con su padre en Würzburg y en Madrid. Tras la muerte del padre desarrolló una obra propia, más irónica y popular, célebre por sus escenas de Polichinela y por una mirada mordaz sobre la Venecia en decadencia.",
+        "anio": 1760,
+        "fecha": "1760"
       },
       {
         "title": "El juicio de Paris",
@@ -1758,7 +2266,9 @@
         "snippet": "La manzana que desencadena diez años de guerra. Rubens pintó el origen de la Ilíada como un concurso de belleza a la orilla de un bosque flamenco.",
         "analysis": "Paris, sentado a la izquierda con Mercurio, debe entregar la manzana «para la más hermosa» a Juno, Venus o Minerva. Rubens las dispone en tres cuartos, de espaldas y de frente, resolviendo de una sola vez el viejo problema académico de mostrar el desnudo desde todos los ángulos. Los atributos identifican a cada una: el pavo real de Juno, la armadura y la lechuza de Minerva, el pequeño Cupido junto a Venus. Sobre el grupo, la Discordia asoma entre nubes oscuras anunciando lo que vendrá.",
         "history": "Rubens volvió una y otra vez sobre este asunto: se conservan al menos cuatro versiones suyas, y la de la National Gallery londinense es la más temprana de las tardías. Años después pintaría otra para Felipe IV destinada a la Torre de la Parada —hoy en el Prado—, en la que la Venus es un retrato reconocible de Hélène Fourment, su segunda esposa. El episodio es el motor causal de todo el ciclo troyano: la promesa que Venus hace a Paris de darle la mujer más bella del mundo es lo que acaba poniendo a Helena en Troya.",
-        "bio": "Peter Paul Rubens (1577–1640) fue además diplomático al servicio de los Habsburgo y dirigió en Amberes el taller más productivo de Europa. Pintó esta obra ya anciano y aquejado de gota, en los últimos años de su vida."
+        "bio": "Peter Paul Rubens (1577–1640) fue además diplomático al servicio de los Habsburgo y dirigió en Amberes el taller más productivo de Europa. Pintó esta obra ya anciano y aquejado de gota, en los últimos años de su vida.",
+        "anio": 1632,
+        "fecha": "1632"
       },
       {
         "title": "La máscara de Agamenón",
@@ -1768,7 +2278,9 @@
         "snippet": "«He contemplado el rostro de Agamenón», telegrafió Schliemann. Se equivocaba por tres siglos, y aun así el nombre se quedó para siempre.",
         "analysis": "Una lámina de oro batida sobre el rostro de un difunto, con los ojos a la vez cerrados y abiertos —los párpados marcados y las pupilas incisas—, orejas recortadas aparte y un bigote de puntas levantadas. La técnica es sencilla, casi tosca, y sin embargo el resultado tiene una frontalidad hipnótica. A diferencia de las otras máscaras del mismo conjunto, más esquemáticas, esta individualiza los rasgos hasta el punto de parecer un retrato, lo que ha alimentado durante siglo y medio la sospecha de que Schliemann la retocó o la introdujo.",
         "history": "Heinrich Schliemann la desenterró en 1876 en el Círculo de Tumbas A de Micenas y anunció haber hallado la tumba de Agamenón. La datación posterior la sitúa hacia 1550-1500 a.C., unos tres siglos antes de la fecha tradicional de la guerra de Troya, de modo que no puede pertenecer al rey homérico. El nombre, sin embargo, resultó imposible de retirar. La disputa sobre su autenticidad sigue viva entre los arqueólogos.",
-        "bio": "Micenas es la «rica en oro» de Homero, y las excavaciones confirmaron esa riqueza aunque desmintieran la cronología. Lo que Schliemann demostró, pese a sus métodos destructivos y a sus anuncios precipitados, es que detrás del poema había una civilización real de la Edad del Bronce que nadie sospechaba."
+        "bio": "Micenas es la «rica en oro» de Homero, y las excavaciones confirmaron esa riqueza aunque desmintieran la cronología. Lo que Schliemann demostró, pese a sus métodos destructivos y a sus anuncios precipitados, es que detrás del poema había una civilización real de la Edad del Bronce que nadie sospechaba.",
+        "anio": -1550,
+        "fecha": "1550 a.C."
       },
       {
         "title": "La Puerta de los Leones",
@@ -1778,7 +2290,9 @@
         "snippet": "La única escultura monumental micénica que nunca llegó a enterrarse: lleva tres mil doscientos años en pie, a la vista de todos.",
         "analysis": "Sobre un dintel monolítico de unas veinte toneladas se abre un triángulo de descarga —solución constructiva que evita que el peso del muro aplaste el dintel— ocupado por dos felinos afrontados que apoyan las patas sobre un altar y flanquean una columna minoica de fuste invertido, más ancha arriba que abajo. Las cabezas, trabajadas aparte probablemente en un material más noble, se han perdido; miraban hacia el visitante que entraba. El conjunto es a la vez ingeniería y emblema heráldico, quizá el escudo de la dinastía que gobernaba la ciudadela.",
         "history": "Los muros de bloques ciclópeos que la flanquean impresionaron tanto a los griegos posteriores que estos atribuyeron su construcción a los Cíclopes, incapaces de imaginar que hombres los hubieran levantado. La puerta nunca estuvo sepultada: siguió visible durante toda la Antigüedad, la Edad Media y la época moderna, de modo que Pausanias la describió en el siglo II y los viajeros la dibujaron mucho antes de que Schliemann excavara.",
-        "bio": "Micenas domina la llanura de la Argólida desde una colina entre dos barrancos. La civilización micénica colapsó hacia 1200-1100 a.C. en el derrumbe general de la Edad del Bronce; los siglos oscuros que siguieron son los que separan los hechos que pudieron inspirar el poema de la composición de la Ilíada, hacia el siglo VIII a.C."
+        "bio": "Micenas domina la llanura de la Argólida desde una colina entre dos barrancos. La civilización micénica colapsó hacia 1200-1100 a.C. en el derrumbe general de la Edad del Bronce; los siglos oscuros que siguieron son los que separan los hechos que pudieron inspirar el poema de la composición de la Ilíada, hacia el siglo VIII a.C.",
+        "anio": -1250,
+        "fecha": "1250 a.C."
       },
       {
         "title": "El casco de colmillos de jabalí",
@@ -1788,7 +2302,9 @@
         "snippet": "La prueba material de que Homero recordaba con exactitud objetos que llevaban quinientos años sin fabricarse cuando compuso el poema.",
         "analysis": "Un casco construido con láminas cortadas de colmillos de jabalí, cosidas en hileras alternas sobre un armazón de cuero y fieltro. Hacen falta los colmillos de treinta o cuarenta animales para uno solo, lo que lo convertía en un objeto de prestigio extraordinario más que en una pieza de combate práctica. La superficie resultante, escamada y nacarada, es inconfundible.",
         "history": "Aquí reside su importancia para la lectura de la Ilíada. En el Canto X, Homero describe con detalle preciso el casco que recibe Ulises: de cuero, con hileras de blancos colmillos de jabalí a uno y otro lado. Estos cascos dejaron de fabricarse hacia el siglo XII a.C., siglos antes de que se compusiera el poema, y no se conocía ninguno hasta que la arqueología los sacó a la luz en el siglo XX. La coincidencia demostró que la tradición oral había transmitido durante medio milenio la memoria material exacta de un mundo desaparecido.",
-        "bio": "El hallazgo es uno de los argumentos centrales del debate sobre cuánto de la Ilíada es memoria histórica y cuánto invención poética. Junto a la copa de Néstor y a ciertos topónimos del Catálogo de las Naves, el casco pertenece al estrato más antiguo y verificable del poema."
+        "bio": "El hallazgo es uno de los argumentos centrales del debate sobre cuánto de la Ilíada es memoria histórica y cuánto invención poética. Junto a la copa de Néstor y a ciertos topónimos del Catálogo de las Naves, el casco pertenece al estrato más antiguo y verificable del poema.",
+        "anio": -1400,
+        "fecha": "1400 a.C."
       },
       {
         "title": "Laocoonte y sus hijos",
@@ -1798,7 +2314,9 @@
         "snippet": "El sacerdote que advirtió a Troya contra el caballo, estrangulado por serpientes. Desenterrado en 1506, cambió el rumbo del arte europeo en una tarde.",
         "analysis": "Laocoonte y sus dos hijos se retuercen atrapados por dos serpientes marinas en una composición piramidal que estalla en todas direcciones. La musculatura del torso está llevada a un punto de tensión que no existe en el cuerpo humano real: cada haz muscular se contrae a la vez, algo anatómicamente imposible, para que el dolor sea legible desde cualquier ángulo. Es la obra maestra del barroco helenístico y el manifiesto de una estética del pathos frente a la serenidad clásica.",
         "history": "Fue desenterrada en Roma en enero de 1506, en una viña junto a la Domus Aurea. Miguel Ángel acudió corriendo a verla el mismo día y su efecto sobre él fue inmediato y duradero: la torsión y la tensión muscular de la Capilla Sixtina salen de aquí. El papa Julio II la compró de inmediato y la instaló en el Belvedere, donde se convirtió en la escultura antigua más célebre y más discutida de Europa. Lessing la tomó en 1766 como eje de su tratado Laocoonte, sobre los límites entre la pintura y la poesía.",
-        "bio": "El episodio no está en la Ilíada sino en el Libro II de la Eneida: Laocoonte advierte a los troyanos de que desconfíen del caballo —«temo a los griegos incluso cuando traen regalos»— y los dioses favorables a los aqueos lo silencian enviando las serpientes. Su muerte es la señal que convence a Troya de introducir la máquina."
+        "bio": "El episodio no está en la Ilíada sino en el Libro II de la Eneida: Laocoonte advierte a los troyanos de que desconfíen del caballo —«temo a los griegos incluso cuando traen regalos»— y los dioses favorables a los aqueos lo silencian enviando las serpientes. Su muerte es la señal que convence a Troya de introducir la máquina.",
+        "anio": -40,
+        "fecha": "40 a.C."
       },
       {
         "title": "Guerrero del frontón del templo de Afaya",
@@ -1808,7 +2326,9 @@
         "snippet": "Guerreros que caen sonriendo: el momento exacto, hacia 480 a.C., en que la escultura griega aprende a expresar y todavía no se atreve.",
         "analysis": "Los dos frontones del templo representaban las expediciones griegas contra Troya, y sus figuras muestran una de las transiciones más fascinantes de la historia del arte. Los guerreros del frontón oeste, más antiguos, conservan la «sonrisa arcaica» incluso mientras mueren atravesados; los del frontón este, apenas una década posteriores, ya tienen rostros graves y cuerpos que reaccionan al dolor. En el mismo edificio conviven el arcaísmo y el severo, el antes y el después de la revolución clásica.",
         "history": "Las esculturas fueron halladas en 1811 y compradas por el príncipe heredero Luis de Baviera. Antes de instalarlas encargó su restauración al escultor danés Bertel Thorvaldsen, que completó libremente los fragmentos que faltaban según el gusto neoclásico. Aquellas adiciones se retiraron en la restauración de los años sesenta del siglo XX, y hoy las piezas se exhiben fragmentarias.",
-        "bio": "Egina es la isla que se ve desde Atenas, y sus héroes —Áyax Telamonio y Aquiles entre ellos— descienden en la genealogía mítica del rey Éaco. El templo celebraba, por tanto, la participación de la estirpe local en la guerra de Troya."
+        "bio": "Egina es la isla que se ve desde Atenas, y sus héroes —Áyax Telamonio y Aquiles entre ellos— descienden en la genealogía mítica del rey Éaco. El templo celebraba, por tanto, la participación de la estirpe local en la guerra de Troya.",
+        "anio": -500,
+        "fecha": "500 a.C."
       },
       {
         "title": "Las murallas de Troya",
@@ -1818,7 +2338,9 @@
         "snippet": "Nueve ciudades apiladas en una sola colina. Schliemann atravesó a golpe de zanja justamente la que buscaba.",
         "analysis": "Lo que hoy se ve en Hisarlik no es una ciudad sino un montículo artificial formado por la superposición de al menos nueve asentamientos a lo largo de tres milenios y medio. Los muros en talud, de mampostería cuidada, corresponden a Troya VI, el nivel más monumental y el mejor candidato a la ciudad homérica. La colina domina la entrada de los Dardanelos, y esa posición —el peaje entre el Egeo y el mar Negro— basta para explicar por qué fue destruida y reconstruida tantas veces.",
         "history": "Heinrich Schliemann excavó allí desde 1871 convencido de que la Ilíada era historia. Para llegar rápido a los niveles profundos abrió una gran trinchera norte-sur que arrasó buena parte de los estratos intermedios: destruyó, con toda probabilidad, precisamente la Troya que buscaba. El «Tesoro de Príamo» que anunció en 1873 pertenece a Troya II, mil años anterior a cualquier fecha posible para la guerra.",
-        "bio": "El yacimiento es Patrimonio de la Humanidad desde 1998. Las excavaciones posteriores, dirigidas por Manfred Korfmann desde 1988, revelaron una ciudad baja mucho más extensa de lo supuesto, lo que reabrió el debate sobre si Troya VI fue una capital capaz de sostener un asedio prolongado."
+        "bio": "El yacimiento es Patrimonio de la Humanidad desde 1998. Las excavaciones posteriores, dirigidas por Manfred Korfmann desde 1988, revelaron una ciudad baja mucho más extensa de lo supuesto, lo que reabrió el debate sobre si Troya VI fue una capital capaz de sostener un asedio prolongado.",
+        "anio": -2500,
+        "fecha": "2500 a.C."
       },
       {
         "title": "La muerte de Sarpedón",
@@ -1828,7 +2350,9 @@
         "snippet": "Canto XVI. El Sueño y la Muerte levantan el cuerpo del hijo de Zeus. La pieza de cerámica griega más famosa del mundo, y la más disputada.",
         "analysis": "Sarpedón, hijo de Zeus y rey de los licios, ha caído ante Patroclo. Hipnos y Tánatos —el Sueño y la Muerte, alados y armados— lo levantan del suelo mientras Hermes dirige la operación y dos guerreros observan. La sangre brota de las heridas en chorros dibujados con precisión; el cuerpo cuelga inerte con un peso que se percibe físicamente. Eufronio fue de los primeros en aprovechar la técnica de figuras rojas para dibujar la anatomía con líneas interiores en lugar de incisiones, y aquí musculatura, costillas y tendones se leen con una exactitud nueva en el arte griego.",
         "history": "Su historia moderna es una novela: excavada clandestinamente en Cerveteri en 1971, fue comprada por el Metropolitan de Nueva York en 1972 por un millón de dólares —precio récord entonces— con una procedencia inventada. Tras décadas de investigación de los carabinieri italianos, el museo aceptó en 2006 devolverla, y desde 2008 está en Italia. En Homero, la muerte de Sarpedón es el momento en que Zeus se plantea salvar a su propio hijo y Hera le recuerda que ni siquiera un dios puede alterar el destino.",
-        "bio": "Eufronio (activo c. 520–470 a.C.) es el maestro del grupo de los «Pioneros» de la cerámica ática. Firmó como pintor una docena de vasos y, ya mayor, como alfarero: parece que abandonó el pincel al perder vista y siguió al frente del taller."
+        "bio": "Eufronio (activo c. 520–470 a.C.) es el maestro del grupo de los «Pioneros» de la cerámica ática. Firmó como pintor una docena de vasos y, ya mayor, como alfarero: parece que abandonó el pincel al perder vista y siguió al frente del taller.",
+        "anio": -515,
+        "fecha": "515 a.C."
       },
       {
         "title": "Tetis recibe las armas de Aquiles",
@@ -1838,7 +2362,57 @@
         "snippet": "Canto XVIII. La madre baja a la fragua a encargar la armadura con la que su hijo irá a morir. En el escudo, Hefesto graba el mundo entero.",
         "analysis": "Van Dyck compone la escena sobre el contraste entre la carnación nacarada de Tetis y la penumbra rojiza de la forja: la nereida recibe de manos del dios cojo el casco y el escudo recién terminados, mientras los cíclopes trabajan al fondo. La luz procede del metal incandescente, no del cielo. Es un tema que Rubens había fijado en sus bocetos para la serie de Aquiles y que Van Dyck, su discípulo más brillante, resuelve con una elegancia más fría y aristocrática.",
         "history": "El pasaje contiene la écfrasis más famosa de la literatura: Homero dedica más de ciento treinta versos a describir las escenas que Hefesto graba en el escudo —dos ciudades, una en paz con bodas y juicios, otra en guerra; la siembra, la siega, la vendimia, una danza, y el océano rodeándolo todo—. Es decir: en mitad de un poema de guerra, el objeto que llevará al héroe a matar contiene la imagen completa de la vida civil que la guerra destruye.",
-        "bio": "Anton van Dyck (1599–1641) fue el ayudante más precoz del taller de Rubens y después el retratista de la corte de Carlos I de Inglaterra. Su manera de pintar la piel y las telas definió el retrato aristocrático europeo durante siglo y medio."
+        "bio": "Anton van Dyck (1599–1641) fue el ayudante más precoz del taller de Rubens y después el retratista de la corte de Carlos I de Inglaterra. Su manera de pintar la piel y las telas definió el retrato aristocrático europeo durante siglo y medio.",
+        "anio": 1630,
+        "fecha": "1630"
+      },
+      {
+        "title": "Aquiles y Pentesilea",
+        "artist": "Exekias (c. 530 a.C.)",
+        "meta": "Ánfora ática de figuras negras | 41 cm de altura | British Museum, Londres (1849,0518.10)",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Pentesilea",
+        "snippet": "El instante en que Aquiles mata a la reina de las amazonas y, al cruzarse sus miradas, se enamora de ella. Todo ocurre en el cruce de dos ojos pintados.",
+        "analysis": "Aquiles, con yelmo corintio calado que le oculta el rostro, clava la lanza en la garganta de Pentesilea, arrodillada. Ella alza la vista hacia él. Exekias sitúa las dos cabezas casi juntas y hace que las miradas se encuentren en el momento exacto de la muerte: la tradición cuenta que Aquiles se enamoró de la amazona justo al matarla. Es la misma mano que pintó a Aquiles y Áyax jugando a los dados, y la misma economía absoluta — dos figuras, ningún fondo, y todo el peso en un detalle mínimo.",
+        "history": "Pentesilea pertenece a la Etiópida, uno de los poemas perdidos del ciclo troyano que continuaban la Ilíada, no al texto homérico. Su combate con Aquiles fue de los episodios más pintados de la cerámica ática, y esta ánfora es su versión canónica. Ingresó en el British Museum en 1849.",
+        "bio": "Exekias firmó como alfarero y como pintor, cosa rarísima. Junto a los dados del Vaticano, esta ánfora forma la pareja de obras maestras por las que se le considera el mayor de los ceramistas griegos.",
+        "anio": -530,
+        "fecha": "530 a.C."
+      },
+      {
+        "title": "Los amores de Paris y Helena",
+        "artist": "Jacques-Louis David (1788)",
+        "meta": "Óleo sobre lienzo | 146 × 181 cm | Musée du Louvre, París",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Los_amores_de_Paris_y_Helena",
+        "snippet": "Canto III. Mientras los ejércitos se matan bajo la muralla, Paris toca la lira para Helena en una alcoba de mármol. La causa de la guerra, pintada como un idilio.",
+        "analysis": "David sitúa a la pareja en un interior arqueológicamente reconstruido —columnas jónicas, una cariátide, un lecho con patas de grifo—, todo copiado de los hallazgos de Pompeya y Herculano. Paris, semidesnudo y afeminado, sostiene la lira; Helena se apoya en él con los ojos bajos, entre resignada y ausente. La luz fría y la quietud absoluta convierten la escena amorosa en algo casi funerario, y ahí está la ironía: en el Canto III, mientras esto sucede, Menelao busca a Paris por el campo de batalla para matarlo.",
+        "history": "Fue un encargo del conde de Artois, hermano de Luis XVI y futuro Carlos X, y se expuso en el Salón de 1789, a las puertas de la Revolución. Las mismas mesas de disección arqueológica que David usó aquí para pintar la molicie aristocrática las emplearía poco después para pintar la virtud republicana. El cuadro ingresó en el Louvre tras la caída de la monarquía.",
+        "bio": "Es el tercer David de esta colección, junto a La cólera de Aquiles y Andrómaca llorando a Héctor: ningún otro pintor volvió tantas veces sobre la Ilíada, y en registros tan distintos — la furia, el duelo y la indolencia que lo causó todo.",
+        "anio": 1788,
+        "fecha": "1788"
+      },
+      {
+        "title": "Briseida llevada ante Agamenón",
+        "artist": "Giambattista Tiepolo (1757)",
+        "meta": "Fresco | 300 × 280 cm | Villa Valmarana ai Nani, Vicenza, Italia",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Briseida",
+        "snippet": "Canto I, la escena que enciende el poema entero: los heraldos se llevan a Briseida y Aquiles se retira de la guerra.",
+        "analysis": "Tiepolo pinta el agravio con la ligereza luminosa del fresco veneciano: cielos altos, telas que vuelan, escorzos vistos desde abajo. Briseida avanza entre los dos heraldos con la cabeza vuelta, y Agamenón la espera entronizado. Que un episodio de humillación se resuelva en tonos de rosa y azul pálido no es descuido, sino el lenguaje del rococó aplicado a Homero: la afrenta se representa como ceremonia.",
+        "history": "Forma parte del ciclo homérico que Tiepolo pintó en la Villa Valmarana de Vicenza en 1757, junto con salas dedicadas a Virgilio, Ariosto y Tasso. Es el cuadro que faltaba al principio de esta colección: la Ilíada arranca con la cólera de Aquiles, y esta es su causa material. El Júpiter y Tetis de Ingres, ya presente aquí, es la escena inmediatamente posterior — Tetis subiendo al Olimpo a pedir venganza por su hijo.",
+        "bio": "Giambattista Tiepolo (1696–1770) fue el último gran fresquista de la tradición veneciana. Su hijo Giandomenico, autor del Caballo de Troya de esta misma colección, trabajó a su lado en esta villa pintando las salas de la planta baja.",
+        "anio": 1757,
+        "fecha": "1757"
+      },
+      {
+        "title": "Juegos fúnebres en honor de Patroclo",
+        "artist": "Carle Vernet (1790)",
+        "meta": "Óleo sobre lienzo | 1790",
+        "wikiUrl": "https://es.wikipedia.org/wiki/Patroclo",
+        "snippet": "Canto XXIII. Tras quemar el cuerpo de su amigo, Aquiles organiza una carrera de carros. El duelo griego se celebra compitiendo.",
+        "analysis": "Vernet, especialista en caballos, aprovecha el pasaje para desplegar una carrera en escorzo: los tiros lanzados, el polvo, los aurigas inclinados. El Canto XXIII dedica más de ochocientos versos a estos juegos —carrera de carros, boxeo, lucha, tiro con arco—, un paréntesis extrañamente sereno entre la muerte de Héctor y la súplica de Príamo. Homero describe con detalle los premios de cada prueba, incluidas las disputas por el reparto.",
+        "history": "Es el episodio que explica cómo entendían los griegos el duelo: no como recogimiento sino como competición pública en honor del muerto. De estos juegos funerarios desciende, según una tradición antigua, la propia institución de los certámenes atléticos panhelénicos.",
+        "bio": "Carle Vernet (1758–1836) pertenece a una dinastía de pintores: hijo de Joseph Vernet, el marinista, y padre de Horace Vernet, el pintor de batallas. Se especializó en caballos y escenas de carreras, y esta tela es de su etapa neoclásica temprana.",
+        "anio": 1790,
+        "fecha": "1790"
       }
     ];
     BOOKS.iliada.groups = [
@@ -1959,11 +2533,55 @@
           "src": "./Ilíada/17_Tetis_Recibe_las_Armas_de_Aquiles_Anton_van_Dyck_1632.jpg",
           "title": "Tetis recibe de Hefesto las armas para Aquiles — Anton van Dyck (c. 1630-1632)"
         }
+      ],
+      [
+        {
+          "src": "./Ilíada/18_Aquiles_y_Pentesilea_Exekias_530aC.jpg",
+          "title": "Aquiles y Pentesilea — Exekias (c. 530 a.C.)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/19_Los_Amores_de_Paris_y_Helena_Jacques_Louis_David_1788.jpg",
+          "title": "Los amores de Paris y Helena — Jacques-Louis David (1788)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/20_Briseida_Llevada_ante_Agamenon_Giambattista_Tiepolo_1757.jpg",
+          "title": "Euríbates y Taltibio llevan a Briseida ante Agamenón — Giambattista Tiepolo (1757)"
+        }
+      ],
+      [
+        {
+          "src": "./Ilíada/21_Juegos_Funebres_en_Honor_de_Patroclo_Carle_Vernet_1790.jpg",
+          "title": "Juegos fúnebres en honor de Patroclo — Carle Vernet (1790)"
+        }
       ]
     ];
     /* ==== FIN DATOS GENERADOS ==== */
 
-    let currentBook = 'genesis';
+    /* ══════════════ PORTADA ══════════════
+       Reúne las obras de TODOS los libros marcados con esLibro. Añadir un libro nuevo a
+       BOOKS basta para que aparezca aquí: no hay ninguna lista escrita a mano. */
+    const librosReales = () => Object.keys(BOOKS).filter(k => BOOKS[k].esLibro);
+
+    BOOKS.inicio = {
+      tag: 'Los Tres Libros',
+      title: 'La colección',
+      sub: 'Pintura, escultura, cerámica y arqueología reunidas en torno a los libros fundacionales, en la mayor resolución que existe de cada obra.',
+      firstTab: 'inicio-gallery',
+      details: [], groups: []
+    };
+
+    librosReales().forEach(id => {
+      BOOKS[id].details.forEach((d, i) => {
+        BOOKS.inicio.details.push(Object.assign({}, d, { libro: BOOKS[id].corto, libroId: id }));
+        BOOKS.inicio.groups.push(BOOKS[id].groups[i]);
+      });
+    });
+
+    let currentBook = 'inicio';
     const bookDetails = () => BOOKS[currentBook].details;
     const bookGroups  = () => BOOKS[currentBook].groups;
 
@@ -2002,14 +2620,34 @@
     const esc = (t) => String(t == null ? '' : t)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-    function renderBookGrid(bookId) {
+    /* Criterio de orden elegido en cada libro. Las tarjetas se pintan en ese orden pero
+       conservan su índice original, de modo que el visor de zoom sigue apuntando bien. */
+    const ordenLibro = {};
+
+    function ordenarIndices(book, criterio) {
+      const n = Math.min(book.details.length, book.groups.length);
+      const idx = Array.from({ length: n }, (_, i) => i);
+      if (criterio === 'coleccion') return idx;
+      const d = i => book.details[i];
+      const sede = i => (d(i).meta || '').split('|').pop().trim();
+      const cmp = {
+        cronologia: (a, b) => (d(a).anio == null ? 9999 : d(a).anio) - (d(b).anio == null ? 9999 : d(b).anio),
+        artista:    (a, b) => d(a).artist.localeCompare(d(b).artist, 'es'),
+        titulo:     (a, b) => d(a).title.localeCompare(d(b).title, 'es'),
+        sede:       (a, b) => sede(a).localeCompare(sede(b), 'es'),
+      }[criterio] || (() => 0);
+      return idx.slice().sort((a, b) => cmp(a, b) || a - b);
+    }
+
+    function renderBookGrid(bookId, forzar) {
       const book = BOOKS[bookId];
       const grid = document.getElementById(bookId + '-grid');
       const empty = document.getElementById(bookId + '-empty');
       if (!grid) return;
 
-      // ya renderizado: no repetir trabajo en cada cambio de libro
-      if (grid.dataset.rendered === '1') return;
+      const criterio = ordenLibro[bookId] || 'coleccion';
+      // ya renderizado con el mismo orden: no repetir trabajo
+      if (!forzar && grid.dataset.rendered === criterio) return;
 
       const h = book.headings || ['Lo que hace que destaque', 'Contexto histórico', 'Procedencia'];
       const n = Math.min(book.details.length, book.groups.length);
@@ -2017,7 +2655,7 @@
       if (empty) empty.style.display = 'none';
 
       const html = [];
-      for (let i = 0; i < n; i++) {
+      ordenarIndices(book, criterio).forEach((i) => {
         const d = book.details[i];
         const views = book.groups[i];
         const wrapperId = `thumb-${bookId}-${i}`;
@@ -2041,7 +2679,7 @@
           <div class="artwork-body">
             <div>
               <div class="artwork-header-row">
-                <span class="artwork-num">OBRA ${String(i + 1).padStart(2, '0')}</span>
+                <span class="artwork-num">${criterio === 'cronologia' && d.fecha ? esc(d.fecha) : 'OBRA ' + String(i + 1).padStart(2, '0')}</span>
                 <div class="artwork-title">${esc(d.title)}</div>
                 <div class="artwork-artist">${esc(d.artist)}</div>
               </div>
@@ -2064,11 +2702,135 @@
             <div class="file-tag">${esc(main.src.split('/').pop())}</div>
           </div>
         </article>`);
-      }
+      });
 
       grid.innerHTML = html.join('\n');
-      grid.dataset.rendered = '1';
+      grid.dataset.rendered = criterio;
     }
+
+    /* ---------- banner rotatorio de la portada ---------- */
+    (function(){
+      const lienzo = document.getElementById('bannerLienzo');
+      const info = document.getElementById('bannerInfo');
+      const prog = document.getElementById('bannerProg');
+      const banner = document.getElementById('banner');
+      if (!lienzo || !BOOKS.inicio.details.length) return;
+
+      const PAUSA = 7000;
+      /* Baraja completa en vez de sorteo suelto: así no repite una obra hasta haberlas
+         mostrado todas, que es lo que se espera de un banner de museo. */
+      let baraja = [], actual = null, lamina = null, temporizador = null, t0 = 0;
+
+      function siguiente(){
+        if (!baraja.length) {
+          baraja = BOOKS.inicio.details.map((_, i) => i);
+          for (let i = baraja.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [baraja[i], baraja[j]] = [baraja[j], baraja[i]];
+          }
+          if (actual !== null && baraja[0] === actual) baraja.push(baraja.shift());
+        }
+        return baraja.shift();
+      }
+
+      function pintar(i){
+        actual = i;
+        const d = BOOKS.inicio.details[i];
+        const src = BOOKS.inicio.groups[i][0].src;
+
+        const nueva = document.createElement('div');
+        nueva.className = 'banner-lamina';
+        ['banner-fondo', 'banner-obra'].forEach(cls => {
+          const capa = document.createElement('div');
+          capa.className = cls;
+          capa.style.backgroundImage = `url("${src}")`;
+          nueva.appendChild(capa);
+        });
+        lienzo.appendChild(nueva);
+        const vieja = lamina;
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          nueva.classList.add('dentro');
+          if (vieja) {
+            vieja.classList.remove('dentro');
+            vieja.classList.add('sale');
+            setTimeout(() => vieja.remove(), 1300);
+          }
+        }));
+        lamina = nueva;
+
+        const fecha = d.fecha ? esc(d.fecha) + ' · ' : '';
+        info.innerHTML =
+          `<span class="banner-libro">${esc(d.libro)}</span>` +
+          `<h2 class="banner-titulo">${esc(d.title)}</h2>` +
+          `<p class="banner-autor">${esc(d.artist)}</p>` +
+          `<p class="banner-meta">${fecha}${esc((d.meta || '').split('|').pop().trim())}</p>` +
+          `<button class="banner-ver" type="button">Ver en detalle</button>`;
+        info.querySelector('.banner-ver').addEventListener('click', ev => {
+          ev.stopPropagation(); abrir(i);
+        });
+
+        t0 = Date.now();
+      }
+
+      function abrir(i){ currentBook = 'inicio'; openZoomForArtwork(i, 0); }
+      banner.addEventListener('click', () => { if (actual !== null) abrir(actual); });
+
+      function latido(){
+        const pasado = Date.now() - t0;
+        if (prog) prog.style.width = Math.min(100, pasado / PAUSA * 100) + '%';
+        if (pasado >= PAUSA) pintar(siguiente());
+        temporizador = requestAnimationFrame(latido);
+      }
+
+      /* Solo corre con la portada a la vista: en otra pestaña no tiene sentido gastar
+         fotogramas ni adelantar obras que nadie ve. */
+      function visible(){ return document.getElementById('inicio-gallery').classList.contains('active'); }
+      function ciclo(){
+        if (visible()) { if (!temporizador) { t0 = Date.now(); temporizador = requestAnimationFrame(latido); } }
+        else if (temporizador) { cancelAnimationFrame(temporizador); temporizador = null; }
+      }
+      setInterval(ciclo, 400);
+
+      pintar(siguiente());
+      ciclo();
+
+      /* Cifras y accesos a cada libro, generados desde BOOKS */
+      const cifras = document.getElementById('inicioCifras');
+      const libros = document.getElementById('inicioLibros');
+      if (cifras) {
+        const sedes = new Set(BOOKS.inicio.details.map(d => (d.meta || '').split('|').pop().trim()));
+        const anios = BOOKS.inicio.details.map(d => d.anio).filter(a => a != null);
+        cifras.innerHTML =
+          `<div><b>${BOOKS.inicio.details.length}</b><span>obras</span></div>` +
+          `<div><b>${librosReales().length}</b><span>libros</span></div>` +
+          `<div><b>${sedes.size}</b><span>sedes</span></div>` +
+          (anios.length ? `<div><b>${Math.abs(Math.min(...anios))} a.C.</b><span>la más antigua</span></div>` : '');
+      }
+      if (libros) {
+        libros.innerHTML = librosReales().map(id =>
+          `<button class="libro-card" type="button" data-libro="${id}"><b>${esc(BOOKS[id].corto)}</b>` +
+          `<span>${esc(BOOKS[id].sub)}</span>` +
+          `<em>${BOOKS[id].details.length} obras</em></button>`).join('');
+        libros.querySelectorAll('.libro-card').forEach(b =>
+          b.addEventListener('click', () => {
+            const btn = [...document.querySelectorAll('.book-btn')]
+              .find(x => (x.getAttribute('onclick') || '').includes(`'${b.dataset.libro}'`));
+            if (btn) switchBook(b.dataset.libro, btn);
+          }));
+      }
+    })();
+
+    /* Barras de ordenación: se activan una sola vez, para todos los libros. */
+    document.querySelectorAll('.orden-bar').forEach(bar => {
+      const libro = bar.dataset.libro;
+      bar.querySelectorAll('.orden-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          ordenLibro[libro] = btn.dataset.orden;
+          bar.querySelectorAll('.orden-btn').forEach(b => b.classList.toggle('activo', b === btn));
+          renderBookGrid(libro, true);
+        });
+      });
+    });
 
     /* CAMBIO DE LIBRO */
     function switchBook(bookId, btnElement) {

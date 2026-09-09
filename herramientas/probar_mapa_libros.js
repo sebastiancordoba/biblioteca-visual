@@ -1,6 +1,9 @@
+/* Las pruebas se ejecutan desde la raíz del repositorio, sea cual sea el directorio
+   desde el que se invoquen: antes solo funcionaban con el cwd correcto. */
+process.chdir(require('path').join(__dirname, '..'));
 /* Toggle Sedes/Libros, filtrado del mapa y fluidez del redibujado. */
 const fs=require('fs');
-const html=fs.readFileSync('los-tres-libros.html','utf8');
+const html=fs.readFileSync(require('path').join(__dirname,'..','build','los-tres-libros.html'),'utf8');
 const js=html.split('<script>')[1].split('</script>')[0];
 const noop=()=>{};const store={};const oyentes={};
 let OCULTO=true,RO=null;const cola=[];
@@ -21,7 +24,9 @@ function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{},_html:'',_tc
    const todos=(function w(n){return n.flatMap(c=>[c,...w(c.children||[])]);})(this.children);
    return todos.filter(x=>((x.getAttribute('class')||'')+' '+[...x.classList._s].join(' ')).split(/\s+/).includes(f));},
  querySelector(){return mk('x');},closest:()=>mk('x'),
- addEventListener(t,f){this._ev[t]=f;(oyentes[id]=oyentes[id]||{})[t]=f;},
+ /* Se indexa por this.id, no por el id de creación: los botones de continente nacen
+    de createElement y se les asigna el id después (mReset, mTodo). */
+ addEventListener(t,f){this._ev[t]=f;(oyentes[this.id]=oyentes[this.id]||{})[t]=f;},
  getBoundingClientRect:()=>({left:0,top:0,width:900,height:506}),dispatchEvent:noop};return el;}
 const document={getElementById:id=>{if(!store[id])store[id]=mk(id);return store[id];},
  createElement:t=>{creados++;return mk('e-'+t,t);},

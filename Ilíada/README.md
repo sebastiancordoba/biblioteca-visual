@@ -4,7 +4,7 @@ Cerámica ática, escultura helenística, arqueología de Micenas y Troya, y la 
 
 ---
 
-## 🏛️ Galería de la Colección (17 obras)
+## 🏛️ Galería de la Colección (21 obras)
 
 | N° | Obra | Autoría / Procedencia | Ubicación | Wikipedia | Archivo |
 |---|---|---|---|---|---|
@@ -25,6 +25,10 @@ Cerámica ática, escultura helenística, arqueología de Micenas y Troya, y la 
 | 15 | **Las murallas de Troya** | Hisarlik, Anatolia noroccidental | Provincia de Çanakkale, Turquía | [Wikipedia](https://es.wikipedia.org/wiki/Troya) | [`15_Murallas_de_Troya_Hisarlik_2500aC.jpg`](./15_Murallas_de_Troya_Hisarlik_2500aC.jpg) |
 | 16 | **La muerte de Sarpedón** | Eufronio, ceramista y pintor ático (c. 515 a.C.) | Museo Nacional Cerite, Cerveteri, Italia | [Wikipedia](https://es.wikipedia.org/wiki/Crat%C3%A9ra_de_Eufronio) | [`16_La_Muerte_de_Sarpedon_Cratera_de_Eufronio_515aC.jpg`](./16_La_Muerte_de_Sarpedon_Cratera_de_Eufronio_515aC.jpg) |
 | 17 | **Tetis recibe las armas de Aquiles** | Anton van Dyck (c. 1630–1632) | Bildergalerie de Sanssouci, Potsdam (GK I 7762) | [Wikipedia](https://es.wikipedia.org/wiki/Escudo_de_Aquiles) | [`17_Tetis_Recibe_las_Armas_de_Aquiles_Anton_van_Dyck_1632.jpg`](./17_Tetis_Recibe_las_Armas_de_Aquiles_Anton_van_Dyck_1632.jpg) |
+| 18 | **Aquiles y Pentesilea** | Exekias (c. 530 a.C.) | British Museum, Londres (1849,0518.10) | [Wikipedia](https://es.wikipedia.org/wiki/Pentesilea) | [`18_Aquiles_y_Pentesilea_Exekias_530aC.jpg`](./18_Aquiles_y_Pentesilea_Exekias_530aC.jpg) |
+| 19 | **Los amores de Paris y Helena** | Jacques-Louis David (1788) | Musée du Louvre, París | [Wikipedia](https://es.wikipedia.org/wiki/Los_amores_de_Paris_y_Helena) | [`19_Los_Amores_de_Paris_y_Helena_Jacques_Louis_David_1788.jpg`](./19_Los_Amores_de_Paris_y_Helena_Jacques_Louis_David_1788.jpg) |
+| 20 | **Briseida llevada ante Agamenón** | Giambattista Tiepolo (1757) | Villa Valmarana ai Nani, Vicenza, Italia | [Wikipedia](https://es.wikipedia.org/wiki/Briseida) | [`20_Briseida_Llevada_ante_Agamenon_Giambattista_Tiepolo_1757.jpg`](./20_Briseida_Llevada_ante_Agamenon_Giambattista_Tiepolo_1757.jpg) |
+| 21 | **Juegos fúnebres en honor de Patroclo** | Carle Vernet (1790) | 1790 | [Wikipedia](https://es.wikipedia.org/wiki/Patroclo) | [`21_Juegos_Funebres_en_Honor_de_Patroclo_Carle_Vernet_1790.jpg`](./21_Juegos_Funebres_en_Honor_de_Patroclo_Carle_Vernet_1790.jpg) |
 
 ---
 
@@ -460,5 +464,104 @@ El pasaje contiene la écfrasis más famosa de la literatura: Homero dedica más
 #### Autoría y Procedencia
 
 Anton van Dyck (1599–1641) fue el ayudante más precoz del taller de Rubens y después el retratista de la corte de Carlos I de Inglaterra. Su manera de pintar la piel y las telas definió el retrato aristocrático europeo durante siglo y medio.
+
+---
+
+### 18. Aquiles y Pentesilea — Exekias (c. 530 a.C.)
+
+![Aquiles y Pentesilea](./18_Aquiles_y_Pentesilea_Exekias_530aC.jpg)
+*Aquiles y Pentesilea — Exekias (c. 530 a.C.)*
+
+#### Ficha Técnica
+
+- Ánfora ática de figuras negras
+- 41 cm de altura
+- British Museum, Londres (1849,0518.10)
+
+#### Lo que hace que destaque
+
+Aquiles, con yelmo corintio calado que le oculta el rostro, clava la lanza en la garganta de Pentesilea, arrodillada. Ella alza la vista hacia él. Exekias sitúa las dos cabezas casi juntas y hace que las miradas se encuentren en el momento exacto de la muerte: la tradición cuenta que Aquiles se enamoró de la amazona justo al matarla. Es la misma mano que pintó a Aquiles y Áyax jugando a los dados, y la misma economía absoluta — dos figuras, ningún fondo, y todo el peso en un detalle mínimo.
+
+#### Contexto Histórico y Arqueológico
+
+Pentesilea pertenece a la Etiópida, uno de los poemas perdidos del ciclo troyano que continuaban la Ilíada, no al texto homérico. Su combate con Aquiles fue de los episodios más pintados de la cerámica ática, y esta ánfora es su versión canónica. Ingresó en el British Museum en 1849.
+
+#### Autoría y Procedencia
+
+Exekias firmó como alfarero y como pintor, cosa rarísima. Junto a los dados del Vaticano, esta ánfora forma la pareja de obras maestras por las que se le considera el mayor de los ceramistas griegos.
+
+---
+
+### 19. Los amores de Paris y Helena — Jacques-Louis David (1788)
+
+![Los amores de Paris y Helena](./19_Los_Amores_de_Paris_y_Helena_Jacques_Louis_David_1788.jpg)
+*Los amores de Paris y Helena — Jacques-Louis David (1788)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 146 × 181 cm
+- Musée du Louvre, París
+
+#### Lo que hace que destaque
+
+David sitúa a la pareja en un interior arqueológicamente reconstruido —columnas jónicas, una cariátide, un lecho con patas de grifo—, todo copiado de los hallazgos de Pompeya y Herculano. Paris, semidesnudo y afeminado, sostiene la lira; Helena se apoya en él con los ojos bajos, entre resignada y ausente. La luz fría y la quietud absoluta convierten la escena amorosa en algo casi funerario, y ahí está la ironía: en el Canto III, mientras esto sucede, Menelao busca a Paris por el campo de batalla para matarlo.
+
+#### Contexto Histórico y Arqueológico
+
+Fue un encargo del conde de Artois, hermano de Luis XVI y futuro Carlos X, y se expuso en el Salón de 1789, a las puertas de la Revolución. Las mismas mesas de disección arqueológica que David usó aquí para pintar la molicie aristocrática las emplearía poco después para pintar la virtud republicana. El cuadro ingresó en el Louvre tras la caída de la monarquía.
+
+#### Autoría y Procedencia
+
+Es el tercer David de esta colección, junto a La cólera de Aquiles y Andrómaca llorando a Héctor: ningún otro pintor volvió tantas veces sobre la Ilíada, y en registros tan distintos — la furia, el duelo y la indolencia que lo causó todo.
+
+---
+
+### 20. Briseida llevada ante Agamenón — Giambattista Tiepolo (1757)
+
+![Briseida llevada ante Agamenón](./20_Briseida_Llevada_ante_Agamenon_Giambattista_Tiepolo_1757.jpg)
+*Euríbates y Taltibio llevan a Briseida ante Agamenón — Giambattista Tiepolo (1757)*
+
+#### Ficha Técnica
+
+- Fresco
+- 300 × 280 cm
+- Villa Valmarana ai Nani, Vicenza, Italia
+
+#### Lo que hace que destaque
+
+Tiepolo pinta el agravio con la ligereza luminosa del fresco veneciano: cielos altos, telas que vuelan, escorzos vistos desde abajo. Briseida avanza entre los dos heraldos con la cabeza vuelta, y Agamenón la espera entronizado. Que un episodio de humillación se resuelva en tonos de rosa y azul pálido no es descuido, sino el lenguaje del rococó aplicado a Homero: la afrenta se representa como ceremonia.
+
+#### Contexto Histórico y Arqueológico
+
+Forma parte del ciclo homérico que Tiepolo pintó en la Villa Valmarana de Vicenza en 1757, junto con salas dedicadas a Virgilio, Ariosto y Tasso. Es el cuadro que faltaba al principio de esta colección: la Ilíada arranca con la cólera de Aquiles, y esta es su causa material. El Júpiter y Tetis de Ingres, ya presente aquí, es la escena inmediatamente posterior — Tetis subiendo al Olimpo a pedir venganza por su hijo.
+
+#### Autoría y Procedencia
+
+Giambattista Tiepolo (1696–1770) fue el último gran fresquista de la tradición veneciana. Su hijo Giandomenico, autor del Caballo de Troya de esta misma colección, trabajó a su lado en esta villa pintando las salas de la planta baja.
+
+---
+
+### 21. Juegos fúnebres en honor de Patroclo — Carle Vernet (1790)
+
+![Juegos fúnebres en honor de Patroclo](./21_Juegos_Funebres_en_Honor_de_Patroclo_Carle_Vernet_1790.jpg)
+*Juegos fúnebres en honor de Patroclo — Carle Vernet (1790)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 1790
+
+#### Lo que hace que destaque
+
+Vernet, especialista en caballos, aprovecha el pasaje para desplegar una carrera en escorzo: los tiros lanzados, el polvo, los aurigas inclinados. El Canto XXIII dedica más de ochocientos versos a estos juegos —carrera de carros, boxeo, lucha, tiro con arco—, un paréntesis extrañamente sereno entre la muerte de Héctor y la súplica de Príamo. Homero describe con detalle los premios de cada prueba, incluidas las disputas por el reparto.
+
+#### Contexto Histórico y Arqueológico
+
+Es el episodio que explica cómo entendían los griegos el duelo: no como recogimiento sino como competición pública en honor del muerto. De estos juegos funerarios desciende, según una tradición antigua, la propia institución de los certámenes atléticos panhelénicos.
+
+#### Autoría y Procedencia
+
+Carle Vernet (1758–1836) pertenece a una dinastía de pintores: hijo de Joseph Vernet, el marinista, y padre de Horace Vernet, el pintor de batallas. Se especializó en caballos y escenas de carreras, y esta tela es de su etapa neoclásica temprana.
 
 ---

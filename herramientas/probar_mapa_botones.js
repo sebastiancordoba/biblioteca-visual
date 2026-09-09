@@ -1,6 +1,9 @@
+/* Las pruebas se ejecutan desde la raíz del repositorio, sea cual sea el directorio
+   desde el que se invoquen: antes solo funcionaban con el cwd correcto. */
+process.chdir(require('path').join(__dirname, '..'));
 /* Prueba los botones con una animación que sí corre (rAF encolado y drenado a mano). */
 const fs=require('fs');
-const html=fs.readFileSync('los-tres-libros.html','utf8');
+const html=fs.readFileSync(require('path').join(__dirname,'..','build','los-tres-libros.html'),'utf8');
 const js=html.split('<script>')[1].split('</script>')[0];
 const noop=()=>{};const store={};const oyentes={};
 let OCULTO=true, RO=null;
@@ -18,7 +21,7 @@ function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{},innerHTML:''
  setAttribute(k,v){this._attrs[k]=v;},setAttributeNS:noop,getAttribute(k){return this._attrs[k];},
  appendChild(c){this.children.push(c);return c;},
  querySelectorAll:()=>[],querySelector:()=>mk('x'),closest:()=>mk('x'),
- addEventListener(t,f){(oyentes[id]=oyentes[id]||{})[t]=f;},
+ addEventListener(t,f){(oyentes[this.id]=oyentes[this.id]||{})[t]=f;},
  getBoundingClientRect:()=>({left:0,top:0,width:900,height:506}),dispatchEvent:noop};return el;}
 const document={getElementById:id=>{if(!store[id])store[id]=mk(id);return store[id];},
  createElement:t=>mk('e-'+t,t),createElementNS:(ns,t)=>mk('s-'+t,t),
@@ -33,7 +36,7 @@ let bad=0;const ck=(o,m)=>{console.log((o?'  ok    ':'  FALLA ')+m);if(!o)bad++;
 
 OCULTO=false; cola.length=0; RO();          // la pestaña se hace visible
 const inicial=vb().slice();
-console.log('vista inicial (Europa):', inicial.map(n=>n.toFixed(0)).join(' '));
+console.log('vista inicial (mundo):', inicial.map(n=>n.toFixed(0)).join(' '));
 console.log('oyentes registrados en los botones:',
   ['mZoomIn','mZoomOut','mReset','mTodo'].map(b=>`${b}=${oyentes[b]?Object.keys(oyentes[b]).join(','):'NINGUNO'}`).join('  '));
 
@@ -46,7 +49,10 @@ if(oyentes.mTodo&&oyentes.mTodo.click){
   const n=drenar(400);
   const tras=vb();
   console.log('   fotogramas ejecutados:',n,'· viewBox:',tras.map(x=>x.toFixed(0)).join(' '));
-  ck(tras[2]>inicial[2]*1.5,`la vista se amplía al mundo entero (ancho ${inicial[2].toFixed(0)} -> ${tras[2].toFixed(0)})`);
+  /* El mapa ya arranca en la vista del mundo, así que pulsar Mundo desde el inicio
+     no debe mover nada: lo que se comprueba es que no dé un salto espurio. */
+  ck(Math.abs(tras[2]-inicial[2])<1&&Math.abs(tras[0]-inicial[0])<1,
+    `Mundo desde el arranque no mueve la vista (ancho ${inicial[2].toFixed(0)} -> ${tras[2].toFixed(0)})`);
 }
 
 console.log('\n== botón Europa ==');
@@ -58,7 +64,12 @@ if(oyentes.mReset&&oyentes.mReset.click){
   const tras=vb();
   console.log('   fotogramas ejecutados:',n,'· viewBox:',tras.map(x=>x.toFixed(0)).join(' '));
   ck(tras[2]<antes[2]*0.9,`la vista vuelve a Europa (ancho ${antes[2].toFixed(0)} -> ${tras[2].toFixed(0)})`);
-  ck(Math.abs(tras[2]-inicial[2])<1&&Math.abs(tras[0]-inicial[0])<1,'vuelve exactamente a la vista inicial');
+  ck(tras[2]<inicial[2]*0.9,'Europa es una vista más cerrada que la inicial');
+  /* Y desde Europa, Mundo tiene que devolver exactamente el encuadre de arranque. */
+  oyentes.mTodo.click(); drenar(400);
+  const vuelta=vb();
+  ck(Math.abs(vuelta[2]-inicial[2])<1&&Math.abs(vuelta[0]-inicial[0])<1,
+    `Mundo devuelve exactamente la vista inicial (ancho ${vuelta[2].toFixed(0)})`);
 }
 console.log('\n== fronteras por nivel de acercamiento ==');
 oyentes.mReset.click(); drenar(400);

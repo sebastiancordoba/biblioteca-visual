@@ -1,19 +1,12 @@
+/* Las pruebas se ejecutan desde la raíz del repositorio, sea cual sea el directorio
+   desde el que se invoquen: antes solo funcionaban con el cwd correcto. */
+process.chdir(require('path').join(__dirname, '..'));
 /* Ejecuta renderBookGrid de verdad y comprueba el HTML resultante de cada libro. */
 const fs=require('fs');
-const html=fs.readFileSync('index.html','utf8');
+const html=fs.readFileSync(require('path').join(__dirname,'..','index.html'),'utf8');
 const js=html.split('<script>')[1].split('</script>')[0];
-const noop=()=>{};
-const grids={};                       // id -> {innerHTML, dataset}
-function mkEl(id){ return {id, dataset:{}, innerHTML:'', style:{},
-  classList:{add:noop,remove:noop,contains:()=>false,toggle:noop},
-  querySelectorAll:()=>({forEach:noop}), querySelector:()=>mkEl('x'),
-  closest:()=>mkEl('x'), addEventListener:noop, getBoundingClientRect:()=>({})}; }
-const store={};
-const document={ getElementById:(id)=>{ if(!store[id]) store[id]=mkEl(id); return store[id]; },
-  querySelectorAll:()=>({forEach:noop}), querySelector:()=>mkEl('x'), addEventListener:noop };
-const window={addEventListener:noop, scrollTo:noop};
-const {BOOKS, renderBookGrid}=new Function('document','window','requestAnimationFrame',
-  js+'\n;return {BOOKS, renderBookGrid};')(document,window,noop);
+const { noop, ejecutar } = require('./dom_falso.js');
+const { BOOKS, renderBookGrid, document } = ejecutar(html, '{BOOKS, renderBookGrid}');
 
 let fails=0;
 for(const id of Object.keys(BOOKS)){

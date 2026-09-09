@@ -4,7 +4,7 @@ Relieves asirios, sellos cilíndricos, tablillas cuneiformes y objetos de culto 
 
 ---
 
-## 🏛️ Galería de la Colección (9 obras)
+## 🏛️ Galería de la Colección (10 obras)
 
 | N° | Obra | Autoría / Procedencia | Ubicación | Wikipedia | Archivo |
 |---|---|---|---|---|---|
@@ -17,6 +17,7 @@ Relieves asirios, sellos cilíndricos, tablillas cuneiformes y objetos de culto 
 | 7 | **El Vaso de Warka** | Uruk, periodo protoliterario (c. 3200–3000 a.C.) | Museo Nacional de Irak, Bagdad | [Wikipedia](https://es.wikipedia.org/wiki/Vaso_de_Warka) | [`07_Vaso_de_Warka_Uruk_3000aC.jpg`](./07_Vaso_de_Warka_Uruk_3000aC.jpg) |
 | 8 | **Lamassu, el guardián de la puerta** | Palacio de Sargón II, Dur-Sharrukin (713 a.C.) | Museo del Louvre, París (procedente de la sala del trono de Khorsabad) | [Wikipedia](https://es.wikipedia.org/wiki/Lamassu) | [`08_Lamassu_del_Palacio_de_Sargon_II_Khorsabad_713aC.jpg`](./08_Lamassu_del_Palacio_de_Sargon_II_Khorsabad_713aC.jpg) |
 | 9 | **Sello cilíndrico del héroe y el toro** | Mesopotamia, periodo acadio (c. 2334–2154 a.C.) | Morgan Library & Museum, Nueva York | [Wikipedia](https://es.wikipedia.org/wiki/Sello_cil%C3%ADndrico) | [`09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg`](./09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg) |
+| 10 | **La caza de leones de Asurbanipal** | Palacio Norte de Nínive (c. 645 a.C.) | British Museum, Londres | [Wikipedia](https://es.wikipedia.org/wiki/Cacer%C3%ADa_de_leones_de_Asurbanipal) | [`10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg`](./10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg) |
 
 ---
 
@@ -250,5 +251,29 @@ El sello cilíndrico fue simultáneamente firma personal, amuleto y documento le
 #### Autoría y Procedencia
 
 La colección de sellos de Pierpont Morgan, reunida a comienzos del siglo XX, es una de las más completas del mundo y ha sido fundamental para establecer la cronología del arte mesopotámico, ya que muchos ejemplares llevan inscrito el nombre y el oficio de su propietario.
+
+---
+
+### 10. La caza de leones de Asurbanipal — Palacio Norte de Nínive (c. 645 a.C.)
+
+![La caza de leones de Asurbanipal](./10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg)
+*La caza de leones de Asurbanipal — Nínive (c. 645 a.C.)*
+
+#### Ficha Técnica
+
+- Relieve en alabastro
+- British Museum, Londres
+
+#### Lo que hace que destaque
+
+Los leones se retuercen, se desangran y se arrastran con las patas traseras inutilizadas, y el escultor los observó con una atención anatómica que no dedicó a ningún ser humano del palacio: el rey y sus arqueros son figuras rígidas y protocolarias, mientras las fieras tienen músculo, peso y agonía. Esa asimetría es el asunto real del relieve. Los leones eran soltados desde jaulas en una arena cerrada, así que no se representa una cacería sino una ejecución ritual del caos por el rey.
+
+#### Contexto Histórico y Arqueológico
+
+Procede del Palacio Norte de Nínive, el mismo edificio en cuya biblioteca apareció la Tablilla XI del Diluvio que abre esta colección. Ambos objetos fueron cocidos y conservados por el mismo incendio: el que arrasó la ciudad en 612 a.C.
+
+#### Autoría y Procedencia
+
+Su relación con la epopeya no es de ilustración sino de mundo: el motivo del héroe que somete al león, que en esta colección aparece en el relieve de Khorsabad y en el sello acadio, alcanza aquí su forma más elaborada. Es el lenguaje visual con el que Mesopotamia pensaba la relación entre el rey, la fiera y el orden.
 
 ---

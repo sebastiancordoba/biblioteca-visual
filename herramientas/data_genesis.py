@@ -225,3 +225,14 @@ GENESIS = GENESIS + EXTRA
 # Lote 3: obras elegidas para tapar huecos concretos del mapa de cobertura.
 from data_lote3 import GENESIS_L3
 GENESIS = GENESIS + GENESIS_L3
+
+# Lote 5: huecos del mapa de cobertura.
+from data_lote5 import GENESIS_L5
+GENESIS = GENESIS + GENESIS_L5
+
+from data_lote5 import GENESIS_L6
+GENESIS = GENESIS + GENESIS_L6
+
+# Lote 8: obras conservadas en México.
+from data_lote5 import GENESIS_L8
+GENESIS = GENESIS + GENESIS_L8

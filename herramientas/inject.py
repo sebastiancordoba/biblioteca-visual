@@ -10,6 +10,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_genesis import GENESIS
 from data_gilgamesh import GILGAMESH
 from data_iliada import ILIADA
+from cronologia import año as _anio, etiqueta as _etq
 
 ROOT = "/Users/sebastiancordoba/Library/Mobile Documents/com~apple~CloudDocs/Documents/Pinturas"
 INI = "    /* ==== DATOS GENERADOS POR inject.py — NO EDITAR A MANO ==== */"
@@ -22,8 +23,14 @@ def build(entries, folder):
                  if os.path.exists(os.path.join(ROOT, folder, f))]
         if not views:
             omitted.append(e["title"]); continue
-        details.append({k: e[k] for k in
-                        ("title","artist","meta","wikiUrl","snippet","analysis","history","bio")})
+        d = {k: e[k] for k in
+             ("title","artist","meta","wikiUrl","snippet","analysis","history","bio")}
+        # El año permite ordenar la galería cronológicamente sin recalcularlo en el navegador.
+        a = _anio(e)
+        if a is not None:
+            d["anio"] = a
+            d["fecha"] = _etq(a)
+        details.append(d)
         groups.append([{"src": f"./{folder}/{f}", "title": t} for f, t in views])
     return details, groups, omitted
 

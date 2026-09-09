@@ -22,38 +22,39 @@ propia colección. El lote de complementos corrige ese desequilibrio.
 | 1 | Elohim crea a Adán | ✓ | Blake (07) |
 | 1–2 | La creación de Adán | ✓ | Miguel Ángel (01) |
 | 2 | **La creación de Eva** | · | Miguel Ángel, Sixtina — en Commons solo a 1,3 MP, hay que ir al Vaticano |
-| 2–3 | El Edén | ✓ | El Bosco (26), Cranach (14), Durero (15) |
+| 2–3 | El Edén | ✓ | El Bosco (26), Cranach (14), Durero (15), Cranach del Museo Soumaya (39) |
 | 3 | **Pecado original y expulsión** | · | Miguel Ángel, Sixtina — solo 1,4 MP en Commons |
 | 3 | La expulsión del Paraíso | ✓ | Masaccio (02) |
 | 4 | Caín y Abel | ✓ | Tiziano (03), Cormon (06) |
 | 5 | Genealogías | — | |
-| 6–9 | El Diluvio | ✓✓ | Miguel Ángel (04), Turner (08), van Scorel (10), Watts (11), Danby (12), Cole (13) |
-| 9 | **La embriaguez de Noé** | · | Bellini. El Procaccini de 10,1 MP se descartó: su fuente en Commons es Pinterest |
+| 6–9 | El Diluvio | ✓✓ | Miguel Ángel (04), Turner (08), van Scorel (10), Watts (11), Danby (12), Cole (13), Poussin (31), Villalpando, Catedral de Puebla (40) |
+| 9 | La embriaguez de Noé | ✓ | Giovanni Bellini, Besanzón (32) |
 | 11 | La Torre de Babel | ✓ | Bruegel (05), Doré (09) |
 
 ### Historia patriarcal (Gén. 12–50) — el gran hueco
 
 | Cap. | Pasaje | Estado | Obra o candidato |
 |---|---|---|---|
-| 12 | **La llamada de Abram** | · | por buscar |
-| 14 | **Melquisedec** | · | Rubens, Dirk Bouts |
-| 15 | **La alianza** | · | por buscar |
+| 12 | **La llamada de Abram** | ✗ | el Bassano en Commons está a 0,3 MP |
+| 14 | Melquisedec | ✓ | Rubens, National Gallery of Art — **209 MP** (33) |
+| 15 | **La alianza** | · | sin candidato claro todavía |
 | 18 | La hospitalidad de Abraham | ✓ | Rubliov, *La Trinidad* (19) |
 | 19 | Destrucción de Sodoma | ✓ | John Martin (25) |
 | 19 | Lot y sus hijas | ✓ | Rubens, Schwerin (27) |
+| 22 | El sacrificio de Isaac más antiguo | ✓ | Sinagoga de Dura Europos, Siria, 244 d.C. (34) — el nicho de la Torá con la Aqedá, en la placa de la excavación de Yale de 1933-1934 (34b, 2,9 MP); la única toma en color de Commons es de 0,2 MP y se descartó |
 | 21 | Agar e Ismael | ✓ | Corot (23) |
 | 22 | El sacrificio de Isaac | ✓✓ | Caravaggio (17), Rembrandt (18) |
-| 24 | Eliezer y Rebeca | ✓ | Poussin, Louvre, 70,2 MP (28) |
+| 24 | Eliezer y Rebeca | ✓ | Poussin, Louvre, 70 MP (28) |
 | 25 | **Esaú vende la primogenitura** | · | Ter Brugghen, Matthias Stom |
 | 27 | Isaac bendice a Jacob | ✓ | Ribera, Prado (29) |
-| 28 | La escala de Jacob | ✓ | Ribera, Prado, **680 MP** (30) |
-| 29 | **Jacob y Raquel en el pozo** | · | Palma il Vecchio, William Dyce |
+| 28 | La escala de Jacob | ✓ | Ribera, Prado, **680 MP** — 30.000 × 22.691 px (30) |
+| 29 | Jacob y Raquel en el pozo | ✓ | François Lemoyne, 1720 (37) |
 | 32 | La lucha con el ángel | ✓✓ | Delacroix (20), Rembrandt (21), Gauguin (22) |
 | 37 | **José vendido por sus hermanos** | · | Overbeck, Flavitsky |
 | 37 | La túnica de José | ✓ | Velázquez (24) |
 | 39 | **José y la mujer de Putifar** | · | Rembrandt; Orazio Gentileschi (Royal Collection) |
-| 41 | **Los sueños del faraón** | · | por buscar |
-| 45 | **José se da a conocer** | · | Cornelis de Vos |
+| 41 | Los sueños del faraón | ✓ | Jörg Breu el Joven, Metropolitan (38) |
+| 45 | **José se da a conocer** | · | Cornelis de Vos — no localizado en Commons |
 | 49 | **Jacob bendice a Efraín y Manasés** | · | Rembrandt, Kassel — obra maestra tardía |
 
 ---
@@ -69,23 +70,24 @@ XVI y XVIII, que son su columna vertebral— está casi vacío.
 | *previo* | El juicio de Paris | ✓ | Rubens, National Gallery (09) |
 | *previo* | El sacrificio de Ifigenia | ✓ | David, *La cólera de Aquiles* (03) |
 | I | Tetis suplica a Zeus | ✓ | Ingres, *Júpiter y Tetis* (02) |
-| I | **Briseida arrebatada a Aquiles** | · | Giambattista Tiepolo, 5,9 MP (`Giovanni Battista Tiepolo 045.jpg`) |
-| III | **Helena en las murallas; duelo Paris–Menelao** | ✗ | el Leighton en Commons está a 0,2 MP; buscar fuera |
+| I | Briseida arrebatada a Aquiles | ✓ | Giambattista Tiepolo, Villa Valmarana (20) |
+| III | Paris y Helena | ✓ | Jacques-Louis David, Louvre (19) · *Helena en las murallas* sigue sin fuente digna |
+| XXII | **Aquiles vence a Héctor** | ✗ | el Rubens de Pau no aparece en Commons |
 | VI | Héctor y Andrómaca | ✓ | David (04), en clave de duelo posterior |
 | IX | **La embajada a Aquiles** | ✗ | Ingres, ENSBA — el gran hueco del poema, y en Commons solo a **0,8 MP**: hay que ir a la ENSBA o a la RMN |
 | X | La Dolonía (casco de jabalí) | ✓ | Casco micénico (12) |
-| XIV | **El engaño de Zeus** | · | por buscar |
+| XIV | **El engaño de Zeus** | ✗ | no localizado en Commons |
 | XVI | Aquiles llora a Patroclo | ✓ | Gavin Hamilton (06) |
-| XVI | **La muerte de Sarpedón** | ✓ | Crátera de Eufronio, 42,6 MP (16) |
-| XVIII | **Tetis y las armas de Aquiles** | ✓ | Van Dyck, Sanssouci, 75,2 MP (17) |
+| XVI | La muerte de Sarpedón | ✓ | Crátera de Eufronio, 42,6 MP (16) |
+| XVIII | Tetis y las armas de Aquiles | ✓ | Van Dyck, Sanssouci, 75,2 MP (17) |
 | XXII | El triunfo sobre Héctor | ✓ | Franz von Matsch (05) |
 | XXII | **Aquiles vence a Héctor** | · | Rubens, Pau |
-| XXIII | **Juegos fúnebres de Patroclo** | · | Carle Vernet, 1790 (5,7 MP) |
+| XXIII | Juegos fúnebres de Patroclo | ✓ | Carle Vernet, 1790 (21) |
 | XXIV | Príamo pide el cuerpo de Héctor | ✓ | Alexander Ivanov (07) |
 | *posterior* | El caballo de Troya | ✓ | Giandomenico Tiepolo (08) |
 | *posterior* | Laocoonte | ✓ | Escuela de Rodas (13) |
 | *fuera* | Aquiles y Áyax juegan a los dados | ✓ | Exekias (01) |
-| *fuera* | **Áyax y Casandra; Pentesilea** | · | cerámica ática, por buscar |
+| *fuera* | **Áyax y Casandra** | · | cerámica ática, por buscar |
 
 ### Arqueología
 

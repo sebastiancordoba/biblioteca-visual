@@ -115,6 +115,25 @@ tarjeta), que es de donde salían los descuadres de índices.
 Los ids se separan por libro (`thumb-iliada-3`, `drawer-genesis-7`) para que no choquen entre
 colecciones.
 
+### La portada
+
+La pestaña de inicio no es un libro más: `BOOKS.inicio` se **construye sola** concatenando todos
+los libros marcados con `esLibro: true`, así que al añadir un libro nuevo la portada lo recoge sin
+tocar nada. Su banner saca una obra cualquiera de cualquier libro y la releva cada siete segundos
+entrando por la derecha.
+
+Dos detalles que no son arbitrarios:
+
+- Se **baraja** la lista entera en vez de sortear cada vez, de modo que no repite una obra hasta
+  haberlas mostrado todas. Es lo que se espera de un banner de museo.
+- Cada lámina lleva **dos capas**: la misma imagen ampliada y desenfocada como fondo, y encima la
+  obra entera contenida (`background-size: contain`) desplazada a la derecha. La colección va de
+  una tablilla apaisada a un Cranach de 7374 × 10954; recortar a `cover` dejaba de algunas obras
+  poco más que una franja.
+
+El bucle solo corre con la portada a la vista: en otra pestaña no tiene sentido gastar fotogramas
+ni adelantar obras que nadie ve.
+
 ## El visor de zoom
 
 `openZoomForArtwork(grupoIdx, subVistaIdx)` abre el modal. Su comportamiento, útil al depurar:
@@ -154,6 +173,11 @@ Python 3.9 del sistema no tiene certificados CA y `urllib` falla con `CERTIFICAT
   procedencia y la lista de archivos e imágenes). **Aquí es donde se escribe una obra nueva.**
 - **`inject.py`** — vuelca esas fichas en `index.html`. Es idempotente y puede reejecutarse.
 - **`readme.py`** — regenera el `README.md` de cada libro desde las mismas fichas.
+- **`construir_artefacto.sh`** — reconstruye la versión publicable de cabo a rabo. Se detiene en el
+  primer paso que falle: antes se encadenaban silenciando la salida y un paso roto dejaba publicar
+  un intermedio caducado.
+- **`probar_todo.sh`** — pasa la batería entera. Todas las pruebas se sitúan solas en la raíz del
+  repositorio, así que se puede invocar desde cualquier directorio.
 
 Ambos generadores **solo incluyen las obras cuyas imágenes existen en disco**, de modo que se
 pueden ejecutar con una descarga a medias y la página queda coherente.
@@ -226,11 +250,25 @@ pasada: **cualquier edición manual dentro de él se pierde**.
 
 ### Sobre la verificación
 
-No hay framework de tests, pero sí dos comprobadores propios, y conviene usarlos porque el
-navegador no siempre está disponible: servir el sitio por HTTP local puede estar bloqueado según
-el entorno, y Chrome rechaza las URL `file://`. `verificar.js` y `probar_render.js` ejecutan el
-JavaScript real de la página con un DOM simulado, así que detectan tanto un error de sintaxis como
-una ruta de imagen rota o una tarjeta que no se dibuja.
+No hay framework de tests, pero sí una batería propia (`./herramientas/probar_todo.sh`), y conviene
+usarla porque el navegador no siempre está disponible: servir el sitio por HTTP local puede estar
+bloqueado según el entorno, y Chrome rechaza las URL `file://`. Las pruebas ejecutan el JavaScript
+**real** de la página con un DOM simulado, así que detectan tanto un error de sintaxis como una ruta
+de imagen rota, una tarjeta que no se dibuja o un botón del mapa sin manejador.
+
+`verificar.js`, `probar_render.js` y `probar_orden.js` leen `index.html`; el resto lee
+`build/los-tres-libros.html`, así que conviene construir antes.
+
+El DOM simulado está en **`herramientas/dom_falso.js`**, compartido. Estaba duplicado y a medias en
+cada archivo de prueba, y cada vez que la página usaba una función del DOM que el simulacro no
+tenía, la prueba se caía por el simulacro y no por un fallo real. Cuando una prueba reviente,
+**mirar primero si falta algo en el simulacro**: es la causa más frecuente con diferencia. El
+simulacro da identidad estable a `getElementById`, de modo que lo que la página construye queda
+inspeccionable después.
+
+Un detalle que ha mordido dos veces: los oyentes hay que indexarlos por **`this.id`**, no por el id
+con el que se creó el elemento. Los botones de continente nacen de `createElement` y reciben su id
+(`mReset`, `mTodo`) justo después.
 
 ## Contenido escrito
 
@@ -271,6 +309,33 @@ cambia lo que el formato obliga o lo que solo tiene sentido al compartir.
 - Se añaden tres cosas que solo existen en la versión compartida: el botón **Ver original** de cada
   obra (que abre el archivo completo en Commons), la cronología conjunta de los tres libros, y el
   mapa navegable de sedes.
+
+### Cómo se construye
+
+`./herramientas/construir_artefacto.sh` — seis pasos, en orden, deteniéndose en el primero que
+falle:
+
+| paso | qué hace |
+|---|---|
+| `previas.py` | genera las vistas previas de 900 px que se incrustan; solo trabaja sobre lo que falta o ha cambiado |
+| `build_mapa.py` | proyecta el mapa (Mercator), agrupa sedes y escribe el panel |
+| `build.py` | extrae cabecera y cuerpo del `index.html` real, añade enlaces a Commons y la cronología |
+| `build2.py` | parchea el visor y las pestañas |
+| `build3.py` | integra el mapa y las tablas de cobertura |
+| `build4.py` | estilos y deduplicación de las imágenes en el array `IMG` |
+
+Los generadores viven en **`herramientas/artefacto/`** y sus datos de partida (mapa base de Natural
+Earth, `enlaces.json`, `cob.py`) en `herramientas/artefacto/datos/`. Los intermedios van a `build/`,
+que git ignora. Todo esto estuvo un tiempo en el directorio temporal de la sesión, donde se habría
+perdido con ella: si algo del artefacto no se puede reconstruir desde el repositorio, está mal
+colocado.
+
+**Nada de anclas literales frágiles.** Los pasos localizan dónde insertar con expresiones regulares
+y un `assert`. Se llegó a ello por las malas dos veces: un `book-count">15` que se quedó obsoleto al
+llegar a 17 obras, y un `let currentBook = 'genesis'` que dejó de existir al añadir la portada. En
+ambos casos el paso falló en silencio y se publicó un intermedio caducado. Por lo mismo, **las
+cifras que se escriben en los rótulos se derivan de los datos**, nunca se copian a mano: el mapa
+anunció «34 sedes en 13 países» cuando ya iban 43 en 15.
 
 **El aviso de «estas imágenes son vistas previas» no va en la página.** Se probó y sobra: ocupa la
 cabecera con una explicación técnica antes de que se vea una sola obra, y el botón *Ver original*

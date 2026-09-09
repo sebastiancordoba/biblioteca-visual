@@ -1,6 +1,9 @@
+/* Las pruebas se ejecutan desde la raíz del repositorio, sea cual sea el directorio
+   desde el que se invoquen: antes solo funcionaban con el cwd correcto. */
+process.chdir(require('path').join(__dirname, '..'));
 /* Teclado del mapa: W A S D, + / -, 0, y que no pise al visor de obras. */
 const fs=require('fs');
-const html=fs.readFileSync('los-tres-libros.html','utf8');
+const html=fs.readFileSync(require('path').join(__dirname,'..','build','los-tres-libros.html'),'utf8');
 const js=html.split('<script>')[1].split('</script>')[0];
 const noop=()=>{};const store={};const oyDoc={};const oyWin={};
 let OCULTO=true,RO=null;const cola=[];

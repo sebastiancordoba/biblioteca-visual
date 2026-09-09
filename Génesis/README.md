@@ -6,7 +6,7 @@ abre [`../index.html`](../index.html) y elige **Génesis** en el selector de lib
 
 ---
 
-## 🎨 Galería de la Colección (31 obras)
+## 🎨 Galería de la Colección (38 obras)
 
 | N° | Obra | Artista | Ubicación | Wikipedia | Archivo de Imagen |
 |---|---|---|---|---|---|
@@ -41,6 +41,13 @@ abre [`../index.html`](../index.html) y elige **Génesis** en el selector de lib
 | 29 | **Isaac bendice a Jacob** | José de Ribera (1637) | Museo Nacional del Prado, Madrid | [Wikipedia](https://es.wikipedia.org/wiki/Isaac_y_Jacob) | [`29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg`](./29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg) |
 | 30 | **El sueño de Jacob** | José de Ribera (1639) | Museo Nacional del Prado, Madrid | [Wikipedia](https://es.wikipedia.org/wiki/El_sue%C3%B1o_de_Jacob) | [`30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg`](./30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg) |
 | 31 | **El invierno, o El Diluvio** | Nicolas Poussin (1660–1664) | Musée du Louvre, París (INV 7306) | [Wikipedia](https://es.wikipedia.org/wiki/Las_cuatro_estaciones_(Poussin)) | [`31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg`](./31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg) |
+| 32 | **La embriaguez de Noé** | Giovanni Bellini (c. 1515) | Musée des Beaux-Arts, Besanzón, Francia | [Wikipedia](https://es.wikipedia.org/wiki/Giovanni_Bellini) | [`32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg`](./32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg) |
+| 33 | **El encuentro de Abraham y Melquisedec** | Peter Paul Rubens (1625) | National Gallery of Art, Washington | [Wikipedia](https://es.wikipedia.org/wiki/Melquisedec) | [`33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg`](./33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg) |
+| 34 | **La sinagoga de Dura Europos** | Dura Europos, Siria (244–245 d.C.) | Museo Nacional de Damasco, Siria | [Wikipedia](https://es.wikipedia.org/wiki/Sinagoga_de_Dura_Europos) | [`34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg`](./34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg) |
+| 35 | **José acusado por la mujer de Putifar** | Rembrandt van Rijn y taller (1655) | National Gallery of Art, Washington | [Wikipedia](https://es.wikipedia.org/wiki/Jos%C3%A9_y_la_esposa_de_Putifar) | [`35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg`](./35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg) |
+| 36 | **Jacob bendice a los hijos de José** | Rembrandt van Rijn (1656) | Gemäldegalerie Alte Meister, Kassel, Alemania | [Wikipedia](https://en.wikipedia.org/wiki/Jacob_Blessing_the_Sons_of_Joseph) | [`36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg`](./36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg) |
+| 37 | **Jacob y Raquel en el pozo** | François Lemoyne (1720) | Colección Motais de Narbonne, Francia | [Wikipedia](https://es.wikipedia.org/wiki/Raquel) | [`37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg`](./37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg) |
+| 38 | **José interpreta los sueños del faraón** | Jörg Breu el Joven (c. 1534–1547) | Metropolitan Museum of Art, Nueva York (89.15.20) | [Wikipedia](https://es.wikipedia.org/wiki/Jos%C3%A9_(patriarca)) | [`38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg`](./38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg) |
 
 ---
 
@@ -712,6 +719,153 @@ Forma parte de Las cuatro estaciones, la serie que Poussin pintó ya anciano y c
 #### Sobre el artista
 
 Nicolas Poussin (1594–1665) murió en Roma un año después de acabar la serie. Junto a su «Eliezer y Rebeca», también en esta colección y también en el Louvre, muestra sus dos registros opuestos: la claridad serena del relato patriarcal y la desolación sin retórica del cataclismo.
+
+---
+
+### 32. La embriaguez de Noé — Giovanni Bellini (c. 1515)
+
+![La embriaguez de Noé](./32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg)
+*La embriaguez de Noé — Giovanni Bellini (c. 1515)*
+
+**Ficha técnica:** Óleo sobre lienzo | 103 × 157 cm | Musée des Beaux-Arts, Besanzón, Francia
+
+#### Lo que hace que destaque
+
+Noé yace dormido y desnudo, con la copa aún cerca y el rostro congestionado por el vino. Cam lo descubre y señala; Sem y Jafet se acercan de espaldas, con un paño extendido, para cubrirlo sin mirar. Bellini comprime a los cuatro en un primer plano casi sin fondo, de modo que el espectador queda a la misma distancia incómoda que los hijos. La carne del anciano está pintada con una veracidad implacable —flacidez, manchas, la boca entreabierta— que no busca el escarnio sino la constatación.
+
+#### Contexto histórico
+
+Es una de las últimas obras de Bellini, pintada rondando los ochenta y cinco años, y sorprende por su crudeza en un artista asociado a Vírgenes serenas. El episodio explica la maldición de Canaán, hijo de Cam, que la tradición usó durante siglos para justificar la esclavitud: uno de los pasajes del Génesis con consecuencias históricas más graves y peor leídas.
+
+#### Sobre el artista
+
+Giovanni Bellini (c. 1430–1516) fue el patriarca de la pintura veneciana y maestro de Giorgione y Tiziano —cuyo Caín y Abel abre esta misma colección—. Fue de los primeros italianos en adoptar el óleo, que le permitió las transiciones de luz y carne que aquí se ven.
+
+---
+
+### 33. El encuentro de Abraham y Melquisedec — Peter Paul Rubens (1625)
+
+![El encuentro de Abraham y Melquisedec](./33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg)
+*El encuentro de Abraham y Melquisedec — Peter Paul Rubens (1625)*
+
+**Ficha técnica:** Óleo sobre tabla (modello) | 66 × 82 cm | National Gallery of Art, Washington
+
+#### Lo que hace que destaque
+
+Melquisedec desciende una escalinata rodeado de servidores que portan panes y jarras, y Abraham, con armadura, alza la mano al recibirlos. Rubens organiza la escena en dos diagonales que se cruzan justo en el pan ofrecido, y la ilumina desde arriba a la izquierda, de modo que la comitiva sacerdotal aparece bañada en luz y el bando guerrero queda en penumbra. Es una tabla pequeña, un modello preparatorio, pintada con la soltura y la pincelada visible que Rubens reservaba para sus bocetos y que muchos prefieren a las versiones acabadas.
+
+#### Contexto histórico
+
+Melquisedec aparece en tres versículos y desaparece sin genealogía ni muerte registrada, y esa ausencia deliberada hizo que la Epístola a los Hebreos lo leyera como prefiguración de un sacerdocio eterno. El pan y el vino que ofrece se interpretaron desde muy pronto como anuncio de la eucaristía, lo que convirtió esta escena marginal en uno de los temas más pintados del Antiguo Testamento.
+
+#### Sobre el artista
+
+La imagen de esta colección procede de una digitalización excepcional: más de 200 megapíxeles para una tabla de 66 centímetros, lo que permite seguir cada pincelada del boceto.
+
+---
+
+### 34. La sinagoga de Dura Europos — Dura Europos, Siria (244–245 d.C.)
+
+![La sinagoga de Dura Europos](./34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg)
+*Sinagoga de Dura Europos, muro oeste — Siria (244-245 d.C.)*
+
+**Ficha técnica:** Pintura mural sobre yeso | sala reconstruida | Museo Nacional de Damasco, Siria
+
+#### Lo que hace que destaque
+
+El muro oeste conserva el nicho de la Torá y, encima, un panel con el sacrificio de Isaac: Abraham de espaldas, el altar, el carnero trabado en la zarza y una mano que baja del cielo. Alrededor, decenas de escenas del Éxodo, de Ezequiel y de Ester cubren la sala entera de arriba abajo. Lo excepcional no es la calidad —el dibujo es esquemático y frontal— sino su existencia: durante siglos se dio por hecho que el judaísmo antiguo no producía imágenes figurativas, y esta sala lo desmintió de golpe.
+
+#### Contexto histórico
+
+Dura Europos, ciudad de guarnición a orillas del Éufrates, fue abandonada tras el asedio persa de 256 d.C. y sepultada por la arena. Al excavarla en 1932 apareció la sinagoga casi intacta, con sus muros pintados; fue desmontada y trasladada al Museo Nacional de Damasco, donde se reconstruyó la sala completa. Es la sinagoga decorada más antigua que se conserva y el conjunto de pintura bíblica más antiguo conocido.
+
+#### Sobre el artista
+
+Su lugar en esta colección es cronológico además de temático: entre el Laocoonte (40 a.C.) y la Trinidad de Rubliov (1425) había un vacío de casi mil quinientos años, el mayor de la secuencia. Dura Europos lo parte por la mitad.
+
+---
+
+### 35. José acusado por la mujer de Putifar — Rembrandt van Rijn y taller (1655)
+
+![José acusado por la mujer de Putifar](./35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg)
+*José acusado por la mujer de Putifar — Rembrandt y taller (1655)*
+
+**Ficha técnica:** Óleo sobre lienzo | 105,7 × 97,8 cm | National Gallery of Art, Washington
+
+#### Lo que hace que destaque
+
+Casi todos los pintores eligieron el momento escabroso: la mujer agarrando el manto de José. Rembrandt elige el siguiente, el jurídico. Ella está sentada en el lecho, señalando la prenda; Putifar escucha de pie; José permanece detrás, en penumbra, sin defenderse. La composición sitúa el manto rojo en el centro luminoso, porque el manto es la única prueba y toda la escena gira alrededor de un objeto que no dice la verdad. Nadie mira a nadie a los ojos.
+
+#### Contexto histórico
+
+Existen dos versiones casi idénticas, una en Berlín y esta en Washington. El catálogo del museo la registra como obra de Rembrandt o de su taller, y la de Berlín se considera generalmente la autógrafa: una ambigüedad de atribución que sigue sin resolverse. El episodio abre la caída de José en la cárcel, de donde saldrá para interpretar los sueños del faraón.
+
+#### Sobre el artista
+
+La imagen procede de una digitalización de 280 megapíxeles de la National Gallery of Art, la de mayor resolución de toda esta colección después del Ribera del Prado.
+
+---
+
+### 36. Jacob bendice a los hijos de José — Rembrandt van Rijn (1656)
+
+![Jacob bendice a los hijos de José](./36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg)
+*Jacob bendice a los hijos de José — Rembrandt (1656)*
+
+**Ficha técnica:** Óleo sobre lienzo | 175,5 × 210,5 cm | Gemäldegalerie Alte Meister, Kassel, Alemania
+
+#### Lo que hace que destaque
+
+Jacob, incorporado en el lecho y casi ciego, posa la mano derecha sobre Efraín, el menor, en vez de sobre Manasés. José intenta corregir el gesto sujetándole el brazo; el anciano no cede. Rembrandt baña la escena en una luz dorada y cálida que borra los bordes, y sustituye el conflicto por una ternura casi doméstica: Asenat, la esposa egipcia de José, observa desde la derecha —una figura que Rembrandt añadió y que no está en el texto—.
+
+#### Contexto histórico
+
+Es el último eslabón de un patrón que recorre todo el Génesis: siempre se bendice al menor. Isaac sobre Ismael, Jacob sobre Esaú, Efraín sobre Manasés. Colgado junto al «Isaac bendice a Jacob» de Ribera que ya está en esta colección, el paralelo se ve de golpe: el mismo gesto, el mismo engaño de la primogenitura, pero aquí sin engaño ninguno — el anciano sabe perfectamente lo que hace.
+
+#### Sobre el artista
+
+Rembrandt lo pintó en 1656, el año de su bancarrota, cuando el inventario de sus bienes se subastó en Ámsterdam. Es una de las obras más luminosas y apacibles de toda su carrera.
+
+---
+
+### 37. Jacob y Raquel en el pozo — François Lemoyne (1720)
+
+![Jacob y Raquel en el pozo](./37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg)
+*Jacob y Raquel en el pozo — François Lemoyne (1720)*
+
+**Ficha técnica:** Óleo sobre lienzo | Colección Motais de Narbonne, Francia
+
+#### Lo que hace que destaque
+
+Lemoyne pinta el instante anterior al reconocimiento: Jacob, recién llegado de Harán, se inclina hacia la muchacha que guía el rebaño, y ella todavía no sabe quién es. La luz cae sobre los hombros de Raquel y sobre el brocal, dejando el resto en una penumbra dorada de fondo teatral. El gesto de Jacob —el brazo tendido, el cuerpo aún en movimiento— conserva la urgencia del viajero que acaba de llegar.
+
+#### Contexto histórico
+
+El pasaje es el único momento del Génesis en que un patriarca se enamora a primera vista, y trae consigo el episodio más largo de servidumbre del libro: catorce años de trabajo por Raquel, con el engaño de Labán y la sustitución por Lía de por medio. Es también un eco invertido de Génesis 24, donde otro encuentro junto a un pozo —Eliezer y Rebeca, ya en esta colección— fija a la esposa del padre de Jacob.
+
+#### Sobre el artista
+
+François Lemoyne (1688–1737) fue primer pintor de Luis XV y decorador del salón de Hércules en Versalles. Se suicidó a los cuarenta y ocho años, poco después de terminar aquel techo, agotado por el encargo.
+
+---
+
+### 38. José interpreta los sueños del faraón — Jörg Breu el Joven (c. 1534–1547)
+
+![José interpreta los sueños del faraón](./38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg)
+*José interpreta los sueños del faraón — Jörg Breu el Joven (c. 1534-47)*
+
+**Ficha técnica:** Temple de cola sobre lienzo | 171,8 × 145,4 cm | Metropolitan Museum of Art, Nueva York (89.15.20)
+
+#### Lo que hace que destaque
+
+Breu despliega la escena como una crónica: el faraón entronizado escucha, la corte se agolpa, y en segundo plano aparecen dibujados los propios sueños —las vacas saliendo del Nilo, las espigas—, de modo que la interpretación y lo interpretado conviven en la misma superficie. La técnica, temple de cola sobre lienzo, era propia de las telas pintadas alemanas del Renacimiento tardío: barata, ligera, pensada para colgarse como tapiz, y muy frágil, lo que hace rara su supervivencia.
+
+#### Contexto histórico
+
+El pasaje es el gozne de la historia de José: de esclavo y preso pasa a segundo del reino, y la previsión de las siete vacas flacas es lo que llevará a sus hermanos a Egipto a pedir grano — el reencuentro que cierra el Génesis. Es, además, el primer relato de gestión de una crisis alimentaria de la literatura occidental.
+
+#### Sobre el artista
+
+Jörg Breu el Joven (c. 1510–1547) trabajó en Augsburgo, entonces la ciudad más rica del Imperio, heredando el taller de su padre. Murió a los treinta y siete años.
 
 ---
 

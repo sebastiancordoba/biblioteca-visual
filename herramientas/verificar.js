@@ -1,26 +1,15 @@
+/* Las pruebas se ejecutan desde la raíz del repositorio, sea cual sea el directorio
+   desde el que se invoquen: antes solo funcionaban con el cwd correcto. */
+process.chdir(require('path').join(__dirname, '..'));
 /* Verifica index.html sin navegador: ejecuta su JS con un DOM simulado y comprueba
    los invariantes que de verdad se rompen al añadir obras.
    Uso:  node herramientas/verificar.js        (desde la raíz Pinturas/)          */
 const fs = require('fs'), path = require('path');
-const html = fs.readFileSync('index.html', 'utf8');
+const html = fs.readFileSync(require('path').join(__dirname,'..','index.html'), 'utf8');
 const js = html.split('<script>')[1].split('</script>')[0];
 
-const noop = () => {};
-const el = new Proxy({}, { get: (t, p) => {
-  if (p === 'classList') return { add: noop, remove: noop, contains: () => false, toggle: noop };
-  if (p === 'querySelectorAll') return () => ({ forEach: noop });
-  if (p === 'querySelector' || p === 'closest') return () => el;
-  if (p === 'dataset') return {};
-  if (p === 'style') return {};
-  if (p === 'getBoundingClientRect') return () => ({});
-  return noop;
-}});
-const document = { getElementById: () => el, querySelectorAll: () => ({ forEach: noop }),
-                   querySelector: () => el, addEventListener: noop };
-const window = { addEventListener: noop, scrollTo: noop };
-
-const { BOOKS } = new Function('document', 'window', 'requestAnimationFrame',
-  js + '\n;return {BOOKS};')(document, window, noop);
+const { noop, ejecutar } = require('./dom_falso.js');
+const { BOOKS, document } = ejecutar(html, '{BOOKS}');
 
 let fails = 0;
 const check = (ok, msg) => { console.log((ok ? '  ok    ' : '  FALLA ') + msg); if (!ok) fails++; };
@@ -76,6 +65,32 @@ for (const [id, b] of Object.entries(BOOKS))
     }
   }
 check(small === 0, `sin imágenes pequeñas nuevas (${Object.keys(EXCEPCIONES).length} excepciones conocidas y documentadas)`);
+
+console.log('\n== Portada ==');
+{
+  const lienzo = document.getElementById('bannerLienzo');
+  const info = document.getElementById('bannerInfo');
+  const banner = document.getElementById('banner');
+  check(lienzo.children.length === 1, `el banner pintó una lámina al arrancar (${lienzo.children.length})`);
+  const capas = (lienzo.children[0] || {}).children || [];
+  check(capas.length === 2, `la lámina lleva fondo desenfocado y obra contenida (${capas.length} capas)`);
+  const urls = capas.map(c => (/url\("(.+)"\)/.exec(c.style.backgroundImage || '') || [])[1]);
+  check(urls.length > 0 && urls.every(u => u && fs.existsSync(decodeURIComponent(u))),
+    `las capas apuntan a una imagen que existe: ${urls[0] ? urls[0].split('/').pop() : 'ninguna'}`);
+  check(/banner-titulo/.test(info.innerHTML) && /banner-ver/.test(info.innerHTML),
+    'la ficha del banner trae título y botón de detalle');
+  check((banner.oyentes.click || []).length === 1, 'el banner entero es clicable');
+  check(/obras<\/span>/.test(document.getElementById('inicioCifras').innerHTML),
+    'las cifras de la portada se generaron');
+  const tarjetas = (document.getElementById('inicioLibros').innerHTML.match(/libro-card/g) || []).length;
+  const reales = Object.values(BOOKS).filter(b => b.esLibro).length;
+  check(tarjetas === reales, `una tarjeta por libro real (${tarjetas} de ${reales})`);
+  check(BOOKS.inicio.details.length ===
+        Object.values(BOOKS).filter(b => b.esLibro).reduce((n, b) => n + b.details.length, 0),
+    'la portada reúne todas las obras de todos los libros');
+  check(BOOKS.inicio.details.every(d => d.libro && d.libroId),
+    'cada obra de la portada sabe de qué libro viene');
+}
 
 console.log('\n== Índices del marcado de Génesis (tarjetas a mano) ==');
 for (const m of html.matchAll(/swapCardThumb\('thumb-(\d+)',\s*'([^']+)',\s*this,\s*(\d+),\s*(\d+)\)/g)) {

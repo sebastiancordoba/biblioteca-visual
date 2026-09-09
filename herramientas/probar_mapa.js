@@ -1,6 +1,9 @@
+/* Las pruebas se ejecutan desde la raíz del repositorio, sea cual sea el directorio
+   desde el que se invoquen: antes solo funcionaban con el cwd correcto. */
+process.chdir(require('path').join(__dirname, '..'));
 /* Simula el ciclo real: panel oculto -> se muestra (ResizeObserver) -> arrastre -> rueda. */
 const fs=require('fs');
-const html=fs.readFileSync('los-tres-libros.html','utf8');
+const html=fs.readFileSync(require('path').join(__dirname,'..','build','los-tres-libros.html'),'utf8');
 const js=html.split('<script>')[1].split('</script>')[0];
 const noop=()=>{};const store={};const creados=[];
 let OCULTO=true, RO=null;
@@ -53,8 +56,13 @@ const desp=vb().n;
 ck(finitos(desp),'viewBox válido durante el arrastre');
 ck(desp[0]>antes[0],'el mapa se desplaza en el sentido correcto');
 ck(Math.abs(desp[2]-antes[2])<0.01,'la escala no cambia al desplazar');
-ck(creados.filter(e=>e.tag==='circle').length===0,
-   'no se reconstruyen marcadores en cada movimiento (arrastre fluido)');
+/* Reconstruir en cada fotograma era lo que hacía el arrastre a trompicones. Ahora
+   solo se redibuja cuando cambia la agrupación, cosa que sí ocurre alguna vez al
+   desplazarse (entran o salen copias del mundo), así que se mide la proporción. */
+const rehechos=creados.filter(e=>e.tag==='circle').length;
+console.log('   marcadores recreados en 25 movimientos:',rehechos);
+ck(rehechos<=marcadores*2,
+   `el arrastre no reconstruye en cada fotograma (${rehechos} nodos en 25 movimientos, ${marcadores} marcadores)`);
 oyentes.window.mouseup();
 
 console.log('\n== 4. rueda ==');
@@ -86,17 +94,23 @@ ck(copias()>=1,`se dibujan ${copias()} copias del mundo a la vez`);
 ck(sedesDibujadas()>0,'siempre hay sedes visibles durante la vuelta');
 // el desplazamiento debe ser continuo: sin saltos grandes entre fotogramas
 oyentes.mapaMarco.mousedown({button:0,clientX:400,clientY:250,preventDefault:noop});
-let prev=vb().n[0], salto=0;
+let prev=vb().n[0]; const pasos=[];
 for(let i=1;i<=300;i++){
   oyentes.window.mousemove({clientX:400-i*20,clientY:250});
   const ahora=vb().n[0];
   /* Desplazar el mundo entero es la identidad visual (el mapa se repite), así que el
      salto perceptible es la diferencia módulo el ancho del lienzo. */
   let d=Math.abs(ahora-prev)%W; if(d>W/2) d=W-d;
-  salto=Math.max(salto,d); prev=ahora;
+  pasos.push(d); prev=ahora;
 }
 oyentes.window.mouseup();
-ck(salto<40,`sin saltos visibles al cruzar la costura (máx ${salto.toFixed(1)} px de lienzo)`);
+/* El umbral es relativo al propio paso del arrastre, no un número fijo: en la vista del
+   mundo la escala es menor y los mismos 20 px de ratón recorren mucho más lienzo. Lo que
+   delata una costura es un paso que se sale de la media, no que el paso sea grande. */
+const orden=pasos.slice().sort((a,b)=>a-b);
+const tipico=orden[Math.floor(orden.length/2)], salto=orden[orden.length-1];
+ck(salto<Math.max(tipico*1.5,4),
+   `sin saltos visibles al cruzar la costura (paso típico ${tipico.toFixed(1)}, máximo ${salto.toFixed(1)} px de lienzo)`);
 
 console.log('\n== 6. límite vertical ==');
 oyentes.mapaMarco.mousedown({button:0,clientX:400,clientY:250,preventDefault:noop});

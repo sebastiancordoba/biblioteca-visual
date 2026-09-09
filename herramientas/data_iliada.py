@@ -190,3 +190,10 @@ ILIADA = [
 # Lote 3: obras elegidas para tapar huecos concretos del mapa de cobertura.
 from data_lote3 import ILIADA_L3
 ILIADA = ILIADA + ILIADA_L3
+
+# Lote 5: huecos del mapa de cobertura.
+from data_lote5 import ILIADA_L5
+ILIADA = ILIADA + ILIADA_L5
+
+from data_lote5 import ILIADA_L7
+ILIADA = ILIADA + ILIADA_L7

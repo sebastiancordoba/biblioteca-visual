@@ -114,3 +114,6 @@ GILGAMESH = [
  "bio": "La colección de sellos de Pierpont Morgan, reunida a comienzos del siglo XX, es una de las más completas del mundo y ha sido fundamental para establecer la cronología del arte mesopotámico, ya que muchos ejemplares llevan inscrito el nombre y el oficio de su propietario."
 },
 ]
+
+from data_lote5 import GILGAMESH_L6
+GILGAMESH = GILGAMESH + GILGAMESH_L6
