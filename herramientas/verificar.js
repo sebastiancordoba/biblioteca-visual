@@ -181,6 +181,29 @@ console.log('\n== Flechas del teclado en el banner ==');
   document.getElementById('inicio-gallery').classList.add('active');
 }
 
+console.log('\n== Nomenclatura de las obras ==');
+{
+  /* Una obra se llama como se llama. Cuando dos comparten título —hay dos «Adán y Eva» de
+     Cranach— la desambiguación va en el autor, la fecha y la sede, que ya se muestran
+     debajo; meterla en el título entre paréntesis inventa un nombre que no existe. Se
+     detecta comprobando que el paréntesis del título no repita nada de su propia ficha
+     técnica, que es exactamente lo que pasaba con «Adán y Eva (Soumaya)». */
+  const malos = [];
+  for (const id of Object.keys(BOOKS)) {
+    if (!BOOKS[id].esLibro) continue;
+    for (const d of BOOKS[id].details) {
+      const m = /\(([^)]+)\)\s*$/.exec(d.title || '');
+      if (!m) continue;
+      const dentro = m[1].toLowerCase();
+      const ficha = `${d.artist || ''} ${d.meta || ''}`.toLowerCase();
+      if (ficha.includes(dentro)) malos.push(`${d.title}  ←  «${m[1]}» ya está en la ficha`);
+    }
+  }
+  if (malos.length) console.log('   ' + malos.join('\n   '));
+  check(malos.length === 0,
+    'ningún título lleva entre paréntesis un desambiguador que ya está en su ficha técnica');
+}
+
 console.log('\n== Biblioteca ==');
 {
   const reales = Object.keys(BOOKS).filter(k => BOOKS[k].esLibro);

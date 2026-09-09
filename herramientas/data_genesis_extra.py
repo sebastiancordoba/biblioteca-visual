@@ -31,16 +31,18 @@ EXTRA = [
  "bio": "Alberto Durero (1471–1528), hijo de un orfebre húngaro instalado en Núremberg, fue el primer artista del norte que se pensó a sí mismo como intelectual y no como artesano. Viajó dos veces a Italia, escribió tratados sobre proporción y perspectiva, y llevó el grabado a un nivel técnico que no ha vuelto a superarse."
 },
 {
- "files": ["16_El_Anciano_de_los_Dias_William_Blake_1794.jpg"],
- "views": ["El Anciano de los Días — William Blake (1794)"],
+ "files": ["16_El_Anciano_de_los_Dias_William_Blake_British_Museum_1794.jpg",
+           "16_El_Anciano_de_los_Dias_William_Blake_1794.jpg"],
+ "views": ["El Anciano de los Días — copia D iluminada a mano, British Museum (1794)",
+           "Prueba de estado del frontispicio, sin iluminar — Yale Center for British Art"],
  "title": "El Anciano de los Días",
  "artist": "William Blake (1794)",
- "meta": "Grabado en relieve iluminado a mano | c. 23 × 17 cm | Frontispicio de «Europe: A Prophecy»",
+ "meta": "Grabado en relieve iluminado a mano y acuarela | c. 23 × 17 cm | Frontispicio de «Europe: A Prophecy», copia D | British Museum, Londres",
  "wikiUrl": "https://es.wikipedia.org/wiki/El_anciano_de_los_d%C3%ADas",
  "snippet": "Dios inclinado sobre el abismo midiendo el mundo con un compás. Para Blake, el acto de crear midiendo no es un don: es el nacimiento de la tiranía.",
  "analysis": "Urizen —el demiurgo racionalista de la mitología propia de Blake— se asoma desde un disco solar y baja el brazo para trazar los límites del mundo con un compás de agrimensor, mientras el viento le echa el cabello y la barba hacia un lado. La imagen ilustra el versículo de Proverbios «cuando trazaba un círculo sobre la faz del abismo», pero Blake invierte su sentido: para él, encerrar la creación dentro de una medida es el gesto que aprisiona la imaginación. El compás es el instrumento de Newton y de la Ilustración, y Blake lo detestaba.",
  "history": "Blake inventó para estos libros una técnica propia, el grabado en relieve iluminado: escribía e ilustraba directamente sobre la plancha con un barniz resistente al ácido, de modo que texto e imagen nacían juntos, y después coloreaba cada ejemplar a mano. Ningún ejemplar es igual a otro. Se dice que esta imagen se le apareció flotando en lo alto de la escalera de su casa en Lambeth, y que la consideró siempre su estampa preferida: en su lecho de muerte todavía estaba retocando un ejemplar.",
- "bio": "Complementa a «Elohim creando a Adán», ya presente en la colección, y completa la teología invertida de Blake: crear el mundo material y crear al hombre son, en su mitología, dos actos del mismo dios equivocado."
+ "bio": "Se muestran las dos caras del mismo grabado: la copia D del British Museum, iluminada a mano por el propio Blake con acuarela y oro, y una prueba de estado sin iluminar del Yale Center for British Art, que deja ver la plancha desnuda. Ninguna copia de Blake es igual a otra —coloreaba cada ejemplar a mano y a lo largo de décadas—, así que hablar de «el original» de esta imagen es un error: hay tantos como copias. Complementa a «Elohim creando a Adán», ya presente en la colección, y completa la teología invertida de Blake: crear el mundo material y crear al hombre son, en su mitología, dos actos del mismo dios equivocado."
 },
 {
  "files": ["17_El_Sacrificio_de_Isaac_Caravaggio_1603.jpg"],

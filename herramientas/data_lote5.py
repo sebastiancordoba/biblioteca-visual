@@ -169,7 +169,7 @@ GENESIS_L8 = [
 {
  "files": ["39_Adan_y_Eva_Lucas_Cranach_Museo_Soumaya_1531.jpg"],
  "views": ["Adán y Eva — Lucas Cranach el Viejo (c. 1531)"],
- "title": "Adán y Eva (Soumaya)",
+ "title": "Adán y Eva",
  "artist": "Lucas Cranach el Viejo (c. 1531)",
  "meta": "Óleo sobre tabla | Museo Soumaya, Ciudad de México",
  "wikiUrl": "https://es.wikipedia.org/wiki/Museo_Soumaya",

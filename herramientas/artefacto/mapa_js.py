@@ -124,7 +124,6 @@ JS = r"""
         return (corte > 8 ? t.slice(0, corte) : t.slice(0, 22)) + '…';
       };
 
-
       /* En horizontal no hay tope: el mundo se repite y se le puede dar la vuelta. Solo
          se normaliza la posición para que no crezca sin fin con el uso prolongado.
          En vertical sí hay tope: la Tierra no se repite de polo a polo. */
@@ -442,11 +441,15 @@ JS = r"""
          apelotonaban. */
       function fanSedes(cont, c){
         const n = c.sedes.length;
-        /* Si hay un museo abierto, sus obras ocupan sitio alrededor de él: el abanico de
-           museos se ensancha para que esas miniaturas no invadan a los vecinos. */
-        const abierto = c.sedes.indexOf(sedeSel);
-        const radObras = abierto >= 0 ? radioFan(obrasDe(SEDES[sedeSel]).length, 30, 34) : 0;
-        const sep = Math.max(34, radObras + 28);
+        /* Dentro del abanico de una ciudad, el museo elegido NO despliega sus obras sobre
+           el mapa. No cabe: sus miniaturas piden 123 px alrededor, y el Louvre y Orsay
+           están en la misma dirección desde el centro de París, así que no hay forma de
+           separarlos tanto sin sacar a la Biblioteca Nacional fuera del marco. Se veía en
+           la práctica: las obras del Louvre acababan por encima de los botones de
+           continente. Las obras del museo elegido salen en la lista de la derecha, que se
+           despliega al pulsarlo, y en el panel de debajo del mapa. */
+        const radObras = 0;
+        const sep = 34;
         const rad = n <= 1 ? 46 : radioFan(n, sep, 52);
 
         /* Disposición verdadera, no un círculo inventado. A la escala a la que una ciudad
@@ -470,25 +473,46 @@ JS = r"""
           return { i, ex, ey, r: Math.hypot(ex, ey) };
         });
         const orden = rumbos.slice().sort((a, b) => a.r - b.r);
-        const radioMin = Math.max(52, sep);
-        const radioMax = Math.max(radioMin,
-          Math.min(Math.min(anchoMarco(), altoMarco()) * 0.4, radioMin + 34 * (n - 1)));
+        /* Todo el reparto se calcula en PÍXELES DE PANTALLA y se convierte al final. El
+           abanico vive dentro de un grupo que a mucho zoom se agranda hasta 2,4 veces
+           (factorMarca), así que un radio de 164 unidades son 394 px reales: midiendo en
+           unidades, el abanico de París se salía del marco —la Biblioteca Nacional en la
+           esquina con el rótulo cortado, y las obras del Louvre por encima de los botones
+           de continente—. En píxeles de pantalla el marco sí acota de verdad. */
+        const fm = factorMarca(esc);
+        const radioMayor = Math.max(...c.sedes.map(i => R(obrasDe(SEDES[i]).length))) * fm;
+        const sepPx = Math.max(2 * radioMayor + 18, radObras * fm + radioMayor + 18);
+        const radioMinPx = Math.max(78, sepPx);
+        const radioMaxPx = Math.max(radioMinPx, radioMinPx + 46 * (n - 1));
+        const radioMin = radioMinPx / fm, radioMax = radioMaxPx / fm;
         const radioDe = {};
         orden.forEach((o, k) => {
           radioDe[o.i] = n <= 1 ? radioMin
             : radioMin + (radioMax - radioMin) * (k / (n - 1));
         });
 
-        /* Con todos los rumbos distintos esto separa bien; si dos museos coinciden en
-           dirección y en rango quedarían pegados, y entonces el círculo es preferible. */
         const sitio = rumbos.map(o => {
           const m = o.r || 1;
           return { x: (o.ex / m) * radioDe[o.i], y: (o.ey / m) * radioDe[o.i] };
         });
+
+        /* Ajuste al marco eje por eje. Acotar por el lado corto desperdiciaba el ancho, que
+           en un marco 16:9 es justo por donde el abanico se extiende. Al medir se cuenta
+           también el radio de las obras del museo abierto y el sitio del rótulo: lo que se
+           salía por arriba en París eran precisamente esas miniaturas. */
+        const bordeX = radObras * fm + 60, bordeY = radObras * fm + 26;
+        const maxX = Math.max(...sitio.map(p => Math.abs(p.x))) * fm + bordeX;
+        const maxY = Math.max(...sitio.map(p => Math.abs(p.y))) * fm + bordeY;
+        const cabe = Math.min(anchoMarco() * 0.46 / Math.max(maxX, 1),
+                              altoMarco()  * 0.46 / Math.max(maxY, 1), 2.6);
+        if (isFinite(cabe) && cabe > 0) sitio.forEach(p => { p.x *= cabe; p.y *= cabe; });
+
+        /* Con todos los rumbos distintos esto separa bien; si dos museos coinciden en
+           dirección y en rango quedarían pegados, y entonces el círculo es preferible. */
         let juntos = 0;
         for (let i = 0; i < n; i++)
           for (let j = i + 1; j < n; j++)
-            if (Math.hypot(sitio[i].x - sitio[j].x, sitio[i].y - sitio[j].y) < sep) juntos++;
+            if (Math.hypot(sitio[i].x - sitio[j].x, sitio[i].y - sitio[j].y) * fm < sepPx) juntos++;
         const real = n > 1 && rumbos.every(o => o.r > 0) && juntos === 0;
 
         c.sedes.forEach((idx, j) => {
@@ -504,7 +528,6 @@ JS = r"""
             sx = dx * rad; sy = dy * rad;
           }
           cont.appendChild(nodo('line', { class:'hilo hilo-sede', x1:0, y1:0, x2:sx, y2:sy, 'stroke-width':0.9 }));
-          if (sedeSel === idx) fanObras(cont, sd, sx, sy);
           const k = obrasDe(sd).length;
           const g = punto('sede sede-abanico' + (sedeSel === idx ? ' sel' : ''), sx, sy,
             k, `${sd.nombre}: ${k} obra${k>1?'s':''}`,
