@@ -43,6 +43,27 @@ const vb=()=>(store['mapaSvg'].getAttribute('viewBox')||'').split(/\s+/).map(Num
 const etiquetas=()=>sedes().flatMap(g=>g.children||[]).filter(c=>c.tag==='text'&&c._tc&&isNaN(Number(c._tc))).map(c=>c._tc);
 const obras=()=>sedes().filter(x=>tiene(x,'obra-pin')).length;
 
+console.log('== desde el mundo, un grupo de varias ciudades se acerca, no se despliega ==');
+{
+  /* El fallo: pulsar el grupo grande de Europa desplegaba veinticuatro museos repartidos
+     por todo el mapamundi en vez de volar a Europa. La tarjeta prometía «pulsa para
+     acercar» mientras el clic decidía con otra regla. */
+  oyentes.mTodo.click(); drenar(400);
+  const anchoMundo = vb()[2];
+  const gs = sedes().filter(g => tiene(g,'grupo'));
+  // el grupo con más sedes es el de Europa
+  const mayor = gs.map(g => ({ g, n: +((g.getAttribute('aria-label')||'').match(/^(\d+) sedes/)||[])[1] || 0 }))
+                  .sort((a,b) => b.n - a.n)[0];
+  console.log(`   vista de mundo: ancho ${anchoMundo.toFixed(0)} · grupo mayor con ${mayor.n} sedes`);
+  mayor.g._ev.click({ stopPropagation: noop });
+  drenar(600);
+  const despues = vb()[2];
+  const desplegados = sedes().filter(x => tiene(x,'sede-abanico')).length;
+  console.log(`   tras pulsarlo: ancho ${despues.toFixed(0)} · museos desplegados en abanico: ${desplegados}`);
+  ck(despues < anchoMundo * 0.6, `se acerca de verdad (${anchoMundo.toFixed(0)} -> ${despues.toFixed(0)})`);
+  ck(desplegados === 0, 'no despliega el abanico sobre el mapamundi');
+}
+
 console.log('== pulsar repetidamente un grupo, como haría un usuario ==');
 oyentes.mReset.click(); drenar(300);
 function gruposVista(){ return sedes().filter(g=>tiene(g,'grupo')); }
@@ -109,12 +130,21 @@ console.log('\n== dispersión: nada se pisa con nada ==');
     ck(sep > 6, `los museos del abanico no se tocan (${sep.toFixed(1)} px de holgura)`);
   }
 
-  const minis = sedes().filter(x=>tiene(x,'obra-pin')).map(centro).filter(Boolean);
-  if (minis.length > 1) {
-    const sep = minSep(minis);
-    console.log(`   ${minis.length} miniaturas · separación mínima entre bordes: ${sep.toFixed(1)} px`);
-    ck(sep > 0, `las miniaturas de la obra no se solapan (${sep.toFixed(1)} px de holgura)`);
+  /* Se mide abanico por abanico, no sobre todas las miniaturas del mapa: dos sedes
+     distintas pueden quedar cerca a cierto acercamiento y eso es densidad del mapa, no
+     un abanico mal repartido. Lo que no puede pasar es que las obras de UNA sede se
+     monten entre ellas, que era el fallo. */
+  const abanicos = store['capaSedes'].children
+    .map(m => aplanar([m]).filter(x => tiene(x,'obra-pin')).map(centro).filter(Boolean))
+    .filter(a => a.length > 1);
+  let peor = Infinity, cuantas = 0;
+  for (const a of abanicos) { peor = Math.min(peor, minSep(a)); cuantas += a.length; }
+  if (abanicos.length) {
+    console.log(`   ${abanicos.length} abanicos, ${cuantas} miniaturas · peor separación dentro de uno: ${peor.toFixed(1)} px`);
+    ck(peor > 0, `dentro de un abanico las miniaturas no se solapan (${peor.toFixed(1)} px)`);
   }
+
+  const minis = sedes().filter(x=>tiene(x,'obra-pin')).map(centro).filter(Boolean);
 
   /* Y las miniaturas del museo abierto tampoco deben invadir a los museos vecinos. */
   if (minis.length && museos.length > 1) {

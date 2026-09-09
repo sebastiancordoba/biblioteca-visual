@@ -221,21 +221,6 @@ JS = r"""
         return g;
       }
 
-      /* Ancho de vista con el que un grupo se parte en dos.
-         Lo decide el diámetro del grupo (la pareja más lejana), no la más cercana: un
-         grupo que junta Roma, Florencia y Venecia debe poder separarse aunque dos de sus
-         museos compartan ciudad. Usar la distancia mínima daba por inseparable el grupo
-         entero en cuanto dos sedes estaban pegadas. */
-      function anchoParaSeparar(idxs){
-        let dmax = 0;
-        for (let i = 0; i < idxs.length; i++)
-          for (let j = i + 1; j < idxs.length; j++)
-            dmax = Math.max(dmax, Math.hypot(SEDES[idxs[i]].x - SEDES[idxs[j]].x,
-                                             SEDES[idxs[i]].y - SEDES[idxs[j]].y));
-        if (dmax === 0) return MIN_W;
-        return Math.max(dmax * anchoMarco() / SEP_PX * 0.6, MIN_W);
-      }
-
       const R = n => 5 + Math.sqrt(n) * 2.6;
 
       function nodo(tag, attrs){
@@ -291,13 +276,24 @@ JS = r"""
         });
 
         const gs = grupos();
+        /* Al acercarse, cada sede despliega sus obras sola. Con dos sedes próximas eso
+           hacía que sus miniaturas se montaran unas sobre otras, así que solo se
+           despliegan solas las que tienen sitio; la que se elige a mano se despliega
+           siempre, porque eso lo ha pedido el usuario. */
+        const holgura = c0 => {
+          let d = Infinity;
+          for (const o of gs) if (o !== c0) d = Math.min(d, Math.hypot(o.x - c0.x, o.y - c0.y));
+          return d * s;          // s es la escala que ya calculó dibujar
+        };
+
         gs.forEach(c0 => { vv.forEach(off => {
           const c = { x: c0.x + off, y: c0.y, sedes: c0.sedes, n: c0.n };
           const solo = c.sedes.length === 1;
           const sd = SEDES[c.sedes[0]];
           const g = marca(c.x, c.y, inv);
 
-          if (solo && (grupoAbierto === c.sedes[0] || vista.w < 90)) fanObras(g, sd);
+          const cabe = () => holgura(c0) > radioFan(obrasDe(sd).length, 30, 34) * 2 + 14;
+          if (solo && (grupoAbierto === c.sedes[0] || (vista.w < 90 && cabe()))) fanObras(g, sd);
           if (!solo && ciudadAbierta === claveGrupo(c0)) fanSedes(g, c);
 
           const cls = 'sede' + (solo ? '' : ' grupo') + (solo && sedeSel === c.sedes[0] ? ' sel' : '');
@@ -307,16 +303,29 @@ JS = r"""
             ev => {
               ev.stopPropagation();
               if (solo) { elegirSede(c.sedes[0], true); return; }
-              const w = anchoParaSeparar(c.sedes);
-              if (w > MIN_W * 1.05 && w < vista.w * 0.92) irAVista(encajarSedes(c0.sedes, off), true);
-              else {
-                const k = claveGrupo(c0);
-                const abriendo = ciudadAbierta !== k;
-                ciudadAbierta = abriendo ? k : null;
-                sedeSel = -1; abrirCiudad(c); dibujar();
-                // centrar sin cambiar la escala: el abanico necesita sitio alrededor
-                if (abriendo) irA(c.x, c.y, vista.w, true);
+              /* La tarjeta promete «pulsa para acercar» salvo cuando todos los museos
+                 comparten ciudad, y el clic tiene que hacer exactamente eso. Antes
+                 decidía con otra regla —el ancho al que el grupo se parte—, que daba por
+                 indesplegable cualquier grupo muy extenso: pulsar el de 38 desplegaba
+                 veinticuatro museos repartidos por todo el mapamundi en vez de volar a
+                 Europa y dejar que se separaran solos al acercarse. */
+              const ciudades = new Set(c.sedes.map(i => SEDES[i].ciudad));
+              const destino = encajarSedes(c0.sedes, off);
+
+              if (ciudades.size > 1) {
+                ciudadAbierta = null;
+                irAVista(destino, true);
+                return;
               }
+
+              /* Museos de una misma ciudad: por mucho que se acerque uno caen en el mismo
+                 punto, así que se abren en abanico. Se vuela igualmente al encuadre de la
+                 ciudad, que le da al abanico el sitio y la escala que necesita. */
+              const k = claveGrupo(c0);
+              const abriendo = ciudadAbierta !== k;
+              ciudadAbierta = abriendo ? k : null;
+              sedeSel = -1; abrirCiudad(c); dibujar();
+              if (abriendo) irAVista(destino, true);
             },
             () => mostrarTarjeta(solo ? { sede: sd } : { grupo: c })));
           capaSedes.appendChild(g);
