@@ -45,13 +45,17 @@ function crearEl(id) {
 function ejecutar(html, devuelve) {
   const js = html.split('<script>')[1].split('</script>')[0];
   const porId = new Map();
+  /* Los oyentes de document se guardan para poder dispararlos desde las pruebas: el
+     teclado de la portada se registra ahí y con un noop no habría forma de ejercitarlo. */
+  const oyentesDoc = {};
   const document = {
+    oyentes: oyentesDoc,
     getElementById: id => { if (!porId.has(id)) porId.set(id, crearEl(id)); return porId.get(id); },
     createElement: () => crearEl('nuevo'),
     createTextNode: () => crearEl('texto'),
     querySelector: () => crearEl('?'),
     querySelectorAll: () => [],
-    addEventListener: noop,
+    addEventListener: (ev, fn) => { (oyentesDoc[ev] = oyentesDoc[ev] || []).push(fn); },
     body: crearEl('body'),
     documentElement: crearEl('html'),
   };

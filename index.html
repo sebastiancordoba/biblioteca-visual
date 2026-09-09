@@ -2988,6 +2988,21 @@
       }
       flecha('bannerAntes', retroceder, true);
       flecha('bannerDespues', avanzar, false);
+
+      /* Flechas del teclado. El visor de obra usa las mismas para navegar, así que aquí
+         solo actúan con el visor cerrado y la portada a la vista; y se ignoran si el foco
+         está escribiendo en algún campo, para no secuestrar el cursor del buscador. */
+      document.addEventListener('keydown', ev => {
+        if (ev.key !== 'ArrowLeft' && ev.key !== 'ArrowRight') return;
+        if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
+        if (document.getElementById('zoomModal').classList.contains('active')) return;
+        if (!visible()) return;
+        const foco = document.activeElement;
+        if (foco && /^(INPUT|TEXTAREA|SELECT)$/.test(foco.tagName || '')) return;
+        ev.preventDefault();
+        if (ev.key === 'ArrowRight') pintar(avanzar(), false);
+        else pintar(retroceder(), true);
+      });
       banner.addEventListener('click', () => { if (actual !== null) abrir(actual); });
 
       function latido(){

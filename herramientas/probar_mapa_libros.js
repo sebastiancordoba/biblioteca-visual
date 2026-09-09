@@ -113,6 +113,53 @@ ck(js.includes('function deslizar'),'el arrastre tiene inercia al soltar');
   console.log(`   divisor de rueda ${div} · salto máximo por muesca ${(max*100).toFixed(0)}%`);
   ck(div >= 300 && max <= 0.15, `los pasos de rueda son finos (divisor ${div}, tope ${(max*100).toFixed(0)}%)`);
 }
+
+console.log('\n== pellizco ==');
+{
+  /* El pellizco del trackpad llega como rueda con ctrlKey, pero con incrementos de
+     unidades donde la rueda da centenares: con el divisor de la rueda se quedaba clavado
+     en el paso mínimo. Se comprueba que tiene su propio camino y que el gesto responde. */
+  ck(/if \(pellizco\) \{/.test(js), 'el pellizco tiene su propio tratamiento, no el de la rueda');
+  ck(/Math\.exp\(-ev\.deltaY/.test(js), 'usa la relación exponencial propia del gesto');
+  ck(/touchmove/.test(js) && /ev\.touches\.length === 2/.test(js), 'el pellizco táctil sigue ahí');
+
+  const antes = vb()[2];
+  oyentes.mapaMarco.wheel({ ctrlKey:true, deltaY:-12, deltaX:0, clientX:450, clientY:250,
+                            preventDefault:noop });
+  drenar(400);
+  const tras = vb()[2];
+  console.log(`   pellizco de -12: ancho ${antes.toFixed(0)} -> ${tras.toFixed(0)}`);
+  ck(tras < antes * 0.995, `un pellizco pequeño ya acerca (${antes.toFixed(0)} -> ${tras.toFixed(0)})`);
+}
+
+console.log('\n== el libro elegido despliega sus obras ==');
+{
+  /* El desplegable se construye con innerHTML, que el simulacro guarda como texto sin
+     parsear, así que se comprueba sobre el marcado generado y no sobre nodos. */
+  const bloque = () => store['sedeLista'].children.find(c => (c.className||'') === 'libro-obras');
+  oyentes.togLibros.click(); drenar(300);
+  ck(!bloque(), 'sin libro elegido no hay desplegable');
+
+  oyentes.x.click(); drenar(500);
+  const b = bloque();
+  ck(!!b, 'al pulsar un libro se despliega su lista de obras');
+  if (b) {
+    const h = b.innerHTML;
+    const n = (h.match(/class="libro-obra"/g) || []).length;
+    const imgs = (h.match(/<img src="/g) || []).length;
+    console.log(`   ${n} obras desplegadas, ${imgs} con miniatura`);
+    ck(n > 0, `salen las obras del libro (${n})`);
+    ck(imgs === n, 'cada obra lleva su miniatura');
+    ck((h.match(/data-obra="\d+"/g) || []).length === n, 'cada una sabe qué obra abrir');
+    ck(!h.includes('${'), 'sin plantillas sin interpolar');
+  }
+
+  oyentes.x.click(); drenar(400);
+  ck(!bloque(), 'volver a pulsarlo las repliega');
+  oyentes.togSedes.click(); drenar(200);
+  ck(!bloque(), 'al volver a Sedes tampoco queda el desplegable');
+}
+
 ck(!html.includes('id="capaRet"'),'la retícula del mar se ha eliminado');
 console.log('\n'+(bad?`*** ${bad} FALLAS ***`:'*** SIN ERRORES ***'));
 process.exit(bad?1:0);

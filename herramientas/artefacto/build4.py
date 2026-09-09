@@ -121,6 +121,18 @@ CSS = """
       text-transform:uppercase;color:var(--text-muted);transition:background .2s,color .2s}
     .tog-btn:hover{color:var(--text-title)}
     .tog-btn.activo{background:var(--accent-gold);color:#0a0b0e;font-weight:600}
+    /* Obras del libro elegido, desplegadas dentro de la propia lista. */
+    .libro-obras{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));
+      gap:8px;padding:12px 4px 16px;border-bottom:1px solid rgba(255,255,255,.05)}
+    .libro-obra{display:flex;flex-direction:column;gap:4px;background:none;border:0;
+      padding:0;cursor:pointer;text-align:left;color:inherit;font-family:inherit}
+    .libro-obra img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;
+      background:#050608;border:1px solid var(--border-subtle);transition:border-color .2s}
+    .libro-obra:hover img{border-color:var(--accent-gold)}
+    .libro-obra-t{font-size:.68rem;line-height:1.25;color:var(--text-title);
+      display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .libro-obra-m{font-size:.62rem;color:var(--text-muted);font-variant-numeric:tabular-nums;
+      white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .libro-item .sede-n{color:var(--accent-gold-hover)}
     .libro-item.sel .sede-txt strong{color:var(--accent-gold-hover)}
     .mapa-nota{color:var(--text-muted);font-size:.79rem;margin:0 0 14px;font-weight:300;line-height:1.55}

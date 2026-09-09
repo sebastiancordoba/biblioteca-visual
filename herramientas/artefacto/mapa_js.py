@@ -571,6 +571,11 @@ JS = r"""
               irAVista(libroFiltro ? encajarSedes(activas()) : vistaEuropa(), true);
             });
             lista.appendChild(li);
+            /* El libro elegido despliega sus obras aquí mismo, con su miniatura: antes
+               solo aparecían en el panel de debajo del mapa, que queda fuera de la vista
+               y obliga a desplazarse para saber qué contiene el libro recién pulsado.
+               Cada una abre en el visor. */
+            if (libroFiltro === nom) lista.appendChild(obrasDelLibro(nom));
           });
         }
       }
@@ -596,6 +601,35 @@ JS = r"""
         setTimeout(() => detalle.querySelectorAll('.obra-min').forEach(b =>
           b.addEventListener('click', () => abrirObra(+b.dataset.obra))), 0);
         return html;
+      }
+
+      /* Obras de un libro, en orden cronológico, tal como las conoce el mapa. */
+      function obrasDelLibro(nom){
+        const vistas = new Set();
+        const obras = [];
+        SEDES.forEach(sd => sd.obras.forEach(o => {
+          if (o.libro !== nom || vistas.has(o.i)) return;
+          vistas.add(o.i);
+          obras.push({ o: o, sede: sd });
+        }));
+        obras.sort((a, b) => a.o.i - b.o.i);
+
+        const li = document.createElement('li');
+        li.className = 'libro-obras';
+        li.innerHTML = obras.map(({ o, sede }) =>
+          `<button class="libro-obra" type="button" data-obra="${o.i}" title="${esc(o.t)} — ${esc(sede.nombre)}">` +
+          `<img src="${BOOKS.mapa.groups[o.i][0].src}" alt="${esc(o.t)}" loading="lazy">` +
+          `<span class="libro-obra-t">${esc(o.t)}</span>` +
+          `<span class="libro-obra-m">${esc(o.a)} · ${esc(sede.ciudad)}</span></button>`).join('');
+        li.querySelectorAll('.libro-obra').forEach(b => {
+          b.addEventListener('click', ev => { ev.stopPropagation(); abrirObra(+b.dataset.obra); });
+          b.addEventListener('mouseenter', () => {
+            const par = obras.find(x => x.o.i === +b.dataset.obra);
+            if (par) mostrarTarjeta({ obra: par.o, sede: par.sede });
+          });
+          b.addEventListener('mouseleave', ocultarTarjeta);
+        });
+        return li;
       }
 
       function cambiarModo(m){
@@ -720,7 +754,10 @@ JS = r"""
             const r = marco.getBoundingClientRect();
             const mx = (ev.touches[0].clientX + ev.touches[1].clientX) / 2 - r.left;
             const my = (ev.touches[0].clientY + ev.touches[1].clientY) / 2 - r.top;
-            zoomEn(vista.x + (mx / r.width) * vista.w, vista.y + (my / r.height) * vista.h, d / pinza);
+            /* Mismo recorrido que el pellizco del trackpad: se acota el salto por
+               fotograma para que el gesto se sienta igual de fluido en los dos sitios. */
+            zoomEn(vista.x + (mx / r.width) * vista.w, vista.y + (my / r.height) * vista.h,
+                   clamp(d / pinza, 0.82, 1.22));
             pinza = d;
           }
         } else if (arrastrando && ev.touches.length === 1) {
@@ -746,6 +783,14 @@ JS = r"""
         }
         const cx = vista.x + ((ev.clientX - r.left) / r.width) * vista.w;
         const cy = vista.y + ((ev.clientY - r.top) / r.height) * vista.h;
+        if (pellizco) {
+          /* El pellizco llega como rueda con ctrlKey, pero con incrementos de unidades
+             donde la rueda da centenares. Con el divisor de la rueda se quedaba clavado
+             en el paso mínimo y el gesto parecía no responder. La exponencial es la
+             relación natural del gesto: separar los dedos el doble acerca el doble. */
+          zoomEn(cx, cy, clamp(Math.exp(-ev.deltaY / 90), 0.82, 1.22));
+          return;
+        }
         const paso = clamp(Math.abs(ev.deltaY) / 430, 0.022, 0.12);  // pasos finos: acumulan suave
         zoomEn(cx, cy, ev.deltaY < 0 ? 1 + paso : 1 / (1 + paso));
       }, { passive: false });

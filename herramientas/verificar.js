@@ -148,6 +148,39 @@ console.log('\n== Flechas del banner ==');
     'en la primera obra la flecha de antes no hace nada');
 }
 
+console.log('\n== Flechas del teclado en el banner ==');
+{
+  const lienzo = document.getElementById('bannerLienzo');
+  const fondoDe = l => ((/url\("(.+)"\)/.exec(((l.children||[])[0]||{style:{}}).style.backgroundImage || '') || [])[1]);
+  const actual = () => fondoDe(lienzo.children[lienzo.children.length - 1]);
+  const teclas = document.oyentes.keydown || [];
+  const pulsar = k => teclas.forEach(f => f({ key:k, preventDefault(){}, metaKey:false, ctrlKey:false, altKey:false }));
+
+  check(teclas.length > 0, 'hay un oyente de teclado');
+
+  /* Con el visor de obra abierto, las flechas son suyas: navegan entre obras. */
+  document.getElementById('inicio-gallery').classList.add('active');
+  document.getElementById('zoomModal').classList.add('active');
+  const conVisor = actual();
+  pulsar('ArrowRight');
+  check(actual() === conVisor, 'con el visor abierto las flechas no tocan el banner');
+
+  document.getElementById('zoomModal').classList.remove('active');
+  const primera = actual();
+  pulsar('ArrowRight');
+  const segunda = actual();
+  check(segunda && segunda !== primera, 'la flecha derecha pasa a la obra siguiente');
+  pulsar('ArrowLeft');
+  check(actual() === primera, 'la flecha izquierda vuelve a la anterior');
+
+  /* Fuera de la portada tampoco deben actuar. */
+  document.getElementById('inicio-gallery').classList.remove('active');
+  const fuera = actual();
+  pulsar('ArrowRight');
+  check(actual() === fuera, 'fuera de la portada las flechas no hacen nada');
+  document.getElementById('inicio-gallery').classList.add('active');
+}
+
 console.log('\n== Biblioteca ==');
 {
   const reales = Object.keys(BOOKS).filter(k => BOOKS[k].esLibro);
