@@ -468,6 +468,27 @@
 
     .banner-ver:hover { background: var(--accent-gold); color: #050608; }
 
+    /* Aviso de pausa y pista de los atajos. La pista se apaga sola al pasar el ratón por
+       el banner: sirve para descubrir el atajo, no para quedarse ahí. */
+    .banner-aviso {
+      position: absolute; top: 16px; right: 18px; z-index: 4;
+      font-family: var(--font-serif); font-size: .62rem; letter-spacing: 2.4px;
+      text-transform: uppercase; color: var(--accent-gold);
+      background: rgba(8,10,14,.78); border: 1px solid var(--border-subtle);
+      border-radius: 3px; padding: 4px 10px;
+    }
+
+    .banner-atajos {
+      position: absolute; right: 18px; bottom: 16px; z-index: 4;
+      font-size: .64rem; letter-spacing: .4px; color: var(--text-muted);
+      opacity: .65; transition: opacity .25s; pointer-events: none;
+    }
+    .banner:hover .banner-atajos { opacity: 0; }
+    @media (max-width: 700px) { .banner-atajos { display: none; } }
+
+    /* En pausa la barra deja de ser dorada: se ve que no avanza. */
+    .banner.pausado .banner-progreso span { background: var(--text-muted); }
+
     .banner-progreso {
       position: absolute; left: 0; right: 0; bottom: 0; z-index: 3;
       height: 1px; background: rgba(255,255,255,.07);
@@ -1211,6 +1232,8 @@
         <button class="banner-flecha der" id="bannerDespues" type="button" aria-label="Obra siguiente">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
         </button>
+        <span class="banner-aviso" id="bannerAviso" hidden>En pausa</span>
+        <span class="banner-atajos">espacio para pausar · ← → para cambiar</span>
         <div class="banner-progreso"><span id="bannerProg"></span></div>
       </section>
       <div class="inicio-cifras" id="inicioCifras"></div>
@@ -3652,6 +3675,10 @@
          de modo que la flecha de atrás recorre el historial real y no vuelve a sortear. */
       const vistas = [];
       let pos = -1;
+      /* Pausa con la barra espaciadora. Se guarda el instante en que se pausó para poder
+         devolverle a t0 el tiempo detenido: si no, al reanudar la obra saltaría de golpe
+         por todo el rato que estuvo parada. */
+      let pausado = false, pausadoEn = 0;
 
       function siguiente(){
         if (!baraja.length) {
@@ -3747,23 +3774,38 @@
          solo actúan con el visor cerrado y la portada a la vista; y se ignoran si el foco
          está escribiendo en algún campo, para no secuestrar el cursor del buscador. */
       document.addEventListener('keydown', ev => {
-        if (ev.key !== 'ArrowLeft' && ev.key !== 'ArrowRight') return;
+        const espacio = ev.key === ' ' || ev.key === 'Spacebar';
+        if (!espacio && ev.key !== 'ArrowLeft' && ev.key !== 'ArrowRight') return;
         if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
         if (document.getElementById('zoomModal').classList.contains('active')) return;
         if (!visible()) return;
         const foco = document.activeElement;
         if (foco && /^(INPUT|TEXTAREA|SELECT)$/.test(foco.tagName || '')) return;
+        /* La barra espaciadora desplaza la página por defecto; si aquí la usamos para
+           pausar, hay que impedir ese desplazamiento. */
         ev.preventDefault();
-        if (ev.key === 'ArrowRight') pintar(avanzar(), false);
+        if (espacio) alternarPausa();
+        else if (ev.key === 'ArrowRight') pintar(avanzar(), false);
         else pintar(retroceder(), true);
       });
       banner.addEventListener('click', () => { if (actual !== null) abrir(actual); });
 
       function latido(){
-        const pasado = Date.now() - t0;
-        if (prog) prog.style.width = Math.min(100, pasado / PAUSA * 100) + '%';
-        if (pasado >= PAUSA) pintar(avanzar(), false);
+        if (!pausado) {
+          const pasado = Date.now() - t0;
+          if (prog) prog.style.width = Math.min(100, pasado / PAUSA * 100) + '%';
+          if (pasado >= PAUSA) pintar(avanzar(), false);
+        }
         temporizador = requestAnimationFrame(latido);
+      }
+
+      function alternarPausa(){
+        pausado = !pausado;
+        if (pausado) pausadoEn = Date.now();
+        else t0 += Date.now() - pausadoEn;     // devolver el tiempo detenido
+        if (banner) banner.classList.toggle('pausado', pausado);
+        const av = document.getElementById('bannerAviso');
+        if (av) av.hidden = !pausado;
       }
 
       /* Solo corre con la portada a la vista: en otra pestaña no tiene sentido gastar

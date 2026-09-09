@@ -244,6 +244,49 @@ console.log('\n== Nomenclatura de las obras ==');
     'ningún título lleva entre paréntesis un desambiguador que ya está en su ficha técnica');
 }
 
+console.log('\n== Barra espaciadora: pausar el banner ==');
+{
+  const banner = document.getElementById('banner');
+  const aviso = document.getElementById('bannerAviso');
+  const teclas = document.oyentes.keydown || [];
+  let impedido = 0;
+  const pulsar = k => teclas.forEach(f => f({
+    key: k, metaKey:false, ctrlKey:false, altKey:false,
+    preventDefault(){ impedido++; }
+  }));
+
+  document.getElementById('inicio-gallery').classList.add('active');
+  document.getElementById('zoomModal').classList.remove('active');
+
+  check(banner.classList.contains('pausado') === false, 'arranca sin pausa');
+  pulsar(' ');
+  check(banner.classList.contains('pausado') === true, 'la barra espaciadora pausa');
+  check(aviso.hidden === false, 'y se avisa en pantalla de que está en pausa');
+  pulsar(' ');
+  check(banner.classList.contains('pausado') === false, 'volver a pulsarla reanuda');
+  check(aviso.hidden === true, 'el aviso desaparece al reanudar');
+
+  /* La barra espaciadora desplaza la página por defecto: hay que impedirlo cuando la
+     usamos nosotros, o pausar el banner daría además un salto de scroll. */
+  check(impedido >= 2, 'se impide el desplazamiento por defecto de la página');
+
+  /* Con el visor de obra abierto la tecla es suya, no del banner. */
+  document.getElementById('zoomModal').classList.add('active');
+  pulsar(' ');
+  check(banner.classList.contains('pausado') === false,
+    'con el visor abierto la barra espaciadora no toca el banner');
+  document.getElementById('zoomModal').classList.remove('active');
+
+  check(html.includes('banner-atajos'), 'la pista del atajo está en la página');
+
+  /* Al reanudar hay que devolverle a t0 el tiempo que estuvo parado; si no, la obra
+     saltaría de golpe por todo el rato de la pausa. El reloj del simulacro no avanza,
+     así que esto no se puede probar por comportamiento: se comprueba que la compensación
+     sigue en el código, para que no se borre por descuido. */
+  check(/t0 \+= Date\.now\(\) - pausadoEn/.test(html),
+    'al reanudar se compensa el tiempo detenido');
+}
+
 console.log('\n== Biblioteca ==');
 {
   const reales = Object.keys(BOOKS).filter(k => BOOKS[k].esLibro);
