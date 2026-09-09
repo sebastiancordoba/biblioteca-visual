@@ -17,7 +17,8 @@ function botones(libro){
   return ['coleccion','cronologia','artista','titulo','sede'].map(o=>{
     const b=mk('btn-'+libro+'-'+o); b.dataset.orden=o; return b;});
 }
-const document={getElementById:id=>{if(!store[id])store[id]=mk(id);return store[id];},
+const document={body:mk('body'),documentElement:mk('html'),
+ getElementById:id=>{if(!store[id])store[id]=mk(id);return store[id];},
  createElement:t=>mk('e',t),createElementNS:(ns,t)=>mk('s',t),
  querySelectorAll(sel){
    if(sel==='.orden-bar') return barras;

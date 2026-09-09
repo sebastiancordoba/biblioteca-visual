@@ -189,6 +189,14 @@
       font-size: 0.95rem;
     }
 
+    /* En la portada la cabecera se encoge: el banner es la identidad de la página y con
+       la cabecera entera arrancaba a 435 px, o sea fuera de la primera pantalla en un
+       portátil. La pestaña única de la portada tampoco navega a ningún sitio. */
+    body[data-libro="inicio"] header { padding: 26px 20px 14px; }
+    body[data-libro="inicio"] h1 { font-size: 1.7rem; }
+    body[data-libro="inicio"] .header-sub { display: none; }
+    body[data-libro="inicio"] #nav-inicio { display: none; }
+
     /* PORTADA: BANNER DE MUSEO
        Una obra cualquiera de cualquier libro, que se releva cada siete segundos
        entrando por la derecha. Con muchos libros, una pestaña por libro no escala:
@@ -2791,6 +2799,7 @@
       }
       setInterval(ciclo, 400);
 
+      document.body.dataset.libro = 'inicio';
       pintar(siguiente());
       ciclo();
 
@@ -2838,6 +2847,7 @@
       if (!book) return;
       currentBook = bookId;
 
+      document.body.dataset.libro = bookId;
       document.getElementById('bookTag').innerText = book.tag;
       document.getElementById('bookTitle').innerText = book.title;
       document.getElementById('bookSub').innerText = book.sub;

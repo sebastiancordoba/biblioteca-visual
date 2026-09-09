@@ -28,7 +28,8 @@ function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{},_html:'',_tc
     de createElement y se les asigna el id después (mReset, mTodo). */
  addEventListener(t,f){this._ev[t]=f;(oyentes[this.id]=oyentes[this.id]||{})[t]=f;},
  getBoundingClientRect:()=>({left:0,top:0,width:900,height:506}),dispatchEvent:noop};return el;}
-const document={getElementById:id=>{if(!store[id])store[id]=mk(id);return store[id];},
+const document={body:mk('body'),documentElement:mk('html'),
+ getElementById:id=>{if(!store[id])store[id]=mk(id);return store[id];},
  createElement:t=>{creados++;return mk('e-'+t,t);},
  createElementNS:(ns,t)=>{creados++;return mk('s-'+t,t);},
  querySelectorAll:()=>[],querySelector:()=>mk('x'),addEventListener:noop};

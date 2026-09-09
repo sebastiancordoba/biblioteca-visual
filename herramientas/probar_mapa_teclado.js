@@ -22,7 +22,8 @@ function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{},_html:'',_tc
  querySelectorAll:()=>[],querySelector:()=>mk('x'),closest:()=>mk('x'),
  addEventListener(t,f){this._ev[t]=f;},
  getBoundingClientRect:()=>({left:0,top:0,width:900,height:506}),dispatchEvent:noop};return el;}
-const document={getElementById:id=>{if(!store[id])store[id]=mk(id);return store[id];},
+const document={body:mk('body'),documentElement:mk('html'),
+ getElementById:id=>{if(!store[id])store[id]=mk(id);return store[id];},
  createElement:t=>mk('e-'+t,t),createElementNS:(ns,t)=>mk('s-'+t,t),
  querySelectorAll:()=>[],querySelector:()=>mk('x'),
  addEventListener(t,f){(oyDoc[t]=oyDoc[t]||[]).push(f);}};

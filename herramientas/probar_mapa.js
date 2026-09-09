@@ -20,7 +20,8 @@ function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{},innerHTML:''
  querySelectorAll:()=>[],querySelector:()=>mk('x'),closest:()=>mk('x'),
  addEventListener(t,f){(oyentes[id]=oyentes[id]||{})[t]=f;},
  getBoundingClientRect:()=>({left:0,top:0,width:900,height:506}),dispatchEvent:noop};return el;}
-const document={getElementById:id=>{if(!store[id])store[id]=mk(id);return store[id];},
+const document={body:mk('body'),documentElement:mk('html'),
+ getElementById:id=>{if(!store[id])store[id]=mk(id);return store[id];},
  createElement:t=>{const e=mk('e-'+t,t);creados.push(e);return e;},
  createElementNS:(ns,t)=>{const e=mk('s-'+t,t);creados.push(e);return e;},
  querySelectorAll:()=>[],querySelector:()=>mk('x'),addEventListener:noop};

@@ -16,7 +16,8 @@ function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{},innerHTML:''
  addEventListener:noop,getBoundingClientRect:()=>({left:0,top:0,width:900,height:560}),
  dispatchEvent:noop};
  return el;}
-const document={getElementById:id=>{if(!store[id])store[id]=mk(id);return store[id];},
+const document={body:mk('body'),documentElement:mk('html'),
+ getElementById:id=>{if(!store[id])store[id]=mk(id);return store[id];},
  createElement:t=>{const e=mk('e-'+t,t);nodos.push(e);return e;},
  createElementNS:(ns,t)=>{const e=mk('s-'+t,t);nodos.push(e);return e;},
  querySelectorAll:()=>[],querySelector:()=>mk('x'),addEventListener:noop};
