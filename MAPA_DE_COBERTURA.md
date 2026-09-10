@@ -23,7 +23,7 @@ propia colección. El lote de complementos corrige ese desequilibrio.
 | 1–2 | La creación de Adán | ✓ | Miguel Ángel (01) |
 | 2 | **La creación de Eva** | · | Miguel Ángel, Sixtina — en Commons solo a 1,3 MP, hay que ir al Vaticano |
 | 2–3 | El Edén | ✓ | El Bosco (26), Cranach (14), Durero (15), Cranach del Museo Soumaya (39) |
-| 3 | **Pecado original y expulsión** | · | Miguel Ángel, Sixtina — solo 1,4 MP en Commons |
+| 3 | Pecado original y expulsión | ✓ | Miguel Ángel, Sixtina (41) — el panel a 7,6 MP y la bóveda entera a 26,7 MP; la versión de 1,4 MP que circula no era la única |
 | 3 | La expulsión del Paraíso | ✓ | Masaccio (02) |
 | 4 | Caín y Abel | ✓ | Tiziano (03), Cormon (06) |
 | 5 | Genealogías | — | |

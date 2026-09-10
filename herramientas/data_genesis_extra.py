@@ -164,4 +164,18 @@ EXTRA = [
  "history": "Aparece documentado en 1517 en el palacio de Bruselas de los Nassau, pasó a Felipe II —que lo compró en almoneda en 1591 y lo llevó a El Escorial— y de allí al Prado en 1939. Fray José de Sigüenza lo defendió en 1605 de quienes lo tachaban de herético con un argumento que sigue siendo el mejor: que en los demás cuadros se pinta al hombre por fuera, y en este por dentro.",
  "bio": "De Hieronymus van Aken, El Bosco (c. 1450–1516), se sabe muy poco: vivió toda su vida en 's-Hertogenbosch, perteneció a la Hermandad de Nuestra Señora y murió acomodado. Esta imagen procede de la campaña de digitalización del Prado y es de resolución extraordinaria, lo que la convierte en la mejor pieza de la colección para inspeccionar en detalle extremo."
 },
+{
+ "files": ["41_El_Pecado_Original_y_la_Expulsion_Miguel_Angel_1510.jpg",
+           "41b_El_Pecado_Original_y_la_Expulsion_Boveda_Miguel_Angel_1510.jpg"],
+ "views": ["El pecado original y la expulsión del Paraíso — Miguel Ángel (1509-1510)",
+           "El panel en su sitio de la bóveda, entre los ignudi y el marco fingido"],
+ "title": "El pecado original y la expulsión del Paraíso",
+ "artist": "Miguel Ángel Buonarroti (1509–1510)",
+ "meta": "Fresco | 280 × 570 cm | Bóveda de la Capilla Sixtina, Ciudad del Vaticano",
+ "wikiUrl": "https://es.wikipedia.org/wiki/B%C3%B3veda_de_la_Capilla_Sixtina",
+ "snippet": "Génesis 3 entero en un solo campo: a la izquierda cogen el fruto, a la derecha ya están fuera. El árbol que los separa hace de bisagra entre las dos escenas.",
+ "analysis": "Miguel Ángel resuelve dos momentos en una sola superficie sin dividirla: el árbol del centro, con la serpiente de torso femenino enroscada al tronco, sirve de eje y de frontera. A la izquierda el Edén es rocoso y verde y las figuras son plenas, casi perezosas; a la derecha el suelo se vuelve un yermo pelado y los mismos cuerpos aparecen encogidos y envejecidos por el mismo pintor en el mismo metro cuadrado. El ángel de rojo empuja con la espada desde el mismo tronco: no hay transición, hay tajo. La Eva de la izquierda, sentada bajo el brazo de Adán, y la de la derecha, encorvada y con la boca abierta, son la mejor demostración de lo que Miguel Ángel entendía por caída.",
+ "history": "Corresponde al tercer año de trabajo en la bóveda y pertenece al grupo de paneles pintados ya con la técnica depurada, con figuras más grandes y menos abarrotadas que las primeras escenas del Diluvio. La restauración de 1980-1994 devolvió a estos frescos un color que siglos de humo de vela habían apagado, y que provocó una polémica considerable: hubo quien acusó a los restauradores de haber lavado las sombras que el propio Miguel Ángel habría añadido en seco.",
+ "bio": "Se muestran dos vistas porque son dos cosas distintas: el panel aislado, tal como se reproduce siempre, y el mismo panel dentro de la bóveda, rodeado de ignudi, medallones y arquitectura fingida. Fuera de ese marco es un cuadro; dentro se ve que es una pieza de un techo entero pensado como una sola máquina."
+},
 ]
