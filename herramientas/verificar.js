@@ -9,8 +9,11 @@ const html = fs.readFileSync(require('path').join(__dirname,'..','index.html'), 
 const js = html.split('<script>')[1].split('</script>')[0];
 
 const { noop, ejecutar } = require('./dom_falso.js');
-const { BOOKS, document, urlOriginal, openZoomForArtwork } =
-  ejecutar(html, '{BOOKS, urlOriginal, openZoomForArtwork}');
+const { BOOKS, document, urlOriginal, openZoomForArtwork, abrirEnConjunto,
+        navigateSequential, getAllViewsList, ejecutarEstado } =
+  ejecutar(html, '{BOOKS, urlOriginal, openZoomForArtwork, abrirEnConjunto,'
+                + ' navigateSequential, getAllViewsList,'
+                + ' ejecutarEstado: () => currentArtworkGroupIndex}');
 
 let fails = 0;
 const check = (ok, msg) => { console.log((ok ? '  ok    ' : '  FALLA ') + msg); if (!ok) fails++; };
@@ -179,6 +182,50 @@ console.log('\n== Flechas del teclado en el banner ==');
   pulsar('ArrowRight');
   check(actual() === fuera, 'fuera de la portada las flechas no hacen nada');
   document.getElementById('inicio-gallery').classList.add('active');
+}
+
+console.log('\n== Las flechas del visor respetan el conjunto ==');
+{
+  /* Al abrir una obra desde un autor o desde un museo, «siguiente» debe llevar a lo
+     siguiente de ESE conjunto, no a lo siguiente del libro entero. */
+  const g = BOOKS.genesis;
+  /* Un conjunto de una sola obra no crea contexto: sirve para fijar el libro activo y
+     medir el recorrido completo de ese mismo libro, sin comparar libros distintos. */
+  const sinConjunto = () => {
+    abrirEnConjunto('', [{ libro: 'genesis', i: 0 }], 'genesis', 0);
+    return getAllViewsList().length;
+  };
+  const total = sinConjunto();
+  check(total > 10, `sin conjunto se recorre el libro entero (${total} vistas)`);
+
+  /* Un conjunto de tres obras sueltas del Génesis. */
+  const tres = [0, 5, 9].map(i => ({ libro: 'genesis', i }));
+  abrirEnConjunto('Prueba', tres, 'genesis', 0);
+  const lista = getAllViewsList();
+  const esperadas = tres.reduce((n, o) => n + BOOKS[o.libro].groups[o.i].length, 0);
+  check(lista.length === esperadas,
+    `con conjunto solo se recorren sus obras (${lista.length} vistas de ${esperadas}, no ${total})`);
+  check(lista.every(v => tres.some(o => o.i === v.groupIdx)),
+    'ninguna vista ajena al conjunto se cuela');
+
+  /* Recorrerlo entero devuelve al punto de partida y nunca sale del conjunto. */
+  const dentro = new Set(tres.map(o => o.i));
+  let fuera = 0;
+  for (let k = 0; k < lista.length; k++) {
+    navigateSequential(1);
+    const est = ejecutarEstado();
+    if (!dentro.has(est)) fuera++;
+  }
+  check(fuera === 0, `dando la vuelta entera nunca se sale del conjunto (${fuera} salidas)`);
+
+  /* Y un conjunto que cruza libros: un autor puede tener obra en dos. */
+  const cruzado = [{ libro: 'genesis', i: 0 }, { libro: 'iliada', i: 0 }];
+  abrirEnConjunto('Cruzado', cruzado, 'genesis', 0);
+  const l2 = getAllViewsList();
+  check(new Set(l2.map(v => v.libro)).size === 2, 'un conjunto puede cruzar libros');
+
+  /* Abrir sin conjunto vuelve a recorrer el libro entero: no se queda pegado. */
+  check(sinConjunto() === total, 'abrir desde la cuadrícula limpia el conjunto');
 }
 
 console.log('\n== Autores ==');

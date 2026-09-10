@@ -1057,6 +1057,21 @@
       image-rendering: high-quality;
     }
 
+    /* Conjunto en el que se está navegando: al entrar por un autor o por un museo, las
+       flechas recorren solo lo suyo, y conviene que se vea de dónde vienes. */
+    .zoom-conjunto {
+      position: absolute; top: 20px; left: 20px; z-index: 10001;
+      background: rgba(10, 12, 16, 0.88);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px; padding: 7px 16px;
+      font-family: var(--font-serif); font-size: 0.72rem; letter-spacing: 1.2px;
+      color: var(--text-body);
+      backdrop-filter: blur(8px);
+      display: flex; align-items: center; gap: 9px;
+    }
+    .zoom-conjunto b { color: var(--accent-gold); font-weight: 500; }
+    .zoom-conjunto span { font-variant-numeric: tabular-nums; opacity: .7; }
+
     /* LEYENDA INFERIOR DISCRETA CON INDICADOR */
     .zoom-caption-box {
       position: absolute;
@@ -1373,6 +1388,8 @@
     </div>
 
     <!-- LEYENDA INFERIOR DISCRETA CON INDICADOR -->
+    <div id="zoomConjunto" class="zoom-conjunto auto-hide-ui" hidden></div>
+
     <div id="zoomCaptionBox" class="zoom-caption-box auto-hide-ui">
       <span id="zoomCaptionText">Inspección de Detalle</span>
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
@@ -3536,17 +3553,29 @@
     const bookDetails = () => BOOKS[currentBook].details;
     const bookGroups  = () => BOOKS[currentBook].groups;
 
+    /* Contexto de navegación del visor.
+       Al abrir una obra desde un autor, desde un libro del mapa o desde un museo, las
+       flechas recorren SOLO ese conjunto: si entras por «Museo del Louvre», siguiente te
+       lleva a la siguiente obra del Louvre y no a la siguiente del libro. Sin contexto se
+       recorre el libro entero, como antes.
+       Guarda el libro de cada obra a propósito: un autor puede tener obra en dos libros y
+       un museo guarda piezas de varios, así que el recorrido cruza libros cuando toca. */
+    let contexto = null;   // { nombre, obras: [{libro, i}] }
+
     let currentArtworkGroupIndex = 0;
     let currentSubViewIndex = 0;
 
     /* OBTENER LISTA PLANA DE TODAS LAS IMÁGENES Y VISTAS DE LA COLECCIÓN */
     function getAllViewsList() {
       const list = [];
-      bookGroups().forEach((group, groupIdx) => {
-        group.forEach((view, subViewIdx) => {
-          list.push({ groupIdx, subViewIdx, item: view });
-        });
-      });
+      const meter = (libro, groupIdx) => {
+        const g = (BOOKS[libro] || {}).groups;
+        if (!g || !g[groupIdx]) return;
+        g[groupIdx].forEach((view, subViewIdx) =>
+          list.push({ libro, groupIdx, subViewIdx, item: view }));
+      };
+      if (contexto) contexto.obras.forEach(o => meter(o.libro, o.i));
+      else bookGroups().forEach((_, gi) => meter(currentBook, gi));
       return list;
     }
 
@@ -3881,12 +3910,12 @@
           : `<figure><img src="${muestra ? muestra.src : ''}" alt="" loading="lazy">` +
             `<figcaption>No se conserva retrato</figcaption></figure>`;
         const suya = muestra
-          ? `<figure class="obra" data-libro="${muestra.libro}" data-i="${muestra.i}">` +
+          ? `<figure class="obra" data-autor="${a.clave}" data-libro="${muestra.libro}" data-i="${muestra.i}">` +
             `<img src="${muestra.src}" alt="${esc(muestra.title)}" loading="lazy">` +
             `<figcaption>${esc(muestra.title)}</figcaption></figure>`
           : '';
         const lista = obras.map(o =>
-          `<button class="autor-obra" type="button" data-libro="${o.libro}" data-i="${o.i}">` +
+          `<button class="autor-obra" type="button" data-autor="${a.clave}" data-libro="${o.libro}" data-i="${o.i}">` +
           `${esc(o.title)}</button>`).join('');
         return `<article class="autor-card">` +
           `<div class="autor-imgs">${retrato}${suya}</div>` +
@@ -3897,10 +3926,14 @@
           `<div class="autor-obras">${lista}</div></div></article>`;
       }).join('');
 
+      /* Al abrir desde un autor, las flechas del visor recorren solo su obra: si entras
+         por Rembrandt, «siguiente» es el siguiente Rembrandt, no el siguiente del libro. */
       rej.querySelectorAll('.autor-obra, .autor-imgs .obra').forEach(el =>
         el.addEventListener('click', () => {
-          currentBook = el.dataset.libro;
-          openZoomForArtwork(+el.dataset.i, 0);
+          const a = AUTORES.find(x => x.clave === el.dataset.autor);
+          const conjunto = a ? a.obras.map(obraDe).filter(Boolean)
+                                .map(o => ({ libro: o.libro, i: o.i })) : [];
+          abrirEnConjunto(a ? a.nombre : '', conjunto, el.dataset.libro, +el.dataset.i);
         }));
     }
 
@@ -4035,23 +4068,34 @@
       thumbBtn.classList.add('active');
     }
 
-    function openZoomForArtwork(groupIdx, viewIdx = 0) {
+    /* El tercer argumento acota la navegación. Al no pasarlo —que es lo que hacen las
+       cuadrículas de cada libro— el contexto se limpia y se recorre el libro entero. */
+    function openZoomForArtwork(groupIdx, viewIdx = 0, ctx = null) {
+      contexto = (ctx && ctx.obras && ctx.obras.length > 1) ? ctx : null;
       currentArtworkGroupIndex = groupIdx;
       currentSubViewIndex = viewIdx;
       updateModalImageAndArrows();
+    }
+
+    /* Abre una obra dentro de un conjunto: el autor, el museo o el libro del que se venía. */
+    function abrirEnConjunto(nombre, obras, libro, i) {
+      currentBook = libro;
+      openZoomForArtwork(i, 0, { nombre, obras });
     }
 
     /* NAVEGACIÓN SECUENCIAL CONTINUA POR TODAS LAS IMÁGENES Y VISTAS */
     function navigateSequential(direction) {
       const allViews = getAllViewsList();
       let currentFlatIndex = allViews.findIndex(
-        v => v.groupIdx === currentArtworkGroupIndex && v.subViewIdx === currentSubViewIndex
+        v => v.libro === currentBook && v.groupIdx === currentArtworkGroupIndex
+          && v.subViewIdx === currentSubViewIndex
       );
       if (currentFlatIndex === -1) currentFlatIndex = 0;
 
       let nextFlatIndex = (currentFlatIndex + direction + allViews.length) % allViews.length;
       const target = allViews[nextFlatIndex];
 
+      currentBook = target.libro;      // el conjunto puede cruzar libros
       currentArtworkGroupIndex = target.groupIdx;
       currentSubViewIndex = target.subViewIdx;
       activeSubView[currentArtworkGroupIndex] = currentSubViewIndex;
@@ -4076,6 +4120,19 @@
       document.getElementById('panelAnalysis').innerText = details.analysis;
       document.getElementById('panelHistory').innerText = details.history;
       document.getElementById('panelBio').innerText = details.bio;
+
+      /* Indicador del conjunto: «3 de 6 · Museo del Louvre». */
+      const conj = document.getElementById('zoomConjunto');
+      if (conj) {
+        if (contexto) {
+          const lista = getAllViewsList();
+          const pos = lista.findIndex(v => v.libro === currentBook
+            && v.groupIdx === currentArtworkGroupIndex && v.subViewIdx === currentSubViewIndex);
+          conj.innerHTML = `<b>${esc(contexto.nombre)}</b>` +
+            `<span>${pos < 0 ? 1 : pos + 1} / ${lista.length}</span>`;
+          conj.hidden = false;
+        } else conj.hidden = true;
+      }
 
       actualizarBotonOriginal();
 

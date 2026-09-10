@@ -246,7 +246,16 @@ JS = r"""
       /* ---------- dibujo ---------- */
       /* Abrir una obra en el mismo visor de zoom que el resto de la página: BOOKS.mapa
          comparte los arrays de la cronología, así que el índice vale tal cual. */
-      function abrirObra(i){ currentBook = 'mapa'; openZoomForArtwork(i, 0); }
+      /* Al abrir desde el mapa, las flechas del visor recorren solo el conjunto del que
+         se viene —el museo, la ciudad o el libro—, no la colección entera. `obras` son
+         índices dentro de BOOKS.mapa, que comparte los arrays de la cronología. */
+      function abrirObra(i, nombre, obras){
+        currentBook = 'mapa';
+        if (nombre && obras && obras.length > 1)
+          openZoomForArtwork(i, 0, { nombre, obras: obras.map(x => ({ libro:'mapa', i:x })) });
+        else openZoomForArtwork(i, 0);
+      }
+      const indices = os => os.map(o => o.i);
 
       /* ── DIBUJO ──────────────────────────────────────────────────────────────
          Cada marcador vive dentro de un <g transform="translate(x,y) scale(1/s)">, así
@@ -406,9 +415,11 @@ JS = r"""
                                        width:lado, height:lado, 'stroke-width':1.1 }));
           g.addEventListener('mouseenter', () => mostrarTarjeta({ obra:o, sede:sd }));
           g.addEventListener('mouseleave', ocultarTarjeta);
-          g.addEventListener('click', ev => { ev.stopPropagation(); abrirObra(o.i); });
+          g.addEventListener('click', ev => { ev.stopPropagation();
+            abrirObra(o.i, sd.nombre, indices(obrasDe(sd))); });
           g.addEventListener('keydown', ev => {
-            if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); abrirObra(o.i); }
+            if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault();
+              abrirObra(o.i, sd.nombre, indices(obrasDe(sd))); }
           });
           cont.appendChild(g);
         });
@@ -669,6 +680,8 @@ JS = r"""
 
       /* Qué guarda cada sede de un libro, para el panel de abajo. */
       function resumenLibro(nom){
+        // el conjunto de navegación del visor: todas las obras del libro
+        const delLibro = SEDES.flatMap(s => s.obras.filter(o => o.libro === nom)).map(o => o.i);
         const bloques = SEDES
           .filter(s => s.obras.some(o => o.libro === nom))
           .sort((a, b) => b.obras.filter(o => o.libro === nom).length - a.obras.filter(o => o.libro === nom).length)
@@ -686,7 +699,7 @@ JS = r"""
         const html = `<div class="sede-cab"><h3>${esc(nom)}</h3>` +
           `<p>${tot} obras repartidas en ${SEDES.filter(s => s.obras.some(o => o.libro === nom)).length} sedes</p></div>` + bloques;
         setTimeout(() => detalle.querySelectorAll('.obra-min').forEach(b =>
-          b.addEventListener('click', () => abrirObra(+b.dataset.obra))), 0);
+          b.addEventListener('click', () => abrirObra(+b.dataset.obra, nom, delLibro))), 0);
         return html;
       }
 
@@ -702,16 +715,16 @@ JS = r"""
           obras.push({ o: o, sede: sd });
         }));
         obras.sort((a, b) => a.o.i - b.o.i);
-        return desplegable(obras);
+        return desplegable(obras, nom);
       }
 
       function obrasDeSede(idx){
         const sd = SEDES[idx];
         return desplegable(sd.obras.slice().sort((a, b) => a.i - b.i)
-                             .map(o => ({ o: o, sede: sd })));
+                             .map(o => ({ o: o, sede: sd })), sd.nombre);
       }
 
-      function desplegable(obras){
+      function desplegable(obras, nombre){
         const li = document.createElement('li');
         li.className = 'libro-obras';
         li.innerHTML = obras.map(({ o, sede }) =>
@@ -720,7 +733,8 @@ JS = r"""
           `<span class="libro-obra-t">${esc(o.t)}</span>` +
           `<span class="libro-obra-m">${esc(o.a)} · ${esc(o.libro)}</span></button>`).join('');
         li.querySelectorAll('.libro-obra').forEach(b => {
-          b.addEventListener('click', ev => { ev.stopPropagation(); abrirObra(+b.dataset.obra); });
+          b.addEventListener('click', ev => { ev.stopPropagation();
+            abrirObra(+b.dataset.obra, nombre, obras.map(x => x.o.i)); });
           b.addEventListener('mouseenter', () => {
             const par = obras.find(x => x.o.i === +b.dataset.obra);
             if (par) mostrarTarjeta({ obra: par.o, sede: par.sede });
@@ -772,7 +786,10 @@ JS = r"""
           `<p>${esc(pais)} · ${c.sedes.length} museos · ${c.n} obras de la colección</p></div>` +
           bloques;
         detalle.querySelectorAll('.obra-min').forEach(b =>
-          b.addEventListener('click', () => abrirObra(+b.dataset.obra)));
+          b.addEventListener('click', () => {
+            const sd = SEDES.find(x => x.obras.some(o => o.i === +b.dataset.obra));
+            abrirObra(+b.dataset.obra, sd ? sd.nombre : '', sd ? indices(sd.obras) : []);
+          }));
       }
 
       function pintarDetalle(s){
@@ -785,7 +802,10 @@ JS = r"""
           `<p>${esc(s.ciudad)}, ${esc(s.pais)} · ${s.obras.length} obra${s.obras.length>1?'s':''} de la colección</p></div>` +
           `<div class="obra-min-grid">${obras}</div>`;
         detalle.querySelectorAll('.obra-min').forEach(b =>
-          b.addEventListener('click', () => abrirObra(+b.dataset.obra)));
+          b.addEventListener('click', () => {
+            const sd = SEDES.find(x => x.obras.some(o => o.i === +b.dataset.obra));
+            abrirObra(+b.dataset.obra, sd ? sd.nombre : '', sd ? indices(sd.obras) : []);
+          }));
       }
 
       /* ---------- arrastre y rueda ---------- */
