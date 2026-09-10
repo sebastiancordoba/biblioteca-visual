@@ -440,8 +440,9 @@ anunció «34 sedes en 13 países» cuando ya iban 43 en 15.
 
 **El peso importa más de lo que parece.** El artefacto cabe de sobra en los 16 MB, pero eso no es
 el límite real: a 10,7 MB la página se quedaba en blanco más de treinta segundos en el visor y no
-llegaba a ser usable. Bajar las previas de 900 px / calidad 46 a **820 px / calidad 42** la dejó en
-8,4 MB y en unos diez segundos. Si vuelve a acercarse a los 10 MB, lo primero que hay que tocar son
+llegaba a ser usable. Bajar las previas de 900 px / calidad 46 a 820 px / calidad 42 la dejó en
+8,4 MB y en unos diez segundos; al llegar la Ilíada a 27 obras volvió a rozar los 9,7 MB y se
+bajó otra vez, a **760 px / calidad 40**, que la deja en 8,2 MB. Si vuelve a acercarse a los 10 MB, lo primero que hay que tocar son
 `LADO` y `CALIDAD` de `previas.py` —cambiarlos invalida las previas ya generadas y las rehace
 todas—, no el número de obras.
 

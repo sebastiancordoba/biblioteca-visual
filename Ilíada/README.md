@@ -4,7 +4,7 @@ Cerámica ática, escultura helenística, arqueología de Micenas y Troya, y la 
 
 ---
 
-## 🏛️ Galería de la Colección (21 obras)
+## 🏛️ Galería de la Colección (27 obras)
 
 | N° | Obra | Autoría / Procedencia | Ubicación | Wikipedia | Archivo |
 |---|---|---|---|---|---|
@@ -23,12 +23,18 @@ Cerámica ática, escultura helenística, arqueología de Micenas y Troya, y la 
 | 13 | **Laocoonte y sus hijos** | Agesandro, Polidoro y Atenodoro de Rodas (c. 40 a.C.) | Museos Vaticanos, Roma (inv. 1059) | [Wikipedia](https://es.wikipedia.org/wiki/Grupo_de_Laocoonte) | [`13_Laocoonte_y_sus_Hijos_Escuela_de_Rodas_40aC.jpg`](./13_Laocoonte_y_sus_Hijos_Escuela_de_Rodas_40aC.jpg) |
 | 14 | **Guerrero del frontón del templo de Afaya** | Templo de Afaya, Egina (c. 500–480 a.C.) | Gliptoteca de Múnich, Alemania | [Wikipedia](https://es.wikipedia.org/wiki/Templo_de_Afaya) | [`14_Fronton_del_Templo_de_Afaya_Egina_490aC.jpg`](./14_Fronton_del_Templo_de_Afaya_Egina_490aC.jpg) |
 | 15 | **Las murallas de Troya** | Hisarlik, Anatolia noroccidental | Provincia de Çanakkale, Turquía | [Wikipedia](https://es.wikipedia.org/wiki/Troya) | [`15_Murallas_de_Troya_Hisarlik_2500aC.jpg`](./15_Murallas_de_Troya_Hisarlik_2500aC.jpg) |
-| 16 | **La muerte de Sarpedón** | Eufronio, ceramista y pintor ático (c. 515 a.C.) | Museo Nacional Cerite, Cerveteri, Italia | [Wikipedia](https://es.wikipedia.org/wiki/Crat%C3%A9ra_de_Eufronio) | [`16_La_Muerte_de_Sarpedon_Cratera_de_Eufronio_515aC.jpg`](./16_La_Muerte_de_Sarpedon_Cratera_de_Eufronio_515aC.jpg) |
-| 17 | **Tetis recibe las armas de Aquiles** | Anton van Dyck (c. 1630–1632) | Bildergalerie de Sanssouci, Potsdam (GK I 7762) | [Wikipedia](https://es.wikipedia.org/wiki/Escudo_de_Aquiles) | [`17_Tetis_Recibe_las_Armas_de_Aquiles_Anton_van_Dyck_1632.jpg`](./17_Tetis_Recibe_las_Armas_de_Aquiles_Anton_van_Dyck_1632.jpg) |
-| 18 | **Aquiles y Pentesilea** | Exekias (c. 530 a.C.) | British Museum, Londres (1849,0518.10) | [Wikipedia](https://es.wikipedia.org/wiki/Pentesilea) | [`18_Aquiles_y_Pentesilea_Exekias_530aC.jpg`](./18_Aquiles_y_Pentesilea_Exekias_530aC.jpg) |
-| 19 | **Los amores de Paris y Helena** | Jacques-Louis David (1788) | Musée du Louvre, París | [Wikipedia](https://es.wikipedia.org/wiki/Los_amores_de_Paris_y_Helena) | [`19_Los_Amores_de_Paris_y_Helena_Jacques_Louis_David_1788.jpg`](./19_Los_Amores_de_Paris_y_Helena_Jacques_Louis_David_1788.jpg) |
-| 20 | **Briseida llevada ante Agamenón** | Giambattista Tiepolo (1757) | Villa Valmarana ai Nani, Vicenza, Italia | [Wikipedia](https://es.wikipedia.org/wiki/Briseida) | [`20_Briseida_Llevada_ante_Agamenon_Giambattista_Tiepolo_1757.jpg`](./20_Briseida_Llevada_ante_Agamenon_Giambattista_Tiepolo_1757.jpg) |
-| 21 | **Juegos fúnebres en honor de Patroclo** | Carle Vernet (1790) | 1790 | [Wikipedia](https://es.wikipedia.org/wiki/Patroclo) | [`21_Juegos_Funebres_en_Honor_de_Patroclo_Carle_Vernet_1790.jpg`](./21_Juegos_Funebres_en_Honor_de_Patroclo_Carle_Vernet_1790.jpg) |
+| 16 | **Aquiles a punto de matar a Héctor** | Giovanni Maria Benzoni (s. XIX) | Metropolitan Museum of Art, Nueva York | [Wikipedia](https://es.wikipedia.org/wiki/H%C3%A9ctor) | [`22_Aquiles_a_Punto_de_Matar_a_Hector_Giovanni_Maria_Benzoni_1850.jpg`](./22_Aquiles_a_Punto_de_Matar_a_Hector_Giovanni_Maria_Benzoni_1850.jpg) |
+| 17 | **La cólera de Aquiles** | Peter Paul Rubens (c. 1630) | Museum Boijmans Van Beuningen, Róterdam | [Wikipedia](https://es.wikipedia.org/wiki/Aquiles) | [`23_La_Colera_de_Aquiles_Peter_Paul_Rubens_1630.jpg`](./23_La_Colera_de_Aquiles_Peter_Paul_Rubens_1630.jpg) |
+| 18 | **El rescate del cuerpo de Héctor** | Grupo de los Pioneros, cerámica ática (510–500 a.C.) | Arthur M. Sackler Museum, Universidad de Harvard | [Wikipedia](https://es.wikipedia.org/wiki/Ker%C3%A1mica_%C3%A1tica) | [`24_El_Rescate_del_Cuerpo_de_Hector_Hidria_Atica_510aC.jpg`](./24_El_Rescate_del_Cuerpo_de_Hector_Hidria_Atica_510aC.jpg) |
+| 19 | **El rescate del cuerpo de Héctor** | Sarcófago romano, taller itálico (c. 190–200 d.C.) | Museo del Louvre, París | [Wikipedia](https://es.wikipedia.org/wiki/Sarc%C3%B3fago_romano) | [`25_El_Rescate_del_Cuerpo_de_Hector_Sarcofago_Romano_190.jpg`](./25_El_Rescate_del_Cuerpo_de_Hector_Sarcofago_Romano_190.jpg) |
+| 20 | **Papiro de Oxirrinco 221** | Egipto romano, Oxirrinco (s. II d.C.) | hallado en Oxirrinco, publicado por Grenfell y Hunt en 1898 | [Wikipedia](https://es.wikipedia.org/wiki/Papiros_de_Oxirrinco) | [`26_Papiro_de_Oxirrinco_221_Escolios_de_la_Iliada_s_II.jpg`](./26_Papiro_de_Oxirrinco_221_Escolios_de_la_Iliada_s_II.jpg) |
+| 21 | **La primera Ilíada en español** | Ignacio García Malo, impreso en Madrid (1788) | Imprenta de Pantaleón Aznar, Madrid | [Wikipedia](https://es.wikipedia.org/wiki/Il%C3%ADada) | [`27_Primera_Traduccion_Espanola_Ignacio_Garcia_Malo_1788.jpg`](./27_Primera_Traduccion_Espanola_Ignacio_Garcia_Malo_1788.jpg) |
+| 22 | **La muerte de Sarpedón** | Eufronio, ceramista y pintor ático (c. 515 a.C.) | Museo Nacional Cerite, Cerveteri, Italia | [Wikipedia](https://es.wikipedia.org/wiki/Crat%C3%A9ra_de_Eufronio) | [`16_La_Muerte_de_Sarpedon_Cratera_de_Eufronio_515aC.jpg`](./16_La_Muerte_de_Sarpedon_Cratera_de_Eufronio_515aC.jpg) |
+| 23 | **Tetis recibe las armas de Aquiles** | Anton van Dyck (c. 1630–1632) | Bildergalerie de Sanssouci, Potsdam (GK I 7762) | [Wikipedia](https://es.wikipedia.org/wiki/Escudo_de_Aquiles) | [`17_Tetis_Recibe_las_Armas_de_Aquiles_Anton_van_Dyck_1632.jpg`](./17_Tetis_Recibe_las_Armas_de_Aquiles_Anton_van_Dyck_1632.jpg) |
+| 24 | **Aquiles y Pentesilea** | Exekias (c. 530 a.C.) | British Museum, Londres (1849,0518.10) | [Wikipedia](https://es.wikipedia.org/wiki/Pentesilea) | [`18_Aquiles_y_Pentesilea_Exekias_530aC.jpg`](./18_Aquiles_y_Pentesilea_Exekias_530aC.jpg) |
+| 25 | **Los amores de Paris y Helena** | Jacques-Louis David (1788) | Musée du Louvre, París | [Wikipedia](https://es.wikipedia.org/wiki/Los_amores_de_Paris_y_Helena) | [`19_Los_Amores_de_Paris_y_Helena_Jacques_Louis_David_1788.jpg`](./19_Los_Amores_de_Paris_y_Helena_Jacques_Louis_David_1788.jpg) |
+| 26 | **Briseida llevada ante Agamenón** | Giambattista Tiepolo (1757) | Villa Valmarana ai Nani, Vicenza, Italia | [Wikipedia](https://es.wikipedia.org/wiki/Briseida) | [`20_Briseida_Llevada_ante_Agamenon_Giambattista_Tiepolo_1757.jpg`](./20_Briseida_Llevada_ante_Agamenon_Giambattista_Tiepolo_1757.jpg) |
+| 27 | **Juegos fúnebres en honor de Patroclo** | Carle Vernet (1790) | 1790 | [Wikipedia](https://es.wikipedia.org/wiki/Patroclo) | [`21_Juegos_Funebres_en_Honor_de_Patroclo_Carle_Vernet_1790.jpg`](./21_Juegos_Funebres_en_Honor_de_Patroclo_Carle_Vernet_1790.jpg) |
 
 ---
 
@@ -418,7 +424,155 @@ El yacimiento es Patrimonio de la Humanidad desde 1998. Las excavaciones posteri
 
 ---
 
-### 16. La muerte de Sarpedón — Eufronio, ceramista y pintor ático (c. 515 a.C.)
+### 16. Aquiles a punto de matar a Héctor — Giovanni Maria Benzoni (s. XIX)
+
+![Aquiles a punto de matar a Héctor](./22_Aquiles_a_Punto_de_Matar_a_Hector_Giovanni_Maria_Benzoni_1850.jpg)
+*Aquiles a punto de matar a Héctor, con Palas Atenea entre ambos — Giovanni Maria Benzoni (s. XIX)*
+
+#### Ficha Técnica
+
+- Relieve en mármol blanco
+- pedestal 84,5 × 83,8 cm, long. 116,8 cm
+- inv. 99.9d
+- Metropolitan Museum of Art, Nueva York
+
+#### Lo que hace que destaque
+
+Benzoni resuelve el canto XXII en un friso horizontal: los dos guerreros avanzan uno contra otro desde los extremos y la diosa ocupa el centro exacto, con una lanza en la mano. Ese es el detalle: Homero cuenta que Atenea recoge la lanza que Aquiles ha lanzado y falla, y se la devuelve sin que Héctor lo vea. Antes lo había engañado tomando la forma de su hermano Deífobo para que se quedara a pelear, de modo que cuando el troyano pide una lanza de repuesto no hay nadie a quien pedírsela. El mármol neoclásico, de superficie pulida y anatomía idealizada, enfría un episodio que en el poema es sucio y desesperado; esa distancia es precisamente el gusto del siglo XIX por lo antiguo.
+
+#### Contexto Histórico y Arqueológico
+
+Benzoni tuvo taller en Roma y trabajó sobre todo para clientela extranjera, en particular británica y estadounidense, que compraba escultura de tema clásico como recuerdo culto del Grand Tour. Esta pieza llegó al Metropolitan en 1899 como donación de la señora Lawrence Kip. Es el único combate de la Ilíada que la colección tiene en escultura moderna.
+
+#### Autoría y Procedencia
+
+Cubre el hueco central del poema. La colección tenía el triunfo posterior sobre el cadáver —el fresco de Matsch— y el duelo de Andrómaca, pero no el instante del combate; el Rubens de Pau, que sería la otra opción, no está en Commons.
+
+---
+
+### 17. La cólera de Aquiles — Peter Paul Rubens (c. 1630)
+
+![La cólera de Aquiles](./23_La_Colera_de_Aquiles_Peter_Paul_Rubens_1630.jpg)
+*La cólera de Aquiles — Peter Paul Rubens (c. 1630)*
+
+#### Ficha Técnica
+
+- Óleo sobre tabla, modello para tapiz
+- Museum Boijmans Van Beuningen, Róterdam
+
+#### Lo que hace que destaque
+
+Rubens pinta el momento exacto en que Aquiles desenvaina y Atenea lo sujeta por el pelo desde atrás —solo él la ve— mientras los demás jefes intentan contenerlo. Es un modello: una tabla pequeña y de pincelada rápida hecha para que los tejedores tradujeran la composición a tapiz, así que conserva la energía del primer impulso que las versiones acabadas suelen perder. Todo el cuadro está construido sobre diagonales que se cruzan en el brazo armado.
+
+#### Contexto Histórico y Arqueológico
+
+Forma parte de la serie de ocho tapices sobre la vida de Aquiles que Rubens diseñó hacia 1630, probablemente para su suegro Daniel Fourment, comerciante de tapices de Amberes. Los modellos se repartieron entre varias colecciones; el Boijmans conserva este.
+
+#### Autoría y Procedencia
+
+Es el arranque literal del poema, y la colección no lo tenía: la obra que figuraba como «cólera de Aquiles», el David de 1819, retrata en realidad el sacrificio de Ifigenia, un episodio anterior a la Ilíada.
+
+---
+
+### 18. El rescate del cuerpo de Héctor — Grupo de los Pioneros, cerámica ática (510–500 a.C.)
+
+![El rescate del cuerpo de Héctor](./24_El_Rescate_del_Cuerpo_de_Hector_Hidria_Atica_510aC.jpg)
+*El rescate del cuerpo de Héctor — hidria ática de figuras rojas, Grupo de los Pioneros (510–500 a.C.)*
+
+#### Ficha Técnica
+
+- Hidria de figuras rojas, terracota
+- Arthur M. Sackler Museum, Universidad de Harvard
+
+#### Lo que hace que destaque
+
+La escena se organiza en dos alturas que resumen todo el canto: arriba, Aquiles reclinado en el banquete al que Príamo llega a suplicar; debajo, en el espacio bajo el lecho, el cadáver de Héctor. Ponerlo ahí no es un recurso de composición sino de sentido: el anfitrión come mientras el muerto está a sus pies. El Grupo de los Pioneros fue la generación que estrenó la técnica de figuras rojas y aprovechó la libertad del pincel para dibujar escorzos y musculatura que la figura negra, rascada con punzón, no permitía.
+
+#### Contexto Histórico y Arqueológico
+
+Se llama «Pioneros» a un puñado de ceramistas atenienses del último cuarto del siglo VI a.C. —Eufronio entre ellos— que compitieron entre sí por resolver problemas de dibujo y a veces se retaron por escrito sobre los propios vasos. La colección ya tiene la crátera de Sarpedón de Eufronio: son dos obras del mismo taller y la misma década.
+
+#### Autoría y Procedencia
+
+La colección tenía el rescate en pintura del XIX —el Ivanov— pero no en la cerámica contemporánea del poema. Puestos uno junto al otro se ve la diferencia entre ilustrar a Homero y compartir su mundo.
+
+---
+
+### 19. El rescate del cuerpo de Héctor — Sarcófago romano, taller itálico (c. 190–200 d.C.)
+
+![El rescate del cuerpo de Héctor](./25_El_Rescate_del_Cuerpo_de_Hector_Sarcofago_Romano_190.jpg)
+*El rescate del cuerpo de Héctor — cara principal de un sarcófago romano (c. 190–200 d.C.)*
+
+#### Ficha Técnica
+
+- Mármol, cara principal de sarcófago
+- Departamento de Antigüedades griegas, etruscas y romanas
+- Museo del Louvre, París
+
+#### Lo que hace que destaque
+
+El relieve despliega el episodio de izquierda a derecha como una narración continua, con Príamo arrodillado ante Aquiles y el cuerpo de Héctor cargado en un carro. Los talleres romanos de sarcófagos trabajaban con repertorios: un cliente elegía la escena mitológica que quería sobre su tumba, y la del rescate de Héctor era de las preferidas porque hablaba a la vez de la muerte de un hijo, del duelo de un padre y de la piedad del vencedor. Es literatura griega usada como consuelo funerario.
+
+#### Contexto Histórico y Arqueológico
+
+Procede de la colección Borghese, comprada en bloque por Napoleón a su cuñado Camillo Borghese en 1807, lo que explica que buena parte de la escultura antigua del Louvre venga de un solo palacio romano. La imagen se tomó en el Louvre-Lens durante la exposición «Homère» de 2019.
+
+#### Autoría y Procedencia
+
+Junto a la hidria ática y al Ivanov, el mismo pasaje contado en tres momentos separados por veinticuatro siglos: cerámica griega, mármol romano y pintura académica rusa.
+
+---
+
+### 20. Papiro de Oxirrinco 221 — Egipto romano, Oxirrinco (s. II d.C.)
+
+![Papiro de Oxirrinco 221](./26_Papiro_de_Oxirrinco_221_Escolios_de_la_Iliada_s_II.jpg)
+*Papiro de Oxirrinco 221: escolios al canto XXI de la Ilíada (s. II d.C.)*
+
+#### Ficha Técnica
+
+- Tinta sobre papiro
+- escolios al canto XXI
+- hallado en Oxirrinco, publicado por Grenfell y Hunt en 1898
+
+#### Lo que hace que destaque
+
+Lo que se conserva no son los versos sino los escolios: comentarios eruditos al canto XXI, la batalla de Aquiles contra el río Escamandro. Alguien en el Egipto romano leía el poema con notas al pie, discutía variantes y citaba a gramáticos alejandrinos. La caligrafía es una cursiva de trabajo, no de lujo: un ejemplar de estudio, no de biblioteca. Puesto en una colección de arte, recuerda que todas las demás piezas son lecturas de un texto que también tuvo cuerpo físico y que llegó hasta aquí en tiras de junco.
+
+#### Contexto Histórico y Arqueológico
+
+Los papiros de Oxirrinco salieron del vertedero de una ciudad del Egipto medio que Bernard Grenfell y Arthur Hunt empezaron a excavar en 1896. Es el mayor hallazgo de literatura antigua que existe —medio millón de fragmentos— y de él proceden textos que no se conocían por ninguna otra vía. Homero es, con diferencia, el autor más copiado entre ellos.
+
+#### Autoría y Procedencia
+
+Es la única imagen de este papiro en Commons y está por debajo de la resolución que exige la colección; se incluye porque es un documento único y la alternativa era no tenerlo. Queda anotada como excepción.
+
+---
+
+### 21. La primera Ilíada en español — Ignacio García Malo, impreso en Madrid (1788)
+
+![La primera Ilíada en español](./27_Primera_Traduccion_Espanola_Ignacio_Garcia_Malo_1788.jpg)
+*Portada del tomo I de «La Ilíada de Homero», traducción de Ignacio García Malo (Madrid, 1788)*
+
+#### Ficha Técnica
+
+- Portada del tomo I
+- Imprenta de Pantaleón Aznar, Madrid
+
+#### Lo que hace que destaque
+
+La portada es sobria hasta la aspereza —tipografía, filete y pie de imprenta— y esa sobriedad es el estilo neoclásico español de finales del XVIII, que desconfiaba del adorno barroco. Lo que importa aquí no es la ornamentación sino la fecha: hasta García Malo, quien quisiera leer a Homero en España tenía que hacerlo en griego, en latín o en francés. La traducción es en prosa, decisión discutida entonces y hoy, tomada para no sacrificar el sentido al verso.
+
+#### Contexto Histórico y Arqueológico
+
+Ignacio García Malo (1760–1812) fue traductor, dramaturgo y funcionario. Su Ilíada salió en tres tomos entre 1788 y 1793, y fue la versión de referencia hasta que Luis Segalá y Estalella publicó la suya, ya en el siglo XX, que es la que todavía se lee. El ejemplar digitalizado procede de Google Books.
+
+#### Autoría y Procedencia
+
+Es la única pieza de la colección que no representa el poema sino que lo contiene: el punto en el que la Ilíada entra en la lengua en la que está escrito todo lo que se lee en esta página.
+
+---
+
+### 22. La muerte de Sarpedón — Eufronio, ceramista y pintor ático (c. 515 a.C.)
 
 ![La muerte de Sarpedón](./16_La_Muerte_de_Sarpedon_Cratera_de_Eufronio_515aC.jpg)
 *La muerte de Sarpedón — crátera de Eufronio (c. 515 a.C.)*
@@ -443,7 +597,7 @@ Eufronio (activo c. 520–470 a.C.) es el maestro del grupo de los «Pioneros» 
 
 ---
 
-### 17. Tetis recibe las armas de Aquiles — Anton van Dyck (c. 1630–1632)
+### 23. Tetis recibe las armas de Aquiles — Anton van Dyck (c. 1630–1632)
 
 ![Tetis recibe las armas de Aquiles](./17_Tetis_Recibe_las_Armas_de_Aquiles_Anton_van_Dyck_1632.jpg)
 *Tetis recibe de Hefesto las armas para Aquiles — Anton van Dyck (c. 1630-1632)*
@@ -467,7 +621,7 @@ Anton van Dyck (1599–1641) fue el ayudante más precoz del taller de Rubens y 
 
 ---
 
-### 18. Aquiles y Pentesilea — Exekias (c. 530 a.C.)
+### 24. Aquiles y Pentesilea — Exekias (c. 530 a.C.)
 
 ![Aquiles y Pentesilea](./18_Aquiles_y_Pentesilea_Exekias_530aC.jpg)
 *Aquiles y Pentesilea — Exekias (c. 530 a.C.)*
@@ -492,7 +646,7 @@ Exekias firmó como alfarero y como pintor, cosa rarísima. Junto a los dados de
 
 ---
 
-### 19. Los amores de Paris y Helena — Jacques-Louis David (1788)
+### 25. Los amores de Paris y Helena — Jacques-Louis David (1788)
 
 ![Los amores de Paris y Helena](./19_Los_Amores_de_Paris_y_Helena_Jacques_Louis_David_1788.jpg)
 *Los amores de Paris y Helena — Jacques-Louis David (1788)*
@@ -517,7 +671,7 @@ Es el tercer David de esta colección, junto a La cólera de Aquiles y Andrómac
 
 ---
 
-### 20. Briseida llevada ante Agamenón — Giambattista Tiepolo (1757)
+### 26. Briseida llevada ante Agamenón — Giambattista Tiepolo (1757)
 
 ![Briseida llevada ante Agamenón](./20_Briseida_Llevada_ante_Agamenon_Giambattista_Tiepolo_1757.jpg)
 *Euríbates y Taltibio llevan a Briseida ante Agamenón — Giambattista Tiepolo (1757)*
@@ -542,7 +696,7 @@ Giambattista Tiepolo (1696–1770) fue el último gran fresquista de la tradici�
 
 ---
 
-### 21. Juegos fúnebres en honor de Patroclo — Carle Vernet (1790)
+### 27. Juegos fúnebres en honor de Patroclo — Carle Vernet (1790)
 
 ![Juegos fúnebres en honor de Patroclo](./21_Juegos_Funebres_en_Honor_de_Patroclo_Carle_Vernet_1790.jpg)
 *Juegos fúnebres en honor de Patroclo — Carle Vernet (1790)*

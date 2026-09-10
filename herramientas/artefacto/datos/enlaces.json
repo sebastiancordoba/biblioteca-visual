@@ -565,5 +565,47 @@
   "mp": 5.7,
   "original": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Games_in_honor_of_Patroclus_during_his_funeral_Antoine_Charles_Horace_Vernet%2C_1790.jpg",
   "w": 3072
+ },
+ "Ilíada/22_Aquiles_a_Punto_de_Matar_a_Hector_Giovanni_Maria_Benzoni_1850.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Achilles_about_to_kill_Hector,_Pallas_Athena_between_them_MET_225138.jpg",
+  "h": 3049,
+  "mp": 11.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Achilles_about_to_kill_Hector%2C_Pallas_Athena_between_them_MET_225138.jpg",
+  "w": 3811
+ },
+ "Ilíada/23_La_Colera_de_Aquiles_Peter_Paul_Rubens_1630.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_The_Wrath_of_Achilles_-_Google_Art_Project.jpg",
+  "h": 5297,
+  "mp": 28.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Peter_Paul_Rubens_-_The_Wrath_of_Achilles_-_Google_Art_Project.jpg",
+  "w": 5392
+ },
+ "Ilíada/24_El_Rescate_del_Cuerpo_de_Hector_Hidria_Atica_510aC.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:The_Ransom_of_Hector,_hydria,_by_the_Pioneer_Group,_Attic_Greek,_510-500_BC,_red-figure_terracotta_-_Sackler_Museum_-_Harvard_University_-_DSC01787.jpg",
+  "h": 3648,
+  "mp": 20.0,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/13/The_Ransom_of_Hector%2C_hydria%2C_by_the_Pioneer_Group%2C_Attic_Greek%2C_510-500_BC%2C_red-figure_terracotta_-_Sackler_Museum_-_Harvard_University_-_DSC01787.jpg",
+  "w": 5472
+ },
+ "Ilíada/25_El_Rescate_del_Cuerpo_de_Hector_Sarcofago_Romano_190.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:Le_rachat_du_corps_d%27Hector_(exposition_Hom%C3%A8re,_Louvre_Lens)_(48259158962).jpg",
+  "h": 3079,
+  "mp": 16.9,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Le_rachat_du_corps_d%27Hector_%28exposition_Hom%C3%A8re%2C_Louvre_Lens%29_%2848259158962%29.jpg",
+  "w": 5493
+ },
+ "Ilíada/26_Papiro_de_Oxirrinco_221_Escolios_de_la_Iliada_s_II.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:P._Oxy._221.jpg",
+  "h": 990,
+  "mp": 0.5,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/dc/P._Oxy._221.jpg",
+  "w": 490
+ },
+ "Ilíada/27_Primera_Traduccion_Espanola_Ignacio_Garcia_Malo_1788.jpg": {
+  "commons": "https://commons.wikimedia.org/wiki/File:La_Il%C3%ADada_de_Homero,_Tomo_I_(Ignacio_Garc%C3%ADa_Malo)_portada.jpg",
+  "h": 2080,
+  "mp": 2.6,
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/3f/La_Il%C3%ADada_de_Homero%2C_Tomo_I_%28Ignacio_Garc%C3%ADa_Malo%29_portada.jpg",
+  "w": 1272
  }
 }

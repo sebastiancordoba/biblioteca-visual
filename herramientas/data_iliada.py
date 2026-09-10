@@ -185,6 +185,78 @@ ILIADA = [
  "history": "Heinrich Schliemann excavó allí desde 1871 convencido de que la Ilíada era historia. Para llegar rápido a los niveles profundos abrió una gran trinchera norte-sur que arrasó buena parte de los estratos intermedios: destruyó, con toda probabilidad, precisamente la Troya que buscaba. El «Tesoro de Príamo» que anunció en 1873 pertenece a Troya II, mil años anterior a cualquier fecha posible para la guerra.",
  "bio": "El yacimiento es Patrimonio de la Humanidad desde 1998. Las excavaciones posteriores, dirigidas por Manfred Korfmann desde 1988, revelaron una ciudad baja mucho más extensa de lo supuesto, lo que reabrió el debate sobre si Troya VI fue una capital capaz de sostener un asedio prolongado."
 },
+{
+ "files": ["22_Aquiles_a_Punto_de_Matar_a_Hector_Giovanni_Maria_Benzoni_1850.jpg"],
+ "views": ["Aquiles a punto de matar a Héctor, con Palas Atenea entre ambos — Giovanni Maria Benzoni (s. XIX)"],
+ "title": "Aquiles a punto de matar a Héctor",
+ "artist": "Giovanni Maria Benzoni (s. XIX)",
+ "meta": "Relieve en mármol blanco | pedestal 84,5 × 83,8 cm, long. 116,8 cm | inv. 99.9d | Metropolitan Museum of Art, Nueva York",
+ "wikiUrl": "https://es.wikipedia.org/wiki/H%C3%A9ctor",
+ "snippet": "Canto XXII, el combate que decide la guerra. Atenea se interpone entre los dos, y esa figura en medio es la clave: Héctor no pierde ante un hombre, pierde ante los dioses.",
+ "analysis": "Benzoni resuelve el canto XXII en un friso horizontal: los dos guerreros avanzan uno contra otro desde los extremos y la diosa ocupa el centro exacto, con una lanza en la mano. Ese es el detalle: Homero cuenta que Atenea recoge la lanza que Aquiles ha lanzado y falla, y se la devuelve sin que Héctor lo vea. Antes lo había engañado tomando la forma de su hermano Deífobo para que se quedara a pelear, de modo que cuando el troyano pide una lanza de repuesto no hay nadie a quien pedírsela. El mármol neoclásico, de superficie pulida y anatomía idealizada, enfría un episodio que en el poema es sucio y desesperado; esa distancia es precisamente el gusto del siglo XIX por lo antiguo.",
+ "history": "Benzoni tuvo taller en Roma y trabajó sobre todo para clientela extranjera, en particular británica y estadounidense, que compraba escultura de tema clásico como recuerdo culto del Grand Tour. Esta pieza llegó al Metropolitan en 1899 como donación de la señora Lawrence Kip. Es el único combate de la Ilíada que la colección tiene en escultura moderna.",
+ "bio": "Cubre el hueco central del poema. La colección tenía el triunfo posterior sobre el cadáver —el fresco de Matsch— y el duelo de Andrómaca, pero no el instante del combate; el Rubens de Pau, que sería la otra opción, no está en Commons."
+},
+{
+ "files": ["23_La_Colera_de_Aquiles_Peter_Paul_Rubens_1630.jpg"],
+ "views": ["La cólera de Aquiles — Peter Paul Rubens (c. 1630)"],
+ "title": "La cólera de Aquiles",
+ "artist": "Peter Paul Rubens (c. 1630)",
+ "meta": "Óleo sobre tabla, modello para tapiz | Museum Boijmans Van Beuningen, Róterdam",
+ "wikiUrl": "https://es.wikipedia.org/wiki/Aquiles",
+ "snippet": "Canto I, el verso con el que arranca todo: «Canta, oh diosa, la cólera del Pélida Aquiles». Agamenón le quita a Briseida y Aquiles echa mano a la espada.",
+ "analysis": "Rubens pinta el momento exacto en que Aquiles desenvaina y Atenea lo sujeta por el pelo desde atrás —solo él la ve— mientras los demás jefes intentan contenerlo. Es un modello: una tabla pequeña y de pincelada rápida hecha para que los tejedores tradujeran la composición a tapiz, así que conserva la energía del primer impulso que las versiones acabadas suelen perder. Todo el cuadro está construido sobre diagonales que se cruzan en el brazo armado.",
+ "history": "Forma parte de la serie de ocho tapices sobre la vida de Aquiles que Rubens diseñó hacia 1630, probablemente para su suegro Daniel Fourment, comerciante de tapices de Amberes. Los modellos se repartieron entre varias colecciones; el Boijmans conserva este.",
+ "bio": "Es el arranque literal del poema, y la colección no lo tenía: la obra que figuraba como «cólera de Aquiles», el David de 1819, retrata en realidad el sacrificio de Ifigenia, un episodio anterior a la Ilíada."
+},
+{
+ "files": ["24_El_Rescate_del_Cuerpo_de_Hector_Hidria_Atica_510aC.jpg"],
+ "views": ["El rescate del cuerpo de Héctor — hidria ática de figuras rojas, Grupo de los Pioneros (510–500 a.C.)"],
+ "title": "El rescate del cuerpo de Héctor",
+ "artist": "Grupo de los Pioneros, cerámica ática (510–500 a.C.)",
+ "meta": "Hidria de figuras rojas, terracota | Arthur M. Sackler Museum, Universidad de Harvard",
+ "wikiUrl": "https://es.wikipedia.org/wiki/Ker%C3%A1mica_%C3%A1tica",
+ "snippet": "Canto XXIV visto por quienes tenían el poema por historia reciente: Príamo entra en la tienda y el cuerpo de su hijo yace debajo del lecho de Aquiles.",
+ "analysis": "La escena se organiza en dos alturas que resumen todo el canto: arriba, Aquiles reclinado en el banquete al que Príamo llega a suplicar; debajo, en el espacio bajo el lecho, el cadáver de Héctor. Ponerlo ahí no es un recurso de composición sino de sentido: el anfitrión come mientras el muerto está a sus pies. El Grupo de los Pioneros fue la generación que estrenó la técnica de figuras rojas y aprovechó la libertad del pincel para dibujar escorzos y musculatura que la figura negra, rascada con punzón, no permitía.",
+ "history": "Se llama «Pioneros» a un puñado de ceramistas atenienses del último cuarto del siglo VI a.C. —Eufronio entre ellos— que compitieron entre sí por resolver problemas de dibujo y a veces se retaron por escrito sobre los propios vasos. La colección ya tiene la crátera de Sarpedón de Eufronio: son dos obras del mismo taller y la misma década.",
+ "bio": "La colección tenía el rescate en pintura del XIX —el Ivanov— pero no en la cerámica contemporánea del poema. Puestos uno junto al otro se ve la diferencia entre ilustrar a Homero y compartir su mundo."
+},
+{
+ "files": ["25_El_Rescate_del_Cuerpo_de_Hector_Sarcofago_Romano_190.jpg"],
+ "views": ["El rescate del cuerpo de Héctor — cara principal de un sarcófago romano (c. 190–200 d.C.)"],
+ "title": "El rescate del cuerpo de Héctor",
+ "artist": "Sarcófago romano, taller itálico (c. 190–200 d.C.)",
+ "meta": "Mármol, cara principal de sarcófago | Departamento de Antigüedades griegas, etruscas y romanas | Museo del Louvre, París",
+ "wikiUrl": "https://es.wikipedia.org/wiki/Sarc%C3%B3fago_romano",
+ "snippet": "El mismo canto XXIV, seiscientos años después y con otro fin: la escena elegida para acompañar a un muerto romano hasta su tumba.",
+ "analysis": "El relieve despliega el episodio de izquierda a derecha como una narración continua, con Príamo arrodillado ante Aquiles y el cuerpo de Héctor cargado en un carro. Los talleres romanos de sarcófagos trabajaban con repertorios: un cliente elegía la escena mitológica que quería sobre su tumba, y la del rescate de Héctor era de las preferidas porque hablaba a la vez de la muerte de un hijo, del duelo de un padre y de la piedad del vencedor. Es literatura griega usada como consuelo funerario.",
+ "history": "Procede de la colección Borghese, comprada en bloque por Napoleón a su cuñado Camillo Borghese en 1807, lo que explica que buena parte de la escultura antigua del Louvre venga de un solo palacio romano. La imagen se tomó en el Louvre-Lens durante la exposición «Homère» de 2019.",
+ "bio": "Junto a la hidria ática y al Ivanov, el mismo pasaje contado en tres momentos separados por veinticuatro siglos: cerámica griega, mármol romano y pintura académica rusa."
+},
+{
+ "files": ["26_Papiro_de_Oxirrinco_221_Escolios_de_la_Iliada_s_II.jpg"],
+ "views": ["Papiro de Oxirrinco 221: escolios al canto XXI de la Ilíada (s. II d.C.)"],
+ "title": "Papiro de Oxirrinco 221",
+ "artist": "Egipto romano, Oxirrinco (s. II d.C.)",
+ "meta": "Tinta sobre papiro | escolios al canto XXI | hallado en Oxirrinco, publicado por Grenfell y Hunt en 1898",
+ "wikiUrl": "https://es.wikipedia.org/wiki/Papiros_de_Oxirrinco",
+ "snippet": "No es una ilustración de la Ilíada: es la Ilíada. O más bien lo que un lector escribía en sus márgenes mil setecientos años antes que nosotros.",
+ "analysis": "Lo que se conserva no son los versos sino los escolios: comentarios eruditos al canto XXI, la batalla de Aquiles contra el río Escamandro. Alguien en el Egipto romano leía el poema con notas al pie, discutía variantes y citaba a gramáticos alejandrinos. La caligrafía es una cursiva de trabajo, no de lujo: un ejemplar de estudio, no de biblioteca. Puesto en una colección de arte, recuerda que todas las demás piezas son lecturas de un texto que también tuvo cuerpo físico y que llegó hasta aquí en tiras de junco.",
+ "history": "Los papiros de Oxirrinco salieron del vertedero de una ciudad del Egipto medio que Bernard Grenfell y Arthur Hunt empezaron a excavar en 1896. Es el mayor hallazgo de literatura antigua que existe —medio millón de fragmentos— y de él proceden textos que no se conocían por ninguna otra vía. Homero es, con diferencia, el autor más copiado entre ellos.",
+ "bio": "Es la única imagen de este papiro en Commons y está por debajo de la resolución que exige la colección; se incluye porque es un documento único y la alternativa era no tenerlo. Queda anotada como excepción."
+},
+{
+ "files": ["27_Primera_Traduccion_Espanola_Ignacio_Garcia_Malo_1788.jpg"],
+ "views": ["Portada del tomo I de «La Ilíada de Homero», traducción de Ignacio García Malo (Madrid, 1788)"],
+ "title": "La primera Ilíada en español",
+ "artist": "Ignacio García Malo, impreso en Madrid (1788)",
+ "meta": "Portada del tomo I | Imprenta de Pantaleón Aznar, Madrid",
+ "wikiUrl": "https://es.wikipedia.org/wiki/Il%C3%ADada",
+ "snippet": "1788: el año en que la Ilíada se pudo leer entera en español por primera vez. Habían pasado veinticinco siglos.",
+ "analysis": "La portada es sobria hasta la aspereza —tipografía, filete y pie de imprenta— y esa sobriedad es el estilo neoclásico español de finales del XVIII, que desconfiaba del adorno barroco. Lo que importa aquí no es la ornamentación sino la fecha: hasta García Malo, quien quisiera leer a Homero en España tenía que hacerlo en griego, en latín o en francés. La traducción es en prosa, decisión discutida entonces y hoy, tomada para no sacrificar el sentido al verso.",
+ "history": "Ignacio García Malo (1760–1812) fue traductor, dramaturgo y funcionario. Su Ilíada salió en tres tomos entre 1788 y 1793, y fue la versión de referencia hasta que Luis Segalá y Estalella publicó la suya, ya en el siglo XX, que es la que todavía se lee. El ejemplar digitalizado procede de Google Books.",
+ "bio": "Es la única pieza de la colección que no representa el poema sino que lo contiene: el punto en el que la Ilíada entra en la lengua en la que está escrito todo lo que se lee en esta página."
+},
 ]
 
 # Lote 3: obras elegidas para tapar huecos concretos del mapa de cobertura.

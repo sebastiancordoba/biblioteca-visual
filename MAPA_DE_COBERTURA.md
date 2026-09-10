@@ -72,7 +72,7 @@ XVI y XVIII, que son su columna vertebral— está casi vacío.
 | I | Tetis suplica a Zeus | ✓ | Ingres, *Júpiter y Tetis* (02) |
 | I | Briseida arrebatada a Aquiles | ✓ | Giambattista Tiepolo, Villa Valmarana (20) |
 | III | Paris y Helena | ✓ | Jacques-Louis David, Louvre (19) · *Helena en las murallas* sigue sin fuente digna |
-| XXII | **Aquiles vence a Héctor** | ✗ | el Rubens de Pau no aparece en Commons |
+| XXII | Aquiles vence a Héctor | ✓ | Benzoni, relieve del Met, 11,6 MP (22) — Atenea devolviéndole la lanza |
 | VI | Héctor y Andrómaca | ✓ | David (04), en clave de duelo posterior |
 | IX | **La embajada a Aquiles** | ✗ | Ingres, ENSBA — el gran hueco del poema, y en Commons solo a **0,8 MP**: hay que ir a la ENSBA o a la RMN |
 | X | La Dolonía (casco de jabalí) | ✓ | Casco micénico (12) |
@@ -81,13 +81,16 @@ XVI y XVIII, que son su columna vertebral— está casi vacío.
 | XVI | La muerte de Sarpedón | ✓ | Crátera de Eufronio, 42,6 MP (16) |
 | XVIII | Tetis y las armas de Aquiles | ✓ | Van Dyck, Sanssouci, 75,2 MP (17) |
 | XXII | El triunfo sobre Héctor | ✓ | Franz von Matsch (05) |
-| XXII | **Aquiles vence a Héctor** | · | Rubens, Pau |
+| I | La cólera de Aquiles: la disputa con Agamenón | ✓ | Rubens, modello del Boijmans, 28,6 MP (23) |
 | XXIII | Juegos fúnebres de Patroclo | ✓ | Carle Vernet, 1790 (21) |
-| XXIV | Príamo pide el cuerpo de Héctor | ✓ | Alexander Ivanov (07) |
+| XXI | Escolios antiguos al canto | ✓ | Papiro de Oxirrinco 221, s. II (26) — el texto mismo, no su ilustración |
+| XXIV | Príamo pide el cuerpo de Héctor | ✓✓ | Ivanov (07) · hidria del Grupo de los Pioneros, Harvard, 20 MP (24) · sarcófago romano del Louvre, 16,9 MP (25) |
 | *posterior* | El caballo de Troya | ✓ | Giandomenico Tiepolo (08) |
 | *posterior* | Laocoonte | ✓ | Escuela de Rodas (13) |
 | *fuera* | Aquiles y Áyax juegan a los dados | ✓ | Exekias (01) |
 | *fuera* | **Áyax y Casandra** | · | cerámica ática, por buscar |
+
+| *el libro* | La Ilíada en español | ✓ | Primera traducción, Ignacio García Malo, Madrid 1788 (27) |
 
 ### Arqueología
 

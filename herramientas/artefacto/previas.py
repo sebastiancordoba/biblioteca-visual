@@ -10,7 +10,7 @@ import io, os, re, subprocess
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 TMP  = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "build")
 TH   = os.path.join(TMP, "th2")
-LADO, CALIDAD = 820, 42
+LADO, CALIDAD = 760, 40
 # Los retratos de autor ilustran una tarjeta de 168 px de alto: a 820 px pesarían
 # treinta y siete veces más de lo que hace falta.
 LADO_AUTOR = 400

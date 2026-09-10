@@ -60,6 +60,8 @@ const EXCEPCIONES = {
     'pendiente de buscar en la Watts Gallery',
   './Génesis/01b_La_Creacion_de_Adan_Manos_Miguel_Angel_1512.jpg':
     'recorte de detalle; puede rehacerse desde el techo de 10080x6720 ya presente',
+  './Ilíada/26_Papiro_de_Oxirrinco_221_Escolios_de_la_Iliada_s_II.jpg':
+    'única imagen de este papiro en Commons: su categoría tiene un solo archivo. Documento único, la alternativa era no tenerlo',
 };
 let small = 0;
 for (const [id, b] of Object.entries(BOOKS))
