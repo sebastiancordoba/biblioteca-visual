@@ -284,6 +284,13 @@ Micenas y los frescos de Dura Europos son anónimos, y fingir una autoría serí
 que no la hay. Cada autor se enlaza con sus obras por el campo `artist` de la ficha —sin listas
 escritas a mano—, de modo que al añadir una obra suya aparece ahí solo.
 
+El vínculo autor↔obra se hace por **índice, nunca por título**. Los títulos se repiten —«El
+sacrificio de Isaac» es de Caravaggio y de Rembrandt, «Adán y Eva» de Cranach dos veces y de
+Durero— y buscar por título le colgaba a un autor la obra de otro, que es como se descubrió.
+El índice se calcula sobre los `details` **ya filtrados**, porque las obras cuya imagen falta
+no llegan a la página y correrían todos los índices. `inject.py` lo comprueba con un `assert`
+al construir: si a un autor se le cuelga algo que no es suyo, la construcción se detiene.
+
 Las biografías están en `herramientas/data_autores.py`. **Las fechas se comprueban contra
 Wikidata** con `python3 herramientas/verificar_autores.py`; hoy 39 de 42 coinciden exactamente y
 las 3 restantes están declaradas como excepciones con su motivo. Ese script cazó dos errores

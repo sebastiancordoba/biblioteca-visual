@@ -71,6 +71,7 @@ def main():
     s = io.open(path, encoding="utf-8").read()
 
     blocks, counts = [], {}
+    DETALLES = {}          # libro -> details YA filtrados, para enlazar los autores
     for book_id, entries, folder in (("genesis", GENESIS, "Génesis"),
                                      ("gilgamesh", GILGAMESH, "Gilgamesh"),
                                      ("iliada", ILIADA, "Ilíada")):
@@ -80,6 +81,7 @@ def main():
         print(f"{book_id}: {len(details)} obras, {sum(len(g) for g in groups)} imágenes"
               + (f"  (sin archivo: {', '.join(omitted)})" if omitted else ""))
         if not details: continue
+        DETALLES[book_id] = details
         d = json.dumps(details, ensure_ascii=False, indent=2).replace("\n", "\n    ")
         g = json.dumps(groups,  ensure_ascii=False, indent=2).replace("\n", "\n    ")
         blocks.append(f"    BOOKS.{book_id}.details = {d};\n    BOOKS.{book_id}.groups = {g};")
@@ -88,11 +90,16 @@ def main():
     # Cada autor se enlaza con sus obras por el campo `artist` de las fichas, sin listas
     # escritas a mano: al añadir una obra suya aparece aquí sola. Solo salen los autores
     # que de verdad tienen alguna obra en la colección.
+    # Se enlaza por ÍNDICE sobre los details ya filtrados, nunca por título: hay títulos
+    # repetidos —«El sacrificio de Isaac» es de Caravaggio y de Rembrandt, «Adán y Eva» de
+    # Cranach dos veces y de Durero— y buscar por título le colgaba a un autor la obra de
+    # otro. Y tiene que ser sobre los details YA filtrados, porque las obras cuya imagen
+    # falta no llegan a la página y correrían todos los índices.
     porPatron = {}
-    for libro, arr in (("genesis", GENESIS), ("gilgamesh", GILGAMESH), ("iliada", ILIADA)):
-        for i, e in enumerate(arr):
-            porPatron.setdefault(e["artist"].rsplit(" (", 1)[0].strip(), []).append(
-                {"libro": libro, "title": e["title"]})
+    for libro, details in DETALLES.items():
+        for i, d in enumerate(details):
+            porPatron.setdefault(d["artist"].rsplit(" (", 1)[0].strip(), []).append(
+                {"libro": libro, "i": i, "title": d["title"]})
     autores = []
     for a in _AUTORES:
         suyas = []
@@ -110,6 +117,17 @@ def main():
             "retratoPie": _RETRATOS.get(a["clave"], ("", ""))[1],
             "obras": suyas,
         })
+    # Guardia en la construcción: cada obra colgada de un autor tiene que ser suya. Esto
+    # es lo que faltaba cuando a Rembrandt le salía el Caravaggio.
+    for a in autores:
+        pats = [p.lower() for p in
+                next(x for x in _AUTORES if x["clave"] == a["clave"])["patron"]]
+        for o in a["obras"]:
+            real = DETALLES[o["libro"]][o["i"]]["artist"].rsplit(" (", 1)[0].strip().lower()
+            assert real in pats, (
+                f'«{a["nombre"]}» tiene colgada «{o["title"]}», que es de «{real}». '
+                f'Sus patrones son {pats}')
+
     autores.sort(key=lambda x: x["nombre"])
     print(f"autores: {len(autores)} con obra en la colección, "
           f"{sum(1 for x in autores if x['retrato'])} con retrato")

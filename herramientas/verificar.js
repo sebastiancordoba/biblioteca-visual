@@ -192,6 +192,59 @@ console.log('\n== Flechas del teclado en el banner ==');
   document.getElementById('inicio-gallery').classList.add('active');
 }
 
+console.log('\n== Cada autor tiene SUS obras ==');
+{
+  /* Los autores se enlazaban con sus obras por el título, y hay títulos repetidos: «El
+     sacrificio de Isaac» es de Caravaggio y de Rembrandt, «Adán y Eva» de Cranach dos
+     veces y de Durero. El primero que coincidía se llevaba la obra del otro. */
+  const m = /const AUTORES = (\[[\s\S]*?\n    \]);/.exec(html);
+  const A = m ? JSON.parse(m[1]) : [];
+  check(A.every(a => a.obras.every(o => o.i != null)),
+    'cada obra de un autor viene con su índice, no solo con el título');
+
+  /* Comprobación exacta: el apellido del autor tiene que aparecer en el `artist` de la
+     ficha, o al revés. Se declaran las grafías que difieren entre ficha y autor. */
+  const ALIAS = { 'Exequias': 'Exekias', 'Aleksandr Ivánov': 'Ivanov',
+                  'Agesandro, Polidoro y Atenodoro': 'Agesandro' };
+  const malos = [];
+  for (const a of A) {
+    const clave = ALIAS[a.nombre] || a.nombre.split(' ').pop();
+    for (const o of a.obras) {
+      const d = (BOOKS[o.libro] || {details:[]}).details[o.i];
+      if (!d) { malos.push(`${a.nombre}: índice ${o.i} inexistente en ${o.libro}`); continue; }
+      if (!d.artist.includes(clave)) malos.push(`${a.nombre} → «${d.title}», que es de ${d.artist}`);
+    }
+  }
+  if (malos.length) console.log('   ' + malos.join('\n   '));
+  check(malos.length === 0, `ninguna obra colgada del autor equivocado (${A.length} autores)`);
+
+  /* Los casos concretos que se reportaron. */
+  const de = n => { const a = A.find(x => x.nombre === n);
+    return a ? a.obras.map(o => BOOKS[o.libro].details[o.i]) : []; };
+  const rembrandt = de('Rembrandt van Rijn');
+  check(rembrandt.length > 0 && rembrandt.every(d => /Rembrandt/.test(d.artist)),
+    `Rembrandt solo tiene Rembrandts (${rembrandt.length})`);
+  const durero = de('Alberto Durero');
+  check(durero.length > 0 && durero.every(d => /Durero/.test(d.artist)),
+    `Durero solo tiene Dureros (${durero.map(d => d.title).join(', ')})`);
+}
+
+console.log('\n== Con una sola obra no hay flechas ==');
+{
+  const izq = document.getElementById('navIzq') || null;
+  /* La lista de vistas es la que decide: si tiene una sola, no hay a dónde ir. */
+  abrirEnConjunto('Autor de una sola obra', [{ libro: 'genesis', i: 2 }], 'genesis', 2);
+  const solo = getAllViewsList().length;
+  console.log(`   conjunto de una obra: ${solo} vista(s)`);
+  check(solo >= 1, 'el conjunto de una sola obra sí se guarda');
+  check(html.includes("navLeft.style.display = hayADonde ? 'flex' : 'none'"),
+    'las flechas se esconden cuando no hay a dónde ir');
+
+  /* Y con varias, siguen ahí. */
+  abrirEnConjunto('Varias', [{ libro: 'genesis', i: 2 }, { libro: 'genesis', i: 5 }], 'genesis', 2);
+  check(getAllViewsList().length > solo, 'con más de una obra el recorrido crece');
+}
+
 console.log('\n== Autores: orden y búsqueda ==');
 {
   const A = verAutores();
@@ -240,7 +293,8 @@ console.log('\n== Las flechas del visor respetan el conjunto ==');
   /* Un conjunto de una sola obra no crea contexto: sirve para fijar el libro activo y
      medir el recorrido completo de ese mismo libro, sin comparar libros distintos. */
   const sinConjunto = () => {
-    abrirEnConjunto('', [{ libro: 'genesis', i: 0 }], 'genesis', 0);
+    abrirEnConjunto('', [{ libro: 'genesis', i: 0 }], 'genesis', 0); // fija el libro
+    openZoomForArtwork(0, 0);                                        // y limpia el conjunto
     return getAllViewsList().length;
   };
   const total = sinConjunto();

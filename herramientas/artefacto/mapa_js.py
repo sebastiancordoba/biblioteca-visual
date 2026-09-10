@@ -276,7 +276,7 @@ JS = r"""
          índices dentro de BOOKS.mapa, que comparte los arrays de la cronología. */
       function abrirObra(i, nombre, obras){
         currentBook = 'mapa';
-        if (nombre && obras && obras.length > 1)
+        if (nombre && obras && obras.length)
           openZoomForArtwork(i, 0, { nombre, obras: obras.map(x => ({ libro:'mapa', i:x })) });
         else openZoomForArtwork(i, 0);
       }
