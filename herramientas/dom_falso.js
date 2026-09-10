@@ -24,6 +24,15 @@ function crearEl(id) {
                                          : (f ? clases.add(c) : clases.delete(c))),
     },
     appendChild: n => { hijos.push(n); n.padre = self; return n; },
+    /* Todo elemento tiene padre, aunque sea uno sintético: la página monta cosas con
+       grid.parentNode.insertBefore(...) y sin esto la prueba se caía por el simulacro. */
+    get parentNode(){ if (!self.padre) { self.padre = crearEl('padre-de-' + id);
+                                         self.padre.children.push(self); } return self.padre; },
+    insertBefore: (nuevo, ref) => {
+      const i = hijos.indexOf(ref);
+      hijos.splice(i < 0 ? hijos.length : i, 0, nuevo);
+      nuevo.padre = self; return nuevo;
+    },
     removeChild: n => { const i = hijos.indexOf(n); if (i >= 0) hijos.splice(i, 1); return n; },
     remove: () => { if (self.padre) self.padre.removeChild(self); },
     addEventListener: (ev, fn) => { (oyentes[ev] = oyentes[ev] || []).push(fn); },

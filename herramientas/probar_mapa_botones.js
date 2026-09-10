@@ -19,7 +19,9 @@ function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{setProperty(){
  classList:{_s:new Set(),add(c){this._s.add(c)},remove(c){this._s.delete(c)},
    contains(c){return this._s.has(c)},toggle(c,v){v?this._s.add(c):this._s.delete(c)}},
  setAttribute(k,v){this._attrs[k]=v;},setAttributeNS:noop,getAttribute(k){return this._attrs[k];},
- appendChild(c){this.children.push(c);return c;},
+ appendChild(c){this.children.push(c);c.padre=this;return c;},
+ get parentNode(){ if(!this.padre){ this.padre=mk('padre-'+id); this.padre.children.push(this);} return this.padre; },
+ insertBefore(n,r){const i=this.children.indexOf(r);this.children.splice(i<0?this.children.length:i,0,n);n.padre=this;return n;},
  querySelectorAll:()=>[],querySelector:()=>mk('x'),closest:()=>mk('x'),
  addEventListener(t,f){(oyentes[this.id]=oyentes[this.id]||{})[t]=f;},
  getBoundingClientRect:()=>({left:0,top:0,width:900,height:506}),dispatchEvent:noop};return el;}

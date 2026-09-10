@@ -189,6 +189,38 @@
       font-size: 0.95rem;
     }
 
+    /* BUSCADOR
+       El mismo en los libros, la cronología, los autores y el mapa: la sintaxis que se
+       aprende en uno vale en todos, y por eso comparten aspecto. */
+    .buscador { position: relative; display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+    .buscador input {
+      flex: 1 1 auto; max-width: 460px; padding: 9px 13px;
+      background: #0d0f13; color: var(--text-body);
+      border: 1px solid var(--border-subtle); border-radius: 4px;
+      font-family: var(--font-sans); font-size: 0.86rem;
+    }
+    .buscador input:focus { outline: none; border-color: var(--accent-gold); }
+    .buscador-cuenta {
+      font-size: .72rem; color: var(--accent-gold); letter-spacing: .6px;
+      font-variant-numeric: tabular-nums; white-space: nowrap;
+    }
+    .buscador-ayuda {
+      width: 22px; height: 22px; border-radius: 50%; flex: 0 0 auto;
+      background: none; border: 1px solid var(--border-subtle); color: var(--text-muted);
+      font-family: var(--font-serif); font-size: .74rem; cursor: pointer;
+    }
+    .buscador-ayuda:hover { color: var(--accent-gold); border-color: var(--accent-gold); }
+    .buscador-pista {
+      position: absolute; top: 100%; left: 0; z-index: 6; margin-top: 6px;
+      background: rgba(9,10,13,.97); border: 1px solid var(--border-subtle);
+      border-radius: 4px; padding: 11px 14px; line-height: 1.9;
+      font-size: .74rem; color: var(--text-muted);
+      box-shadow: 0 12px 30px rgba(0,0,0,.6);
+    }
+    .buscador-pista b { color: var(--accent-gold); font-weight: 500; font-family: var(--font-sans); }
+
+    .sin-resultados { color: var(--text-muted); font-size: .9rem; grid-column: 1 / -1; }
+
     /* AUTORES
        Solo aparecen los que tienen nombre propio: buena parte de la colección —los
        relieves de Nínive, las tablillas de Uruk, la máscara de Micenas— es anónima, y
@@ -1265,6 +1297,14 @@
 
     <div id="autores-gallery" class="tab-content">
       <p class="autor-intro" id="autorIntro"></p>
+      <div class="orden-bar" data-autores="1">
+        <span class="orden-etq">Ordenar por</span>
+        <button type="button" class="orden-btn activo" data-orden="nombre">Nombre</button>
+        <button type="button" class="orden-btn" data-orden="cronologia">Cronología</button>
+        <button type="button" class="orden-btn" data-orden="obras">Nº de obras</button>
+        <button type="button" class="orden-btn" data-orden="oficio">Oficio</button>
+      </div>
+      <div id="autoresBuscador"></div>
       <div class="autor-rejilla" id="autoresRejilla"></div>
     </div>
 
@@ -2837,6 +2877,7 @@
         "clave": "laocoonte",
         "nombre": "Agesandro, Polidoro y Atenodoro",
         "anios": "activos c. siglo I a.C.",
+        "nace": null,
         "oficio": "Escultores rodios",
         "bio": "Plinio el Viejo los nombra como autores del Laocoonte y dice que trabajaron los tres en una sola pieza de mármol, algo que la restauración moderna ha desmentido: son varios bloques. No se conserva ninguna otra obra firmada por ellos, ni retrato, ni más datos que esa línea de Plinio y las firmas halladas en Sperlonga.",
         "retrato": null,
@@ -2852,6 +2893,7 @@
         "clave": "durero",
         "nombre": "Alberto Durero",
         "anios": "1471–1528",
+        "nace": 1471,
         "oficio": "Pintor, grabador y teórico alemán",
         "bio": "Hijo de orfebre, llevó el grabado a una precisión que nadie había alcanzado y fue el primer artista del norte en pensarse a sí mismo como intelectual: escribió tratados sobre proporción humana, perspectiva y fortificación. Firmaba con un monograma que se falsificó tanto en vida que llegó a pleitear por él en Venecia.",
         "retrato": "./Autores/durero.jpg",
@@ -2867,6 +2909,7 @@
         "clave": "ivanov",
         "nombre": "Aleksandr Ivánov",
         "anios": "1806–1858",
+        "nace": 1806,
         "oficio": "Pintor ruso",
         "bio": "Pasó veinte años en Roma pintando un solo cuadro, «La aparición de Cristo al pueblo», para el que hizo más de seiscientos estudios. Volvió a San Petersburgo con él en 1858 y murió de cólera semanas después de exponerlo, con una acogida tibia.",
         "retrato": "./Autores/ivanov.jpg",
@@ -2882,6 +2925,7 @@
         "clave": "rubliov",
         "nombre": "Andréi Rubliov",
         "anios": "c. 1360–1428",
+        "nace": 1360,
         "oficio": "Monje e iconógrafo ruso",
         "bio": "Monje del monasterio de Andrónikov, es el único pintor de iconos al que la Iglesia ortodoxa rusa ha canonizado, en 1988. De su vida apenas se sabe nada seguro y la atribución de casi toda su obra se discute; solo la Trinidad está documentada como suya sin dudas serias.",
         "retrato": "./Autores/rubliov.jpg",
@@ -2897,6 +2941,7 @@
         "clave": "van_dyck",
         "nombre": "Antoon van Dyck",
         "anios": "1599–1641",
+        "nace": 1599,
         "oficio": "Pintor flamenco",
         "bio": "Niño prodigio de Amberes y principal colaborador de Rubens antes de los veinte años, acabó en Londres como pintor de cámara de Carlos I. Su manera de retratar —figura alargada, pose desenvuelta, mirada de lado— fijó el modelo del retrato aristocrático inglés durante siglo y medio.",
         "retrato": "./Autores/van_dyck.jpg",
@@ -2912,6 +2957,7 @@
         "clave": "corot",
         "nombre": "Camille Corot",
         "anios": "1796–1875",
+        "nace": 1796,
         "oficio": "Pintor francés",
         "bio": "Puente entre el paisaje neoclásico y el impresionismo, pintaba del natural pequeños estudios que hoy se aprecian más que sus grandes composiciones de salón. Tuvo fama de generoso hasta lo temerario: mantuvo a la viuda de Millet y a Daumier ciego, y firmó cuadros de amigos necesitados para que pudieran venderlos, lo que ha convertido su catálogo en un problema de atribución permanente.",
         "retrato": "./Autores/corot.jpg",
@@ -2927,6 +2973,7 @@
         "clave": "caravaggio",
         "nombre": "Caravaggio",
         "anios": "1571–1610",
+        "nace": 1571,
         "oficio": "Pintor lombardo",
         "bio": "Pintaba del natural, sin dibujo previo, con modelos de la calle y una luz de foco que sacaba las figuras de la oscuridad. Mató a un hombre en una reyerta en 1606 y pasó sus últimos cuatro años huyendo por Nápoles, Malta y Sicilia con una condena de muerte encima. Murió a los treinta y ocho en circunstancias que aún se discuten.",
         "retrato": "./Autores/caravaggio.jpg",
@@ -2942,6 +2989,7 @@
         "clave": "vernet",
         "nombre": "Carle Vernet",
         "anios": "1758–1836",
+        "nace": 1758,
         "oficio": "Pintor y litógrafo francés",
         "bio": "Segundo de una dinastía de tres pintores —hijo de Joseph, padre de Horace—, se especializó en el caballo y en la batalla. La ejecución de su hermana durante el Terror lo apartó de la pintura durante años; volvió con Napoleón, para quien pintó campañas, y terminó como uno de los primeros litógrafos franceses.",
         "retrato": "./Autores/vernet.jpg",
@@ -2957,6 +3005,7 @@
         "clave": "villalpando",
         "nombre": "Cristóbal de Villalpando",
         "anios": "c. 1649–1714",
+        "nace": 1649,
         "oficio": "Pintor novohispano",
         "bio": "El pintor más ambicioso del barroco novohispano, activo en la Ciudad de México y en Puebla. Trabajaba a una escala enorme —la cúpula del Ochavo de la catedral poblana, la sacristía de la catedral metropolitana— con una pincelada suelta y un color encendido que no dependen ya de los modelos europeos que le llegaban grabados.",
         "retrato": null,
@@ -2972,6 +3021,7 @@
         "clave": "velazquez",
         "nombre": "Diego Velázquez",
         "anios": "1599–1660",
+        "nace": 1599,
         "oficio": "Pintor sevillano",
         "bio": "Pintor de cámara de Felipe IV desde los veinticuatro años, pasó la vida en la corte ocupado además en cargos palaciegos que le robaban tiempo de taller. Dos viajes a Italia le cambiaron la manera. Su obra es escasa —poco más de un centenar de cuadros— y de una economía de medios que solo se aprecia de cerca: manchas sueltas que a distancia se vuelven encaje y plata.",
         "retrato": "./Autores/velazquez.jpg",
@@ -2987,6 +3037,7 @@
         "clave": "bosco",
         "nombre": "El Bosco",
         "anios": "c. 1450–1516",
+        "nace": 1450,
         "oficio": "Pintor brabanzón",
         "bio": "Vivió toda su vida en la misma ciudad, Bolduque, de la que tomó el nombre con que firmaba. No se conserva ni un solo escrito suyo, de modo que todo lo que se dice sobre el significado de sus criaturas es interpretación. Felipe II reunió sus tablas y por eso el Prado tiene hoy la mejor colección del mundo de un pintor que nunca pisó España.",
         "retrato": "./Autores/bosco.jpg",
@@ -3002,6 +3053,7 @@
         "clave": "eufronio",
         "nombre": "Eufronio",
         "anios": "activo c. 520–470 a.C.",
+        "nace": -520,
         "oficio": "Ceramista y pintor de vasos ateniense",
         "bio": "De la primera generación que pintó de figuras rojas, invirtiendo la técnica: en vez de siluetas negras sobre arcilla, arcilla clara reservada sobre fondo negro, lo que permitía dibujar la anatomía con pincel en lugar de rascarla. Firmó como pintor de joven y como alfarero de mayor, quizá porque la vista dejó de acompañarle.",
         "retrato": null,
@@ -3017,6 +3069,7 @@
         "clave": "delacroix",
         "nombre": "Eugène Delacroix",
         "anios": "1798–1863",
+        "nace": 1798,
         "oficio": "Pintor francés",
         "bio": "Cabeza del romanticismo francés frente al clasicismo de Ingres, con quien mantuvo una rivalidad que dividió a la crítica de su tiempo. Un viaje a Marruecos en 1832 le dio un repertorio de luz y color que explotó el resto de su vida. Su diario, publicado póstumamente, es uno de los grandes textos de un pintor sobre su oficio.",
         "retrato": "./Autores/delacroix.jpg",
@@ -3032,6 +3085,7 @@
         "clave": "exekias",
         "nombre": "Exequias",
         "anios": "activo c. 550–525 a.C.",
+        "nace": -550,
         "oficio": "Ceramista y pintor de vasos ateniense",
         "bio": "El mayor pintor de figuras negras del Ática, y uno de los pocos que firmaba a la vez como alfarero y como pintor, señal de que hacía el vaso entero. Prefería el instante anterior o posterior a la acción —Aquiles y Áyax jugando a los dados mientras fuera hay guerra— en vez de la acción misma, y esa elección es lo que lo separa de todos sus contemporáneos.",
         "retrato": null,
@@ -3051,6 +3105,7 @@
         "clave": "cormon",
         "nombre": "Fernand Cormon",
         "anios": "1845–1924",
+        "nace": 1845,
         "oficio": "Pintor francés",
         "bio": "Pintor de historia y prehistoria de gran formato, hoy se le recuerda sobre todo por su taller: por él pasaron Van Gogh, Toulouse-Lautrec y Émile Bernard. Enseñaba de manera académica a alumnos que iban a romper con lo académico, y los dejó hacer.",
         "retrato": "./Autores/cormon.jpg",
@@ -3066,6 +3121,7 @@
         "clave": "danby",
         "nombre": "Francis Danby",
         "anios": "1793–1861",
+        "nace": 1793,
         "oficio": "Pintor irlandés",
         "bio": "Formó en Bristol un grupo de paisajistas y luego compitió en Londres con John Martin en el género del desastre bíblico a gran escala. Un escándalo doméstico lo obligó a marcharse al continente durante once años, tiempo que pasó en Suiza construyendo barcas de vela, y su carrera nunca se recuperó del todo.",
         "retrato": "./Autores/danby.jpg",
@@ -3081,6 +3137,7 @@
         "clave": "matsch",
         "nombre": "Franz von Matsch",
         "anios": "1861–1942",
+        "nace": 1861,
         "oficio": "Pintor y escultor austríaco",
         "bio": "Formó con Gustav Klimt y su hermano Ernst la «Compañía de Artistas» que decoró teatros y museos por todo el imperio austrohúngaro. Cuando Klimt rompió hacia la Secesión, Matsch se quedó en el academicismo y prosperó como retratista de la corte, lo que explica que hoy se le recuerde mucho menos.",
         "retrato": "./Autores/matsch.jpg",
@@ -3096,6 +3153,7 @@
         "clave": "lemoyne",
         "nombre": "François Lemoyne",
         "anios": "1688–1737",
+        "nace": 1688,
         "oficio": "Pintor francés",
         "bio": "Primer pintor del rey y autor del techo del Salón de Hércules de Versalles, que le costó cuatro años. Al día siguiente de recibir un encargo mayor se quitó la vida con su espada, agotado por el trabajo y por la muerte de su mujer. Fue maestro de Boucher y uno de los que llevaron la pintura francesa del gran estilo al rococó.",
         "retrato": "./Autores/lemoyne.jpg",
@@ -3111,6 +3169,7 @@
         "clave": "hamilton",
         "nombre": "Gavin Hamilton",
         "anios": "1723–1798",
+        "nace": 1723,
         "oficio": "Pintor y anticuario escocés",
         "bio": "Pintor, arqueólogo y marchante en Roma, excavó en Hadriano y en Ostia y vendió a la aristocracia británica buena parte de las antigüedades que hoy están en Inglaterra. Sus escenas homéricas, difundidas por grabado, fueron una de las fuentes del neoclasicismo europeo, David incluido.",
         "retrato": "./Autores/hamilton.jpg",
@@ -3126,6 +3185,7 @@
         "clave": "watts",
         "nombre": "George Frederic Watts",
         "anios": "1817–1904",
+        "nace": 1817,
         "oficio": "Pintor y escultor inglés",
         "bio": "Pintor de alegorías morales en una Inglaterra que prefería la anécdota, rechazó dos veces el título de barón y regaló buena parte de su obra a la nación. Quiso pintar «ideas, no cosas». Su galería en Compton, levantada por él mismo, sigue siendo el mejor sitio para verlo.",
         "retrato": "./Autores/watts.jpg",
@@ -3141,6 +3201,7 @@
         "clave": "tiepolo_g",
         "nombre": "Giambattista Tiepolo",
         "anios": "1696–1770",
+        "nace": 1696,
         "oficio": "Pintor veneciano",
         "bio": "El último gran fresquista italiano, capaz de resolver bóvedas enteras con cielos altísimos y figuras vistas en escorzo desde abajo. Trabajó en Venecia, en Wurzburgo y finalmente en Madrid, donde murió al servicio de Carlos III mientras el gusto giraba ya hacia el neoclasicismo que su obra hacía parecer antigua.",
         "retrato": "./Autores/tiepolo_g.jpg",
@@ -3156,6 +3217,7 @@
         "clave": "tiepolo_d",
         "nombre": "Giandomenico Tiepolo",
         "anios": "1727–1804",
+        "nace": 1727,
         "oficio": "Pintor veneciano",
         "bio": "Hijo y principal colaborador de Giambattista, lo acompañó a Wurzburgo y a Madrid. Cuando quedó libre de la sombra paterna desarrolló una obra propia, más irónica y terrena, poblada de payasos y escenas de la Venecia que se acababa.",
         "retrato": "./Autores/tiepolo_d.jpg",
@@ -3171,6 +3233,7 @@
         "clave": "bellini",
         "nombre": "Giovanni Bellini",
         "anios": "c. 1430–1516",
+        "nace": 1430,
         "oficio": "Pintor veneciano",
         "bio": "Fundó la escuela veneciana del color junto a su hermano Gentile y su cuñado Mantegna, y tuvo por alumnos a Giorgione y a Tiziano. Adoptó el óleo cuando en Venecia todavía se pintaba al temple y con él consiguió una luz húmeda que se convirtió en la marca de la ciudad. Siguió cambiando de estilo hasta pasados los ochenta años.",
         "retrato": "./Autores/bellini.jpg",
@@ -3186,6 +3249,7 @@
         "clave": "dore",
         "nombre": "Gustave Doré",
         "anios": "1832–1883",
+        "nace": 1832,
         "oficio": "Ilustrador, grabador y pintor francés",
         "bio": "El ilustrador más difundido del siglo XIX: la Biblia, Dante, Cervantes, Milton y Perrault pasaron por su mano y por un taller de más de cuarenta grabadores que trasladaban sus dibujos a la madera. Su imaginería fijó durante generaciones el aspecto que «debían» tener el infierno de Dante y el Diluvio. Ambicionaba ser reconocido como pintor y nunca lo consiguió del todo.",
         "retrato": "./Autores/dore.jpg",
@@ -3201,6 +3265,7 @@
         "clave": "turner",
         "nombre": "J. M. W. Turner",
         "anios": "1775–1851",
+        "nace": 1775,
         "oficio": "Pintor y acuarelista inglés",
         "bio": "Entró en la Royal Academy con catorce años y acabó dejando al Estado británico casi trescientos lienzos y treinta mil obras sobre papel. Su pintura tardía disuelve el motivo en luz y atmósfera hasta un punto que sus contemporáneos leyeron como obra sin acabar. Vivió sus últimos años bajo nombre falso en Chelsea, donde los vecinos lo conocían como «el almirante Booth».",
         "retrato": "./Autores/turner.jpg",
@@ -3216,6 +3281,7 @@
         "clave": "david",
         "nombre": "Jacques-Louis David",
         "anios": "1748–1825",
+        "nace": 1748,
         "oficio": "Pintor francés",
         "bio": "Pintor de la Revolución y luego de Napoleón, fue diputado, votó la muerte del rey y organizó las fiestas cívicas del nuevo régimen. Con la Restauración se exilió a Bruselas, donde murió sin volver a Francia. Su neoclasicismo de contornos duros y gesto contenido fue durante treinta años el estilo oficial de un país en revolución permanente.",
         "retrato": "./Autores/david.jpg",
@@ -3239,6 +3305,7 @@
         "clave": "scorel",
         "nombre": "Jan van Scorel",
         "anios": "1495–1562",
+        "nace": 1495,
         "oficio": "Pintor neerlandés",
         "bio": "Viajó a Jerusalén y luego a Roma, donde el papa Adriano VI —neerlandés como él— lo puso al frente de las colecciones de arte del Vaticano. Volvió al norte convertido en el gran introductor del Renacimiento italiano en los Países Bajos, y fue además canónigo, ingeniero de drenajes y organista.",
         "retrato": "./Autores/scorel.jpg",
@@ -3254,6 +3321,7 @@
         "clave": "ingres",
         "nombre": "Jean-Auguste-Dominique Ingres",
         "anios": "1780–1867",
+        "nace": 1780,
         "oficio": "Pintor francés",
         "bio": "Alumno de David y guardián del clasicismo frente al romanticismo de Delacroix, defendía que el dibujo es la probidad del arte. Deformaba sin embargo la anatomía sin escrúpulo cuando la línea lo pedía —cuellos y espaldas imposibles—, algo que sus críticos le echaron en cara y que sus herederos del siglo XX celebraron. Tocaba el violín lo bastante bien como para dejar una expresión al idioma francés.",
         "retrato": "./Autores/ingres.jpg",
@@ -3269,6 +3337,7 @@
         "clave": "john_martin",
         "nombre": "John Martin",
         "anios": "1789–1854",
+        "nace": 1789,
         "oficio": "Pintor y grabador inglés",
         "bio": "Especialista en la catástrofe bíblica de formato descomunal, con multitudes diminutas aplastadas por arquitecturas y cataclismos. Tuvo un éxito popular enorme gracias a las estampas, y un desprecio crítico casi igual de grande. Dedicó años a proyectos de ingeniería para el alcantarillado de Londres que nadie le compró.",
         "retrato": "./Autores/john_martin.jpg",
@@ -3284,6 +3353,7 @@
         "clave": "ribera",
         "nombre": "José de Ribera",
         "anios": "1591–1652",
+        "nace": 1591,
         "oficio": "Pintor valenciano",
         "bio": "Nació en Játiva y se instaló muy joven en Nápoles, entonces española, donde vivió el resto de su vida y donde se le llamó «lo Spagnoletto». Llevó el naturalismo de Caravaggio a un extremo táctil: pieles gastadas, pies sucios, arrugas, en santos y filósofos tratados como campesinos.",
         "retrato": "./Autores/ribera.jpg",
@@ -3303,6 +3373,7 @@
         "clave": "breu",
         "nombre": "Jörg Breu el Joven",
         "anios": "c. 1510–1547",
+        "nace": 1510,
         "oficio": "Pintor y dibujante de Augsburgo",
         "bio": "Hijo y continuador del taller de su padre en Augsburgo, trabajó sobre todo en diseños para vidriera y en pequeñas tablas de tema bíblico. Murió joven y su obra se ha confundido a menudo con la paterna, un problema habitual en los talleres familiares alemanes del XVI.",
         "retrato": null,
@@ -3318,6 +3389,7 @@
         "clave": "cranach",
         "nombre": "Lucas Cranach el Viejo",
         "anios": "1472–1553",
+        "nace": 1472,
         "oficio": "Pintor y grabador alemán",
         "bio": "Pintor de corte en Wittenberg, amigo de Lutero y padrino de uno de sus hijos, fue también impresor, boticario y alcalde de la ciudad. Su taller funcionaba casi como una industria: repitió el tema de Adán y Eva decenas de veces con variaciones mínimas, y esa producción en serie es la razón de que el mismo cuadro exista en tantos museos.",
         "retrato": "./Autores/cranach.jpg",
@@ -3337,6 +3409,7 @@
         "clave": "masaccio",
         "nombre": "Masaccio",
         "anios": "1401–1428",
+        "nace": 1401,
         "oficio": "Pintor florentino",
         "bio": "Murió a los veintisiete años y cambió la pintura europea en menos de una década. Fue el primero en aplicar a la figura pintada la perspectiva que Brunelleschi había demostrado en arquitectura y en hacer que la luz de un fresco viniera de donde de verdad entra la luz en la capilla. Vasari cuenta que durante un siglo los pintores florentinos —Miguel Ángel entre ellos— fueron a la Brancacci a copiarlo.",
         "retrato": "./Autores/masaccio.jpg",
@@ -3352,6 +3425,7 @@
         "clave": "miguel_angel",
         "nombre": "Miguel Ángel Buonarroti",
         "anios": "1475–1564",
+        "nace": 1475,
         "oficio": "Escultor, pintor y arquitecto florentino",
         "bio": "Se consideraba escultor antes que pintor y aceptó el encargo de la Capilla Sixtina a regañadientes: Julio II lo apartó del proyecto que de verdad le importaba, su propia tumba, para mandarlo a pintar un techo. Trabajó en él de 1508 a 1512, de pie y con la cabeza hacia atrás —no tumbado, como cuenta la leyenda—, y salió con la vista dañada durante meses. En sus 343 figuras el cuerpo humano hace todo el trabajo: no hay paisaje, ni arquitectura pintada, ni atributos; solo anatomía y gesto.",
         "retrato": "./Autores/miguel_angel.jpg",
@@ -3371,6 +3445,7 @@
         "clave": "poussin",
         "nombre": "Nicolas Poussin",
         "anios": "1594–1665",
+        "nace": 1594,
         "oficio": "Pintor francés",
         "bio": "Francés de nacimiento y romano de vida: pasó en Roma casi cuarenta años y volvió a París solo dos, mal avenido con la corte. Trabajaba para un círculo pequeño de coleccionistas eruditos, componía con figuritas de cera dispuestas en cajas y defendía que la pintura se dirige a la inteligencia. Su nombre acabó designando toda una manera de entender el clasicismo.",
         "retrato": "./Autores/poussin.jpg",
@@ -3390,6 +3465,7 @@
         "clave": "gauguin",
         "nombre": "Paul Gauguin",
         "anios": "1848–1903",
+        "nace": 1848,
         "oficio": "Pintor francés",
         "bio": "Fue agente de bolsa hasta los treinta y cinco años y lo dejó todo por pintar. Buscó en Bretaña primero y en Polinesia después una vida que creía anterior a la civilización europea, y construyó allí una obra de color plano y contorno marcado que abrió camino al simbolismo y al fauvismo. Murió en las Marquesas, endeudado y enfermo.",
         "retrato": "./Autores/gauguin.jpg",
@@ -3405,6 +3481,7 @@
         "clave": "rubens",
         "nombre": "Peter Paul Rubens",
         "anios": "1577–1640",
+        "nace": 1577,
         "oficio": "Pintor flamenco",
         "bio": "Además de pintor fue diplomático al servicio de los Habsburgo y negoció la paz entre España e Inglaterra, que le valió el título de caballero de las dos coronas. Hablaba seis lenguas y dirigía en Amberes el taller más productivo de Europa, con Van Dyck entre sus colaboradores. Sus bocetos de su propia mano suelen preferirse hoy a los grandes lienzos acabados por el taller.",
         "retrato": "./Autores/rubens.jpg",
@@ -3428,6 +3505,7 @@
         "clave": "bruegel",
         "nombre": "Pieter Bruegel el Viejo",
         "anios": "c. 1525–1569",
+        "nace": 1525,
         "oficio": "Pintor y grabador flamenco",
         "bio": "Viajó a Italia cruzando los Alpes y volvió sin apenas rastro italiano en su pintura, salvo el paisaje de montaña, que no olvidó nunca. Se le llamó «el campesino» por sus escenas de aldea, pero trabajaba para coleccionistas cultos de Amberes y Bruselas. Sus dos hijos siguieron pintando y copiando sus composiciones durante décadas, lo que ha complicado para siempre distinguir originales de repeticiones.",
         "retrato": "./Autores/bruegel.jpg",
@@ -3443,6 +3521,7 @@
         "clave": "rembrandt",
         "nombre": "Rembrandt van Rijn",
         "anios": "1606–1669",
+        "nace": 1606,
         "oficio": "Pintor y grabador neerlandés",
         "bio": "Se pintó a sí mismo unas ochenta veces a lo largo de cuarenta años, de joven acomodado a anciano arruinado, en la serie de autorretratos más extensa del arte europeo. Llegó a la cima del mercado de Ámsterdam y quebró en 1656; el inventario de su bancarrota, que se conserva, es una de las mejores descripciones que existen del taller de un pintor del siglo XVII.",
         "retrato": "./Autores/rembrandt.jpg",
@@ -3470,6 +3549,7 @@
         "clave": "cole",
         "nombre": "Thomas Cole",
         "anios": "1801–1848",
+        "nace": 1801,
         "oficio": "Pintor angloamericano",
         "bio": "Nacido en Lancashire y emigrado a los diecisiete años, fundó la Escuela del Río Hudson, la primera corriente pictórica propiamente estadounidense. Alternó el paisaje observado con ciclos alegóricos sobre el auge y la caída de los imperios, en los que la naturaleza siempre sobrevive a la civilización que la ocupó.",
         "retrato": "./Autores/cole.jpg",
@@ -3485,6 +3565,7 @@
         "clave": "tiziano",
         "nombre": "Tiziano Vecellio",
         "anios": "c. 1488–1576",
+        "nace": 1488,
         "oficio": "Pintor veneciano",
         "bio": "Pintor de Carlos V y de Felipe II, fue el primer artista europeo que trabajó para media Europa sin moverse de Venecia. Su última manera, de pincelada suelta y forma deshecha, desconcertó a sus contemporáneos: Vasari escribió que de cerca sus cuadros tardíos no se entendían y solo funcionaban a distancia. Murió durante la peste de 1576, muy anciano, sin que se sepa su edad exacta.",
         "retrato": "./Autores/tiziano.jpg",
@@ -3500,6 +3581,7 @@
         "clave": "blake",
         "nombre": "William Blake",
         "anios": "1757–1827",
+        "nace": 1757,
         "oficio": "Poeta, grabador y pintor inglés",
         "bio": "Inventó una técnica propia —el grabado en relieve iluminado— para no depender de impresores ni editores: escribía e ilustraba directamente sobre la plancha y coloreaba a mano cada ejemplar, de modo que no hay dos copias iguales de ninguno de sus libros. Vendió poquísimo en vida y murió en la pobreza. Su mitología personal, con Urizen como dios de la razón y la medida, invierte la teología cristiana: para Blake, crear el mundo midiéndolo es el primer acto de tiranía.",
         "retrato": "./Autores/blake.jpg",
@@ -3603,6 +3685,7 @@
     /* Criterio de orden elegido en cada libro. Las tarjetas se pintan en ese orden pero
        conservan su índice original, de modo que el visor de zoom sigue apuntando bien. */
     const ordenLibro = {};
+    const consultaLibro = {};   // texto del buscador de cada libro
 
     function ordenarIndices(book, criterio) {
       const n = Math.min(book.details.length, book.groups.length);
@@ -3626,16 +3709,33 @@
       if (!grid) return;
 
       const criterio = ordenLibro[bookId] || 'coleccion';
-      // ya renderizado con el mismo orden: no repetir trabajo
-      if (!forzar && grid.dataset.rendered === criterio) return;
+      const consulta = consultaLibro[bookId] || '';
+      // ya renderizado con el mismo orden y la misma búsqueda: no repetir trabajo
+      const firma = criterio + '\u0000' + consulta;
+      if (!forzar && grid.dataset.rendered === firma) return;
 
       const h = book.headings || ['Lo que hace que destaque', 'Contexto histórico', 'Procedencia'];
       const n = Math.min(book.details.length, book.groups.length);
       if (n === 0) { if (empty) empty.style.display = ''; return; }
       if (empty) empty.style.display = 'none';
 
+      /* El buscador filtra y, cuando hay consulta, manda sobre el orden elegido: lo más
+         pertinente primero, que es lo que se espera al buscar. */
+      let indices = ordenarIndices(book, criterio);
+      if (consulta.trim()) {
+        const terminos = analizar(consulta);
+        indices = indices
+          .map(i => ({ i, p: puntuar(docDeObra(book.details[i], book.corto || book.title), terminos) }))
+          .filter(x => x.p >= 0)
+          .sort((a, b) => b.p - a.p)
+          .map(x => x.i);
+      }
+      const cuenta = document.getElementById('buscar-' + bookId + '-cuenta');
+      if (cuenta) cuenta.innerText = consulta.trim()
+        ? `${indices.length} de ${n}` : '';
+
       const html = [];
-      ordenarIndices(book, criterio).forEach((i) => {
+      indices.forEach((i) => {
         const d = book.details[i];
         const views = book.groups[i];
         const wrapperId = `thumb-${bookId}-${i}`;
@@ -3684,8 +3784,9 @@
         </article>`);
       });
 
-      grid.innerHTML = html.join('\n');
-      grid.dataset.rendered = criterio;
+      grid.innerHTML = html.length ? html.join('\n')
+        : `<p class="sin-resultados">Ninguna obra coincide con «${esc(consulta)}».</p>`;
+      grid.dataset.rendered = firma;
     }
 
     /* ---------- banner rotatorio de la portada ---------- */
@@ -3891,6 +3992,43 @@
       return { i, libro: o.libro, src: b.groups[i][0].src, title: o.title };
     }
 
+    let ordenAutores = 'nombre', consultaAutores = '';
+
+    /* Documento de búsqueda de un autor: su nombre, su oficio, su biografía y —esto es lo
+       útil— también los títulos y las sedes de sus obras, de modo que buscar «louvre» en
+       Autores devuelve a quienes tienen algo allí. */
+    function docDeAutor(a){
+      const suyas = a.obras.map(obraDe).filter(Boolean);
+      const fichas = suyas.map(o => (BOOKS[o.libro].details[o.i] || {}));
+      return {
+        obra: normaliza(suyas.map(o => o.title).join(' ')),
+        autor: normaliza(a.nombre),
+        sede: normaliza(fichas.map(f => f.meta).join(' ')),
+        ciudad: normaliza(fichas.map(f => f.meta).join(' ')),
+        pais: normaliza(fichas.map(f => f.meta).join(' ')),
+        libro: normaliza(a.obras.map(o => (BOOKS[o.libro] || {}).corto || o.libro).join(' ')),
+        texto: normaliza(a.oficio + ' ' + a.bio + ' ' + a.anios),
+        anio: a.nace,
+      };
+    }
+
+    function autoresOrdenados(){
+      const terminos = analizar(consultaAutores);
+      let lista = AUTORES.map(a => ({ a, p: puntuar(docDeAutor(a), terminos) }))
+                         .filter(x => x.p >= 0);
+      if (consultaAutores.trim()) lista.sort((x, y) => y.p - x.p);
+      else if (ordenAutores === 'cronologia')
+        lista.sort((x, y) => (x.a.nace ?? 9999) - (y.a.nace ?? 9999));
+      else if (ordenAutores === 'obras')
+        lista.sort((x, y) => y.a.obras.length - x.a.obras.length ||
+                             x.a.nombre.localeCompare(y.a.nombre, 'es'));
+      else if (ordenAutores === 'oficio')
+        lista.sort((x, y) => x.a.oficio.localeCompare(y.a.oficio, 'es') ||
+                             x.a.nombre.localeCompare(y.a.nombre, 'es'));
+      else lista.sort((x, y) => x.a.nombre.localeCompare(y.a.nombre, 'es'));
+      return lista.map(x => x.a);
+    }
+
     function pintarAutores(){
       const rej = document.getElementById('autoresRejilla');
       if (!rej || typeof AUTORES === 'undefined') return;
@@ -3901,7 +4039,16 @@
         `—los relieves de Nínive, las tablillas de Uruk, la máscara de Micenas, los frescos ` +
         `de Dura Europos— y por eso no aparece aquí. De ${conRetrato} se conserva retrato.`;
 
-      rej.innerHTML = AUTORES.map(a => {
+      const visibles = autoresOrdenados();
+      const cuenta = document.getElementById('buscar-autores-cuenta');
+      if (cuenta) cuenta.innerText = consultaAutores.trim()
+        ? `${visibles.length} de ${AUTORES.length}` : '';
+      if (!visibles.length) {
+        rej.innerHTML = `<p class="sin-resultados">Ningún autor coincide con «${esc(consultaAutores)}».</p>`;
+        return;
+      }
+
+      rej.innerHTML = visibles.map(a => {
         const obras = a.obras.map(obraDe).filter(Boolean);
         const muestra = obras[0];
         const retrato = a.retrato
@@ -3935,6 +4082,136 @@
                                 .map(o => ({ libro: o.libro, i: o.i })) : [];
           abrirEnConjunto(a ? a.nombre : '', conjunto, el.dataset.libro, +el.dataset.i);
         }));
+    }
+
+    /* ---------- Buscador ----------
+       Uno solo para toda la página: los libros, la cronología, los autores y el mapa usan
+       el mismo motor, de modo que la sintaxis que se aprende en un sitio vale en todos.
+
+         · ignora acentos y mayúsculas — «velazquez» encuentra «Velázquez»
+         · varios términos se acumulan: «rembrandt jacob» exige los dos
+         · "entre comillas" busca la frase exacta
+         · un guion delante excluye: «diluvio -grabado»
+         · prefijos de campo: obra: autor: sede: ciudad: pais: libro: año:
+         · rangos de año: año:<1600  año:>1800  año:1500-1600  año:<-500 (a.C.)
+
+       Devuelve además una puntuación: coincidir en el título vale más que coincidir en
+       mitad del análisis, así que lo más pertinente sale primero. */
+    const normaliza = t => (t == null ? '' : String(t))
+      .normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+    const CAMPOS = ['obra', 'autor', 'sede', 'ciudad', 'pais', 'libro', 'texto'];
+    const PESO = { obra: 10, autor: 7, sede: 4, ciudad: 4, pais: 3, libro: 3, texto: 1 };
+
+    function analizar(consulta){
+      const terminos = [];
+      /* El nombre de campo NO puede ser \w: en JavaScript no incluye la eñe y «año:»
+         se colaba como texto suelto en vez de reconocerse como campo. */
+      const re = /(-)?(?:([A-Za-zñÑáéíóúÁÉÍÓÚ]+):)?(?:"([^"]*)"|(\S+))/g;
+      let m;
+      while ((m = re.exec(consulta || '')) !== null) {
+        const [, neg, campo, frase, suelto] = m;
+        const valor = (frase !== undefined ? frase : suelto || '').trim();
+        if (!valor) continue;
+        const c = campo ? normaliza(campo).replace('ano', 'año') : null;
+        if (c === 'año' || c === 'anio') {
+          const r = /^(<|>|)(-?\d+)(?:-(-?\d+))?$/.exec(valor);
+          if (r) {
+            terminos.push({ tipo: 'año', op: r[1], a: +r[2], b: r[3] != null ? +r[3] : null,
+                            negado: !!neg });
+            continue;
+          }
+        }
+        terminos.push({ tipo: 'texto', campo: CAMPOS.includes(c) ? c : null,
+                        valor: normaliza(valor), negado: !!neg });
+      }
+      return terminos;
+    }
+
+    /* Puntúa un documento. Devuelve -1 si no cumple; si cumple, cuanto más alto mejor. */
+    function puntuar(doc, terminos){
+      if (!terminos.length) return 0;
+      let total = 0;
+      for (const t of terminos) {
+        if (t.tipo === 'año') {
+          const a = doc.anio;
+          let vale = a != null &&
+            (t.op === '<' ? a < t.a : t.op === '>' ? a > t.a
+             : t.b != null ? (a >= Math.min(t.a, t.b) && a <= Math.max(t.a, t.b)) : a === t.a);
+          if (t.negado) vale = !vale;
+          if (!vale) return -1;
+          total += 6;
+          continue;
+        }
+        const donde = t.campo ? [t.campo] : CAMPOS;
+        let mejor = 0;
+        for (const c of donde) {
+          const v = doc[c];
+          if (!v) continue;
+          const i = v.indexOf(t.valor);
+          if (i < 0) continue;
+          // empezar por el término pesa más que encontrarlo a mitad de una palabra
+          mejor = Math.max(mejor, PESO[c] * (i === 0 ? 2 : v[i - 1] === ' ' ? 1.5 : 1));
+        }
+        if (t.negado) { if (mejor > 0) return -1; total += 1; }
+        else { if (!mejor) return -1; total += mejor; }
+      }
+      return total;
+    }
+
+    /* Documento de una obra, con los campos ya normalizados una sola vez. */
+    function docDeObra(d, libroNombre){
+      return {
+        obra: normaliza(d.title), autor: normaliza(d.artist),
+        sede: normaliza(d.meta), ciudad: normaliza(d.meta),
+        pais: normaliza(d.meta), libro: normaliza(libroNombre || d.libro || ''),
+        texto: normaliza([d.snippet, d.analysis, d.history, d.fecha].join(' ')),
+        anio: d.anio,
+      };
+    }
+
+    /* Caja de búsqueda reutilizable.
+       Se construye con createElement en vez de innerHTML: así el id del campo queda puesto
+       ANTES de registrar el oyente, y el manejador lee el valor del propio evento. Con
+       innerHTML el campo no existía como nodo hasta que el navegador lo parseaba, de modo
+       que no había forma de ejercitar el buscador sin un navegador de verdad. */
+    function cajaBusqueda(id, marcador, alBuscar){
+      const caja = document.createElement('div');
+      caja.className = 'buscador';
+
+      const inp = document.createElement('input');
+      inp.type = 'search';
+      inp.id = id;
+      inp.placeholder = marcador;
+      inp.setAttribute('aria-label', marcador);
+      inp.addEventListener('input', ev =>
+        alBuscar(((ev && ev.target) ? ev.target.value : inp.value) || ''));
+      caja.appendChild(inp);
+
+      const cuenta = document.createElement('span');
+      cuenta.className = 'buscador-cuenta';
+      cuenta.id = id + '-cuenta';
+      caja.appendChild(cuenta);
+
+      const pista = document.createElement('div');
+      pista.className = 'buscador-pista';
+      pista.id = id + '-pista';
+      pista.hidden = true;
+      pista.innerHTML =
+        '<b>autor:</b>rembrandt · <b>sede:</b>louvre · <b>libro:</b>iliada<br>' +
+        '<b>año:</b>&lt;1600 · <b>año:</b>1500-1600 · <b>año:</b>&lt;-500 para a.C.<br>' +
+        '<b>"frase exacta"</b> · <b>-palabra</b> para excluir';
+
+      const ayuda = document.createElement('button');
+      ayuda.type = 'button';
+      ayuda.className = 'buscador-ayuda';
+      ayuda.id = id + '-ayuda';
+      ayuda.title = 'Cómo buscar';
+      ayuda.textContent = '?';
+      ayuda.addEventListener('click', () => { pista.hidden = !pista.hidden; });
+      caja.appendChild(ayuda);
+      caja.appendChild(pista);
+      return caja;
     }
 
     /* ---------- Biblioteca: el índice de libros ---------- */
@@ -3971,6 +4248,19 @@
       const buscar = document.getElementById('biblioBuscar');
       if (buscar) buscar.addEventListener('input', () => pintarBiblioteca(buscar.value));
       pintarBiblioteca('');
+
+      /* Buscador y barra de orden de Autores. */
+      const contBusc = document.getElementById('autoresBuscador');
+      if (contBusc) contBusc.appendChild(cajaBusqueda('buscar-autores',
+        'Buscar autor, obra, sede, año…',
+        texto => { consultaAutores = texto; pintarAutores(); }));
+      document.querySelectorAll('.orden-bar[data-autores] .orden-btn').forEach(b =>
+        b.addEventListener('click', () => {
+          ordenAutores = b.dataset.orden;
+          document.querySelectorAll('.orden-bar[data-autores] .orden-btn')
+            .forEach(o => o.classList.toggle('activo', o === b));
+          pintarAutores();
+        }));
       pintarAutores();
     })();
 
@@ -3988,6 +4278,18 @@
     }
     window.addEventListener('resize', medirCabecera);
     window.addEventListener('load', medirCabecera);
+
+    /* Un buscador encima de la cuadrícula de cada libro. Se monta desde aquí en vez de
+       escribirlo en el marcado para que lo tengan también los libros que se añadan y las
+       secciones generadas —la cronología, sin ir más lejos—, sin tocar nada. */
+    Object.keys(BOOKS).forEach(id => {
+      const grid = document.getElementById(id + '-grid');
+      if (!grid || !BOOKS[id].details.length) return;
+      const caja = cajaBusqueda('buscar-' + id,
+        `Buscar en ${BOOKS[id].corto || BOOKS[id].title}…`,
+        texto => { consultaLibro[id] = texto; renderBookGrid(id, true); });
+      grid.parentNode.insertBefore(caja, grid);
+    });
 
     /* Barras de ordenación: se activan una sola vez, para todos los libros. */
     document.querySelectorAll('.orden-bar').forEach(bar => {

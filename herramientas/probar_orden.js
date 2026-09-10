@@ -11,6 +11,8 @@ function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{setProperty(){
  classList:{_s:new Set(),add(c){this._s.add(c)},remove(c){this._s.delete(c)},
    contains(c){return this._s.has(c)},toggle(c,v){v?this._s.add(c):this._s.delete(c)}},
  setAttribute:noop,getAttribute:()=>null,appendChild:noop,
+ /* La página monta el buscador con grid.parentNode.insertBefore(...). */
+ parentNode:{insertBefore:noop,appendChild:noop},insertBefore:noop,
  querySelectorAll:()=>[],querySelector:()=>mk('x'),closest:()=>mk('x'),
  addEventListener(t,f){this._ev[t]=f;},getBoundingClientRect:()=>({})};return el;}
 function botones(libro){

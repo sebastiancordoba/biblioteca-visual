@@ -5,15 +5,21 @@ const fs=require('fs');
 const html=fs.readFileSync(require('path').join(__dirname,'..','build','los-tres-libros.html'),'utf8');
 const js=html.split('<script>')[1].split('</script>')[0];
 const noop=()=>{};const store={};const nodos=[];
+const oyentes={};
 function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{setProperty(){},removeProperty(){},getPropertyValue:()=>''},innerHTML:'',innerText:'',
  textContent:'',hidden:true,children:[],offsetWidth:210,offsetHeight:120,
  clientWidth:900,clientHeight:560,
  classList:{_s:new Set(),add(c){this._s.add(c)},remove(c){this._s.delete(c)},
    contains(c){return this._s.has(c)},toggle(c,v){v?this._s.add(c):this._s.delete(c)}},
  setAttribute:noop,setAttributeNS:noop,getAttribute:()=>null,
- appendChild(c){this.children.push(c);return c;},
+ appendChild(c){this.children.push(c);c.padre=this;return c;},
+ get parentNode(){ if(!this.padre){ this.padre=mk('padre-'+id); this.padre.children.push(this);} return this.padre; },
+ insertBefore(n,r){const i=this.children.indexOf(r);this.children.splice(i<0?this.children.length:i,0,n);n.padre=this;return n;},
  querySelectorAll:()=>[],querySelector:()=>mk('x'),closest:()=>mk('x'),
- addEventListener:noop,getBoundingClientRect:()=>({left:0,top:0,width:900,height:560}),
+ /* Se indexa por this.id para poder disparar el buscador, que recibe su id
+    después de crearse con createElement. */
+ addEventListener(t,f){(oyentes[this.id]=oyentes[this.id]||{})[t]=f;},
+ getBoundingClientRect:()=>({left:0,top:0,width:900,height:560}),
  dispatchEvent:noop};
  return el;}
 const document={body:mk('body'),documentElement:mk('html'),
@@ -124,6 +130,29 @@ ck(js.includes('maxScale = 40.0')&&js.includes("['w', 'a', 's', 'd'"),'visor de 
 /* El botón ORIGINAL del visor: en la versión publicada las imágenes van incrustadas como
    vistas previas, así que el original tiene que ser la URL de Commons. Si una obra nueva
    entra sin enlace, el botón se esconde y el usuario no llega al archivo completo. */
+console.log('\n== buscador en cada sección ==');
+{
+  /* Se monta desde JS sobre cada cuadrícula, así que las secciones generadas —la
+     cronología, que no existe en el index.html local— también lo tienen. */
+  const conObras = Object.keys(BOOKS).filter(id => BOOKS[id].details.length);
+  const sinCaja = conObras.filter(id => !(oyentes['buscar-' + id] && oyentes['buscar-' + id].input));
+  console.log('   secciones con obras: ' + conObras.join(', '));
+  if (sinCaja.length) console.log('   SIN buscador: ' + sinCaja.join(', '));
+  ck(sinCaja.length === 0, `todas las secciones con obras tienen buscador (${conObras.length})`);
+  ck(conObras.includes('cronologia'), 'la cronología es una de ellas');
+  ck(!!(oyentes['buscar-autores'] && oyentes['buscar-autores'].input), 'y los autores también');
+
+  /* Y funciona: buscar acota de verdad la cuadrícula de la cronología. */
+  const grid = store['cronologia-grid'];
+  const tarjetas = () => (grid.innerHTML || '').match(/<article class="artwork-card">/g);
+  oyentes['buscar-cronologia'].input({ target: { value: '' } });
+  const todas = (tarjetas() || []).length;
+  oyentes['buscar-cronologia'].input({ target: { value: 'autor:rembrandt' } });
+  const pocas = (tarjetas() || []).length;
+  console.log(`   cronología: ${todas} obras → ${pocas} con «autor:rembrandt»`);
+  ck(pocas > 0 && pocas < todas, `buscar acota la cronología (${todas} → ${pocas})`);
+}
+
 console.log('\n== enlace al original ==');
 {
   ck(/<a class="zoom-ctrl-btn" id="btnOriginal"[^>]*target="_blank"/.test(html), 'el enlace existe');

@@ -10,10 +10,16 @@ const js = html.split('<script>')[1].split('</script>')[0];
 
 const { noop, ejecutar } = require('./dom_falso.js');
 const { BOOKS, document, urlOriginal, openZoomForArtwork, abrirEnConjunto,
-        navigateSequential, getAllViewsList, ejecutarEstado } =
+        navigateSequential, getAllViewsList, ejecutarEstado,
+        renderBookGrid, consultaLibro, analizar, puntuar, docDeObra,
+        autoresOrdenados, pintarAutores, verAutores } =
   ejecutar(html, '{BOOKS, urlOriginal, openZoomForArtwork, abrirEnConjunto,'
                 + ' navigateSequential, getAllViewsList,'
-                + ' ejecutarEstado: () => currentArtworkGroupIndex}');
+                + ' ejecutarEstado: () => currentArtworkGroupIndex,'
+                + ' renderBookGrid, consultaLibro, analizar, puntuar, docDeObra,'
+                + ' autoresOrdenados, pintarAutores,'
+                + ' verAutores: () => ({ orden: o => ordenAutores = o,'
+                + '                      consulta: c => consultaAutores = c })}');
 
 let fails = 0;
 const check = (ok, msg) => { console.log((ok ? '  ok    ' : '  FALLA ') + msg); if (!ok) fails++; };
@@ -184,6 +190,46 @@ console.log('\n== Flechas del teclado en el banner ==');
   document.getElementById('inicio-gallery').classList.add('active');
 }
 
+console.log('\n== Autores: orden y búsqueda ==');
+{
+  const A = verAutores();
+  const nombres = () => autoresOrdenados().map(x => x.nombre);
+
+  A.consulta(''); A.orden('nombre');
+  const porNombre = nombres();
+  check(porNombre.length > 0, `${porNombre.length} autores`);
+  check(porNombre.join('|') === porNombre.slice().sort((a,b)=>a.localeCompare(b,'es')).join('|'),
+    'por nombre salen en orden alfabético español');
+
+  A.orden('cronologia');
+  const crono = autoresOrdenados().map(x => x.nace ?? 9999);
+  check(crono.every((v, i) => i === 0 || crono[i-1] <= v),
+    `por cronología van de más antiguo a más moderno (${crono[0]} … ${crono[crono.length-1]})`);
+
+  A.orden('obras');
+  const cuantas = autoresOrdenados().map(x => x.obras.length);
+  check(cuantas.every((v, i) => i === 0 || cuantas[i-1] >= v),
+    `por número de obras van de más a menos (${cuantas[0]} … ${cuantas[cuantas.length-1]})`);
+
+  A.orden('nombre');
+  const acota = (q, msg) => { A.consulta(q); const n = nombres();
+    console.log(`   «${q}» → ${n.length}: ${n.slice(0,3).join(', ')}`);
+    check(n.length > 0 && n.length < porNombre.length, msg + ` (${n.length})`); return n; };
+
+  acota('rembrandt', 'busca por nombre de autor');
+  acota('veneciano', 'busca dentro del oficio y la biografía');
+  acota('sede:louvre', 'busca por la sede de sus obras');
+  acota('libro:iliada', 'busca por el libro en el que tienen obra');
+  acota('año:<1500', 'acota por año de nacimiento');
+  const bab = acota('babel', 'busca por el título de sus obras');
+  check(bab.some(n => /Bruegel/.test(n)), 'y «babel» da con Bruegel, que la pintó');
+
+  A.consulta('qwertyuiop');
+  check(nombres().length === 0, 'una consulta sin resultados no devuelve nadie');
+  A.consulta('');
+  check(nombres().length === porNombre.length, 'vaciar la búsqueda los devuelve todos');
+}
+
 console.log('\n== Las flechas del visor respetan el conjunto ==');
 {
   /* Al abrir una obra desde un autor o desde un museo, «siguiente» debe llevar a lo
@@ -226,6 +272,42 @@ console.log('\n== Las flechas del visor respetan el conjunto ==');
 
   /* Abrir sin conjunto vuelve a recorrer el libro entero: no se queda pegado. */
   check(sinConjunto() === total, 'abrir desde la cuadrícula limpia el conjunto');
+}
+
+console.log('\n== Buscador ==');
+{
+  const grid = document.getElementById('genesis-grid');
+  const tarjetas = () => (grid.innerHTML.match(/<article class="artwork-card">/g) || []).length;
+  const buscar = q => { consultaLibro.genesis = q; renderBookGrid('genesis', true); return tarjetas(); };
+
+  const todas = buscar('');
+  check(todas === BOOKS.genesis.details.length, `sin consulta salen las ${todas} obras`);
+
+  const reduce = (q, msg) => { const n = buscar(q); console.log(`   «${q}» → ${n}`);
+    check(n > 0 && n < todas, msg + ` (${n} de ${todas})`); return n; };
+
+  reduce('rembrandt', 'busca por autor sin escribir el campo');
+  reduce('autor:rembrandt', 'el prefijo autor: acota al autor');
+  reduce('velazquez', 'ignora los acentos: «velazquez» encuentra a Velázquez');
+  reduce('"torre de babel"', 'las comillas buscan la frase exacta');
+  reduce('sede:prado', 'el prefijo sede: acota al museo');
+  reduce('año:<1500', 'el rango de año funciona con la eñe');
+  reduce('ano:<1500', 'y también escrito sin ella');
+
+  const conGrabado = buscar('diluvio');
+  const sinGrabado = buscar('diluvio -grabado');
+  check(sinGrabado <= conGrabado, `el guion excluye (${conGrabado} → ${sinGrabado})`);
+
+  check(buscar('qwertyuiop') === 0, 'una consulta sin resultados no deja tarjetas');
+  check(grid.innerHTML.includes('sin-resultados'), 'y lo dice en vez de dejarlo en blanco');
+
+  check(buscar('') === todas, 'vaciar la búsqueda devuelve todas');
+
+  /* La cronología y cada libro montan su propia caja. */
+  const conCaja = Object.keys(BOOKS).filter(id =>
+    document.getElementById('buscar-' + id) && BOOKS[id].details.length);
+  check(conCaja.length >= 4,
+    `hay buscador en cada sección con obras (${conCaja.join(', ')})`);
 }
 
 console.log('\n== Autores ==');

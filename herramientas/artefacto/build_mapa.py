@@ -140,6 +140,7 @@ PANEL=f'''    <div id="mapa-gallery" class="tab-content">
           <div class="mapa-tarjeta" id="mapaTarjeta" hidden></div>
         </div>
         <aside class="mapa-lado">
+          <div id="mapaBuscador"></div>
           <div class="lado-tog" role="tablist" aria-label="Ver por">
             <button type="button" class="tog-btn activo" id="togSedes" role="tab" aria-selected="true">Sedes</button>
             <button type="button" class="tog-btn" id="togLibros" role="tab" aria-selected="false">Libros</button>

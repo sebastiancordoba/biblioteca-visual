@@ -19,7 +19,9 @@ function mk(id,tag){const el={id,tag:tag||'div',dataset:{},style:{setProperty(){
  classList:{_s:new Set(),add(c){this._s.add(c)},remove(c){this._s.delete(c)},
    contains(c){return this._s.has(c)},toggle(c,v){v?this._s.add(c):this._s.delete(c)}},
  setAttribute(k,v){this._attrs[k]=v;},setAttributeNS:noop,getAttribute(k){return this._attrs[k];},
- appendChild(c){this.children.push(c);return c;},
+ appendChild(c){this.children.push(c);c.padre=this;return c;},
+ get parentNode(){ if(!this.padre){ this.padre=mk('padre-'+id); this.padre.children.push(this);} return this.padre; },
+ insertBefore(n,r){const i=this.children.indexOf(r);this.children.splice(i<0?this.children.length:i,0,n);n.padre=this;return n;},
  querySelectorAll(sel){const f=sel.replace('.','');
    const todos=(function w(n){return n.flatMap(c=>[c,...w(c.children||[])]);})(this.children);
    return todos.filter(x=>((x.getAttribute('class')||'')+' '+[...x.classList._s].join(' ')).split(/\s+/).includes(f));},
@@ -144,6 +146,47 @@ console.log('\n== la sede elegida también despliega sus obras ==');
     drenar(400);
     ck(!bloque(), 'volver a pulsarla la repliega');
   }
+}
+
+console.log('\n== buscador del mapa ==');
+{
+  const marcas = () => aplanar(store['capaSedes'].children).filter(x=>tiene(x,'sede'));
+  /* El campo nace de createElement, así que no está en `store`; su oyente sí queda
+     indexado por el id que se le asigna, y el manejador lee el valor del evento. */
+  const buscar = q => {
+    const o = oyentes['buscar-mapa'];
+    if (!o || !o.input) return null;
+    o.input({ target: { value: q } }); drenar(700);
+    return { sedes: marcas().length, ancho: vb()[2] };
+  };
+  ck(!!(oyentes['buscar-mapa'] && oyentes['buscar-mapa'].input), 'el mapa tiene buscador');
+
+  oyentes.mTodo.click(); drenar(500);
+  const antes = { sedes: marcas().length, ancho: vb()[2] };
+  console.log(`   vista de mundo: ${antes.sedes} marcadores, ancho ${antes.ancho.toFixed(0)}`);
+
+  const r = buscar('rembrandt');
+  if (r) {
+    console.log(`   «rembrandt» → ${r.sedes} marcadores, ancho ${r.ancho.toFixed(0)}`);
+    ck(r.sedes > 0 && r.sedes < antes.sedes, `filtra las sedes (${antes.sedes} → ${r.sedes})`);
+    ck(r.ancho < antes.ancho * 0.9,
+      `y vuela hasta lo encontrado (ancho ${antes.ancho.toFixed(0)} → ${r.ancho.toFixed(0)})`);
+  }
+
+  const s2 = buscar('sede:louvre');
+  if (s2) { console.log(`   «sede:louvre» → ${s2.sedes} marcadores`);
+    ck(s2.sedes >= 1 && s2.sedes < antes.sedes, `el prefijo sede: también acota (${s2.sedes})`); }
+
+  const nada = buscar('qwertyuiop');
+  if (nada) {
+    ck(nada.sedes === 0, 'una consulta sin resultados deja el mapa sin marcadores');
+    ck(Math.abs(nada.ancho - s2.ancho) < 1,
+       'y no mueve la vista: alejarse a la nada desorienta más que ayudar');
+  }
+
+  const vuelta = buscar('');
+  if (vuelta) ck(vuelta.sedes === antes.sedes || vuelta.sedes > 0,
+    `vaciar la búsqueda devuelve las sedes (${vuelta.sedes})`);
 }
 
 console.log('\n== pellizco ==');

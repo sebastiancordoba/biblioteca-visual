@@ -100,8 +100,11 @@ def main():
             suyas += porPatron.get(pat, [])
         if not suyas: continue
         ret = os.path.join(ROOT, "Autores", a["clave"] + ".jpg")
+        # Año ordenable: el primero que aparece en `anios`, negativo si lleva a.C.
+        _n = re.findall(r"\d{3,4}", a["anios"])
+        _nace = (int(_n[0]) * (-1 if "a.C." in a["anios"] else 1)) if _n else None
         autores.append({
-            "clave": a["clave"], "nombre": a["nombre"], "anios": a["anios"],
+            "clave": a["clave"], "nombre": a["nombre"], "anios": a["anios"], "nace": _nace,
             "oficio": a["oficio"], "bio": a["bio"],
             "retrato": ("./Autores/" + a["clave"] + ".jpg") if os.path.exists(ret) else None,
             "retratoPie": _RETRATOS.get(a["clave"], ("", ""))[1],

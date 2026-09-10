@@ -245,6 +245,37 @@ Antes de dar por buena una obra conviene leer los campos `artist`, `institution`
 proporción no cuadre con las medidas reales del cuadro. También hay que mirar el campo `source`:
 si dice `Pinterest` o similar, se descarta.
 
+### El buscador
+
+Hay **un solo motor de búsqueda** para toda la página —los libros, la cronología, los autores
+y el mapa—, de modo que la sintaxis que se aprende en un sitio vale en todos. Vive en
+`index.html` (`normaliza`, `analizar`, `puntuar`, `docDeObra`, `cajaBusqueda`).
+
+- Ignora acentos y mayúsculas: «velazquez» encuentra a Velázquez.
+- Varios términos se acumulan; `"entre comillas"` busca la frase exacta; `-palabra` excluye.
+- Prefijos de campo: `obra:` `autor:` `sede:` `ciudad:` `pais:` `libro:` `año:`
+- Rangos: `año:<1600`, `año:1500-1600`, `año:<-500` para a.C.
+- Puntúa: coincidir en el título vale más que coincidir a mitad del análisis, así que lo
+  pertinente sale primero. Con consulta activa el orden por puntuación manda sobre el
+  «ordenar por» elegido.
+
+Dos cosas aprendidas escribiéndolo:
+
+- El nombre de campo **no puede casarse con `\w`**: en JavaScript no incluye la eñe, y `año:`
+  se colaba como texto suelto en vez de reconocerse como campo.
+- `cajaBusqueda` se construye con `createElement`, **no con `innerHTML`**. Con `innerHTML` el
+  campo no existe como nodo hasta que un navegador lo parsea, así que no había forma de
+  ejercitar el buscador en las pruebas; además el manejador lee el valor del propio evento.
+
+La caja se monta desde JS sobre cada cuadrícula (`Object.keys(BOOKS)`), no se escribe en el
+marcado: así la tienen también las secciones generadas —la cronología— y los libros que se
+añadan, sin tocar nada.
+
+En el mapa el buscador además **vuela a lo encontrado**: filtra las obras igual que el filtro
+por libro, de modo que grupos, abanicos, lista y continentes se adaptan solos, y encuadra las
+sedes que quedan. Si no queda ninguna, la vista se deja como estaba: alejarse a la nada
+desorienta más que ayudar.
+
 ### Autores
 
 La Biblioteca tiene una segunda pestaña, **Autores**, con los 42 artistas de nombre propio de

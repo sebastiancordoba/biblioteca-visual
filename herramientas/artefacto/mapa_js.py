@@ -113,7 +113,32 @@ JS = r"""
          obras de ese libro, y las cuentas reflejan únicamente esas obras. */
       let libroFiltro = null;
       const LIBROS = ['Génesis', 'Gilgamesh', 'Ilíada'];
-      const obrasDe = sd => libroFiltro ? sd.obras.filter(o => o.libro === libroFiltro) : sd.obras;
+      /* Buscador del mapa. Filtra las obras igual que el filtro por libro, así que todo
+         lo demás —los grupos, los abanicos, la lista, los continentes— se adapta solo:
+         una sede sin obras que cumplan deja de existir para el mapa. */
+      let consultaMapa = '', terminosMapa = [];
+
+      /* Documento de una obra del mapa. Se cachea por índice: `dibujar` puede llamar a
+         obrasDe cientos de veces por fotograma y normalizar texto no es gratis. */
+      const cacheDoc = {};
+      function docObraMapa(o, sd){
+        if (cacheDoc[o.i]) return cacheDoc[o.i];
+        const d = BOOKS.mapa.details[o.i] || {};
+        return (cacheDoc[o.i] = {
+          obra: normaliza(o.t), autor: normaliza(o.autor || d.artist),
+          sede: normaliza(sd.nombre), ciudad: normaliza(sd.ciudad),
+          pais: normaliza(sd.pais), libro: normaliza(o.libro),
+          texto: normaliza([sd.nombre, sd.ciudad, sd.pais, o.a, d.snippet].join(' ')),
+          anio: d.anio,
+        });
+      }
+
+      const obrasDe = sd => {
+        let os = libroFiltro ? sd.obras.filter(o => o.libro === libroFiltro) : sd.obras;
+        if (terminosMapa.length)
+          os = os.filter(o => puntuar(docObraMapa(o, sd), terminosMapa) >= 0);
+        return os;
+      };
       const activas = () => SEDES.map((s, i) => i).filter(i => obrasDe(SEDES[i]).length > 0);
       const claveGrupo = c => c.sedes.slice().sort((a, b) => a - b).join(',');
       const nombreCorto = n => {
@@ -620,7 +645,9 @@ JS = r"""
       function pintarLista(){
         lista.textContent = '';
         if (modo === 'sedes') {
-          nota.textContent = libroFiltro
+          nota.textContent = consultaMapa.trim()
+            ? `Solo lo que coincide con «${consultaMapa.trim()}». Vacía la búsqueda para verlo todo.`
+            : libroFiltro
             ? `Solo las sedes con obras de ${libroFiltro}. Al elegir una, el mapa vuela hasta ella.`
             : 'Ordenadas por número de obras. Al elegir una, el mapa vuela hasta ella y despliega lo que guarda.';
           const idxs = activas().sort((a, b) =>
@@ -752,6 +779,28 @@ JS = r"""
         togLibros.setAttribute('aria-selected', m === 'libros');
         pintarLista();
       }
+      /* Buscar en el mapa. Además de filtrar, VUELA a lo encontrado: buscar «Rembrandt»
+         y quedarte mirando el mundo entero no sirve de nada. Si no queda ninguna sede se
+         deja la vista como estaba, que alejarse a la nada desorienta más que ayudar. */
+      const contBuscMapa = document.getElementById('mapaBuscador');
+      if (contBuscMapa) contBuscMapa.appendChild(cajaBusqueda('buscar-mapa',
+        'Buscar obra, autor, museo, ciudad…',
+        texto => {
+          consultaMapa = texto;
+          terminosMapa = texto.trim() ? analizar(texto) : [];
+          sedeSel = -1; grupoAbierto = -1; ciudadAbierta = null;
+          const quedan = activas();
+          const cuenta = document.getElementById('buscar-mapa-cuenta');
+          const totalObras = SEDES.reduce((a, sd) => a + obrasDe(sd).length, 0);
+          if (cuenta) cuenta.innerText = texto.trim()
+            ? `${totalObras} obra${totalObras === 1 ? '' : 's'} · ${quedan.length} sede${quedan.length === 1 ? '' : 's'}`
+            : '';
+          pintarLista(); pintarContinentes();
+          detalle.innerHTML = '';
+          aplicar(true);
+          if (quedan.length) irAVista(encajarSedes(quedan), true);
+        }));
+
       togSedes.addEventListener('click', () => cambiarModo('sedes'));
       togLibros.addEventListener('click', () => cambiarModo('libros'));
       pintarLista();
