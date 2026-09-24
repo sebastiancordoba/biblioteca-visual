@@ -4,7 +4,7 @@
 No reescribe el visor: cambia las rutas de imagen por vistas previas incrustadas
 (un artefacto no puede cargar archivos externos), y añade tres cosas que solo
 tienen sentido en la versión compartida: enlace al archivo original, cronología
-conjunta de los tres libros y mapa de cobertura.
+conjunta de todos los libros y mapa de cobertura.
 """
 import base64, html, io, json, os, re, sys
 AQUI=os.path.dirname(os.path.abspath(__file__))
@@ -85,10 +85,10 @@ _m=_re.search(r"^ *let currentBook = '[a-z]+';", doc, _re.M)
 assert _m, 'no se encontró la declaración de currentBook'
 anc=_m.group(0)
 BLOQUE=(
-"    /* La cronología funde los tres libros en una sola secuencia; reutiliza las mismas\n"
+"    /* La cronología funde todos los libros en una sola secuencia; reutiliza las mismas\n"
 "       entradas de IMG, así que no duplica ni un byte de imagen. */\n"
 "    BOOKS.cronologia = {\n"
-"      tag: 'Los tres libros a la vez',\n"
+"      tag: 'Todos los libros a la vez',\n"
 "      title: 'Cronología',\n"
 "      sub: 'Las obras de las tres colecciones en una sola secuencia, del Vaso de Warka al Triunfo de Aquiles. Entre el Laocoonte y la Trinidad de Rubliov median casi mil quinientos años sin una sola imagen.',\n"
 "      firstTab: 'cronologia-gallery',\n"

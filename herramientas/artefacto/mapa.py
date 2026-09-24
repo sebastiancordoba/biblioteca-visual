@@ -50,6 +50,8 @@ MUSEOS = {
  "besanzon":   ("Musée des Beaux-Arts","Besanzón",47.2378,6.0241),
  "kassel":     ("Gemäldegalerie Alte Meister","Kassel",51.3130,9.4210),
  "berlin":     ("Gemäldegalerie","Berlín",52.5085,13.3650),
+ "pergamo":    ("Museo de Pérgamo","Berlín",52.5212,13.3964),
+ "estambul":   ("Museos Arqueológicos de Estambul","Estambul",41.0117,28.9814),
  "mrah":       ("Museos Reales de Arte e Historia","Bruselas",50.8400,4.3925),
  # Norteamérica
  "met":        ("Metropolitan Museum of Art","Nueva York",40.7794,-73.9632),
@@ -76,6 +78,7 @@ REGLAS = [
  ("schwerin","schwerin"),("sanssouci","sanssouci"),("cerite","cerveteri"),
  ("soumaya","soumaya"),("catedral de puebla","puebla"),("ochavo","puebla"),
  ("damasco","damasco"),("besanzon","besanzon"),("kassel","kassel"),
+ ("pergamo","pergamo"),("arqueologicos de estambul","estambul"),
  ("gemaldegalerie, berlin","berlin"),("gemaldegalerie","kassel"),
  ("museos reales de arte e historia","mrah"),("bruselas","mrah"),
  ("metropolitan","met"),("morgan library","morgan"),("smithsonian","smithsonian"),

@@ -55,7 +55,10 @@ const nSedes=items().length;
 ck(nSedes>25,`modo Sedes: ${nSedes} entradas`);
 oyentes.togLibros.click();
 const libros=items().map(li=>li.innerHTML);
-ck(items().length===3,`modo Libros: ${items().length} entradas`);
+/* Tantas entradas como libros con obras: se cuentan en el bloque generado, no se escriben. */
+const conObras=[...html.matchAll(/BOOKS\.(\w+) = Object\.assign\(\{"esLibro": true/g)].map(m=>m[1])
+  .filter(id => new RegExp('BOOKS\\.'+id+'\\.details = \\[\\s*\\{').test(html));
+ck(conObras.length>=3 && items().length===conObras.length,`modo Libros: ${items().length} entradas, ${conObras.length} libros con obras`);
 console.log('   '+libros.map(h=>(h.match(/<strong>([^<]+)/)||[])[1]+' ('+(h.match(/sede-n">(\d+)/)||[])[1]+')').join(' · '));
 oyentes.togSedes.click();
 ck(items().length===nSedes,'volver a Sedes restaura la lista');

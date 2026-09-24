@@ -29,7 +29,7 @@ PAIS={"Ciudad del Vaticano":"Vaticano","Florencia":"Italia","Venecia":"Italia","
  "San Petersburgo":"Rusia","Moscú":"Rusia","Múnich":"Alemania","Schwerin":"Alemania",
  "Potsdam":"Alemania","Atenas":"Grecia","Corfú":"Grecia","Argólida":"Grecia",
  "Hisarlik, Çanakkale":"Turquía","Bagdad":"Irak","Sulaymaniyah":"Irak",
- "Ciudad de México":"México","Puebla":"México","Damasco":"Siria","Besanzón":"Francia","Kassel":"Alemania","Berlín":"Alemania",
+ "Ciudad de México":"México","Puebla":"México","Damasco":"Siria","Besanzón":"Francia","Kassel":"Alemania","Berlín":"Alemania","Estambul":"Turquía",
  "Bruselas":"Bélgica",
  "Nueva York":"Estados Unidos","Washington D.C.":"Estados Unidos","Fort Worth":"Estados Unidos",
  "New Haven":"Estados Unidos"}

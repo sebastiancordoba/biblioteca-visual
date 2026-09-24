@@ -42,4 +42,22 @@
   ("—","El héroe y las fieras","si","Relieve de Khorsabad · sello acadio"),
   ("VII–X","La muerte de Enkidu; el inframundo","no","sin obra conocida"),
   ("XI","El Diluvio","si","Tablilla XI, Biblioteca de Asurbanipal")]),
+ "Atrahasis":("3 tablillas, en la versión paleobabilónica del escriba Ipiq-Aya. Casi no tiene iconografía propia: se ilustra con sus dioses, con los textos que comparten su estructura y con los objetos del mundo que describe.","Tablilla",[
+  ("I","Los Igigi se rebelan contra el trabajo","no","sin obra conocida"),
+  ("I","La creación del hombre con arcilla y sangre divina","no","sin obra conocida — ninguna imagen segura de Nintu/Mami"),
+  ("I–II","Enlil y el ruido de los hombres","si","Figura sedente de Enlil, Nippur"),
+  ("II","Peste, sequía y hambruna","no","sin obra conocida"),
+  ("II–III","Ea avisa a Atrahasis a través de la pared de cañas","si","Ea y los apkallu, pila de Assur"),
+  ("III","El Diluvio","si","Tablilla de la Morgan Library · Lista Real Sumeria"),
+  ("III","La barca redonda de Atrahasis","no","Tablilla del Arca, British Museum — no hay imagen libre"),
+  ("III","El límite a la humanidad: la pāšittu","si","Amuleto de Lamashtu · placa de bronce de Estambul")]),
+ "Enuma Elish":("7 tablillas. El poema de la creación de Babilonia; como el Atrahasis, se ilustra con el culto y los símbolos de Marduk más que con escenas.","Tablilla",[
+  ("I","Apsu y Tiamat; el nacimiento de los dioses","si","Tablilla de la Biblioteca de Asurbanipal"),
+  ("I–III","Tiamat y sus once monstruos","si","Mušḫuššu de la Puerta de Ishtar · copia de Kish"),
+  ("IV","Marduk vence a Tiamat","si","Grabado de Layard — en realidad Ninurta y Anzû; falta una imagen segura"),
+  ("IV–V","El cielo y la tierra hechos con su cuerpo","no","sin obra conocida"),
+  ("VI","La creación del hombre con la sangre de Qingu","no","sin obra conocida"),
+  ("VI","Los dioses construyen el Esagila","si","Tablilla del Esagil · estela de Asurbanipal"),
+  ("VII","Los cincuenta nombres de Marduk","si","Sello de Marduk y Nabu · estela de Bel-harran-beli-usur"),
+  ("—","La recitación en el Año Nuevo","si","Ritual del akītu, Louvre")]),
 }

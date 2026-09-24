@@ -122,6 +122,39 @@ iconografía es arqueológica.
 
 ---
 
+## ATRAHASIS (3 tablillas)
+
+El poema del Diluvio anterior a Gilgamesh. Casi no tiene iconografía propia: se ilustra con sus
+dioses, con los textos que comparten su estructura y con los objetos del mundo que describe.
+
+| Tablilla | Pasaje | Estado |
+|---|---|---|
+| I | Los Igigi se rebelan contra el trabajo | · sin obra |
+| I | **La creación del hombre con arcilla y sangre divina** | · sin obra — ninguna imagen segura de Nintu/Mami |
+| I–II | Enlil y el ruido de los hombres | ✓ Enlil sedente, Nippur (02) |
+| II | Peste, sequía y hambruna | · sin obra |
+| II–III | Ea avisa a Atrahasis por la pared de cañas | ✓ Ea y los apkallu, pila de Assur (03) |
+| III | El Diluvio | ✓ Tablilla de la Morgan Library (01), Lista Real Sumeria (04) |
+| III | **La barca redonda** | · la Tablilla del Arca (British Museum) no tiene imagen libre en Commons |
+| III | El límite a la humanidad: la pāšittu | ✓ Amuleto de Lamashtu (05), placa de bronce (06) |
+
+---
+
+## ENUMA ELISH (7 tablillas)
+
+| Tablilla | Pasaje | Estado |
+|---|---|---|
+| I | Apsu y Tiamat; el nacimiento de los dioses | ✓ Tablilla de Nínive, K.3473 (01) |
+| I–III | Tiamat y sus once monstruos | ✓ Mušḫuššu de la Puerta de Ishtar (03), copia de Kish (02) |
+| IV | Marduk vence a Tiamat | ◐ Grabado de Layard (09) — en realidad Ninurta y Anzû; falta una imagen segura |
+| IV–V | **El cielo y la tierra hechos con el cuerpo de Tiamat** | · sin obra |
+| VI | **La creación del hombre con la sangre de Qingu** | · sin obra |
+| VI | Los dioses construyen el Esagila | ✓ Tablilla del Esagil (06), estela de Asurbanipal (08) |
+| VII | Los cincuenta nombres de Marduk | ✓ Sello de Marduk y Nabu (04), estela de Bel-harran-beli-usur (07) |
+| — | La recitación en el Año Nuevo | ✓ Ritual del akītu (05) |
+
+---
+
 ## Fuentes de altísima resolución que conviene recordar
 
 - **Campaña del Prado en Google Earth**: en Commons con el patrón de nombre

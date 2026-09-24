@@ -45,8 +45,10 @@ let bad=0;const ck=(o,m)=>{console.log((o?'  ok    ':'  FALLA ')+m);if(!o)bad++;
 const titulos=id=>[...store[id+'-grid'].innerHTML.matchAll(/<div class="artwork-title">([^<]+)/g)].map(m=>m[1]);
 const indices=id=>[...store[id+'-grid'].innerHTML.matchAll(/openZoomForArtwork\((\d+),/g)].map(m=>+m[1]);
 
-console.log('== la barra existe en los tres libros ==');
-ck(barras.length===3, `${barras.length} barras de ordenación`);
+console.log('== la barra existe en todos los libros con obras ==');
+/* El número sale de los datos, no se escribe: con «3» esta prueba se rompió al llegar
+   el Atrahasis y el Enuma Elish sin que hubiera nada roto. */
+ck(barras.length>=3 && barras.length===LIBROS_HTML.length, `${barras.length} barras de ordenación, una por libro (${LIBROS_HTML.join(', ')})`);
 ck(html.includes('data-orden="cronologia"')&&html.includes('data-orden="sede"'),'con los cinco criterios');
 
 for(const L of ['genesis','iliada']){

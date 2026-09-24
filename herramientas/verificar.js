@@ -44,7 +44,7 @@ for (const [id, b] of Object.entries(BOOKS))
     imgs++;
     if (!fs.existsSync(decodeURIComponent(v.src))) { console.log(`  FALTA  ${v.src}`); missing++; }
   }
-for (const m of html.matchAll(/(?:src|href)="(\.\/[^"]+\.jpg)"/g)) {
+for (const m of html.matchAll(/(?:src|href)="(\.\/[^"]+\.(?:jpe?g|png))"/g)) {
   imgs++;
   if (!fs.existsSync(m[1])) { console.log(`  FALTA  ${m[1]}`); missing++; }
 }

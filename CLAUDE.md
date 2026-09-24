@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Qué es esto
 
 Una colección de arte curada: imágenes en máxima resolución de obras que ilustran grandes libros
-(el Génesis, y en expansión Gilgamesh y La Ilíada), acompañadas de análisis histórico y teológico
+(el Génesis, Gilgamesh, La Ilíada, el Atrahasis y el Enuma Elish), acompañadas de análisis histórico y teológico
 escrito, y un visor web para inspeccionarlas en súper detalle.
 
 **No es un proyecto de software con build.** No hay `package.json`, dependencias, tests ni
@@ -30,7 +30,7 @@ Pinturas/
 ├── CLAUDE.md
 ├── .gitignore          ← deja las imágenes fuera de git (ver «Control de versiones»)
 ├── herramientas/       ← scripts de búsqueda, descarga y generación (ver abajo)
-└── <Libro>/            ← una carpeta por libro (Génesis/, Gilgamesh/, Ilíada/…)
+└── <Libro>/            ← una carpeta por libro (Génesis/, Gilgamesh/, Ilíada/, Atrahasis/, Enuma_Elish/)
     ├── NN_*.jpg        ← las imágenes
     ├── NN_*.md         ← fichas sueltas heredadas (solo Génesis 01-09; ya no se mantienen:
     │                     el texto vivo está en herramientas/data_<libro>.py)
@@ -38,8 +38,36 @@ Pinturas/
     └── Ensayo_*.md     ← ensayos temáticos del libro
 ```
 
-Los tres libros —**Génesis**, **Gilgamesh** e **Ilíada**— funcionan igual: sus tarjetas se generan
-desde `herramientas/data_<libro>.py`, no se escriben a mano en el HTML.
+Todos los libros funcionan igual: sus tarjetas se generan desde `herramientas/data_<libro>.py`, no
+se escriben a mano en el HTML.
+
+### El registro de libros
+
+La lista de libros vive en **un solo sitio**: `herramientas/libros.py` (`LIBROS`). Cada entrada da el
+`id` (el de `BOOKS.<id>` y de los ids del DOM), el nombre `corto` (la etiqueta de la cronología y del
+mapa), la `carpeta` de imágenes, el módulo y la variable de datos, y los rótulos de la cabecera.
+`inject.py`, `readme.py`, `enlaces.py` y toda la cadena del artefacto leen de ahí; antes había una
+docena de listas de tres libros escritas a mano.
+
+`index.html` ya no necesita el marcado de cada libro: `montarLibro(id)` crea con `createElement` su
+panel y su cuadrícula la primera vez que se abre. Solo Génesis, Gilgamesh e Ilíada conservan paneles
+escritos en el HTML.
+
+`build.py` y `build_mapa.py` ordenan la cronología con **la misma etiqueta** (`corto`): el mapa guarda
+índices de la cronología, y si las dos ordenaciones difieren, las obras del mapa abren otra obra.
+La `carpeta` solo se usa para las rutas (`Enuma_Elish` frente a «Enuma Elish»).
+
+### Dar de alta un libro
+
+1. Una entrada en `herramientas/libros.py`.
+2. `herramientas/data_<libro>.py` con la lista de fichas, y la carpeta de imágenes.
+3. Su texto de introducción en el diccionario `INTRO` de `readme.py`.
+4. Su tabla en `MAPA_DE_COBERTURA.md` y en `herramientas/artefacto/datos/cob.py`.
+5. Las sedes nuevas en `herramientas/artefacto/mapa.py` (`MUSEOS` y `REGLAS`) y, si la ciudad es
+   nueva, en `PAIS` de `build_mapa.py`. `python3 herramientas/artefacto/mapa.py` lista las obras
+   que se quedan sin sede.
+
+Nada más: la navegación, la Biblioteca, la portada, la cronología y el mapa lo recogen solos.
 
 `index.html` vive en la raíz precisamente para que un solo visor cubra varios libros; sus rutas de
 imagen son por lo tanto `./<Libro>/NN_archivo.jpg`, nunca `./NN_archivo.jpg`.
@@ -372,7 +400,9 @@ cada archivo de prueba, y cada vez que la página usaba una función del DOM que
 tenía, la prueba se caía por el simulacro y no por un fallo real. Cuando una prueba reviente,
 **mirar primero si falta algo en el simulacro**: es la causa más frecuente con diferencia. El
 simulacro da identidad estable a `getElementById`, de modo que lo que la página construye queda
-inspeccionable después.
+inspeccionable después. Y devuelve **`null`** para un id que ni está en el HTML ni ha asignado la
+página, como un navegador: antes devolvía siempre un elemento, así que `montarLibro` creía que el
+panel ya existía y nunca lo montaba, sin que ninguna prueba lo notara.
 
 Un detalle que ha mordido dos veces: los oyentes hay que indexarlos por **`this.id`**, no por el id
 con el que se creó el elemento. Los botones de continente nacen de `createElement` y reciben su id
@@ -449,7 +479,8 @@ anunció «34 sedes en 13 países» cuando ya iban 43 en 15.
 el límite real: a 10,7 MB la página se quedaba en blanco más de treinta segundos en el visor y no
 llegaba a ser usable. Bajar las previas de 900 px / calidad 46 a 820 px / calidad 42 la dejó en
 8,4 MB y en unos diez segundos; al llegar la Ilíada a 27 obras volvió a rozar los 9,7 MB y se
-bajó otra vez, a **760 px / calidad 40**, que la deja en 8,2 MB. Si vuelve a acercarse a los 10 MB, lo primero que hay que tocar son
+bajó otra vez, a 760 px / calidad 40, que la dejó en 8,2 MB. Con el Atrahasis y el Enuma Elish
+llegó a 9,5 MB y se bajó a **700 px / calidad 38**: 8,2 MB otra vez. Si vuelve a acercarse a los 10 MB, lo primero que hay que tocar son
 `LADO` y `CALIDAD` de `previas.py` —cambiarlos invalida las previas ya generadas y las rehace
 todas—, no el número de obras.
 

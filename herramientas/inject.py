@@ -42,8 +42,10 @@ def main():
     DETALLES = {}          # libro -> details YA filtrados, para enlazar los autores
     # El literal `const BOOKS = {...}` de index.html queda vacío: cada libro se declara
     # ENTERO aquí, metadatos incluidos, desde el registro. Así un libro nuevo no exige
-    # tocar el HTML.
-    s = re.sub(r"const BOOKS = \{[\s\S]*?\n    \};", "const BOOKS = {};", s, count=1)
+    # tocar el HTML. El salto de línea tras la llave es obligatorio: sin él, en la segunda
+    # pasada el patrón casaba con el `{};` ya vaciado y se tragaba todo el código hasta el
+    # siguiente `};` — la portada, librosReales y medio montarLibro.
+    s = re.sub(r"const BOOKS = \{\n[\s\S]*?\n    \};", "const BOOKS = {};", s, count=1)
 
     for libro, entries in _libros():
         book_id, folder = libro["id"], libro["carpeta"]

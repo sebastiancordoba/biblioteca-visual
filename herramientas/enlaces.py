@@ -76,7 +76,7 @@ def referenciadas():
     vistas = []
     from libros import CARPETAS
     alt = "|".join(re.escape(c) for c in CARPETAS)
-    for m in re.finditer(r'"src":\s*"\./((?:' + alt + r')/[^"]+\.jpg)"', doc):
+    for m in re.finditer(r'"src":\s*"\./((?:' + alt + r')/[^"]+\.(?:jpe?g|png))"', doc):
         if m.group(1) not in vistas:
             vistas.append(m.group(1))
     return vistas
