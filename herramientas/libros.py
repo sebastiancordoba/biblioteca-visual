@@ -68,8 +68,10 @@ CARPETAS = [l["carpeta"] for l in LIBROS]
 
 # Ruta de imagen de cualquier libro (o de los retratos de autor) dentro de index.html.
 _ALT = "|".join(re.escape(c) for c in CARPETAS + ["Autores"])
-PATRON_RUTA = r"\./((?:" + _ALT + r")/[^'\"]+\.jpg)"
-PATRON_RUTA_COMILLAS = r'"\./((?:' + _ALT + r')/[^"]+\.jpg)"'
+PATRON_RUTA = r"\./((?:" + _ALT + r")/[^'\"]+\.(?:jpe?g|png))"
+PATRON_RUTA_COMILLAS = r'"\./((?:' + _ALT + r')/[^"]+\.(?:jpe?g|png))"'
+# Todas las extensiones de imagen: con solo .jpg, el grabado de Layard (.png) se quedó sin
+# previa y el artefacto apuntaba a un archivo local que en claude.ai no existe.
 
 
 def entradas(libro):

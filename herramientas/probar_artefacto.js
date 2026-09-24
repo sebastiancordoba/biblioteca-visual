@@ -35,6 +35,13 @@ const {BOOKS,renderBookGrid,IMG,SEDES,MAPA_EUROPA,MAPA_W,MAPA_H}=ctx;
 
 let bad=0;const ck=(o,m)=>{console.log((o?'  ok    ':'  FALLA ')+m);if(!o)bad++;};
 
+console.log('== ninguna imagen apunta al disco ==');
+/* En claude.ai no hay archivos locales: toda imagen tiene que ir incrustada. Una ruta
+   ./Carpeta/archivo.ext que sobreviva a build4 es una tarjeta en blanco. Así se escapó el
+   grabado de Layard, que es .png cuando los patrones solo conocían .jpg. */
+const locales=[...html.matchAll(/["'(]\.\/[^"')]+\.(?:jpe?g|png|gif|webp)["')]/gi)].map(m=>m[0]);
+ck(locales.length===0, `${locales.length} rutas locales de imagen`+(locales.length?': '+locales.slice(0,3).join(' '):''));
+
 console.log('== datos del mapa ==');
 ck(SEDES.length>25,`${SEDES.length} sedes`);
 const TOT=SEDES.reduce((a,s)=>a+s.obras.length,0);
