@@ -178,6 +178,10 @@ CSS = """
 doc=doc.replace("  </style>",CSS,1)
 
 
+# La versión de GitHub Pages sale de este mismo punto: todo igual salvo las imágenes, que
+# allí se piden a Commons en vez de incrustarse (herramientas/sitio/construir_sitio.py).
+io.open(os.path.join(TMP,"pre_imagenes.html"),"w",encoding="utf-8").write(doc)
+
 # ---------- imágenes: una sola copia, referenciada por índice ----------
 orden=[]; datos={}
 def idx(rel):

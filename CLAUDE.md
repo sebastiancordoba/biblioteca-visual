@@ -433,6 +433,41 @@ visor, y el bloque generado de `index.html` que se reescribe entero en cada pasa
 a los manifiestos— no están en ningún TSV, así que hoy solo existen en disco. Conviene añadirles
 su manifiesto para que la colección sea reproducible desde el repositorio.
 
+## La versión de GitHub Pages
+
+El sitio público vive en **`sebastiancordoba.github.io/biblioteca-visual/`**, repositorio
+`sebastiancordoba/biblioteca-visual`. El código fuente va en `main`; el sitio construido, en la
+rama **`gh-pages`**, que es la que sirve GitHub. Se publica con un solo comando:
+
+```sh
+./herramientas/sitio/publicar_sitio.sh     # construye, prueba y sube gh-pages
+```
+
+No es un tercer sitio que mantener: `construir_sitio.py` parte de **`build/pre_imagenes.html`**,
+que `build4.py` deja justo antes de incrustar las previas, así que lleva todo lo del artefacto
+—mapa, cronología, cobertura, botón «Original»— y solo cambia lo que en Pages sí se puede hacer:
+
+- **Las imágenes se piden a Wikimedia Commons**, con las URL de `enlaces.json`: miniatura de
+  1280 px en cuadrículas, mapa y portada; 1920 px al abrir el visor, para que llene la pantalla
+  y el cambio al original no dé un salto; y el **archivo original** en cuanto el zoom pasa de
+  1,4×. No antes: hay originales de decenas de megas. Junto al porcentaje de zoom aparece «HD».
+- El formato de miniatura de Commons es `thumb/5/5b/<nombre>/1280px-<nombre>`, con el nombre
+  **dos veces**; sin la repetición da 404 (así falló la primera construcción). Y no se puede
+  pedir una miniatura mayor que el original: en ese caso se usa el original.
+- Lo que no está en Commons va como archivo del sitio: los retratos de `Autores/` y las 6
+  imágenes antiguas del Génesis sin origen conocido, en copia reducida a 2560 px. Al
+  identificarlas en `titulos_extra.tsv` pasan solas a servirse desde Commons.
+- **Una dirección por sección**: `#/genesis`, `#/mapa`, `#/biblioteca/autores`. Se envuelven
+  `switchBook` y `switchTab`, y el botón «atrás» del navegador funciona.
+
+`probar_sitio.js` ejecuta el JavaScript real del sitio con el DOM simulado (al que se le pasan
+`location`, `history` e `Image` como globales extra de `ejecutar`) y comprueba que ninguna
+imagen apunte a las carpetas de la colección, que las miniaturas tengan el formato de Commons,
+que el original se pida una sola vez y que las direcciones se escriban.
+
+Fase siguiente, pendiente: páginas HTML reales por sección y por obra, generadas desde las
+fichas, en lugar de una sola página con direcciones de almohadilla.
+
 ## La versión publicada (artefacto)
 
 Además del `index.html` local hay una versión compartible publicada como artefacto,

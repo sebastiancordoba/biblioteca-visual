@@ -51,6 +51,10 @@ function crearEl(idInicial) {
     closest: () => crearEl('?'),
     getAttribute: () => null,
     setAttribute: noop,
+    /* Lo que el mapa usa al dibujar en SVG. */
+    setAttributeNS: noop, removeAttribute: noop, hasAttribute: () => false,
+    replaceChildren: (...n) => { hijos.length = 0; n.forEach(x => self.appendChild(x)); },
+    contains: () => false,
     getBoundingClientRect: () => ({ width: 0, height: 0, left: 0, top: 0 }),
     focus: noop, blur: noop, click: noop, scrollIntoView: noop,
   };
@@ -60,7 +64,9 @@ function crearEl(idInicial) {
 /* Ejecuta el <script> de un documento y devuelve lo que pida `devuelve`
    (una expresión JS, p. ej. '{BOOKS, renderBookGrid}'). Los temporizadores van
    inertes: ni el banner ni el mapa deben adelantar nada durante la comprobación. */
-function ejecutar(html, devuelve) {
+/* `extras` añade globales que el navegador tiene y el simulacro no, p. ej. location e
+   history para la versión de GitHub Pages: { location: {...}, history: {...} }. */
+function ejecutar(html, devuelve, extras = {}) {
   const js = html.split('<script>')[1].split('</script>')[0];
   const porId = new Map();
   registroActual = porId;
@@ -77,6 +83,7 @@ function ejecutar(html, devuelve) {
       return null;     // como un navegador: lo que no existe, no existe
     },
     createElement: () => crearEl('nuevo'),
+    createElementNS: () => crearEl('nuevo'),     // el mapa dibuja en SVG
     createTextNode: () => crearEl('texto'),
     querySelector: () => crearEl('?'),
     querySelectorAll: () => [],
@@ -85,9 +92,11 @@ function ejecutar(html, devuelve) {
     documentElement: crearEl('html'),
   };
   const window = { addEventListener: noop, scrollTo: noop, innerWidth: 1280, innerHeight: 800 };
+  const nombres = Object.keys(extras);
   const salida = new Function('document', 'window', 'requestAnimationFrame',
     'cancelAnimationFrame', 'setTimeout', 'clearTimeout', 'setInterval', 'clearInterval',
-    js + '\n;return ' + devuelve + ';')(document, window, noop, noop, noop, noop, noop, noop);
+    ...nombres, js + '\n;return ' + devuelve + ';')(document, window, noop, noop, noop, noop, noop, noop,
+    ...nombres.map(n => extras[n]));
   return { document, window, ...salida };
 }
 
