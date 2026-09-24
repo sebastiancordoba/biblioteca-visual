@@ -1,20 +1,13 @@
 /* Regenera Génesis/README.md desde los datos que ya viven en index.html, de modo que la
    tabla del libro no se desincronice del visor. Uso: node herramientas/readme_genesis.js */
 const fs = require('fs');
+process.chdir(require('path').join(__dirname, '..'));
+/* El DOM simulado es el compartido. Este script llevaba uno propio, sin document.body, y se
+   rompió en silencio cuando la portada empezó a usarlo: el README del Génesis dejó de
+   regenerarse y se quedó atrás. */
+const { ejecutar } = require('./dom_falso.js');
 const html = fs.readFileSync('index.html', 'utf8');
-const js = html.split('<script>')[1].split('</script>')[0];
-const noop = () => {};
-const el = new Proxy({}, { get: (t,p) => {
-  if (p === 'classList') return {add:noop, remove:noop, contains:()=>false, toggle:noop};
-  if (p === 'querySelectorAll') return () => ({forEach:noop});
-  if (p === 'querySelector' || p === 'closest') return () => el;
-  if (p === 'dataset' || p === 'style') return {};
-  if (p === 'getBoundingClientRect') return () => ({});
-  return noop; }});
-const { BOOKS } = new Function('document','window','requestAnimationFrame',
-  js + '\n;return {BOOKS};')(
-  {getElementById:()=>el, querySelectorAll:()=>({forEach:noop}), querySelector:()=>el, addEventListener:noop},
-  {addEventListener:noop, scrollTo:noop}, noop);
+const { BOOKS } = ejecutar(html, '{BOOKS}');
 
 const { details, groups } = BOOKS.genesis;
 const L = [

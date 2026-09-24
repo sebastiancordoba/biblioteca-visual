@@ -236,3 +236,7 @@ GENESIS = GENESIS + GENESIS_L6
 # Lote 8: obras conservadas en México.
 from data_lote5 import GENESIS_L8
 GENESIS = GENESIS + GENESIS_L8
+
+# Lote 9: el Génesis fuera de Europa y Estados Unidos (Egipto, Israel, Turquía, Jerusalén, Argentina).
+from data_genesis_mundo import GENESIS_MUNDO
+GENESIS = GENESIS + GENESIS_MUNDO

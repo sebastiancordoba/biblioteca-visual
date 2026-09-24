@@ -29,7 +29,8 @@ PAIS={"Ciudad del Vaticano":"Vaticano","Florencia":"Italia","Venecia":"Italia","
  "San Petersburgo":"Rusia","Moscú":"Rusia","Múnich":"Alemania","Schwerin":"Alemania",
  "Potsdam":"Alemania","Atenas":"Grecia","Corfú":"Grecia","Argólida":"Grecia",
  "Hisarlik, Çanakkale":"Turquía","Bagdad":"Irak","Sulaymaniyah":"Irak",
- "Ciudad de México":"México","Puebla":"México","Damasco":"Siria","Besanzón":"Francia","Kassel":"Alemania","Berlín":"Alemania","Estambul":"Turquía",
+ "Ciudad de México":"México","Puebla":"México","Damasco":"Siria","Besanzón":"Francia","Kassel":"Alemania","Berlín":"Alemania","Estambul":"Turquía","Adana":"Turquía","Oasis de Jarga":"Egipto","El Cairo":"Egipto","Beit Alfa":"Israel",
+ "Ciudad Vieja":"Jerusalén","Buenos Aires":"Argentina",
  "Bruselas":"Bélgica",
  "Nueva York":"Estados Unidos","Washington D.C.":"Estados Unidos","Fort Worth":"Estados Unidos",
  "New Haven":"Estados Unidos"}
@@ -40,7 +41,7 @@ CONTINENTE={"Vaticano":"Europa","Italia":"Europa","Austria":"Europa","Francia":"
  "Reino Unido":"Europa","España":"Europa","Chequia":"Europa","Rusia":"Europa",
  "Bélgica":"Europa",
  "Grecia":"Europa","Alemania":"Europa","Países Bajos":"Europa","Portugal":"Europa",
- "Irak":"Asia","Siria":"Asia","Turquía":"Asia","Israel":"Asia","Irán":"Asia",
+ "Irak":"Asia","Jerusalén":"Asia","Siria":"Asia","Turquía":"Asia","Israel":"Asia","Irán":"Asia",
  "Estados Unidos":"América del Norte","México":"América del Norte","Canadá":"América del Norte",
  "Brasil":"América del Sur","Argentina":"América del Sur","Perú":"América del Sur",
  "Egipto":"África","Marruecos":"África","Sudáfrica":"África","Túnez":"África",

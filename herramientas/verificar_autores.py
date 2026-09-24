@@ -37,6 +37,7 @@ ARTICULOS = {
  "ivanov":"Alexander Andreyevich Ivanov", "tiepolo_g":"Giovanni Battista Tiepolo",
  "tiepolo_d":"Giovanni Domenico Tiepolo", "van_dyck":"Anthony van Dyck",
  "vernet":"Carle Vernet",
+ "behzad":"Kamāl ud-Dīn Behzād", "bouguereau":"William-Adolphe Bouguereau",
 }
 # Discrepancias conocidas y resueltas a favor de otra fuente. Se declaran para que no
 # vuelvan a aparecer como sorpresa, no para taparlas.

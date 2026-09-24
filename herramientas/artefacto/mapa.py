@@ -52,6 +52,12 @@ MUSEOS = {
  "berlin":     ("Gemäldegalerie","Berlín",52.5085,13.3650),
  "pergamo":    ("Museo de Pérgamo","Berlín",52.5212,13.3964),
  "estambul":   ("Museos Arqueológicos de Estambul","Estambul",41.0117,28.9814),
+ "bagawat":    ("Necrópolis de El Bagawat","Oasis de Jarga",25.4633,30.5456),
+ "darkutub":   ("Dar al-Kutub, Biblioteca Nacional de Egipto","El Cairo",30.0664,31.2311),
+ "beitalfa":   ("Sinagoga de Beit Alfa","Beit Alfa",32.5186,35.4278),
+ "adana":      ("Museo Arqueológico de Adana","Adana",36.9905,35.3375),
+ "patrarm":    ("Patriarcado Armenio de Jerusalén","Ciudad Vieja",31.7745,35.2290),
+ "mnba_ba":    ("Museo Nacional de Bellas Artes","Buenos Aires",-34.5838,-58.3929),
  "mrah":       ("Museos Reales de Arte e Historia","Bruselas",50.8400,4.3925),
  # Norteamérica
  "met":        ("Metropolitan Museum of Art","Nueva York",40.7794,-73.9632),
@@ -63,6 +69,9 @@ MUSEOS = {
 
 # ---------- qué museo corresponde a cada ficha ----------
 REGLAS = [
+ ("bagawat","bagawat"),("dar al-kutub","darkutub"),("beit alfa","beitalfa"),
+ ("arqueologico de adana","adana"),("patriarcado armenio","patrarm"),
+ ("bellas artes, buenos aires","mnba_ba"),
  ("sixtina","vaticano"),("museos vaticanos","vaticano"),("gregoriano etrusco","vaticano"),
  ("brancacci","brancacci"),("uffizi","uffizi"),("salute","salute"),
  ("kunsthistorisches","khm"),("orsay","orsay"),("louvre","louvre"),

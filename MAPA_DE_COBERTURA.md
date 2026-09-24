@@ -22,12 +22,12 @@ propia colección. El lote de complementos corrige ese desequilibrio.
 | 1 | Elohim crea a Adán | ✓ | Blake (07) |
 | 1–2 | La creación de Adán | ✓ | Miguel Ángel (01) |
 | 2 | **La creación de Eva** | · | Miguel Ángel, Sixtina — en Commons solo a 1,3 MP, hay que ir al Vaticano |
-| 2–3 | El Edén | ✓ | El Bosco (26), Cranach (14), Durero (15), Cranach del Museo Soumaya (39) |
+| 2–3 | El Edén | ✓ | El Bosco (26), Cranach (14), Durero (15), Cranach del Museo Soumaya (39), capilla del Éxodo de El Bagawat, Egipto (42b) |
 | 3 | Pecado original y expulsión | ✓ | Miguel Ángel, Sixtina (41) — el panel a 7,6 MP y la bóveda entera a 26,7 MP; la versión de 1,4 MP que circula no era la única |
 | 3 | La expulsión del Paraíso | ✓ | Masaccio (02) |
-| 4 | Caín y Abel | ✓ | Tiziano (03), Cormon (06) |
+| 4 | Caín y Abel | ✓ | Tiziano (03), Cormon (06), Bouguereau, *El primer duelo*, Buenos Aires (46) |
 | 5 | Genealogías | — | |
-| 6–9 | El Diluvio | ✓✓ | Miguel Ángel (04), Turner (08), van Scorel (10), Watts (11), Danby (12), Cole (13), Poussin (31), Villalpando, Catedral de Puebla (40) |
+| 6–9 | El Diluvio | ✓✓ | Miguel Ángel (04), Turner (08), van Scorel (10), Watts (11), Danby (12), Cole (13), Poussin (31), Villalpando, Catedral de Puebla (40), cúpula de El Bagawat (42), mosaico de Misis, Adana (44), miniatura armenia de Isfahán, Jerusalén (47) |
 | 9 | La embriaguez de Noé | ✓ | Giovanni Bellini, Besanzón (32) |
 | 11 | La Torre de Babel | ✓ | Bruegel (05), Doré (09) |
 
@@ -43,7 +43,7 @@ propia colección. El lote de complementos corrige ese desequilibrio.
 | 19 | Lot y sus hijas | ✓ | Rubens, Schwerin (27) |
 | 22 | El sacrificio de Isaac más antiguo | ✓ | Sinagoga de Dura Europos, Siria, 244 d.C. (34) — el nicho de la Torá con la Aqedá, en la placa de la excavación de Yale de 1933-1934 (34b, 2,9 MP); la única toma en color de Commons es de 0,2 MP y se descartó |
 | 21 | Agar e Ismael | ✓ | Corot (23) |
-| 22 | El sacrificio de Isaac | ✓✓ | Caravaggio (17), Rembrandt (18) |
+| 22 | El sacrificio de Isaac | ✓✓ | Caravaggio (17), Rembrandt (18), mosaico de la sinagoga de Beit Alfa, Israel (43), Sara en la capilla de la Paz de El Bagawat (42c) |
 | 24 | Eliezer y Rebeca | ✓ | Poussin, Louvre, 70 MP (28) |
 | 25 | **Esaú vende la primogenitura** | · | Ter Brugghen, Matthias Stom |
 | 27 | Isaac bendice a Jacob | ✓ | Ribera, Prado (29) |
@@ -52,7 +52,7 @@ propia colección. El lote de complementos corrige ese desequilibrio.
 | 32 | La lucha con el ángel | ✓✓ | Delacroix (20), Rembrandt (21), Gauguin (22) |
 | 37 | **José vendido por sus hermanos** | · | Overbeck, Flavitsky |
 | 37 | La túnica de José | ✓ | Velázquez (24) |
-| 39 | **José y la mujer de Putifar** | · | Rembrandt; Orazio Gentileschi (Royal Collection) |
+| 39 | José y la mujer de Putifar | ✓ | Behzad, *Yusuf y Zulaija*, Bustán de El Cairo, 1488 (45) — la versión coránica y persa del pasaje |
 | 41 | Los sueños del faraón | ✓ | Jörg Breu el Joven, Metropolitan (38) |
 | 45 | **José se da a conocer** | · | Cornelis de Vos — no localizado en Commons |
 | 49 | **Jacob bendice a Efraín y Manasés** | · | Rembrandt, Kassel — obra maestra tardía |

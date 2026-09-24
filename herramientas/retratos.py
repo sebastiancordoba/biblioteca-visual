@@ -62,10 +62,13 @@ RETRATOS = {
                   "Retratado por su padre en el fresco de Wurzburgo"),
  "van_dyck":     ("Sir Anthony van Dyck - Self-portrait.jpg", "Autorretrato"),
  "vernet":       ("Carle Vernet by Robert Lefevre.jpg", "Retrato por Robert Lefèvre"),
+ "bouguereau":   ("Bouguereau Portrait du peintre 1895.jpg", "Autorretrato, 1895, en una reproducción de época en blanco y negro"),
+ "behzad":       ("Portrait of miniaturist Bezahd, 1511-1534. Yildiz Library, Constantinople.jpg",
+                  "Retrato por otro pintor, s. XVI, con su nombre inscrito — Biblioteca de Yıldız, Estambul"),
 }
 
 # De estos no se conserva retrato. No se pone nada en su lugar.
-SIN_RETRATO = {"exekias", "eufronio", "villalpando", "breu", "laocoonte"}
+SIN_RETRATO = {"exekias", "eufronio", "villalpando", "breu", "laocoonte", "marianos"}
 
 
 def url_reducida(archivo):

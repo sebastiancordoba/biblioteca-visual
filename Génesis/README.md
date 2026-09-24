@@ -6,7 +6,7 @@ abre [`../index.html`](../index.html) y elige **Génesis** en el selector de lib
 
 ---
 
-## 🎨 Galería de la Colección (38 obras)
+## 🎨 Galería de la Colección (47 obras)
 
 | N° | Obra | Artista | Ubicación | Wikipedia | Archivo de Imagen |
 |---|---|---|---|---|---|
@@ -20,12 +20,12 @@ abre [`../index.html`](../index.html) y elige **Génesis** en el selector de lib
 | 8 | **Sombra y oscuridad - la tarde del diluvio** | J.M.W. Turner (1843) | Tate Britain, Londres, Reino Unido | [Wikipedia](https://en.wikipedia.org/wiki/Light_and_Colour_(Goethe%27s_Theory)_%E2%80%93_The_Morning_after_the_Deluge_%E2%80%93_Moses_Writing_the_Book_of_Genesis) | [`08_Sombra_y_Oscuridad_el_Diluvio_JMW_Turner_1843.jpg`](./08_Sombra_y_Oscuridad_el_Diluvio_JMW_Turner_1843.jpg) |
 | 9 | **La confusión de las lenguas** | Gustave Doré (1865) | Biblioteca Nacional de Francia, París, Francia | [Wikipedia](https://en.wikipedia.org/wiki/Gustave_Dor%C3%A9%27s_illustrations_for_La_Grande_Bible_de_Tours) | [`09_La_Confusion_de_las_Lenguas_Gustave_Dore_1865.jpg`](./09_La_Confusion_de_las_Lenguas_Gustave_Dore_1865.jpg) |
 | 10 | **El Diluvio Universal** | Jan van Scorel (c. 1530) | Museo Nacional del Prado, Madrid, España | [Wikipedia](https://es.wikipedia.org/wiki/Jan_van_Scorel) | [`10_El_Diluvio_Jan_van_Scorel_1530.jpg`](./10_El_Diluvio_Jan_van_Scorel_1530.jpg) |
-| 11 | **Tras el diluvio (El sol)** | George Frederic Watts (1891) | Watts Gallery, Compton, Surrey, Reino Unido | [Wikipedia](https://en.wikipedia.org/wiki/After_the_Deluge_(Watts)) | [`11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg`](./11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg) |
+| 11 | **Tras el diluvio: el día cuadragésimo primero** | George Frederic Watts (1891) | Watts Gallery, Compton, Surrey, Reino Unido | [Wikipedia](https://en.wikipedia.org/wiki/After_the_Deluge_(Watts)) | [`11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg`](./11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg) |
 | 12 | **La disminución de las aguas del diluvio** | Francis Danby (1840) | Tate Britain, Londres, Reino Unido | [Wikipedia](https://en.wikipedia.org/wiki/Francis_Danby) | [`12_La_disminucion_de_las_aguas_Francis_Danby_1840.jpg`](./12_La_disminucion_de_las_aguas_Francis_Danby_1840.jpg) |
 | 13 | **La disminución de las aguas del diluvio** | Thomas Cole (1829) | Smithsonian American Art Museum, Washington D.C., EE.UU. | [Wikipedia](https://en.wikipedia.org/wiki/Subsiding_of_the_Waters_of_the_Deluge) | [`13_La_disminucion_de_las_aguas_Thomas_Cole_1829.jpg`](./13_La_disminucion_de_las_aguas_Thomas_Cole_1829.jpg) |
 | 14 | **Adán y Eva** | Lucas Cranach el Viejo (c. 1538) | Galería Nacional de Praga (DO 5380) | [Wikipedia](https://es.wikipedia.org/wiki/Lucas_Cranach_el_Viejo) | [`14_Adan_y_Eva_Lucas_Cranach_el_Viejo_1538.jpg`](./14_Adan_y_Eva_Lucas_Cranach_el_Viejo_1538.jpg) |
 | 15 | **Adán y Eva** | Alberto Durero (1504 y 1507) | y óleo sobre tabla, 209 × 81 cm (Museo del Prado, P02177) | [Wikipedia](https://es.wikipedia.org/wiki/Ad%C3%A1n_y_Eva_(D%C3%BArero)) | [`15_Adan_y_Eva_Grabado_Alberto_Durero_1504.jpg`](./15_Adan_y_Eva_Grabado_Alberto_Durero_1504.jpg) |
-| 16 | **El Anciano de los Días** | William Blake (1794) | Frontispicio de «Europe: A Prophecy» | [Wikipedia](https://es.wikipedia.org/wiki/El_anciano_de_los_d%C3%ADas) | [`16_El_Anciano_de_los_Dias_William_Blake_1794.jpg`](./16_El_Anciano_de_los_Dias_William_Blake_1794.jpg) |
+| 16 | **El Anciano de los Días** | William Blake (1794) | British Museum, Londres | [Wikipedia](https://es.wikipedia.org/wiki/El_anciano_de_los_d%C3%ADas) | [`16_El_Anciano_de_los_Dias_William_Blake_British_Museum_1794.jpg`](./16_El_Anciano_de_los_Dias_William_Blake_British_Museum_1794.jpg) |
 | 17 | **El sacrificio de Isaac** | Caravaggio (c. 1603) | Galleria degli Uffizi, Florencia | [Wikipedia](https://es.wikipedia.org/wiki/El_sacrificio_de_Isaac_(Caravaggio)) | [`17_El_Sacrificio_de_Isaac_Caravaggio_1603.jpg`](./17_El_Sacrificio_de_Isaac_Caravaggio_1603.jpg) |
 | 18 | **El sacrificio de Isaac** | Rembrandt van Rijn (1635) | Museo del Hermitage, San Petersburgo | [Wikipedia](https://es.wikipedia.org/wiki/El_sacrificio_de_Isaac_(Rembrandt)) | [`18_El_Sacrificio_de_Isaac_Rembrandt_1635.jpg`](./18_El_Sacrificio_de_Isaac_Rembrandt_1635.jpg) |
 | 19 | **La Trinidad (La hospitalidad de Abraham)** | Andréi Rubliov (1425–1427) | Galería Tretiakov, Moscú (Inv. 13012) | [Wikipedia](https://es.wikipedia.org/wiki/Trinidad_(Rubl%C3%B3v)) | [`19_La_Trinidad_de_Abraham_Andrei_Rublev_1425.jpg`](./19_La_Trinidad_de_Abraham_Andrei_Rublev_1425.jpg) |
@@ -36,18 +36,27 @@ abre [`../index.html`](../index.html) y elige **Génesis** en el selector de lib
 | 24 | **La túnica de José** | Diego Velázquez (1630) | Monasterio de San Lorenzo de El Escorial | [Wikipedia](https://es.wikipedia.org/wiki/La_t%C3%BAnica_de_Jos%C3%A9) | [`24_La_Tunica_de_Jose_Diego_Velazquez_1630.jpg`](./24_La_Tunica_de_Jose_Diego_Velazquez_1630.jpg) |
 | 25 | **La destrucción de Sodoma y Gomorra** | John Martin (1852) | Laing Art Gallery, Newcastle upon Tyne | [Wikipedia](https://en.wikipedia.org/wiki/John_Martin_(painter)) | [`25_La_Destruccion_de_Sodoma_y_Gomorra_John_Martin_1852.jpg`](./25_La_Destruccion_de_Sodoma_y_Gomorra_John_Martin_1852.jpg) |
 | 26 | **El jardín de las delicias** | Hieronymus Bosch, El Bosco (c. 1490–1500) | Museo Nacional del Prado, Madrid (P02823) | [Wikipedia](https://es.wikipedia.org/wiki/El_jard%C3%ADn_de_las_delicias) | [`26_El_Jardin_de_las_Delicias_El_Bosco_1505.jpg`](./26_El_Jardin_de_las_Delicias_El_Bosco_1505.jpg) |
-| 27 | **Lot y sus hijas** | Peter Paul Rubens (c. 1613–1614) | Staatliches Museum Schwerin, Alemania | [Wikipedia](https://es.wikipedia.org/wiki/Lot_(B%C3%ADblia)) | [`27_Lot_y_sus_Hijas_Peter_Paul_Rubens_1614.jpg`](./27_Lot_y_sus_Hijas_Peter_Paul_Rubens_1614.jpg) |
-| 28 | **Eliezer y Rebeca** | Nicolas Poussin (1648) | Musée du Louvre, París (INV 7270) | [Wikipedia](https://es.wikipedia.org/wiki/Nicolas_Poussin) | [`28_Eliezer_y_Rebeca_Nicolas_Poussin_1648.jpg`](./28_Eliezer_y_Rebeca_Nicolas_Poussin_1648.jpg) |
-| 29 | **Isaac bendice a Jacob** | José de Ribera (1637) | Museo Nacional del Prado, Madrid | [Wikipedia](https://es.wikipedia.org/wiki/Isaac_y_Jacob) | [`29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg`](./29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg) |
-| 30 | **El sueño de Jacob** | José de Ribera (1639) | Museo Nacional del Prado, Madrid | [Wikipedia](https://es.wikipedia.org/wiki/El_sue%C3%B1o_de_Jacob) | [`30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg`](./30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg) |
-| 31 | **El invierno, o El Diluvio** | Nicolas Poussin (1660–1664) | Musée du Louvre, París (INV 7306) | [Wikipedia](https://es.wikipedia.org/wiki/Las_cuatro_estaciones_(Poussin)) | [`31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg`](./31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg) |
-| 32 | **La embriaguez de Noé** | Giovanni Bellini (c. 1515) | Musée des Beaux-Arts, Besanzón, Francia | [Wikipedia](https://es.wikipedia.org/wiki/Giovanni_Bellini) | [`32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg`](./32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg) |
-| 33 | **El encuentro de Abraham y Melquisedec** | Peter Paul Rubens (1625) | National Gallery of Art, Washington | [Wikipedia](https://es.wikipedia.org/wiki/Melquisedec) | [`33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg`](./33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg) |
-| 34 | **La sinagoga de Dura Europos** | Dura Europos, Siria (244–245 d.C.) | Museo Nacional de Damasco, Siria | [Wikipedia](https://es.wikipedia.org/wiki/Sinagoga_de_Dura_Europos) | [`34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg`](./34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg) |
-| 35 | **José acusado por la mujer de Putifar** | Rembrandt van Rijn y taller (1655) | National Gallery of Art, Washington | [Wikipedia](https://es.wikipedia.org/wiki/Jos%C3%A9_y_la_esposa_de_Putifar) | [`35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg`](./35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg) |
-| 36 | **Jacob bendice a los hijos de José** | Rembrandt van Rijn (1656) | Gemäldegalerie Alte Meister, Kassel, Alemania | [Wikipedia](https://en.wikipedia.org/wiki/Jacob_Blessing_the_Sons_of_Joseph) | [`36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg`](./36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg) |
-| 37 | **Jacob y Raquel en el pozo** | François Lemoyne (1720) | Colección Motais de Narbonne, Francia | [Wikipedia](https://es.wikipedia.org/wiki/Raquel) | [`37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg`](./37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg) |
-| 38 | **José interpreta los sueños del faraón** | Jörg Breu el Joven (c. 1534–1547) | Metropolitan Museum of Art, Nueva York (89.15.20) | [Wikipedia](https://es.wikipedia.org/wiki/Jos%C3%A9_(patriarca)) | [`38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg`](./38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg) |
+| 27 | **El pecado original y la expulsión del Paraíso** | Miguel Ángel Buonarroti (1509–1510) | Bóveda de la Capilla Sixtina, Ciudad del Vaticano | [Wikipedia](https://es.wikipedia.org/wiki/B%C3%B3veda_de_la_Capilla_Sixtina) | [`41_El_Pecado_Original_y_la_Expulsion_Miguel_Angel_1510.jpg`](./41_El_Pecado_Original_y_la_Expulsion_Miguel_Angel_1510.jpg) |
+| 28 | **Lot y sus hijas** | Peter Paul Rubens (c. 1613–1614) | Staatliches Museum Schwerin, Alemania | [Wikipedia](https://es.wikipedia.org/wiki/Lot_(B%C3%ADblia)) | [`27_Lot_y_sus_Hijas_Peter_Paul_Rubens_1614.jpg`](./27_Lot_y_sus_Hijas_Peter_Paul_Rubens_1614.jpg) |
+| 29 | **Eliezer y Rebeca** | Nicolas Poussin (1648) | Musée du Louvre, París (INV 7270) | [Wikipedia](https://es.wikipedia.org/wiki/Nicolas_Poussin) | [`28_Eliezer_y_Rebeca_Nicolas_Poussin_1648.jpg`](./28_Eliezer_y_Rebeca_Nicolas_Poussin_1648.jpg) |
+| 30 | **Isaac bendice a Jacob** | José de Ribera (1637) | Museo Nacional del Prado, Madrid | [Wikipedia](https://es.wikipedia.org/wiki/Isaac_y_Jacob) | [`29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg`](./29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg) |
+| 31 | **El sueño de Jacob** | José de Ribera (1639) | Museo Nacional del Prado, Madrid | [Wikipedia](https://es.wikipedia.org/wiki/El_sue%C3%B1o_de_Jacob) | [`30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg`](./30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg) |
+| 32 | **El invierno, o El Diluvio** | Nicolas Poussin (1660–1664) | Musée du Louvre, París (INV 7306) | [Wikipedia](https://es.wikipedia.org/wiki/Las_cuatro_estaciones_(Poussin)) | [`31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg`](./31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg) |
+| 33 | **La embriaguez de Noé** | Giovanni Bellini (c. 1515) | Musée des Beaux-Arts, Besanzón, Francia | [Wikipedia](https://es.wikipedia.org/wiki/Giovanni_Bellini) | [`32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg`](./32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg) |
+| 34 | **El encuentro de Abraham y Melquisedec** | Peter Paul Rubens (1625) | National Gallery of Art, Washington | [Wikipedia](https://es.wikipedia.org/wiki/Melquisedec) | [`33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg`](./33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg) |
+| 35 | **La sinagoga de Dura Europos** | Dura Europos, Siria (244–245 d.C.) | Museo Nacional de Damasco, Siria | [Wikipedia](https://es.wikipedia.org/wiki/Sinagoga_de_Dura_Europos) | [`34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg`](./34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg) |
+| 36 | **José acusado por la mujer de Putifar** | Rembrandt van Rijn y taller (1655) | National Gallery of Art, Washington | [Wikipedia](https://es.wikipedia.org/wiki/Jos%C3%A9_y_la_esposa_de_Putifar) | [`35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg`](./35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg) |
+| 37 | **Jacob bendice a los hijos de José** | Rembrandt van Rijn (1656) | Gemäldegalerie Alte Meister, Kassel, Alemania | [Wikipedia](https://en.wikipedia.org/wiki/Jacob_Blessing_the_Sons_of_Joseph) | [`36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg`](./36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg) |
+| 38 | **Jacob y Raquel en el pozo** | François Lemoyne (1720) | Colección Motais de Narbonne, Francia | [Wikipedia](https://es.wikipedia.org/wiki/Raquel) | [`37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg`](./37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg) |
+| 39 | **José interpreta los sueños del faraón** | Jörg Breu el Joven (c. 1534–1547) | Metropolitan Museum of Art, Nueva York (89.15.20) | [Wikipedia](https://es.wikipedia.org/wiki/Jos%C3%A9_(patriarca)) | [`38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg`](./38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg) |
+| 40 | **Adán y Eva** | Lucas Cranach el Viejo (c. 1531) | Museo Soumaya, Ciudad de México | [Wikipedia](https://es.wikipedia.org/wiki/Museo_Soumaya) | [`39_Adan_y_Eva_Lucas_Cranach_Museo_Soumaya_1531.jpg`](./39_Adan_y_Eva_Lucas_Cranach_Museo_Soumaya_1531.jpg) |
+| 41 | **El Diluvio** | Cristóbal de Villalpando (c. 1684–1686) | Capilla del Ochavo, Catedral de Puebla, México | [Wikipedia](https://es.wikipedia.org/wiki/Crist%C3%B3bal_de_Villalpando) | [`40_El_Diluvio_Cristobal_de_Villalpando_1684.jpg`](./40_El_Diluvio_Cristobal_de_Villalpando_1684.jpg) |
+| 42 | **Las capillas del desierto: El Bagawat** | Necrópolis cristiana de El Bagawat, oasis de Jarga (c. 350-450) | Necrópolis de El Bagawat, oasis de Jarga, Egipto · facsímil en el Metropolitan Museum (30.4.141) | [Wikipedia](https://en.wikipedia.org/wiki/Bagawat) | [`42_Las_Capillas_de_El_Bagawat_Facsimil_de_la_Cupula_del_Exodo_s_IV.jpg`](./42_Las_Capillas_de_El_Bagawat_Facsimil_de_la_Cupula_del_Exodo_s_IV.jpg) |
+| 43 | **El sacrificio de Isaac, en el suelo de una sinagoga** | Marianos y su hijo Hanina, sinagoga de Beit Alfa (c. 518-578) | Sinagoga de Beit Alfa, valle de Jezreel, Israel | [Wikipedia](https://es.wikipedia.org/wiki/Sinagoga_de_Beit_Alfa) | [`43_El_Sacrificio_de_Isaac_Mosaico_de_Beit_Alfa_s_VI.jpg`](./43_El_Sacrificio_de_Isaac_Mosaico_de_Beit_Alfa_s_VI.jpg) |
+| 44 | **El arca como un cofre: el mosaico de Misis** | Basílica de Mopsuestia, Cilicia (c. 400) | Museo Arqueológico de Adana, Turquía | [Wikipedia](https://en.wikipedia.org/wiki/Mopsuestia) | [`44_El_Arca_de_Noe_Mosaico_de_Misis_s_V.jpg`](./44_El_Arca_de_Noe_Mosaico_de_Misis_s_V.jpg) |
+| 45 | **José huye de la mujer de Putifar: Yusuf y Zulaija** | Kamāl ud-Dīn Behzad (1488) | Dar al-Kutub, Biblioteca Nacional de Egipto, El Cairo | [Wikipedia](https://es.wikipedia.org/wiki/Kamal_ud-Din_Behzad) | [`45_Yusuf_y_Zulaija_Behzad_Bustan_de_Saadi_1488.jpg`](./45_Yusuf_y_Zulaija_Behzad_Bustan_de_Saadi_1488.jpg) |
+| 46 | **El primer duelo** | William Bouguereau (1888) | Museo Nacional de Bellas Artes, Buenos Aires (inv. 2770) | [Wikipedia](https://es.wikipedia.org/wiki/William-Adolphe_Bouguereau) | [`46_El_Primer_Duelo_William_Bouguereau_1888.jpg`](./46_El_Primer_Duelo_William_Bouguereau_1888.jpg) |
+| 47 | **Noé embarca a los animales: una miniatura armenia de Isfahán** | Iluminador armenio de Isfahán (1643-1646) | Patriarcado Armenio de Jerusalén | [Wikipedia](https://es.wikipedia.org/wiki/Nueva_Julfa) | [`47_Noe_y_los_Animales_Embarcan_Miniatura_Armenia_Isfahan_1645.jpg`](./47_Noe_y_los_Animales_Embarcan_Miniatura_Armenia_Isfahan_1645.jpg) |
 
 ---
 
@@ -272,10 +281,10 @@ Jan van Scorel (1495–1562), importante pintor y clérigo holandés que introdu
 
 ---
 
-### 11. Tras el diluvio (El sol) — George Frederic Watts (1891)
+### 11. Tras el diluvio: el día cuadragésimo primero — George Frederic Watts (1891)
 
-![Tras el diluvio (El sol)](./11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg)
-*Tras el diluvio (El sol) — George Frederic Watts (1891)*
+![Tras el diluvio: el día cuadragésimo primero](./11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg)
+*Tras el diluvio: el día cuadragésimo primero — George Frederic Watts (1891)*
 
 **Ficha técnica:** Óleo sobre lienzo | 104 cm × 127 cm | Watts Gallery, Compton, Surrey, Reino Unido
 
@@ -382,10 +391,13 @@ Alberto Durero (1471–1528), hijo de un orfebre húngaro instalado en Núrember
 
 ### 16. El Anciano de los Días — William Blake (1794)
 
-![El Anciano de los Días](./16_El_Anciano_de_los_Dias_William_Blake_1794.jpg)
-*El Anciano de los Días — William Blake (1794)*
+![El Anciano de los Días](./16_El_Anciano_de_los_Dias_William_Blake_British_Museum_1794.jpg)
+*El Anciano de los Días — copia D iluminada a mano, British Museum (1794)*
 
-**Ficha técnica:** Grabado en relieve iluminado a mano | c. 23 × 17 cm | Frontispicio de «Europe: A Prophecy»
+![El Anciano de los Días](./16_El_Anciano_de_los_Dias_William_Blake_1794.jpg)
+*Prueba de estado del frontispicio, sin iluminar — Yale Center for British Art*
+
+**Ficha técnica:** Grabado en relieve iluminado a mano y acuarela | c. 23 × 17 cm | Frontispicio de «Europe: A Prophecy», copia D | British Museum, Londres
 
 #### Lo que hace que destaque
 
@@ -397,7 +409,7 @@ Blake inventó para estos libros una técnica propia, el grabado en relieve ilum
 
 #### Sobre el artista
 
-Complementa a «Elohim creando a Adán», ya presente en la colección, y completa la teología invertida de Blake: crear el mundo material y crear al hombre son, en su mitología, dos actos del mismo dios equivocado.
+Se muestran las dos caras del mismo grabado: la copia D del British Museum, iluminada a mano por el propio Blake con acuarela y oro, y una prueba de estado sin iluminar del Yale Center for British Art, que deja ver la plancha desnuda. Ninguna copia de Blake es igual a otra —coloreaba cada ejemplar a mano y a lo largo de décadas—, así que hablar de «el original» de esta imagen es un error: hay tantos como copias. Complementa a «Elohim creando a Adán», ya presente en la colección, y completa la teología invertida de Blake: crear el mundo material y crear al hombre son, en su mitología, dos actos del mismo dios equivocado.
 
 ---
 
@@ -611,7 +623,31 @@ De Hieronymus van Aken, El Bosco (c. 1450–1516), se sabe muy poco: vivió toda
 
 ---
 
-### 27. Lot y sus hijas — Peter Paul Rubens (c. 1613–1614)
+### 27. El pecado original y la expulsión del Paraíso — Miguel Ángel Buonarroti (1509–1510)
+
+![El pecado original y la expulsión del Paraíso](./41_El_Pecado_Original_y_la_Expulsion_Miguel_Angel_1510.jpg)
+*El pecado original y la expulsión del Paraíso — Miguel Ángel (1509-1510)*
+
+![El pecado original y la expulsión del Paraíso](./41b_El_Pecado_Original_y_la_Expulsion_Boveda_Miguel_Angel_1510.jpg)
+*El panel en su sitio de la bóveda, entre los ignudi y el marco fingido*
+
+**Ficha técnica:** Fresco | 280 × 570 cm | Bóveda de la Capilla Sixtina, Ciudad del Vaticano
+
+#### Lo que hace que destaque
+
+Miguel Ángel resuelve dos momentos en una sola superficie sin dividirla: el árbol del centro, con la serpiente de torso femenino enroscada al tronco, sirve de eje y de frontera. A la izquierda el Edén es rocoso y verde y las figuras son plenas, casi perezosas; a la derecha el suelo se vuelve un yermo pelado y los mismos cuerpos aparecen encogidos y envejecidos por el mismo pintor en el mismo metro cuadrado. El ángel de rojo empuja con la espada desde el mismo tronco: no hay transición, hay tajo. La Eva de la izquierda, sentada bajo el brazo de Adán, y la de la derecha, encorvada y con la boca abierta, son la mejor demostración de lo que Miguel Ángel entendía por caída.
+
+#### Contexto histórico
+
+Corresponde al tercer año de trabajo en la bóveda y pertenece al grupo de paneles pintados ya con la técnica depurada, con figuras más grandes y menos abarrotadas que las primeras escenas del Diluvio. La restauración de 1980-1994 devolvió a estos frescos un color que siglos de humo de vela habían apagado, y que provocó una polémica considerable: hubo quien acusó a los restauradores de haber lavado las sombras que el propio Miguel Ángel habría añadido en seco.
+
+#### Sobre el artista
+
+Se muestran dos vistas porque son dos cosas distintas: el panel aislado, tal como se reproduce siempre, y el mismo panel dentro de la bóveda, rodeado de ignudi, medallones y arquitectura fingida. Fuera de ese marco es un cuadro; dentro se ve que es una pieza de un techo entero pensado como una sola máquina.
+
+---
+
+### 28. Lot y sus hijas — Peter Paul Rubens (c. 1613–1614)
 
 ![Lot y sus hijas](./27_Lot_y_sus_Hijas_Peter_Paul_Rubens_1614.jpg)
 *Lot y sus hijas — Peter Paul Rubens (c. 1614)*
@@ -632,7 +668,7 @@ Rubens (1577–1640) trató el asunto varias veces. Que un pintor tan asociado a
 
 ---
 
-### 28. Eliezer y Rebeca — Nicolas Poussin (1648)
+### 29. Eliezer y Rebeca — Nicolas Poussin (1648)
 
 ![Eliezer y Rebeca](./28_Eliezer_y_Rebeca_Nicolas_Poussin_1648.jpg)
 *Eliezer y Rebeca — Nicolas Poussin (1648)*
@@ -653,7 +689,7 @@ Nicolas Poussin (1594–1665) pasó casi toda su vida en Roma pintando para un c
 
 ---
 
-### 29. Isaac bendice a Jacob — José de Ribera (1637)
+### 30. Isaac bendice a Jacob — José de Ribera (1637)
 
 ![Isaac bendice a Jacob](./29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg)
 *Isaac bendice a Jacob — José de Ribera (1637)*
@@ -677,7 +713,7 @@ José de Ribera (1591–1652), valenciano establecido en Nápoles, fue llamado a
 
 ---
 
-### 30. El sueño de Jacob — José de Ribera (1639)
+### 31. El sueño de Jacob — José de Ribera (1639)
 
 ![El sueño de Jacob](./30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg)
 *El sueño de Jacob — José de Ribera (1639)*
@@ -698,7 +734,7 @@ Ribera pintó el cuadro para el virrey de Nápoles. El pasaje —«ciertamente e
 
 ---
 
-### 31. El invierno, o El Diluvio — Nicolas Poussin (1660–1664)
+### 32. El invierno, o El Diluvio — Nicolas Poussin (1660–1664)
 
 ![El invierno, o El Diluvio](./31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg)
 *El invierno o El Diluvio — Nicolas Poussin (1660-1664)*
@@ -722,7 +758,7 @@ Nicolas Poussin (1594–1665) murió en Roma un año después de acabar la serie
 
 ---
 
-### 32. La embriaguez de Noé — Giovanni Bellini (c. 1515)
+### 33. La embriaguez de Noé — Giovanni Bellini (c. 1515)
 
 ![La embriaguez de Noé](./32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg)
 *La embriaguez de Noé — Giovanni Bellini (c. 1515)*
@@ -743,7 +779,7 @@ Giovanni Bellini (c. 1430–1516) fue el patriarca de la pintura veneciana y mae
 
 ---
 
-### 33. El encuentro de Abraham y Melquisedec — Peter Paul Rubens (1625)
+### 34. El encuentro de Abraham y Melquisedec — Peter Paul Rubens (1625)
 
 ![El encuentro de Abraham y Melquisedec](./33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg)
 *El encuentro de Abraham y Melquisedec — Peter Paul Rubens (1625)*
@@ -764,10 +800,13 @@ La imagen de esta colección procede de una digitalización excepcional: más de
 
 ---
 
-### 34. La sinagoga de Dura Europos — Dura Europos, Siria (244–245 d.C.)
+### 35. La sinagoga de Dura Europos — Dura Europos, Siria (244–245 d.C.)
 
 ![La sinagoga de Dura Europos](./34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg)
 *Sinagoga de Dura Europos, muro oeste — Siria (244-245 d.C.)*
+
+![La sinagoga de Dura Europos](./34b_El_Sacrificio_de_Isaac_Panel_Dura_Europos_Siria_244.jpg)
+*El nicho de la Torá con el sacrificio de Isaac — fotografía de la excavación de Yale (1933-1934)*
 
 **Ficha técnica:** Pintura mural sobre yeso | sala reconstruida | Museo Nacional de Damasco, Siria
 
@@ -781,11 +820,11 @@ Dura Europos, ciudad de guarnición a orillas del Éufrates, fue abandonada tras
 
 #### Sobre el artista
 
-Su lugar en esta colección es cronológico además de temático: entre el Laocoonte (40 a.C.) y la Trinidad de Rubliov (1425) había un vacío de casi mil quinientos años, el mayor de la secuencia. Dura Europos lo parte por la mitad.
+La segunda imagen es una placa de la excavación Yale-Académie des Inscriptions, tomada en 1933-1934 con el nicho todavía en su sitio, antes del traslado a Damasco: el sacrificio de Isaac se ve arriba a la derecha del panel, con Abraham de espaldas, el altar, el carnero y la tienda. Se prefirió a la única toma en color disponible en Commons, de 297 × 582 píxeles. Su lugar en esta colección es cronológico además de temático: entre el Laocoonte (40 a.C.) y la Trinidad de Rubliov (1425) había un vacío de casi mil quinientos años, el mayor de la secuencia. Dura Europos lo parte por la mitad.
 
 ---
 
-### 35. José acusado por la mujer de Putifar — Rembrandt van Rijn y taller (1655)
+### 36. José acusado por la mujer de Putifar — Rembrandt van Rijn y taller (1655)
 
 ![José acusado por la mujer de Putifar](./35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg)
 *José acusado por la mujer de Putifar — Rembrandt y taller (1655)*
@@ -806,7 +845,7 @@ La imagen procede de una digitalización de 280 megapíxeles de la National Gall
 
 ---
 
-### 36. Jacob bendice a los hijos de José — Rembrandt van Rijn (1656)
+### 37. Jacob bendice a los hijos de José — Rembrandt van Rijn (1656)
 
 ![Jacob bendice a los hijos de José](./36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg)
 *Jacob bendice a los hijos de José — Rembrandt (1656)*
@@ -827,7 +866,7 @@ Rembrandt lo pintó en 1656, el año de su bancarrota, cuando el inventario de s
 
 ---
 
-### 37. Jacob y Raquel en el pozo — François Lemoyne (1720)
+### 38. Jacob y Raquel en el pozo — François Lemoyne (1720)
 
 ![Jacob y Raquel en el pozo](./37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg)
 *Jacob y Raquel en el pozo — François Lemoyne (1720)*
@@ -848,7 +887,7 @@ François Lemoyne (1688–1737) fue primer pintor de Luis XV y decorador del sal
 
 ---
 
-### 38. José interpreta los sueños del faraón — Jörg Breu el Joven (c. 1534–1547)
+### 39. José interpreta los sueños del faraón — Jörg Breu el Joven (c. 1534–1547)
 
 ![José interpreta los sueños del faraón](./38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg)
 *José interpreta los sueños del faraón — Jörg Breu el Joven (c. 1534-47)*
@@ -866,6 +905,180 @@ El pasaje es el gozne de la historia de José: de esclavo y preso pasa a segundo
 #### Sobre el artista
 
 Jörg Breu el Joven (c. 1510–1547) trabajó en Augsburgo, entonces la ciudad más rica del Imperio, heredando el taller de su padre. Murió a los treinta y siete años.
+
+---
+
+### 40. Adán y Eva — Lucas Cranach el Viejo (c. 1531)
+
+![Adán y Eva](./39_Adan_y_Eva_Lucas_Cranach_Museo_Soumaya_1531.jpg)
+*Adán y Eva — Lucas Cranach el Viejo (c. 1531)*
+
+**Ficha técnica:** Óleo sobre tabla | Museo Soumaya, Ciudad de México
+
+#### Lo que hace que destaque
+
+Adán y Eva ocupan una tabla estrecha y alta, de pie a ambos lados del árbol, con la serpiente enroscada arriba y el ciervo y el león acechando al fondo. El formato vertical comprime la escena y obliga a los cuerpos a esa verticalidad alargada que es la firma de Cranach: hombros estrechos, caderas altas, piernas larguísimas. Eva sostiene ya la manzana y mira al espectador, no a Adán — un detalle que convierte al que mira en cómplice.
+
+#### Contexto histórico
+
+Es una de las varias versiones que salieron del taller de Wittenberg, donde el asunto se producía casi en serie. Junto a la tabla de Praga que también está en esta colección permite ver cómo Cranach variaba el mismo esquema: allí horizontal y con el gesto de la duda, aquí vertical y con la mirada directa.
+
+#### Sobre el artista
+
+Se conserva en el Museo Soumaya de Ciudad de México, la mayor colección de arte europeo antiguo de América Latina. Es, con diferencia, la obra de la colección expuesta más cerca de casa.
+
+---
+
+### 41. El Diluvio — Cristóbal de Villalpando (c. 1684–1686)
+
+![El Diluvio](./40_El_Diluvio_Cristobal_de_Villalpando_1684.jpg)
+*El Diluvio — Cristóbal de Villalpando (c. 1684-86)*
+
+**Ficha técnica:** Óleo sobre lienzo | Capilla del Ochavo, Catedral de Puebla, México
+
+#### Lo que hace que destaque
+
+Villalpando organiza la catástrofe en diagonales ascendentes y disuelve los contornos en una pincelada suelta y luminosa, muy distinta del tenebrismo español del que partía. Las figuras se amontonan en el primer plano trepando a las rocas mientras el agua sube, y el arca queda relegada al fondo — la misma decisión narrativa que tomó Miguel Ángel en la Sixtina, con la que abre esta colección. El color, sin embargo, no se parece a nada europeo: rosas, verdes ácidos y azules que son marca de la escuela mexicana del XVII.
+
+#### Contexto histórico
+
+Forma parte del ciclo de la Capilla del Ochavo de la Catedral de Puebla, un espacio octogonal que Villalpando decoró en los años ochenta del siglo XVII. Su presencia aquí cambia el equilibrio de la colección: el Diluvio era ya el episodio más representado —Miguel Ángel, Turner, van Scorel, Watts, Danby, Cole, Poussin—, todos europeos. Este es el primero pintado al otro lado del Atlántico.
+
+#### Sobre el artista
+
+Cristóbal de Villalpando (c. 1649–1714) fue el pintor más importante del barroco novohispano y autor de la cúpula de la capilla de los Reyes de Puebla y de los enormes lienzos de la sacristía de la Catedral de México. Trabajó a una escala y con una libertad cromática que no tienen equivalente en la España de su tiempo.
+
+---
+
+### 42. Las capillas del desierto: El Bagawat — Necrópolis cristiana de El Bagawat, oasis de Jarga (c. 350-450)
+
+![Las capillas del desierto: El Bagawat](./42_Las_Capillas_de_El_Bagawat_Facsimil_de_la_Cupula_del_Exodo_s_IV.jpg)
+*Cúpula de la capilla del Éxodo, El Bagawat — facsímil del Metropolitan Museum (c. 1930)*
+
+![Las capillas del desierto: El Bagawat](./42b_Adan_y_Eva_Capilla_del_Exodo_El_Bagawat_s_IV.jpg)
+*Adán y Eva junto al árbol, capilla del Éxodo — la pintura en su sitio*
+
+![Las capillas del desierto: El Bagawat](./42c_Sara_Capilla_de_la_Paz_El_Bagawat_s_V.jpg)
+*Sara, en la escena del sacrificio de Isaac — capilla de la Paz*
+
+**Ficha técnica:** Pintura sobre enlucido en cúpulas de adobe | Necrópolis de El Bagawat, oasis de Jarga, Egipto · facsímil en el Metropolitan Museum (30.4.141)
+
+#### Lo que hace que destaque
+
+La cúpula de la capilla del Éxodo es un cielo lleno de figuras pequeñas y dispersas, sin marcos ni jerarquía, que se leen dando vueltas bajo ella: la columna de los israelitas que sale de Egipto con el ejército del faraón detrás, Daniel entre los leones, Jonás, y entre ellos las escenas del Génesis —Adán y Eva de pie junto al árbol, el arca de Noé con su tripulación asomada—. La selección no es narrativa sino funeraria. Son los salvados: los que Dios sacó del agua, del foso, de las fauces del monstruo, del cuchillo. Es el mismo repertorio que las catacumbas de Roma, y demuestra que el lenguaje de la salvación era ya común a todo el Mediterráneo cristiano. En la capilla de la Paz, un siglo posterior, las figuras llevan su nombre escrito en griego sobre la cabeza: Sara aparece junto a Isaac y Abraham, como madre que asiste al sacrificio del hijo.
+
+#### Contexto histórico
+
+El Bagawat reúne más de doscientas capillas funerarias de adobe, levantadas entre los siglos III y VII junto a Hibis, la capital del oasis de Jarga. Es uno de los cementerios cristianos más antiguos del mundo que se conservan en pie, y el oasis era también lugar de destierro: allí fue enviado el obispo Nestorio tras su condena en 431. La expedición egipcia del Metropolitan Museum excavó y documentó la necrópolis a comienzos del siglo XX; como las pinturas no podían sacarse de Egipto, se copiaron a mano en facsímiles de tamaño natural, que son la vista principal de esta ficha porque muestran la cúpula entera, algo que ninguna fotografía hecha desde el suelo de la capilla consigue.
+
+#### Sobre el artista
+
+Los pintores de El Bagawat eran artesanos locales anónimos, y su estilo —figuras de contorno rápido, sin modelado, sobre el fondo claro del enlucido— es el de la pintura doméstica del Egipto tardorromano, no el de los grandes talleres de Alejandría. Precisamente por eso las capillas muestran cómo se representaba la Biblia en una comunidad de provincias, lejos de los obispos y de los mosaicos imperiales.
+
+---
+
+### 43. El sacrificio de Isaac, en el suelo de una sinagoga — Marianos y su hijo Hanina, sinagoga de Beit Alfa (c. 518-578)
+
+![El sacrificio de Isaac, en el suelo de una sinagoga](./43_El_Sacrificio_de_Isaac_Mosaico_de_Beit_Alfa_s_VI.jpg)
+*El sacrificio de Isaac, mosaico del suelo de la sinagoga de Beit Alfa (s. VI)*
+
+**Ficha técnica:** Mosaico de teselas de piedra | Sinagoga de Beit Alfa, valle de Jezreel, Israel
+
+#### Lo que hace que destaque
+
+La escena avanza de izquierda a derecha: primero los dos criados con el asno que se quedan al pie del monte, luego el carnero atado por un cuerno a un arbusto, y encima la mano de Dios que asoma de una nube rodeada de rayos con las palabras hebreas «no extiendas» —«no extiendas tu mano sobre el muchacho», Génesis 22,12—. Abraham, de frente, sostiene en el aire a un Isaac diminuto; a la derecha arde el altar. Las figuras son planas, de ojos enormes y cuerpo esquemático, y cada una lleva su nombre escrito encima para que no haya duda. Es un arte popular, sin pretensión de clasicismo, y por eso mismo sorprende: en el siglo VI una comunidad judía de Galilea no tenía ningún reparo en representar a sus patriarcas en el suelo de la sala de oración.
+
+#### Contexto histórico
+
+Los miembros del kibutz Hefzibah dieron con el mosaico en 1928, cavando una zanja de riego, y el arqueólogo Eleazar Sukenik lo excavó al año siguiente. El pavimento tiene tres paneles: el arca de la Torá con sus candelabros, un zodiaco con Helios en su carro —un motivo pagano en pleno suelo de sinagoga— y este sacrificio de Isaac junto a la entrada. Una inscripción en arameo lo fecha en el reinado de un emperador Justino, sin precisar si el primero (518-527) o el segundo (565-578), y otra en griego da el nombre de sus autores.
+
+#### Sobre el artista
+
+Marianos y su hijo Hanina son de los pocos mosaiquistas de la Antigüedad cuyo nombre se conoce: firmaron en griego este pavimento y también el de una sinagoga samaritana de la cercana Beit Shean. El nombre del padre es griego y el del hijo hebreo, un retrato en dos palabras de las familias judías de la Galilea bizantina.
+
+---
+
+### 44. El arca como un cofre: el mosaico de Misis — Basílica de Mopsuestia, Cilicia (c. 400)
+
+![El arca como un cofre: el mosaico de Misis](./44_El_Arca_de_Noe_Mosaico_de_Misis_s_V.jpg)
+*El arca de Noé entre los animales — mosaico de Misis, antigua Mopsuestia (c. 400)*
+
+**Ficha técnica:** Mosaico de teselas de piedra | Museo Arqueológico de Adana, Turquía
+
+#### Lo que hace que destaque
+
+El arca está en el centro, pero no es un barco sino una caja con patas y paneles, un mueble. Es la traducción literal de la palabra que usa la Biblia griega, kibōtós, «cofre», y es como la representaba todo el arte cristiano primitivo —en las catacumbas Noé asoma de un arcón como de un baúl—. Alrededor, los animales están dispuestos en filas sobre el fondo blanco, cada uno de perfil y aislado, con una precisión de bestiario: el pavo real con la cola desplegada, los ciervos, los patos, las garzas, un león al fondo. El mosaiquista no representa el Diluvio sino el orden de la creación salvada, y las lagunas del pavimento —rellenas de mortero en la restauración— no llegan a romperlo.
+
+#### Contexto histórico
+
+El mosaico apareció a mediados de la década de 1950 en las excavaciones de un gran edificio basilical en Misis, la antigua Mopsuestia de Cilicia, junto al río Ceyhan. El pavimento incluye también un ciclo de Sansón, y desde entonces se discute si el edificio fue una iglesia o una sinagoga: la ausencia de cualquier escena del Nuevo Testamento hizo pensar a varios estudiosos en un edificio judío. Mopsuestia fue sede de Teodoro, su obispo entre 392 y 428, el gran exégeta de la escuela de Antioquía, que defendía leer el Antiguo Testamento en su sentido literal e histórico.
+
+#### Sobre el artista
+
+La fecha es discutida: el excavador lo situó en el siglo IV y buena parte de los especialistas lo lleva hacia el V. Los pavimentos de Cilicia y de Antioquía, a pocas jornadas de allí, forman una misma escuela de mosaístas que trabajaba indistintamente para villas paganas, iglesias y sinagogas, con los mismos repertorios de animales.
+
+---
+
+### 45. José huye de la mujer de Putifar: Yusuf y Zulaija — Kamāl ud-Dīn Behzad (1488)
+
+![José huye de la mujer de Putifar: Yusuf y Zulaija](./45_Yusuf_y_Zulaija_Behzad_Bustan_de_Saadi_1488.jpg)
+*Yusuf huye de Zulaija — Behzad, Bustán de Saadi, Herat (1488)*
+
+**Ficha técnica:** Pintura sobre papel, folio de manuscrito (Adab farisi 22, f. 52b) | Dar al-Kutub, Biblioteca Nacional de Egipto, El Cairo
+
+#### Lo que hace que destaque
+
+La historia de José y la mujer de Putifar pasó del Génesis al Corán, donde ocupa una sura entera, la duodécima, y de ahí a la poesía persa, que dio nombre a la mujer: Zulaija. La tradición cuenta que ella lo llevó a través de siete salas, cerrando cada puerta tras de sí, y que al llegar a la última y rechazarla él, las siete cerraduras se abrieron solas. Behzad lo convierte en un problema de arquitectura. El palacio es un laberinto de escaleras en zigzag, puertas cerradas y muros de azulejo, cada uno con su motivo; arriba, en la sala más íntima, Zulaija, vestida de naranja, agarra a Yusuf por la manga, y él, con la aureola de llamas de los profetas, se vuelve para escapar. Todo el espacio que el espectador recorre con la mirada es el que Yusuf tendrá que atravesar.
+
+#### Contexto histórico
+
+La página pertenece a un ejemplar del Bustán («El jardín») del poeta Saadi copiado en Herat en 1488 para el sultán timúrida Husayn Bayqara, y es una de las pocas obras que llevan la firma de Behzad, escrita en letra minúscula sobre la arquitectura. El manuscrito se conserva en Dar al-Kutub, la Biblioteca Nacional de Egipto, en El Cairo, y es para los historiadores del arte la piedra de toque con la que se mide todo lo que se atribuye al pintor. En esta colección llena además un hueco: el Génesis 39, que hasta ahora no tenía obra.
+
+#### Sobre el artista
+
+Kamāl ud-Dīn Behzad (c. 1450-c. 1535) fue el gran pintor de la corte timúrida de Herat, en el actual Afganistán. Cuando la ciudad cayó en manos de los safávidas se trasladó a Tabriz, donde el sha Ismail lo nombró en 1522 director de la biblioteca real. Sus composiciones de arquitectura escalonada y sus figuras individualizadas, con gestos de la vida cotidiana, marcaron la miniatura persa, otomana y mogol durante un siglo.
+
+---
+
+### 46. El primer duelo — William Bouguereau (1888)
+
+![El primer duelo](./46_El_Primer_Duelo_William_Bouguereau_1888.jpg)
+*El primer duelo — William Bouguereau (1888)*
+
+**Ficha técnica:** Óleo sobre lienzo | 203 × 250 cm | Museo Nacional de Bellas Artes, Buenos Aires (inv. 2770)
+
+#### Lo que hace que destaque
+
+El Génesis 4 cuenta el asesinato de Abel y no dice una palabra de lo que sintieron Adán y Eva. Bouguereau pinta ese silencio. Abel yace de espaldas sobre las rodillas de su padre, con el brazo colgando hasta el suelo y el cuerpo blanco y perfecto, sin herida visible; la única huella de la violencia es la mancha de sangre sobre la piedra, abajo a la derecha. Adán, moreno y musculoso, se lleva la mano al pecho y mira al vacío; Eva se tapa la cara. El cielo es de tormenta y el paisaje está vacío: no hay rastro de Caín ni de Dios. Es la composición de una Piedad —el cuerpo del hijo muerto sobre el regazo— trasladada al primer hijo de la humanidad, de modo que el cuadro se lee también como prefiguración de Cristo, una lectura que la tradición cristiana hacía de Abel desde los Padres de la Iglesia.
+
+#### Contexto histórico
+
+Bouguereau lo presentó en el Salón de París de 1888, en los años en que había perdido a su primera mujer y a varios de sus hijos, y la crítica leyó en él un duelo propio. El cuadro está en el Museo Nacional de Bellas Artes de Buenos Aires, que reúne una de las mejores colecciones de pintura académica francesa fuera de Francia, formada por los coleccionistas argentinos de finales del siglo XIX que compraban directamente en el Salón.
+
+#### Sobre el artista
+
+William-Adolphe Bouguereau (1825-1905), nacido en La Rochelle, ganó el Premio de Roma en 1850 y fue durante medio siglo el pintor más prestigioso de la Academia francesa, célebre por un acabado tan liso que no se ve la pincelada. Los impresionistas lo convirtieron en el emblema de todo lo que combatían, y el siglo XX lo olvidó; su rehabilitación empezó con la gran exposición de 1984.
+
+---
+
+### 47. Noé embarca a los animales: una miniatura armenia de Isfahán — Iluminador armenio de Isfahán (1643-1646)
+
+![Noé embarca a los animales: una miniatura armenia de Isfahán](./47_Noe_y_los_Animales_Embarcan_Miniatura_Armenia_Isfahan_1645.jpg)
+*Noé y los animales embarcan en el arca — miniatura armenia, Isfahán (1643-1646)*
+
+**Ficha técnica:** Pintura sobre folio de manuscrito, n.º 1934, f. 12v | Patriarcado Armenio de Jerusalén
+
+#### Lo que hace que destaque
+
+La página está enmarcada por una cenefa de hojas rojas y azules, y dentro todo es un embarque ordenado: Noé, con manto rojo, señala el arca con la mano, su mujer detrás le pone la mano en el hombro, y los animales esperan su turno en la pradera para subir por la rampa de madera. Hay camellos, ciervos, cabras, perros, avestruces y dos unicornios blancos, que para el pintor no eran menos reales que los demás. El arca ya no es el cofre de la Antigüedad sino una casa sobre un casco de barco. Al fondo, pequeñas figuras oscuras levantan los brazos en la colina: son los que se quedan fuera. Arriba, bajo un sol que asoma entre nubes, vuelan en bandada las aves que también han de embarcar.
+
+#### Contexto histórico
+
+El manuscrito se hizo en Isfahán, la capital safávida, entre 1643 y 1646, y se guarda en la biblioteca del Patriarcado Armenio de Jerusalén, una de las grandes colecciones de manuscritos armenios del mundo. Los armenios habían llegado a Isfahán a la fuerza: en 1604-1605 el sha Abás I deportó a la población de Julfa, en el Araxes, y la asentó al otro lado del río de su capital, en el barrio que se llamó Nueva Julfa. Sus mercaderes controlaban el comercio de la seda entre Persia y Europa, y traían de Ámsterdam y de Venecia libros ilustrados cuyos grabados copiaban luego los iluminadores del barrio; probablemente de ahí vienen el paisaje y las figuras de sabor europeo de esta página.
+
+#### Sobre el artista
+
+El iluminador no ha dejado su nombre en esta página. Nueva Julfa tuvo en el siglo XVII un taller de manuscritos muy activo alrededor de la catedral de Vank, donde convivían la tradición armenia de la miniatura, el gusto persa por el color plano y los modelos de los grabados europeos.
 
 ---
 

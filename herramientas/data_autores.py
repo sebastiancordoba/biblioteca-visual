@@ -263,4 +263,22 @@ AUTORES = [
  "patron": ["Agesandro, Polidoro y Atenodoro de Rodas"],
  "bio": "Plinio el Viejo los nombra como autores del Laocoonte y dice que trabajaron los tres en una sola pieza de mármol, algo que la restauración moderna ha desmentido: son varios bloques. No se conserva ninguna otra obra firmada por ellos, ni retrato, ni más datos que esa línea de Plinio y las firmas halladas en Sperlonga.",
 },
+{
+ "clave": "behzad", "nombre": "Kamāl ud-Dīn Behzad", "anios": "c. 1450–1535",
+ "oficio": "Pintor persa de la corte timúrida y safávida",
+ "patron": ["Kamāl ud-Dīn Behzad"],
+ "bio": "Se formó y trabajó en Herat, en el actual Afganistán, al servicio del sultán timúrida Husayn Bayqara, y cuando la ciudad pasó a los safávidas se trasladó a Tabriz, donde el sha Ismail lo puso en 1522 al frente de la biblioteca real. Sus figuras, con gestos de la vida cotidiana y rostros individualizados, y sus arquitecturas escalonadas marcaron la pintura persa, otomana y mogol durante un siglo; tantas obras se le atribuyeron después que las pocas páginas firmadas, como las del Bustán de El Cairo, son la referencia para distinguir lo suyo.",
+},
+{
+ "clave": "bouguereau", "nombre": "William Bouguereau", "anios": "1825–1905",
+ "oficio": "Pintor académico francés",
+ "patron": ["William Bouguereau"],
+ "bio": "Nacido en La Rochelle, ganó el Premio de Roma en 1850 y fue durante medio siglo el pintor más prestigioso de la Academia y del Salón de París, con un acabado tan pulido que no se ve la pincelada. Los impresionistas hicieron de él el emblema de todo lo que combatían, y el siglo XX lo olvidó hasta la exposición retrospectiva de 1984. Muchos de sus grandes lienzos cruzaron el Atlántico en vida, comprados por coleccionistas de Estados Unidos y de Argentina.",
+},
+{
+ "clave": "marianos", "nombre": "Marianos y su hijo Hanina", "anios": "activos s. VI",
+ "oficio": "Mosaiquistas judíos de Galilea",
+ "patron": ["Marianos y su hijo Hanina, sinagoga de Beit Alfa"],
+ "bio": "Todo lo que se sabe de ellos son dos firmas en griego: la del pavimento de la sinagoga de Beit Alfa y la de una sinagoga samaritana de la cercana Beit Shean. Eran padre e hijo —el nombre del padre, griego; el del hijo, hebreo— y trabajaban con un estilo popular de figuras planas y ojos enormes, sin la pretensión clásica de los talleres de Antioquía. No se conserva ningún retrato suyo.",
+},
 ]
