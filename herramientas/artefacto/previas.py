@@ -6,6 +6,9 @@ una previa que nadie había generado. Ahora es un paso más de la cadena: solo t
 sobre lo que falta o ha cambiado, así que repetirlo no cuesta nada.
 """
 import io, os, re, subprocess
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))))
+from libros import PATRON_RUTA   # carpetas de todos los libros, del registro
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 TMP  = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "build")
@@ -24,7 +27,7 @@ ajustes_cambiaron = (not os.path.exists(sello)) or io.open(sello).read().strip()
 
 doc = io.open("index.html", encoding="utf-8").read()
 rutas = sorted({m.group(1) for m in
-                re.finditer(r'\./((?:Génesis|Gilgamesh|Ilíada|Autores)/[^\'"]+\.jpg)', doc)})
+                re.finditer(PATRON_RUTA, doc)})
 
 nuevas = saltadas = 0
 for rel in rutas:

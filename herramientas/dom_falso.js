@@ -8,10 +8,19 @@
    usaba una función nueva del DOM la prueba se caía por el mock, no por un fallo real. */
 const noop = () => {};
 
-function crearEl(id) {
+/* Registro de elementos por id. Un elemento queda localizable con getElementById en
+   cuanto se le asigna un id, igual que en un navegador; antes el simulacro creaba uno
+   nuevo para CUALQUIER id que se le pidiera, así que «¿existe ya este nav?» respondía
+   siempre que sí y el código que monta secciones nuevas no montaba nada. */
+let registroActual = null;
+
+function crearEl(idInicial) {
   const hijos = [], clases = new Set(), oyentes = {};
+  let _id = idInicial;
   const self = {
-    id, dataset: {}, children: hijos, oyentes,
+    get id(){ return _id; },
+    set id(v){ _id = v; if (v && registroActual) registroActual.set(v, self); },
+    dataset: {}, children: hijos, oyentes,
     /* style con setProperty: la página fija variables CSS (--alto-cabecera) y con un
        objeto pelado la prueba reventaba por el simulacro, no por un fallo real. */
     style: { setProperty(){}, removeProperty(){}, getPropertyValue: () => '' },
@@ -26,7 +35,7 @@ function crearEl(id) {
     appendChild: n => { hijos.push(n); n.padre = self; return n; },
     /* Todo elemento tiene padre, aunque sea uno sintético: la página monta cosas con
        grid.parentNode.insertBefore(...) y sin esto la prueba se caía por el simulacro. */
-    get parentNode(){ if (!self.padre) { self.padre = crearEl('padre-de-' + id);
+    get parentNode(){ if (!self.padre) { self.padre = crearEl('padre-de-' + _id);
                                          self.padre.children.push(self); } return self.padre; },
     insertBefore: (nuevo, ref) => {
       const i = hijos.indexOf(ref);
@@ -54,12 +63,19 @@ function crearEl(id) {
 function ejecutar(html, devuelve) {
   const js = html.split('<script>')[1].split('</script>')[0];
   const porId = new Map();
+  registroActual = porId;
+  /* Ids presentes en el marcado: esos existen desde el principio. */
+  const enHtml = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]));
   /* Los oyentes de document se guardan para poder dispararlos desde las pruebas: el
      teclado de la portada se registra ahí y con un noop no habría forma de ejercitarlo. */
   const oyentesDoc = {};
   const document = {
     oyentes: oyentesDoc,
-    getElementById: id => { if (!porId.has(id)) porId.set(id, crearEl(id)); return porId.get(id); },
+    getElementById: id => {
+      if (porId.has(id)) return porId.get(id);
+      if (enHtml.has(id)) { const e = crearEl(id); porId.set(id, e); return e; }
+      return null;     // como un navegador: lo que no existe, no existe
+    },
     createElement: () => crearEl('nuevo'),
     createTextNode: () => crearEl('texto'),
     querySelector: () => crearEl('?'),

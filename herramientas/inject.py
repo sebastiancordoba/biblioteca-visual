@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Vuelca las fichas de Gilgamesh y La Ilíada en index.html.
+"""Vuelca las fichas de todos los libros del registro (herramientas/libros.py) en index.html.
 
 Idempotente: los datos generados viven entre centinelas y se reescriben enteros en cada
 pasada, de modo que se puede volver a ejecutar según se descargan más imágenes.
@@ -7,9 +7,7 @@ Solo se incluyen las obras cuyas imágenes existen realmente en disco.
 """
 import io, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from data_genesis import GENESIS
-from data_gilgamesh import GILGAMESH
-from data_iliada import ILIADA
+from libros import todos as _libros
 from cronologia import año as _anio, etiqueta as _etq
 from data_autores import AUTORES as _AUTORES
 from retratos import RETRATOS as _RETRATOS, SIN_RETRATO as _SIN_RETRATO
@@ -36,55 +34,34 @@ def build(entries, folder):
         groups.append([{"src": f"./{folder}/{f}", "title": t} for f, t in views])
     return details, groups, omitted
 
-def match_bracket(s, i):
-    """Devuelve el índice tras el ] que cierra el [ que empieza en i (ignora corchetes en cadenas)."""
-    depth, j, instr, esc = 0, i, False, False
-    while j < len(s):
-        c = s[j]
-        if instr:
-            if esc: esc = False
-            elif c == "\\": esc = True
-            elif c == '"': instr = False
-        else:
-            if c == '"': instr = True
-            elif c == "[": depth += 1
-            elif c == "]":
-                depth -= 1
-                if depth == 0: return j + 1
-        j += 1
-    raise ValueError("corchete sin cerrar")
-
-def normalize(s, book_id):
-    """Devuelve los arrays de ese libro dentro de BOOKS a [] para poder regenerar."""
-    b = s.find(book_id + ":")
-    if b < 0: return s
-    for key in ("details", "groups"):
-        k = s.find(key + ":", b)
-        if k < 0: continue
-        lb = s.find("[", k)
-        end = match_bracket(s, lb)
-        s = s[:lb] + "[]" + s[end:]
-    return s
-
 def main():
     path = os.path.join(ROOT, "index.html")
     s = io.open(path, encoding="utf-8").read()
 
     blocks, counts = [], {}
     DETALLES = {}          # libro -> details YA filtrados, para enlazar los autores
-    for book_id, entries, folder in (("genesis", GENESIS, "Génesis"),
-                                     ("gilgamesh", GILGAMESH, "Gilgamesh"),
-                                     ("iliada", ILIADA, "Ilíada")):
-        s = normalize(s, book_id)
+    # El literal `const BOOKS = {...}` de index.html queda vacío: cada libro se declara
+    # ENTERO aquí, metadatos incluidos, desde el registro. Así un libro nuevo no exige
+    # tocar el HTML.
+    s = re.sub(r"const BOOKS = \{[\s\S]*?\n    \};", "const BOOKS = {};", s, count=1)
+
+    for libro, entries in _libros():
+        book_id, folder = libro["id"], libro["carpeta"]
         details, groups, omitted = build(entries, folder)
         counts[book_id] = len(details)
         print(f"{book_id}: {len(details)} obras, {sum(len(g) for g in groups)} imágenes"
               + (f"  (sin archivo: {', '.join(omitted)})" if omitted else ""))
-        if not details: continue
         DETALLES[book_id] = details
+        meta = {"esLibro": True, "corto": libro["corto"], "tag": libro["tag"],
+                "title": libro["title"], "sub": libro["sub"],
+                "firstTab": book_id + "-gallery", "headings": libro["headings"],
+                "carpeta": folder}
+        m = json.dumps(meta, ensure_ascii=False)
         d = json.dumps(details, ensure_ascii=False, indent=2).replace("\n", "\n    ")
         g = json.dumps(groups,  ensure_ascii=False, indent=2).replace("\n", "\n    ")
-        blocks.append(f"    BOOKS.{book_id}.details = {d};\n    BOOKS.{book_id}.groups = {g};")
+        blocks.append(f"    BOOKS.{book_id} = Object.assign({m},\n"
+                      f"      {{ details: [], groups: [] }});\n"
+                      f"    BOOKS.{book_id}.details = {d};\n    BOOKS.{book_id}.groups = {g};")
 
     # ---- autores ----
     # Cada autor se enlaza con sus obras por el campo `artist` de las fichas, sin listas
@@ -139,8 +116,7 @@ def main():
     if INI in s:
         s = re.sub(re.escape(INI) + r".*?" + re.escape(FIN), lambda m: generated, s, flags=re.S)
     else:
-        anchor = "    let currentBook = 'genesis';"
-        assert anchor in s
+        anchor = re.search(r"^ *let currentBook = '[a-z]+';", s, re.M).group(0)
         s = s.replace(anchor, generated + "\n\n" + anchor, 1)
 
     for book_id, n in counts.items():

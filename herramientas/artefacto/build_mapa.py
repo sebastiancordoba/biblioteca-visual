@@ -10,9 +10,8 @@ ROOT=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TMP=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "build")
 sys.path.insert(0, os.path.join(ROOT,"herramientas")); sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
-from data_genesis import GENESIS
-from data_gilgamesh import GILGAMESH
-from data_iliada import ILIADA
+from libros import todos as _libros
+_REG = _libros()
 from cronologia import ordenar, etiqueta
 from mapa import MUSEOS, museo_de
 from geo import anillos, proyectar, lineas, proyectar_lineas
@@ -47,8 +46,11 @@ CONTINENTE={"Vaticano":"Europa","Italia":"Europa","Austria":"Europa","Francia":"
  "Egipto":"África","Marruecos":"África","Sudáfrica":"África","Túnez":"África",
  "Australia":"Oceanía","Nueva Zelanda":"Oceanía"}
 
-filas=ordenar(("Génesis",GENESIS),("Gilgamesh",GILGAMESH),("Ilíada",ILIADA))
-filas=[(a,l,it) for a,l,it in filas if os.path.exists(os.path.join(l,it["files"][0]))]
+# Misma etiqueta que build.py (el nombre corto) para que el orden, y con él los índices,
+# coincidan; la carpeta solo se usa para comprobar que la imagen existe.
+CARPETA = {l["corto"]: l["carpeta"] for l, ents in _REG}
+filas=ordenar(*[(l["corto"], ents) for l, ents in _REG if ents])
+filas=[(a,l,it) for a,l,it in filas if os.path.exists(os.path.join(CARPETA[l],it["files"][0]))]
 
 paths,W,H,xy = proyectar(anillos(os.path.join(AQUI,"datos","land50.geojson"),BB), BB, K)
 
@@ -161,6 +163,8 @@ NOTA_SIN_SEDE = ("" if not sin_sede else
 PANEL = PANEL.replace("{NOTA_SIN_SEDE}", NOTA_SIN_SEDE)
 
 DATOS=("    const SEDES = "+json.dumps(lista,ensure_ascii=False)+";\n"
+       # el orden del registro, para que la lista de libros del mapa no dependa de las sedes
+       +"    const ORDEN_LIBROS = "+json.dumps([l["corto"] for l,_ in _REG],ensure_ascii=False)+";\n"
        "    const MAPA_EUROPA = "+json.dumps(EUROPA)+";\n"
        f"    const MAPA_W = {W:.0f}, MAPA_H = {H:.0f};\n")
 io.open(TMP+"/mapa_panel.html","w",encoding="utf-8").write(PANEL)

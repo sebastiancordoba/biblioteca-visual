@@ -26,7 +26,12 @@ const document={body:mk('body'),documentElement:mk('html'),
    if(sel==='.orden-bar') return barras;
    return [];},
  querySelector:()=>mk('x'),addEventListener:noop};
-for(const L of ['genesis','gilgamesh','iliada']){
+/* Las barras de orden tienen que existir ANTES de ejecutar la página, que es cuando las
+   engancha; y la lista de libros solo existe después. Se lee del bloque que genera
+   inject.py: cada libro del registro sale como BOOKS.<id> = Object.assign({"esLibro": true… */
+const LIBROS_HTML=[...html.matchAll(/BOOKS\.(\w+) = Object\.assign\(\{"esLibro": true/g)].map(m=>m[1])
+  .filter(id => new RegExp('BOOKS\\.'+id+'\\.details = \\[\\s*\\{').test(html));
+for(const L of LIBROS_HTML){
   const bar=mk('bar-'+L); bar.dataset.libro=L;
   const bs=botones(L);
   bar.querySelectorAll=()=>bs;

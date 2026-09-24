@@ -120,7 +120,9 @@ ck(html.includes('id="mZoomIn"')&&html.includes('id="mapaContinentes"'),
 ck(js.includes('function pintarContinentes'),'los continentes se generan según dónde haya obras');
 
 console.log('\n== resto de la página intacto ==');
-for(const id of ['genesis','gilgamesh','iliada','cronologia']){
+/* Los libros salen de BOOKS, no de una lista a mano: así un libro nuevo se prueba solo. */
+const librosConObra = Object.keys(BOOKS).filter(k => BOOKS[k].esLibro && BOOKS[k].details.length);
+for(const id of [...librosConObra,'cronologia']){
   renderBookGrid(id);
   const h=document.getElementById(id+'-grid').innerHTML;
   ck((h.match(/<article class="artwork-card">/g)||[]).length===BOOKS[id].details.length,`${id}: tarjetas`);
@@ -171,7 +173,7 @@ console.log('\n== enlace al original ==');
       'ningún archivo de Commons coincide en dimensiones con el local',
   };
   let sinEnlace = [], anotadas = 0, total = 0;
-  for (const id of ['genesis','gilgamesh','iliada']) {
+  for (const id of librosConObra) {
     for (const d of BOOKS[id].details) {
       total++;
       if (d.orig && /^https:\/\//.test(d.orig)) continue;

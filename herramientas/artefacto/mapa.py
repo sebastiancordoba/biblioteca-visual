@@ -103,15 +103,15 @@ def museo_de(item):
     return None
 
 if __name__ == "__main__":
-    from data_genesis import GENESIS
-    from data_gilgamesh import GILGAMESH
-    from data_iliada import ILIADA
+    from libros import todos
     from cronologia import ordenar
-    filas=ordenar(("Génesis",GENESIS),("Gilgamesh",GILGAMESH),("Ilíada",ILIADA))
+    reg = todos()
+    CARPETA = {l["corto"]: l["carpeta"] for l, _ in reg}
+    filas=ordenar(*[(l["corto"], e) for l, e in reg if e])
     sin=[]
     cuenta={}
     for a,l,it in filas:
-        if not os.path.exists(os.path.join(l,it["files"][0])): continue
+        if not os.path.exists(os.path.join(CARPETA[l],it["files"][0])): continue
         k=museo_de(it)
         if k is None: sin.append((l,it["title"],it["meta"].split("|")[-1].strip()))
         else: cuenta[k]=cuenta.get(k,0)+1

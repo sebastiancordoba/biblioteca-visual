@@ -315,6 +315,7 @@
       border-right: 1px solid var(--border-subtle);
     }
 
+    .biblio-portada.vacia { background: repeating-linear-gradient(135deg, #0d0f13 0 8px, #11141a 8px 16px); }
     .biblio-texto { padding: 14px 16px; display: flex; flex-direction: column; gap: 5px; }
     .biblio-texto b { font-family: var(--font-serif); font-size: 1.06rem; color: var(--text-title); }
     .biblio-texto span {
@@ -1467,40 +1468,11 @@
        flechas del visor nunca saltan de un libro a otro. Para dar de alta un libro se
        añade su entrada aquí, su carpeta de imágenes, su <nav class="book-nav"> y su
        <div class="tab-content"> en la grilla. */
-    const BOOKS = {
-      genesis: {
-        esLibro: true, corto: 'Génesis',
-        tag: 'Colección Génesis',
-        title: 'Obras Maestras del Génesis',
-        sub: 'Estudio visual en 3 columnas de las representaciones pictóricas del Génesis y análisis del cambio narrativo tras la Torre de Babel.',
-        firstTab: 'genesis-gallery',
-        headings: ['Lo que hace que destaque', 'Contexto histórico', 'Biografía del artista'],
-        details: [],
-        groups: []
-      },
-      gilgamesh: {
-        esLibro: true, corto: 'Gilgamesh',
-        tag: 'Colección Gilgamesh',
-        title: 'La Epopeya de Gilgamesh',
-        sub: 'Relieves asirios, sellos cilíndricos, tablillas cuneiformes y relecturas modernas del poema más antiguo conservado de la humanidad.',
-        firstTab: 'gilgamesh-gallery',
-        headings: ['Lo que hace que destaque', 'Contexto histórico y arqueológico', 'Procedencia'],
-        details: [],
-        groups: []
-      },
-      iliada: {
-        esLibro: true, corto: 'Ilíada',
-        tag: 'Colección Ilíada',
-        title: 'La Ilíada de Homero',
-        sub: 'Cerámica ática, escultura helenística, arqueología de Micenas y Troya, y la pintura neoclásica y romántica de la cólera de Aquiles.',
-        firstTab: 'iliada-gallery',
-        headings: ['Lo que hace que destaque', 'Contexto histórico', 'Autoría y procedencia'],
-        details: [],
-        groups: []
-      }
-    };
+    const BOOKS = {};
 
     /* ==== DATOS GENERADOS POR inject.py — NO EDITAR A MANO ==== */
+    BOOKS.genesis = Object.assign({"esLibro": true, "corto": "Génesis", "tag": "Colección Génesis", "title": "Obras Maestras del Génesis", "sub": "Estudio visual en 3 columnas de las representaciones pictóricas del Génesis y análisis del cambio narrativo tras la Torre de Babel.", "firstTab": "genesis-gallery", "headings": ["Lo que hace que destaque", "Contexto histórico", "Biografía del artista"], "carpeta": "Génesis"},
+      { details: [], groups: [] });
     BOOKS.genesis.details = [
       {
         "title": "La Creación de Adán",
@@ -2280,6 +2252,8 @@
       ]
     ];
 
+    BOOKS.gilgamesh = Object.assign({"esLibro": true, "corto": "Gilgamesh", "tag": "Colección Gilgamesh", "title": "La Epopeya de Gilgamesh", "sub": "Relieves asirios, sellos cilíndricos, tablillas cuneiformes y relecturas modernas del poema más antiguo conservado de la humanidad.", "firstTab": "gilgamesh-gallery", "headings": ["Lo que hace que destaque", "Contexto histórico y arqueológico", "Procedencia"], "carpeta": "Gilgamesh"},
+      { details: [], groups: [] });
     BOOKS.gilgamesh.details = [
       {
         "title": "Tablilla XI: el Diluvio",
@@ -2495,6 +2469,8 @@
       ]
     ];
 
+    BOOKS.iliada = Object.assign({"esLibro": true, "corto": "Ilíada", "tag": "Colección Ilíada", "title": "La Ilíada de Homero", "sub": "Cerámica ática, escultura helenística, arqueología de Micenas y Troya, y la pintura neoclásica y romántica de la cólera de Aquiles.", "firstTab": "iliada-gallery", "headings": ["Lo que hace que destaque", "Contexto histórico", "Autoría y procedencia"], "carpeta": "Ilíada"},
+      { details: [], groups: [] });
     BOOKS.iliada.details = [
       {
         "title": "Aquiles y Áyax jugando a los dados",
@@ -2997,6 +2973,16 @@
         }
       ]
     ];
+
+    BOOKS.atrahasis = Object.assign({"esLibro": true, "corto": "Atrahasis", "tag": "Colección Atrahasis", "title": "El poema de Atrahasis", "sub": "La huelga de los dioses, el hombre hecho de barro y sangre divina, y el Diluvio mil años antes del Génesis: tablillas, sellos y la arqueología de Sippar y Nippur.", "firstTab": "atrahasis-gallery", "headings": ["Lo que hace que destaque", "Contexto histórico y arqueológico", "Procedencia"], "carpeta": "Atrahasis"},
+      { details: [], groups: [] });
+    BOOKS.atrahasis.details = [];
+    BOOKS.atrahasis.groups = [];
+
+    BOOKS.enuma = Object.assign({"esLibro": true, "corto": "Enuma Elish", "tag": "Colección Enuma Elish", "title": "Enuma Elish, la creación babilónica", "sub": "Marduk contra Tiamat, el mundo hecho con el cuerpo de un monstruo y la Babilonia que lo recitaba cada año nuevo: tablillas, relieves y la Puerta de Ishtar.", "firstTab": "enuma-gallery", "headings": ["Lo que hace que destaque", "Contexto histórico y arqueológico", "Procedencia"], "carpeta": "Enuma_Elish"},
+      { details: [], groups: [] });
+    BOOKS.enuma.details = [];
+    BOOKS.enuma.groups = [];
 
     const AUTORES = [
       {
@@ -3822,6 +3808,68 @@
       });
     });
 
+    /* ---------- Montar los libros que no tienen marcado propio ----------
+       Génesis, Gilgamesh y la Ilíada tienen su <nav> y su panel escritos en el HTML (el
+       Génesis, además, con su pestaña de ensayo). Cualquier libro que se dé de alta en
+       herramientas/libros.py sin tocar el HTML se monta aquí: su barra de secciones, su
+       barra de orden, su cuadrícula y su aviso de «en preparación». Se construye con
+       createElement, no con innerHTML, para que las pruebas puedan ejercitarlo. */
+    const librosMontados = [];
+    function montarLibro(id){
+      const b = BOOKS[id];
+      if (!b || document.getElementById('nav-' + id)) return;
+
+      const nav = document.createElement('nav');
+      nav.id = 'nav-' + id;
+      nav.className = 'book-nav';
+      const tab = document.createElement('button');
+      tab.className = 'tab-btn active';
+      tab.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg> ' +
+        `Colección (${b.details.length})`;
+      tab.addEventListener('click', () => switchTab(id + '-gallery', tab));
+      nav.appendChild(tab);
+      const header = document.querySelector('header');
+      if (header) header.appendChild(nav);
+
+      const panel = document.createElement('div');
+      panel.id = id + '-gallery';
+      panel.className = 'tab-content';
+      const barra = document.createElement('div');
+      barra.className = 'orden-bar';
+      barra.dataset.libro = id;
+      const etq = document.createElement('span');
+      etq.className = 'orden-etq'; etq.textContent = 'Ordenar por';
+      barra.appendChild(etq);
+      [['coleccion','Colección'],['cronologia','Cronología'],['artista','Artista'],
+       ['titulo','Título'],['sede','Sede']].forEach(([orden, texto], k) => {
+        const o = document.createElement('button');
+        o.type = 'button';
+        o.className = 'orden-btn' + (k === 0 ? ' activo' : '');
+        o.dataset.orden = orden;
+        o.textContent = texto;
+        barra.appendChild(o);
+      });
+      panel.appendChild(barra);
+      const grid = document.createElement('div');
+      grid.className = 'grid-3col'; grid.id = id + '-grid';
+      panel.appendChild(grid);
+      const vacio = document.createElement('div');
+      vacio.className = 'empty-book'; vacio.id = id + '-empty';
+      vacio.style.display = 'none';
+      /* textContent y no innerHTML con esc(): esc es un const declarado más abajo y
+         llamarlo aquí reventaría antes de existir. */
+      const h2 = document.createElement('h2');
+      h2.textContent = `${b.corto} — en preparación`;
+      const pv = document.createElement('p');
+      pv.textContent = 'Este libro está dado de alta pero todavía no tiene obras cuyas imágenes existan en disco.';
+      vacio.appendChild(h2); vacio.appendChild(pv);
+      panel.appendChild(vacio);
+      const cont = document.querySelector('.container');
+      if (cont) cont.appendChild(panel);
+      librosMontados.push(id);
+    }
+    librosReales().forEach(montarLibro);
+
     let currentBook = 'inicio';
     const bookDetails = () => BOOKS[currentBook].details;
     const bookGroups  = () => BOOKS[currentBook].groups;
@@ -4419,7 +4467,9 @@
         const b = BOOKS[id];
         const portada = (b.groups[0] && b.groups[0][0]) ? b.groups[0][0].src : '';
         return `<button class="biblio-card" type="button" data-libro="${id}">` +
-               `<span class="biblio-portada" style="background-image:url('${portada}')"></span>` +
+               (portada
+                 ? `<span class="biblio-portada" style="background-image:url('${portada}')"></span>`
+                 : `<span class="biblio-portada vacia"></span>`) +
                `<span class="biblio-texto"><b>${esc(b.corto)}</b>` +
                `<span>${esc(b.sub)}</span>` +
                `<em>${b.details.length} obras</em></span></button>`;

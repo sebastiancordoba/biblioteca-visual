@@ -74,7 +74,9 @@ def referenciadas():
     """Las imágenes que la página usa de verdad, en el orden en que aparecen."""
     doc = io.open("index.html", encoding="utf-8").read()
     vistas = []
-    for m in re.finditer(r'"src":\s*"\./((?:Génesis|Gilgamesh|Ilíada)/[^"]+\.jpg)"', doc):
+    from libros import CARPETAS
+    alt = "|".join(re.escape(c) for c in CARPETAS)
+    for m in re.finditer(r'"src":\s*"\./((?:' + alt + r')/[^"]+\.jpg)"', doc):
         if m.group(1) not in vistas:
             vistas.append(m.group(1))
     return vistas

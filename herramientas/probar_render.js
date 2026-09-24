@@ -12,6 +12,7 @@ let fails=0;
 for(const id of Object.keys(BOOKS)){
   renderBookGrid(id);
   const grid=document.getElementById(id+'-grid');
+  if(!grid) continue;   // la portada y la Biblioteca no tienen cuadrícula de obras
   const h=grid.innerHTML;
   const cards=(h.match(/<article class="artwork-card">/g)||[]).length;
   const n=BOOKS[id].details.length;

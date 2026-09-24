@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 import base64, io, os, re
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))))
+from libros import PATRON_RUTA_COMILLAS   # carpetas de todos los libros, del registro
 TMP=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "build"); TH=os.path.join(TMP,"th2")
 doc=io.open(os.path.join(TMP,"b3.part"),encoding="utf-8").read()
 
@@ -183,7 +186,7 @@ def idx(rel):
         datos[rel]="data:image/jpeg;base64,"+base64.b64encode(open(p,"rb").read()).decode()
         orden.append(rel)
     return orden.index(rel)
-doc,n=re.subn(r'"\./((?:Génesis|Gilgamesh|Ilíada|Autores)/[^"]+\.jpg)"',
+doc,n=re.subn(PATRON_RUTA_COMILLAS,
               lambda m: f'IMG[{idx(m.group(1))}]', doc)
 mapa=("    /* Las vistas previas, una sola vez: cronología y mapa reutilizan estas entradas. */\n"
       "    const IMG = [\n" + ",\n".join(f'      "{datos[r]}"' for r in orden) + "\n    ];\n\n")

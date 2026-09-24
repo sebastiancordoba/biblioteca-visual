@@ -11,9 +11,8 @@ AQUI=os.path.dirname(os.path.abspath(__file__))
 ROOT=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 TMP=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "build"); TH=os.path.join(TMP,"th2")
 sys.path.insert(0, os.path.join(ROOT,"herramientas")); os.chdir(ROOT)
-from data_genesis import GENESIS
-from data_gilgamesh import GILGAMESH
-from data_iliada import ILIADA
+from libros import todos as _libros
+_REG = _libros()
 from cronologia import ordenar, etiqueta
 e=lambda t: html.escape(str(t),quote=True)
 
@@ -50,7 +49,7 @@ def leer(campo,libro):
 
 # ---------- 1. enlaces al original dentro de los datos ----------
 DATOS={}
-for libro in ("genesis","gilgamesh","iliada"):
+for libro in [l["id"] for l, ents in _REG if ents]:
     lbg,fing=leer("groups",libro); groups=json.loads(doc[lbg:fing])
     lbd,find=leer("details",libro); details=json.loads(doc[lbd:find])
     for i,d in enumerate(details):
@@ -62,7 +61,10 @@ for libro in ("genesis","gilgamesh","iliada"):
     doc=doc[:lbd]+json.dumps(details,ensure_ascii=False,indent=2).replace("\n","\n    ")+doc[find:]
 
 # ---------- 2. cronología conjunta ----------
-LIB={"genesis":("Génesis",GENESIS),"gilgamesh":("Gilgamesh",GILGAMESH),"iliada":("Ilíada",ILIADA)}
+# Etiqueta = nombre corto del libro. build_mapa.py usa EXACTAMENTE la misma para ordenar,
+# porque el mapa guarda índices de esta cronología: si las dos listas se ordenaran distinto,
+# cada sede apuntaría a obras de otra.
+LIB={l["id"]:(l["corto"],ents) for l,ents in _REG if ents}
 porTitulo={}
 for cid,(nom,_) in LIB.items():
     det,grp=DATOS[cid]

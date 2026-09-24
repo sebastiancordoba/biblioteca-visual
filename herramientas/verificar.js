@@ -12,14 +12,15 @@ const { noop, ejecutar } = require('./dom_falso.js');
 const { BOOKS, document, urlOriginal, openZoomForArtwork, abrirEnConjunto,
         navigateSequential, getAllViewsList, ejecutarEstado,
         renderBookGrid, consultaLibro, analizar, puntuar, docDeObra,
-        autoresOrdenados, pintarAutores, verAutores } =
+        autoresOrdenados, pintarAutores, verAutores, librosMontados } =
   ejecutar(html, '{BOOKS, urlOriginal, openZoomForArtwork, abrirEnConjunto,'
                 + ' navigateSequential, getAllViewsList,'
                 + ' ejecutarEstado: () => currentArtworkGroupIndex,'
                 + ' renderBookGrid, consultaLibro, analizar, puntuar, docDeObra,'
                 + ' autoresOrdenados, pintarAutores,'
                 + ' verAutores: () => ({ orden: o => ordenAutores = o,'
-                + '                      consulta: c => consultaAutores = c })}');
+                + '                      consulta: c => consultaAutores = c }),'
+                + ' librosMontados}');
 
 let fails = 0;
 const check = (ok, msg) => { console.log((ok ? '  ok    ' : '  FALLA ') + msg); if (!ok) fails++; };
@@ -28,8 +29,12 @@ console.log('\n== Libros ==');
 for (const [id, b] of Object.entries(BOOKS)) {
   check(b.details.length === b.groups.length,
     `${id}: ${b.details.length} fichas alineadas con ${b.groups.length} grupos de imagen`);
-  check(html.includes(`id="nav-${id}"`) && html.includes(`id="${b.firstTab}"`),
-    `${id}: nav y pestaña presentes en el HTML`);
+  /* Un libro tiene su sección escrita en el HTML o la página se la monta sola
+     (montarLibro): lo segundo es lo normal para cualquier libro dado de alta después. */
+  const escrito = html.includes(`id="nav-${id}"`) && html.includes(`id="${b.firstTab}"`);
+  const montado = (librosMontados || []).includes(id);
+  check(escrito || montado,
+    `${id}: tiene sección (${escrito ? 'en el HTML' : montado ? 'montada por la página' : 'NINGUNA'})`);
 }
 
 console.log('\n== Toda imagen referenciada existe en disco ==');
@@ -360,10 +365,14 @@ console.log('\n== Buscador ==');
   check(buscar('') === todas, 'vaciar la búsqueda devuelve todas');
 
   /* La cronología y cada libro montan su propia caja. */
-  const conCaja = Object.keys(BOOKS).filter(id =>
-    document.getElementById('buscar-' + id) && BOOKS[id].details.length);
-  check(conCaja.length >= 4,
-    `hay buscador en cada sección con obras (${conCaja.join(', ')})`);
+  /* Cada sección que tiene cuadrícula y obras lleva su buscador. Antes se exigían «al
+     menos 4» porque el simulacro inventaba una cuadrícula para la portada, que no la
+     tiene; ahora el simulacro devuelve null para lo que no existe y se cuenta lo real. */
+  const conGrid = Object.keys(BOOKS).filter(id =>
+    document.getElementById(id + '-grid') && BOOKS[id].details.length);
+  const conCaja = conGrid.filter(id => document.getElementById('buscar-' + id));
+  check(conGrid.length >= 3 && conCaja.length === conGrid.length,
+    `hay buscador en cada sección con obras (${conCaja.join(', ')} de ${conGrid.join(', ')})`);
 }
 
 console.log('\n== Autores ==');
@@ -491,8 +500,11 @@ console.log('\n== Biblioteca ==');
     'cada libro es alcanzable desde la Biblioteca');
   const portadas = [...rejilla.innerHTML.matchAll(/biblio-portada" style="background-image:url\('([^']+)'\)/g)]
     .map(m => decodeURIComponent(m[1]));
-  check(portadas.length === reales.length && portadas.every(u => fs.existsSync(u)),
-    `cada tarjeta lleva portada existente (${portadas.length})`);
+  /* Un libro dado de alta sin obras todavía no tiene portada que enseñar; los que tienen
+     obras, sí, y tiene que existir en disco. */
+  const conObras = reales.filter(id => BOOKS[id].details.length);
+  check(portadas.length === conObras.length && portadas.every(u => fs.existsSync(u)),
+    `cada libro con obras lleva portada existente (${portadas.length} de ${conObras.length})`);
 
   /* El buscador solo tiene sentido cuando la lista deja de leerse de un vistazo. */
   check(document.getElementById('biblioFiltro').hidden === (reales.length <= 6),

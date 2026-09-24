@@ -112,7 +112,11 @@ JS = r"""
       /* Filtro por libro: cuando está activo, el mapa muestra solo las sedes que guardan
          obras de ese libro, y las cuentas reflejan únicamente esas obras. */
       let libroFiltro = null;
-      const LIBROS = ['Génesis', 'Gilgamesh', 'Ilíada'];
+      /* Los libros que tienen obra en alguna sede, en el orden en que aparecen. Estaba
+         escrito a mano con los tres primeros, y un libro nuevo no habría salido. */
+      const conObra = new Set(SEDES.flatMap(s => s.obras.map(o => o.libro)));
+      const LIBROS = (typeof ORDEN_LIBROS !== 'undefined' ? ORDEN_LIBROS : [...conObra])
+        .filter(n => conObra.has(n));
       /* Buscador del mapa. Filtra las obras igual que el filtro por libro, así que todo
          lo demás —los grupos, los abanicos, la lista, los continentes— se adapta solo:
          una sede sin obras que cumplan deja de existir para el mapa. */
