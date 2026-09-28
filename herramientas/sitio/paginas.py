@@ -114,6 +114,32 @@ def absoluta(rel, ancho=REJILLA):
     return (URL_SITIO + url) if es_propia else url
 
 
+def con_notas(texto_):
+    """Escapa el texto y convierte [1], [2, 3] en llamadas a las notas."""
+    return re.sub(r"\[(\d+(?:\s*[,–-]\s*\d+)*)\]",
+                  lambda m: "".join(f'<sup><a href="#f{n}">{n}</a></sup>' for n in re.findall(r"\d+", m.group(1))),
+                  e(texto_))
+
+
+def dominio(url):
+    return re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
+
+
+def sin_notas(t):
+    return re.sub(r"\s*\[[\d,\s–-]+\]", "", t)
+
+
+def lista_fuentes(fuentes, titulo="Fuentes"):
+    if not fuentes: return ""
+    return (f'<section class="bloque"><h2>{e(titulo)}</h2><ol class="fuentes">'
+            + "".join(f'<li id="f{f["n"]}" value="{f["n"]}"><span>{e(f["obra"])}</span>'
+                      f'{(" — «" + e(f["titulo"]) + "»") if f.get("titulo") else ""}'
+                      f'{(", " + e(f["autor"])) if f.get("autor") else ""}. '
+                      f'<a href="{e(f["url"])}">{e(dominio(f["url"]))}</a></li>'
+                      for f in sorted(fuentes, key=lambda x: x["n"]))
+            + '</ol></section>')
+
+
 def credito(c):
     """Autor y licencia de la foto: CC BY y CC BY-SA obligan a darlos. En dominio público no
     se nombra fotógrafo (el campo de Commons sería el autor de la obra)."""
@@ -146,12 +172,15 @@ def generar():
     urls = []
 
     # dirección de cada obra: libro -> [ruta por índice de grupo]
-    FICHAS, POR_NUM = {}, {}
+    FICHAS, POR_NUM, NUM_DE = {}, {}, {}
+    _of = os.path.join(AQUI, "datos", "obras_fuentes.json")          # incorporar_obras.py
+    OF = json.load(io.open(_of, encoding="utf-8")) if os.path.exists(_of) else {}
     for L in libros:
         rutas, usados = [], set()
         for g, d in enumerate(L["details"]):
             num = re.match(r"\d+", os.path.basename(L["groups"][g][0]["src"])).group(0)
             POR_NUM[(L["id"], num)] = g
+            NUM_DE[(L["id"], g)] = num
             s = f"{num}-{slug(d['title'])}"
             while s in usados: s += "-b"
             usados.add(s)
@@ -193,6 +222,14 @@ def generar():
             if d.get("wikiUrl"):
                 enlaces.append(f'<a class="boton" href="{e(d["wikiUrl"])}" rel="noopener">Wikipedia</a>')
             h1, h2, h3 = L["headings"]
+            of = OF.get(f"{L['id']}:{NUM_DE[(L['id'], g)]}")
+            t1, t2, t3 = ((con_notas(of["analysis"]), con_notas(of["history"]), con_notas(of["bio"])) if of
+                          else (e(d["analysis"]), e(d["history"]), e(d["bio"])))
+            pie_fuentes = ((("".join(f'<p class="discrepancia">{e(x)}</p>' for x in of.get("discrepancias") or [])
+                             and f'<section class="bloque"><h2>Discrepancias entre fuentes</h2>'
+                                 f'{"".join(f"<p class=discrepancia>{e(x)}</p>" for x in of.get("discrepancias") or [])}</section>')
+                            + lista_fuentes(of.get("fuentes"))) if of else
+                           '<p class="discrepancia">Ficha pendiente de contrastar con fuentes académicas.</p>')
             cuerpo = f"""
 <nav class="migas"><a href="{R}libros/">Libros</a> › <a href="{R}libros/{L['id']}/">{e(L['corto'])}</a> › Obra {g + 1:02d}</nav>
 <article class="obra">
@@ -210,9 +247,10 @@ def generar():
   <p class="entradilla">{e(d['snippet'])}</p>
   <div class="columnas">
     <div class="textos">
-      <section><h2>{e(h1)}</h2><p>{e(d['analysis'])}</p></section>
-      <section><h2>{e(h2)}</h2><p>{e(d['history'])}</p></section>
-      <section><h2>{e(h3)}</h2><p>{e(d['bio'])}</p></section>
+      <section><h2>{e(h1)}</h2><p>{t1}</p></section>
+      <section><h2>{e(h2)}</h2><p>{t2}</p></section>
+      <section><h2>{e(h3)}</h2><p>{t3}</p></section>
+      <div class="autor-datos">{pie_fuentes}</div>
     </div>
     <aside class="ficha">
       <dl>
@@ -327,19 +365,6 @@ def generar():
     PAGO = {"P8406", "P2843", "P1415", "P3219"}
     AUTORIDAD = {"P650", "P7902"}
 
-    def con_notas(texto_, clave):
-        """Escapa el texto y convierte [1], [2, 3] en llamadas a las notas."""
-        t = e(texto_)
-        return re.sub(r"\[(\d+(?:\s*[,–-]\s*\d+)*)\]",
-                      lambda m: "".join(f'<sup><a href="#f{n}" id="r{n}-{k}">{n}</a></sup>'
-                                        for k, n in enumerate(re.findall(r"\d+", m.group(1)))), t)
-
-    def dominio(url):
-        return re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
-
-    def sin_notas(t):
-        return re.sub(r"\s*\[[\d,\s–-]+\]", "", t)
-
     def celda(f, lugar):
         partes = [x for x in (f, lugar) if x]
         return e(", ".join(partes)) if partes else '<span class="nd">no consta</span>'
@@ -356,7 +381,7 @@ def generar():
                    f'<figcaption>{e(a.get("retratoPie", ""))}</figcaption></figure>' if a.get("retrato")
                    else '<figure class="retrato vacio"><span>No se conserva retrato</span></figure>')
         fuentes = fa.get("fuentes") or []
-        bio = con_notas(fa.get("bio") or a["bio"], a["clave"])
+        bio = con_notas(fa.get("bio") or a["bio"])
 
         # qué dice cada fuente
         filas = []
@@ -384,14 +409,8 @@ def generar():
                 f'<p class="atribucion">Getty Research Institute, <a href="{e(ul["url"])}">Union List of Artist Names</a>, '
                 f'registro {e(ul["ulan"])}. Datos abiertos bajo licencia ODC-By 1.0.</p></section>'
                 if ul and ul.get("nota") and len(ul["nota"]) > 80 else "")
-        lista_fuentes = (f'<section class="bloque"><h2>Fuentes de la biografía</h2><ol class="fuentes">'
-                         + "".join(f'<li id="f{f["n"]}"><span>{e(f["obra"])}</span>'
-                                   f'{(" — «" + e(f["titulo"]) + "»") if f.get("titulo") else ""}'
-                                   f'{(", " + e(f["autor"])) if f.get("autor") else ""}. '
-                                   f'<a href="{e(f["url"])}">{e(dominio(f["url"]))}</a></li>'
-                                   for f in fuentes)
-                         + '</ol></section>') if fuentes else \
-            '<p class="discrepancia">Esta biografía todavía no está contrastada con fuentes académicas.</p>'
+        fuentes_html = (lista_fuentes(fuentes, "Fuentes de la biografía") if fuentes else
+                         '<p class="discrepancia">Esta biografía todavía no está contrastada con fuentes académicas.</p>')
         refs = [r for r in (wd or {}).get("referencias", []) if r["pid"] not in AUTORIDAD]
         leer = (f'<section class="bloque"><h2>Para leer más</h2><ul class="refs">'
                 + "".join(f'<li><a href="{e(r["url"])}">{e(r["obra"])}</a>'
@@ -424,7 +443,7 @@ def generar():
 </article>
 <div class="autor-datos">
   {tabla}{sin_registro}
-  {lista_fuentes}
+  {fuentes_html}
   {nota}
   {leer}
   {autoridad}

@@ -57,6 +57,8 @@ const { execSync } = require('child_process');
    institucional. Sustituir en cuanto aparezca una, buscando en la web del museo.
    Ver la sección "Resolución alta no es lo mismo que buena reproducción" de CLAUDE.md. */
 const EXCEPCIONES = {
+  './Ilíada/04_Andromaca_Llorando_a_Hector_Jacques_Louis_David_Wikipedia_Master.jpg':
+    'única reproducción del óleo del Louvre en Commons (WGA); la de 14,6 MP que había era el dibujo preparatorio de 1782, otra obra',
   './Génesis/03_Cain_y_Abel_Tiziano_1544.jpg':
     'única reproducción en Commons (WGA); el techo de la Salute está mal fotografiado',
   './Génesis/08_Sombra_y_Oscuridad_el_Diluvio_JMW_Turner_1843.jpg':

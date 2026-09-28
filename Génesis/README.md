@@ -14,44 +14,44 @@ abre [`../index.html`](../index.html) y elige **Génesis** en el selector de lib
 | 2 | **La Expulsión del Paraíso** | Masaccio (1427) | Capilla Brancacci, Basílica de Santa Maria del Carmine, Florencia, Italia | [Wikipedia](https://es.wikipedia.org/wiki/Expulsi%C3%B3n_de_Ad%C3%A1n_y_Eva_del_Para%C3%ADso_terrenal) | [`02_La_Expulsion_del_Paraiso_Masaccio_Wikipedia_Master.jpg`](./02_La_Expulsion_del_Paraiso_Masaccio_Wikipedia_Master.jpg) |
 | 3 | **Caín y Abel** | Tiziano Vecellio (1544) | Sacristía de Santa Maria della Salute, Venecia, Italia | [Wikipedia](https://en.wikipedia.org/wiki/Cain_and_Abel_(Titian)) | [`03_Cain_y_Abel_Tiziano_1544.jpg`](./03_Cain_y_Abel_Tiziano_1544.jpg) |
 | 4 | **El Diluvio Universal** | Miguel Ángel Buonarroti (1509) | Capilla Sixtina, El Vaticano | [Wikipedia](https://es.wikipedia.org/wiki/B%C3%B3veda_de_la_Capilla_Sixtina#El_Diluvio_Universal) | [`04_El_Diluvio_Miguel_Angel_1509.jpg`](./04_El_Diluvio_Miguel_Angel_1509.jpg) |
-| 5 | **La Torre de Babel** | Pieter Bruegel el Viejo (1563) | Kunsthistorisches Museum, Viena, Austria | [Wikipedia](https://es.wikipedia.org/wiki/La_torre_de_Babel_(Brueghel)) | [`05_La_Torre_de_Babel_Pieter_Bruegel_1563.jpg`](./05_La_Torre_de_Babel_Pieter_Bruegel_1563.jpg) |
-| 6 | **Caín** | Fernand Cormon (1880) | Musée d’Orsay, París, Francia | [Wikipedia](https://en.wikipedia.org/wiki/Cain_(Cormon)) | [`06_Cain_Fernand_Cormon_1880.jpg`](./06_Cain_Fernand_Cormon_1880.jpg) |
-| 7 | **Elohim creando a Adán** | William Blake (1795) | Tate Britain, Londres, Reino Unido | [Wikipedia](https://en.wikipedia.org/wiki/William_Blake) | [`07_Elohim_Creando_a_Adan_William_Blake_1795.jpg`](./07_Elohim_Creando_a_Adan_William_Blake_1795.jpg) |
-| 8 | **Sombra y oscuridad - la tarde del diluvio** | J.M.W. Turner (1843) | Tate Britain, Londres, Reino Unido | [Wikipedia](https://en.wikipedia.org/wiki/Light_and_Colour_(Goethe%27s_Theory)_%E2%80%93_The_Morning_after_the_Deluge_%E2%80%93_Moses_Writing_the_Book_of_Genesis) | [`08_Sombra_y_Oscuridad_el_Diluvio_JMW_Turner_1843.jpg`](./08_Sombra_y_Oscuridad_el_Diluvio_JMW_Turner_1843.jpg) |
-| 9 | **La confusión de las lenguas** | Gustave Doré (1865) | Biblioteca Nacional de Francia, París, Francia | [Wikipedia](https://en.wikipedia.org/wiki/Gustave_Dor%C3%A9%27s_illustrations_for_La_Grande_Bible_de_Tours) | [`09_La_Confusion_de_las_Lenguas_Gustave_Dore_1865.jpg`](./09_La_Confusion_de_las_Lenguas_Gustave_Dore_1865.jpg) |
-| 10 | **El Diluvio Universal** | Jan van Scorel (c. 1530) | Museo Nacional del Prado, Madrid, España | [Wikipedia](https://es.wikipedia.org/wiki/Jan_van_Scorel) | [`10_El_Diluvio_Jan_van_Scorel_1530.jpg`](./10_El_Diluvio_Jan_van_Scorel_1530.jpg) |
-| 11 | **Tras el diluvio: el día cuadragésimo primero** | George Frederic Watts (1891) | Watts Gallery, Compton, Surrey, Reino Unido | [Wikipedia](https://en.wikipedia.org/wiki/After_the_Deluge_(Watts)) | [`11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg`](./11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg) |
-| 12 | **La disminución de las aguas del diluvio** | Francis Danby (1840) | Tate Britain, Londres, Reino Unido | [Wikipedia](https://en.wikipedia.org/wiki/Francis_Danby) | [`12_La_disminucion_de_las_aguas_Francis_Danby_1840.jpg`](./12_La_disminucion_de_las_aguas_Francis_Danby_1840.jpg) |
-| 13 | **La disminución de las aguas del diluvio** | Thomas Cole (1829) | Smithsonian American Art Museum, Washington D.C., EE.UU. | [Wikipedia](https://en.wikipedia.org/wiki/Subsiding_of_the_Waters_of_the_Deluge) | [`13_La_disminucion_de_las_aguas_Thomas_Cole_1829.jpg`](./13_La_disminucion_de_las_aguas_Thomas_Cole_1829.jpg) |
+| 5 | **La Torre de Babel** | Pieter Bruegel el Viejo (1563) | Kunsthistorisches Museum, Viena, Austria (GG 1026) | [Wikipedia](https://es.wikipedia.org/wiki/La_torre_de_Babel_(Brueghel)) | [`05_La_Torre_de_Babel_Pieter_Bruegel_1563.jpg`](./05_La_Torre_de_Babel_Pieter_Bruegel_1563.jpg) |
+| 6 | **Caín** | Fernand Cormon (1880) | Musée d’Orsay, París, Francia (RF 280) | [Wikipedia](https://en.wikipedia.org/wiki/Cain_(Cormon)) | [`06_Cain_Fernand_Cormon_1880.jpg`](./06_Cain_Fernand_Cormon_1880.jpg) |
+| 7 | **Elohim creando a Adán** | William Blake (1795) | Tate Britain, Londres, Reino Unido (N05055) | [Wikipedia](https://en.wikipedia.org/wiki/William_Blake) | [`07_Elohim_Creando_a_Adan_William_Blake_1795.jpg`](./07_Elohim_Creando_a_Adan_William_Blake_1795.jpg) |
+| 8 | **Sombra y oscuridad - la tarde del diluvio** | J.M.W. Turner (1843) | Tate Britain, Londres, Reino Unido (N00531) | [Wikipedia](https://en.wikipedia.org/wiki/Light_and_Colour_(Goethe%27s_Theory)_%E2%80%93_The_Morning_after_the_Deluge_%E2%80%93_Moses_Writing_the_Book_of_Genesis) | [`08_Sombra_y_Oscuridad_el_Diluvio_JMW_Turner_1843.jpg`](./08_Sombra_y_Oscuridad_el_Diluvio_JMW_Turner_1843.jpg) |
+| 9 | **La confusión de las lenguas** | Gustave Doré (1866) | Biblioteca Nacional de Polonia, Varsovia | [Wikipedia](https://en.wikipedia.org/wiki/Gustave_Dor%C3%A9%27s_illustrations_for_La_Grande_Bible_de_Tours) | [`09_La_Confusion_de_las_Lenguas_Gustave_Dore_Wikipedia_Master.jpg`](./09_La_Confusion_de_las_Lenguas_Gustave_Dore_Wikipedia_Master.jpg) |
+| 10 | **El Diluvio Universal** | Círculo de Jan van Scorel (c. 1530) | Museo Nacional del Prado, Madrid (P001515) | [Wikipedia](https://es.wikipedia.org/wiki/Jan_van_Scorel) | [`10_El_Diluvio_Jan_van_Scorel_1530.jpg`](./10_El_Diluvio_Jan_van_Scorel_1530.jpg) |
+| 11 | **Tras el diluvio: el día cuadragésimo primero** | George Frederic Watts (1891) | Watts Gallery, Compton, Surrey (COMWG.145) | [Wikipedia](https://en.wikipedia.org/wiki/After_the_Deluge_(Watts)) | [`11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg`](./11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg) |
+| 12 | **El Diluvio** | Francis Danby (1840) | Tate Britain, Londres (T01337) | [Wikipedia](https://en.wikipedia.org/wiki/Francis_Danby) | [`12_La_disminucion_de_las_aguas_Francis_Danby_1840.jpg`](./12_La_disminucion_de_las_aguas_Francis_Danby_1840.jpg) |
+| 13 | **La disminución de las aguas del diluvio** | Thomas Cole (1829) | Smithsonian American Art Museum, Washington D.C. (1983.40) | [Wikipedia](https://en.wikipedia.org/wiki/Subsiding_of_the_Waters_of_the_Deluge) | [`13_La_disminucion_de_las_aguas_Thomas_Cole_1829.jpg`](./13_La_disminucion_de_las_aguas_Thomas_Cole_1829.jpg) |
 | 14 | **Adán y Eva** | Lucas Cranach el Viejo (c. 1538) | Galería Nacional de Praga (DO 5380) | [Wikipedia](https://es.wikipedia.org/wiki/Lucas_Cranach_el_Viejo) | [`14_Adan_y_Eva_Lucas_Cranach_el_Viejo_1538.jpg`](./14_Adan_y_Eva_Lucas_Cranach_el_Viejo_1538.jpg) |
-| 15 | **Adán y Eva** | Alberto Durero (1504 y 1507) | y óleo sobre tabla, 209 × 81 cm (Museo del Prado, P02177) | [Wikipedia](https://es.wikipedia.org/wiki/Ad%C3%A1n_y_Eva_(D%C3%BArero)) | [`15_Adan_y_Eva_Grabado_Alberto_Durero_1504.jpg`](./15_Adan_y_Eva_Grabado_Alberto_Durero_1504.jpg) |
-| 16 | **El Anciano de los Días** | William Blake (1794) | British Museum, Londres | [Wikipedia](https://es.wikipedia.org/wiki/El_anciano_de_los_d%C3%ADas) | [`16_El_Anciano_de_los_Dias_William_Blake_British_Museum_1794.jpg`](./16_El_Anciano_de_los_Dias_William_Blake_British_Museum_1794.jpg) |
-| 17 | **El sacrificio de Isaac** | Caravaggio (c. 1603) | Galleria degli Uffizi, Florencia | [Wikipedia](https://es.wikipedia.org/wiki/El_sacrificio_de_Isaac_(Caravaggio)) | [`17_El_Sacrificio_de_Isaac_Caravaggio_1603.jpg`](./17_El_Sacrificio_de_Isaac_Caravaggio_1603.jpg) |
-| 18 | **El sacrificio de Isaac** | Rembrandt van Rijn (1635) | Museo del Hermitage, San Petersburgo | [Wikipedia](https://es.wikipedia.org/wiki/El_sacrificio_de_Isaac_(Rembrandt)) | [`18_El_Sacrificio_de_Isaac_Rembrandt_1635.jpg`](./18_El_Sacrificio_de_Isaac_Rembrandt_1635.jpg) |
-| 19 | **La Trinidad (La hospitalidad de Abraham)** | Andréi Rubliov (1425–1427) | Galería Tretiakov, Moscú (Inv. 13012) | [Wikipedia](https://es.wikipedia.org/wiki/Trinidad_(Rubl%C3%B3v)) | [`19_La_Trinidad_de_Abraham_Andrei_Rublev_1425.jpg`](./19_La_Trinidad_de_Abraham_Andrei_Rublev_1425.jpg) |
+| 15 | **Adán y Eva** | Alberto Durero (1504 y 1507) | y óleo sobre tabla, 209 × 81 y 209 × 80 cm (Museo del Prado, P002177 y P002178) | [Wikipedia](https://es.wikipedia.org/wiki/Ad%C3%A1n_y_Eva_(D%C3%BArero)) | [`15_Adan_y_Eva_Grabado_Alberto_Durero_1504.jpg`](./15_Adan_y_Eva_Grabado_Alberto_Durero_1504.jpg) |
+| 16 | **El Anciano de los Días** | William Blake (1794) | British Museum, Londres (1859,0625.72) | [Wikipedia](https://es.wikipedia.org/wiki/El_anciano_de_los_d%C3%ADas) | [`16_El_Anciano_de_los_Dias_William_Blake_British_Museum_1794.jpg`](./16_El_Anciano_de_los_Dias_William_Blake_British_Museum_1794.jpg) |
+| 17 | **El sacrificio de Isaac** | Caravaggio (c. 1603) | Galleria degli Uffizi, Florencia (Inv. 1890 n. 4659) | [Wikipedia](https://es.wikipedia.org/wiki/El_sacrificio_de_Isaac_(Caravaggio)) | [`17_El_Sacrificio_de_Isaac_Caravaggio_1603.jpg`](./17_El_Sacrificio_de_Isaac_Caravaggio_1603.jpg) |
+| 18 | **El sacrificio de Isaac** | Rembrandt van Rijn (1635) | Museo del Hermitage, San Petersburgo (ГЭ-727) | [Wikipedia](https://es.wikipedia.org/wiki/El_sacrificio_de_Isaac_(Rembrandt)) | [`18_El_Sacrificio_de_Isaac_Rembrandt_1635.jpg`](./18_El_Sacrificio_de_Isaac_Rembrandt_1635.jpg) |
+| 19 | **La Trinidad (La hospitalidad de Abraham)** | Andréi Rubliov (1425–1427) | Lavra de la Trinidad y San Sergio, Sérguiev Posad (desde 2024; antes, Galería Tretiakov, Moscú) | [Wikipedia](https://es.wikipedia.org/wiki/Trinidad_(Rubl%C3%B3v)) | [`19_La_Trinidad_de_Abraham_Andrei_Rublev_1425.jpg`](./19_La_Trinidad_de_Abraham_Andrei_Rublev_1425.jpg) |
 | 20 | **La lucha de Jacob con el ángel** | Eugène Delacroix (1854–1861) | Capilla de los Santos Ángeles, Saint-Sulpice, París | [Wikipedia](https://es.wikipedia.org/wiki/La_lucha_de_Jacob_con_el_%C3%A1ngel) | [`20_Jacob_Luchando_con_el_Angel_Eugene_Delacroix_1861.jpg`](./20_Jacob_Luchando_con_el_Angel_Eugene_Delacroix_1861.jpg) |
-| 21 | **Jacob luchando con el ángel** | Rembrandt van Rijn (c. 1659) | Gemäldegalerie, Berlín | [Wikipedia](https://en.wikipedia.org/wiki/Jacob_Wrestling_with_the_Angel_(Rembrandt)) | [`21_Jacob_Luchando_con_el_Angel_Rembrandt_1659.jpg`](./21_Jacob_Luchando_con_el_Angel_Rembrandt_1659.jpg) |
-| 22 | **La visión tras el sermón** | Paul Gauguin (1888) | National Galleries of Scotland, Edimburgo | [Wikipedia](https://es.wikipedia.org/wiki/La_visi%C3%B3n_despu%C3%A9s_del_serm%C3%B3n) | [`22_La_Vision_tras_el_Sermon_Paul_Gauguin_1888.jpg`](./22_La_Vision_tras_el_Sermon_Paul_Gauguin_1888.jpg) |
+| 21 | **Jacob luchando con el ángel** | Rembrandt van Rijn (c. 1659) | Gemäldegalerie, Berlín (Inv. 828) | [Wikipedia](https://en.wikipedia.org/wiki/Jacob_Wrestling_with_the_Angel_(Rembrandt)) | [`21_Jacob_Luchando_con_el_Angel_Rembrandt_1659.jpg`](./21_Jacob_Luchando_con_el_Angel_Rembrandt_1659.jpg) |
+| 22 | **La visión tras el sermón** | Paul Gauguin (1888) | National Galleries of Scotland, Edimburgo (NG 1643) | [Wikipedia](https://es.wikipedia.org/wiki/La_visi%C3%B3n_despu%C3%A9s_del_serm%C3%B3n) | [`22_La_Vision_tras_el_Sermon_Paul_Gauguin_1888.jpg`](./22_La_Vision_tras_el_Sermon_Paul_Gauguin_1888.jpg) |
 | 23 | **Agar en el desierto** | Jean-Baptiste-Camille Corot (1835) | Metropolitan Museum of Art, Nueva York (38.64) | [Wikipedia](https://es.wikipedia.org/wiki/Camille_Corot) | [`23_Agar_en_el_Desierto_Camille_Corot_1835.jpg`](./23_Agar_en_el_Desierto_Camille_Corot_1835.jpg) |
-| 24 | **La túnica de José** | Diego Velázquez (1630) | Monasterio de San Lorenzo de El Escorial | [Wikipedia](https://es.wikipedia.org/wiki/La_t%C3%BAnica_de_Jos%C3%A9) | [`24_La_Tunica_de_Jose_Diego_Velazquez_1630.jpg`](./24_La_Tunica_de_Jose_Diego_Velazquez_1630.jpg) |
-| 25 | **La destrucción de Sodoma y Gomorra** | John Martin (1852) | Laing Art Gallery, Newcastle upon Tyne | [Wikipedia](https://en.wikipedia.org/wiki/John_Martin_(painter)) | [`25_La_Destruccion_de_Sodoma_y_Gomorra_John_Martin_1852.jpg`](./25_La_Destruccion_de_Sodoma_y_Gomorra_John_Martin_1852.jpg) |
-| 26 | **El jardín de las delicias** | Hieronymus Bosch, El Bosco (c. 1490–1500) | Museo Nacional del Prado, Madrid (P02823) | [Wikipedia](https://es.wikipedia.org/wiki/El_jard%C3%ADn_de_las_delicias) | [`26_El_Jardin_de_las_Delicias_El_Bosco_1505.jpg`](./26_El_Jardin_de_las_Delicias_El_Bosco_1505.jpg) |
-| 27 | **El pecado original y la expulsión del Paraíso** | Miguel Ángel Buonarroti (1509–1510) | Bóveda de la Capilla Sixtina, Ciudad del Vaticano | [Wikipedia](https://es.wikipedia.org/wiki/B%C3%B3veda_de_la_Capilla_Sixtina) | [`41_El_Pecado_Original_y_la_Expulsion_Miguel_Angel_1510.jpg`](./41_El_Pecado_Original_y_la_Expulsion_Miguel_Angel_1510.jpg) |
+| 24 | **La túnica de José** | Diego Velázquez (1630) | Monasterio de San Lorenzo de El Escorial (Patrimonio Nacional, inv. 10014694) | [Wikipedia](https://es.wikipedia.org/wiki/La_t%C3%BAnica_de_Jos%C3%A9) | [`24_La_Tunica_de_Jose_Diego_Velazquez_1630.jpg`](./24_La_Tunica_de_Jose_Diego_Velazquez_1630.jpg) |
+| 25 | **La destrucción de Sodoma y Gomorra** | John Martin (1852) | Laing Art Gallery, Newcastle upon Tyne (TWCMS : C6975) | [Wikipedia](https://en.wikipedia.org/wiki/John_Martin_(painter)) | [`25_La_Destruccion_de_Sodoma_y_Gomorra_John_Martin_1852.jpg`](./25_La_Destruccion_de_Sodoma_y_Gomorra_John_Martin_1852.jpg) |
+| 26 | **El jardín de las delicias** | Hieronymus Bosch, El Bosco (c. 1490–1500) | Museo Nacional del Prado, Madrid (P002823) | [Wikipedia](https://es.wikipedia.org/wiki/El_jard%C3%ADn_de_las_delicias) | [`26_El_Jardin_de_las_Delicias_El_Bosco_1505.jpg`](./26_El_Jardin_de_las_Delicias_El_Bosco_1505.jpg) |
+| 27 | **El pecado original y la expulsión del Paraíso** | Miguel Ángel Buonarroti (1509–1510) | Bóveda de la Capilla Sistina, Ciudad del Vaticano | [Wikipedia](https://es.wikipedia.org/wiki/B%C3%B3veda_de_la_Capilla_Sixtina) | [`41_El_Pecado_Original_y_la_Expulsion_Miguel_Angel_1510.jpg`](./41_El_Pecado_Original_y_la_Expulsion_Miguel_Angel_1510.jpg) |
 | 28 | **Lot y sus hijas** | Peter Paul Rubens (c. 1613–1614) | Staatliches Museum Schwerin, Alemania | [Wikipedia](https://es.wikipedia.org/wiki/Lot_(B%C3%ADblia)) | [`27_Lot_y_sus_Hijas_Peter_Paul_Rubens_1614.jpg`](./27_Lot_y_sus_Hijas_Peter_Paul_Rubens_1614.jpg) |
-| 29 | **Eliezer y Rebeca** | Nicolas Poussin (1648) | Musée du Louvre, París (INV 7270) | [Wikipedia](https://es.wikipedia.org/wiki/Nicolas_Poussin) | [`28_Eliezer_y_Rebeca_Nicolas_Poussin_1648.jpg`](./28_Eliezer_y_Rebeca_Nicolas_Poussin_1648.jpg) |
-| 30 | **Isaac bendice a Jacob** | José de Ribera (1637) | Museo Nacional del Prado, Madrid | [Wikipedia](https://es.wikipedia.org/wiki/Isaac_y_Jacob) | [`29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg`](./29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg) |
-| 31 | **El sueño de Jacob** | José de Ribera (1639) | Museo Nacional del Prado, Madrid | [Wikipedia](https://es.wikipedia.org/wiki/El_sue%C3%B1o_de_Jacob) | [`30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg`](./30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg) |
-| 32 | **El invierno, o El Diluvio** | Nicolas Poussin (1660–1664) | Musée du Louvre, París (INV 7306) | [Wikipedia](https://es.wikipedia.org/wiki/Las_cuatro_estaciones_(Poussin)) | [`31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg`](./31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg) |
-| 33 | **La embriaguez de Noé** | Giovanni Bellini (c. 1515) | Musée des Beaux-Arts, Besanzón, Francia | [Wikipedia](https://es.wikipedia.org/wiki/Giovanni_Bellini) | [`32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg`](./32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg) |
-| 34 | **El encuentro de Abraham y Melquisedec** | Peter Paul Rubens (1625) | National Gallery of Art, Washington | [Wikipedia](https://es.wikipedia.org/wiki/Melquisedec) | [`33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg`](./33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg) |
-| 35 | **La sinagoga de Dura Europos** | Dura Europos, Siria (244–245 d.C.) | Museo Nacional de Damasco, Siria | [Wikipedia](https://es.wikipedia.org/wiki/Sinagoga_de_Dura_Europos) | [`34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg`](./34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg) |
-| 36 | **José acusado por la mujer de Putifar** | Rembrandt van Rijn y taller (1655) | National Gallery of Art, Washington | [Wikipedia](https://es.wikipedia.org/wiki/Jos%C3%A9_y_la_esposa_de_Putifar) | [`35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg`](./35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg) |
-| 37 | **Jacob bendice a los hijos de José** | Rembrandt van Rijn (1656) | Gemäldegalerie Alte Meister, Kassel, Alemania | [Wikipedia](https://en.wikipedia.org/wiki/Jacob_Blessing_the_Sons_of_Joseph) | [`36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg`](./36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg) |
-| 38 | **Jacob y Raquel en el pozo** | François Lemoyne (1720) | Colección Motais de Narbonne, Francia | [Wikipedia](https://es.wikipedia.org/wiki/Raquel) | [`37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg`](./37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg) |
-| 39 | **José interpreta los sueños del faraón** | Jörg Breu el Joven (c. 1534–1547) | Metropolitan Museum of Art, Nueva York (89.15.20) | [Wikipedia](https://es.wikipedia.org/wiki/Jos%C3%A9_(patriarca)) | [`38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg`](./38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg) |
-| 40 | **Adán y Eva** | Lucas Cranach el Viejo (c. 1531) | Museo Soumaya, Ciudad de México | [Wikipedia](https://es.wikipedia.org/wiki/Museo_Soumaya) | [`39_Adan_y_Eva_Lucas_Cranach_Museo_Soumaya_1531.jpg`](./39_Adan_y_Eva_Lucas_Cranach_Museo_Soumaya_1531.jpg) |
-| 41 | **El Diluvio** | Cristóbal de Villalpando (c. 1684–1686) | Capilla del Ochavo, Catedral de Puebla, México | [Wikipedia](https://es.wikipedia.org/wiki/Crist%C3%B3bal_de_Villalpando) | [`40_El_Diluvio_Cristobal_de_Villalpando_1684.jpg`](./40_El_Diluvio_Cristobal_de_Villalpando_1684.jpg) |
-| 42 | **Las capillas del desierto: El Bagawat** | Necrópolis cristiana de El Bagawat, oasis de Jarga (c. 350-450) | Necrópolis de El Bagawat, oasis de Jarga, Egipto · facsímil en el Metropolitan Museum (30.4.141) | [Wikipedia](https://en.wikipedia.org/wiki/Bagawat) | [`42_Las_Capillas_de_El_Bagawat_Facsimil_de_la_Cupula_del_Exodo_s_IV.jpg`](./42_Las_Capillas_de_El_Bagawat_Facsimil_de_la_Cupula_del_Exodo_s_IV.jpg) |
+| 29 | **Eliezer y Rebeca** | Nicolas Poussin (1648) | Musée du Louvre, París (INV 7270; MR 2315) | [Wikipedia](https://es.wikipedia.org/wiki/Nicolas_Poussin) | [`28_Eliezer_y_Rebeca_Nicolas_Poussin_1648.jpg`](./28_Eliezer_y_Rebeca_Nicolas_Poussin_1648.jpg) |
+| 30 | **Isaac bendice a Jacob** | José de Ribera (1637) | Museo Nacional del Prado, Madrid (P001118) | [Wikipedia](https://es.wikipedia.org/wiki/Isaac_y_Jacob) | [`29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg`](./29_Isaac_Bendice_a_Jacob_Jose_de_Ribera_1637.jpg) |
+| 31 | **El sueño de Jacob** | José de Ribera (1639) | Museo Nacional del Prado, Madrid (P001117) | [Wikipedia](https://es.wikipedia.org/wiki/El_sue%C3%B1o_de_Jacob) | [`30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg`](./30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg) |
+| 32 | **El invierno, o El Diluvio** | Nicolas Poussin (1660–1664) | Musée du Louvre, París (INV 7306; MR 2336) | [Wikipedia](https://es.wikipedia.org/wiki/Las_cuatro_estaciones_(Poussin)) | [`31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg`](./31_El_Invierno_o_El_Diluvio_Nicolas_Poussin_1664.jpg) |
+| 33 | **La embriaguez de Noé** | Giovanni Bellini (c. 1515) | Musée des Beaux-Arts, Besanzón, Francia (896.1.13) | [Wikipedia](https://es.wikipedia.org/wiki/Giovanni_Bellini) | [`32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg`](./32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg) |
+| 34 | **El encuentro de Abraham y Melquisedec** | Peter Paul Rubens (c. 1626) | National Gallery of Art, Washington (1958.4.1) | [Wikipedia](https://es.wikipedia.org/wiki/Melquisedec) | [`33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg`](./33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg) |
+| 35 | **La sinagoga de Dura Europos** | Dura Europos, Siria (244–245 d.C.) | Museo Nacional de Damasco, Siria | [Wikipedia](https://es.wikipedia.org/wiki/Sinagoga_de_Dura_Europos) | [`34b_El_Sacrificio_de_Isaac_Panel_Dura_Europos_Siria_244.jpg`](./34b_El_Sacrificio_de_Isaac_Panel_Dura_Europos_Siria_244.jpg) |
+| 36 | **José acusado por la mujer de Putifar** | Taller de Rembrandt (1655) | National Gallery of Art, Washington (1937.1.79) | [Wikipedia](https://es.wikipedia.org/wiki/Jos%C3%A9_y_la_esposa_de_Putifar) | [`35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg`](./35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg) |
+| 37 | **Jacob bendice a los hijos de José** | Rembrandt van Rijn (1656) | Gemäldegalerie Alte Meister, Kassel, Alemania (GK 249) | [Wikipedia](https://en.wikipedia.org/wiki/Jacob_Blessing_the_Sons_of_Joseph) | [`36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg`](./36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg) |
+| 38 | **Jacob y Raquel en el pozo** | François Lemoyne (1720) | Colección Motais de Narbonne (particular), Francia | [Wikipedia](https://es.wikipedia.org/wiki/Raquel) | [`37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg`](./37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg) |
+| 39 | **José interpreta los sueños del faraón** | Atribuido a Jörg Breu el Joven (c. 1534–1547) | Metropolitan Museum of Art, Nueva York (89.15.20) | [Wikipedia](https://es.wikipedia.org/wiki/Jos%C3%A9_(patriarca)) | [`38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg`](./38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg) |
+| 40 | **Adán y Eva** | Lucas Cranach el Viejo (1520) | Museo Soumaya, Ciudad de México | [Wikipedia](https://es.wikipedia.org/wiki/Museo_Soumaya) | [`39_Adan_y_Eva_Lucas_Cranach_Museo_Soumaya_1531.jpg`](./39_Adan_y_Eva_Lucas_Cranach_Museo_Soumaya_1531.jpg) |
+| 41 | **El Diluvio** | Cristóbal de Villalpando (c. 1689) | Capilla del Ochavo, Catedral de Puebla, México | [Wikipedia](https://es.wikipedia.org/wiki/Crist%C3%B3bal_de_Villalpando) | [`40_El_Diluvio_Cristobal_de_Villalpando_1684.jpg`](./40_El_Diluvio_Cristobal_de_Villalpando_1684.jpg) |
+| 42 | **Las capillas del desierto: El Bagawat** | Necrópolis cristiana de El Bagawat, oasis de Jarga (c. 350-450) | Necrópolis de El Bagawat, oasis de Jarga, Egipto · facsímil al temple sobre papel de Charles K. Wilkinson, 52,1 × 70,5 cm, Metropolitan Museum (30.4.141) | [Wikipedia](https://en.wikipedia.org/wiki/Bagawat) | [`42_Las_Capillas_de_El_Bagawat_Facsimil_de_la_Cupula_del_Exodo_s_IV.jpg`](./42_Las_Capillas_de_El_Bagawat_Facsimil_de_la_Cupula_del_Exodo_s_IV.jpg) |
 | 43 | **El sacrificio de Isaac, en el suelo de una sinagoga** | Marianos y su hijo Hanina, sinagoga de Beit Alfa (c. 518-578) | Sinagoga de Beit Alfa, valle de Jezreel, Israel | [Wikipedia](https://es.wikipedia.org/wiki/Sinagoga_de_Beit_Alfa) | [`43_El_Sacrificio_de_Isaac_Mosaico_de_Beit_Alfa_s_VI.jpg`](./43_El_Sacrificio_de_Isaac_Mosaico_de_Beit_Alfa_s_VI.jpg) |
 | 44 | **El arca como un cofre: el mosaico de Misis** | Basílica de Mopsuestia, Cilicia (c. 400) | Museo Arqueológico de Adana, Turquía | [Wikipedia](https://en.wikipedia.org/wiki/Mopsuestia) | [`44_El_Arca_de_Noe_Mosaico_de_Misis_s_V.jpg`](./44_El_Arca_de_Noe_Mosaico_de_Misis_s_V.jpg) |
 | 45 | **José huye de la mujer de Putifar: Yusuf y Zulaija** | Kamāl ud-Dīn Behzad (1488) | Dar al-Kutub, Biblioteca Nacional de Egipto, El Cairo | [Wikipedia](https://es.wikipedia.org/wiki/Kamal_ud-Din_Behzad) | [`45_Yusuf_y_Zulaija_Behzad_Bustan_de_Saadi_1488.jpg`](./45_Yusuf_y_Zulaija_Behzad_Bustan_de_Saadi_1488.jpg) |
@@ -77,15 +77,15 @@ abre [`../index.html`](../index.html) y elige **Génesis** en el selector de lib
 
 #### Lo que hace que destaque
 
-El espacio infinitesimal entre los dedos de Dios y Adán representa el momento supremo del arte occidental: la transmisión de la chispa del ánima (alma espiritual e intelecto humano). Adán yace recostado pasivamente en una meseta terrenal desnuda, encarnando la materia inerte a la espera del soplo divino. Dios el Padre, caracterizado como un anciano majestuoso de barba plateada pero de musculatura sobrehumana, avanza envuelto en un gran manto carmesí impulsado por ángeles celestiales.
+Para los Museos Vaticanos, el punto focal del episodio es el contacto entre los dedos del Creador y los de Adán, a través del cual se transmite el soplo de la vida. Dios, sostenido por ángeles en vuelo y envuelto en un manto, se tiende hacia Adán, representado como un atleta en reposo cuya belleza parece confirmar el versículo según el cual el hombre fue creado a imagen y semejanza de Dios. La escena pertenece al grupo central de las nueve historias del Génesis de la bóveda, dispuestas de tres en tres —origen del universo, del hombre y del mal—; en este segundo grupo el hombre y la mujer aparecen desnudos como símbolo de la inocencia.
 
 #### Contexto histórico
 
-Un descubrimiento neuroanatómico contemporáneo destaca que el manto rojo divino posee la forma exacta de una sección sagital del encéfalo humano (mostrando el lóbulo frontal, el quiasma óptico y la arteria basilar). La figura femenina bajo el brazo izquierdo de Dios ha sido identificada como Eva esperando en la mente divina antes de su creación o como María con el Niño Jesús. Los dos dedos jamás se tocan, simbolizando la distancia insuperable entre el Creador trascendente y la criatura mortal.
+Julio II decidió rehacer la decoración de la bóveda probablemente por sus problemas estructurales: en mayo de 1504 se abrió en ella una larga grieta. El 8 de mayo de 1508 Miguel Ángel firmó un contrato que preveía doce apóstoles en las pechinas; como juzgó el proyecto «cosa povera», el papa le dio un nuevo encargo que le dejaba idear el programa, aunque es probable que se valiera de teólogos de la corte. En agosto de 1510 estaba terminada la primera mitad, de la entrada a la Creación de Eva, así que la Creación de Adán pertenece a la segunda fase; el conjunto se acabó antes del 31 de octubre de 1512, pues el 1 de noviembre el papa celebró misa en la capilla. En 1990 F. L. Meshberger publicó en JAMA una interpretación de la escena basada en la neuroanatomía.
 
 #### Sobre el artista
 
-Miguel Ángel Buonarroti (1475–1564) se consideraba a sí mismo primordialmente un escultor. Aceptó a regañadientes el encargo de pintar el techo de la Capilla Sixtina hecho por el Papa Julio II en 1508. Trabajando suspendido en andamios de madera que él mismo diseñó, pintó más de 500 metros cuadrados durante cuatro años de agotamiento físico continuo, transformando la anatomía del cuerpo humano en el lenguaje supremo de la teología y la belleza.
+Miguel Ángel Buonarroti nació el 6 de marzo de 1475 en Caprese y se formó probablemente como escultor en el jardín mediceo de San Marcos; hacia 1501, con veinticinco años, era ya considerado el primer escultor de su tiempo. Según Antonio Paolucci, entonces director de los Museos Vaticanos, aceptó la bóveda con reticencia, por su inexperiencia en el fresco y por el enojo con el papa que había suspendido su monumento funerario. Pintó bajo un andamio que él mismo construyó y, en cuatro años, cubrió unos 1.010 metros cuadrados. Murió en Roma el 18 de febrero de 1564 y fue sepultado en Santa Croce de Florencia.
 
 ---
 
@@ -101,15 +101,15 @@ Miguel Ángel Buonarroti (1475–1564) se consideraba a sí mismo primordialment
 
 #### Lo que hace que destaque
 
-Masaccio ejecutó con este fresco la ruptura definitiva con el estilo gótico internacional y el nacimiento del realismo psicológico renacentista. Tras probar el fruto prohibido, Adán y Eva son arrojados violentamente fuera del Edén por un ángel vindicativo vestido de rojo con espada desenvainada. Adán se cubre el rostro con ambas manos en un gesto de vergüenza ontológica; Eva se cubre el seno y el sexo imitando la pose clásica de la Venus Pudica mientras echa la cabeza atrás en un desgarrador alarido de dolor físico.
+La Expulsión y la Tentación de Masolino, pintadas en los dos pilares de la entrada de la capilla, sirven de prólogo a las historias de san Pedro. Según Bruce Cole, las figuras de Masolino son delicadas y elegantes, mientras que las de Masaccio son dramáticas y volumétricas: Adán y Eva no están construidos con línea, sino con zonas muy diferenciadas de luz y sombra que les dan un fuerte relieve, y parecen existir en el mundo del espectador, iluminados por luz natural. Sus gestos transmiten la angustia de la expulsión y añaden una dimensión psicológica al realismo físico; la pintura está aplicada en trazos amplios que construyen la forma. Angelo Tartuferi contrapone los desnudos de Masolino, que buscan recuperar lo clásico, a los de Masaccio, al servicio de la concentración dramática y narrativa.
 
 #### Contexto histórico
 
-Durante la Contrarreforma en el siglo XVII, por orden del Gran Duque Cosme III de Médici, se añadieron hojas de higuera sobre los genitales de Adán y Eva por considerarlos impúdicos. Estas hojas taparon la obra durante más de tres siglos hasta la restauración magistral de 1988, que devolvió la desnudez trágica original de Masaccio y la luz que coincide exactamente con la ventana real de la capilla.
+La cronología del ciclo sigue discutida; para Tartuferi, lo más probable es que Masaccio y Masolino empezaran a la vez hacia 1424 y trabajaran en paralelo hasta finales del verano de 1425, cuando Masolino partió a Hungría. Britannica fecha los frescos de Masaccio c. 1423–1427. Los estudiosos suelen vincular la Expulsión con una tabla perdida que, según Vasari, Masaccio pintó al volver de Pisa en 1426, y Joannides (1993) propuso como preparatorio un dibujo de Adán y Eva de los Uffizi (inv. 30F). Filippino Lippi completó el registro inferior a comienzos de la década de 1480, y una reforma barroca de 1746–1748 destruyó la zona alta. La restauración —estudios desde 1981, limpieza concluida en 1987–1988 según Tartuferi; 1985–1989 según Britannica— eliminó siglos de suciedad y devolvió los colores originales.
 
 #### Sobre el artista
 
-Masaccio (Tommaso di Ser Giovanni, 1401–1428) falleció trágicamente a los 26 años en Roma. A pesar de su corta vida, su dominio pionero de la perspectiva matemática y del volumen por claroscuro convirtieron a la Capilla Brancacci en la escuela donde aprendieron Leonardo da Vinci, Rafael y Miguel Ángel.
+Tommaso di ser Giovanni di Mone, llamado Masaccio, nació el 21 de diciembre de 1401 en Castel San Giovanni, hoy San Giovanni Valdarno. Nada se sabe de él hasta el 7 de enero de 1422, cuando ingresó en el Arte de Médicos y Especieros de Florencia, el gremio de los pintores. Partió a Roma en la primavera de 1428 y murió allí; Britannica sitúa la muerte en otoño de 1428, y el catastro florentino solo permite fijarla antes del 18 de noviembre de 1429. Su impacto mayor llegó unos setenta y cinco años después, cuando Leonardo, Miguel Ángel y Rafael revalorizaron sus figuras monumentales; algunos de los primeros dibujos de Miguel Ángel son estudios de figuras del Tributo.
 
 ---
 
@@ -118,19 +118,19 @@ Masaccio (Tommaso di Ser Giovanni, 1401–1428) falleció trágicamente a los 26
 ![Caín y Abel](./03_Cain_y_Abel_Tiziano_1544.jpg)
 *Caín y Abel — Tiziano (1544)*
 
-**Ficha técnica:** Óleo sobre lienzo | 298 cm × 282 cm | Sacristía de Santa Maria della Salute, Venecia, Italia
+**Ficha técnica:** Óleo sobre lienzo | 292 cm × 280 cm | Sacristía de Santa Maria della Salute, Venecia, Italia
 
 #### Lo que hace que destaque
 
-En este monumental lienzo diseñado para ser contemplado desde abajo en el techo de la iglesia de Santo Spirito in Isola, Tiziano captura la furia kinética del primer fratricidio de la historia. Caín pisa brutalmente la pierna de su hermano caído Abel mientras alza un pesado garrote para propinar el golpe fatal, impulsado por el rencor acumulado al ver rechazadas sus ofrendas agrícolas frente al favor divino otorgado al ganado de Abel.
+Caín matando a Abel es una de las tres grandes telas que formaban el techo de la iglesia de Santo Spirito in Isola, en Venecia, donde estaba rodeada por ocho tondos con evangelistas y doctores de la Iglesia. Es, por tanto, una pintura de techo, concebida para verse desde abajo, y la Fundación Zeri la cataloga dentro de la serie de episodios del Antiguo Testamento pintados por Tiziano para ese techo. La disposición actual de las telas conserva la que reconstruyó el historiador J. Schulz para el techo original. Una antigua atribución a Andrea Schiavone, propuesta por Froehlich-Bum en 1913, ha sido rechazada de forma unánime por la crítica.
 
 #### Contexto histórico
 
-La escena está envuelta en una perspectiva teatral conocida como "di sotto in sù" (vista de abajo hacia arriba en escorzo extremo). Las figuras parecen desplomarse físicamente sobre la cabeza del espectador, transmitiendo el colapso del orden moral cósmico. La paleta cromática utiliza contrastes dramáticos de sombras nocturnas y humo rojizo que emana del altar del sacrificio.
+El catálogo oficial italiano fecha la tela hacia 1542–1544, y la Fundación Zeri hacia 1543–1544. Charles Hope discute esa fecha: unos documentos sobre una disputa entre Tiziano y los frailes de Santo Spirito en el invierno de 1552–1553 se refieren probablemente a las pinturas del techo, aunque la bibliografía suele situarlas una década antes. Para la misma iglesia Tiziano pintó el Descenso del Espíritu Santo, instalado en 1541 y dañado por la humedad; en 1544 se colocó otro, hoy también en la Salute. Suprimida Santo Spirito, un decreto del Senado ordenó llevar todo su mobiliario a la Salute, conforme a un breve de Inocencio X; la tela salió de la iglesia en 1656 y hoy está en la sacristía.
 
 #### Sobre el artista
 
-Tiziano Vecellio (c. 1488–1576) fue el líder indiscutible del Renacimiento Veneciano. Su longeva carrera de más de siete décadas lo llevó a ser el pintor personal del Emperador Carlos V y de Felipe II. Innovó aplicando óleo sobre tela con pinceladas gruesas y enérgicas aplicadas a veces directamente con los dedos.
+Tiziano, primogénito de Gregorio Vecellio, nació en Pieve di Cadore probablemente hacia 1489; en 1508 ya era pintor independiente y recibió el encargo de pintar al fresco la fachada lateral del Fondaco dei Tedeschi. En 1541 Carlos V le concedió una pensión anual de cien escudos, y en 1548 el pintor viajó a la corte imperial de Augsburgo, donde pintó el retrato ecuestre del emperador (Prado). Desde entonces sus comitentes más importantes fueron los Habsburgo, sobre todo Carlos V y su hijo Felipe. Murió en Venecia el 27 de agosto de 1576, durante una epidemia de peste, y fue enterrado en los Frari. Hope rechaza la idea de un «estilo tardío»: esas obras serían, sencillamente, obras sin terminar.
 
 ---
 
@@ -143,15 +143,15 @@ Tiziano Vecellio (c. 1488–1576) fue el líder indiscutible del Renacimiento Ve
 
 #### Lo que hace que destaque
 
-Miguel Ángel abordó el cataclismo del Diluvio desde la vivencia dramática de las víctimas terrenales antes que desde la perspectiva triunfal del Arca. La embarcación de Noé aparece relegada al plano posterior, agitada por las olas como una nave solitaria, mientras el centro de atención se divide en cuatro grupos desgarradores de seres humanos que buscan refugio desesperado.
+Según los Museos Vaticanos, Miguel Ángel representa el Diluvio con extremo dramatismo: en primer plano, una multitud se dirige a una altura, encorvada bajo el peso de sus enseres o de sus familiares, creyendo haber escapado al castigo divino. En el lado opuesto, otros se apiñan en un islote y tienden las manos para socorrer a quienes siguen en peligro; en el centro, una barca está a punto de hundirse. El Arca, donde se salvarán Noé, su familia y las parejas de animales, queda relegada al fondo. Es una de las tres últimas historias de la bóveda, que muestran la caída de la humanidad y su renacimiento con Noé.
 
 #### Contexto histórico
 
-Fue una de las primeras composiciones que ejecutó en la Sixtina. Al no estar habituado a la técnica del fresco a gran escala, la mezcla de cal y arena retuvo humedad y apareció moho sobre la pintura fresca. Desesperado, el artista acudió al Papa exclamando que él no era pintor, hasta que Giuliano da Sangallo le enseñó la proporción exacta de la pasta fresca para salvar el fresco.
+El Diluvio fue de las primeras escenas pintadas: Miguel Ángel empezó a pintar la bóveda en enero de 1509, y según Antonio Paolucci, entonces director de los Museos Vaticanos, arrancó por el final de la historia, la Embriaguez de Noé. Al seguir con el Diluvio tuvo problemas porque aún no dominaba la técnica y tuvo que rehacerlo; Paolucci añade que debió de costarle recurrir al consejo de colegas florentinos como Bugiardini y Granacci. Pensó al principio en hacerse ayudar por ellos, pero ninguno subió al andamio: solo le asistieron mozos para el trabajo manual. La primera mitad de la bóveda, que incluye esta escena, estaba terminada en agosto de 1510.
 
 #### Sobre el artista
 
-Este fresco retrata la ambivalencia de la condición humana en situaciones de colapso extremo: la crueldad desalmada de quienes pelean a puñetazos por abordar una barca volcada coexiste con gestos de sublime compasión, como el de un padre abatido que arriesga su vida cargando sobre los hombros el cuerpo inerte de su hijo ahogado.
+Miguel Ángel Buonarroti (Caprese, 6 de marzo de 1475 – Roma, 18 de febrero de 1564) se formó con toda probabilidad como escultor en el jardín de San Marcos de Lorenzo de Médici, guiado por Bertoldo di Giovanni. La Piedad del Vaticano es la única obra que firmó. En abril de 1506, tras chocar con Julio II por el proyecto de su tumba, huyó a Florencia; reconciliado con el papa, volvió a Roma en marzo de 1508 para pintar la Sixtina. Más tarde pintó el Juicio Final (1536–1541) y, desde enero de 1547, fue el primer arquitecto de la fábrica de San Pedro.
 
 ---
 
@@ -160,19 +160,19 @@ Este fresco retrata la ambivalencia de la condición humana en situaciones de co
 ![La Torre de Babel](./05_La_Torre_de_Babel_Pieter_Bruegel_1563.jpg)
 *La Torre de Babel — Pieter Bruegel el Viejo (1563)*
 
-**Ficha técnica:** Óleo sobre tabla | 114 cm × 155 cm | Kunsthistorisches Museum, Viena, Austria
+**Ficha técnica:** Óleo sobre tabla de roble | 114,4 cm × 155,5 cm | Kunsthistorisches Museum, Viena, Austria (GG 1026)
 
 #### Lo que hace que destaque
 
-Bruegel el Viejo transformó el pasaje de Génesis 11 en una alegoría monumental de la soberbia humana (hybris) y la miopía técnica. Inspirado en su viaje a Italia en 1553 donde contempló las ruinas del Coliseo Romano, concibió la Torre de Babel no como una estela oriental fantasiosa, sino como una megaestructura cilíndrica de ingeniería romana en cuyo interior se alojan habitaciones y fortalezas.
+Para el Kunsthistorisches Museum, esta composición se convirtió en la representación clásica de la Torre, la más famosa, copiada y variada de todas. La ciudad portuaria, diminuta y de aspecto flamenco, da la escala del edificio, y Bruegel describe con minucia y curiosidad enciclopédica una infinidad de procesos constructivos y artesanales. En la envoltura de piedra mezcla elementos de arquitectura antigua y románica. La torre de Viena está levantada sobre una enorme roca natural transformada por la mano humana y se ve desde arriba. A la izquierda hay un grupo de figuras que forma parte de la acción y que el museo propone, con cautela, identificar con el rey Nemrod y su séquito.
 
 #### Contexto histórico
 
-La torre es una paradoja constructiva irrealizable: el lado izquierdo está escorado e inclinado debido a que los arcos de los niveles inferiores ya colapsan bajo el peso aplastante, mientras en la cima los albañiles continúan levantando pisos superiores. En la esquina inferior izquierda, el rey Nimrod (el tirano impulsor de la torre) camina escoltado por guardias mientras los canteros se postran a sus pies.
+La tabla está firmada y fechada en un sillar de primer plano: «BRVEGEL. FE. M.CCCCC.LXIII». Hacia 1566 era del comerciante antuerpiense Nicolaas Jongelinck; pasó a las colecciones de la ciudad de Amberes, luego a Rodolfo II y más tarde a la colección del archiduque Leopoldo Guillermo. Jongelinck llegó a tener dieciséis obras de Bruegel. Existe una segunda Torre de Babel, sin fecha, en el Museo Boijmans Van Beuningen de Róterdam (roble, 59,9 × 74,6 cm): la mayoría de los investigadores la cree posterior a la de Viena, y las radiografías muestran que al principio se le parecía. En 2018 ambas se expusieron juntas en Viena.
 
 #### Sobre el artista
 
-Pieter Bruegel el Viejo (c. 1525–1569) fue el maestro supremo de la pintura flamenca del siglo XVI. Conocido por sus vívidas escenas de festejos campesinos y paisajes minuciosos, dominó la técnica del detalle de la escuela de los Países Bajos y fue un agudo observador de la naturaleza moral del ser humano.
+Pieter Bruegel el Viejo nació hacia 1525, en Breda o sus alrededores según el Met; el museo de Viena deja abierta la opción de Amberes y un arco de 1525–1530. Se hizo maestro del gremio de San Lucas de Amberes entre 1551 y 1552 y, tras un viaje a Italia, empezó a trabajar con el editor Hieronymus Cock. Entre 1555 y 1563 hizo más de cuarenta diseños para grabados, muchos a la manera de El Bosco. Su apodo de «Bruegel el campesino» dio lugar a la falsa idea de un origen campesino: sus clientes fueron eruditos, comerciantes y coleccionistas, y trató con humanistas como Ortelius y Plantin. Murió en Bruselas en 1569.
 
 ---
 
@@ -181,19 +181,19 @@ Pieter Bruegel el Viejo (c. 1525–1569) fue el maestro supremo de la pintura fl
 ![Caín](./06_Cain_Fernand_Cormon_1880.jpg)
 *Caín — Fernand Cormon (1880)*
 
-**Ficha técnica:** Óleo sobre lienzo monumental (3.84 m × 7.00 m) | Musée d’Orsay, París, Francia
+**Ficha técnica:** Óleo sobre lienzo | 400 cm × 700 cm | Musée d’Orsay, París, Francia (RF 280)
 
 #### Lo que hace que destaque
 
-Exhibido con un éxito atronador en el Salón de París de 1880, Cormon reinterpretó el exilio bíblico de Caín a través de los descubrimientos paleontológicos y antropológicos del siglo XIX. Caín no es representado como un villano teatral de túnicas convencionales, sino como un anciano patriarca tribal de la Edad de Piedra arrastrando una existencia errante.
+El cuadro narra el destino de Caín, condenado a huir para siempre tras matar a Abel. Caín, con la mirada extraviada, guía con esfuerzo a su tribu; sus hijos cargan una parihuela de madera con una mujer espantada y niños dormidos, y transportan trozos de carne ensangrentada; los acompañan cazadores, uno lleva en brazos a una joven y unos perros cierran la marcha. Según el museo, Cormon alargó las sombras como si la luz de la verdad persiguiera a los culpables por la llanura desnuda, y usó tonos terrosos con una pincelada vigorosa, «maçonnée» como la de Courbet. Además de episodio bíblico, la obra es una reconstrucción antropológica de la prehistoria, pintada cuando se descubrían las pinturas rupestres paleolíticas.
 
 #### Contexto histórico
 
-Bajo un sol abrasador de mediodía en un desierto calcinado, Caín avanza a la cabeza con la mirada perdida en el vacío y los puños apretados, acosado por el peso remordedor del primer homicidio. Sus hijos demacrados y desnudos cargan a hombros camillas de madera con sus esposas e hijos pequeños, junto a trozos ensangrentados de carne de caza. Inspiró versos memorables de Victor Hugo en su poema La Conscience.
+Cormon quiso exactitud anatómica y puso a posar un modelo vivo para cada figura. El cuadro, firmado y fechado abajo a la izquierda «F. Cormon. 80», se expuso en el Salón de 1880 (n.º 877) y el Estado lo compró allí mismo al artista. Ese mismo año se mostró en Gante y en 1889 en la Exposición Universal de París. Estuvo en el Museo del Luxemburgo de 1881 a 1926, fue depósito del Estado hasta 1980 y ese año pasó al Louvre y quedó asignado al Musée d’Orsay. Lleva como subtítulo los primeros versos de «La Conscience», de Victor Hugo, publicado en La Légende des siècles (1859).
 
 #### Sobre el artista
 
-Fernand Cormon (1845–1924) fue una de las figuras señeras de la pintura académica e histórica en Francia. Su famoso atelier en París fue el crisol donde se formaron jóvenes rebeldes del arte vanguardista, entre ellos Vincent van Gogh, Henri de Toulouse-Lautrec y Émile Bernard.
+Fernand Cormon nació en París en 1845 y murió en la misma ciudad en 1924. Su taller era muy apreciado: animaba a sus alumnos a experimentar, pero quería que desarrollaran el estilo académico de la École des Beaux-Arts. Allí estudiaron Henri de Toulouse-Lautrec y Émile Bernard, al que Cormon expulsó en la primavera de 1886 por pintar de colores vivos la cortina que había detrás de los modelos. Vincent van Gogh frecuentó ese «atelier libre» desde marzo hasta principios del verano de 1886; Toulouse-Lautrec, Bernard y Louis Anquetin formaban un trío rebelde contra los principios académicos del maestro.
 
 ---
 
@@ -202,19 +202,19 @@ Fernand Cormon (1845–1924) fue una de las figuras señeras de la pintura acad�
 ![Elohim creando a Adán](./07_Elohim_Creando_a_Adan_William_Blake_1795.jpg)
 *Elohim creando a Adán — William Blake (1795)*
 
-**Ficha técnica:** Acuarela y estampa a color | 43 cm × 53 cm | Tate Britain, Londres, Reino Unido
+**Ficha técnica:** Estampa a color terminada con tinta y acuarela sobre papel | 43,1 cm × 53,6 cm | Tate Britain, Londres, Reino Unido (N05055)
 
 #### Lo que hace que destaque
 
-William Blake invierte drásticamente la visión optimista renacentista de la creación del hombre. Fiel a su propia mitología poético-espiritual, para Blake el acto creativo de Elohim (el demiurgo de la materia física al que denominaba Urizen) no representa un regalo benigno de vida, sino la dolorosa prisión del espíritu inmortal dentro del cuerpo mortal de carne y huesos.
+Elohim es uno de los nombres hebreos de Dios; según el catálogo de la Tate, representa a Dios en su aspecto de Justicia. La obra ilustra Génesis 2:7: Adán brota de la tierra, un trozo de la cual sostiene Elohim con la mano izquierda. Para Blake, el Dios del Antiguo Testamento era un dios falso y la Caída no ocurrió en el Edén, sino en este momento de la creación, cuando el hombre fue arrancado del ámbito espiritual y hecho materia. Según Martin Butlin, el gusano que se enrosca en Adán, emblema de la mortalidad, simboliza su esclavitud al mundo material, y el misterio de la creación es paralelo al relato de Urizen (1794). Collins Baker propuso que la figura de Elohim deriva de un grabado del Escirón de la Torre de los Vientos.
 
 #### Contexto histórico
 
-Elohim vuela sobre la vasta extensión de la materia primordial con alas de murciélago sombrías y rostro desencajado por el dolor cósmico. Moldea el cuerpo de Adán del barro oscuro mientras Adán yace de espaldas en agonía existencial. Alrededor de la pierna derecha del recién creado Adán ya se enrosca la serpiente del conocimiento y la caída, simbolizando que el sufrimiento quedó sellado desde el nacimiento.
+La estampa está firmada «1795 WB inv» e inscrita «Elohim creating Adam». Figura en la cuenta de Blake con su mecenas Thomas Butts del 3 de marzo de 1806 como «God Creating Adam», entregada al parecer el 7 de septiembre de 1805; por su factura, Butlin la cree impresa en 1804–1805, aunque el diseño es de 1795. Es la única impresión conocida, y forma parte de las doce grandes estampas a color que Blake ofreció completas a Dawson Turner en 1818. En el cuaderno de notas de Blake hay un boceto a lápiz de la composición. Pasó de los Butts a W. Graham Robertson, que la compró en 1906 y la donó a la Tate en 1939.
 
 #### Sobre el artista
 
-William Blake (1757–1827) fue un poeta, pintor, visionario y grabador inglés. Ignorado por sus contemporáneos debido a que afirmaba conversar diariamente con ángeles y profetas, Blake creó una de las obras poéticas y visuales más radicalmente independientes de la historia del arte, repudiando el racionalismo ilustrado.
+William Blake nació el 28 de noviembre de 1757 en Londres, sobre la calcetería de su padre en Broad Street, y murió en Londres el 12 de agosto de 1827. Fue grabador, pintor, poeta y visionario, autor de Songs of Innocence (1789) y Songs of Experience (1794) y de difíciles «profecías». Las visiones eran para él algo corriente: según su primer biógrafo, Alexander Gilchrist, de niño vio un árbol lleno de ángeles. En vida fue en general ignorado o descartado, injustamente, como loco; a comienzos del siglo XXI se le consideraba el primero y más original de los poetas románticos.
 
 ---
 
@@ -223,61 +223,61 @@ William Blake (1757–1827) fue un poeta, pintor, visionario y grabador inglés.
 ![Sombra y oscuridad - la tarde del diluvio](./08_Sombra_y_Oscuridad_el_Diluvio_JMW_Turner_1843.jpg)
 *Sombra y oscuridad: La tarde del diluvio — J.M.W. Turner (1843)*
 
-**Ficha técnica:** Óleo sobre lienzo | 78.5 cm × 78.5 cm | Tate Britain, Londres, Reino Unido
+**Ficha técnica:** Óleo sobre lienzo | 78,7 cm × 78,1 cm | Tate Britain, Londres, Reino Unido (N00531)
 
 #### Lo que hace que destaque
 
-Turner disuelve el paisaje tradicional en un vórtice atmosférico de lluvia torrencial, viento helado y penumbra absoluta. En el centro exacto de la composición, diminuta e impenetrable, flota el Arca de Noé como la única chispa de salvación en medio del juicio divino. Una fina procesión de sombras de animales avanza hacia el fondo perdiéndose en el horizonte de la tormenta.
+Es la pareja de Light and Colour (Goethe’s Theory) – The Morning after the Deluge – Moses Writing the Book of Genesis. En ambos cuadros, Turner contrapone colores fríos y cálidos y sus asociaciones emocionales, tal como las describe Goethe en su Teoría de los colores (Farbenlehre). Según la Tate, el Diluvio le sirve de vehículo para esas ideas y le permite volver al sublime histórico de sus primeros cuadros de exposición. Pintados y enmarcados originalmente como octógonos, los dos lienzos son, para el museo, de las últimas y más inspiradas expresiones del vórtice natural en Turner, y la alusión a Goethe añade un barniz de ciencia reciente a su preocupación de siempre por las fuerzas elementales.
 
 #### Contexto histórico
 
-Turner contrapuso esta obra con su pareja díptica (Luz y Color: La mañana después del Diluvio), basando su tratamiento de la paleta en la Teoría de los Colores de Goethe, asociando los tonos oscuros a la desolación. Cuando fue expuesto en la Royal Academy en 1843, el crítico John Ruskin lo defendió apasionadamente declarando que Turner era el único artista que comprendía la verdadera majestad impetuosa de la naturaleza.
+Se expuso en la Royal Academy en 1843 (n.º 363) con unos versos de su poema manuscrito «Fallacies of Hope», que hablan del diluvio que se cierra, del «armazón gigante» que flota, de los pájaros que abandonan chillando sus refugios y de las bestias que vadean hacia el arca. Según Butlin y Joll, esos versos resuenan con Walks in a Forest de Thomas Gisborne y con Prometheus Unbound de Shelley. Casi con seguridad existe una primera versión de la composición (n.º 443 de su catálogo). El cuadro entró en la colección nacional con el legado Turner en 1856, catalogado como «Eve of the Deluge», y pasó a la Tate Gallery en 1905.
 
 #### Sobre el artista
 
-J.M.W. Turner (1775–1851), el "Pintor de la Luz", fue la figura dominante del paisajismo británico. Se dice que en una ocasión se hizo atar al mástil de un barco en medio de una tempestad en el mar del Norte durante cuatro horas para experimentar personalmente la furia de los elementos antes de pintarla.
+Joseph Mallord William Turner nació en Londres el 23 de abril de 1775 y murió en Londres el 19 de diciembre de 1851. Britannica lo define como un paisajista romántico inglés cuyos estudios de la luz, el color y la atmósfera no tuvieron igual. Su obra temprana es topográfica y de técnica tradicional. En 1799, a la edad mínima permitida, 24 años, fue elegido asociado de la Royal Academy, y en 1802 académico de pleno derecho, dignidad que celebró con una serie de grandes cuadros en los que emulaba a los maestros antiguos. También estudió a los maestros antiguos en el Louvre.
 
 ---
 
-### 9. La confusión de las lenguas — Gustave Doré (1865)
+### 9. La confusión de las lenguas — Gustave Doré (1866)
 
-![La confusión de las lenguas](./09_La_Confusion_de_las_Lenguas_Gustave_Dore_1865.jpg)
-*La confusión de las lenguas — Gustave Doré (1865)*
+![La confusión de las lenguas](./09_La_Confusion_de_las_Lenguas_Gustave_Dore_Wikipedia_Master.jpg)
+*La confusión de las lenguas — grabado según Gustave Doré (1866), en la Biblia de Varsovia de 1873, digitalizada por la Biblioteca Nacional de Polonia*
 
-**Ficha técnica:** Grabado Xilográfico | Biblioteca Nacional de Francia, París, Francia
+**Ficha técnica:** Grabado en madera según dibujo de Gustave Doré (1866), en la Biblia de Varsovia (M. Glücksberg, 1873) | Biblioteca Nacional de Polonia, Varsovia
 
 #### Lo que hace que destaque
 
-Gustave Doré esculpió en la madera de este grabado una de las imágenes más sobrecogedoras e influyentes de la literatura ilustrada mundial. Doré retrata el momento preciso en que la voz divina quiebra la unidad del idioma humano en las laderas de Babel. La monumental estructura de piedra se eleva con arcos gigantescos hasta perderse en el torbellino de nubes negras en la cumbre.
+La lámina ilustra Génesis 11:1-9, el pasaje en que Dios confunde la lengua de los constructores y los dispersa; la BnF la presenta con el título «La tour de Babel». Según la BnF, Doré dio lo mejor de sí en las visiones épicas y las escenas de teatralidad grandilocuente del Antiguo Testamento, con efectos de multitud, paisajes grandiosos y poderosos contrastes de claroscuro. La imagen no la talló él: su fama descansó en las ilustraciones de libros grabadas en madera, para las que empleó a más de cuarenta grabadores. Doré entregaba el dibujo y los grabadores profesionales lo trasladaban al taco.
 
 #### Contexto histórico
 
-En el plano inferior, la multitud estalla en un pánico caótico: familias enteras se abrazan sin comprender las palabras que salen de sus propias bocas, constructores abandonan sus herramientas y algunos caen despeñados desde las cornisas. Sus 241 grabados para la Biblia moldearon la imaginación religiosa e inspiraron directamente la escenografía de las grandes producciones del cine bíblico de Hollywood.
+La lámina pertenece a La Sainte Bible selon la Vulgate, publicada por Alfred Mame en Tours en 1866 en dos volúmenes in-folio de gran lujo, destinados a una clientela burguesa. Según la BnF, Doré hizo 312 dibujos, de los que se grabaron 294 y se usaron 265; otra página del mismo dossier da 306 grabados y 228 utilizados. La obra le dio renombre fuera de Francia y se reeditó en muchas ciudades europeas y en Estados Unidos. Sus imágenes sirvieron de apoyo a la predicación de pastores ingleses, se proyectaron en dioramas y, según la BnF, algunas inspiraron los péplums bíblicos del cine estadounidense de los años cincuenta.
 
 #### Sobre el artista
 
-Gustave Doré (1832–1883) fue un prodigioso dibujante, grabador y pintor francés. Niño prodigio que publicó sus primeras caricaturas a los 15 años, llegó a ilustrar las obras cumbres de la literatura universal: La Divina Comedia de Dante, El Quijote de Cervantes, El Paraíso Perdido de Milton y los Cuentos de Perrault.
+Gustave Doré nació en Estrasburgo el 6 de enero de 1832 y murió en París el 23 de enero de 1883. En 1847 se fue a París, y de 1848 a 1851 publicó caricaturas litográficas semanales en el Journal pour rire. Produjo más de noventa libros ilustrados; entre los mejores, Britannica destaca las obras de Rabelais (1854), los Contes drolatiques de Balzac (1855), el Infierno de Dante (1861) y la gran Biblia en folio (1866). También pintó grandes composiciones religiosas e históricas y tuvo cierto éxito como escultor.
 
 ---
 
-### 10. El Diluvio Universal — Jan van Scorel (c. 1530)
+### 10. El Diluvio Universal — Círculo de Jan van Scorel (c. 1530)
 
 ![El Diluvio Universal](./10_El_Diluvio_Jan_van_Scorel_1530.jpg)
 *El Diluvio Universal — Jan van Scorel (c. 1530)*
 
-**Ficha técnica:** Óleo sobre tabla | 109 cm × 178 cm | Museo Nacional del Prado, Madrid, España
+**Ficha técnica:** Óleo sobre tabla | 109 × 178 cm | Museo Nacional del Prado, Madrid (P001515)
 
 #### Lo que hace que destaque
 
-Obra cumbre del Manierismo nórdico. Jan van Scorel sintetiza la musculatura monumental inspirada en las esculturas romanas y Miguel Ángel con un sobrecogedor paisaje nocturno holandés. En el primer plano, dramáticamente iluminado por la luz lunar, una multitud aterrorizada huye descalza del avance implacable del agua cargando ancianos y niños en la penumbra.
+El Prado no cataloga la tabla como obra autógrafa de Van Scorel, sino del «Círculo de Jan van Scorel», fechada hacia 1530. Según la ficha del museo, la escena conjuga figuras derivadas de Miguel Ángel con el paisaje nocturno característico de la tradición nórdica. En el primer plano, fuertemente iluminado, la multitud huye del avance imparable de las aguas; personas y animales forman una semicircunferencia que enmarca un fondo sumido en la oscuridad, donde navega el arca de Noé con hombres y mujeres aferrados a ella en busca de salvación. El museo subraya que el contraste lumínico entre el primer término y el último condensa el dramatismo de la escena.
 
 #### Contexto histórico
 
-Integrada en la Colección Real Española desde al menos 1593, figurando en el inventario histórico del Real Sitio de San Lorenzo de El Escorial antes de incorporarse al Museo del Prado (Inv. P001515). En la lejanía oscura se vislumbra el Arca de Noé resguardada bajo un rayo celaje.
+La tabla procede de la Colección Real: figuraba ya en 1593 entre los bienes de Felipe II en el Real Monasterio de San Lorenzo de El Escorial. Los inventarios posteriores la sitúan en la segunda pieza del taller del rey del mismo monasterio en 1794 (n.º 69) y, en 1839, en el claustro de las enfermerías de los monjes. Ingresó en el Prado en 1839 con el número de catálogo P001515, y hoy no está expuesta. El museo la relaciona con Van Scorel por ser este, en palabras de la ficha, el introductor del manierismo romano en los Países Bajos y maestro de Antonio Moro.
 
 #### Sobre el artista
 
-Jan van Scorel (1495–1562), importante pintor y clérigo holandés que introdujo las formas del Alto Renacimiento italiano en el norte de Europa tras su estancia en Roma como conservador supremo de las colecciones de arte vaticanas del Papa Adriano VI.
+Jan van Scorel nació en Schoorl en agosto de 1495 y murió en Utrecht el 6 de diciembre de 1562. Humanista, arquitecto, ingeniero y pintor, llevó a Holanda el estilo del Renacimiento italiano, como su maestro Jan Gossaert hizo en Bruselas. En 1519 viajó a Alemania, donde visitó a Durero en Núremberg, y siguió hacia Venecia y en peregrinación a Jerusalén. En Roma, el papa Adriano VI, nacido en Utrecht, lo nombró en 1522 conservador de la colección pontificia del Belvedere. Muerto el papa en 1523, regresó a los Países Bajos, donde fue canónigo de Utrecht, cargo que le garantizaba renta vitalicia. Muchos de sus retablos se destruyeron en la furia iconoclasta de 1566.
 
 ---
 
@@ -286,40 +286,40 @@ Jan van Scorel (1495–1562), importante pintor y clérigo holandés que introdu
 ![Tras el diluvio: el día cuadragésimo primero](./11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg)
 *Tras el diluvio: el día cuadragésimo primero — George Frederic Watts (1891)*
 
-**Ficha técnica:** Óleo sobre lienzo | 104 cm × 127 cm | Watts Gallery, Compton, Surrey, Reino Unido
+**Ficha técnica:** Óleo sobre lienzo | 104 × 178 cm | Watts Gallery, Compton, Surrey (COMWG.145)
 
 #### Lo que hace que destaque
 
-Genialidad del Simbolismo victoriano. Watts prescinde radicalmente de figuras humanas, barcos o animales para retratar el instante místico del cuadragésimo primer día: el momento en que las nubes de la tormenta apocalíptica se abren y un Sol incandescente estalla en el horizonte sobre un mar sereno, simbolizando la luz de la Creación reemergente.
+El cuadro representa el regreso del sol tras los cuarenta días de lluvia del diluvio. La Watts Gallery destaca que Watts prescinde deliberadamente de los símbolos tradicionales del episodio —el arca, la paloma o el arco iris— y concentra la composición en el sol ardiente que se alza sobre las aguas azules y brillantes. El propio pintor explicó que no había intentado retratar el sol, cosa imposible, sino transmitir la idea de su enorme poder. La galería lo presenta como una pintura moderna y de vanguardia que pudo influir en artistas como Edvard Munch y Vincent van Gogh.
 
 #### Contexto histórico
 
-Watts dedicó cinco años (1886-1891) a perfeccionar este lienzo, exponiéndolo originalmente con el título simplificado de El Sol. Su renuncia a la representación antropomórfica para concentrarse en la vibración pura del color y la luz fue admirada como un presagio audaz del arte abstracto moderno.
+La Watts Gallery y Art UK fechan la obra en 1885–1886. Pertenece a la colección original del G. F. Watts Memorial y llegó a la galería de Compton por legado en 1905, al año siguiente de la muerte del pintor. Mide 104 × 178 cm y lleva el número de inventario COMWG 145. La ficha del museo registra además que la obra ha sido «adoptada» por el doctor John Vardon y su esposa, dentro del programa de mecenazgo de la galería.
 
 #### Sobre el artista
 
-George Frederic Watts (1817–1904), destacado pintor y escultor simbolista británico conocido como el "Miguel Ángel victoriano", empeñado en volcar las grandes alegorías filosóficas y morales en lienzos de visión poética.
+George Frederic Watts nació en Londres el 23 de febrero de 1817 y murió en Compton, Surrey, el 1 de julio de 1904. Asistió de forma intermitente a la Royal Academy entre 1835 y 1837. Ganó dos veces los concursos para decorar el Parlamento, y el premio le permitió viajar a Florencia en 1843 y visitar Roma y Nápoles hasta 1847; la influencia italiana más visible en su obra es la de Tiziano. Britannica lo define como pintor y escultor de grandiosos temas alegóricos convencido de que el arte debía transmitir un mensaje universal. Su obra tardía más célebre es «Esperanza» (1886; versión en la Tate). La casa en la que murió alberga hoy una colección permanente de su obra.
 
 ---
 
-### 12. La disminución de las aguas del diluvio — Francis Danby (1840)
+### 12. El Diluvio — Francis Danby (1840)
 
-![La disminución de las aguas del diluvio](./12_La_disminucion_de_las_aguas_Francis_Danby_1840.jpg)
-*La disminución de las aguas del diluvio — Francis Danby (1840)*
+![El Diluvio](./12_La_disminucion_de_las_aguas_Francis_Danby_1840.jpg)
+*El Diluvio — Francis Danby (1840), Tate*
 
-**Ficha técnica:** Óleo sobre lienzo | 147 cm × 234 cm | Tate Britain, Londres, Reino Unido
+**Ficha técnica:** Óleo sobre lienzo | 284,5 × 452,1 cm | Tate Britain, Londres (T01337)
 
 #### Lo que hace que destaque
 
-Cúspide del Sublimismo Romántico británico. Danby retrata el sosiego sepulcral tras la catástrofe: una luna llena de brillo cobrizo ilumina una ciénaga infinita de aguas muertas plagada de árboles gigantescos ahogados y restos de seres antediluvianos, mientras en el horizonte el Arca descansa pacíficamente sobre la cima del Monte Ararat.
+No es una escena de las aguas en retirada, sino el diluvio en pleno desarrollo. En el fondo, el arca de Noé queda iluminada por un haz de luz de luna, mientras un mar embravecido azota un pico rocoso y unas ramas enormes a las que se aferran desesperadamente hombres y animales. A la izquierda se pone un sol rojo sangre, y en el ángulo inferior derecho un ángel llora sobre el cadáver de un niño. La Tate recuerda que Danby se hizo un nombre con asuntos épicos, a menudo de gran formato, y que este fue el último de ellos. La tela mide 284,5 × 452,1 cm.
 
 #### Contexto histórico
 
-Exhibida en 1840 en la Royal Academy con una acogida entusiasta. Danby desplegó una maestría técnica prodigiosa en los reflejos cromáticos del agua estancada y en el fino destello del amanecer que empieza a dorar la montaña sagrada.
+Según el Dictionary of Irish Biography, «The Deluge» se mostró en una exposición privada en Londres en mayo de 1840 y fue bien recibida, igual que los tres paisajes que Danby expuso en la Royal Academy en 1841. Llegaba después de casi una década de exilio en el continente y de su regreso a Londres en 1839, todavía con dificultades económicas. La Tate la fecha como «exhibited 1840». Ingresó en la colección en 1971, regalada por los Friends of the Tate Gallery, con el número T01337.
 
 #### Sobre el artista
 
-Francis Danby (1793–1861), maestro irlando-británico del romanticismo poético y apocalíptico, figura central de la Escuela de Bristol célebre por sus visiones atardecidas y cataclismos bíblicos teatrales.
+Francis Danby nació el 16 de noviembre de 1793 en Common, Killinick (condado de Wexford), y murió en Exmouth el 10 de febrero de 1861. Se formó en la escuela de dibujo de la Dublin Society; en 1813 fue andando de Londres a Bristol y allí se convirtió en el miembro más conocido de la escuela de Bristol. En 1825 fue elegido asociado de la Royal Academy. En 1826 acusó a John Martin de plagiar su «Apertura del sexto sello», obra que en 1828 atrajo tal gentío en la Royal Academy que hubo que cambiarla de sala. En 1829 perdió frente a Constable, por un solo voto, la plaza de académico, y ese mismo año huyó de sus acreedores al continente.
 
 ---
 
@@ -328,19 +328,19 @@ Francis Danby (1793–1861), maestro irlando-británico del romanticismo poétic
 ![La disminución de las aguas del diluvio](./13_La_disminucion_de_las_aguas_Thomas_Cole_1829.jpg)
 *La disminución de las aguas del diluvio — Thomas Cole (1829)*
 
-**Ficha técnica:** Óleo sobre lienzo | 121.3 cm × 189.2 cm | Smithsonian American Art Museum, Washington D.C., EE.UU.
+**Ficha técnica:** Óleo sobre lienzo | 90,8 × 121,4 cm | Smithsonian American Art Museum, Washington D.C. (1983.40)
 
 #### Lo que hace que destaque
 
-Manifiesto fundador del paisajismo estadounidense. Cole retrata la purificación de la Tierra: los picos rocosos reemergen lavados del pecado bajo un cielo celestial donde la luz pura abre paso a las nubes en retirada. En el primer plano, sobre una roca solitaria, descansa un cráneo humano como memento mori de la civilización destruida.
+La obra pertenece a la etapa en que Cole buscaba lo que él llamaba un «estilo más elevado de paisaje», con asuntos narrativos, bíblicos y literarios. Según el Smithsonian, las aguas del diluvio se retiran y sugieren un futuro pacífico. Un cráneo solitario apoyado en las rocas indica que el mundo ha quedado lavado de la locura humana, y en el centro, bañada de luz, una paloma vuela hacia tierra mientras el arca flota en aguas tranquilas. El museo lee el cuadro en clave americana: Cole veía en la Revolución una suerte de diluvio que barrió el despotismo de la Corona británica, y el arca anuncia una era nueva y más ilustrada para América.
 
 #### Contexto histórico
 
-Pintada en 1829 tras su estancia de estudios en Europa, fue celebrada como una viva metáfora de la esperanza y el renacimiento espiritual. La figura distante del Arca navegando en calma encarna la promesa del pacto divino.
+Cole la pintó en 1829; el lienzo mide 90,8 × 121,4 cm. Ese mismo año su éxito le permitió emprender el Grand Tour por Europa, sobre todo por Italia, donde permaneció en 1831–32. El cuadro entró en el Smithsonian American Art Museum como donación de Katie Dean en memoria de Minnibel S. y James Wallace Dean, completada con una compra a través del programa de adquisiciones de la Smithsonian Institution; su número de objeto es 1983.40. Hoy no está expuesto.
 
 #### Sobre el artista
 
-Thomas Cole (1801–1848), genial pintor anglo-estadounidense y patriarca fundador de la célebre Escuela del Río Hudson, pionero en elevar la pintura de paisaje a la categoría de alegoría moral y espiritual.
+Thomas Cole nació en 1801 en Bolton-le-Moors (Lancashire) y a los diecisiete años emigró con su familia a Estados Unidos. En 1825, ya en Nueva York, remontó el Hudson hasta los Catskill; John Trumbull compró uno de los paisajes resultantes y lo presentó a sus mecenas. Fue miembro fundador de la National Academy of Design en 1825. Pintó las series alegóricas «El curso del imperio» (1833–36) y «El viaje de la vida» (1840). Entre 1844 y 1846 tuvo como alumno a Frederic Church. Murió de pleuresía en febrero de 1848 sin terminar «La cruz y el mundo». La historiografía lo considera inspirador de la generación conocida como Escuela del río Hudson.
 
 ---
 
@@ -353,15 +353,15 @@ Thomas Cole (1801–1848), genial pintor anglo-estadounidense y patriarca fundad
 
 #### Lo que hace que destaque
 
-Cranach pintó este asunto decenas de veces y creó con él un tipo físico inconfundible: cuerpos esbeltos y alargados, hombros estrechos, vientres redondeados, una desnudez elegante y cortesana que no tiene nada de la angustia italiana. Adán se lleva la mano al cabello en un gesto de perplejidad casi cómico mientras Eva le tiende la manzana; la serpiente se enrosca discretamente en el árbol y los animales del Edén rodean la escena con una precisión de grabado naturalista. La caída se representa aquí no como tragedia sino como un instante de duda amable.
+El Cranach Digital Archive describe a Adán y Eva de cuerpo entero ante un fondo de follaje, con el árbol de la ciencia cerrando la composición por la izquierda. Eva sujeta una rama con la mano izquierda, apoya la pierna derecha flexionada contra el tronco y se vuelve hacia Adán. Él, a su lado, parece morder la manzana que ella le tiende, mira fuera del cuadro y apoya la mano izquierda en el hombro de Eva; con la otra sostiene una rama cuyas hojas cubren el sexo de ambos. Abajo a la derecha está la insignia del taller, la serpiente alada con las alas plegadas. Britannica señala que los desnudos femeninos alargados con títulos bíblicos o mitológicos son una de las constantes de su producción.
 
 #### Contexto histórico
 
-Cranach fue amigo íntimo de Lutero —fue padrino de su hijo y grabó sus retratos más difundidos— y su taller de Wittenberg fue el motor visual de la Reforma. Que un pintor tan comprometido con la doctrina protestante repitiera incansablemente el desnudo del Edén tiene su lógica: era el único asunto que permitía pintar cuerpos desnudos con justificación bíblica plena, y sus versiones fueron un éxito comercial en las cortes alemanas.
+El Cranach Digital Archive fecha la tabla hacia 1538 y la atribuye a Lucas Cranach el Viejo, con una atribución alternativa a Cranach y su taller. Su procedencia documentada empieza a comienzos del siglo XIX en el monasterio cisterciense de Osek, cerca de Duchcov, del que la adquirió la galería en 1945. Britannica recuerda que la serpiente alada fue su única firma desde 1515 y que la llevaban todas las obras, incluidas las salidas de su gran taller, que a menudo tenía diez o más ayudantes. Cranach fue además el principal propagandista gráfico de la causa protestante, y sus obras las buscaban por igual mecenas protestantes y católicos.
 
 #### Sobre el artista
 
-Lucas Cranach el Viejo (1472–1553) dirigió una de las empresas artísticas más eficientes de su siglo: un taller casi industrial con hijos y ayudantes que producía retratos y tablas en serie, firmadas con el emblema de la serpiente alada. Fue además boticario, editor y alcalde de Wittenberg.
+Lucas Cranach el Viejo nació en 1472 en Kronach, en el obispado de Bamberg, y murió en Weimar el 16 de octubre de 1553. Llegó a Wittenberg en 1505 como pintor de corte de los electores de Sajonia y permaneció allí cuarenta y cinco años. Fue concejal en 1519–20 y burgomaestre tres veces entre 1537 y 1544. Mantuvo una relación amistosa con Lutero, a quien retrató a él, a su mujer, Katharina von Bora, y a sus padres, fijando la imagen del círculo reformador. Sus dos hijos trabajaron en el taller; Lucas el Joven siguió usando la serpiente alada hasta su muerte en 1586. Dejó además más de cien xilografías sueltas.
 
 ---
 
@@ -373,19 +373,19 @@ Lucas Cranach el Viejo (1472–1553) dirigió una de las empresas artísticas m�
 ![Adán y Eva](./15b_Adan_y_Eva_Alberto_Durero_1507.jpg)
 *Adán y Eva (tablas del Prado) — Alberto Durero (1507)*
 
-**Ficha técnica:** Buril sobre cobre, 26,5 × 20,9 cm (Morgan Library, 2006.80) | y óleo sobre tabla, 209 × 81 cm (Museo del Prado, P02177)
+**Ficha técnica:** Buril sobre cobre, 26,5 × 20,9 cm (hoja; huella de plancha 25 × 19,2 cm) (Morgan Library, 2006.80) | y óleo sobre tabla, 209 × 81 y 209 × 80 cm (Museo del Prado, P002177 y P002178)
 
 #### Lo que hace que destaque
 
-El grabado de 1504 es una demostración técnica y teórica: Durero construyó ambos cuerpos con compás y regla según las proporciones de Vitruvio que había estudiado en Venecia, y colocó junto a ellos cuatro animales —el alce, el buey, el conejo y el gato— que representan los cuatro humores del temperamento humano, en perfecto equilibrio antes de la caída. El gato acecha al ratón a los pies de Eva: en el instante en que ella muerda el fruto, ese equilibrio se romperá. Las tablas del Prado, tres años posteriores, trasladan esa misma investigación al óleo y a tamaño natural, sobre fondo negro y sin paisaje alguno.
+El Met explica que Durero creía que la forma humana perfecta respondía a un sistema de proporciones y medidas, y que en el grabado de 1504 ambas figuras adoptan poses idealizadas casi simétricas. Adán recuerda al Apolo de Belvedere. La rama que sostiene él es de serbal, el árbol de la vida; la de Eva, de higuera, el árbol prohibido. Según el Met, cuatro de los animales encarnan los cuatro temperamentos medievales: el gato colérico, el conejo sanguíneo, el buey flemático y el alce melancólico. Para Fernando Checa, en las tablas del Prado de 1507 la relación entre las figuras es más formal que psicológica: los cuerpos se recortan sobre un fondo negro uniforme y el árbol pasa a un lado.
 
 #### Contexto histórico
 
-Durero firmó el grabado con una tablilla colgada de la rama —«Albertus Durer Noricus faciebat 1504»— porque sabía que estaba haciendo algo sin precedentes en el norte. Las tablas del Prado fueron regaladas por la reina Cristina de Suecia a Felipe IV, y estuvieron a punto de ser destruidas por pudor: se salvaron escondidas en las salas reservadas de la Academia de San Fernando hasta el siglo XIX.
+La Morgan considera su ejemplar una prueba muy temprana del segundo estado, excepcional por su calidad y conservación. Lo compró en 2006 gracias a varios donantes, y complementa el dibujo preparatorio que ya poseía el museo. Las tablas del Prado las compró el Ayuntamiento de Núremberg a la muerte de la viuda de Durero, que en 1586 las ofreció a Rodolfo II. En 1648 los suecos se las llevaron como botín de Praga, y en 1654 la reina Cristina de Suecia se las regaló a Felipe IV, que las instaló en las bóvedas de Tiziano del Alcázar. Entre 1796 y 1827 estuvieron en la Academia de San Fernando, en la Sala Reservada, e ingresaron en el Prado en 1827.
 
 #### Sobre el artista
 
-Alberto Durero (1471–1528), hijo de un orfebre húngaro instalado en Núremberg, fue el primer artista del norte que se pensó a sí mismo como intelectual y no como artesano. Viajó dos veces a Italia, escribió tratados sobre proporción y perspectiva, y llevó el grabado a un nivel técnico que no ha vuelto a superarse.
+Alberto Durero (1471–1528) nació en Núremberg. Se formó con su padre, orfebre, y con el pintor Michael Wolgemut. Revolucionó el grabado, que convirtió en arte independiente, y antes de los treinta años ya había hecho el Apocalipsis (1498). Viajó dos veces a Italia, en 1494–95 y en 1505–07. Escribió los «Cuatro libros de la proporción humana», publicados en 1528, y un manual de geometría, «Underweysung der Messung» (1525), con el primer tratamiento científico de la perspectiva hecho por un artista del norte. Fue artista de corte de los emperadores Maximiliano I y Carlos V.
 
 ---
 
@@ -397,19 +397,19 @@ Alberto Durero (1471–1528), hijo de un orfebre húngaro instalado en Núrember
 ![El Anciano de los Días](./16_El_Anciano_de_los_Dias_William_Blake_1794.jpg)
 *Prueba de estado del frontispicio, sin iluminar — Yale Center for British Art*
 
-**Ficha técnica:** Grabado en relieve iluminado a mano y acuarela | c. 23 × 17 cm | Frontispicio de «Europe: A Prophecy», copia D | British Museum, Londres
+**Ficha técnica:** Aguafuerte en relieve y de línea blanca, estampado en color (azul, negro, rojo y amarillo) con color añadido a mano | 23,3 × 16,8 cm | Frontispicio de «Europe: A Prophecy», copia D | British Museum, Londres (1859,0625.72)
 
 #### Lo que hace que destaque
 
-Urizen —el demiurgo racionalista de la mitología propia de Blake— se asoma desde un disco solar y baja el brazo para trazar los límites del mundo con un compás de agrimensor, mientras el viento le echa el cabello y la barba hacia un lado. La imagen ilustra el versículo de Proverbios «cuando trazaba un círculo sobre la faz del abismo», pero Blake invierte su sentido: para él, encerrar la creación dentro de una medida es el gesto que aprisiona la imaginación. El compás es el instrumento de Newton y de la Ilustración, y Blake lo detestaba.
+El British Museum describe la lámina como un varón desnudo y barbado, «probablemente Urizen», agazapado en una esfera celeste cuya luz tapan en parte las nubes, que baja el brazo izquierdo con un compás para medir la oscuridad circundante. Para la Whitworth, Urizen es en Blake el símbolo de la racionalidad opresiva que sofoca la creación, y la figura encarna su crítica a las leyes rígidas que encadenan la imaginación. En el ejemplar del British Museum, una mano casi contemporánea, quizá la de George Cumberland, anotó a pluma versos de Milton sobre el compás con que se traza la circunferencia del mundo. Según el museo, «Europe» examina los efectos destructivos de un cristianismo represivo sobre la sociedad.
 
 #### Contexto histórico
 
-Blake inventó para estos libros una técnica propia, el grabado en relieve iluminado: escribía e ilustraba directamente sobre la plancha con un barniz resistente al ácido, de modo que texto e imagen nacían juntos, y después coloreaba cada ejemplar a mano. Ningún ejemplar es igual a otro. Se dice que esta imagen se le apareció flotando en lo alto de la escalera de su casa en Lambeth, y que la consideró siempre su estampa preferida: en su lecho de muerte todavía estaba retocando un ejemplar.
+Blake llegó en 1787 a su método de «aguafuerte en relieve», que crea una única superficie en relieve para texto e imagen. Le permitía controlar todo el libro: componer los versos, dibujar las ilustraciones casi a la vez sobre la misma plancha de cobre, estampar, colorear a mano y encuadernar. «Europe» consta de diecisiete láminas en relieve, y en esta copia temprana están estampadas por las dos caras. El British Museum compró la copia D a Francis Turner Palgrave en 1859; Viscomi la da como de Ozias Humphry, y Keynes y Wolf como probablemente de Thomas Butts. La anécdota del lecho de muerte corresponde a otro ejemplar, el de la Whitworth, que Blake coloreó pocos días antes de morir.
 
 #### Sobre el artista
 
-Se muestran las dos caras del mismo grabado: la copia D del British Museum, iluminada a mano por el propio Blake con acuarela y oro, y una prueba de estado sin iluminar del Yale Center for British Art, que deja ver la plancha desnuda. Ninguna copia de Blake es igual a otra —coloreaba cada ejemplar a mano y a lo largo de décadas—, así que hablar de «el original» de esta imagen es un error: hay tantos como copias. Complementa a «Elohim creando a Adán», ya presente en la colección, y completa la teología invertida de Blake: crear el mundo material y crear al hombre son, en su mitología, dos actos del mismo dios equivocado.
+La colección muestra dos estados de la misma plancha. El primero es la copia D del British Museum, de 1794, estampada en color y retocada a mano. El segundo es una prueba del frontispicio del Yale Center for British Art, hacia 1820, estampada en tinta marrón, con otra prueba en color en el reverso; la hoja mide 31,8 × 23,5 cm y pertenece a la Paul Mellon Collection (B1992.8.1(106)). Blake (1757–1827) coloreaba a mano cada hoja cuando hacía falta, de modo que cada ejemplar de sus libros iluminados es distinto. Según el Met, para él la Biblia era la mayor obra de poesía jamás escrita y el fundamento del arte verdadero, frente al falso ideal pagano del clasicismo.
 
 ---
 
@@ -418,19 +418,19 @@ Se muestran las dos caras del mismo grabado: la copia D del British Museum, ilum
 ![El sacrificio de Isaac](./17_El_Sacrificio_de_Isaac_Caravaggio_1603.jpg)
 *El sacrificio de Isaac — Caravaggio (c. 1603)*
 
-**Ficha técnica:** Óleo sobre lienzo | 104 × 135 cm | Galleria degli Uffizi, Florencia
+**Ficha técnica:** Óleo sobre lienzo | 104 × 135 cm | Galleria degli Uffizi, Florencia (Inv. 1890 n. 4659)
 
 #### Lo que hace que destaque
 
-Caravaggio elimina toda solemnidad. Abraham sujeta la cabeza de Isaac contra el altar con la mano abierta, aplastándole la mejilla contra la piedra, y el cuchillo ya está en posición; el niño grita con la boca abierta y los ojos desorbitados, y su grito es lo único que ocupa el centro exacto del lienzo. El ángel irrumpe por la izquierda y agarra físicamente la muñeca del padre —no basta una señal, hace falta la fuerza— mientras señala con la otra mano el carnero. La luz cae de lado y deja media escena en tinieblas, como siempre en Caravaggio.
+Los Uffizi describen el momento de Génesis 22,12 en que Abraham se dispone a sacrificar a Isaac y un ángel enviado por el Señor le detiene y señala el carnero que lo sustituirá. Caravaggio sitúa al ángel junto a Abraham como una presencia sólida que le agarra la muñeca con fuerza. Al fondo se abre un paisaje mediterráneo de colinas con casas y una aldea, eco de su formación lombarda y véneta. El museo recuerda que la crítica ha leído el edificio de la colina como una iglesia con baptisterio y la luz del paisaje como la gracia divina, prefiguración del sacrificio de Cristo. Ferdinando Bologna destaca el «stupendo brano di paese» y el joven que posa como Isaac y reaparece como ángel en la «Conversión de Saulo» Odescalchi.
 
 #### Contexto histórico
 
-Fue pintado para el cardenal Maffeo Barberini, futuro papa Urbano VIII, que pagó por él cien escudos en varios plazos entre 1603 y 1604. Existe una segunda versión atribuida en Princeton. El pasaje de Génesis 22 —la Aqedah, la «atadura» de Isaac— es el episodio más incómodo del libro y el que ha generado más literatura filosófica: Kierkegaard construyó sobre él Temor y temblor entero.
+Según Bellori, el cuadro procede sin duda de la colección de Maffeo Barberini, el futuro Urbano VIII. Los Uffizi lo fechan hacia 1603 y ligan la autoría a los documentos de pago. Bologna, en cambio, sostiene que por estilo no puede relacionarse con los pagos por un cuadro no especificado que Barberini hizo al pintor entre el 20 de mayo de 1603 y el 8 de enero de 1604, y lo sitúa en 1598–99, cuando Caravaggio retrató a Maffeo. John Fairfax Murray lo compró como obra de Gherardo delle Notti a una sociedad que había adquirido bienes de los Colonna Sciarra, y lo donó a los Uffizi en julio de 1917.
 
 #### Sobre el artista
 
-Michelangelo Merisi da Caravaggio (1571–1610) trabajó siempre del natural, con modelos tomados de la calle y sin dibujo previo, lo que escandalizó a sus contemporáneos tanto como su vida violenta. Huyó de Roma en 1606 tras matar a un hombre y murió a los treinta y ocho años en la playa de Porto Ercole.
+Michelangelo Merisi, hijo de Fermo y de Lucia Aratori, nació probablemente el 25 de septiembre de 1571 en Milán, donde fue bautizado el día 30, y no en Caravaggio, de donde procedía la familia. Bologna subraya su propósito de pintar siempre con «l'esempio davanti del naturale», es decir, con el modelo delante. Entre 1599 y 1600 pintó para la capilla Contarelli de San Luigi dei Francesi la «Vocación» y el «Martirio de san Mateo», su primera obra religiosa expuesta en público. En 1606 murió Ranuccio Tomassoni en un duelo con el pintor. Los Uffizi fijan su muerte en Porto Ercole (Grosseto) en 1610.
 
 ---
 
@@ -439,19 +439,19 @@ Michelangelo Merisi da Caravaggio (1571–1610) trabajó siempre del natural, co
 ![El sacrificio de Isaac](./18_El_Sacrificio_de_Isaac_Rembrandt_1635.jpg)
 *El sacrificio de Isaac — Rembrandt (1635)*
 
-**Ficha técnica:** Óleo sobre lienzo | 193 × 133 cm | Museo del Hermitage, San Petersburgo
+**Ficha técnica:** Óleo sobre lienzo | 193 × 132 cm | Museo del Hermitage, San Petersburgo (ГЭ-727)
 
 #### Lo que hace que destaque
 
-Compararlo con el Caravaggio de al lado es una lección entera de historia del arte. Rembrandt elige el segundo exacto en que el ángel agarra la muñeca de Abraham y el cuchillo, ya soltado, queda suspendido en el aire cayendo. La mano enorme del padre cubre íntegramente la cara de Isaac —no vemos su expresión, solo la garganta ofrecida y el cuerpo blanco arqueado—, y toda la emoción se traslada al rostro de Abraham, que se vuelve hacia el ángel con la boca entreabierta y los ojos vacíos de quien todavía no ha entendido.
+El Hermitage explica que Rembrandt rechaza la lectura literal: el ángel no exhorta desde el cielo, sino que interviene agarrando a Abraham por la muñeca, y el vínculo inmediato entre las tres figuras concentra el efecto dramático. La restauración ha dejado ver en el rostro del patriarca los párpados enrojecidos, restos de lágrimas en la mejilla, una lágrima prendida en la barba gris y la boca entreabierta, que según el museo expresan una mezcla de desesperación y fe inquebrantable. Isaac, con las manos atadas a la espalda, yace sumiso a los pies de su padre. El cuchillo, que cae, subraya lo repentino del suceso. La composición acusa el influjo de Pieter Lastman, maestro de Rembrandt, y de Rubens.
 
 #### Contexto histórico
 
-Rembrandt lo pintó a los veintinueve años, en pleno éxito en Ámsterdam. Existe una segunda versión en Múnich, firmada «Rembrandt corrigió y repintó», que se considera obra de su taller retocada por él. La elección de tapar el rostro de la víctima con la mano del verdugo es un hallazgo narrativo que reaparece en toda su obra tardía: lo que no se muestra pesa más que lo que se muestra.
+Rembrandt lo pintó en 1635, en su fase de entusiasmo barroco. En la primera mitad del siglo XVIII estaba en la galería de Sir Robert Walpole en Houghton Hall, y en 1779 Catalina II compró la colección a sus herederos. En 1850 Feodor Tabuntsov lo pasó a un lienzo nuevo, como consta al dorso, y en el siglo XX fue evacuado dos veces durante las guerras mundiales. Una restauración de cuatro años, a cargo de Víktor Kórobov, retiró barnices amarillentos y repintes; se presentó en diciembre de 2025 y la obra vuelve a la sala 254 del Nuevo Hermitage. En Múnich (Alte Pinakothek) hay una copia parcial hecha en 1636 por un discípulo.
 
 #### Sobre el artista
 
-Rembrandt Harmenszoon van Rijn (1606–1669) pintó y grabó asuntos bíblicos durante toda su vida con una libertad interpretativa inusual para un protestante de su época, tratándolos siempre como escenas domésticas y psicológicas antes que como teofanías.
+Rembrandt nació en Leiden el 15 de julio de 1606 y murió en Ámsterdam el 4 de octubre de 1669. Hijo de un molinero, se formó unos tres años con Jacob van Swanenburgh en Leiden y seis meses con el pintor de historia Pieter Lastman en Ámsterdam. Según Ernst van de Wetering, el núcleo de su obra son los temas bíblicos y, en mucha menor medida, históricos, mitológicos y alegóricos, que pintó, grabó y dibujó. Entre 1627 y 1629 revolucionó su uso de la luz concentrándola en una zona y dejando grandes áreas en sombra, como antes Caravaggio. Tuvo discípulos entre 1628 y hacia 1663, seguramente medio centenar o más.
 
 ---
 
@@ -460,19 +460,19 @@ Rembrandt Harmenszoon van Rijn (1606–1669) pintó y grabó asuntos bíblicos d
 ![La Trinidad (La hospitalidad de Abraham)](./19_La_Trinidad_de_Abraham_Andrei_Rublev_1425.jpg)
 *La Trinidad (La hospitalidad de Abraham) — Andréi Rubliov (1425-1427)*
 
-**Ficha técnica:** Temple sobre tabla | 141,5 × 114 cm | Galería Tretiakov, Moscú (Inv. 13012)
+**Ficha técnica:** Temple sobre tabla | 142 × 114 cm | Lavra de la Trinidad y San Sergio, Sérguiev Posad (desde 2024; antes, Galería Tretiakov, Moscú)
 
 #### Lo que hace que destaque
 
-Génesis 18 cuenta que tres hombres se presentaron ante la tienda de Abraham y él les lavó los pies y les dio de comer; la tradición cristiana leyó en ellos la Trinidad. Rubliov elimina a Abraham y a Sara y deja solo a los tres ángeles sentados alrededor de una mesa, inclinados unos hacia otros en un círculo que no se cierra: el lado del espectador queda abierto. En el centro hay una copa, y las siluetas de los dos ángeles laterales dibujan a su vez la forma de otra copa mayor. La perspectiva es invertida —las líneas convergen hacia fuera, hacia quien mira—, de modo que el espacio del icono se abre hacia la sala en lugar de hundirse en la tabla.
+Génesis 18 cuenta que Abraham, sentado a la entrada de su tienda junto al encinar de Mamré, vio a tres hombres y les preparó una comida con ayuda de Sara. La iconografía bizantina de la «Hospitalidad de Abraham» narraba esa escena; Rubliov renunció a sus elementos narrativos para condensar la doctrina trinitaria en una sola imagen simbólica: tres ángeles sentados en torno a una mesa sobre la que hay un cáliz. Según Britannica, ese cáliz remite a la eucaristía. La fórmula se vio enseguida como una innovación, se copió y difundió pronto, y los concilios eclesiásticos llegaron a fijarla en el canon como la representación ideal de la Trinidad. Natalya Sheredega destaca en el colorido el ocre luminoso, los verdes, rosas y violetas delicados y el azul celeste característico del pintor.
 
 #### Contexto histórico
 
-Fue pintado para el monasterio de la Trinidad y San Sergio en memoria de San Sergio de Rádonezh. Durante siglos estuvo cubierto por una funda de plata dorada que solo dejaba ver los rostros y las manos, y ennegrecido por el aceite de las lámparas; se restauró en 1904 y el color original —el lapislázuli intenso de los mantos, el oro del fondo— reapareció intacto. En 2023 fue trasladado desde la Tretiakov a la Iglesia ortodoxa rusa, una decisión que los conservadores del museo advirtieron que ponía en riesgo su integridad material.
+Según la tradición del monasterio, el icono se pintó en tiempos de san Nikón de Rádonezh, sucesor de san Sergio, para la catedral de la Trinidad de la Lavra; su fecha exacta sigue discutida: unos lo vinculan a la iglesia de madera de 1411 y otros a la decoración del iconostasio de 1425-1427. En 1600 Borís Godunov lo hizo cubrir con una funda (oklad) dorada y enjoyada. En 1904-1905, a propuesta de Iliá Ostroújov, Vasili Guriánov lo limpió de repintes, y la restauración definitiva se hizo en 1918-1919. En 1929 pasó a la Galería Tretiakov. En el verano de 2023 la Tretiakov y la Lavra firmaron su transferencia; tras exponerse desde enero de 2024 en la catedral de Cristo Salvador, el 22 de junio de 2024 volvió a la catedral de la Trinidad, dentro de una vitrina climatizada.
 
 #### Sobre el artista
 
-Andréi Rubliov (c. 1360–1430) fue monje y pintor de iconos, y su obra marca el punto más alto de la pintura medieval rusa. La Iglesia ortodoxa lo canonizó en 1988. Tarkovski le dedicó en 1966 una película que es, entre otras cosas, una meditación sobre el silencio del artista frente a la violencia de su tiempo.
+Andréi Rubliov (c. 1360-1430) es considerado uno de los mayores pintores medievales de iconos y frescos de Rusia. Se cree que se formó con Prójor de Gorodets y que colaboró con Teófanes el Griego en la catedral de la Anunciación de Moscú. Vivió como monje en la Lavra de la Trinidad y San Sergio, y Britannica atribuye a esa vida ascética la suavidad que rompe con la severidad de forma y color del icono bizantino ruso. Su autoría de la Trinidad no ofrece dudas para la crítica, aunque en el siglo XIX Dmitri Rovinski la cuestionó. La Iglesia ortodoxa rusa lo canonizó en 1988.
 
 ---
 
@@ -485,15 +485,15 @@ Andréi Rubliov (c. 1360–1430) fue monje y pintor de iconos, y su obra marca e
 
 #### Lo que hace que destaque
 
-Jacob embiste al ángel con todo el cuerpo, la cabeza baja, el hombro por delante, en la postura de quien empuja un muro; el ángel apenas se mueve y ni siquiera lo mira. Delacroix subordina la escena a un bosque de robles descomunales que ocupa la mitad superior del muro y empequeñece a las dos figuras, y a la izquierda la caravana de Jacob se aleja indiferente por el vado, sin enterarse de nada. La decisión de escala es el sentido de la obra: el combate del que depende el nombre de Israel sucede al margen, sin testigos.
+Génesis 32 cuenta que Jacob, tras pasar el vado del Yaboc con los suyos, quedó solo y luchó con un hombre hasta el alba. Baudelaire, que describió el muro en 1861, sitúa la escena en ese vado bajo una vegetación «patriarcal» atravesada por la luz dorada de la mañana; a la izquierda cae un arroyo y a la derecha, al fondo, se alejan los últimos rangos de la caravana con los regalos para Esaú. En primer plano quedan en el suelo las ropas y armas de las que Jacob se ha desprendido. Para Baudelaire el hombre natural y el sobrenatural luchan cada uno según su naturaleza: Jacob, inclinado como un carnero y con toda la musculatura en tensión; el ángel, tranquilo y dulce, prestándose al combate sin que la cólera altere su forma.
 
 #### Contexto histórico
 
-Delacroix trabajó doce años en esta capilla, ya enfermo, y la consideró su obra culminante. Se hizo instalar una vivienda cerca para no perder tiempo en desplazamientos. El fresco impresionó profundamente a los jóvenes que después harían el impresionismo, y Cézanne, Degas y Van Gogh acudieron a copiarlo. En Génesis 32 Jacob sale cojo del combate y recibe un nombre nuevo: Israel, «el que lucha con Dios».
+La Ciudad de París encargó a Delacroix la decoración de la capilla de los Santos Ángeles en 1849, gracias a Charles Blanc. Eligió para los muros la lucha de Jacob y Heliodoro expulsado del templo, y san Miguel para el techo. Por otros encargos y por la preparación del muro, la pintura no empezó de verdad hasta 1854, avanzó a rachas según su salud y la ayudaron sus alumnos Lassalle-Bordes y Pierre Andrieu y el pintor Louis Boulangé. En diciembre de 1857 se mudó a la calle Furstemberg, cerca de Saint-Sulpice, porque ya no podía con el trayecto diario. La capilla se inauguró en agosto de 1861. Mezcló cera y óleo, técnica que obligó a inventar un protocolo propio en la restauración de 2015-2016 promovida por la Ciudad de París. En 2018 el Musée Delacroix reunió a pintores que se inspiraron en ella, de Gustave Moreau a Chagall.
 
 #### Sobre el artista
 
-Eugène Delacroix (1798–1863) fue la cabeza del romanticismo francés y el antagonista declarado del clasicismo de Ingres. Esta imagen procede de una fotografía tomada en la propia iglesia, ya que la obra es un muro y no existe reproducción de museo posible.
+Eugène Delacroix nació el 26 de abril de 1798 en Charenton-Saint-Maurice y entró en 1815 en el taller de Pierre-Narcisse Guérin. Debutó en el Salón de 1822 con Dante y Virgilio en los infiernos y encarnó enseguida a la nueva generación calificada de romántica. En la Exposición Universal de 1855 fue honrado con una muestra propia junto a Ingres y Horace Vernet. En 1857, al séptimo intento, ingresó en la Academia de Bellas Artes. Murió el 13 de agosto de 1863 en su piso de la calle Furstemberg, hoy Musée national Eugène-Delacroix. El museo considera la decoración de la capilla una de sus últimas obras maestras.
 
 ---
 
@@ -502,19 +502,19 @@ Eugène Delacroix (1798–1863) fue la cabeza del romanticismo francés y el ant
 ![Jacob luchando con el ángel](./21_Jacob_Luchando_con_el_Angel_Rembrandt_1659.jpg)
 *Jacob luchando con el ángel — Rembrandt (c. 1659)*
 
-**Ficha técnica:** Óleo sobre lienzo | 137 × 116 cm | Gemäldegalerie, Berlín
+**Ficha técnica:** Óleo sobre lienzo | 137,1 × 116 cm | Gemäldegalerie, Berlín (Inv. 828)
 
 #### Lo que hace que destaque
 
-Rembrandt suprime el paisaje, el vado, la caravana y la noche: solo quedan dos cuerpos entrelazados emergiendo de la penumbra. Y sobre todo suprime la lucha. El ángel rodea a Jacob con los brazos y apoya la mejilla casi sobre su hombro, con una expresión de compasión serena, mientras Jacob cierra los ojos y se abandona. Solo la mano del ángel, apoyada en la cadera de Jacob —el punto exacto que quedará dislocado—, recuerda que esto es un combate y no un consuelo. La ambigüedad es deliberada y define la lectura de Rembrandt del pasaje: no se vence a Dios, se resiste hasta ser bendecido.
+El pasaje es Génesis 32: Jacob, solo junto al Yaboc, lucha con un hombre hasta el alba; al no poder vencerlo, este le golpea la articulación del muslo, y Jacob no lo suelta hasta recibir su bendición y el nombre de Israel. La Gemäldegalerie subraya que Rembrandt eligió un episodio poco representado y que renunció a los detalles para concentrarse en las dos figuras principales, a tamaño natural y vistas de cerca. El formato original era mucho mayor: el lienzo fue recortado varias veces a lo largo del tiempo, lo que explica en parte el encuadre tan cerrado. Abajo a la derecha lleva la inscripción «Rembrandt f» y quizá un monograma «RH».
 
 #### Contexto histórico
 
-Pertenece a la última etapa del pintor, la de la pincelada espesa y las composiciones despojadas, cuando ya había perdido la casa, la fortuna y el favor del público de Ámsterdam. Colgarlo junto al Delacroix permite ver dos temperamentos opuestos ante el mismo versículo: el romántico lo convierte en paisaje y el barroco tardío, en intimidad.
+El museo lo fecha en 1659-1660 y lo sitúa en Ámsterdam, dentro de la obra tardía del pintor. Son los años posteriores a su ruina: incapaz de pagar a sus acreedores, Rembrandt tuvo que vender sus bienes y la casa de la Jodenbreestraat, que dejó a los 52 años con Hendrickje, su hija Cornelia y su hijo Titus. El inventario redactado para esa venta, habitación por habitación, es el documento que permitió reconstruir la casa, hoy Museo Rembrandthuis.
 
 #### Sobre el artista
 
-Rembrandt (1606–1669) trató siempre el Antiguo Testamento como teatro doméstico. Vivía en el barrio judío de Ámsterdam y tomaba de sus vecinos los modelos y los tipos físicos de sus patriarcas.
+Rembrandt Harmenszoon van Rijn (1606-1669) se trasladó de Leiden a Ámsterdam en 1631 y pronto fue el retratista de moda de la ciudad. En 1639, recién casado con Saskia, compró la casa de la Jodenbreestraat 4. Según el Rembrandthuis, en sus obras aparecen muchos vecinos judíos del barrio, algunos clientes suyos como el médico Ephraim Bueno; probablemente le sirvieron de modelos, aunque la idea de un vínculo especial con ellos no está demostrada.
 
 ---
 
@@ -523,19 +523,19 @@ Rembrandt (1606–1669) trató siempre el Antiguo Testamento como teatro domést
 ![La visión tras el sermón](./22_La_Vision_tras_el_Sermon_Paul_Gauguin_1888.jpg)
 *La visión tras el sermón — Paul Gauguin (1888)*
 
-**Ficha técnica:** Óleo sobre lienzo | 72,2 × 91 cm | National Galleries of Scotland, Edimburgo
+**Ficha técnica:** Óleo sobre lienzo | 72,2 × 91 cm | National Galleries of Scotland, Edimburgo (NG 1643)
 
 #### Lo que hace que destaque
 
-Unas campesinas bretonas con cofia blanca salen de misa y ven, al fondo, la escena del sermón que acaban de oír: Jacob y el ángel luchando sobre un prado de un rojo bermellón imposible. Un tronco de manzano cruza el lienzo en diagonal separando el mundo real del visionario, recurso tomado directamente de la estampa japonesa. Gauguin abandona aquí la observación del natural: el color deja de describir la luz y pasa a expresar un estado mental. Es el acta de nacimiento del sintetismo y, con él, de buena parte de la pintura del siglo XX.
+Unas bretonas con su traje regional acaban de oír un sermón sobre Génesis 32, la lucha nocturna de Jacob con un ángel misterioso tras vadear el Yaboc. Gauguin se lo describió a Van Gogh: mujeres de negro intenso con cofias blanco-amarillas, dos de ellas como «cascos monstruosos»; un manzano que cruza el lienzo, violeta oscuro; la tierra de bermellón puro; el ángel de azul ultramar y Jacob de verde botella. Y añadía que el paisaje y la lucha solo existen en la imaginación de las mujeres que rezan, de ahí el contraste entre la gente real y un combate sin proporción ni realidad. Las National Galleries lo presentan como la obra que mejor ejemplifica el estilo simplificado y sintético que Gauguin desarrolló con Émile Bernard, inspirado en la estampa japonesa y en la vidriera.
 
 #### Contexto histórico
 
-Gauguin lo pintó en Pont-Aven y quiso donarlo a la iglesia del pueblo vecino de Nizon; el párroco lo rechazó, sospechando que se burlaba de sus feligresas. Escribió a Van Gogh describiéndolo con orgullo y explicándole que el paisaje y la lucha «solo existen en la imaginación de la gente que reza».
+Lo pintó en Pont-Aven, Bretaña, en 1888. En su carta a Van Gogh, fechada hacia el 26 de septiembre de 1888, Gauguin decía que había querido regalarlo a la iglesia de Pont-Aven y que, «naturalmente», no lo quisieron. En 1904 Émile Bernard contó otra versión: que Gauguin lo ofreció al cura de Névez, quien lo juzgó no religioso porque las enormes cofias y las espaldas de las campesinas llenaban el lienzo y el tema quedaba reducido a proporciones insignificantes al fondo. Gauguin adjuntó a la carta un croquis del cuadro, hoy en el Van Gogh Museum. La National Gallery of Scotland lo compró en 1925.
 
 #### Sobre el artista
 
-Paul Gauguin (1848–1903) fue agente de bolsa hasta los treinta y cinco años, cuando abandonó su trabajo y a su familia para pintar. Murió en las Marquesas, enfermo y arruinado, tras años de conflicto con la administración colonial francesa.
+Paul Gauguin (París, 1848-Atuona, 1903) pasó parte de su infancia en Perú. En 1883 dejó su trabajo de agente de bolsa para dedicarse por completo a la pintura. Pissarro lo animó a pintar, pero desarrolló un estilo simbólico que usa el color para expresar significado. Pintó en Bretaña y en la Provenza con Van Gogh, viajó a Panamá y la Martinica, vivió varios años en Tahití y murió en las islas Marquesas. Sus cuadros influyeron profundamente en el arte moderno del siglo XX.
 
 ---
 
@@ -548,15 +548,15 @@ Paul Gauguin (1848–1903) fue agente de bolsa hasta los treinta y cinco años, 
 
 #### Lo que hace que destaque
 
-Agar levanta los brazos al cielo en un grito mientras Ismael yace desfallecido bajo un arbusto, y sobre ellos el ángel aparece diminuto en el aire. Pero lo que domina el lienzo —casi tres metros de ancho— es la extensión pedregosa y el cielo que la aplasta: Corot subordina la figura al paisaje y hace que la escala del abandono sea geográfica antes que emocional. La gama es sobria, casi monocroma, con el verde grisáceo que sería su marca.
+Agar, en el centro, implora al cielo junto a Ismael, tendido a su lado; Dios envía un ángel que le mostrará una fuente. Como señala el Met, las figuras son pequeñas en relación con el escenario, pero la escala del conjunto está a la altura de la gravedad del asunto, y el paisaje se ordena según el relato: madre e hijo están en la salida de un cauce seco. Corot compuso ese terreno árido en parte a partir de estudios del natural tomados en el campo francés. La National Gallery de Londres lo considera característico de su primera etapa: como sus estudios al aire libre, tiene las formas nítidas y los colores de la pintura académica.
 
 #### Contexto histórico
 
-Génesis 21 cuenta que Sara exigió a Abraham que expulsara a Agar y a Ismael tras el nacimiento de Isaac, y que Dios abrió los ojos de Agar para que viera un pozo. El episodio es incómodo y esencial: de Ismael desciende, según la tradición, el linaje árabe. Corot presentó el cuadro en el Salón de 1835 como pieza de gran formato para consagrarse como pintor histórico; el público lo aplaudió por el paisaje y apenas reparó en el asunto bíblico.
+Génesis 21 cuenta que Sara exigió a Abraham que echara a Agar y a Ismael, y que Dios abrió los ojos de Agar para que viera un pozo. Corot lo presentó en el Salón de 1835 con el número 440, como «Agar dans le désert; paysage». Un crítico aludió entonces a la tradición que hace de Ismael patriarca de los árabes: el ángel llega «para salvar a Ismael y a la raza árabe». Otro, anónimo, lo elogió precisamente por el ángel en el vasto paisaje, la esperanza lejana que la madre no ve. El cuadro quedó en poder del pintor hasta su muerte y salió en su venta del Hôtel Drouot en mayo de 1875; el Met lo adquirió en 1938 con el Rogers Fund.
 
 #### Sobre el artista
 
-Camille Corot (1796–1875) fue el puente entre el paisaje clásico y el impresionismo. Trabajó al aire libre décadas antes de que fuera costumbre, y fue tan generoso con los pintores jóvenes y necesitados que se decía que había firmado más cuadros de los que pintó.
+Jean-Baptiste-Camille Corot nació en París el 17 de julio de 1796, hijo de un pañero y una modista, y murió en París en 1875. Se formó con Michallon y Bertin y viajó a Italia en 1825-1828. En sus viajes pintaba al aire libre, y en invierno trabajaba en el taller paisajes mitológicos y religiosos ambiciosos para el Salón. Desde la década de 1850 su estilo se hizo más suave y su gama más restringida, con grises y verdes azulados. Animaba a pintores jóvenes a copiar sus cuadros, que luego firmaba, lo que produjo falsificaciones y problemas de atribución. Su influencia en el paisaje posterior, incluidos los impresionistas, fue inmensa.
 
 ---
 
@@ -565,19 +565,19 @@ Camille Corot (1796–1875) fue el puente entre el paisaje clásico y el impresi
 ![La túnica de José](./24_La_Tunica_de_Jose_Diego_Velazquez_1630.jpg)
 *La túnica de José — Diego Velázquez (1630)*
 
-**Ficha técnica:** Óleo sobre lienzo | 223 × 250 cm | Monasterio de San Lorenzo de El Escorial
+**Ficha técnica:** Óleo sobre lienzo | 213,5 × 284 cm | Monasterio de San Lorenzo de El Escorial (Patrimonio Nacional, inv. 10014694)
 
 #### Lo que hace que destaque
 
-Los hijos de Jacob presentan a su padre la túnica de José manchada de sangre de cabrito, insinuando que una fiera lo ha devorado. Velázquez organiza la escena como un interrogatorio: Jacob se echa hacia atrás con los brazos abiertos, los hijos gesticulan con distintos grados de convicción —uno señala, otro mira al suelo, otro observa la reacción del padre—, y el perro ladra a los mentirosos, único personaje que no se deja engañar. El suelo embaldosado en perspectiva y el escorzo de las figuras revelan lo que el pintor acababa de aprender en Italia.
+Génesis 37 cuenta que los hermanos degollaron un cabrito, empaparon la túnica de José en su sangre y se la enviaron a Jacob. Velázquez pinta el momento en que se la presentan: Jacob, sentado en un pequeño solio sobre una alfombra, muestra el dolor en el rostro y en el gesto de los brazos. Dos hermanos enseñan la túnica, otro de espaldas en primer término finge llorar y dos más, casi abocetados, se recortan sobre un fondo liso. Un perrillo ladra a los hermanos mentirosos, como si olfateara la traición. Patrimonio Nacional destaca la composición en friso, las figuras enteras en actitudes diversas, el estudio académico del desnudo masculino desde distintos ángulos y el paisaje de la ventana, que anuncia al Velázquez posterior.
 
 #### Contexto histórico
 
-Fue pintado en Roma durante el primer viaje italiano de Velázquez, junto con La fragua de Vulcano, y ambos son ejercicios deliberados: quiso demostrar que dominaba el desnudo masculino, la perspectiva y la composición de muchas figuras, las tres cosas que en Madrid no había tenido ocasión de practicar. Se conservan en El Escorial desde el siglo XIX.
+Lo pintó en Roma, durante su primer viaje a Italia, a la vez que La fragua de Vulcano (Prado). Según Enriqueta Harris, ambas telas prueban cuánto había mejorado en Italia. Patrimonio Nacional las vincula por su tema común, la envidia. En 1634 Jerónimo de Villanueva las adquirió para Felipe IV, junto con otras dieciséis pinturas, para el nuevo palacio del Buen Retiro. La túnica pasó pronto a El Escorial con las obras religiosas que siguió enviando Mariana de Austria tras la muerte de Felipe IV (la ficha da 1667). Hoy está en el Capítulo Vicarial.
 
 #### Sobre el artista
 
-Diego Velázquez (1599–1660) tenía treinta y un años y ya era pintor de cámara de Felipe IV. El episodio de José (Génesis 37-50) cierra el libro y es la novela más larga y estructurada del Antiguo Testamento: traición fraterna, esclavitud, ascenso político en Egipto y perdón final.
+Diego Rodríguez de Silva y Velázquez (Sevilla, 1599-Madrid, 1660) tomó el apellido de su madre, según un uso frecuente en Andalucía. Llamado a Madrid por el conde-duque de Olivares, retrató al joven Felipe IV y este lo nombró enseguida pintor de cámara, el primero de sus muchos cargos en palacio. Una visita a El Escorial con Rubens avivó su deseo de ver Italia, adonde partió en agosto de 1629. Volvió a Italia en 1649, recién nombrado ayuda de cámara, para comprar pinturas y esculturas antiguas para el rey.
 
 ---
 
@@ -586,19 +586,19 @@ Diego Velázquez (1599–1660) tenía treinta y un años y ya era pintor de cám
 ![La destrucción de Sodoma y Gomorra](./25_La_Destruccion_de_Sodoma_y_Gomorra_John_Martin_1852.jpg)
 *La destrucción de Sodoma y Gomorra — John Martin (1852)*
 
-**Ficha técnica:** Óleo sobre lienzo | 136,3 × 212,3 cm | Laing Art Gallery, Newcastle upon Tyne
+**Ficha técnica:** Óleo sobre lienzo | 136,3 × 212,3 cm | Laing Art Gallery, Newcastle upon Tyne (TWCMS : C6975)
 
 #### Lo que hace que destaque
 
-Martin lleva el sublime romántico a su extremo: un cielo entero convertido en incendio, relámpagos que caen en cortinas sobre la llanura y unas ciudades reducidas a siluetas incandescentes al fondo. En primer término, Lot y sus hijas huyen mientras la esposa se detiene y se vuelve —el instante exacto anterior a convertirse en estatua de sal—. La desproporción entre las figuras minúsculas y la escala del cataclismo es el asunto verdadero del cuadro.
+Génesis 19 cuenta que el Señor hizo llover azufre y fuego del cielo sobre Sodoma y Gomorra, y que la mujer de Lot miró atrás y quedó convertida en columna de sal. Martin pinta la huida: Lot y sus hijas escapan en primer término mientras detrás el cielo se convierte en un torbellino de fuego sobre las ciudades. Según Tate Etc., el éxito de Martin se debió en parte a que tomó la teoría de lo sublime de Burke —el «terror deleitoso» de los paisajes inmensos— y la adaptó al gusto general. El museo de la Tate lo define como el pintor de las escenas dramáticas de destrucción apocalíptica y catástrofe bíblica.
 
 #### Contexto histórico
 
-Martin fue el pintor más popular de la Inglaterra victoriana entre el gran público y el más despreciado por la crítica, que lo consideraba un fabricante de efectos. Sus grabados apocalípticos se vendieron por decenas de miles y moldearon la iconografía del fin del mundo hasta el cine: la estética de las superproducciones bíblicas de Hollywood procede de él en línea directa.
+Está fechado en 1852, dos años antes de la muerte del pintor. Llegó a la Laing en 1951, donado por E. F. Weidner en memoria de John Frederick Weidner, alcalde de Newcastle en 1912-1913. Su arte fue enormemente popular, pero la crítica lo rechazó: Ruskin y Wordsworth lo despreciaron, la Royal Academy nunca lo eligió y Constable lo llamó «pintor de pantomimas». Sus mezzotintas, asequibles, colgaban en casas de todo el mundo. Su influencia llegó al cine: D. W. Griffith tomó su Festín de Baltasar como modelo para la puerta de Babilonia de Intolerancia (1916).
 
 #### Sobre el artista
 
-John Martin (1789–1854) completa en esta colección el arco del juicio divino: junto al Diluvio de Miguel Ángel, de Van Scorel y de Turner, Sodoma es la segunda gran destrucción del Génesis, y la única que ocurre ya dentro de la historia patriarcal.
+John Martin nació en Northumberland en julio de 1789 y se formó con un pintor de carruajes. En 1806 se trasladó a Londres, donde trabajó como pintor sobre vidrio y cerámica y como profesor de dibujo antes de dedicarse a la pintura de imaginación. Tuvo admiradores como Dickens, Bulwer-Lytton, los Brontë, el príncipe Alberto y Leopoldo de Bélgica. Además de pintor fue ilustrador de la Biblia y del Paraíso perdido de Milton, dibujó reconstrucciones de dinosaurios y proyectó obras de ingeniería para Londres. Murió en 1854.
 
 ---
 
@@ -607,19 +607,19 @@ John Martin (1789–1854) completa en esta colección el arco del juicio divino:
 ![El jardín de las delicias](./26_El_Jardin_de_las_Delicias_El_Bosco_1505.jpg)
 *El jardín de las delicias — El Bosco (c. 1490-1500), tríptico completo*
 
-**Ficha técnica:** Óleo sobre tabla | 205,5 × 384,9 cm abierto | Museo Nacional del Prado, Madrid (P02823)
+**Ficha técnica:** Grisalla y óleo sobre tabla de roble | 185,8 × 172,5 cm (tabla central), 76,5 cm de ancho cada ala | Museo Nacional del Prado, Madrid (P002823)
 
 #### Lo que hace que destaque
 
-El tríptico se lee de izquierda a derecha como una historia del género humano: en la tabla izquierda, Dios presenta Eva a Adán en un Paraíso ya recorrido por animales extraños y presagios inquietantes; en la central, una humanidad desnuda e innumerable se entrega a un carnaval erótico entre frutas gigantes y criaturas imposibles; en la derecha, un infierno musical nocturno donde los instrumentos se han convertido en instrumentos de tortura. No hay consenso sobre si el panel central es una advertencia moral o la representación de una inocencia perdida: cinco siglos de interpretaciones no lo han cerrado.
+Cerrado, el tríptico muestra en grisalla el tercer día de la Creación, con Dios Padre arriba y dos inscripciones del Salmo 33 y el 148. Abierto, las tres tablas comparten un denominador, el pecado: empieza en el Paraíso de la izquierda con Adán y Eva y se castiga en el Infierno de la derecha. El Bosco sustituyó en una segunda fase la Creación de Eva por la rara Presentación de Eva a Adán por Dios Padre, asociada al matrimonio. La tabla central es un falso paraíso entregado a la lujuria; Vandenbroeck lo lee como el «paraíso del amor» mal entendido del «creced y multiplicaos». El Infierno se llama a veces «musical» por los instrumentos que torturan a quienes se dejaron llevar por la música profana; allí se castigan todos los pecados capitales. Para Falkenburg, el tema es el destino de la humanidad.
 
 #### Contexto histórico
 
-Aparece documentado en 1517 en el palacio de Bruselas de los Nassau, pasó a Felipe II —que lo compró en almoneda en 1591 y lo llevó a El Escorial— y de allí al Prado en 1939. Fray José de Sigüenza lo defendió en 1605 de quienes lo tachaban de herético con un argumento que sigue siendo el mejor: que en los demás cuadros se pinta al hombre por fuera, y en este por dentro.
+Pilar Silva, en la ficha del Prado, sostiene que lo encargó Engelbrecht II de Nassau en la década de 1490 para su palacio de Coudenberg, en Bruselas, donde lo vio Antonio de Beatis el 30 de julio de 1517. Pasó a Hendrik III de Nassau, a René de Châlon y a Guillermo de Orange; el duque de Alba lo confiscó en 1568 y quedó en manos de su hijo Fernando de Toledo, en cuya almoneda lo compró Felipe II en 1591. Lo entregó a El Escorial el 8 de julio de 1593 y en 1933 llegó al Prado, donde está en depósito del Patrimonio Nacional. En 1605 fray José de Sigüenza defendió al Bosco de quienes lo tenían «infamado de herege»: los demás pintaron al hombre «qual parece por de fuera», y él se atrevió «a pintarle cual es dentro».
 
 #### Sobre el artista
 
-De Hieronymus van Aken, El Bosco (c. 1450–1516), se sabe muy poco: vivió toda su vida en 's-Hertogenbosch, perteneció a la Hermandad de Nuestra Señora y murió acomodado. Esta imagen procede de la campaña de digitalización del Prado y es de resolución extraordinaria, lo que la convierte en la mejor pieza de la colección para inspeccionar en detalle extremo.
+Jheronimus van Aken, el Bosco (c. 1450-1516), nació y murió en 's-Hertogenbosch, en una familia de pintores que trabajó durante seis generaciones. En 1481 ya consta casado con Aleid van de Meervenne. En 1486-1487 ingresó como miembro ordinario en la cofradía de Nuestra Señora, a la que habían pertenecido sus abuelos y sus padres. El 9 de agosto de 1516 se celebró en la capilla de la cofradía, en la iglesia de San Juan, una misa de réquiem por «Jeronimus van Aken pintor», probablemente su funeral. Sigüenza llamó a su estilo «pintura macarrónica».
 
 ---
 
@@ -631,19 +631,19 @@ De Hieronymus van Aken, El Bosco (c. 1450–1516), se sabe muy poco: vivió toda
 ![El pecado original y la expulsión del Paraíso](./41b_El_Pecado_Original_y_la_Expulsion_Boveda_Miguel_Angel_1510.jpg)
 *El panel en su sitio de la bóveda, entre los ignudi y el marco fingido*
 
-**Ficha técnica:** Fresco | 280 × 570 cm | Bóveda de la Capilla Sixtina, Ciudad del Vaticano
+**Ficha técnica:** Fresco | 280 × 570 cm | Bóveda de la Capilla Sistina, Ciudad del Vaticano
 
 #### Lo que hace que destaque
 
-Miguel Ángel resuelve dos momentos en una sola superficie sin dividirla: el árbol del centro, con la serpiente de torso femenino enroscada al tronco, sirve de eje y de frontera. A la izquierda el Edén es rocoso y verde y las figuras son plenas, casi perezosas; a la derecha el suelo se vuelve un yermo pelado y los mismos cuerpos aparecen encogidos y envejecidos por el mismo pintor en el mismo metro cuadrado. El ángel de rojo empuja con la espada desde el mismo tronco: no hay transición, hay tajo. La Eva de la izquierda, sentada bajo el brazo de Adán, y la de la derecha, encorvada y con la boca abierta, son la mejor demostración de lo que Miguel Ángel entendía por caída.
+Miguel Ángel representa a la vez el pecado original (Génesis 3,1-13) y la expulsión del Paraíso (Génesis 3,22-24), dos momentos que el texto bíblico separa, y muestra así juntas la causa y el efecto. Los separa el árbol del bien y del mal, en el que se enrosca la serpiente que tiende el fruto a Eva. Al otro lado, un ángel con la espada desenvainada expulsa a los primeros padres, que se alejan doloridos y encorvados bajo el peso del remordimiento. El panel es uno de los nueve de la franja central, agrupados de tres en tres sobre el origen del universo, del hombre y del mal: sigue a la Creación de Eva, donde la desnudez es aún símbolo de inocencia, y la pierde.
 
 #### Contexto histórico
 
-Corresponde al tercer año de trabajo en la bóveda y pertenece al grupo de paneles pintados ya con la técnica depurada, con figuras más grandes y menos abarrotadas que las primeras escenas del Diluvio. La restauración de 1980-1994 devolvió a estos frescos un color que siglos de humo de vela habían apagado, y que provocó una polémica considerable: hubo quien acusó a los restauradores de haber lavado las sombras que el propio Miguel Ángel habría añadido en seco.
+Julio II encargó la nueva bóveda tras los daños estructurales que abrieron una grieta en 1504. El contrato del 8 de mayo de 1508 preveía solo doce apóstoles; a petición de Miguel Ángel, que lo consideró «cosa povera», el papa le dejó idear el programa entero, probablemente con teólogos de la corte. En agosto de 1510 había terminado la primera mitad, de la pared de entrada a la Creación de Eva, que incluye este panel. El 1 de noviembre de 1512 el papa dijo misa bajo la bóveda acabada. Entre 1980 y 1994, con Fabrizio Mancinelli y Gianluigi Colalucci, se restauraron todos los frescos, con patrocinio de Nippon Television; el recobrado color suscitó polémicas técnicas que el Dizionario Biografico juzga a menudo excesivas y partidistas.
 
 #### Sobre el artista
 
-Se muestran dos vistas porque son dos cosas distintas: el panel aislado, tal como se reproduce siempre, y el mismo panel dentro de la bóveda, rodeado de ignudi, medallones y arquitectura fingida. Fuera de ese marco es un cuadro; dentro se ve que es una pieza de un techo entero pensado como una sola máquina.
+Miguel Ángel Buonarroti (Caprese, 1475-Roma, 1564) fue arquitecto, escultor, pintor y poeta. Aprendiz desde 1487 en el taller de Domenico Ghirlandaio, conoció hacia 1489 la estatuaria clásica del jardín de San Marco de los Medici. Julio II lo llamó a Roma en 1505 para su sepulcro; después, pese a que intentó eludirlo, le impuso la bóveda de la Sixtina, que pintó de mayo de 1508 a octubre de 1512. El proyecto, que al principio abarcaba solo la bóveda, se amplió a lunetas y pechinas para evocar el origen de lo creado, de la humanidad y su destino. En 1533 Clemente VII le encargó el Juicio Final de la misma capilla.
 
 ---
 
@@ -656,15 +656,15 @@ Se muestran dos vistas porque son dos cosas distintas: el panel aislado, tal com
 
 #### Lo que hace que destaque
 
-Rubens sitúa la escena en una gruta rocosa, iluminada por una sola fuente de luz, y compone las tres figuras en un triángulo apretado que no deja salida visual. Las hijas rodean al padre, una le acerca la copa y la otra lo sostiene por detrás; Lot ya está ebrio y su rostro tiene la vaguedad blanda del alcohol. La carnación de Rubens, habitualmente celebratoria, aquí resulta incómoda a propósito: el pintor no juzga ni excusa, solo describe con una franqueza que resulta más perturbadora que cualquier condena.
+Génesis 19 cuenta que Lot se refugió con sus hijas en una cueva y que la mayor, creyendo que no quedaba hombre en la tierra, propuso emborracharlo para tener descendencia de él. El museo de Schwerin destaca que las figuras dominan por completo el espacio del primer plano y que Rubens no quiso mostrar al padre como víctima de la seducción: lo pinta barbado pero vigoroso, tendiendo activamente la mano hacia la joven que tiene al lado. Según el comentario de ZDF con el museo, Lot tiene cabeza de anciano y cuerpo casi hercúleo, y la mujer de Lot, que según el relato quedó como columna de sal, falta del todo. En su lugar, Rubens se luce como pintor de naturaleza muerta en la vajilla de plata, las uvas y el pan.
 
 #### Contexto histórico
 
-El pasaje es el reverso oscuro de la destrucción de Sodoma que John Martin pinta en esta misma colección: las hijas, creyendo que no queda nadie más en la tierra, emborrachan a su padre para concebir de él. De esa unión nacen, según el texto, los pueblos de Moab y Amón —los enemigos históricos de Israel—, de modo que el relato funciona además como una explicación etiológica y polémica del origen de los vecinos.
+De esa unión nacieron Moab y Ben Amí, padres de los moabitas y los amonitas. El museo lo sitúa entre las primeras obras de Rubens tras su regreso de Italia y lo fecha hacia 1610. Como estuvo en la RDA, la investigación occidental lo tuvo difícil de estudiar hasta 1989 y lo consideró una copia de un original perdido; tras la caída del Muro se impuso la convicción de que es el original. Un grave daño de guerra destruyó la mitad de la copa de vino y la mano y el antebrazo de una de las mujeres, que un restaurador rehízo; de cerca se distinguen las dos mitades de la copa.
 
 #### Sobre el artista
 
-Rubens (1577–1640) trató el asunto varias veces. Que un pintor tan asociado a la exuberancia y al triunfo se detuviera en un episodio de incesto y embriaguez indica hasta qué punto el Antiguo Testamento le servía para explorar zonas que la pintura devocional tenía vedadas.
+Peter Paul Rubens (1577-1640) pintó este lienzo en los primeros años tras su regreso de Italia, según el museo de Schwerin. El museo subraya la interpretación personal del pintor: Rubens no muestra a Lot como víctima de la seducción de sus hijas, sino como un hombre vigoroso que actúa. El comentario de ZDF añade que Rubens no soportaba que la tradición presentara a Lot sin voluntad y por eso le dio un cuerpo casi hercúleo, y alaba su dominio del juego de luz y color entre hombros y telas.
 
 ---
 
@@ -673,19 +673,19 @@ Rubens (1577–1640) trató el asunto varias veces. Que un pintor tan asociado a
 ![Eliezer y Rebeca](./28_Eliezer_y_Rebeca_Nicolas_Poussin_1648.jpg)
 *Eliezer y Rebeca — Nicolas Poussin (1648)*
 
-**Ficha técnica:** Óleo sobre lienzo | 118 × 197 cm | Musée du Louvre, París (INV 7270)
+**Ficha técnica:** Óleo sobre lienzo (transpuesto en 1848) | 118 × 199 cm | Musée du Louvre, París (INV 7270; MR 2315)
 
 #### Lo que hace que destaque
 
-Eliezer había pedido una señal: que la muchacha destinada a Isaac fuera la que le ofreciera de beber y diera además agua a sus camellos. Poussin elimina los camellos —decisión que le reprocharon sus contemporáneos y que él defendió como necesaria para no distraer— y organiza a las jóvenes del pozo en una banda horizontal de figuras clásicas, cada una en una actitud distinta, como un relieve romano desplegado. El instante elegido es el más quieto posible: Rebeca acaba de escuchar la petición y todavía no ha respondido.
+El cuadro ilustra Génesis 24, 15-27: el criado Eliezer, enviado por Abraham a buscar esposa para Isaac, pide a Dios que la elegida sea la joven que le dé de beber a él y también a sus camellos. Poussin pinta el instante del diálogo: Rebeca ya le ha dado agua y Eliezer la interroga sobre su familia. Las figuras se ordenan en planos paralelos, a la manera de un friso, en una gama dominada por azules y beiges. Poussin suprimió los camellos del relato; en una conferencia de la Academia de 1668, Charles Le Brun defendió esa omisión alegando que los «animales extraños» habrían distraído de «la materia principal». Sobre un pedestal aparece una esfera de piedra que, según la ficha del Louvre, alude a la acción impenetrable de la Providencia divina.
 
 #### Contexto histórico
 
-Fue pintado para Jean Pointel, banquero y coleccionista lionés amigo del pintor. Se convirtió en el cuadro más copiado por los alumnos de la Academia francesa durante dos siglos, precisamente por su claridad compositiva: era el modelo de cómo distribuir muchas figuras sin desorden.
+Fechado en 1648, fue encargado por Jean Pointel, comerciante y coleccionista muerto en 1660. Al dispersarse la colección de Pointel pasó en 1661 a Armand Jean de Vignerot du Plessis, duque de Richelieu, y en 1665 fue comprado para Luis XIV. Estuvo en Versalles entre 1684 y 1703, pasó al Louvre en 1792 y se expuso en la apertura del museo en 1793. En 1848 se transpuso a un lienzo nuevo.
 
 #### Sobre el artista
 
-Nicolas Poussin (1594–1665) pasó casi toda su vida en Roma pintando para un círculo reducido de coleccionistas eruditos. Su método era casi teatral: modelaba figuritas de cera, las disponía en una caja escenario y estudiaba la luz sobre ellas antes de tocar el lienzo.
+Nicolas Poussin nació en Les Andelys en 1594 y murió en Roma en 1665. Tras vivir en París desde 1612, viajó a Roma por Venecia en 1624 y allí se quedó la mayor parte de su vida, salvo un regreso a París entre 1640 y 1642 para trabajar para Luis XIII. Pintó sobre todo cuadros de caballete para mecenas privados y eruditos como Cassiano dal Pozzo. Para componer modelaba pequeñas figuras desnudas de cera, las vestía con tela mojada y las disponía sobre un escenario dentro de una caja con aberturas que dosificaban la luz y un solo agujero de observación en la parte delantera. Se cree que usó este método en los años 1630 y principios de los 1640.
 
 ---
 
@@ -697,19 +697,19 @@ Nicolas Poussin (1594–1665) pasó casi toda su vida en Roma pintando para un c
 ![Isaac bendice a Jacob](./29b_Isaac_Bendice_a_Jacob_Detalle_Jose_de_Ribera_1637.jpg)
 *Isaac bendice a Jacob (detalle) — José de Ribera*
 
-**Ficha técnica:** Óleo sobre lienzo | 129 × 289 cm | Museo Nacional del Prado, Madrid
+**Ficha técnica:** Óleo sobre lienzo | 110 × 291,5 cm | Museo Nacional del Prado, Madrid (P001118)
 
 #### Lo que hace que destaque
 
-Ribera construye la escena sobre el tacto, porque el tacto es el sentido con el que Isaac es engañado. El anciano ciego alarga la mano y palpa el brazo de Jacob, cubierto con la piel del cabrito que lo hace pasar por el velludo Esaú; Rebeca, la madre que ha urdido el engaño, aparece a la derecha vigilando con el dedo en los labios. El formato apaisado extremo obliga a leer la escena de izquierda a derecha, como una frase. El naturalismo tenebrista de Ribera —la piel arrugada, las uñas, la ropa raída— vuelve tangible lo que el texto solo insinúa.
+Ribera ilustra Génesis 27, 21-30: Jacob, con el brazo cubierto con piel de oveja para imitar el vello de su hermano Esaú, obtiene con engaño la bendición de su padre ciego, Isaac, con la complicidad de su madre, Rebeca. Al fondo, a la izquierda, se ve a Esaú volviendo de la caza. Según Alfonso E. Pérez Sánchez, la obra funde un naturalismo intenso de raíz caravaggesca con un sentido atmosférico y cromático que revela la meditación sobre los venecianos del Cinquecento, y destaca el modo de traducir el tacto de las telas, la piel de cordero y los rostros. A la derecha hay un fragmento de naturaleza muerta que Pérez Sánchez considera punto de partida del bodegón napolitano posterior de los Recco y los Ruoppolo.
 
 #### Contexto histórico
 
-El episodio es moralmente escandaloso y la Biblia no lo censura: Jacob obtiene la primogenitura mediante una estafa y aun así es el elegido. Es uno de los pasajes que mejor ilustran el argumento del ensayo Post-Babel de esta colección — que a partir de Génesis 12 el relato abandona los arquetipos cósmicos y entra en la psicología familiar, con sus favoritismos, engaños y rencores.
+Está firmado a la derecha «Jusepe de Ribera español / F. Año 1637». El tema era muy común entre los pintores italianos del siglo XVII y muy poco frecuente en España. El punto de vista bajo y el formato tan alargado han hecho pensar en una pintura destinada a una sobrepuerta. Se cita por primera vez en el Alcázar de Madrid con motivo del incendio de 1734, y se ignora cómo llegó a las colecciones reales. Una banda añadida de unos 19 cm se suprimió en 1991, con ocasión de la exposición Ribera del Prado. Tras la Guerra de la Independencia estuvo en la Academia de San Fernando y figura en el Prado desde 1854.
 
 #### Sobre el artista
 
-José de Ribera (1591–1652), valenciano establecido en Nápoles, fue llamado allí «lo Spagnoletto». Aunque nunca regresó a España, trabajó casi siempre para los virreyes españoles, y por eso sus obras mayores acabaron en el Prado y en El Escorial.
+José de Ribera nació en Játiva en 1591 y murió en Nápoles en 1652. Estaba activo en Italia ya en 1611, al servicio de Ranuccio Farnesio en Parma; en 1613 vivía en Roma y en 1616 se estableció definitivamente en Nápoles, quizá en el séquito del virrey duque de Osuna. Allí recibió encargos del propio virrey, de otros nobles españoles y de coleccionistas italianos y extranjeros. Según Nicola Spinosa, Isaac y Jacob pertenece a la serie de lienzos de 1635-1638 en que Ribera llegó a su mayor riqueza cromática bajo el influjo de la pintura veneciana del siglo XVI.
 
 ---
 
@@ -718,19 +718,19 @@ José de Ribera (1591–1652), valenciano establecido en Nápoles, fue llamado a
 ![El sueño de Jacob](./30_El_Sueno_de_Jacob_Jose_de_Ribera_1639.jpg)
 *El sueño de Jacob — José de Ribera (1639)*
 
-**Ficha técnica:** Óleo sobre lienzo | 179 × 233 cm | Museo Nacional del Prado, Madrid
+**Ficha técnica:** Óleo sobre lienzo | 179 × 233 cm | Museo Nacional del Prado, Madrid (P001117)
 
 #### Lo que hace que destaque
 
-La tradición había representado siempre este pasaje con una escalera de mano poblada de ángeles subiendo y bajando. Ribera la suprime entera. Lo que queda es un joven dormido sobre la tierra desnuda, la cabeza apoyada en una piedra, el bastón caído, y a la izquierda un resplandor dorado en el que apenas se adivinan formas alígeras disolviéndose en la luz. La visión no se muestra: se sugiere como algo que ocurre dentro del que duerme. El tratamiento de la carne, del pelo revuelto y de la tela basta es de un naturalismo extremo, y contrasta violentamente con esa zona de pura pintura luminosa.
+El episodio es el de Génesis 28, 11-22: camino de Harán, Jacob se duerme con una piedra por cabecera y sueña con una escala por la que suben y bajan ángeles. En el Barroco el tema solía pintarse con la escala llena de ángeles en primer plano; Ribera, en cambio, según Nicola Spinosa, exalta el aspecto humano y cotidiano. El patriarca duerme tendido en el suelo como un viajero cansado o un pastor, junto al tronco nudoso de un árbol casi sin hojas que acentúa la horizontalidad. La escala de ángeles, hecha con pinceladas rápidas y esenciales, casi se disuelve en un halo de luz dorada bajo un cielo claro.
 
 #### Contexto histórico
 
-Es una de las obras más modernas del siglo XVII español y ha sido leída como un antecedente lejano del romanticismo. La imagen de esta colección procede de la campaña de digitalización del Prado y supera los 680 megapíxeles, lo que permite acercarse hasta el grano del lienzo y la pincelada individual.
+Está firmado y fechado «JUSEPE DE RIBERA F. / 1639». Es pareja del San Pedro liberado por un ángel, también de 1639 y de medidas casi idénticas. Apareció en 1774 en los inventarios reales del palacio de La Granja y en 1794 en los de Aranjuez atribuido a Murillo, quizá porque la firma apenas se leía. En 1818 pasó a la Academia de San Fernando, ya como Ribera, y en 1827 entró en el Prado. Spinosa lo relaciona con los dos Paisajes que Ribera pintó ese mismo año para el conde de Monterrey.
 
 #### Sobre el artista
 
-Ribera pintó el cuadro para el virrey de Nápoles. El pasaje —«ciertamente el Señor está en este lugar y yo no lo sabía»— da nombre a Betel, y es el momento en que el estafador de Génesis 27 recibe por primera vez la promesa divina directamente.
+Jacob despierta y dice: «Ciertamente Jehová está en este lugar, y yo no lo sabía», y llama al lugar Betel. Ribera, nacido en Játiva en 1591 y muerto en Nápoles en 1652, trabajaba en esos años con una materia cromática cada vez más cálida y menos sombría. Nicola Spinosa sitúa El sueño de Jacob, junto al Martirio de san Felipe del mismo año, dentro de esa producción de tema bíblico. Añade que estas cualidades de color y lirismo apenas se le reconocieron a Ribera desde finales del siglo XVII hasta bien entrado el XX.
 
 ---
 
@@ -742,19 +742,19 @@ Ribera pintó el cuadro para el virrey de Nápoles. El pasaje —«ciertamente e
 ![El invierno, o El Diluvio](./31b_El_Invierno_o_El_Diluvio_Detalle_Nicolas_Poussin_1664.jpg)
 *El invierno o El Diluvio (detalle) — Nicolas Poussin*
 
-**Ficha técnica:** Óleo sobre lienzo | 118 × 160 cm | Musée du Louvre, París (INV 7306)
+**Ficha técnica:** Óleo sobre lienzo (transposición) | 118 × 160 cm | Musée du Louvre, París (INV 7306; MR 2336)
 
 #### Lo que hace que destaque
 
-Poussin renuncia a todo lo que el asunto invitaba a pintar. No hay arca protagonista, no hay ángeles, no hay musculatura miguelangelesca: solo una luz plomiza, una roca, una barca que zozobra, un caballo que se ahoga y una serpiente que repta por una piedra en primer término. La paleta se reduce casi a la monocromía —grises verdosos, negros, un relámpago blanco— y las figuras son minúsculas frente a la masa de agua. Es un cuadro construido por sustracción: cada elemento que un pintor barroco habría añadido está deliberadamente ausente, y esa ausencia es la que produce el desamparo.
+Para representar el invierno, Poussin eligió el Diluvio de Génesis 7, 17-23: la destrucción por el agua, uno de los cuatro elementos, y un clima de fin, muerte y noche. En primer término unos náufragos llegan a una ensenada resguardada y, a la derecha, alguien sube a un niño a una roca. Al fondo, a la izquierda, se ve el arca detrás de los tejados de dos granjas. Según la ficha de Utpictura18, el agua y el paisaje son extrañamente tranquilos: los refugiados parecen a salvo, pero dentro de poco las aguas lo habrán cubierto todo. John Ruskin le reprochó que su sublimidad consistiera en pintarlo todo gris y pardo.
 
 #### Contexto histórico
 
-Forma parte de Las cuatro estaciones, la serie que Poussin pintó ya anciano y con la mano temblorosa para el duque de Richelieu, y en la que cada estación lleva además un episodio bíblico: la primavera es el Paraíso terrenal, el verano Rut y Booz, el otoño los exploradores de Canaán y el invierno el Diluvio. El ciclo entero es una historia de la humanidad en cuatro tiempos, y el invierno es su final. Fue el último cuadro que terminó. La crítica del siglo XIX lo consagró como su obra maestra: para muchos románticos franceses, este Diluvio era el cuadro más sublime del Louvre.
+Pertenece a Las cuatro estaciones, pintadas entre 1660 y 1664 para Armand-Jean de Vignerot du Plessis, duque de Richelieu. En cada estación hay un asunto de las Escrituras: el paraíso terrenal, Rut y Booz, las uvas de Canaán y el Diluvio. Con el Apolo y Dafne del Louvre, el Louvre considera la serie la última obra maestra de Poussin. Félibien escribió que la terminó con la salud en declive, y los contemporáneos vieron en ella a la vez la fuerza de su genio y la debilidad de su mano. Luis XIV la compró a Richelieu en 1665. William Hazlitt lo llamó «el paisaje histórico más bello del mundo». El 9 de julio de 1907 un perturbado lo acuchilló siete veces, y en 1907-1908 se transpuso a un lienzo nuevo.
 
 #### Sobre el artista
 
-Nicolas Poussin (1594–1665) murió en Roma un año después de acabar la serie. Junto a su «Eliezer y Rebeca», también en esta colección y también en el Louvre, muestra sus dos registros opuestos: la claridad serena del relato patriarcal y la desolación sin retórica del cataclismo.
+Nicolas Poussin nació en Les Andelys en 1594 y murió en Roma en 1665, un año después de terminar la serie. Llegó a Roma en 1624 y allí vivió la mayor parte de su vida, pintando sobre todo cuadros de caballete para coleccionistas privados. El Louvre recoge el recuerdo de Loménie de Brienne de una reunión en casa del duque donde cada invitado eligió su estación preferida y él se declaró por El Diluvio. Christopher Wright, citado en el comentario de la Universidad de Lancaster, vio en las Estaciones obras libres de la pedantería y la sequedad de los quince años anteriores.
 
 ---
 
@@ -763,85 +763,85 @@ Nicolas Poussin (1594–1665) murió en Roma un año después de acabar la serie
 ![La embriaguez de Noé](./32_La_Embriaguez_de_Noe_Giovanni_Bellini_1515.jpg)
 *La embriaguez de Noé — Giovanni Bellini (c. 1515)*
 
-**Ficha técnica:** Óleo sobre lienzo | 103 × 157 cm | Musée des Beaux-Arts, Besanzón, Francia
+**Ficha técnica:** Óleo sobre lienzo | 103 × 157 cm | Musée des Beaux-Arts, Besanzón, Francia (896.1.13)
 
 #### Lo que hace que destaque
 
-Noé yace dormido y desnudo, con la copa aún cerca y el rostro congestionado por el vino. Cam lo descubre y señala; Sem y Jafet se acercan de espaldas, con un paño extendido, para cubrirlo sin mirar. Bellini comprime a los cuatro en un primer plano casi sin fondo, de modo que el espectador queda a la misma distancia incómoda que los hijos. La carne del anciano está pintada con una veracidad implacable —flacidez, manchas, la boca entreabierta— que no busca el escarnio sino la constatación.
+Es la escena de Génesis 9, 18-29: Noé, ebrio y desnudo, duerme mientras Cam se burla de él y Sem y Jafet apartan la mirada, con un viñedo al fondo. El texto bíblico añade que Cam, «padre de Canaán», vio la desnudez de su padre, y que Noé, al despertar, maldijo a Canaán. La ficha de la base Joconde lo llama «pintura audaz», hecha cuando el arte de Bellini se abría a la influencia de sus discípulos Giorgione y Tiziano.
 
 #### Contexto histórico
 
-Es una de las últimas obras de Bellini, pintada rondando los ochenta y cinco años, y sorprende por su crudeza en un artista asociado a Vírgenes serenas. El episodio explica la maldición de Canaán, hijo de Cam, que la tradición usó durante siglos para justificar la esclavitud: uno de los pasajes del Génesis con consecuencias históricas más graves y peor leídas.
+Se fecha hacia 1515, al final de la vida del pintor. La atribución fue incierta durante mucho tiempo: se propusieron Cariani, Giorgione y Tiziano, pero hoy se acepta de forma unánime que es de Bellini. Perteneció al pintor y coleccionista Jean Gigoux, que la legó a Besanzón en 1894. Está en el Musée des Beaux-Arts et d'Archéologie de la ciudad con el inventario 896.1.13.
 
 #### Sobre el artista
 
-Giovanni Bellini (c. 1430–1516) fue el patriarca de la pintura veneciana y maestro de Giorgione y Tiziano —cuyo Caín y Abel abre esta misma colección—. Fue de los primeros italianos en adoptar el óleo, que le permitió las transiciones de luz y carne que aquí se ven.
+Giovanni Bellini, nacido hacia 1430-1435, murió en Venecia en 1516. Pertenecía a la principal dinastía artística de Venecia: era hijo de Jacopo Bellini, hermano de Gentile y cuñado de Andrea Mantegna, cuya influencia se nota en sus primeras obras. La visita de Antonello da Messina a Venecia en 1475-1476 pudo influir en él. Hacia 1506 Durero escribió que era muy viejo y aun así el mejor pintor de todos. Giorgione y Tiziano fueron discípulos suyos.
 
 ---
 
-### 34. El encuentro de Abraham y Melquisedec — Peter Paul Rubens (1625)
+### 34. El encuentro de Abraham y Melquisedec — Peter Paul Rubens (c. 1626)
 
 ![El encuentro de Abraham y Melquisedec](./33_El_Encuentro_de_Abraham_y_Melquisedec_Peter_Paul_Rubens_1625.jpg)
 *El encuentro de Abraham y Melquisedec — Peter Paul Rubens (1625)*
 
-**Ficha técnica:** Óleo sobre tabla (modello) | 66 × 82 cm | National Gallery of Art, Washington
+**Ficha técnica:** Óleo sobre tabla (modello) | 65,5 × 82,4 cm | National Gallery of Art, Washington (1958.4.1)
 
 #### Lo que hace que destaque
 
-Melquisedec desciende una escalinata rodeado de servidores que portan panes y jarras, y Abraham, con armadura, alza la mano al recibirlos. Rubens organiza la escena en dos diagonales que se cruzan justo en el pan ofrecido, y la ilumina desde arriba a la izquierda, de modo que la comitiva sacerdotal aparece bañada en luz y el bando guerrero queda en penumbra. Es una tabla pequeña, un modello preparatorio, pintada con la soltura y la pincelada visible que Rubens reservaba para sus bocetos y que muchos prefieren a las versiones acabadas.
+Según la National Gallery of Art, es un modello muy acabado para uno de los tapices de la serie del Triunfo de la Eucaristía. La escena no se muestra directamente: se pinta como un tapiz fingido que sostienen unos putti delante de una arquitectura. En el centro, Abraham, con armadura y al frente de sus soldados, recibe agradecido los panes de Melquisedec. Los dos se inclinan el uno hacia el otro y cruzan la mirada, como si solo ellos intuyeran que el pan y el vino significan algo más que alimento. El museo destaca los colores vivos, las texturas ricas y la pincelada expresiva.
 
 #### Contexto histórico
 
-Melquisedec aparece en tres versículos y desaparece sin genealogía ni muerte registrada, y esa ausencia deliberada hizo que la Epístola a los Hebreos lo leyera como prefiguración de un sacerdocio eterno. El pan y el vino que ofrece se interpretaron desde muy pronto como anuncio de la eucaristía, lo que convirtió esta escena marginal en uno de los temas más pintados del Antiguo Testamento.
+Génesis 14, 17-20 cuenta que Melquisedec, rey de Salem y sacerdote, salió con pan y vino al encuentro de Abraham cuando volvía victorioso. La Epístola a los Hebreos lo presenta «sin padre, sin madre, sin genealogía», hecho semejante al Hijo de Dios y sacerdote para siempre. Los teólogos católicos leyeron su ofrenda como prefiguración de la Última Cena. Hacia 1625 la infanta Isabel Clara Eugenia encargó a Rubens la serie para el convento de las Descalzas Reales de Madrid: veinte tapices tejidos en Bruselas entre 1625 y 1633 aproximadamente.
 
 #### Sobre el artista
 
-La imagen de esta colección procede de una digitalización excepcional: más de 200 megapíxeles para una tabla de 66 centímetros, lo que permite seguir cada pincelada del boceto.
+Pedro Pablo Rubens (1577-1640) diseñó la serie del Triunfo de la Eucaristía en su taller de Amberes, a partir de descripciones de segunda mano de la iglesia del convento. Fue la tercera y la mayor de las series de tapices de su carrera. Tejieron los paños los talleres bruselenses de Jan Raes I y Jacob Geubels II. Según la Getty, Rubens no hizo concesiones a los tejedores y compuso escenas complejas, como pinturas a gran escala. El Prado conserva otros modelli de la serie. La tabla de Washington quizá estuvo en el Palacio Nuevo de Madrid y llegó a la National Gallery en 1958, donada por Syma Busiel.
 
 ---
 
 ### 35. La sinagoga de Dura Europos — Dura Europos, Siria (244–245 d.C.)
 
-![La sinagoga de Dura Europos](./34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg)
-*Sinagoga de Dura Europos, muro oeste — Siria (244-245 d.C.)*
-
 ![La sinagoga de Dura Europos](./34b_El_Sacrificio_de_Isaac_Panel_Dura_Europos_Siria_244.jpg)
 *El nicho de la Torá con el sacrificio de Isaac — fotografía de la excavación de Yale (1933-1934)*
 
-**Ficha técnica:** Pintura mural sobre yeso | sala reconstruida | Museo Nacional de Damasco, Siria
+![La sinagoga de Dura Europos](./34_La_Sinagoga_de_Dura_Europos_Siria_244.jpg)
+*Las ruinas de la sinagoga, vistas hacia el oeste (Dumbarton Oaks) — las pinturas están hoy en el Museo Nacional de Damasco*
+
+**Ficha técnica:** Pintura mural al seco sobre yeso | sala reconstruida | Museo Nacional de Damasco, Siria
 
 #### Lo que hace que destaque
 
-El muro oeste conserva el nicho de la Torá y, encima, un panel con el sacrificio de Isaac: Abraham de espaldas, el altar, el carnero trabado en la zarza y una mano que baja del cielo. Alrededor, decenas de escenas del Éxodo, de Ezequiel y de Ester cubren la sala entera de arriba abajo. Lo excepcional no es la calidad —el dibujo es esquemático y frontal— sino su existencia: durante siglos se dio por hecho que el judaísmo antiguo no producía imágenes figurativas, y esta sala lo desmintió de golpe.
+El muro oeste de la sala de reunión tenía en el centro un edículo esculpido, donde probablemente se guardaba y leía la Torá. Encima del nicho, junto a una gran menorá, un shofar, un etrog y una estructura que quizá sea el Templo, está la aqedá, el sacrificio de Isaac: Isaac ya sobre el altar, Abraham de espaldas y una mano divina que baja del cielo para detenerlo. Los muros estaban cubiertos por unos setenta paneles de la Biblia hebrea en tres registros, con escenas de Moisés, Ester, Ezequiel y Elías. Según Karen Stern, el hallazgo de 1932-1933 conmocionó a los estudiosos, que suponían que los judíos no harían un lugar de culto tan pintado por la prohibición de imágenes del segundo mandamiento.
 
 #### Contexto histórico
 
-Dura Europos, ciudad de guarnición a orillas del Éufrates, fue abandonada tras el asedio persa de 256 d.C. y sepultada por la arena. Al excavarla en 1932 apareció la sinagoga casi intacta, con sus muros pintados; fue desmontada y trasladada al Museo Nacional de Damasco, donde se reconstruyó la sala completa. Es la sinagoga decorada más antigua que se conserva y el conjunto de pintura bíblica más antiguo conocido.
+Una inscripción aramea fecha la decoración final en el 244/245 d.C.. A mediados de la década de 250, los soldados romanos rellenaron de tierra los edificios junto a la muralla para resistir a los arietes enemigos, y ese relleno preservó la sinagoga. La descubrió en 1932-1933 la excavación conjunta de Yale y la Académie des Inscriptions et Belles-Lettres. El arquitecto Henry Pearson supervisó el arranque de las pinturas y su montaje en una sala construida a propósito en el Museo de Damasco, donde siguen. Herbert Gute las copió antes, y sus copias están en Yale. Es la única sinagoga antigua conocida que conserva los muros enteramente decorados.
 
 #### Sobre el artista
 
-La segunda imagen es una placa de la excavación Yale-Académie des Inscriptions, tomada en 1933-1934 con el nicho todavía en su sitio, antes del traslado a Damasco: el sacrificio de Isaac se ve arriba a la derecha del panel, con Abraham de espaldas, el altar, el carnero y la tienda. Se prefirió a la única toma en color disponible en Commons, de 297 × 582 píxeles. Su lugar en esta colección es cronológico además de temático: entre el Laocoonte (40 a.C.) y la Trinidad de Rubliov (1425) había un vacío de casi mil quinientos años, el mayor de la secuencia. Dura Europos lo parte por la mitad.
+La segunda imagen es una fotografía de archivo de la excavación de Yale, tomada en 1933-1934, que muestra el nicho de la Torá todavía en su sitio: la aqedá se ve en el panel superior, a la derecha de la menorá. La vista principal no muestra las pinturas: es una diapositiva de Frank Kidner de 1993, conservada en Dumbarton Oaks, con las ruinas de la sinagoga en Dura mirando al oeste, ya sin los murales, que están en Damasco.
 
 ---
 
-### 36. José acusado por la mujer de Putifar — Rembrandt van Rijn y taller (1655)
+### 36. José acusado por la mujer de Putifar — Taller de Rembrandt (1655)
 
 ![José acusado por la mujer de Putifar](./35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg)
 *José acusado por la mujer de Putifar — Rembrandt y taller (1655)*
 
-**Ficha técnica:** Óleo sobre lienzo | 105,7 × 97,8 cm | National Gallery of Art, Washington
+**Ficha técnica:** Óleo sobre lienzo transferido a lienzo | 105,7 × 97,8 cm | National Gallery of Art, Washington (1937.1.79)
 
 #### Lo que hace que destaque
 
-Casi todos los pintores eligieron el momento escabroso: la mujer agarrando el manto de José. Rembrandt elige el siguiente, el jurídico. Ella está sentada en el lecho, señalando la prenda; Putifar escucha de pie; José permanece detrás, en penumbra, sin defenderse. La composición sitúa el manto rojo en el centro luminoso, porque el manto es la única prueba y toda la escena gira alrededor de un objeto que no dice la verdad. Nadie mira a nadie a los ojos.
+La escena es la de Génesis 39: la mujer de Putifar, a quien la tradición llama Iempsar, acusa falsamente a José y señala como prueba su manto rojo, colgado del poste de la cama. Según Arthur Wheelock, ella es la protagonista: fuertemente iluminada y en el centro, señala el manto por encima de las sábanas blancas y se lleva la otra mano al pecho en un gesto de inocencia y pudor. Al otro lado de la cama, José parece aislado y vulnerable, mira el manto y alza la mano sin querer, en protesta. Putifar, con turbante, escucha apoyado en el respaldo de la silla, con la mirada en el manto, y aún no ha comprendido del todo. José lleva al cinto las llaves de la casa que se le había confiado.
 
 #### Contexto histórico
 
-Existen dos versiones casi idénticas, una en Berlín y esta en Washington. El catálogo del museo la registra como obra de Rembrandt o de su taller, y la de Berlín se considera generalmente la autógrafa: una ambigüedad de atribución que sigue sin resolverse. El episodio abre la caída de José en la cárcel, de donde saldrá para interpretar los sueños del faraón.
+Ni la Biblia ni Flavio Josefo sitúan a José en la escena de la acusación. Wheelock propone como fuente la obra de Vondel José en Egipto, en la que los tres coinciden en escena y que tuvo gran éxito en 1655. En Berlín hay otra versión, también firmada y fechada en 1655. Desde los años sesenta hay consenso en que la de Berlín es superior y la de Washington es una réplica de taller; Wheelock concluye que Rembrandt no la pintó, aunque sí decidió el tema y la composición. La restauración de 1979-1980 reveló dos arrepentimientos: el dedo índice de ella y el manto agrandado. Catalina II la compró en 1763; Mellon la adquirió al Ermitage en 1931.
 
 #### Sobre el artista
 
-La imagen procede de una digitalización de 280 megapíxeles de la National Gallery of Art, la de mayor resolución de toda esta colección después del Ribera del Prado.
+Rembrandt van Rijn (1606-1669) se formó en Leiden y en 1624 estudió seis meses en Ámsterdam con Pieter Lastman; hacia 1632 se instaló en Ámsterdam, donde atrajo a numerosos alumnos. Wheelock señala a Constantijn van Renesse y Willem Drost como posibles autores de esta versión, aunque sin conclusión firme. Según él, el tema pudo tocar de cerca a Rembrandt por el largo pleito por incumplimiento de promesa que le puso en 1649 Geertje Dircx. El modelo de José fue casi con seguridad Titus, su hijo de catorce años.
 
 ---
 
@@ -850,19 +850,19 @@ La imagen procede de una digitalización de 280 megapíxeles de la National Gall
 ![Jacob bendice a los hijos de José](./36_Jacob_Bendice_a_los_Hijos_de_Jose_Rembrandt_1656.jpg)
 *Jacob bendice a los hijos de José — Rembrandt (1656)*
 
-**Ficha técnica:** Óleo sobre lienzo | 175,5 × 210,5 cm | Gemäldegalerie Alte Meister, Kassel, Alemania
+**Ficha técnica:** Óleo sobre lienzo | 173 × 209 cm | Gemäldegalerie Alte Meister, Kassel, Alemania (GK 249)
 
 #### Lo que hace que destaque
 
-Jacob, incorporado en el lecho y casi ciego, posa la mano derecha sobre Efraín, el menor, en vez de sobre Manasés. José intenta corregir el gesto sujetándole el brazo; el anciano no cede. Rembrandt baña la escena en una luz dorada y cálida que borra los bordes, y sustituye el conflicto por una ternura casi doméstica: Asenat, la esposa egipcia de José, observa desde la derecha —una figura que Rembrandt añadió y que no está en el texto—.
+El anciano Jacob, en su lecho de muerte, bendice a sus nietos Efraín y Manasés; José, su padre, está a su lado, y su madre egipcia, Asenat, contempla la escena desde la derecha. La mano de José se lee de dos maneras. Para el museo de Kassel sostiene con suavidad la mano del abuelo, y el cuadro es un acuerdo de sentimientos, no un choque de pasiones. Para David Brown, en cambio, José intenta llevar la mano derecha de Jacob hacia Manasés. La luz entra concentrada desde la izquierda. Asenat no aparece en el pasaje bíblico de la bendición: introducirla fue decisión de Rembrandt. Brown señala que Efraín tiene el pelo rubio, frente al más oscuro de Manasés.
 
 #### Contexto histórico
 
-Es el último eslabón de un patrón que recorre todo el Génesis: siempre se bendice al menor. Isaac sobre Ismael, Jacob sobre Esaú, Efraín sobre Manasés. Colgado junto al «Isaac bendice a Jacob» de Ribera que ya está en esta colección, el paralelo se ve de golpe: el mismo gesto, el mismo engaño de la primogenitura, pero aquí sin engaño ninguno — el anciano sabe perfectamente lo que hace.
+Brown recuerda que en el Génesis el menor desplaza al mayor una y otra vez: Isaac a Ismael, Jacob a Esaú. Aquí, a diferencia de la bendición de Isaac a Jacob, no hay engaño ninguno. Brown compara a Asenat con Rebeca, la madre que urdió aquel engaño, y ve un eco de él en la piel de animal que rodea el cuello de Jacob, la misma que sirvió para la trampa de Génesis 27. Firmado «Rembran / f. 1656», fue adquirido probablemente en 1752 por el landgrave Guillermo VIII de Hesse-Kassel. Entre 1807 y 1815 estuvo en el Musée Napoléon de París, fruto de las confiscaciones francesas.
 
 #### Sobre el artista
 
-Rembrandt lo pintó en 1656, el año de su bancarrota, cuando el inventario de sus bienes se subastó en Ámsterdam. Es una de las obras más luminosas y apacibles de toda su carrera.
+Rembrandt van Rijn (1606-1669) se formó en Leiden y con Pieter Lastman en Ámsterdam, ciudad en la que se instaló hacia 1632. En 1656, año de este cuadro, estaba en bancarrota y aun así pintó por encargo este gran cuadro de historia, de comitente desconocido. Ese mismo año se levantó el inventario de sus bienes. Brown relaciona la presencia de una Asenat maternal con la vida del pintor: la muerte de Saskia en 1642, la relación conflictiva con Geertje Dircx y la preocupación por el futuro de su hijo Titus.
 
 ---
 
@@ -871,82 +871,82 @@ Rembrandt lo pintó en 1656, el año de su bancarrota, cuando el inventario de s
 ![Jacob y Raquel en el pozo](./37_Jacob_y_Raquel_en_el_Pozo_Francois_Lemoyne_1720.jpg)
 *Jacob y Raquel en el pozo — François Lemoyne (1720)*
 
-**Ficha técnica:** Óleo sobre lienzo | Colección Motais de Narbonne, Francia
+**Ficha técnica:** Óleo sobre lienzo | Colección Motais de Narbonne (particular), Francia
 
 #### Lo que hace que destaque
 
-Lemoyne pinta el instante anterior al reconocimiento: Jacob, recién llegado de Harán, se inclina hacia la muchacha que guía el rebaño, y ella todavía no sabe quién es. La luz cae sobre los hombros de Raquel y sobre el brocal, dejando el resto en una penumbra dorada de fondo teatral. El gesto de Jacob —el brazo tendido, el cuerpo aún en movimiento— conserva la urgencia del viajero que acaba de llegar.
+Lemoyne ilustra el encuentro de Génesis 29,1-14: Jacob llega a Harán y ve a Raquel, que trae el rebaño de su padre al pozo. En el lienzo, fechado en 1720, Jacob, con cayado y manto rojo, se dirige a ella con la mano abierta, mientras a la izquierda unos pastores se afanan junto al brocal y las ovejas ocupan el primer plano; Raquel, de blanco y azul, se detiene ante el recién llegado. La composición fue grabada por Cochin, lo que le dio difusión más allá del cuadro.
 
 #### Contexto histórico
 
-El pasaje es el único momento del Génesis en que un patriarca se enamora a primera vista, y trae consigo el episodio más largo de servidumbre del libro: catorce años de trabajo por Raquel, con el engaño de Labán y la sustitución por Lía de por medio. Es también un eco invertido de Génesis 24, donde otro encuentro junto a un pozo —Eliezer y Rebeca, ya en esta colección— fija a la esposa del padre de Jacob.
+La pintura pertenece a la colección que Héléna y Guy Motais de Narbonne reunieron en torno a ochenta cuadros franceses e italianos de los siglos XVII y XVIII. El conjunto se presentó primero en el Museo de Bellas Artes de Orleans y después, completo por primera vez, en la Fundación Bemberg de Toulouse, del 22 de febrero al 2 de junio de 2019. Es una colección privada, la de un matrimonio de coleccionistas, no la de un museo.
 
 #### Sobre el artista
 
-François Lemoyne (1688–1737) fue primer pintor de Luis XV y decorador del salón de Hércules en Versalles. Se suicidó a los cuarenta y ocho años, poco después de terminar aquel techo, agotado por el encargo.
+François Lemoyne (1688-1737) firmó su obra mayor en Versalles: el techo del salón de Hércules, con la Apoteosis de Hércules, terminado en 1736 tras cuatro años de trabajo y poblado por 142 figuras. Luis XV lo nombró primer pintor del rey en recompensa, y un año después, en 1737, Lemoyne se suicidó, según el propio palacio agotado por aquel encargo.
 
 ---
 
-### 39. José interpreta los sueños del faraón — Jörg Breu el Joven (c. 1534–1547)
+### 39. José interpreta los sueños del faraón — Atribuido a Jörg Breu el Joven (c. 1534–1547)
 
 ![José interpreta los sueños del faraón](./38_Jose_Interpreta_los_Suenos_del_Faraon_Jorg_Breu_1540.jpg)
-*José interpreta los sueños del faraón — Jörg Breu el Joven (c. 1534-47)*
+*José interpreta los sueños del faraón — atribuido a Jörg Breu el Joven (c. 1534-47)*
 
-**Ficha técnica:** Temple de cola sobre lienzo | 171,8 × 145,4 cm | Metropolitan Museum of Art, Nueva York (89.15.20)
+**Ficha técnica:** Temple sobre lino (Tüchlein) | 171,8 × 145,4 cm | Metropolitan Museum of Art, Nueva York (89.15.20)
 
 #### Lo que hace que destaque
 
-Breu despliega la escena como una crónica: el faraón entronizado escucha, la corte se agolpa, y en segundo plano aparecen dibujados los propios sueños —las vacas saliendo del Nilo, las espigas—, de modo que la interpretación y lo interpretado conviven en la misma superficie. La técnica, temple de cola sobre lienzo, era propia de las telas pintadas alemanas del Renacimiento tardío: barata, ligera, pensada para colgarse como tapiz, y muy frágil, lo que hace rara su supervivencia.
+José está de pie ante el faraón, en un palacio renacentista anacrónico, rodeado por la corte. El tono apagado y la superficie mate se deben a la técnica: un medio al agua sobre lienzo fino sin preparación, lo que en alemán se llama Tüchlein. Según el Met, estas telas fueron un primer paso hacia el óleo sobre lienzo y una alternativa ligera y barata a las grandes tablas o a los tapices, pero se gastaban con facilidad y la humedad las dañaba; de ahí que sobrevivan pocas. Esta, además, quedó sin terminar.
 
 #### Contexto histórico
 
-El pasaje es el gozne de la historia de José: de esclavo y preso pasa a segundo del reino, y la previsión de las siete vacas flacas es lo que llevará a sus hermanos a Egipto a pedir grano — el reencuentro que cierra el Génesis. Es, además, el primer relato de gestión de una crisis alimentaria de la literatura occidental.
+El Met la fecha hacia 1534-1547 y cree que probablemente se concibió como parte de una serie dedicada a la historia de José. Entró en el museo en 1889 con la colección de Henry G. Marquand, que la donó. Se expone en la galería 640. Es una de las raras telas pintadas al temple del Renacimiento alemán que han llegado hasta hoy.
 
 #### Sobre el artista
 
-Jörg Breu el Joven (c. 1510–1547) trabajó en Augsburgo, entonces la ciudad más rica del Imperio, heredando el taller de su padre. Murió a los treinta y siete años.
+El museo la atribuye —no la da como segura— a Jörg Breu el Joven, nacido en Augsburgo hacia 1510 y muerto en la misma ciudad en 1547.
 
 ---
 
-### 40. Adán y Eva — Lucas Cranach el Viejo (c. 1531)
+### 40. Adán y Eva — Lucas Cranach el Viejo (1520)
 
 ![Adán y Eva](./39_Adan_y_Eva_Lucas_Cranach_Museo_Soumaya_1531.jpg)
-*Adán y Eva — Lucas Cranach el Viejo (c. 1531)*
+*Adán y Eva — Lucas Cranach el Viejo (1520), Museo Soumaya*
 
-**Ficha técnica:** Óleo sobre tabla | Museo Soumaya, Ciudad de México
+**Ficha técnica:** Óleo sobre tabla | 86,9 × 58,8 cm | Museo Soumaya, Ciudad de México
 
 #### Lo que hace que destaque
 
-Adán y Eva ocupan una tabla estrecha y alta, de pie a ambos lados del árbol, con la serpiente enroscada arriba y el ciervo y el león acechando al fondo. El formato vertical comprime la escena y obliga a los cuerpos a esa verticalidad alargada que es la firma de Cranach: hombros estrechos, caderas altas, piernas larguísimas. Eva sostiene ya la manzana y mira al espectador, no a Adán — un detalle que convierte al que mira en cómplice.
+Según el Museo Soumaya, Cranach parte del célebre grabado de Adán y Eva de Durero de 1504. En el centro está el árbol del conocimiento, y en él una serpiente con oreja, símbolo medieval de que el mal lo escucha todo, que mira a Eva. Ella esconde un fruto a la espalda mientras ofrece otro a Adán. Sobre el tronco aparece el escudo de Cranach, la serpiente alada que le concedió el elector Federico de Sajonia. El museo subraya las figuras esbeltas de formas redondeadas y el manejo de la luz.
 
 #### Contexto histórico
 
-Es una de las varias versiones que salieron del taller de Wittenberg, donde el asunto se producía casi en serie. Junto a la tabla de Praga que también está en esta colección permite ver cómo Cranach variaba el mismo esquema: allí horizontal y con el gesto de la duda, aquí vertical y con la mirada directa.
+El museo la fecha en 1520, antes de que Cranach añadiera los animales del Edén, como en la versión de 1526 de la Courtauld Gallery. Estuvo quince años, de 1980 a 1995, prestada al castillo de Leeds, en Inglaterra. Desde 1515 esa serpiente alada fue la única firma de Cranach, y la llevaban también las obras salidas de su gran taller, lo que complica todavía muchas atribuciones. México tiene otra versión en el Museo Nacional de San Carlos.
 
 #### Sobre el artista
 
-Se conserva en el Museo Soumaya de Ciudad de México, la mayor colección de arte europeo antiguo de América Latina. Es, con diferencia, la obra de la colección expuesta más cerca de casa.
+Lucas Cranach el Viejo (1472-1553) llegó a Wittenberg en 1505 como pintor de corte del elector Federico el Sabio y allí se quedó cuarenta y cinco años. Fue amigo de Lutero, pintó su retrato y el de su círculo, y se convirtió en el gran propagandista visual de la Reforma. El Soumaya lo presenta como colaborador en la creación de la nueva iconografía protestante.
 
 ---
 
-### 41. El Diluvio — Cristóbal de Villalpando (c. 1684–1686)
+### 41. El Diluvio — Cristóbal de Villalpando (c. 1689)
 
 ![El Diluvio](./40_El_Diluvio_Cristobal_de_Villalpando_1684.jpg)
-*El Diluvio — Cristóbal de Villalpando (c. 1684-86)*
+*El Diluvio — Cristóbal de Villalpando (c. 1689), óleo sobre cobre*
 
-**Ficha técnica:** Óleo sobre lienzo | Capilla del Ochavo, Catedral de Puebla, México
+**Ficha técnica:** Pintura sobre lámina de cobre | Capilla del Ochavo, Catedral de Puebla, México
 
 #### Lo que hace que destaque
 
-Villalpando organiza la catástrofe en diagonales ascendentes y disuelve los contornos en una pincelada suelta y luminosa, muy distinta del tenebrismo español del que partía. Las figuras se amontonan en el primer plano trepando a las rocas mientras el agua sube, y el arca queda relegada al fondo — la misma decisión narrativa que tomó Miguel Ángel en la Sixtina, con la que abre esta colección. El color, sin embargo, no se parece a nada europeo: rosas, verdes ácidos y azules que son marca de la escuela mexicana del XVII.
+Villalpando plantea el Diluvio como una escena nocturna bajo un cielo de oscuridad «atroz y luctuosa», según Ilona Katzew. Relámpagos en zigzag parten el cielo y la lluvia cae torrencial; la ira de Dios no distingue entre ricos y pobres, piadosos e incrédulos. En el centro, una mujer adornada con perlas lleva a un niño y monta un toro guiado por un hombre de capa púrpura; en el extremo derecho, dos figuras rezan, de mayor tamaño que las demás. El arca zarpa de una ciudad renacentista europea en ruinas, con chapiteles y tejados de pizarra, y Katzew lee en ello una intención criolla. La composición remite a Martín de Vos, sin ser copia mecánica del grabado.
 
 #### Contexto histórico
 
-Forma parte del ciclo de la Capilla del Ochavo de la Catedral de Puebla, un espacio octogonal que Villalpando decoró en los años ochenta del siglo XVII. Su presencia aquí cambia el equilibrio de la colección: el Diluvio era ya el episodio más representado —Miguel Ángel, Turner, van Scorel, Watts, Danby, Cole, Poussin—, todos europeos. Este es el primero pintado al otro lado del Atlántico.
+El cobre forma pareja con Adán y Eva en el paraíso; Villalpando firmó ambos y en el del paraíso añadió «inventor». Katzew los describe como parte de un grupo de pinturas horizontales pensadas para ir sobre las puertas del Ochavo, las más grandes del conjunto. La capilla, octogonal, se construyó entre 1682 y 1688 bajo el obispo Manuel Fernández de Santa Cruz, y sigue conservando in situ su tesoro. Los cuadros de Villalpando se añadieron después para completar la decoración; Juana Gutiérrez Haces fecha en 1689 la ejecución, cuando el pintor trabajaba en la cúpula de la catedral.
 
 #### Sobre el artista
 
-Cristóbal de Villalpando (c. 1649–1714) fue el pintor más importante del barroco novohispano y autor de la cúpula de la capilla de los Reyes de Puebla y de los enormes lienzos de la sacristía de la Catedral de México. Trabajó a una escala y con una libertad cromática que no tienen equivalente en la España de su tiempo.
+Cristóbal de Villalpando (c. 1649-1714) fue uno de los pintores novohispanos más prolíficos y destacados, con encargos en las catedrales de México y Puebla, y fue elegido veedor del gremio de pintores. Entre sus obras mayores están La aparición de san Miguel de la sacristía de la Catedral de México (c. 1686-1688) y La glorificación de la Virgen en la cúpula de la capilla de los Reyes de la Catedral de Puebla (1688-1689).
 
 ---
 
@@ -961,19 +961,19 @@ Cristóbal de Villalpando (c. 1649–1714) fue el pintor más importante del bar
 ![Las capillas del desierto: El Bagawat](./42c_Sara_Capilla_de_la_Paz_El_Bagawat_s_V.jpg)
 *Sara, en la escena del sacrificio de Isaac — capilla de la Paz*
 
-**Ficha técnica:** Pintura sobre enlucido en cúpulas de adobe | Necrópolis de El Bagawat, oasis de Jarga, Egipto · facsímil en el Metropolitan Museum (30.4.141)
+**Ficha técnica:** Pintura sobre enlucido en cúpulas de adobe | Necrópolis de El Bagawat, oasis de Jarga, Egipto · facsímil al temple sobre papel de Charles K. Wilkinson, 52,1 × 70,5 cm, Metropolitan Museum (30.4.141)
 
 #### Lo que hace que destaque
 
-La cúpula de la capilla del Éxodo es un cielo lleno de figuras pequeñas y dispersas, sin marcos ni jerarquía, que se leen dando vueltas bajo ella: la columna de los israelitas que sale de Egipto con el ejército del faraón detrás, Daniel entre los leones, Jonás, y entre ellos las escenas del Génesis —Adán y Eva de pie junto al árbol, el arca de Noé con su tripulación asomada—. La selección no es narrativa sino funeraria. Son los salvados: los que Dios sacó del agua, del foso, de las fauces del monstruo, del cuchillo. Es el mismo repertorio que las catacumbas de Roma, y demuestra que el lenguaje de la salvación era ya común a todo el Mediterráneo cristiano. En la capilla de la Paz, un siglo posterior, las figuras llevan su nombre escrito en griego sobre la cabeza: Sara aparece junto a Isaac y Abraham, como madre que asiste al sacrificio del hijo.
+La cúpula de la capilla del Éxodo está pintada en tres registros que se leen de derecha a izquierda. La parte copiada en el facsímil de la vista principal muestra el arca de Noé, Jonás y el monstruo, Adán y Eva, Daniel entre los leones y una de las primeras representaciones cristianas del profeta Isaías. Otro facsímil copia otra parte de la cúpula: el faraón y su ejército siguen a Moisés y a los israelitas por el Sinaí. Entre las figuras bíblicas aparecen además Rebeca, Job y Abraham, y también los tres hebreos en el horno. El Met señala que estas pinturas repiten las de las catacumbas romanas y el repertorio de los sarcófagos: un vocabulario funerario común en el Mediterráneo, que los primeros cristianos leían como profecía de la salvación por Cristo.
 
 #### Contexto histórico
 
-El Bagawat reúne más de doscientas capillas funerarias de adobe, levantadas entre los siglos III y VII junto a Hibis, la capital del oasis de Jarga. Es uno de los cementerios cristianos más antiguos del mundo que se conservan en pie, y el oasis era también lugar de destierro: allí fue enviado el obispo Nestorio tras su condena en 431. La expedición egipcia del Metropolitan Museum excavó y documentó la necrópolis a comienzos del siglo XX; como las pinturas no podían sacarse de Egipto, se copiaron a mano en facsímiles de tamaño natural, que son la vista principal de esta ficha porque muestran la cúpula entera, algo que ninguna fotografía hecha desde el suelo de la capilla consigue.
+En 1907 el Servicio de Antigüedades de Egipto concedió a la Expedición Egipcia del Met el permiso de excavar el norte del oasis de Jarga, que incluía los templos de Hibis y Nadura y la necrópolis de El Bagawat. El Met excavó allí de 1907 a 1931. La necrópolis tenía más de doscientas tumbas dispuestas en calles. Como documentaban en blanco y negro, los arqueólogos copiaron al temple sobre papel las pinturas, siempre en escala reducida. El facsímil 30.4.141 es de Charles K. Wilkinson y entró en el museo en 1930.
 
 #### Sobre el artista
 
-Los pintores de El Bagawat eran artesanos locales anónimos, y su estilo —figuras de contorno rápido, sin modelado, sobre el fondo claro del enlucido— es el de la pintura doméstica del Egipto tardorromano, no el de los grandes talleres de Alejandría. Precisamente por eso las capillas muestran cómo se representaba la Biblia en una comunidad de provincias, lejos de los obispos y de los mosaicos imperiales.
+Según el Met, la gente de Jarga, aunque vivía en los márgenes del mundo grecorromano, eligió motivos que la unían al Mediterráneo, mezclando temas grecorromanos, cristianos primitivos y del antiguo Egipto. A fines del siglo V el oasis sirvió además de refugio político a desterrados llegados desde Constantinopla.
 
 ---
 
@@ -986,15 +986,15 @@ Los pintores de El Bagawat eran artesanos locales anónimos, y su estilo —figu
 
 #### Lo que hace que destaque
 
-La escena avanza de izquierda a derecha: primero los dos criados con el asno que se quedan al pie del monte, luego el carnero atado por un cuerno a un arbusto, y encima la mano de Dios que asoma de una nube rodeada de rayos con las palabras hebreas «no extiendas» —«no extiendas tu mano sobre el muchacho», Génesis 22,12—. Abraham, de frente, sostiene en el aire a un Isaac diminuto; a la derecha arde el altar. Las figuras son planas, de ojos enormes y cuerpo esquemático, y cada una lleva su nombre escrito encima para que no haya duda. Es un arte popular, sin pretensión de clasicismo, y por eso mismo sorprende: en el siglo VI una comunidad judía de Galilea no tenía ningún reparo en representar a sus patriarcas en el suelo de la sala de oración.
+En el panel, Isaac flota sobre un altar en llamas con las manos atadas; Abraham, a la izquierda, lo sujeta por ellas y apunta el cuchillo hacia él mientras mira a la mano de Dios, arriba en el centro. Bajo la mano está el carnero atado a un árbol, y a distancia esperan los dos criados con el asno. Cuatro rótulos hebreos nombran lo que se ve: Isaac, Abraham, «no extiendas [tu mano]» y «he aquí un carnero». Según Abby Massarano, estos mosaicos muestran cómo las comunidades judías de la Antigüedad tardía usaban el arte para unir religión y comunidad.
 
 #### Contexto histórico
 
-Los miembros del kibutz Hefzibah dieron con el mosaico en 1928, cavando una zanja de riego, y el arqueólogo Eleazar Sukenik lo excavó al año siguiente. El pavimento tiene tres paneles: el arca de la Torá con sus candelabros, un zodiaco con Helios en su carro —un motivo pagano en pleno suelo de sinagoga— y este sacrificio de Isaac junto a la entrada. Una inscripción en arameo lo fecha en el reinado de un emperador Justino, sin precisar si el primero (518-527) o el segundo (565-578), y otra en griego da el nombre de sus autores.
+La sinagoga, de tres naves con ábside orientado a Jerusalén, se descubrió en 1928. El pavimento de la nave tiene tres paneles: la fachada del Templo con leones y candelabros junto al ábside, una rueda del zodiaco con el Sol personificado en el centro, y la Akedá junto a la entrada. Una inscripción aramea dice que los fieles pagaron el suelo en el sexto año del emperador «Justino», probablemente Justino I (518-527). Eleazar Sukenik lo excavó y lo publicó en 1932 en The Ancient Synagogue of Beth Alpha, que dio fama al mosaico.
 
 #### Sobre el artista
 
-Marianos y su hijo Hanina son de los pocos mosaiquistas de la Antigüedad cuyo nombre se conoce: firmaron en griego este pavimento y también el de una sinagoga samaritana de la cercana Beit Shean. El nombre del padre es griego y el del hijo hebreo, un retrato en dos palabras de las familias judías de la Galilea bizantina.
+Una inscripción griega identifica a los mosaiquistas, Marianos y su hijo Hanina, y pide que se les recuerde. Caskey, Cohen y Safran fechan la obra a comienzos del siglo VI.
 
 ---
 
@@ -1007,15 +1007,15 @@ Marianos y su hijo Hanina son de los pocos mosaiquistas de la Antigüedad cuyo n
 
 #### Lo que hace que destaque
 
-El arca está en el centro, pero no es un barco sino una caja con patas y paneles, un mueble. Es la traducción literal de la palabra que usa la Biblia griega, kibōtós, «cofre», y es como la representaba todo el arte cristiano primitivo —en las catacumbas Noé asoma de un arcón como de un baúl—. Alrededor, los animales están dispuestos en filas sobre el fondo blanco, cada uno de perfil y aislado, con una precisión de bestiario: el pavo real con la cola desplegada, los ciervos, los patos, las garzas, un león al fondo. El mosaiquista no representa el Diluvio sino el orden de la creación salvada, y las lagunas del pavimento —rellenas de mortero en la restauración— no llegan a romperlo.
+El arca aparece como un cofre decorado de cuatro patas con dos palomas dentro. La rodean dos filas de animales: en la interior, aves —grulla, gallo, gallina, pavo real, paloma, ruiseñor, cigüeña— y en la exterior, león, pantera o leopardo, buey, ciervo, asno, gacela y camello. En el arca está escrito en griego «arca de Noé».
 
 #### Contexto histórico
 
-El mosaico apareció a mediados de la década de 1950 en las excavaciones de un gran edificio basilical en Misis, la antigua Mopsuestia de Cilicia, junto al río Ceyhan. El pavimento incluye también un ciclo de Sansón, y desde entonces se discute si el edificio fue una iglesia o una sinagoga: la ausencia de cualquier escena del Nuevo Testamento hizo pensar a varios estudiosos en un edificio judío. Mopsuestia fue sede de Teodoro, su obispo entre 392 y 428, el gran exégeta de la escuela de Antioquía, que defendía leer el Antiguo Testamento en su sentido literal e histórico.
+El mosaico se descubrió en Misis, la antigua Mopsuestia, en 1956. La ficha del Ministerio de Cultura turco lo sitúa en el suelo de un edificio que llama sinagoga y lo fecha en la primera mitad del siglo V; la base de datos Visual Midrash lo cataloga como «¿sinagoga?», con el signo de interrogación que refleja la duda entre iglesia y sinagoga. Hoy se expone en la sala de mosaicos del Museo Arqueológico de Adana. Mopsuestia fue sede del obispo Teodoro desde hacia 392 hasta su muerte en 428/429, el gran exégeta de la escuela de Antioquía, que defendía el sentido literal e histórico de la Escritura.
 
 #### Sobre el artista
 
-La fecha es discutida: el excavador lo situó en el siglo IV y buena parte de los especialistas lo lleva hacia el V. Los pavimentos de Cilicia y de Antioquía, a pocas jornadas de allí, forman una misma escuela de mosaístas que trabajaba indistintamente para villas paganas, iglesias y sinagogas, con los mismos repertorios de animales.
+El autor es desconocido. La fecha también es discutida: la ficha oficial turca da la primera mitad del siglo V, y Visual Midrash, hacia el año 400.
 
 ---
 
@@ -1028,15 +1028,15 @@ La fecha es discutida: el excavador lo situó en el siglo IV y buena parte de lo
 
 #### Lo que hace que destaque
 
-La historia de José y la mujer de Putifar pasó del Génesis al Corán, donde ocupa una sura entera, la duodécima, y de ahí a la poesía persa, que dio nombre a la mujer: Zulaija. La tradición cuenta que ella lo llevó a través de siete salas, cerrando cada puerta tras de sí, y que al llegar a la última y rechazarla él, las siete cerraduras se abrieron solas. Behzad lo convierte en un problema de arquitectura. El palacio es un laberinto de escaleras en zigzag, puertas cerradas y muros de azulejo, cada uno con su motivo; arriba, en la sala más íntima, Zulaija, vestida de naranja, agarra a Yusuf por la manga, y él, con la aureola de llamas de los profetas, se vuelve para escapar. Todo el espacio que el espectador recorre con la mirada es el que Yusuf tendrá que atravesar.
+Behzad ilustra el intento de seducción de Yusuf por Zulaija en un pasaje del Bustán de Saadi, pero el escenario arquitectónico que pinta es el palacio que describe el Yusof o Zolayḵā de Jami (1483), de cuyo poema copió incluso versos dentro de la pintura. Según Chad Kia, Yusuf, conducido de sala en sala, huye por todas las estancias que ella había cerrado con cerrojo al guiarlo. Aunque el rostro de Yusuf está parcialmente borrado, se percibe su alarma: con un brazo busca el pestillo de la puerta mientras Zulaija, tirando de su ropa, le sujeta el otro. Soucek destaca en estas pinturas el equilibrio de la composición y una claridad espacial insólita en la pintura persa.
 
 #### Contexto histórico
 
-La página pertenece a un ejemplar del Bustán («El jardín») del poeta Saadi copiado en Herat en 1488 para el sultán timúrida Husayn Bayqara, y es una de las pocas obras que llevan la firma de Behzad, escrita en letra minúscula sobre la arquitectura. El manuscrito se conserva en Dar al-Kutub, la Biblioteca Nacional de Egipto, en El Cairo, y es para los historiadores del arte la piedra de toque con la que se mide todo lo que se atribuye al pintor. En esta colección llena además un hueco: el Génesis 39, que hasta ahora no tenía obra.
+El manuscrito es un Bustán de Saadi hecho para la biblioteca del sultán timúrida Husayn Bayqara, con colofón de 893/1488; contiene un frontispicio doble y cuatro ilustraciones, dos de ellas fechadas en 894/1488-89. Las firmas de Behzad van integradas en inscripciones arquitectónicas o discretamente sobre un objeto. El calígrafo fue Sultán Alí; Soucek deduce que pintor y calígrafo trabajaron muy juntos. Es la obra más segura del pintor, que la Encyclopaedia Iranica sitúa en la Biblioteca Nacional de Egipto, en El Cairo.
 
 #### Sobre el artista
 
-Kamāl ud-Dīn Behzad (activo desde c. 1480; murió en 1535-1536) fue el gran pintor de la corte timúrida de Herat, en el actual Afganistán; su fecha de nacimiento no se conoce. Tras la llegada de los safávidas trabajó en Tabriz, donde murió. El nombramiento como director de la biblioteca real que se le atribuye en 1522 es de autenticidad dudosa según la Encyclopaedia Iranica. Sus composiciones de arquitectura escalonada marcaron la pintura de Bujará y de la India mogol.
+Kamāl al-Dīn Behzad trabajó en Herat bajo Husayn Bayqara (1470-1506), primero para Mir Alí Shir Navaí, siempre a las órdenes de Mirak Naqqash. Su fecha de nacimiento es desconocida. Pasó sus últimos años al servicio de Shah Tahmasp en Tabriz, donde murió en 935/1535-36. Soucek cuestiona el decreto de Shah Ismaíl de 928/1522 que lo nombraría director del taller real: se conserva en una compilación fechada en 925/1519. Su estilo pasó a Bujará, y los emperadores mogoles lo tuvieron por el modelo de la tradición persa.
 
 ---
 
@@ -1045,19 +1045,19 @@ Kamāl ud-Dīn Behzad (activo desde c. 1480; murió en 1535-1536) fue el gran pi
 ![El primer duelo](./46_El_Primer_Duelo_William_Bouguereau_1888.jpg)
 *El primer duelo — William Bouguereau (1888)*
 
-**Ficha técnica:** Óleo sobre lienzo | 203 × 250 cm | Museo Nacional de Bellas Artes, Buenos Aires (inv. 2770)
+**Ficha técnica:** Óleo sobre tela | 203 × 250 cm | Museo Nacional de Bellas Artes, Buenos Aires (inv. 2770)
 
 #### Lo que hace que destaque
 
-El Génesis 4 cuenta el asesinato de Abel y no dice una palabra de lo que sintieron Adán y Eva. Bouguereau pinta ese silencio. Abel yace de espaldas sobre las rodillas de su padre, con el brazo colgando hasta el suelo y el cuerpo blanco y perfecto, sin herida visible; la única huella de la violencia es la mancha de sangre sobre la piedra, abajo a la derecha. Adán, moreno y musculoso, se lleva la mano al pecho y mira al vacío; Eva se tapa la cara. El cielo es de tormenta y el paisaje está vacío: no hay rastro de Caín ni de Dios. Es la composición de una Piedad —el cuerpo del hijo muerto sobre el regazo— trasladada al primer hijo de la humanidad, de modo que el cuadro se lee también como prefiguración de Cristo, una lectura que la tradición cristiana hacía de Abel desde los Padres de la Iglesia.
+Según María Isabel Baldasarre, las tres figuras forman una Piedad con el esquema piramidal de Miguel Ángel y Rafael. El dolor está contenido y escenificado; el rostro de la madre, foco mayor del pesar, queda velado por sus manos. Adán es más moreno y Eva más clara, casi marfileña, y el cuerpo de Abel tiene una belleza idealizada que omite cualquier signo de la violencia de Caín. El drama se evoca con la mancha de sangre en el suelo, uno de los pocos acentos de color en un cuadro de tonos tierra; al fondo, el altar con la ofrenda humeante de Abel, cuyo humo se mezcla con un cielo tormentoso.
 
 #### Contexto histórico
 
-Bouguereau lo presentó en el Salón de París de 1888, en los años en que había perdido a su primera mujer y a varios de sus hijos, y la crítica leyó en él un duelo propio. El cuadro está en el Museo Nacional de Bellas Artes de Buenos Aires, que reúne una de las mejores colecciones de pintura académica francesa fuera de Francia, formada por los coleccionistas argentinos de finales del siglo XIX que compraban directamente en el Salón.
+Firmado en 1888, Bouguereau trabajaba en él desde fines de 1885, y un croquis de la Bibliothèque de l'Institut de France muestra ya casi fijadas las posiciones de los tres cuerpos. Se expuso en el Salón de 1888 junto a una Baigneuse y volvió a exponerse en la Exposición Universal de 1889. En Buenos Aires, Carlos Gorostiaga elogió el cuadro en la prensa, mientras El Censor lo tachó de «figuras mecánicas». Lo compró Francisco Uriburu en la década de 1890 y se exhibió públicamente en 1893 en una muestra benéfica.
 
 #### Sobre el artista
 
-William-Adolphe Bouguereau (1825-1905), nacido en La Rochelle, ganó el Premio de Roma en 1850 y fue durante medio siglo el pintor más prestigioso de la Academia francesa, célebre por un acabado tan liso que no se ve la pincelada. Los impresionistas lo convirtieron en el emblema de todo lo que combatían, y el siglo XX lo olvidó; su rehabilitación empezó con la gran exposición de 1984.
+William-Adolphe Bouguereau (La Rochelle, 1825-1905) entró en la École des Beaux-Arts en 1846 y ganó el Premio de Roma en 1850. Miembro de la Academia de Bellas Artes desde 1876, llegó a ser el pintor francés más famoso de su tiempo y contribuyó a excluir del Salón a los impresionistas. La crítica moderna, según Britannica, le reprocha haber sacrificado audacia y originalidad a un tratamiento pulido pero convencional de la figura.
 
 ---
 
@@ -1070,15 +1070,15 @@ William-Adolphe Bouguereau (1825-1905), nacido en La Rochelle, ganó el Premio d
 
 #### Lo que hace que destaque
 
-La página está enmarcada por una cenefa de hojas rojas y azules, y dentro todo es un embarque ordenado: Noé, con manto rojo, señala el arca con la mano, su mujer detrás le pone la mano en el hombro, y los animales esperan su turno en la pradera para subir por la rampa de madera. Hay camellos, ciervos, cabras, perros, avestruces y dos unicornios blancos, que para el pintor no eran menos reales que los demás. El arca ya no es el cofre de la Antigüedad sino una casa sobre un casco de barco. Al fondo, pequeñas figuras oscuras levantan los brazos en la colina: son los que se quedan fuera. Arriba, bajo un sol que asoma entre nubes, vuelan en bandada las aves que también han de embarcar.
+La miniatura muestra el embarque en el arca: Noé, con manto rojo, señala el arca, su mujer le pone la mano en el hombro, y los animales —camellos, ciervos, avestruces, perros y unicornios blancos— esperan en la pradera para subir por la rampa; el arca es una casa de madera sobre un casco de barco, y al fondo unas figuras oscuras levantan los brazos en la colina. Según Armen Haghnazarian, los artistas de Nueva Julfa conservaron la tradición armenia pero crearon un estilo local, receptivo al arte safávida y al europeo.
 
 #### Contexto histórico
 
-El manuscrito se hizo en Isfahán, la capital safávida, entre 1643 y 1646, y se guarda en la biblioteca del Patriarcado Armenio de Jerusalén, una de las grandes colecciones de manuscritos armenios del mundo. Los armenios habían llegado a Isfahán a la fuerza: en 1604-1605 el sha Abás I deportó a la población de Julfa, en el Araxes, y la asentó al otro lado del río de su capital, en el barrio que se llamó Nueva Julfa. Sus mercaderes controlaban el comercio de la seda entre Persia y Europa, y traían de Ámsterdam y de Venecia libros ilustrados cuyos grabados copiaban luego los iluminadores del barrio; probablemente de ahí vienen el paisaje y las figuras de sabor europeo de esta página.
+Los armenios de Isfahán procedían de Julfa, en el Araxes: el cronista Arakel de Tabriz fecha la deportación ordenada por Shah Abás I entre el 21 de octubre y el 19 de noviembre de 1604. Se asentaron en Nueva Julfa, en la orilla derecha del Zayandarud, y en pocos años levantaron casas y diez iglesias. Sus mercaderes ya comerciaban con seda cruda y tenían contactos con Europa, documentados en Venecia desde fines del siglo XVI. Haghnazarian subraya que compraban obras europeas en sus viajes y que las ilustraciones de Christoffel van Sichem de la Biblia armenia impresa en Ámsterdam en 1666 inspiraron frescos y miniaturas del barrio.
 
 #### Sobre el artista
 
-El iluminador no ha dejado su nombre en esta página. Nueva Julfa tuvo en el siglo XVII un taller de manuscritos muy activo alrededor de la catedral de Vank, donde convivían la tradición armenia de la miniatura, el gusto persa por el color plano y los modelos de los grabados europeos.
+En la Nueva Julfa del siglo XVII trabajaron pintores como Varpet Minas, formado con artistas europeos en Alepo y alabado por Arakel de Tabriz, y su discípulo, el monje Yovhannēs Merquz, autor de pinturas de la catedral del Santo Salvador.
 
 ---
 

@@ -377,6 +377,34 @@ Villalpando, que es el año de su boda. La verificación de 2026 corrigió adem�
 biografías escritas a mano: Blake no murió en la pobreza, en la Sixtina sí hay arquitectura
 pintada, Tiziano sí salió de Venecia, Watts rechazó un título de *baronet*, no de barón.
 
+### Fichas de obra con fuentes
+
+Las 100 fichas se contrastaron en 2026 con la ficha de cada obra en la web de su museo y con
+bibliografía académica (400 citas, 342 fuentes distintas). El registro verificado está en
+`herramientas/sitio/datos/obras_fuentes.json`, por `libro:número de archivo` (`genesis:42`), y
+la página de cada obra muestra los tres textos con sus llamadas a nota, las discrepancias entre
+fuentes y la lista de fuentes.
+
+- `python3 herramientas/incorporar_obras.py resultado*.json` valida (las mismas reglas que las
+  biografías) y copia el texto sin llamadas, y la línea `meta` corregida, a los `data_*.py`.
+  **Avisa si la `meta` nueva cambia la sede del mapa**: así se cazaron «Capilla Sistina» (el mapa
+  solo conocía «Sixtina») y la National Gallery of Art de Washington, que la regla «national
+  gallery» mandaba a Londres.
+- `herramientas/ajustar_verificacion.py` arregla la forma sin tocar el fondo: una conclusión que
+  resume la frase anterior toma su cita; una advertencia sobre las fuentes pasa a
+  «discrepancias»; la descripción de lo que se ve cita «La propia imagen»; y dos frases de un
+  pasaje citado al final toman esa misma cita. Una sección sin nada verificable dice
+  «Sin datos verificados: …» en vez de rellenarse.
+
+Lo que destapó, además de cientos de datos corregidos: **imágenes que eran otra obra** (el
+David era el dibujo preparatorio del Petit Palais, no el óleo del Louvre; el Danby es *The
+Deluge*, no *La disminución de las aguas*; el Exekias es el ánfora B209, no la B210), **una
+copia retocada** (el Doré, recortado y con el contraste subido: se sustituyó por la página
+entera escaneada por la Biblioteca Nacional de Polonia), **atribuciones** (Taller de
+Rembrandt, Círculo de Van Scorel, «atribuido a» Breu) y **obras que cambiaron de sede** (la
+Trinidad de Rubliov está desde 2024 en la Lavra de la Trinidad y San Sergio). Una obra sin
+confirmar en ninguna fuente (el Vernet de los juegos fúnebres) lo dice en su propia ficha.
+
 ### Crédito de cada foto
 
 `python3 herramientas/creditos.py` baja de Commons autor y licencia de cada imagen a

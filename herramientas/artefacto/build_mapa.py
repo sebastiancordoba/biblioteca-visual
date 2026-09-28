@@ -22,24 +22,24 @@ from geo import anillos, proyectar, lineas, proyectar_lineas
 # proporción de 1,74, prácticamente la del marco (16/9 = 1,78): así la vista del mundo
 # entero lo llena sin bandas negras.
 BB=(-180,-56,180,80); K=5.5
-PAIS={"Ciudad del Vaticano":"Vaticano","Florencia":"Italia","Venecia":"Italia","Cerveteri":"Italia",
+PAIS={"Ciudad del Vaticano":"Vaticano","Florencia":"Italia","Venecia":"Italia","Vicenza":"Italia","Cerveteri":"Italia",
  "Viena":"Austria","París":"Francia","Aix-en-Provence":"Francia","Londres":"Reino Unido",
  "Compton, Surrey":"Reino Unido","Newcastle upon Tyne":"Reino Unido","Edimburgo":"Reino Unido",
  "Oxford":"Reino Unido","Madrid":"España","San Lorenzo de El Escorial":"España","Praga":"Chequia",
- "San Petersburgo":"Rusia","Moscú":"Rusia","Múnich":"Alemania","Schwerin":"Alemania",
+ "San Petersburgo":"Rusia","Moscú":"Rusia","Sérguiev Posad":"Rusia","Múnich":"Alemania","Schwerin":"Alemania",
  "Potsdam":"Alemania","Atenas":"Grecia","Corfú":"Grecia","Argólida":"Grecia",
  "Hisarlik, Çanakkale":"Turquía","Bagdad":"Irak","Sulaymaniyah":"Irak",
  "Ciudad de México":"México","Puebla":"México","Damasco":"Siria","Besanzón":"Francia","Kassel":"Alemania","Berlín":"Alemania","Estambul":"Turquía","Adana":"Turquía","Oasis de Jarga":"Egipto","El Cairo":"Egipto","Beit Alfa":"Israel",
  "Ciudad Vieja":"Jerusalén","Buenos Aires":"Argentina",
- "Bruselas":"Bélgica",
+ "Bruselas":"Bélgica","Varsovia":"Polonia",
  "Nueva York":"Estados Unidos","Washington D.C.":"Estados Unidos","Fort Worth":"Estados Unidos",
- "New Haven":"Estados Unidos"}
+ "New Haven":"Estados Unidos","Cambridge (Massachusetts)":"Estados Unidos","Róterdam":"Países Bajos"}
 
 # El continente se deduce del país, y el mapa activa solo los botones con obras: si
 # mañana entra una pieza en El Cairo, África se enciende sola.
 CONTINENTE={"Vaticano":"Europa","Italia":"Europa","Austria":"Europa","Francia":"Europa",
  "Reino Unido":"Europa","España":"Europa","Chequia":"Europa","Rusia":"Europa",
- "Bélgica":"Europa",
+ "Bélgica":"Europa","Polonia":"Europa",
  "Grecia":"Europa","Alemania":"Europa","Países Bajos":"Europa","Portugal":"Europa",
  "Irak":"Asia","Jerusalén":"Asia","Siria":"Asia","Turquía":"Asia","Israel":"Asia","Irán":"Asia",
  "Estados Unidos":"América del Norte","México":"América del Norte","Canadá":"América del Norte",

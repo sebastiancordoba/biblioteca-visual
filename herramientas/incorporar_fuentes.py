@@ -73,7 +73,8 @@ def problemas(r, claves):
         if not f.get("obra"): p.append(f"fuente {f.get('n')} sin nombre de obra")
     # cada frase con contenido lleva una llamada
     # no se corta en iniciales: «E. L. Sukenik» es un nombre, no dos frases
-    for frase in re.split(r"(?<=[.!?»])(?<! [A-Z]\.)\s+(?=[A-ZÁÉÍÓÚÑ«¿¡])", bio):
+    oculto = re.sub(r"«[^»]*»", lambda m: m.group(0).replace(".", "\x00"), bio)   # no cortar dentro de «…»
+    for frase in re.split(r"(?:(?<=[.!?])|(?<=[.!?]»))(?<! [A-Z]\.)\s+(?=[A-ZÁÉÍÓÚÑ«¿¡])", oculto):
         if len(frase) > 25 and not LLAMADA.search(frase):
             p.append(f"frase sin fuente: «{frase[:70]}…»")
     return p

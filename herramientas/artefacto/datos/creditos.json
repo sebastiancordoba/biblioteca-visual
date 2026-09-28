@@ -303,6 +303,14 @@
   "licencia": "Dominio público",
   "licencia_url": null
  },
+ "Génesis/09_La_Confusion_de_las_Lenguas_Gustave_Dore_Wikipedia_Master.jpg": {
+  "archivo": "https://commons.wikimedia.org/wiki/File:Pismo_Swiete_Starego_i_Nowego_Testamentu._T._1_1873_(89393754).jpg",
+  "atribucion": false,
+  "autor": null,
+  "autor_url": null,
+  "licencia": "Dominio público",
+  "licencia_url": null
+ },
  "Génesis/11_Tras_el_Diluvio_George_Frederic_Watts_1891.jpg": {
   "archivo": "https://commons.wikimedia.org/wiki/File:Watts_%E2%80%93_After_the_Deluge.jpg",
   "atribucion": false,
@@ -528,12 +536,12 @@
   "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0"
  },
  "Génesis/34b_El_Sacrificio_de_Isaac_Panel_Dura_Europos_Siria_244.jpg": {
-  "archivo": "https://commons.wikimedia.org/wiki/File:Dura_Europos_Synagogue_Sacrifice_of_Isaac.jpg",
+  "archivo": "https://commons.wikimedia.org/wiki/File:Dura-Europos_archival_photograph,_YUAG_negative_number_dura-g1165a~01_-object-id-5558.jpg",
   "atribucion": false,
   "autor": null,
   "autor_url": null,
-  "licencia": "Dominio público",
-  "licencia_url": null
+  "licencia": "CC0",
+  "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
  },
  "Génesis/35_Jose_Acusado_por_la_Mujer_de_Putifar_Rembrandt_1655.jpg": {
   "archivo": "https://commons.wikimedia.org/wiki/File:Joseph_Accused_by_Potiphar%27s_Wife.jpg",
@@ -687,6 +695,14 @@
   "licencia": "Dominio público",
   "licencia_url": null
  },
+ "Ilíada/02_Jupiter_y_Tetis_Ingres_Wikipedia_Master.jpg": {
+  "archivo": "https://commons.wikimedia.org/wiki/File:Jupiter_and_Thetis_(Ingres).jpg",
+  "atribucion": false,
+  "autor": null,
+  "autor_url": null,
+  "licencia": "Dominio público",
+  "licencia_url": null
+ },
  "Ilíada/02b_Jupiter_y_Tetis_Detalle_Ingres_1811.jpg": {
   "archivo": "https://commons.wikimedia.org/wiki/File%3AJean_Auguste_Dominique_Ingres_-_Jupiter_et_Th%C3%A9tis_02.jpg",
   "atribucion": false,
@@ -705,6 +721,14 @@
  },
  "Ilíada/04_Andromaca_Llorando_a_Hector_Jacques_Louis_David_1783.jpg": {
   "archivo": "https://commons.wikimedia.org/wiki/File%3AJacques-Louis_David_-_The_Grief_of_Andromache_-_WGA06106.jpg",
+  "atribucion": false,
+  "autor": null,
+  "autor_url": null,
+  "licencia": "Dominio público",
+  "licencia_url": null
+ },
+ "Ilíada/04_Andromaca_Llorando_a_Hector_Jacques_Louis_David_Wikipedia_Master.jpg": {
+  "archivo": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_Andromache_Mourning_Hector_-_WGA6050.jpg",
   "atribucion": false,
   "autor": null,
   "autor_url": null,

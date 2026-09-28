@@ -22,6 +22,11 @@ MUSEOS = {
  "sulpice":    ("Saint-Sulpice","París",48.8511,2.3348),
  "tate":       ("Tate Britain","Londres",51.4911,-0.1278),
  "britishmus": ("British Museum","Londres",51.5194,-0.1270),
+ "britlib":    ("British Library","Londres",51.5300,-0.1270),
+ "valmarana":  ("Villa Valmarana ai Nani","Vicenza",45.5364,11.5581),
+ "boijmans":   ("Museum Boijmans Van Beuningen","Róterdam",51.9142,4.4731),
+ "harvard":    ("Harvard Art Museums","Cambridge (Massachusetts)",42.3741,-71.1143),
+ "bnpolonia":  ("Biblioteca Nacional de Polonia","Varsovia",52.2139,21.0044),
  "natgal":     ("National Gallery","Londres",51.5089,-0.1283),
  "prado":      ("Museo Nacional del Prado","Madrid",40.4138,-3.6921),
  "escorial":   ("Monasterio de El Escorial","San Lorenzo de El Escorial",40.5891,-4.1475),
@@ -31,6 +36,7 @@ MUSEOS = {
  "ashmolean":  ("Ashmolean Museum","Oxford",51.7554,-1.2600),
  "praga":      ("Galería Nacional de Praga","Praga",50.0900,14.3980),
  "hermitage":  ("Museo del Hermitage","San Petersburgo",59.9398,30.3146),
+ "lavra":      ("Lavra de la Trinidad y San Sergio","Sérguiev Posad",56.3107,38.1300),
  "tretiakov":  ("Galería Tretiakov","Moscú",55.7415,37.6208),
  "granet":     ("Musée Granet","Aix-en-Provence",43.5262,5.4498),
  "gliptoteca": ("Gliptoteca","Múnich",48.1462,11.5650),
@@ -62,6 +68,7 @@ MUSEOS = {
  # Norteamérica
  "met":        ("Metropolitan Museum of Art","Nueva York",40.7794,-73.9632),
  "morgan":     ("Morgan Library & Museum","Nueva York",40.7492,-73.9815),
+ "nga":        ("National Gallery of Art","Washington D.C.",38.8913,-77.0199),
  "smithsonian":("Smithsonian American Art Museum","Washington D.C.",38.8977,-77.0230),
  "kimbell":    ("Kimbell Art Museum","Fort Worth",32.7489,-97.3648),
  "yale":       ("Yale Center for British Art","New Haven",41.3083,-72.9279),
@@ -72,11 +79,12 @@ REGLAS = [
  ("bagawat","bagawat"),("dar al-kutub","darkutub"),("beit alfa","beitalfa"),
  ("arqueologico de adana","adana"),("patriarcado armenio","patrarm"),
  ("bellas artes, buenos aires","mnba_ba"),
- ("sixtina","vaticano"),("museos vaticanos","vaticano"),("gregoriano etrusco","vaticano"),
+ ("sixtina","vaticano"),("sistina","vaticano"),("trinidad y san sergio","lavra"),("museos vaticanos","vaticano"),("gregoriano etrusco","vaticano"),
  ("brancacci","brancacci"),("uffizi","uffizi"),("salute","salute"),
  ("kunsthistorisches","khm"),("orsay","orsay"),("louvre","louvre"),
  ("biblioteca nacional de francia","bnf"),("saint-sulpice","sulpice"),
- ("tate britain","tate"),("british museum","britishmus"),("national gallery, londres","natgal"),
+ ("tate britain","tate"),("british museum","britishmus"),("biblioteca nacional de polonia","bnpolonia"),("boijmans","boijmans"),("harvard art museums","harvard"),("british library","britlib"),("valmarana","valmarana"),("national gallery of art","nga"),   # antes que «national gallery»: si no, Washington caía en Londres
+ ("national gallery, londres","natgal"),
  ("national gallery","natgal"),("prado","prado"),("escorial","escorial"),
  ("watts gallery","watts"),("laing","laing"),("galleries of scotland","escocia"),
  ("ashmolean","ashmolean"),("praga","praga"),("hermitage","hermitage"),
@@ -101,7 +109,6 @@ def norm(s):
 # Se identifican por título Y autor, porque hay títulos repetidos entre obras
 # distintas (dos «Adán y Eva», dos «El sacrificio de Isaac»…).
 FORZAR = {
-    ("El Anciano de los Días", "Blake"): "yale",    # Yale Center for British Art
     ("Adán y Eva", "Durero"):            "morgan",  # el grabado de 1504
 }
 

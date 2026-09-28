@@ -182,7 +182,7 @@ AUTORES = [
 {
  "clave": "breu", "nombre": "Jörg Breu el Joven", "anios": "c. 1510–1547",
  "oficio": "Pintor y dibujante de Augsburgo",
- "patron": ["Jörg Breu el Joven"],
+ "patron": ["Jörg Breu el Joven", "Atribuido a Jörg Breu el Joven"],
  "bio": "Hijo de Jörg Breu el Viejo, trabajó en el taller paterno como aprendiz y oficial y lo heredó en 1534. Fue pintor y dibujante para xilografía y vidriera. En 1536-1537 trabajó en Neuburg an der Donau para Otón Enrique del Palatinado, y de ese encargo quedan restos de frescos en el castillo de Grünau (1537). En 1538 pintó la sala de oficio de la casa de los tejedores de Augsburgo, y miniaturas para un manuscrito de lujo hoy en Eton College. Su monograma se parece al de su padre. Solo las obras que lo llevan permiten separarlos: sus figuras son más pequeñas y esbeltas, con paños más quebrados, de gusto ya manierista.",
 },
 {

@@ -10,15 +10,15 @@ Relieves asirios, sellos cilíndricos, tablillas cuneiformes y objetos de culto 
 |---|---|---|---|---|---|
 | 1 | **Tablilla XI: el Diluvio** | Biblioteca de Asurbanipal, Nínive (s. VII a.C.) | British Museum, Londres (K.3375) | [Wikipedia](https://es.wikipedia.org/wiki/Tablilla_del_Diluvio) | [`01_Tablilla_XI_del_Diluvio_Biblioteca_de_Asurbanipal_650aC.jpg`](./01_Tablilla_XI_del_Diluvio_Biblioteca_de_Asurbanipal_650aC.jpg) |
 | 2 | **El héroe dominando un león** | Palacio de Sargón II, Dur-Sharrukin (713 a.C.) | Museo del Louvre, París (AO 19862) | [Wikipedia](https://es.wikipedia.org/wiki/Dur_Sharrukin) | [`02_Gilgamesh_Dominando_un_Leon_Khorsabad_713aC.jpg`](./02_Gilgamesh_Dominando_un_Leon_Khorsabad_713aC.jpg) |
-| 3 | **Gilgamesh y Huwawa** | Placa babilónica antigua (c. 1800 a.C.) | Ashmolean Museum, Universidad de Oxford | [Wikipedia](https://es.wikipedia.org/wiki/Humbaba) | [`03_Gilgamesh_y_Huwawa_Relieve_Babilonico_1800aC.jpg`](./03_Gilgamesh_y_Huwawa_Relieve_Babilonico_1800aC.jpg) |
+| 3 | **Gilgamesh y Huwawa, en una tablilla sumeria** | Tablilla sumeria, época paleobabilónica (c. 1800 a.C.) | Ashmolean Museum, Oxford (AN1932.155) | [Wikipedia](https://es.wikipedia.org/wiki/Humbaba) | [`03_Gilgamesh_y_Huwawa_Relieve_Babilonico_1800aC.jpg`](./03_Gilgamesh_y_Huwawa_Relieve_Babilonico_1800aC.jpg) |
 | 4 | **La máscara de Humbaba** | Ur, periodo paleobabilónico (2004–1595 a.C.) | Museo de Sulaymaniyah, Kurdistán iraquí | [Wikipedia](https://es.wikipedia.org/wiki/Humbaba) | [`04_Mascara_de_Humbaba_Ur_1800aC.jpg`](./04_Mascara_de_Humbaba_Ur_1800aC.jpg) |
 | 5 | **La Tablilla del Sueño** | Mesopotamia, periodo paleobabilónico (c. 1600 a.C.) | Restituida a la República de Irak en 2021 | [Wikipedia](https://es.wikipedia.org/wiki/Tablilla_del_Sue%C3%B1o_de_Gilgamesh) | [`05_Tablilla_del_Sueno_de_Gilgamesh_1600aC.jpg`](./05_Tablilla_del_Sueno_de_Gilgamesh_1600aC.jpg) |
-| 6 | **El relieve de la Reina de la Noche** | Babilonia, periodo paleobabilónico (1800–1750 a.C.) | British Museum, Londres | [Wikipedia](https://es.wikipedia.org/wiki/Relieve_Burney) | [`06_Relieve_de_la_Reina_de_la_Noche_Babilonia_1750aC.jpg`](./06_Relieve_de_la_Reina_de_la_Noche_Babilonia_1750aC.jpg) |
-| 7 | **El Vaso de Warka** | Uruk, periodo protoliterario (c. 3200–3000 a.C.) | Museo Nacional de Irak, Bagdad | [Wikipedia](https://es.wikipedia.org/wiki/Vaso_de_Warka) | [`07_Vaso_de_Warka_Uruk_3000aC.jpg`](./07_Vaso_de_Warka_Uruk_3000aC.jpg) |
-| 8 | **Lamassu, el guardián de la puerta** | Palacio de Sargón II, Dur-Sharrukin (713 a.C.) | Museo del Louvre, París (procedente de la sala del trono de Khorsabad) | [Wikipedia](https://es.wikipedia.org/wiki/Lamassu) | [`08_Lamassu_del_Palacio_de_Sargon_II_Khorsabad_713aC.jpg`](./08_Lamassu_del_Palacio_de_Sargon_II_Khorsabad_713aC.jpg) |
-| 9 | **Sello cilíndrico del héroe y el toro** | Mesopotamia, periodo acadio (c. 2334–2154 a.C.) | Morgan Library & Museum, Nueva York | [Wikipedia](https://es.wikipedia.org/wiki/Sello_cil%C3%ADndrico) | [`09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg`](./09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg) |
-| 10 | **El héroe abate al toro** | Mesopotamia acadia, reinado de Naram-Sin (c. 2255–2219 a.C.) | Museos Reales de Arte e Historia, Bruselas | [Wikipedia](https://es.wikipedia.org/wiki/Toro_celestial) | [`11_El_Toro_Celeste_Placa_Votiva_Bruselas_2250aC.jpg`](./11_El_Toro_Celeste_Placa_Votiva_Bruselas_2250aC.jpg) |
-| 11 | **La caza de leones de Asurbanipal** | Palacio Norte de Nínive (c. 645 a.C.) | British Museum, Londres | [Wikipedia](https://es.wikipedia.org/wiki/Cacer%C3%ADa_de_leones_de_Asurbanipal) | [`10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg`](./10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg) |
+| 6 | **El relieve de la Reina de la Noche** | Babilonia, periodo paleobabilónico (1800–1750 a.C.) | British Museum, Londres (2003,0718.1) | [Wikipedia](https://es.wikipedia.org/wiki/Relieve_Burney) | [`06_Relieve_de_la_Reina_de_la_Noche_Babilonia_1750aC.jpg`](./06_Relieve_de_la_Reina_de_la_Noche_Babilonia_1750aC.jpg) |
+| 7 | **El Vaso de Warka** | Uruk, periodo protoliterario (c. 3200–3000 a.C.) | Museo Nacional de Irak, Bagdad (IM19606) | [Wikipedia](https://es.wikipedia.org/wiki/Vaso_de_Warka) | [`07_Vaso_de_Warka_Uruk_3000aC.jpg`](./07_Vaso_de_Warka_Uruk_3000aC.jpg) |
+| 8 | **Lamassu, el guardián de la puerta** | Palacio de Sargón II, Dur-Sharrukin (713 a.C.) | Museo del Louvre, París (AO 19857) | [Wikipedia](https://es.wikipedia.org/wiki/Lamassu) | [`08_Lamassu_del_Palacio_de_Sargon_II_Khorsabad_713aC.jpg`](./08_Lamassu_del_Palacio_de_Sargon_II_Khorsabad_713aC.jpg) |
+| 9 | **Sello cilíndrico del héroe y el toro** | Mesopotamia, periodo acadio (c. 2334–2154 a.C.) | Morgan Library & Museum, Nueva York (Morgan Seal 159) | [Wikipedia](https://es.wikipedia.org/wiki/Sello_cil%C3%ADndrico) | [`09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg`](./09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg) |
+| 10 | **El héroe abate al toro** | Mesopotamia acadia, reinado de Naram-Sin (c. 2255–2219 a.C.) | Museos Reales de Arte e Historia, Bruselas (O.01054) | [Wikipedia](https://es.wikipedia.org/wiki/Toro_celestial) | [`11_El_Toro_Celeste_Placa_Votiva_Bruselas_2250aC.jpg`](./11_El_Toro_Celeste_Placa_Votiva_Bruselas_2250aC.jpg) |
+| 11 | **La caza de leones de Asurbanipal** | Palacio Norte de Nínive (c. 645 a.C.) | British Museum, Londres (probablemente 124874) | [Wikipedia](https://es.wikipedia.org/wiki/Cacer%C3%ADa_de_leones_de_Asurbanipal) | [`10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg`](./10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg) |
 
 ---
 
@@ -35,20 +35,20 @@ Relieves asirios, sellos cilíndricos, tablillas cuneiformes y objetos de culto 
 #### Ficha Técnica
 
 - Arcilla con escritura cuneiforme
-- 15,2 × 13,3 cm
+- 15,24 × 13,33 × 3,17 cm
 - British Museum, Londres (K.3375)
 
 #### Lo que hace que destaque
 
-Un fragmento de arcilla del tamaño de una mano que contiene el episodio más célebre de toda la literatura mesopotámica. En él, el superviviente Utnapishtim narra a Gilgamesh cómo el dios Ea le advirtió en secreto a través de un muro de cañas que construyera una nave, cómo embarcó en ella «la semilla de todo ser viviente», cómo la tormenta duró seis días y siete noches hasta que «toda la humanidad había vuelto a ser arcilla», y cómo la nave encalló en el monte Nimush. Desde allí soltó sucesivamente una paloma, una golondrina y un cuervo; solo el cuervo no regresó, señal de que las aguas habían bajado. Los paralelismos con Génesis 6-9 son tan literales —la nave calafateada con betún, las aves exploradoras, el sacrificio final cuyo aroma atrae a los dioses— que la lectura de esta tablilla transformó de raíz el estudio comparado del texto bíblico.
+Es el fragmento de la esquina superior derecha de una tablilla de arcilla neoasiria del siglo VII a.C., escrita en dos columnas por cada cara, que contiene la tablilla XI de la Epopeya de Gilgamesh. En ella Ūta-napišti cuenta cómo Ea, sin hablar directamente, repitió el plan de los dioses a «un cerco de cañas» y le ordenó subir a la nave «la simiente de todos los seres vivos». El diluvio sopla seis días y siete noches, tras los cuales «toda la gente se había vuelto arcilla»; la nave queda varada en el monte Nimuš. Al séptimo día suelta una paloma y una golondrina, que vuelven, y un cuervo, que no regresa porque ve bajar las aguas; después sacrifica en la cumbre y los dioses se reúnen «como moscas» en torno al oferente. El museo la llama el texto cuneiforme más famoso, por su semejanza con el Diluvio del Génesis.
 
 #### Contexto Histórico y Arqueológico
 
-El 3 de diciembre de 1872, George Smith, un grabador de billetes autodidacta que trabajaba clasificando fragmentos en el British Museum, descifró estas líneas y comprendió lo que tenía delante. Según la crónica de sus colegas, se levantó de la mesa y comenzó a desvestirse de pura excitación. La conferencia que pronunció ese mismo mes ante la Society of Biblical Archaeology, con el primer ministro Gladstone entre el público, provocó una conmoción teológica en toda Europa. El museo financió de inmediato una expedición a Nínive para buscar las líneas que faltaban, y Smith —con una fortuna difícil de creer— las encontró.
+George Smith (1840–1876), aprendiz de grabador de billetes desde los catorce años, aprendió cuneiforme por su cuenta visitando el British Museum en sus pausas del almuerzo. En 1861 el museo le encargó ordenar y reunir los fragmentos de tablillas, y así dio con el relato del diluvio. Britannica recoge que, al leerlo, corrió por la sala quitándose la ropa. Lo presentó en 1872 ante la Society of Biblical Archaeology, con el primer ministro Gladstone y el arzobispo de Canterbury entre el público. No fue el museo sino The Daily Telegraph quien pagó la expedición a Nínive a cambio de la exclusiva; en mayo de 1873, al quinto día de excavación, Smith halló un fragmento que creyó la pieza que faltaba, aunque en realidad pertenecía a una versión aún más antigua del relato del diluvio. La tablilla K.3375 la había excavado Hormuzd Rassam en Kuyunjik.
 
 #### Autoría y Procedencia
 
-La tablilla procede de la biblioteca que Asurbanipal reunió en Nínive, cerca de la actual Mosul. La ciudad fue arrasada en 612 a.C. y el incendio que destruyó el palacio coció la arcilla de las tablillas, conservándolas precisamente al destruirlo todo lo demás. La versión estándar de la epopeya se atribuye al exorcista Sîn-lēqi-unninni, que hacia 1200 a.C. compiló y reelaboró poemas sumerios sobre Bilgamesh muy anteriores.
+Procede del conjunto llamado Biblioteca de Asurbanipal: más de 30.000 tablillas y fragmentos hallados en Nínive, en el norte del actual Irak, capital del rey que gobernó de 669 a c. 631 a.C.. Se excavaron desde la década de 1840 hasta la de 1930, y no se encontraron en su posición original. Nínive ardió hacia 612 a.C., y el fuego, en la mayoría de los casos, endureció la arcilla en vez de destruirla. La versión «canónica» del poema, conocida por unos 75 manuscritos —el más antiguo, asirio del siglo VIII a.C.—, se atribuye a una figura esquiva llamada Sîn-lēqi-unninni, y reelabora episodios de cinco relatos sumerios anteriores sobre Gilgameš.
 
 ---
 
@@ -62,45 +62,46 @@ La tablilla procede de la biblioteca que Asurbanipal reunió en Nínive, cerca d
 
 #### Ficha Técnica
 
-- Relieve en alabastro yesoso
-- 4,42 m de altura
+- Alabastro yesoso, altorrelieve con restos de policromía
+- 552 × 218 cm
 - Museo del Louvre, París (AO 19862)
 
 #### Lo que hace que destaque
 
-Un héroe barbado de musculatura desmesurada estrecha contra su costado un león adulto, sujetándolo casi con desdén mientras empuña un arma curva en la mano libre. El escultor asirio resolvió la escena sin esfuerzo aparente: el león se retuerce, el hombre no. Toda la carga expresiva está en la desproporción entre la fiera —representada con enorme precisión anatómica— y la calma del cuerpo que la domina, un recurso de propaganda real que traduce en piedra la idea de que el orden humano contiene al caos animal.
+El Louvre la cataloga como ortostato con «un gran héroe barbudo»: cabello rizado a media melena, túnica larga abierta sobre un taparrabos, sandalias, pendientes y, en cada brazo, un brazalete en espiral y otro de roseta. Con la mano derecha sostiene una harpé —la espada curva— y con el brazo izquierdo aprieta contra sí un león pequeño. Conserva trazas de color sobre la piedra y, en el reverso, una inscripción cuneiforme neoasiria de 27 líneas. El dossier del museo explica que en los muros del palacio, junto a los genios bendecidores, aparecen estos «héroes dominando un león», que a menudo se asimilan a Gilgamesh; la ficha, sin embargo, solo lo llama «héroe».
 
 #### Contexto Histórico y Arqueológico
 
-La identificación de esta figura con Gilgamesh es tradicional y muy popular, pero los asiriólogos la consideran dudosa: hoy se prefiere el nombre neutro de «héroe dominando un león», ya que el motivo aparece repetido como guardián en las fachadas del palacio sin inscripción que lo nombre. Aun así, fue esta imagen la que fijó en el imaginario occidental el aspecto físico del rey de Uruk. Fue excavada por Paul-Émile Botta entre 1843 y 1844 en la primera gran excavación asiria de la historia, cuyos hallazgos llegaron a París en barcaza por el Tigris y el mar.
+La ficha del Louvre sitúa la pieza, según Albenda, en la fachada de la sala del trono (placa n.º 46) y la da como hallada en 1843-1844 por la misión de Paul-Émile Botta; entró en el museo por reparto de hallazgos. Botta, cónsul francés en Mosul, buscaba Nínive cuando unos aldeanos lo llevaron a Khorsabad, donde abrió la primera excavación en Mesopotamia. Los envíos bajaron el Tigris en keleks —balsas sobre cientos de odres— hasta Basora, siguieron en el barco Le Cormoran hasta El Havre y en barcaza hasta París; el museo asirio del Louvre se inauguró en 1847. La identificación con Gilgamesh sigue siendo convencional: el museo la recoge como asimilación frecuente, y su bibliografía incluye la nota de A. Annus (NABU, 2012) que llama a la pieza «Louvre Gilgamesh».
 
 #### Autoría y Procedencia
 
-Dur-Sharrukin («la fortaleza de Sargón») fue fundada de la nada por Sargón II en 713 a.C. como capital nueva del imperio asirio. El rey murió en batalla en 705 a.C., antes de que la ciudad estuviera terminada, y la corte la abandonó de inmediato: quedó como una capital intacta y deshabitada, lo que explica la excepcional conservación de sus relieves.
+Dur-Sharrukin, «la fortaleza de Sargón», fue una capital nueva de Sargón II (721-705 a.C.), cuyas obras empezaron en 717 a.C.. El palacio ocupaba 10 hectáreas, con 30 patios y 200 salas. Consagrada en 707 a.C., la ciudad se abandonó en 705 a.C., cuando a la muerte de Sargón su hijo Senaquerib eligió Nínive. El dossier del Louvre enumera hipótesis para ese abandono —la muerte de Sargón en combate sin sepultura posible, un posible «pecado» del padre citado por Senaquerib, o la simple preferencia por Nínive— y concluye que el misterio sigue abierto.
 
 ---
 
-### 3. Gilgamesh y Huwawa — Placa babilónica antigua (c. 1800 a.C.)
+### 3. Gilgamesh y Huwawa, en una tablilla sumeria — Tablilla sumeria, época paleobabilónica (c. 1800 a.C.)
 
-![Gilgamesh y Huwawa](./03_Gilgamesh_y_Huwawa_Relieve_Babilonico_1800aC.jpg)
-*Gilgamesh y Huwawa — placa babilónica (c. 1800 a.C.)*
+![Gilgamesh y Huwawa, en una tablilla sumeria](./03_Gilgamesh_y_Huwawa_Relieve_Babilonico_1800aC.jpg)
+*Gilgamesh y Huwawa — tablilla con el poema sumerio, Ashmolean Museum (c. 1800 a.C.)*
 
 #### Ficha Técnica
 
-- Terracota moldeada
-- Ashmolean Museum, Universidad de Oxford
+- Arcilla cocida con escritura cuneiforme
+- 12,5 × 12,2 × 3,5 cm
+- Ashmolean Museum, Oxford (AN1932.155)
 
 #### Lo que hace que destaque
 
-Una placa de terracota de producción popular —moldeada en serie, no tallada por encargo real— que representa el episodio central de la primera mitad de la epopeya: Gilgamesh y Enkidu abatiendo a Huwawa (Humbaba), el ogro que el dios Enlil puso a custodiar el Bosque de los Cedros. Estas placas baratas se vendían por millares y se colgaban en casas particulares, lo que las convierte en el testimonio más elocuente de que la historia de Gilgamesh no era literatura de élite sino cultura popular viva en la Mesopotamia del segundo milenio.
+No es una placa figurada sino una tablilla de arcilla cocida inscrita en cuneiforme con la epopeya sumeria de Gilgamesh, fechada por el Ashmolean hacia 1900-1600 a.C.. El relato sumerio conocido como «Gilgamesh y Huwawa» empieza con una razón que anticipa todo el ciclo: como el hombre no puede ir más allá del final de la vida, Gilgamesh quiere partir a las montañas para establecer allí su renombre. Enkidu, que en esta versión es su «esclavo», le aconseja informar antes a Utu, porque las Montañas de la Tala de Cedros son asunto del joven dios. Gilgamesh le ofrece un cabrito y pide su ayuda.
 
 #### Contexto Histórico y Arqueológico
 
-El episodio tiene una carga moral que la epopeya no resuelve: Huwawa suplica por su vida y Gilgamesh está a punto de perdonarlo, hasta que Enkidu le insiste en matarlo. La tala del bosque sagrado y el asesinato de su guardián son la falta por la que los dioses condenarán después a Enkidu a morir, en lo que constituye probablemente la primera reflexión conservada sobre la depredación del entorno natural como culpa.
+En la versión sumeria, Huwawa, capturado, llora y suplica a Utu; se aferra a la mano de Gilgamesh y se postra, y el héroe se apiada de él. Enkidu se lo reprocha: si el pájaro capturado vuelve a su nido, Gilgamesh nunca regresará a la ciudad que lo vio nacer. Cuando Huwawa le replica, Enkidu, lleno de ira, le corta el cuello y mete la cabeza en un saco de cuero. La llevan ante Enlil, que se enfurece: Huwawa debería haberse sentado ante ellos, comido su pan y bebido su agua. Enlil reparte entonces los siete resplandores de Huwawa entre los campos, los ríos, los cañaverales, los leones, el palacio, los bosques y la diosa Nungal.
 
 #### Autoría y Procedencia
 
-El Bosque de los Cedros del poema se sitúa en los montes del Líbano o del Amanus, la fuente real de la madera que Mesopotamia —una llanura de barro sin piedra ni árboles— importaba a un coste enorme. La expedición mítica de Gilgamesh calca las expediciones madereras reales de los reyes sumerios y acadios.
+La tablilla procede de Tell Uhaimir y la donó al Ashmolean en 1932 la Oxford Field Museum Expedition. Se expone en la galería 19 (Antiguo Oriente Próximo) y la publica P. Collins en Mountains and Lowlands (2016), p. 89. El dossier del Louvre sitúa el bosque de los cedros del poema en el Líbano, de donde los héroes traen la madera, y recuerda que los reyes asirios representaban la tala y el transporte del cedro libanés, indispensable para sus construcciones.
 
 ---
 
@@ -116,15 +117,15 @@ El Bosque de los Cedros del poema se sitúa en los montes del Líbano o del Aman
 
 #### Lo que hace que destaque
 
-El rostro del guardián del Bosque de los Cedros está modelado como un único surco enrollado sobre sí mismo, sin principio ni final visibles. No es un capricho decorativo: la epopeya describe la cara de Humbaba como un laberinto de intestinos, y los adivinos babilonios leían el porvenir en las circunvoluciones de las vísceras de los corderos sacrificados. La máscara es a la vez la imagen de un monstruo y un instrumento técnico de la hepatoscopia, la disciplina que interpretaba los pliegues de las entrañas.
+El paralelo mejor documentado de este tipo de objeto es la máscara de Huwawa del British Museum (116624), de arcilla cocida modelada a mano. Lleva al dorso una inscripción acadia de cinco líneas que es un presagio: «Si las espiras del colon se parecen a la cabeza de Huwawa, es un presagio de Sargón, que gobernó la tierra», firmada por el adivino Warad-Marduk, hijo del adivino Kubburum. Según el comentario del museo, la pieza representa a la vez el rostro de Huwawa, el gigante al que mató Gilgamesh, y los intestinos de un cordero examinados para la adivinación, una configuración que habría anunciado a Sargón de Akkad el dominio del país. El vínculo entre el rostro del monstruo y las vísceras procede, pues, de los textos adivinatorios, no de la epopeya.
 
 #### Contexto Histórico y Arqueológico
 
-Encontrar en el rostro del enemigo la misma forma con la que se lee el destino resume la lógica religiosa mesopotámica: lo monstruoso no es lo ajeno, sino lo que revela el orden oculto del mundo. Se conservan varios ejemplares de estas máscaras y amuletos, colgados en umbrales y puertas con función apotropaica —proteger la casa mostrando algo aún más temible que la amenaza.
+La máscara de Londres es paleobabilónica (1800-1600 a.C.), mide 8,4 × 8,3 cm y la excavó Hormuzd Rassam en Abu Habba, la antigua Sippar. Se expone en la sala 56 del British Museum.
 
 #### Autoría y Procedencia
 
-Procede de Ur, en el sur de Irak. La pieza se conserva en el Museo de Sulaymaniyah, institución que en las últimas décadas ha recuperado por compra y negociación numerosas antigüedades saqueadas para evitar que salieran definitivamente del país.
+Sin datos verificados: ninguna institución publica la ficha de esta pieza, y su procedencia y su fecha solo constan en el pie de la fotografía; lo que se sabe está en «Discrepancias entre fuentes».
 
 ---
 
@@ -135,21 +136,21 @@ Procede de Ur, en el sur de Irak. La pieza se conserva en el Museo de Sulaymaniy
 
 #### Ficha Técnica
 
-- Arcilla con escritura cuneiforme
-- 15 × 13 cm
+- Arcilla con escritura cuneiforme (acadio)
+- c. 15 × 12,7 cm (6 × 5 pulgadas)
 - Restituida a la República de Irak en 2021
 
 #### Lo que hace que destaque
 
-El fragmento recoge el pasaje en que Gilgamesh relata a su madre, la diosa Ninsun, los sueños que anuncian la llegada de Enkidu: un meteorito que cae del cielo y un hacha, objetos que la ciudad entera rodea y que él abraza «como a una esposa». Ninsun los interpreta como el anuncio de un compañero que será su igual. Es uno de los episodios más singulares del poema, porque funda la amistad —y no la conquista— como motor narrativo.
+El fragmento conserva el pasaje en que el protagonista cuenta sus sueños a su madre y ella los interpreta como el anuncio de la llegada de un nuevo amigo: «Lo verás y tu corazón reirá». Su rareza está en los nombres: en esta tablilla los de Gilgamesh y Enkidu se sustituyen por los de las divinidades Sin y Ea. La Smithsonian la considera única entre las versiones conocidas por usar nombres divinos distintos para los dos protagonistas y un topónimo alternativo, lo que apunta a variantes regionales de la epopeya. Está escrita en acadio y la Smithsonian la fecha en el periodo babilonio medio.
 
 #### Contexto Histórico y Arqueológico
 
-Su historia moderna es un relato en sí mismo. Saqueada de Irak, entró en Estados Unidos con documentación de procedencia falsificada y fue adquirida en 2014 por la cadena Hobby Lobby para el Museum of the Bible de Washington por cerca de 1,7 millones de dólares. Las autoridades federales la incautaron en 2019, un tribunal ordenó su decomiso y en septiembre de 2021 fue restituida oficialmente a la República de Irak. Se ha convertido en el caso emblemático del tráfico ilícito de antigüedades mesopotámicas.
+En 2003 un marchante estadounidense la compró en Londres, cubierta de concreciones e ilegible, a un familiar de un comerciante de monedas, y la envió a Estados Unidos por correo sin declararla. En 2007 la vendió con una carta de procedencia falsa según la cual había aparecido en una caja de bronces comprada en una subasta de 1981. Una casa de subastas internacional se la vendió en Londres, en venta privada, a Hobby Lobby en 2014, para el Museum of the Bible, ocultando la carta y el nombre del marchante. Agentes federales la incautaron en el museo en septiembre de 2019; la jueza Ann M. Donnelly ordenó su decomiso en julio de 2021. Fue restituida a Irak el 23 de septiembre de 2021 en una ceremonia acogida por la Smithsonian, como parte de más de 17.000 objetos devueltos ese año.
 
 #### Autoría y Procedencia
 
-Su resolución fotográfica es menor que la del resto de la colección porque la pieza ha estado sujeta a litigio y custodia judicial, y no existen todavía campañas de digitalización de museo sobre ella.
+Su origen está en la zona del actual Irak y entró en Estados Unidos contra la ley federal. Hobby Lobby aceptó el decomiso por las dos importaciones ilegales, en 2003 y 2014. La versión en doce tablillas de la epopeya, recuerda el Departamento de Justicia, se descubrió en 1853 en las ruinas de la biblioteca de Asurbanipal en Nínive; esta tablilla, en cambio, no tiene contexto arqueológico conocido.
 
 ---
 
@@ -160,21 +161,21 @@ Su resolución fotográfica es menor que la del resto de la colección porque la
 
 #### Ficha Técnica
 
-- Terracota con restos de policromía
-- 49 × 37 × 5 cm
-- British Museum, Londres
+- Arcilla cocida modelada a mano, con pigmento rojo y negro
+- 49,5 × 37 × 4,8 cm
+- British Museum, Londres (2003,0718.1)
 
 #### Lo que hace que destaque
 
-Una mujer desnuda, frontal y perfectamente simétrica, se yergue sobre dos leones recostados y entre dos búhos. Tiene garras de rapaz en lugar de pies, alas plegadas hacia abajo —detalle que la distingue de las diosas benéficas, que las llevan extendidas— y sostiene en ambas manos la vara y el anillo, insignias del poder divino. Conserva restos del rojo intenso que cubría el cuerpo y del negro del fondo, de modo que originalmente la figura ardía sobre la oscuridad. Su identidad se discute desde hace un siglo: Ishtar, su hermana Ereshkigal, señora del inframundo, o la demonio Lilitu.
+El museo la describe como una placa de arcilla cocida con una figura femenina desnuda, de frente, con alas emplumadas que se van estrechando y garras de rapaz. Lleva un tocado de cuatro pares de cuernos rematado por un disco, collar y brazaletes, y sostiene a la altura de los hombros una vara y un anillo en cada mano. Se yergue sobre dos leones dispuestos espalda con espalda, encima de un motivo de escamas que representa montañas, entre dos búhos. El análisis de pigmentos halló ocre rojo en el cuerpo y carbono —no betún— en el fondo oscuro, más extenso en la parte baja, lo que según el museo subraya el inframundo del que surge la figura. Su identidad no está fijada: la ficha la resume en un verso, «cuya identidad solo podemos inferir».
 
 #### Contexto Histórico y Arqueológico
 
-El vínculo con la epopeya es directo si se trata de Ishtar. En la Tablilla VI, la diosa se ofrece a Gilgamesh y él la rechaza con una enumeración despiadada de los amantes que ella ha destruido antes. Humillada, Ishtar exige a su padre Anu el Toro Celeste para arrasar Uruk, y la matanza del toro es la falta que sella la condena a muerte de Enkidu. Es uno de los pocos momentos de la literatura antigua en que un héroe rechaza a una diosa y paga por ello.
+El vínculo con la epopeya depende de identificarla con Ishtar, lo que el British Museum no hace. En la tablilla VI, Gilgamesh responde a la diosa enumerando a sus amantes —el pastor, el hortelano Išullānu de su padre—. Ishtar va llorando ante su padre Anu y le pide el Toro del Cielo; si no se lo da, amenaza. Anu cede y le pone en las manos la cuerda del toro.
 
 #### Autoría y Procedencia
 
-La pieza toma su nombre alternativo del marchante Sidney Burney, que la poseyó desde 1935. El British Museum la adquirió en 2003 por su 250 aniversario. Los análisis confirmaron que la arcilla y los pigmentos son antiguos, zanjando un largo debate sobre su autenticidad.
+En 1935 la ofreció al British Museum por 350 libras la firma Selim Homsy & Co, por cuenta de Abdul Jabar de Basora; pasó después por Norman Colville y Sir Sydney Burney, de quien tomó el nombre de «relieve Burney». En 1975 la adquirió el marchante japonés Gorō Sakamoto, que la depositó en el museo. El British Museum la compró en 2003 para su 250 aniversario, con ayuda del Heritage Lottery Fund, el Art Fund, los Friends del museo, Sir Joseph Hotung y el Seven Pillars of Wisdom Fund. El nombre «Reina de la Noche» nació de una quintilla de Frances Carey; la pieza no procede de Ur sino, muy probablemente, de Tello (la antigua Girsu).
 
 ---
 
@@ -188,21 +189,21 @@ La pieza toma su nombre alternativo del marchante Sidney Burney, que la poseyó 
 
 #### Ficha Técnica
 
-- Alabastro tallado
-- 105 cm de altura
-- Museo Nacional de Irak, Bagdad
+- Alabastro tallado en relieve
+- 105 cm de altura, 36 cm de diámetro superior
+- Museo Nacional de Irak, Bagdad (IM19606)
 
 #### Lo que hace que destaque
 
-Un metro de alabastro dividido en tres franjas horizontales que se leen de abajo arriba como un relato: primero las aguas y las plantas, después los rebaños de ovejas y carneros, luego una procesión de hombres desnudos que portan ofrendas y, en la cima, la entrega de esos dones a la diosa Inanna ante las puertas de su templo. Es la composición narrativa continua más antigua que se conserva: alguien decidió, hace cinco mil años, que una imagen podía contar una secuencia en el tiempo y no solo mostrar una escena.
+La base de datos del Oriental Institute de Chicago lo describe como un vaso decorado en relieve en cuatro registros, de abajo arriba: hileras de plantas, ovejas (machos y hembras), hombres desnudos que llevan cestas o jarras, y una escena de culto en la que el gobernante de Uruk entrega provisiones al templo de la diosa Inanna. La diosa está representada por dos haces de cañas —sus símbolos— y por una mujer, probablemente su sacerdotisa. Lo fecha hacia 3000 a.C..
 
 #### Contexto Histórico y Arqueológico
 
-El vaso fue saqueado del Museo Nacional de Irak durante el asalto de abril de 2003. Cuatro meses después, tres hombres lo devolvieron en el maletero de un coche, roto en catorce fragmentos. Había sido restaurado ya en la Antigüedad —conserva grapas de reparación de hace milenios— y volvió a serlo tras su regreso. Su historia material resume la de Mesopotamia entera: destrucción, pérdida y recomposición paciente.
+El vaso fue robado del Museo de Irak en abril de 2003 y devuelto en junio de ese año. El 17 de junio de 2003 el Oriental Institute publicó una foto del 12 de junio, tomada con Donny George, director de investigación del museo, y la comparó con una imagen de hacia 1960 para mostrar los daños. La base de datos incluye una imagen del pie arrancado. Ya en la Antigüedad el borde se había roto y se le insertó una pieza de reparación, con orificios taladrados para fijarla.
 
 #### Autoría y Procedencia
 
-Uruk fue la mayor ciudad del mundo hacia 3000 a.C., con unos 40.000 habitantes y seis kilómetros de muralla. La epopeya se abre y se cierra invitando a contemplar precisamente esa muralla: es lo único que Gilgamesh, derrotado en su búsqueda de la inmortalidad, deja tras de sí.
+Procede de Uruk, número de excavación W14873. Hacia 3200 a.C., según el Met, Uruk era el mayor asentamiento del sur de Mesopotamia, si no del mundo, con edificios monumentales de adobe decorados con mosaicos de conos de arcilla pintados. En el periodo dinástico arcaico la ciudad quedó rodeada por una muralla que la tradición atribuía al rey Gilgamesh, quizá un rey real de hacia 2700 a.C.. Las doce tablillas de la epopeya empiezan y terminan en esa muralla; al final, Gilgamesh invita al barquero Ur-šanābi a subir a ella y recorrerla.
 
 ---
 
@@ -213,21 +214,21 @@ Uruk fue la mayor ciudad del mundo hacia 3000 a.C., con unos 40.000 habitantes y
 
 #### Ficha Técnica
 
-- Alabastro yesoso
-- c. 4 m de altura
-- Museo del Louvre, París (procedente de la sala del trono de Khorsabad)
+- Alabastro yesoso, altorrelieve y bulto redondo
+- 420 × 436 × 97 cm
+- Museo del Louvre, París (AO 19857)
 
 #### Lo que hace que destaque
 
-El lamassu combina el cuerpo de toro, las alas de águila y la cabeza humana coronada con la tiara de cuernos de la divinidad. Su rasgo más ingenioso es anatómicamente imposible: tiene cinco patas. Visto de frente, aparecen dos patas firmemente plantadas y la criatura está en reposo; visto de perfil desde el pasillo, se ven cuatro en zancada y la criatura avanza. El escultor resolvió con una sola pieza dos puntos de vista incompatibles, siglos antes de que existiera una teoría de la perspectiva.
+El Louvre explica que los asirios llamaban a estos guardianes aladlammû o lamassu, aunque este nombre designa más a menudo divinidades femeninas y šedu se aplica mejor a una masculina. Unen cuerpo de toro, alas de ave y cabeza humana con tiara de dos pares de cuernos superpuestos. Tienen cinco patas: de frente se ven parados; de perfil, en marcha. Combinan bajorrelieve en las alas, altorrelieve en el cuerpo y bulto redondo en la cabeza, y originalmente estaban pintados. Entre las patas, un texto cuneiforme recuerda las hazañas de Sargón II, la fundación de la ciudad y maldice a quien atente contra ella.
 
 #### Contexto Histórico y Arqueológico
 
-Estas figuras se emplazaban por pares flanqueando las puertas para repeler a los espíritus hostiles. Varios lamassu de Nimrud y Nínive fueron destruidos con martillos neumáticos y explosivos por el Estado Islámico entre 2015 y 2016, lo que ha convertido a los ejemplares conservados en museos europeos y norteamericanos en el registro principal de un arte que ya no puede visitarse en su lugar de origen.
+Más de cincuenta toros alados enmarcaban las ocho puertas de la ciudad y las del palacio de Dur-Sharrukin, como genios protectores. Cada uno se tallaba en un solo bloque de alabastro yesoso de unas 30 toneladas. Los dos del Louvre se cortaron en seis placas para transportarlos y llegaron en el primer envío, de 1845. En 1855 el convoy de Victor Place se hundió en el Chatt el-Arab y solo un toro llegó al Louvre. En abril de 2015 la UNESCO condenó la destrucción de Nimrud con «martillos y explosivos» mostrada en vídeo, y en 2016 recordó la del toro alado de la puerta de Nergal en Nínive.
 
 #### Autoría y Procedencia
 
-El mundo del que sale la epopeya de Gilgamesh es este: una arquitectura concebida como un cuerpo protegido, con umbrales vigilados por criaturas híbridas. La muralla y la puerta —lo que separa la ciudad del caos exterior— son el objeto último del orgullo del rey de Uruk.
+Según las fichas del Louvre, ambos lamassu los halló la misión de Botta en 1843-1844 y, según Albenda, flanqueaban la entrada d o k de la fachada m del palacio. El dossier del museo resume a Gilgamesh como el rey de Uruk que, sin alcanzar la inmortalidad, gana la posteridad con sus obras de arquitectura.
 
 ---
 
@@ -238,20 +239,21 @@ El mundo del que sale la epopeya de Gilgamesh es este: una arquitectura concebid
 
 #### Ficha Técnica
 
-- Serpentina tallada en hueco
-- Morgan Library & Museum, Nueva York
+- Serpentina verdinegra tallada en hueco
+- 36 × 25 mm
+- Morgan Library & Museum, Nueva York (Morgan Seal 159)
 
 #### Lo que hace que destaque
 
-El motivo del héroe barbado y desnudo que lucha con un búfalo mientras un hombre-toro somete a un león es el más repetido de la glíptica acadia, y es también el repertorio visual del que se nutren las lecturas iconográficas de Gilgamesh y Enkidu. La composición está pensada para ser cíclica: al rodar el cilindro, las figuras se encadenan indefinidamente, de modo que el combate no tiene desenlace. Talladas en hueco y en negativo sobre piedra dura de pocos centímetros, estas miniaturas exigían una destreza comparable a la de la orfebrería fina.
+La Morgan resume la escena así: un búfalo de agua sometido por un héroe desnudo y barbudo, un hombre-toro luchando con un león y, entre ambas parejas, un árbol sobre un montículo. La ficha cita a Edith Porada: en los sellos de estilo acadio maduro, el combate entre héroes y fieras se organiza en dos parejas a los lados de un motivo central, con un característico efecto de rombo que forman los brazos de los luchadores y las patas de sus víctimas. El héroe desnudo y el hombre-toro son los protagonistas más frecuentes, y búfalos y leones sus rivales habituales; los leones casi siempre aparecen de perfil. Llamar Gilgamesh a ese héroe es una lectura discutida: el museo de Bruselas recoge la interpretación reciente que lo identifica con Lakhmu, «el rizado», representado a menudo junto al hombre-toro Kusarikku.
 
 #### Contexto Histórico y Arqueológico
 
-El sello cilíndrico fue simultáneamente firma personal, amuleto y documento legal: se rodaba sobre el barro fresco de contratos, cartas y precintos de vasijas para autentificarlos. Era el objeto más íntimo de un mesopotámico, se llevaba colgado al cuello y acompañaba a su dueño a la tumba.
+El sello cilíndrico se podía hacer rodar en vez de estamparse, y se imprimía sobre tablillas y sobres de arcilla escritos. Se tallaban sobre todo en piedra, pero también en marfil, hueso o concha. Según el Met, en época acadia los grabadores empezaron a representar una variedad de temas mitológicos y narrativos nuevos, y algunos sellos llevan una inscripción que identifica a su dueño, como el copero Balu-ili.
 
 #### Autoría y Procedencia
 
-La colección de sellos de Pierpont Morgan, reunida a comienzos del siglo XX, es una de las más completas del mundo y ha sido fundamental para establecer la cronología del arte mesopotámico, ya que muchos ejemplares llevan inscrito el nombre y el oficio de su propietario.
+Pierpont Morgan lo adquirió en algún momento entre 1885 y 1908. La Morgan lo fecha entre 2340 y 2150 a.C. y lo cataloga como Morgan Seal 159. La nota de estilo procede del Corpus of Ancient Near Eastern Seals (CANES) de Edith Porada, p. 22.
 
 ---
 
@@ -262,22 +264,21 @@ La colección de sellos de Pierpont Morgan, reunida a comienzos del siglo XX, es
 
 #### Ficha Técnica
 
-- Terracota moldeada con restos de policromía
+- Terracota
 - 13,5 × 11 cm
-- inv. O.1054
-- Museos Reales de Arte e Historia, Bruselas
+- Museos Reales de Arte e Historia, Bruselas (O.01054)
 
 #### Lo que hace que destaque
 
-El héroe agarra al animal por un cuerno y por una pata trasera y lo voltea entero: el toro queda cabeza abajo, con el hocico contra el borde inferior de la placa, en una diagonal que atraviesa el campo de esquina a esquina. Es una solución de una economía notable para un objeto de trece centímetros. La cara del héroe se presenta de frente mientras el cuerpo se ve de perfil —la convención mesopotámica— y la barba rizada en bucles superpuestos y el mechón sobre la frente son los rasgos con que la glíptica acadia identifica al héroe desnudo. Conserva restos de la policromía rojiza original, que casi nunca sobrevive en la terracota.
+El museo reconoce que la placa se atribuyó muchas veces al periodo paleobabilónico, pero su acabado, notable y sutil, y su estilo muy evolucionado la separan con claridad de la producción en serie de esa época. La pose del héroe y la de su víctima se ajustan más bien al «estilo real» de la glíptica de la fase Akkad III, rara vez igualado después. Por eso la fecha en el reinado de Naram-Sin, 2255-2219 a.C.. Figura entre las «100 obras maestras» del museo.
 
 #### Contexto Histórico y Arqueológico
 
-En la tablilla VI, Gilgamesh rechaza a Ishtar recordándole cómo acabaron sus amantes anteriores; ella sube al cielo y exige a Anu el Toro Celeste, cuyos bufidos abren grietas en la tierra que se tragan a cientos de hombres de Uruk. Enkidu lo sujeta por la cola, Gilgamesh lo remata entre la nuca y los cuernos, y después Enkidu le arranca un cuarto trasero y se lo arroja a la diosa a la cara. Los dioses reunidos deciden que alguien debe pagar por el Toro y por Humbaba, y el condenado es Enkidu: el episodio más triunfal del poema es el que pone en marcha su desenlace.
+En la tablilla VI, Anu entrega a Ishtar la cuerda del Toro del Cielo. Al llegar a Uruk, el primer resoplido abre un pozo en el que caen cien hombres, el segundo doscientos. Enkidu agarra al toro por los cuernos y propone el plan: él lo sujetará por la cola y le pisará el corvejón, y Gilgamesh, «como un carnicero», le clava el cuchillo entre el yugo de los cuernos y el punto de degüello. Ofrecen el corazón a Šamaš; Ishtar maldice desde la muralla y Enkidu arranca un cuarto trasero del toro y se lo arroja delante. La tablilla VII empieza con Enkidu preguntando por qué deliberaban los grandes dioses.
 
 #### Autoría y Procedencia
 
-Hay que decirlo con precisión: el propio museo advierte de que la figura puede ser Gilgamesh venciendo al Toro Celeste o bien Lakhmu, el dios acadio de las aguas subterráneas, sometiendo al hombre-toro Kusarikku. La iconografía mesopotámica rara vez rotula a sus héroes, y buena parte de lo que llamamos «Gilgamesh» en el arte es una identificación por analogía con el texto, no una firma. Se incluye por eso con la duda declarada, y no a pesar de ella: es la imagen antigua más próxima al episodio que existe.
+Según el museo, la opinión común reconoció enseguida el episodio de Gilgamesh: tras resistirse a Ishtar, el héroe se enfrenta al toro celeste que Anu envía para aniquilar Uruk. Pero una interpretación muy reciente, añade, ve en el héroe no a Gilgamesh sino a Lakhmu, «el rizado», dios de los ríos subterráneos, a menudo representado junto al hombre-toro Kusarikku, bien conocido en la glíptica acadia. La identificación con el poema queda, pues, abierta.
 
 ---
 
@@ -288,19 +289,20 @@ Hay que decirlo con precisión: el propio museo advierte de que la figura puede 
 
 #### Ficha Técnica
 
-- Relieve en alabastro
-- British Museum, Londres
+- Relieve mural en yeso (gypsum)
+- 165,1 cm de altura (panel 124874)
+- British Museum, Londres (probablemente 124874)
 
 #### Lo que hace que destaque
 
-Los leones se retuercen, se desangran y se arrastran con las patas traseras inutilizadas, y el escultor los observó con una atención anatómica que no dedicó a ningún ser humano del palacio: el rey y sus arqueros son figuras rígidas y protocolarias, mientras las fieras tienen músculo, peso y agonía. Esa asimetría es el asunto real del relieve. Los leones eran soltados desde jaulas en una arena cerrada, así que no se representa una cacería sino una ejecución ritual del caos por el rey.
+El detalle muestra a Asurbanipal a pie rematando con la espada a un león. El panel 124874 del British Museum describe esa secuencia: un niño o una persona pequeña suelta al león de una jaula, protegido en su propia jaula; el león avanza hacia el rey, recibe una flecha y, por último, el rey lo despacha con la espada. Según el conservador Gareth Brereton, estas cacerías eran espectáculos montados en los parques de caza de la ciudad, comparables a los juegos de la arena romana. Un cerco de guardias con lanzas y escudos, arqueros y mastines impedía escapar a los leones, que quizá eran relativamente mansos.
 
 #### Contexto Histórico y Arqueológico
 
-Procede del Palacio Norte de Nínive, el mismo edificio en cuya biblioteca apareció la Tablilla XI del Diluvio que abre esta colección. Ambos objetos fueron cocidos y conservados por el mismo incendio: el que arrasó la ciudad en 612 a.C.
+Los relieves de la sala 10a, fechados en 645-635 a.C., se hicieron para el palacio de Asurbanipal (668-631 a.C.) en Nínive, en el norte del actual Irak. Más de doscientos años después de Asurnasirpal II, Asurbanipal recuperó la caza real del león y decoró con ella su Palacio Norte. El panel 124874 procede de la sala S de ese palacio y figuran como excavadores Hormuzd Rassam, William Kennett Loftus, Henry Rawlinson y John George Taylor. Rassam descubrió en 1852 un segundo palacio con otra gran colección de tablillas; Nínive ardió hacia 612 a.C..
 
 #### Autoría y Procedencia
 
-Su relación con la epopeya no es de ilustración sino de mundo: el motivo del héroe que somete al león, que en esta colección aparece en el relieve de Khorsabad y en el sello acadio, alcanza aquí su forma más elaborada. Es el lenguaje visual con el que Mesopotamia pensaba la relación entre el rey, la fiera y el orden.
+Para Brereton, el rey, protector designado por los dioses, debía mantener el orden venciendo a las fuerzas del caos, entre ellas los enemigos extranjeros y los animales salvajes como el león. Cazando leones, criaturas del territorio indómito, Asurbanipal mostraba que extendía su control sobre lo salvaje, como pastor que protege su rebaño. La caza del león era una tradición antigua: la primera representación de un gobernante cazándolos es anterior a 3000 a.C., y el sello real asirio mostraba al rey matando un león rampante.
 
 ---
