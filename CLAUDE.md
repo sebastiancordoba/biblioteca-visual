@@ -336,6 +336,20 @@ ven a 168 px, así que se piden a Commons ya reducidos a 640 px. El pie de cada 
 artistas (Exequias, Eufronio, Villalpando, Jörg Breu y los escultores del Laocoonte) **no se
 conserva retrato**: se dice, en vez de poner una obra suya haciéndola pasar por su cara.
 
+### Temas que cruzan los libros
+
+`herramientas/temas.py` define los temas —el Diluvio, el ser humano hecho de barro, la torre y
+el templo, monstruos vencidos, el duelo—: los pasajes de cada libro que lo cuentan, con
+referencia exacta (libro, capítulo, tablilla, canto, verso), y las obras que lo representan.
+`paginas.py` genera `temas/` y una página por tema, y en cada obra enlaza sus temas. La
+introducción de un tema solo afirma lo que dicen los pasajes citados; las lecturas de cada
+obra están en su página, con sus fuentes. Las obras se nombran por el **número de su archivo**,
+no por su posición, y construir falla si un tema cita una obra que no existe.
+
+Desde la aplicación, cada tarjeta de autor enlaza con su página («Biografía completa y
+fuentes»): relativa dentro del sitio (`BASE_FICHAS` vacío) y al sitio público desde el
+artefacto o el `index.html` local.
+
 ### Autores con fuentes académicas
 
 Cada página de autor muestra de dónde sale cada dato. Tres archivos en

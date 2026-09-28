@@ -54,7 +54,8 @@ def pagina(ruta, titulo, descripcion, cuerpo, imagen_og=None, datos_ld=None, sec
     R = "../" * prof or "./"
     canon = URL_SITIO + (ruta + "/" if ruta else "")
     nav = [("Inicio", R, "inicio"), ("Libros", R + "libros/", "libros"),
-           ("Autores", R + "autores/", "autores"), ("Cronología", R + "#/cronologia", "cronologia"),
+           ("Autores", R + "autores/", "autores"), ("Temas", R + "temas/", "temas"),
+           ("Cronología", R + "#/cronologia", "cronologia"),
            ("Mapa", R + "#/mapa", "mapa")]
     og = [f'<meta property="og:title" content="{e(titulo)}">',
           f'<meta property="og:description" content="{e(descripcion)}">',
@@ -145,16 +146,23 @@ def generar():
     urls = []
 
     # dirección de cada obra: libro -> [ruta por índice de grupo]
-    FICHAS = {}
+    FICHAS, POR_NUM = {}, {}
     for L in libros:
         rutas, usados = [], set()
         for g, d in enumerate(L["details"]):
             num = re.match(r"\d+", os.path.basename(L["groups"][g][0]["src"])).group(0)
+            POR_NUM[(L["id"], num)] = g
             s = f"{num}-{slug(d['title'])}"
             while s in usados: s += "-b"
             usados.add(s)
             rutas.append(f"obras/{L['id']}/{s}")
         FICHAS[L["id"]] = rutas
+    from temas import TEMAS
+    TEMAS_DE = {}                      # (libro, i) -> [tema]
+    for t in TEMAS:
+        for lb, num in t["obras"]:
+            assert (lb, num) in POR_NUM, f"el tema «{t['titulo']}» cita la obra {lb} {num}, que no existe"
+            TEMAS_DE.setdefault((lb, POR_NUM[(lb, num)]), []).append(t)
     autor_de = {}                      # (libro, i) -> autor
     for a in autores:
         for o in a["obras"]:
@@ -212,6 +220,7 @@ def generar():
         {f"<dt>Dónde está</dt><dd>{e(sede[0])}<br><span>{e(sede[1])}</span></dd>" if sede else ""}
         {f"<dt>Imagen</dt><dd>{e(d.get('px', ''))} · {e(d.get('mp', ''))}</dd>" if d.get('px') else ""}
         <dt>Libro</dt><dd><a href="{R}libros/{L['id']}/">{e(L['title'])}</a></dd>
+        {("<dt>Temas</dt><dd>" + "<br>".join(f'<a href="{R}temas/{t["clave"]}/">{e(t["titulo"])}</a>' for t in TEMAS_DE.get((L["id"], g), [])) + "</dd>") if TEMAS_DE.get((L["id"], g)) else ""}
       </dl>
       {f'''<a class="autor-mini" href="{R}autores/{a['clave']}/">{f'<img src="{R}{e(imagen(a["retrato"])[0])}" alt="">' if a.get('retrato') else ''}<span><small>Autor</small>{e(a['nombre'])}<em>{e(a['anios'])}</em></span></a>''' if a else ""}
     </aside>
@@ -248,6 +257,52 @@ def generar():
 <div class="rejilla">{cartas}</div>"""
         urls.append(pagina(f"libros/{L['id']}", L["title"], intro[:300],
                            cuerpo, absoluta(L["groups"][0][0]["src"]), None, "libros"))
+
+    # ---- temas que cruzan los libros (herramientas/temas.py)
+    nombre_libro = {L["id"]: L["corto"] for L in libros}
+    orden_libro = {L["id"]: k for k, L in enumerate(libros)}
+    for t in TEMAS:
+        R = "../../"
+        pas = "".join(f'<li><strong>{e(ref)}</strong><span>{e(txt)}</span></li>' for _, ref, txt in t["pasajes"])
+        grupos = {}
+        for lb, num in t["obras"]:
+            grupos.setdefault(lb, []).append(POR_NUM[(lb, num)])
+        bloques = ""
+        for lb in sorted(grupos, key=lambda x: orden_libro[x]):
+            L = next(x for x in libros if x["id"] == lb)
+            cartas = "".join(tarjeta(f"{R}{FICHAS[lb][g]}/", src(L["groups"][g][0]["src"], R),
+                                     f"Obra {g + 1:02d}", L["details"][g]["title"], L["details"][g]["artist"], R)
+                             for g in grupos[lb])
+            bloques += f'<h2 class="seccion">{e(nombre_libro[lb])}</h2><div class="rejilla">{cartas}</div>'
+        sin_obra = [nombre_libro[lb] for lb, _, _ in t["pasajes"] if lb not in grupos]
+        cuerpo = f"""
+<nav class="migas"><a href="{R}temas/">Temas</a> › {e(t['titulo'])}</nav>
+<header class="portada-libro">
+  <p class="ante">Tema · {" · ".join(dict.fromkeys(nombre_libro[lb] for lb, _, _ in t["pasajes"]))}</p>
+  <h1>{e(t['titulo'])}</h1>
+  <p class="intro">{e(t['intro'])}</p>
+</header>
+<section class="bloque"><h2>Los textos</h2><ul class="pasajes">{pas}</ul>
+<p class="atribucion">Las referencias remiten al texto de cada obra y se pueden comprobar en cualquier edición.</p></section>
+{bloques}"""
+        primera = next(iter(grupos))
+        urls.append(pagina(f"temas/{t['clave']}", t["titulo"], t["lema"], cuerpo,
+                           absoluta(next(x for x in libros if x["id"] == primera)["groups"][grupos[primera][0]][0]["src"]),
+                           None, "temas"))
+    R = "../"
+    cartas = []
+    for t in TEMAS:
+        lb, num = t["obras"][0]
+        L = next(x for x in libros if x["id"] == lb)
+        libros_t = " · ".join(dict.fromkeys(nombre_libro[x] for x, _, _ in t["pasajes"]))
+        cartas.append(tarjeta(f"{R}temas/{t['clave']}/", src(L["groups"][POR_NUM[(lb, num)]][0]["src"], R),
+                              libros_t, t["titulo"], f"{len(t['obras'])} obras", R, t["lema"]))
+    cuerpo = f"""
+<header class="portada-libro"><p class="ante">La colección</p><h1>Temas</h1>
+<p class="intro">El mismo pasaje contado en libros distintos: el Diluvio en el Génesis, Gilgamesh y el Atrahasis; el hombre hecho de barro; la torre de Babel y el templo de Marduk. Cada tema reúne las obras de todos los libros que lo representan, con la referencia exacta de cada texto.</p></header>
+<div class="rejilla libros">{"".join(cartas)}</div>"""
+    urls.append(pagina("temas", "Temas", "Pasajes que se repiten entre el Génesis, Gilgamesh, la Ilíada, el Atrahasis y el Enuma Elish.",
+                       cuerpo, None, None, "temas"))
 
     # ---- índice de libros
     R = "../"

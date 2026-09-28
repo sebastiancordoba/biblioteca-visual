@@ -81,6 +81,19 @@ console.log('\n== crédito de cada foto ==');
   ck(pagSin.length === 0, `y en la página de cada obra, bajo cada vista (${pagSin.length} incompletas)` + (pagSin[0] ? ': ' + pagSin.slice(0, 4).join(', ') : ''));
 }
 
+console.log('\n== de la aplicación a las páginas de autor ==');
+/* La tarjeta de cada autor en la aplicación enlaza con su página: dentro del sitio, relativa
+   (BASE_FICHAS vacío); en el artefacto, al sitio público. */
+{
+  const { AUTORES } = ejecutar(html, '{AUTORES}', { location: { hash: '' }, history: { pushState() {} }, Image: class {} });
+  ck(/const BASE_FICHAS = '';/.test(html), 'en el sitio, el enlace a la página de autor es relativo');
+  const sinPag = AUTORES.filter(a => !fs.existsSync(path.join(SITIO, 'autores', a.clave, 'index.html'))).map(a => a.clave);
+  ck(sinPag.length === 0, `los ${AUTORES.length} autores de la aplicación tienen página (${sinPag.length} sin ella)`);
+  const art = fs.readFileSync('build/los-tres-libros.html', 'utf8');
+  ck(/const BASE_FICHAS = 'https:\/\/sebastiancordoba\.github\.io\/biblioteca-visual\/';/.test(art),
+     'en el artefacto, el enlace va al sitio público');
+}
+
 console.log('\n== para compartir y para buscadores ==');
 const obras = paginas.filter(p => p.includes('/obras/'));
 const sinOg = obras.filter(p => !/<meta property="og:image" content="https:\/\/[^"]+"/.test(fs.readFileSync(p, 'utf8')));

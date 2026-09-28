@@ -276,6 +276,9 @@
       padding: 4px 9px; cursor: pointer; transition: color .2s, border-color .2s;
     }
     .autor-obra:hover { color: var(--accent-gold); border-color: var(--accent-gold); }
+    .autor-ficha { display: inline-block; margin: 2px 0 16px; font-size: .82rem; color: var(--accent-gold);
+      text-decoration: none; border-bottom: 1px solid rgba(197,160,70,.35); }
+    .autor-ficha:hover { color: var(--accent-gold-hover); border-bottom-color: var(--accent-gold-hover); }
 
     /* BIBLIOTECA
        Una pestaña por libro no escala: con veinte libros la barra superior sería una lista.
@@ -4319,6 +4322,11 @@
     }
     librosReales().forEach(montarLibro);
 
+    /* Las páginas de autor (biografía con fuentes, datos de la Getty y de Wikidata) están en
+       el sitio de GitHub Pages. Desde allí el enlace es relativo —construir_sitio.py deja esto
+       vacío—; desde el artefacto de claude.ai o el index.html local va al sitio público. */
+    const BASE_FICHAS = 'https://sebastiancordoba.github.io/biblioteca-visual/';
+
     let currentBook = 'inicio';
     const bookDetails = () => BOOKS[currentBook].details;
     const bookGroups  = () => BOOKS[currentBook].groups;
@@ -4760,6 +4768,8 @@
           `<span class="autor-vida">${esc(a.anios)}</span>` +
           `<span class="autor-oficio">${esc(a.oficio)}</span>` +
           `<p class="autor-bio">${esc(a.bio)}</p>` +
+          `<a class="autor-ficha" href="${BASE_FICHAS}autores/${a.clave}/"` +
+          `${BASE_FICHAS ? ' target="_blank" rel="noopener"' : ''}>Biografía completa y fuentes →</a>` +
           `<div class="autor-obras">${lista}</div></div></article>`;
       }).join('');
 

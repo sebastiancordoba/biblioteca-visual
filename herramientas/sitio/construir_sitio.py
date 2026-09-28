@@ -55,6 +55,11 @@ assert n > 100, f"solo {n} rutas de imagen: ¿cambió el patrón?"
 from paginas import generar as generar_paginas
 FICHAS = generar_paginas()
 
+# ---------- enlaces a las páginas de autor: relativos dentro del propio sitio ----------
+_b = "    const BASE_FICHAS = 'https://sebastiancordoba.github.io/biblioteca-visual/';"
+assert doc.count(_b) == 1, "no encuentro BASE_FICHAS"
+doc = doc.replace(_b, "    const BASE_FICHAS = '';", 1)
+
 # ---------- nombre del sitio ----------
 doc = re.sub(r"<title>[^<]*</title>", f"<title>{TITULO}</title>", doc, count=1)
 doc = doc.replace("Los Tres Libros", "Biblioteca Visual")
