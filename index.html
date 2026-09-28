@@ -1783,6 +1783,8 @@
         <a id="panelWikiLink" href="#" target="_blank" rel="noopener" class="wiki-link-btn" title="Ver en Wikipedia">
           Ver en Wikipedia <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
         </a>
+        <a id="panelFichaLink" href="#" class="wiki-link-btn" title="Página propia de esta obra, para leerla o compartirla">
+          Ficha de la obra</a>
       </div>
       
       <h4>Análisis Artístico y Teológico</h4>
@@ -9527,6 +9529,20 @@
       img.src = e.o;
     }
 
+    /* ══════════ Solo en GitHub Pages: la página de cada obra ══════════
+       FICHAS[libro][índice] es la dirección de su página estática (obras/<libro>/<nn-título>/),
+       generada por paginas.py con los mismos índices que usa el visor. */
+    const FICHAS = {"genesis": ["obras/genesis/01-la-creacion-de-adan", "obras/genesis/02-la-expulsion-del-paraiso", "obras/genesis/03-cain-y-abel", "obras/genesis/04-el-diluvio-universal", "obras/genesis/05-la-torre-de-babel", "obras/genesis/06-cain", "obras/genesis/07-elohim-creando-a-adan", "obras/genesis/08-sombra-y-oscuridad-la-tarde-del-diluvio", "obras/genesis/09-la-confusion-de-las-lenguas", "obras/genesis/10-el-diluvio-universal", "obras/genesis/11-tras-el-diluvio-el-dia-cuadragesimo-primero", "obras/genesis/12-la-disminucion-de-las-aguas-del-diluvio", "obras/genesis/13-la-disminucion-de-las-aguas-del-diluvio", "obras/genesis/14-adan-y-eva", "obras/genesis/15-adan-y-eva", "obras/genesis/16-el-anciano-de-los-dias", "obras/genesis/17-el-sacrificio-de-isaac", "obras/genesis/18-el-sacrificio-de-isaac", "obras/genesis/19-la-trinidad-la-hospitalidad-de-abraham", "obras/genesis/20-la-lucha-de-jacob-con-el-angel", "obras/genesis/21-jacob-luchando-con-el-angel", "obras/genesis/22-la-vision-tras-el-sermon", "obras/genesis/23-agar-en-el-desierto", "obras/genesis/24-la-tunica-de-jose", "obras/genesis/25-la-destruccion-de-sodoma-y-gomorra", "obras/genesis/26-el-jardin-de-las-delicias", "obras/genesis/41-el-pecado-original-y-la-expulsion-del-paraiso", "obras/genesis/27-lot-y-sus-hijas", "obras/genesis/28-eliezer-y-rebeca", "obras/genesis/29-isaac-bendice-a-jacob", "obras/genesis/30-el-sueno-de-jacob", "obras/genesis/31-el-invierno-o-el-diluvio", "obras/genesis/32-la-embriaguez-de-noe", "obras/genesis/33-el-encuentro-de-abraham-y-melquisedec", "obras/genesis/34-la-sinagoga-de-dura-europos", "obras/genesis/35-jose-acusado-por-la-mujer-de-putifar", "obras/genesis/36-jacob-bendice-a-los-hijos-de-jose", "obras/genesis/37-jacob-y-raquel-en-el-pozo", "obras/genesis/38-jose-interpreta-los-suenos-del-faraon", "obras/genesis/39-adan-y-eva", "obras/genesis/40-el-diluvio", "obras/genesis/42-las-capillas-del-desierto-el-bagawat", "obras/genesis/43-el-sacrificio-de-isaac-en-el-suelo-de-una-sinagoga", "obras/genesis/44-el-arca-como-un-cofre-el-mosaico-de-misis", "obras/genesis/45-jose-huye-de-la-mujer-de-putifar-yusuf-y-zulaija", "obras/genesis/46-el-primer-duelo", "obras/genesis/47-noe-embarca-a-los-animales-una-miniatura-armenia-de-isfahan"], "gilgamesh": ["obras/gilgamesh/01-tablilla-xi-el-diluvio", "obras/gilgamesh/02-el-heroe-dominando-un-leon", "obras/gilgamesh/03-gilgamesh-y-huwawa", "obras/gilgamesh/04-la-mascara-de-humbaba", "obras/gilgamesh/05-la-tablilla-del-sueno", "obras/gilgamesh/06-el-relieve-de-la-reina-de-la-noche", "obras/gilgamesh/07-el-vaso-de-warka", "obras/gilgamesh/08-lamassu-el-guardian-de-la-puerta", "obras/gilgamesh/09-sello-cilindrico-del-heroe-y-el-toro", "obras/gilgamesh/11-el-heroe-abate-al-toro", "obras/gilgamesh/10-la-caza-de-leones-de-asurbanipal"], "iliada": ["obras/iliada/01-aquiles-y-ayax-jugando-a-los-dados", "obras/iliada/02-jupiter-y-tetis", "obras/iliada/03-la-colera-de-aquiles", "obras/iliada/04-andromaca-llorando-a-hector", "obras/iliada/05-el-triunfo-de-aquiles", "obras/iliada/06-aquiles-llorando-la-muerte-de-patroclo", "obras/iliada/07-priamo-pide-a-aquiles-el-cuerpo-de-hector", "obras/iliada/08-la-procesion-del-caballo-de-troya", "obras/iliada/09-el-juicio-de-paris", "obras/iliada/10-la-mascara-de-agamenon", "obras/iliada/11-la-puerta-de-los-leones", "obras/iliada/12-el-casco-de-colmillos-de-jabali", "obras/iliada/13-laocoonte-y-sus-hijos", "obras/iliada/14-guerrero-del-fronton-del-templo-de-afaya", "obras/iliada/15-las-murallas-de-troya", "obras/iliada/22-aquiles-a-punto-de-matar-a-hector", "obras/iliada/23-la-colera-de-aquiles", "obras/iliada/24-el-rescate-del-cuerpo-de-hector", "obras/iliada/25-el-rescate-del-cuerpo-de-hector", "obras/iliada/26-papiro-de-oxirrinco-221", "obras/iliada/27-la-primera-iliada-en-espanol", "obras/iliada/16-la-muerte-de-sarpedon", "obras/iliada/17-tetis-recibe-las-armas-de-aquiles", "obras/iliada/18-aquiles-y-pentesilea", "obras/iliada/19-los-amores-de-paris-y-helena", "obras/iliada/20-briseida-llevada-ante-agamenon", "obras/iliada/21-juegos-funebres-en-honor-de-patroclo"], "atrahasis": ["obras/atrahasis/01-la-tablilla-de-atrahasis", "obras/atrahasis/02-enlil-el-dios-que-no-podia-dormir", "obras/atrahasis/03-ea-el-dios-que-aviso-a-atrahasis", "obras/atrahasis/04-despues-de-que-el-diluvio-arrasara-la-lista-real-sumeria", "obras/atrahasis/05-lamashtu-la-que-arrebata-al-nino", "obras/atrahasis/06-la-placa-del-enfermo-lamashtu-expulsada-al-rio"], "enuma": ["obras/enuma/01-cuando-en-lo-alto-el-poema-en-la-biblioteca-de-ninive", "obras/enuma/02-la-copia-de-kish", "obras/enuma/03-el-mushussu-el-dragon-de-marduk", "obras/enuma/04-los-simbolos-de-marduk-en-un-sello", "obras/enuma/05-el-ritual-del-ano-nuevo-donde-se-recitaba-el-poema", "obras/enuma/06-la-tablilla-del-esagil-las-medidas-de-la-casa-de-marduk", "obras/enuma/07-la-azada-y-el-calamo-marduk-y-nabu-en-una-estela-asiria", "obras/enuma/08-asurbanipal-reconstruye-la-casa-de-marduk", "obras/enuma/09-la-imagen-que-se-tomo-por-marduk-contra-tiamat"]};
+    (function () {
+      const actualizar = updateModalImageAndArrows;
+      updateModalImageAndArrows = function () {
+        actualizar();
+        const a = document.getElementById('panelFichaLink');
+        const r = (FICHAS[currentBook] || [])[currentArtworkGroupIndex];
+        if (a) { a.hidden = !r; if (r) a.href = r + '/'; }
+      };
+    })();
+
     /* ══════════ Solo en GitHub Pages: una dirección por sección ══════════
        #/genesis, #/mapa, #/biblioteca/autores… Se envuelven switchBook y switchTab, así
        que cualquier forma de cambiar de sección deja la dirección al día, y el botón
@@ -9545,12 +9561,16 @@
       switchBook = function (id, btn) { irLibro(id, btn); escribir(); };
       switchTab = function (id, btn) { irPestana(id, btn); escribir(); };
       const leer = () => {
-        const [libro, tab] = location.hash.replace(/^#\/?/, '').split('/');
+        const [libro, tab, n, v] = location.hash.replace(/^#\/?/, '').split('/');
         if (!libro || !BOOKS[libro]) return;
         restaurando = true;
         try {
           if (libro !== currentBook) irLibro(libro);
-          if (tab) {
+          /* #/genesis/obra/12[/1]: lo que abre «Abrir en el visor» desde la página de una obra. */
+          if (tab === 'obra') {
+            const g = +n, i = +(v || 0);
+            if (BOOKS[libro].groups[g]) openZoomForArtwork(g, BOOKS[libro].groups[g][i] ? i : 0);
+          } else if (tab) {
             const b = document.querySelector(`[onclick*="switchTab('${tab}-gallery'"]`);
             irPestana(tab + '-gallery', b || undefined);
           }
