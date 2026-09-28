@@ -161,3 +161,11 @@ blockquote{border-left:2px solid var(--border-subtle);padding:2px 0 2px 18px;col
 
 /* dos notas seguidas: «1, 2», no «12» */
 sup + sup::before{content:",";margin-right:1px}
+
+/* temas */
+.pasajes{list-style:none;display:flex;flex-direction:column;gap:12px;max-width:80ch}
+.pasajes li{display:grid;grid-template-columns:minmax(180px,240px) 1fr;gap:18px;padding-bottom:12px;
+  border-bottom:1px solid rgba(255,255,255,.05)}
+.pasajes strong{font-family:var(--font-serif);font-weight:500;color:var(--accent-gold);font-size:.9rem}
+.pasajes span{font-size:.92rem}
+@media (max-width:640px){.pasajes li{grid-template-columns:1fr;gap:4px}}
