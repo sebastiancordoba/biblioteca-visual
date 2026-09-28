@@ -8,6 +8,10 @@ Solo se incluyen las obras cuyas imágenes existen realmente en disco.
 import io, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from libros import todos as _libros
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "artefacto"))
+_cwd = os.getcwd()
+from mapa import museo_de as _museo_de, MUSEOS as _MUSEOS     # mapa.py cambia de directorio al importarse
+os.chdir(_cwd)
 from cronologia import año as _anio, etiqueta as _etq
 from data_autores import AUTORES as _AUTORES
 from retratos import RETRATOS as _RETRATOS, SIN_RETRATO as _SIN_RETRATO
@@ -50,6 +54,12 @@ def main():
     for libro, entries in _libros():
         book_id, folder = libro["id"], libro["carpeta"]
         details, groups, omitted = build(entries, folder)
+        # La sede canónica de cada obra —«Museo del Prado, Madrid»—, con las mismas reglas que
+        # el mapa: la portada la muestra y cuenta las sedes con ella. Contar el último tramo de
+        # «meta» daba 99 «sedes», porque cada número de inventario lo hacía distinto.
+        for d in details:
+            k = _museo_de(d)
+            d["sede"] = f"{_MUSEOS[k][0]}, {_MUSEOS[k][1]}" if k else None
         counts[book_id] = len(details)
         print(f"{book_id}: {len(details)} obras, {sum(len(g) for g in groups)} imágenes"
               + (f"  (sin archivo: {', '.join(omitted)})" if omitted else ""))

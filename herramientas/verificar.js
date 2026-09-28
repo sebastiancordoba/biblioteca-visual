@@ -135,6 +135,23 @@ console.log('\n== Botón Original del visor ==');
   check(malas === 0, `el original resuelve a un archivo real (${comprobadas} comprobadas, ${malas} rotas)`);
 }
 
+console.log('\n== Todas las obras, en el orden del banner ==');
+{
+  const rej = document.getElementById('inicioTodas');
+  const orden = [...(rej.innerHTML || '').matchAll(/data-i="(\d+)"/g)].map(m => +m[1]);
+  const n = BOOKS.inicio.details.length;
+  check(orden.length === n && new Set(orden).size === n, `la rejilla trae las ${n} obras, cada una una vez (${orden.length})`);
+  const tituloBanner = (document.getElementById('bannerInfo').innerHTML.match(/banner-titulo">([^<]*)/) || [])[1];
+  const esc_ = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  check(orden.length && esc_(BOOKS.inicio.details[orden[0]].title) === tituloBanner,
+        'la primera de la rejilla es la que abre el banner: el mismo orden');
+  const conSede = BOOKS.inicio.details.filter(d => d.sede).length;
+  check(conSede >= n - 5, `${conSede} de ${n} obras con su sede canónica`);
+  const cif = (document.getElementById('inicioCifras').innerHTML.match(/<b>(\d+)<\/b><span>sedes/) || [])[1];
+  const reales = new Set(BOOKS.inicio.details.map(d => d.sede).filter(Boolean)).size;
+  check(+cif === reales && reales < 80, `la portada cuenta ${cif} sedes, las reales, no una por número de inventario`);
+}
+
 console.log('\n== Flechas del banner ==');
 {
   const lienzo = document.getElementById('bannerLienzo');
