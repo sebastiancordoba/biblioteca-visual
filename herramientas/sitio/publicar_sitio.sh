@@ -12,7 +12,11 @@ echo "── sitio";  python3 herramientas/sitio/construir_sitio.py
 echo "── prueba"; node herramientas/probar_sitio.js >/dev/null && echo "probar_sitio ok"
 
 GP="$RAIZ/build/gh-pages"
-if ! git worktree list | grep -q " $GP "; then
+# Si la carpeta del worktree desapareció (build/ se puede borrar entero), git lo sigue
+# teniendo registrado: prune lo olvida. La comparación va por --porcelain y línea exacta,
+# porque la ruta lleva espacios («Mobile Documents») y un grep suelto no la encuentra.
+git worktree prune
+if ! git worktree list --porcelain | grep -qxF "worktree $GP"; then
   rm -rf "$GP"
   if git show-ref --quiet --verify refs/heads/gh-pages; then
     git worktree add "$GP" gh-pages
