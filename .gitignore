@@ -12,3 +12,6 @@ __pycache__/
 # Intermedios de la construcción del artefacto: se regeneran con
 # ./herramientas/construir_artefacto.sh
 build/
+
+# Datos locales de Claude Code (worktrees de otras sesiones, ajustes): no son del proyecto
+.claude/
