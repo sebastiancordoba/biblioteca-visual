@@ -12,7 +12,7 @@ from cronologia import año as _anio, etiqueta as _etq
 from data_autores import AUTORES as _AUTORES
 from retratos import RETRATOS as _RETRATOS, SIN_RETRATO as _SIN_RETRATO
 
-ROOT = "/Users/sebastiancordoba/Library/Mobile Documents/com~apple~CloudDocs/Documents/Pinturas"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # la raíz del repositorio
 INI = "    /* ==== DATOS GENERADOS POR inject.py — NO EDITAR A MANO ==== */"
 FIN = "    /* ==== FIN DATOS GENERADOS ==== */"
 

@@ -3,7 +3,7 @@
 process.chdir(require('path').join(__dirname, '..'));
 /* Ordenar por: que reordene de verdad y que el visor siga apuntando a la obra correcta. */
 const fs=require('fs');
-const RUTA='/Users/sebastiancordoba/Library/Mobile Documents/com~apple~CloudDocs/Documents/Pinturas/index.html';
+const RUTA=require('path').join(__dirname,'..','index.html');
 const html=fs.readFileSync(RUTA,'utf8');
 const js=html.split('<script>')[1].split('</script>')[0];
 const noop=()=>{};const store={};const barras=[];

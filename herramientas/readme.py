@@ -4,7 +4,7 @@ import io, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from libros import todos as _libros
 
-ROOT = "/Users/sebastiancordoba/Library/Mobile Documents/com~apple~CloudDocs/Documents/Pinturas"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # la raíz del repositorio
 
 # Texto de introducción de cada README. El Génesis tiene el suyo propio (readme_genesis.js).
 # Un libro sin introducción aquí usa el subtítulo del registro.
