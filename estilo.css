@@ -127,3 +127,34 @@ figcaption{font-size:.8rem;color:var(--text-muted);margin-top:10px}
   .principal{padding:6px}
 }
 @media (prefers-reduced-motion:reduce){.tarjeta{transition:none}.tarjeta:hover{transform:none}}
+
+/* página de autor: datos y fuentes */
+.bio sup,.fuentes sup{font-size:.68em;line-height:0}
+.bio sup a{padding:0 1px}
+.autor-datos{display:flex;flex-direction:column;gap:38px;max-width:860px;margin:10px 0 20px}
+.bloque h2{margin-bottom:14px}
+.tabla{overflow-x:auto;border:1px solid var(--border-subtle);border-radius:4px}
+.tabla table{border-collapse:collapse;width:100%;min-width:520px;font-size:.9rem}
+.tabla th,.tabla td{padding:10px 14px;text-align:left;border-bottom:1px solid rgba(255,255,255,.05);vertical-align:top}
+.tabla thead th{font-family:var(--font-serif);font-size:.64rem;letter-spacing:2px;text-transform:uppercase;
+  color:var(--text-muted);font-weight:500}
+.tabla tbody th{font-weight:500;color:var(--text-title);white-space:nowrap}
+.tabla td{color:var(--text-title);font-variant-numeric:tabular-nums}
+.tabla tr:last-child th,.tabla tr:last-child td{border-bottom:0}
+.nd{color:var(--text-muted);font-style:italic}
+.discrepancia{font-size:.86rem;color:var(--text-body);border-left:2px solid var(--accent-gold);
+  padding:4px 0 4px 14px;margin-top:12px;max-width:72ch}
+blockquote{border-left:2px solid var(--border-subtle);padding:2px 0 2px 18px;color:var(--text-body);
+  font-size:.94rem;max-width:72ch;font-style:italic}
+.atribucion{font-size:.76rem;color:var(--text-muted);margin-top:10px}
+.fuentes{padding-left:22px;display:flex;flex-direction:column;gap:8px;font-size:.88rem;max-width:80ch}
+.fuentes li span{color:var(--text-title)}
+.fuentes li:target{background:rgba(197,160,70,.08);outline:1px solid var(--border-subtle)}
+.refs{list-style:none;display:flex;flex-direction:column;gap:6px;font-size:.92rem}
+.refs small{font-size:.72rem;color:var(--text-muted);margin-left:6px;letter-spacing:.5px}
+.autoridad{font-size:.88rem;line-height:1.9}
+
+/* crédito de cada foto: autor y licencia (obligatorio en CC BY / CC BY-SA) */
+.credito{display:block;font-size:.72rem;color:var(--text-muted);margin-top:4px}
+.credito a{color:var(--text-muted);text-decoration:underline;text-underline-offset:2px}
+.credito a:hover{color:var(--accent-gold)}
