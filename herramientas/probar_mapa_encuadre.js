@@ -101,7 +101,8 @@ console.log('\n== comprobación directa del encuadre por conjunto ==');
   ck(js.includes('function encajarSedes'), 'existe el encuadre por conjunto');
   ck(js.includes('encajarSedes(activas())'), 'el filtro por libro lo usa');
   ck(js.includes('encajarSedes(c0.sedes, off)'), 'pulsar un grupo lo usa');
-  ck(js.includes('encajarSedes([idx]'), 'pulsar una sede lo usa');
+  // una sede que comparte ciudad encuadra la ciudad entera, con su abanico abierto
+  ck(/encajarSedes\(hermanas\.length > 1 \? hermanas : \[idx\]/.test(js), 'pulsar una sede lo usa');
 }
 console.log('\n'+(bad?`*** ${bad} FALLAS ***`:'*** SIN ERRORES ***'));
 process.exit(bad?1:0);

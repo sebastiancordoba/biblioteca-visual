@@ -116,6 +116,56 @@ CSS = """
     .mapa-tarjeta em{font-style:normal;font-size:.68rem;color:var(--accent-gold);
       letter-spacing:.3px;font-variant-numeric:tabular-nums}
 
+    /* Panel con lo que guarda el punto pulsado: museos por ciudad y, desplegadas, sus
+       obras. Va a la izquierda, bajo los continentes; el encuadre se aparta de él. */
+    .mapa-panel{position:absolute;z-index:4;top:48px;left:12px;width:272px;
+      max-height:calc(100% - 64px);display:flex;flex-direction:column;
+      background:rgba(9,10,13,.95);border:1px solid var(--border-subtle);border-radius:4px;
+      box-shadow:0 12px 34px rgba(0,0,0,.6);cursor:default;user-select:text;touch-action:pan-y}
+    .mapa-panel[hidden]{display:none}
+    .mapa-marco.con-panel .mapa-pista{display:none}
+    .mp-cab{display:flex;gap:10px;align-items:flex-start;justify-content:space-between;
+      padding:11px 12px 9px;border-bottom:1px solid var(--border-subtle)}
+    .mp-tit{display:flex;flex-direction:column;gap:2px;min-width:0}
+    .mp-tit strong{font-family:var(--font-serif);font-size:.86rem;font-weight:500;
+      color:var(--text-title);line-height:1.3}
+    .mp-tit span{font-size:.7rem;color:var(--text-muted);font-variant-numeric:tabular-nums}
+    .mp-cerrar{flex:none;background:none;border:0;color:var(--text-muted);font-size:1.2rem;
+      line-height:1;cursor:pointer;padding:0 2px;transition:color .15s}
+    .mp-cerrar:hover{color:var(--accent-gold)}
+    .mp-cuerpo{overflow-y:auto;padding:4px 0 8px;overscroll-behavior:contain}
+    .mp-ciudad{font-family:var(--font-serif);font-size:.6rem;letter-spacing:1.8px;
+      text-transform:uppercase;color:var(--accent-gold);padding:11px 12px 4px}
+    .mp-sede{display:flex;align-items:center;gap:9px;width:100%;background:none;border:0;
+      padding:6px 12px;cursor:pointer;text-align:left;color:var(--text-body);
+      font-family:var(--font-sans);font-size:.76rem;line-height:1.3;
+      transition:background .15s,color .15s}
+    .mp-sede:hover{background:rgba(197,160,70,.08);color:var(--text-title)}
+    .mp-sede.abierta{color:var(--accent-gold-hover)}
+    .mp-sede::after{content:'›';color:var(--text-muted);font-size:.95rem;transition:transform .15s}
+    .mp-sede.abierta::after{transform:rotate(90deg)}
+    .mp-n{flex:none;min-width:22px;height:22px;padding:0 5px;border-radius:11px;
+      border:1px solid var(--accent-gold);color:var(--accent-gold);font-size:.66rem;
+      font-weight:600;display:flex;align-items:center;justify-content:center;
+      font-variant-numeric:tabular-nums;box-sizing:border-box}
+    .mp-sede.abierta .mp-n{background:var(--accent-gold);color:#0a0b0e}
+    .mp-nom{flex:1;min-width:0}
+    .mp-obras{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:6px 12px 12px}
+    .mp-obra{display:flex;flex-direction:column;gap:3px;background:none;border:0;padding:0;
+      cursor:pointer;text-align:left;min-width:0;font-family:var(--font-sans)}
+    .mp-obra img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;
+      border:1px solid var(--border-subtle);border-radius:2px;background:#050608;
+      transition:border-color .15s}
+    .mp-obra:hover img,.mp-obra:focus-visible img{border-color:var(--accent-gold)}
+    .mp-obra-t{font-size:.62rem;line-height:1.25;color:var(--text-title);display:-webkit-box;
+      -webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .mp-obra-m{font-size:.56rem;color:var(--text-muted);font-variant-numeric:tabular-nums}
+    /* En un marco estrecho no queda mapa libre al lado: el panel lo cubre entero y al
+       cerrarlo se vuelve al mapa, ya acercado a lo que se pulsó. La clase la pone el
+       guion (panelCubre), que es quien mide el marco: un solo umbral, no dos. */
+    .mapa-marco.panel-cubre .mapa-panel{top:0!important;left:0;right:0;bottom:0;width:auto;
+      max-height:none;border-radius:0;border:0}
+
     .mapa-lado{position:sticky;top:20px}
     .mapa-h{font-family:var(--font-serif);font-size:.68rem;letter-spacing:2.4px;
       text-transform:uppercase;color:var(--accent-gold);margin:0 0 6px;font-weight:500}

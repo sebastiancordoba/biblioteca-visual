@@ -213,7 +213,7 @@ JS = r"""
 
       /* Vuela hasta una vista ya calculada (la usan los botones Europa y Mundo). */
       function irAVista(v, suave){
-        vistaObj = limitar(Object.assign({}, v));
+        vistaObj = limitar(conSitio(Object.assign({}, v)));
         if (!suave) { vista = Object.assign({}, vistaObj); aplicar(true); return; }
         if (!anim) anim = requestAnimationFrame(paso);
       }
@@ -356,7 +356,7 @@ JS = r"""
             : `${c.sedes.length} sedes agrupadas, ${c.n} obras`,
             ev => {
               ev.stopPropagation();
-              if (solo) { elegirSede(c.sedes[0], true); return; }
+              if (solo) { elegirSede(c.sedes[0], true, true); return; }
               /* La tarjeta promete «pulsa para acercar» salvo cuando todos los museos
                  comparten ciudad, y el clic tiene que hacer exactamente eso. Antes
                  decidía con otra regla —el ancho al que el grupo se parte—, que daba por
@@ -368,6 +368,7 @@ JS = r"""
 
               if (ciudades.size > 1) {
                 ciudadAbierta = null;
+                abrirPanel(c0.sedes);
                 irAVista(destino, true);
                 return;
               }
@@ -378,7 +379,9 @@ JS = r"""
               const k = claveGrupo(c0);
               const abriendo = ciudadAbierta !== k;
               ciudadAbierta = abriendo ? k : null;
-              sedeSel = -1; abrirCiudad(c); dibujar();
+              sedeSel = -1; abrirCiudad(c);
+              if (abriendo) abrirPanel(c0.sedes); else cerrarPanel();
+              dibujar();
               if (abriendo) irAVista(destino, true);
             },
             () => mostrarTarjeta(solo ? { sede: sd } : { grupo: c }));
@@ -398,8 +401,8 @@ JS = r"""
 
         reescalar();
         pista.textContent = gs.length === SEDES.length
-          ? 'W A S D para moverte · + y − para acercar · pulsa un punto para desplegarlo'
-          : `${gs.length} grupos · acércate o pulsa uno para separarlo`;
+          ? 'W A S D para moverte · + y − para acercar · pulsa un punto para ver qué guarda'
+          : `${gs.length} grupos · pulsa uno para ver qué guarda`;
       }
 
       /* Punto de sede o de grupo, en unidades de pantalla. */
@@ -585,6 +588,8 @@ JS = r"""
       function elegirEnCiudad(idx){
         sedeSel = idx;
         grupoAbierto = idx;
+        if (panelSedes && panelSedes.includes(idx)) { panelAbierta = idx; pintarPanel(); }
+        else abrirPanel(hermanasDe(idx), idx);
         if (modo === 'sedes') pintarLista(); else
           document.querySelectorAll('.sede-item').forEach(el =>
             el.classList.toggle('sel', +el.dataset.i === idx));
@@ -595,6 +600,9 @@ JS = r"""
       /* ---------- tarjeta flotante ---------- */
       let ultimoRaton = {x:0, y:0};
       marco.addEventListener('mousemove', ev => {
+        /* Sobre el panel no hay punto al que referirse: la tarjeta de un grupo se quedaba
+           pintada encima de la lista mientras el mapa volaba por debajo. */
+        if (ev.target && panel.contains && panel.contains(ev.target)) { ocultarTarjeta(); return; }
         const r = marco.getBoundingClientRect();
         ultimoRaton = { x: ev.clientX - r.left, y: ev.clientY - r.top };
         if (!tarjeta.hidden) situarTarjeta();
@@ -630,15 +638,177 @@ JS = r"""
             `<div class="tj-txt"><strong>${c.n} obra${c.n>1?'s':''}</strong>` +
             `<span>${c.sedes.length} museos · ${esc(ciudades.slice(0,3).join(', '))}` +
             `${ciudades.length>3 ? '…' : ''}</span>` +
-            `<em>${unaCiudad ? (ciudadAbierta === claveGrupo(c) ? 'pulsa para plegar'
-                                                                 : 'pulsa para desplegar los museos')
-                              : 'pulsa para acercar'}</em></div>`;
+            `<em>${unaCiudad && ciudadAbierta === claveGrupo(c) ? 'pulsa para plegar'
+                                                                : 'pulsa para ver sus museos'}</em></div>`;
           tarjeta.className = 'mapa-tarjeta';
         }
         tarjeta.hidden = false;
         situarTarjeta();
       }
       function ocultarTarjeta(){ tarjeta.hidden = true; }
+
+      /* ---------- panel: lo que guarda el punto pulsado ----------
+         Antes, llegar a un museo exigía una cadena de círculos: el grupo de 17 volaba a
+         un grupo de 4, que volaba a un abanico de 3, que por fin daba el museo —cuatro
+         clics para el British Museum, y cada uno reagrupaba el mapa entero, así que se
+         perdía la referencia de dónde se estaba—. Ahora pulsar cualquier círculo abre
+         aquí lo que contiene, por ciudades, y cada museo se despliega con sus obras: del
+         mundo a una obra hay tres clics como mucho, sin depender de la escala. El mapa
+         sigue acercándose detrás, pero ya como contexto, no como único camino.
+         Se construye con createElement, como el buscador, para poder ejercitarlo en las
+         pruebas. */
+      const panel = document.createElement('div');
+      panel.className = 'mapa-panel';
+      panel.id = 'mapaPanel';
+      panel.hidden = true;
+      panel.setAttribute('role', 'region');
+      panel.setAttribute('aria-label', 'Lo que guarda el punto elegido');
+      marco.appendChild(panel);
+      /* El panel vive dentro del marco: sin esto, arrastrar en él movería el mapa, la
+         rueda acercaría en vez de desplazar la lista y cualquier clic lo cerraría. */
+      ['mousedown', 'touchstart', 'touchmove', 'wheel', 'click'].forEach(t =>
+        panel.addEventListener(t, ev => ev.stopPropagation(), { passive: true }));
+
+      let panelSedes = null, panelAbierta = -1;
+      const panelAbierto = () => !!panelSedes;
+      const contBarRef = document.getElementById('mapaContinentes');
+      /* En un marco estrecho el panel lo cubre entero (ver la hoja de estilos): no hay
+         sitio libre que encuadrar al lado. */
+      const panelCubre = () => anchoMarco() < 620;
+
+      function abrirPanel(sedes, abierta){
+        panelSedes = sedes.slice();
+        panelAbierta = abierta != null ? abierta : (sedes.length === 1 ? sedes[0] : -1);
+        pintarPanel();
+      }
+      /* El panel y el abanico de una ciudad son el mismo «abierto»: cerrar uno sin el
+         otro dejaba el abanico marcado por dentro, y el siguiente clic en esa ciudad la
+         plegaba en vez de abrirla. */
+      function cerrarPanel(){
+        if (!panelSedes) return;
+        panelSedes = null; panelAbierta = -1;
+        panel.hidden = true; panel.textContent = '';
+        marco.classList.remove('con-panel');
+        if (ciudadAbierta) { ciudadAbierta = null; dibujar(); }
+      }
+
+      function elem(tag, cls, texto){
+        const e = document.createElement(tag);
+        if (cls) e.className = cls;
+        if (texto != null) e.textContent = texto;
+        return e;
+      }
+
+      function pintarPanel(){
+        if (!panelSedes) return;
+        const n = i => obrasDe(SEDES[i]).length;
+        const idxs = panelSedes.filter(i => n(i) > 0);   // el filtro o la búsqueda pueden vaciarlo
+        if (!idxs.length) { cerrarPanel(); return; }
+        panel.textContent = '';
+        const total = idxs.reduce((a, i) => a + n(i), 0);
+        const ciudades = [...new Set(idxs.map(i => SEDES[i].ciudad))];
+        const paises = [...new Set(idxs.map(i => SEDES[i].pais))];
+        const s0 = SEDES[idxs[0]];
+        const obrasTxt = k => `${k} obra${k === 1 ? '' : 's'}`;
+        let titulo, sub;
+        if (idxs.length === 1) {
+          titulo = s0.nombre; sub = `${s0.ciudad}, ${s0.pais} · ${obrasTxt(total)}`;
+        } else if (ciudades.length === 1) {
+          titulo = s0.ciudad; sub = `${s0.pais} · ${idxs.length} museos · ${obrasTxt(total)}`;
+        } else {
+          titulo = paises.length <= 3 ? paises.join(', ')
+                 : `${paises.slice(0, 2).join(', ')} y ${paises.length - 2} países más`;
+          sub = `${idxs.length} sedes · ${ciudades.length} ciudades · ${obrasTxt(total)}`;
+        }
+
+        const cab = elem('div', 'mp-cab');
+        const tit = elem('div', 'mp-tit');
+        tit.appendChild(elem('strong', null, titulo));
+        tit.appendChild(elem('span', null, sub));
+        const cerrar = elem('button', 'mp-cerrar', '×');
+        cerrar.type = 'button';
+        cerrar.setAttribute('aria-label', 'Cerrar');
+        cerrar.addEventListener('click', ev => { ev.stopPropagation(); cerrarPanel(); });
+        cab.appendChild(tit); cab.appendChild(cerrar);
+        panel.appendChild(cab);
+
+        const cuerpo = elem('div', 'mp-cuerpo');
+        if (idxs.length === 1) cuerpo.appendChild(obrasEnPanel(idxs[0]));
+        else {
+          /* Por ciudades, la que más guarda primero; dentro, los museos igual. El rótulo
+             de ciudad solo aparece si hay más de una: en París sobraría. */
+          const porCiudad = {};
+          idxs.forEach(i => (porCiudad[SEDES[i].ciudad] = porCiudad[SEDES[i].ciudad] || []).push(i));
+          const suma = c => porCiudad[c].reduce((a, i) => a + n(i), 0);
+          Object.keys(porCiudad)
+            .sort((a, b) => suma(b) - suma(a) || a.localeCompare(b))
+            .forEach(ciu => {
+              if (ciudades.length > 1)
+                cuerpo.appendChild(elem('div', 'mp-ciudad', `${ciu} · ${SEDES[porCiudad[ciu][0]].pais}`));
+              porCiudad[ciu].sort((a, b) => n(b) - n(a)).forEach(i => {
+                const abierta = panelAbierta === i;
+                const fila = elem('button', 'mp-sede' + (abierta ? ' abierta' : ''));
+                fila.type = 'button';
+                fila.setAttribute('aria-expanded', abierta ? 'true' : 'false');
+                fila.appendChild(elem('span', 'mp-n', String(n(i))));
+                fila.appendChild(elem('span', 'mp-nom', SEDES[i].nombre));
+                fila.addEventListener('click', ev => { ev.stopPropagation(); alternarEnPanel(i); });
+                cuerpo.appendChild(fila);
+                if (abierta) cuerpo.appendChild(obrasEnPanel(i));
+              });
+            });
+        }
+        panel.appendChild(cuerpo);
+        /* Bajo la fila de continentes, que puede ocupar dos líneas. */
+        panel.style.top = (((contBarRef && contBarRef.offsetHeight) || 28) + 20) + 'px';
+        ocultarTarjeta();
+        panel.hidden = false;
+        marco.classList.add('con-panel');
+        marco.classList.toggle('panel-cubre', panelCubre());
+      }
+
+      function obrasEnPanel(i){
+        const sd = SEDES[i], os = obrasDe(sd);
+        const cont = elem('div', 'mp-obras');
+        os.forEach(o => {
+          const b = elem('button', 'mp-obra');
+          b.type = 'button';
+          b.title = `${o.t} — ${o.a}`;
+          const im = document.createElement('img');
+          im.src = BOOKS.mapa.groups[o.i][0].src; im.alt = o.t; im.loading = 'lazy';
+          b.appendChild(im);
+          b.appendChild(elem('span', 'mp-obra-t', o.t));
+          b.appendChild(elem('span', 'mp-obra-m', `${o.a} · ${o.libro}`));
+          b.addEventListener('click', ev => { ev.stopPropagation(); abrirObra(o.i, sd.nombre, indices(os)); });
+          cont.appendChild(b);
+        });
+        return cont;
+      }
+
+      /* Un museo del panel: se despliega ahí mismo y el mapa vuela hasta él. Pulsarlo
+         otra vez lo pliega, como en la lista lateral. */
+      function alternarEnPanel(i){
+        if (panelAbierta === i) {
+          panelAbierta = -1; sedeSel = -1; grupoAbierto = -1;
+          pintarPanel();
+          if (modo === 'sedes') pintarLista();
+          dibujar();
+          return;
+        }
+        elegirSede(i, true, true);
+      }
+
+      /* Con el panel abierto, el encuadre se centra en la parte del mapa que queda libre
+         a su derecha: si no, lo que se acaba de pulsar caía justo debajo del panel. */
+      function conSitio(v){
+        if (!panelAbierto() || panelCubre()) return v;
+        const aw = anchoMarco(), ah = altoMarco();
+        const pw = (panel.offsetWidth || 272) + 24;
+        if (aw - pw < 240) return v;
+        const w = v.w * aw / (aw - pw), h = w * ah / aw;
+        const cx = v.x + v.w / 2, cy = v.y + v.h / 2;
+        return { x: cx - (pw + (aw - pw) / 2) * w / aw, y: cy - h / 2, w: w, h: h };
+      }
 
       /* ---------- lista lateral: sedes o libros ---------- */
       const nota = document.getElementById('mapaNota');
@@ -691,7 +861,7 @@ JS = r"""
               `<em>${sedes} sedes · ${paises} países</em></span></button>`;
             li.querySelector('button').addEventListener('click', () => {
               libroFiltro = (libroFiltro === nom) ? null : nom;
-              sedeSel = -1; grupoAbierto = -1; ciudadAbierta = null;
+              sedeSel = -1; grupoAbierto = -1; ciudadAbierta = null; cerrarPanel();
               pintarLista();
               pintarContinentes();   // un libro puede no tener obras en algún continente
               detalle.innerHTML = libroFiltro ? resumenLibro(libroFiltro) : '';
@@ -792,7 +962,7 @@ JS = r"""
         texto => {
           consultaMapa = texto;
           terminosMapa = texto.trim() ? analizar(texto) : [];
-          sedeSel = -1; grupoAbierto = -1; ciudadAbierta = null;
+          sedeSel = -1; grupoAbierto = -1; ciudadAbierta = null; cerrarPanel();
           const quedan = activas();
           const cuenta = document.getElementById('buscar-mapa-cuenta');
           const totalObras = SEDES.reduce((a, sd) => a + obrasDe(sd).length, 0);
@@ -809,11 +979,29 @@ JS = r"""
       togLibros.addEventListener('click', () => cambiarModo('libros'));
       pintarLista();
 
-      function elegirSede(idx, volar){
-        sedeSel = idx; grupoAbierto = idx; ciudadAbierta = null;
+      /* Las sedes activas de la misma ciudad que idx, ella incluida. */
+      function hermanasDe(idx){
         const s = SEDES[idx];
+        return activas().filter(i => SEDES[i].ciudad === s.ciudad && SEDES[i].pais === s.pais);
+      }
+
+      /* `desdeMapa`: la elección viene de un punto o del panel, y el panel la refleja.
+         Desde la lista lateral no se abre, porque la lista ya despliega sus obras.
+         Un museo que comparte ciudad no se puede ver suelto a ninguna escala útil, así
+         que en vez de encuadrarlo solo —donde quedaba escondido dentro del grupo de su
+         ciudad— se vuela a la ciudad con su abanico ya abierto y él marcado. */
+      function elegirSede(idx, volar, desdeMapa){
+        sedeSel = idx; grupoAbierto = idx;
+        const s = SEDES[idx];
+        const hermanas = hermanasDe(idx);
+        if (panelSedes && panelSedes.includes(idx)) { panelAbierta = idx; pintarPanel(); }
+        else if (desdeMapa) abrirPanel(hermanas.length > 1 ? hermanas : [idx], idx);
+        else cerrarPanel();
+        ciudadAbierta = hermanas.length > 1 ? hermanas.slice().sort((a, b) => a - b).join(',') : null;
         if (modo === 'sedes') pintarLista();
-        if (volar) irAVista(encajarSedes([idx], xCercano(s.x) - s.x), true); else dibujar();
+        const off = xCercano(s.x) - s.x;
+        if (volar) irAVista(encajarSedes(hermanas.length > 1 ? hermanas : [idx], off), true);
+        else dibujar();
         pintarDetalle(s);
       }
 
@@ -965,7 +1153,15 @@ JS = r"""
         const paso = clamp(Math.abs(ev.deltaY) / 300, 0.03, 0.16);   // pasos finos: acumulan suave
         zoomEn(cx, cy, ev.deltaY < 0 ? 1 + paso : 1 / (1 + paso));
       }, { passive: false });
-      marco.addEventListener('click', () => { if (!movido) ocultarTarjeta(); });
+      /* Pulsar el mar o la tierra vacía cierra el panel, como en cualquier mapa; los
+         botones de acercar y de continente también burbujean hasta aquí y no deben. */
+      marco.addEventListener('click', ev => {
+        if (movido) return;
+        ocultarTarjeta();
+        const t = ev && ev.target;
+        if (t && t.closest && t.closest('button')) return;
+        cerrarPanel();
+      });
 
       const centro = () => ({ x: vista.x + vista.w/2, y: vista.y + vista.h/2 });
       document.getElementById('mZoomIn').addEventListener('click', () => { const c=centro(); zoomEn(c.x,c.y,1.7); });
@@ -987,7 +1183,7 @@ JS = r"""
         const mundo = document.createElement('button');
         mundo.type = 'button'; mundo.id = 'mTodo'; mundo.textContent = 'Mundo';
         mundo.setAttribute('aria-label', 'Ver el mundo entero');
-        mundo.addEventListener('click', () => { grupoAbierto = -1; irAVista(vistaTodo(), true); });
+        mundo.addEventListener('click', () => { grupoAbierto = -1; cerrarPanel(); irAVista(vistaTodo(), true); });
         contBar.appendChild(mundo);
 
         CONTINENTES.forEach(nom => {
@@ -1004,7 +1200,7 @@ JS = r"""
           } else {
             b.title = `${n} obra${n > 1 ? 's' : ''} en ${idxs.length} sede${idxs.length > 1 ? 's' : ''}`;
             b.addEventListener('click', () => {
-              grupoAbierto = -1;
+              grupoAbierto = -1; cerrarPanel();
               irAVista(encajarSedes(idxs), true);
             });
           }
@@ -1020,6 +1216,7 @@ JS = r"""
         if (!visible()) return;
         if (!medido) { medido = true; vista = vistaTodo(); vistaObj = Object.assign({}, vista); }
         else { vista.h = vista.w * altoMarco() / anchoMarco(); vistaObj = Object.assign({}, vista); }
+        marco.classList.toggle('panel-cubre', panelCubre());
         aplicar(true);
       }
       if (typeof ResizeObserver === 'function') new ResizeObserver(remedir).observe(marco);
@@ -1067,6 +1264,7 @@ JS = r"""
       document.addEventListener('keydown', ev => {
         if (!visible() || visorAbierto()) return;
         if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
+        if (ev.key === 'Escape' && panelAbierto()) { cerrarPanel(); return; }
         const k = ev.key.toLowerCase();
         if (k === '0') { ev.preventDefault(); irAVista(vistaEuropa(), true); return; }
         if (!TECLAS.includes(k)) return;
