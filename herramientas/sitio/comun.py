@@ -35,7 +35,11 @@ def propia(rel):
     relativa a la raíz del sitio y la crea si falta. Los retratos se copian tal cual (ya
     son de 640 px); las obras, en copia reducida: la colección en disco no se toca."""
     rel = rel[2:] if rel.startswith("./") else rel
-    destino = rel if rel.startswith("Autores/") else "img/" + ascii_(rel.replace("/", "__"))
+    # Los retratos van a retratos/, NO a Autores/: en el Mac «Autores» y «autores» (las
+    # páginas de autor) son la misma carpeta, git lo subió todo como Autores/ y en GitHub,
+    # que distingue mayúsculas, /autores/behzad/ daba 404.
+    destino = ("retratos/" + rel.split("/", 1)[1]) if rel.startswith("Autores/") \
+        else "img/" + ascii_(rel.replace("/", "__"))
     dst = os.path.join(SITIO, destino)
     if not os.path.exists(dst):
         os.makedirs(os.path.dirname(dst), exist_ok=True)

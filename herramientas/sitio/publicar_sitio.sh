@@ -28,8 +28,14 @@ if ! git worktree list --porcelain | grep -qxF "worktree $GP"; then
   fi
 fi
 
+# Se vacía antes de copiar: en un Mac una carpeta que solo cambia de mayúsculas conserva el
+# nombre viejo si se copia encima, y git la volvería a subir con el nombre equivocado.
+find "$GP" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
 rsync -a --delete --exclude .git "$RAIZ/build/sitio/" "$GP/"
 cd "$GP"
+# El índice se rehace desde el disco: en un Mac, git con core.ignorecase conserva la
+# mayúscula antigua de una ruta aunque la carpeta ya se llame distinto (Autores/ → autores/).
+git rm -r -q --cached . >/dev/null 2>&1 || true
 git add -A
 if git diff --cached --quiet; then
   echo "── sin cambios en el sitio"

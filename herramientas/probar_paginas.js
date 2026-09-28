@@ -25,6 +25,23 @@ for (const p of paginas) {
 }
 ck(rotos.length === 0, `${paginas.length} páginas, ${enlaces} enlaces internos, ${rotos.length} rotos` + (rotos.length ? '\n        ' + rotos.slice(0, 5).join('\n        ') : ''));
 
+/* Dos rutas que solo difieren en mayúsculas son la misma en un Mac y distintas en GitHub.
+   Así se perdieron las páginas de autor: «Autores/» (retratos) y «autores/» (páginas). */
+const porMinus = new Map();
+const todas = [];
+(function listar(d) { for (const f of fs.readdirSync(d)) { const p = path.join(d, f); todas.push(p);
+  if (fs.statSync(p).isDirectory() && f !== '.git') listar(p); } })(SITIO);
+for (const p of paginas) for (const [, u] of fs.readFileSync(p, 'utf8').matchAll(/(?:href|src)="([^"]+)"/g)) {
+  if (/^(https?:|mailto:|#)/.test(u)) continue;
+  const limpio = decodeURIComponent(u.split('#')[0]); if (!limpio) continue;
+  todas.push(path.resolve(path.dirname(p), limpio));
+}
+for (const p of todas) { const rel = path.relative(SITIO, p).split(path.sep);
+  for (let i = 1; i <= rel.length; i++) { const pre = rel.slice(0, i).join('/'); if (!pre || pre.startsWith('..')) continue;
+    const k = pre.toLowerCase(); if (!porMinus.has(k)) porMinus.set(k, new Set()); porMinus.get(k).add(pre); } }
+const choques = [...porMinus.values()].filter(s => s.size > 1).map(s => [...s].join(' / '));
+ck(choques.length === 0, `ninguna ruta choca con otra por mayúsculas (${choques.length})` + (choques[0] ? ': ' + choques.slice(0, 3).join(' · ') : ''));
+
 console.log('\n== cada obra de la aplicación tiene su página ==');
 const html = fs.readFileSync(SITIO + '/index.html', 'utf8');
 const { BOOKS, FICHAS } = ejecutar(html, '{BOOKS, FICHAS}', { location: { hash: '' }, history: { pushState() {} }, Image: class {} });
