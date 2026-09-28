@@ -606,32 +606,6 @@
     .todas-txt em { font-style: normal; font-size: .75rem; color: var(--text-body); }
     .todas-txt span { font-size: .72rem; color: var(--text-muted); }
     @media (prefers-reduced-motion: reduce) { .todas-card:hover .todas-img img { transform: none; } }
-    .inicio-libros {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px; margin-top: 34px;
-    }
-
-    .libro-card {
-      background: var(--bg-card); border: 1px solid var(--border-subtle);
-      border-radius: 6px; padding: 22px 24px; cursor: pointer; text-align: left;
-      font-family: inherit; transition: border-color .25s, transform .25s;
-    }
-
-    .libro-card:hover { border-color: var(--accent-gold); transform: translateY(-2px); }
-
-    .libro-card b {
-      display: block; font-family: var(--font-serif); font-size: 1.2rem;
-      font-weight: 500; color: var(--text-title); margin-bottom: 6px;
-    }
-
-    .libro-card span { color: var(--text-muted); font-size: .84rem; line-height: 1.5; }
-
-    .libro-card em {
-      display: block; font-style: normal; color: var(--accent-gold);
-      font-size: .72rem; letter-spacing: 1.4px; margin-top: 12px;
-      font-variant-numeric: tabular-nums;
-    }
-
     /* BARRA DE ORDENACIÓN DE CADA GALERÍA */
     .orden-bar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:26px;
       padding-bottom:14px;border-bottom:1px solid var(--border-subtle)}
@@ -1335,7 +1309,6 @@
         <div class="banner-progreso"><span id="bannerProg"></span></div>
       </section>
       <div class="inicio-cifras" id="inicioCifras"></div>
-      <div class="inicio-libros" id="inicioLibros"></div>
       <section class="inicio-todas" aria-labelledby="inicioTodasTit">
         <h2 class="inicio-todas-tit" id="inicioTodasTit">Todas las obras</h2>
         <p class="inicio-todas-sub">En el mismo orden en que pasan por el banner; la que está a la vista, marcada.</p>
@@ -4809,9 +4782,9 @@
       pintar(avanzar(), false);
       ciclo();
 
-      /* Cifras y accesos a cada libro, generados desde BOOKS */
+      /* Cifras de la portada, generadas desde BOOKS. Los accesos a cada libro se quitaron:
+         están en la Biblioteca, y en la portada la rejilla «Todas las obras» ya lleva a cada una. */
       const cifras = document.getElementById('inicioCifras');
-      const libros = document.getElementById('inicioLibros');
       if (cifras) {
         /* La sede canónica (la misma que usa el mapa), no el último tramo de «meta»: con
            el número de inventario, cada obra parecía una sede distinta y salían 99. */
@@ -4822,18 +4795,6 @@
           `<div><b>${librosReales().length}</b><span>libros</span></div>` +
           `<div><b>${sedes.size}</b><span>sedes</span></div>` +
           (anios.length ? `<div><b>${Math.abs(Math.min(...anios))} a.C.</b><span>la más antigua</span></div>` : '');
-      }
-      if (libros) {
-        libros.innerHTML = librosReales().map(id =>
-          `<button class="libro-card" type="button" data-libro="${id}"><b>${esc(BOOKS[id].corto)}</b>` +
-          `<span>${esc(BOOKS[id].sub)}</span>` +
-          `<em>${BOOKS[id].details.length} obras</em></button>`).join('');
-        libros.querySelectorAll('.libro-card').forEach(b =>
-          b.addEventListener('click', () => {
-            const btn = [...document.querySelectorAll('.book-btn')]
-              .find(x => (x.getAttribute('onclick') || '').includes(`'${b.dataset.libro}'`));
-            if (btn) switchBook(b.dataset.libro, btn);
-          }));
       }
     })();
 

@@ -101,9 +101,8 @@ console.log('\n== Portada ==');
   check((banner.oyentes.click || []).length === 1, 'el banner entero es clicable');
   check(/obras<\/span>/.test(document.getElementById('inicioCifras').innerHTML),
     'las cifras de la portada se generaron');
-  const tarjetas = (document.getElementById('inicioLibros').innerHTML.match(/libro-card/g) || []).length;
-  const reales = Object.values(BOOKS).filter(b => b.esLibro).length;
-  check(tarjetas === reales, `una tarjeta por libro real (${tarjetas} de ${reales})`);
+  /* Las tarjetas de libro se quitaron de la portada (los libros están en la Biblioteca). */
+  check(!/id="inicioLibros"/.test(html), 'la portada ya no lleva las tarjetas de libro');
   check(BOOKS.inicio.details.length ===
         Object.values(BOOKS).filter(b => b.esLibro).reduce((n, b) => n + b.details.length, 0),
     'la portada reúne todas las obras de todos los libros');
