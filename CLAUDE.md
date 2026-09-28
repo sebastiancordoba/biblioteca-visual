@@ -577,6 +577,13 @@ correspondan al mismo índice que usa el visor.
 
 ## La versión publicada (artefacto)
 
+> **Desde el 28 de septiembre de 2026 el artefacto de claude.ai ya no se mantiene ni se vuelve a
+> publicar: la versión pública es solo la de GitHub Pages.** La cadena de `herramientas/artefacto/`
+> sigue haciendo falta, porque el sitio sale del HTML que genera (`build/pre_imagenes.html`, con el
+> mapa, la cronología y la cobertura); lo que dejó de hacerse es subir `build/los-tres-libros.html`
+> a claude.ai. Lo que sigue describe cómo se construía.
+
+
 Además del `index.html` local hay una versión compartible publicada como artefacto,
 **Los Tres Libros** (`claude.ai/code/artifact/9cce8cc2-80fd-429b-88f8-bf8d0eb8605d`). No es un
 archivo distinto que haya que mantener a mano: se construye **desde el `index.html` real** y solo
