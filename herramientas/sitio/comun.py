@@ -4,7 +4,7 @@ estáticas (paginas.py): de dónde sale cada imagen y a qué tamaño.
 
 Las dos piden las MISMAS miniaturas de Commons (1280 px en cuadrículas, 1920 px en grande),
 así que lo que el navegador ya descargó en una sirve en la otra."""
-import io, json, os, shutil, subprocess, unicodedata
+import io, json, os, shutil, subprocess, unicodedata, urllib.parse
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 BUILD = os.path.join(RAIZ, "build")
@@ -21,9 +21,14 @@ def miniatura(lk, ancho):
     if lk["w"] <= ancho:
         return lk["original"]
     base, nombre = lk["original"].rsplit("/", 1)
-    # thumb/5/5b/<nombre>/1280px-<nombre>: el nombre va dos veces.
+    # thumb/5/5b/<nombre>/1280px-<nombre>: el nombre va dos veces. Salvo si pasa de 160
+    # bytes: entonces MediaWiki llama a la miniatura «1280px-thumbnail.<ext>». La otra forma
+    # también responde hoy, pero no es la que da la API y no conviene depender de ella.
+    # herramientas/sitio/verificar_miniaturas.py compara todas contra la API.
+    real = urllib.parse.unquote(nombre)
+    final = ("thumbnail." + real.rsplit(".", 1)[1]) if len(real.encode("utf-8")) > 160 else nombre
     return (base.replace("/wikipedia/commons/", "/wikipedia/commons/thumb/", 1)
-            + f"/{nombre}/{ancho}px-{nombre}")
+            + f"/{nombre}/{ancho}px-{final}")
 
 
 def ascii_(s):

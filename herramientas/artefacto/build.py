@@ -25,6 +25,10 @@ head=head.replace("Pinturas: Biblioteca Visual de los Grandes Libros","Los Tres 
 doc=head+"\n"+body
 
 ENL=json.load(io.open(os.path.join(AQUI,"datos","enlaces.json"),encoding="utf-8"))
+# Autor y licencia de cada imagen (herramientas/creditos.py): las CC BY y CC BY-SA obligan a
+# citarlos, así que el visor lo muestra vista a vista.
+_cr=os.path.join(AQUI,"datos","creditos.json")
+CRED=json.load(io.open(_cr,encoding="utf-8")) if os.path.exists(_cr) else {}
 
 def cierre(t,i,ab="[",ce="]"):
     d=0;j=i;instr=False;esc=False
@@ -59,6 +63,12 @@ for libro in [l["id"] for l, ents in _REG if ents]:
             d["orig"]=lk["original"]; d["mp"]=f'{lk["mp"]:.1f} MP'; d["px"]=f'{lk["w"]}×{lk["h"]}'
     DATOS[libro]=(details,groups)
     doc=doc[:lbd]+json.dumps(details,ensure_ascii=False,indent=2).replace("\n","\n    ")+doc[find:]
+    for grp in groups:
+        for v in grp:
+            c=CRED.get(v["src"][2:])
+            if c: v["cred"]={"a":c["autor"],"au":c["autor_url"],"l":c["licencia"],"lu":c["licencia_url"],"f":c["archivo"]}
+    lbg,fing=leer("groups",libro)
+    doc=doc[:lbg]+json.dumps(groups,ensure_ascii=False,indent=2).replace("\n","\n    ")+doc[fing:]
 
 # ---------- 2. cronología conjunta ----------
 # Etiqueta = nombre corto del libro. build_mapa.py usa EXACTAMENTE la misma para ordenar,

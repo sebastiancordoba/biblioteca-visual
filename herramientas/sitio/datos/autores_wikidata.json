@@ -1,0 +1,3705 @@
+{
+ "autores": {
+  "behzad": {
+   "commons": "Kamal-ud-din Bihzad",
+   "enwiki": "Kamāl ud-Dīn Behzād",
+   "eswiki": "Kamāl ud-Dīn Behzād",
+   "etiqueta": "Kamāl ud-Dīn Behzād",
+   "ids": {
+    "ulan": "500116616",
+    "viaf": "96545639"
+   },
+   "movimientos": [],
+   "muerte": {
+    "fecha": "1535",
+    "lugar": {
+     "qid": "Q45313",
+     "texto": "Herat"
+    }
+   },
+   "nacimiento": {
+    "fecha": "1450",
+    "lugar": {
+     "qid": "Q45313",
+     "texto": "Herat"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q998628",
+     "texto": "iluminador"
+    },
+    {
+     "qid": "Q47494964",
+     "texto": "miniaturista"
+    }
+   ],
+   "qid": "Q334875",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T008843"
+    },
+    {
+     "obra": "Encyclopaedia Iranica",
+     "pid": "P3021",
+     "url": "https://www.iranicaonline.org/articles/behzad-kamal-al-din"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/behzad/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Behzad"
+    }
+   ]
+  },
+  "bellini": {
+   "commons": "Giovanni Bellini",
+   "enwiki": "Giovanni Bellini",
+   "eswiki": "Giovanni Bellini",
+   "etiqueta": "Giovanni Bellini",
+   "ids": {
+    "loc": "n50007140",
+    "ulan": "500019244",
+    "viaf": "100161245"
+   },
+   "movimientos": [
+    {
+     "qid": "Q4692",
+     "texto": "Renacimiento"
+    }
+   ],
+   "muerte": {
+    "fecha": "29 de noviembre de 1516",
+    "lugar": {
+     "qid": "Q641",
+     "texto": "Venecia"
+    }
+   },
+   "nacimiento": {
+    "fecha": "c. 1430",
+    "lugar": {
+     "qid": "Q641",
+     "texto": "Venecia"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q998628",
+     "texto": "iluminador"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    },
+    {
+     "qid": "Q42973",
+     "texto": "arquitecto"
+    },
+    {
+     "qid": "Q28947943",
+     "texto": "pintor de miniaturas"
+    }
+   ],
+   "qid": "Q17169",
+   "referencias": [
+    {
+     "obra": "Dizionario Biografico degli Italiani (Treccani)",
+     "pid": "P1986",
+     "url": "https://www.treccani.it/enciclopedia/bellini-giovanni-detto-giambellino_(Dizionario-Biografico)"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118508679.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/6267"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00015815"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/0cda6f71-ab21-4fe8-8f41-661ff61e0c7c"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/giovanni-bellini"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Giovanni-Bellini-Italian-painter"
+    }
+   ]
+  },
+  "blake": {
+   "commons": "William Blake",
+   "enwiki": "William Blake",
+   "eswiki": "William Blake",
+   "etiqueta": "William Blake",
+   "ids": {
+    "loc": "n78095331",
+    "ulan": "500012489",
+    "viaf": "54144439"
+   },
+   "movimientos": [
+    {
+     "qid": "Q37068",
+     "texto": "Romanticismo"
+    },
+    {
+     "qid": "Q2405999",
+     "texto": "fairy painting"
+    }
+   ],
+   "muerte": {
+    "fecha": "12 de agosto de 1827",
+    "lugar": {
+     "qid": "Q84",
+     "texto": "Londres"
+    }
+   },
+   "nacimiento": {
+    "fecha": "28 de noviembre de 1757",
+    "lugar": {
+     "qid": "Q84",
+     "texto": "Londres"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q49757",
+     "texto": "poeta"
+    },
+    {
+     "qid": "Q1234713",
+     "texto": "teólogo"
+    },
+    {
+     "qid": "Q3243461",
+     "texto": "coleccionista"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    }
+   ],
+   "qid": "Q41513",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T009124"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118511513.html"
+    },
+    {
+     "obra": "Oxford Dictionary of National Biography",
+     "pid": "P1415",
+     "url": "https://www.oxforddnb.com/view/article/2585"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/8824"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00020515"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/william-blake"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/blake-william-1757-1827/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/William-Blake"
+    }
+   ]
+  },
+  "bosco": {
+   "commons": "Hieronymus Bosch",
+   "enwiki": "Hieronymus Bosch",
+   "eswiki": "El Bosco",
+   "etiqueta": "Jerónimo Bosch",
+   "ids": {
+    "loc": "n79004071",
+    "ulan": "500000759",
+    "viaf": "76401424"
+   },
+   "movimientos": [
+    {
+     "qid": "Q443153",
+     "texto": "Primitivo flamenco"
+    },
+    {
+     "qid": "Q610877",
+     "texto": "Renacimiento nórdico"
+    }
+   ],
+   "muerte": {
+    "fecha": "9 de agosto de 1516",
+    "lugar": {
+     "qid": "Q2766547",
+     "texto": "Bolduque"
+    }
+   },
+   "nacimiento": {
+    "fecha": "c. 1450",
+    "lugar": {
+     "qid": "Q2766547",
+     "texto": "Bolduque"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    },
+    {
+     "qid": "Q2079935",
+     "texto": "arquitecto técnico especializado en diseño técnico"
+    },
+    {
+     "qid": "Q3391743",
+     "texto": "artista visual"
+    }
+   ],
+   "qid": "Q130531",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T010250"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/11851380X.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/11018"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00023609"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/c9716e4a-4c24-44dd-ac65-44bc4661c8b5"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/hieronymus-bosch"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/jerome-bosch-expositions/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Hieronymus-Bosch"
+    }
+   ]
+  },
+  "bouguereau": {
+   "commons": "William-Adolphe Bouguereau",
+   "enwiki": "William-Adolphe Bouguereau",
+   "eswiki": "William-Adolphe Bouguereau",
+   "etiqueta": "William-Adolphe Bouguereau",
+   "ids": {
+    "loc": "n85059001",
+    "ulan": "500011205",
+    "viaf": "41966603"
+   },
+   "movimientos": [
+    {
+     "qid": "Q189458",
+     "texto": "academicismo"
+    },
+    {
+     "qid": "Q382056",
+     "texto": "Escuela de Pont-Aven"
+    }
+   ],
+   "muerte": {
+    "fecha": "19 de agosto de 1905",
+    "lugar": {
+     "qid": "Q82185",
+     "texto": "La Rochela"
+    }
+   },
+   "nacimiento": {
+    "fecha": "30 de noviembre de 1825",
+    "lugar": {
+     "qid": "Q82185",
+     "texto": "La Rochela"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    }
+   ],
+   "qid": "Q483992",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T010467"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/119375702.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/11382"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00024220"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/william-bouguereau/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/William-Adolphe-Bouguereau"
+    }
+   ]
+  },
+  "breu": {
+   "commons": "Jörg Breu d. J.",
+   "enwiki": "Jörg Breu the Younger",
+   "eswiki": null,
+   "etiqueta": "Jörg Breu the Younger",
+   "ids": {
+    "loc": "nr2004017996",
+    "ulan": "500025707",
+    "viaf": "95840200"
+   },
+   "movimientos": [
+    {
+     "qid": "Q2455000",
+     "texto": "Renacimiento alemán"
+    }
+   ],
+   "muerte": {
+    "fecha": "1547",
+    "lugar": {
+     "qid": "Q2749",
+     "texto": "Augsburgo"
+    }
+   },
+   "nacimiento": {
+    "fecha": "1510",
+    "lugar": {
+     "qid": "Q2749",
+     "texto": "Augsburgo"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    },
+    {
+     "qid": "Q483501",
+     "texto": "artista"
+    }
+   ],
+   "qid": "Q876275",
+   "referencias": [
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118515209.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/12439"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00026335"
+    }
+   ]
+  },
+  "bruegel": {
+   "commons": "Pieter Bruegel (I)",
+   "enwiki": "Pieter Bruegel the Elder",
+   "eswiki": "Pieter Brueghel el Viejo",
+   "etiqueta": "Pieter Brueghel el Viejo",
+   "ids": {
+    "loc": "n80162848",
+    "ulan": "500013247",
+    "viaf": "95761864"
+   },
+   "movimientos": [
+    {
+     "qid": "Q2632089",
+     "texto": "Renacimiento flamenco"
+    },
+    {
+     "qid": "Q610877",
+     "texto": "Renacimiento nórdico"
+    }
+   ],
+   "muerte": {
+    "fecha": "9 de septiembre de 1569",
+    "lugar": {
+     "qid": "Q239",
+     "texto": "Bruselas"
+    }
+   },
+   "nacimiento": {
+    "fecha": "c. 1525",
+    "lugar": {
+     "qid": "Q40844",
+     "texto": "Breda"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    }
+   ],
+   "qid": "Q43270",
+   "referencias": [
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118674013.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/13292"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00027554"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/4ba0568b-d3b4-4831-a4aa-b97480d65f77"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/pieter-bruegel-l-ancien/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Pieter-Bruegel-the-Elder"
+    }
+   ]
+  },
+  "caravaggio": {
+   "commons": "Michelangelo Merisi da Caravaggio",
+   "enwiki": "Caravaggio",
+   "eswiki": "Caravaggio",
+   "etiqueta": "Caravaggio",
+   "ids": {
+    "loc": "n50000558",
+    "ulan": "500115312",
+    "viaf": "87679282"
+   },
+   "movimientos": [
+    {
+     "qid": "Q37853",
+     "texto": "barroco"
+    },
+    {
+     "qid": "Q128168",
+     "texto": "Reforma católica"
+    }
+   ],
+   "muerte": {
+    "fecha": "18 de julio de 1610",
+    "lugar": {
+     "qid": "Q1394400",
+     "texto": "Porto Ercole"
+    }
+   },
+   "nacimiento": {
+    "fecha": "29 de septiembre de 1571",
+    "lugar": {
+     "qid": "Q490",
+     "texto": "Milán"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    }
+   ],
+   "qid": "Q42207",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T013950"
+    },
+    {
+     "obra": "Dizionario Biografico degli Italiani (Treccani)",
+     "pid": "P1986",
+     "url": "https://www.treccani.it/enciclopedia/michelangelo-merisi_(Dizionario-Biografico)"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118519034.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/15262"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00031886"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/0cfe1d6b-5142-469f-82f2-02b893ebf903"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/michelangelo-merisi-detto-il-caravaggio"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/caravage/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Caravaggio"
+    }
+   ]
+  },
+  "cole": {
+   "commons": "Thomas Cole",
+   "enwiki": "Thomas Cole",
+   "eswiki": "Thomas Cole",
+   "etiqueta": "Thomas Cole",
+   "ids": {
+    "loc": "n50026811",
+    "ulan": "500028323",
+    "viaf": "51697901"
+   },
+   "movimientos": [
+    {
+     "qid": "Q943853",
+     "texto": "escuela del río Hudson"
+    }
+   ],
+   "muerte": {
+    "fecha": "11 de febrero de 1848",
+    "lugar": {
+     "qid": "Q60",
+     "texto": "Nueva York"
+    }
+   },
+   "nacimiento": {
+    "fecha": "1 de febrero de 1801",
+    "lugar": {
+     "qid": "Q184579",
+     "texto": "Bolton"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q644687",
+     "texto": "ilustrador"
+    }
+   ],
+   "qid": "Q334001",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T018539"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/119181274.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/17625"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00040315"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/thomas-cole"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/thomas-cole/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Thomas-Cole"
+    }
+   ]
+  },
+  "cormon": {
+   "commons": "Fernand Cormon",
+   "enwiki": "Fernand Cormon",
+   "eswiki": "Fernand Cormon",
+   "etiqueta": "Fernand Cormon",
+   "ids": {
+    "loc": "n2018047256",
+    "ulan": "500115385",
+    "viaf": "32265301"
+   },
+   "movimientos": [
+    {
+     "qid": "Q189458",
+     "texto": "academicismo"
+    }
+   ],
+   "muerte": {
+    "fecha": "20 de marzo de 1924",
+    "lugar": {
+     "qid": "Q270230",
+     "texto": "VIII Distrito de París"
+    }
+   },
+   "nacimiento": {
+    "fecha": "24 de diciembre de 1845",
+    "lugar": {
+     "qid": "Q90",
+     "texto": "París"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q16947657",
+     "texto": "litógrafo"
+    }
+   ],
+   "qid": "Q457098",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T019504"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/122497317.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/18362"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00042289"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Fernand-Cormon"
+    }
+   ]
+  },
+  "corot": {
+   "commons": "Jean-Baptiste-Camille Corot",
+   "enwiki": "Jean-Baptiste-Camille Corot",
+   "eswiki": "Camille Corot",
+   "etiqueta": "Camille Corot",
+   "ids": {
+    "loc": "n50020661",
+    "ulan": "500115390",
+    "viaf": "4940255"
+   },
+   "movimientos": [
+    {
+     "qid": "Q2642826",
+     "texto": "pintura del Realismo"
+    },
+    {
+     "qid": "Q143357",
+     "texto": "Escuela de Barbizon"
+    }
+   ],
+   "muerte": {
+    "fecha": "22 de febrero de 1875",
+    "lugar": {
+     "qid": "Q3452298",
+     "texto": "rue du Faubourg-Poissonnière"
+    }
+   },
+   "nacimiento": {
+    "fecha": "16 de julio de 1796",
+    "lugar": {
+     "qid": "Q1470209",
+     "texto": "rue du Bac"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q33231",
+     "texto": "fotógrafo"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    },
+    {
+     "qid": "Q2079935",
+     "texto": "arquitecto técnico especializado en diseño técnico"
+    }
+   ],
+   "qid": "Q148475",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T019570"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118522256.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/18465"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00042527"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/jean-baptiste-camille-corot"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/camille-corot/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Camille-Corot"
+    }
+   ]
+  },
+  "cranach": {
+   "commons": "Lucas Cranach (I)",
+   "enwiki": "Lucas Cranach the Elder",
+   "eswiki": "Lucas Cranach el Viejo",
+   "etiqueta": "Lucas Cranach el Viejo",
+   "ids": {
+    "loc": "n50020861",
+    "ulan": "500115364",
+    "viaf": "49268177"
+   },
+   "movimientos": [
+    {
+     "qid": "Q2455000",
+     "texto": "Renacimiento alemán"
+    }
+   ],
+   "muerte": {
+    "fecha": "16 de octubre de 1553",
+    "lugar": {
+     "qid": "Q3955",
+     "texto": "Weimar"
+    }
+   },
+   "nacimiento": {
+    "fecha": "4 de octubre de 1472",
+    "lugar": {
+     "qid": "Q494537",
+     "texto": "Kronach"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    },
+    {
+     "qid": "Q1925963",
+     "texto": "artista gráfico"
+    },
+    {
+     "qid": "Q2079935",
+     "texto": "arquitecto técnico especializado en diseño técnico"
+    },
+    {
+     "qid": "Q5322166",
+     "texto": "diseñador"
+    }
+   ],
+   "qid": "Q191748",
+   "referencias": [
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118522582.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/18978"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00044115"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/46422479-d81d-4777-b76e-f74736b49f0d"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/cranach-lucas-il-vecchio"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/lucas-cranach-l-ancien/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Lucas-Cranach-the-Elder"
+    }
+   ]
+  },
+  "danby": {
+   "commons": "Francis Danby",
+   "enwiki": "Francis Danby",
+   "eswiki": null,
+   "etiqueta": "Francis Danby",
+   "ids": {
+    "loc": "n50037773",
+    "ulan": "500024662",
+    "viaf": "12578296"
+   },
+   "movimientos": [],
+   "muerte": {
+    "fecha": "9 de febrero de 1861",
+    "lugar": {
+     "qid": "Q1007093",
+     "texto": "Exmouth"
+    }
+   },
+   "nacimiento": {
+    "fecha": "16 de noviembre de 1793",
+    "lugar": {
+     "qid": "Q184599",
+     "texto": "Condado de Wexford"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q21600439",
+     "texto": "pintor de paisajes"
+    }
+   ],
+   "qid": "Q709816",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T021295"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/119116294.html"
+    },
+    {
+     "obra": "Oxford Dictionary of National Biography",
+     "pid": "P1415",
+     "url": "https://www.oxforddnb.com/view/article/7088"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/19910"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00046343"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/francis-danby"
+    }
+   ]
+  },
+  "david": {
+   "commons": "Jacques-Louis David",
+   "enwiki": "Jacques-Louis David",
+   "eswiki": "Jacques-Louis David",
+   "etiqueta": "Jacques-Louis David",
+   "ids": {
+    "loc": "n50035639",
+    "ulan": "500115221",
+    "viaf": "66575297"
+   },
+   "movimientos": [
+    {
+     "qid": "Q14378",
+     "texto": "neoclasicismo"
+    }
+   ],
+   "muerte": {
+    "fecha": "29 de diciembre de 1825",
+    "lugar": {
+     "qid": "Q239",
+     "texto": "Bruselas"
+    }
+   },
+   "nacimiento": {
+    "fecha": "30 de agosto de 1748",
+    "lugar": {
+     "qid": "Q90",
+     "texto": "París"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q82955",
+     "texto": "político"
+    },
+    {
+     "qid": "Q2079935",
+     "texto": "arquitecto técnico especializado en diseño técnico"
+    }
+   ],
+   "qid": "Q83155",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T021541"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118523945.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/20163"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00047299"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/jacques-louis-david"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/jacques-louis-david/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Jacques-Louis-David-French-painter"
+    }
+   ]
+  },
+  "delacroix": {
+   "commons": "Eugène Delacroix",
+   "enwiki": "Eugène Delacroix",
+   "eswiki": "Eugène Delacroix",
+   "etiqueta": "Eugène Delacroix",
+   "ids": {
+    "loc": "n79086855",
+    "ulan": "500115509",
+    "viaf": "7389086"
+   },
+   "movimientos": [
+    {
+     "qid": "Q37068",
+     "texto": "Romanticismo"
+    }
+   ],
+   "muerte": {
+    "fecha": "13 de agosto de 1863",
+    "lugar": {
+     "qid": "Q90",
+     "texto": "París"
+    }
+   },
+   "nacimiento": {
+    "fecha": "26 de abril de 1798",
+    "lugar": {
+     "qid": "Q274327",
+     "texto": "Saint-Maurice"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q18939491",
+     "texto": "diarista"
+    },
+    {
+     "qid": "Q16947657",
+     "texto": "litógrafo"
+    },
+    {
+     "qid": "Q33231",
+     "texto": "fotógrafo"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    }
+   ],
+   "qid": "Q33477",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T021888"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118524461.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/21569"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00048307"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/eugene-delacroix"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/eugene-delacroix/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Eugene-Delacroix"
+    }
+   ]
+  },
+  "dore": {
+   "commons": "Gustave Doré",
+   "enwiki": "Gustave Doré",
+   "eswiki": "Gustave Doré",
+   "etiqueta": "Gustave Doré",
+   "ids": {
+    "loc": "n79089221",
+    "ulan": "500013657",
+    "viaf": "41839207"
+   },
+   "movimientos": [
+    {
+     "qid": "Q37068",
+     "texto": "Romanticismo"
+    },
+    {
+     "qid": "Q164800",
+     "texto": "simbolismo"
+    },
+    {
+     "qid": "Q11498107",
+     "texto": "Edad de oro de la ilustración"
+    }
+   ],
+   "muerte": {
+    "fecha": "23 de enero de 1883",
+    "lugar": {
+     "qid": "Q259463",
+     "texto": "VII Distrito de París"
+    }
+   },
+   "nacimiento": {
+    "fecha": "6 de enero de 1832",
+    "lugar": {
+     "qid": "Q6602",
+     "texto": "Estrasburgo"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q644687",
+     "texto": "ilustrador"
+    },
+    {
+     "qid": "Q3658608",
+     "texto": "caricaturista"
+    },
+    {
+     "qid": "Q715301",
+     "texto": "historietista"
+    },
+    {
+     "qid": "Q16947657",
+     "texto": "litógrafo"
+    }
+   ],
+   "qid": "Q6682",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T023374"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118526839.html"
+    },
+    {
+     "obra": "Oxford Dictionary of National Biography",
+     "pid": "P1415",
+     "url": "https://www.oxforddnb.com/view/article/67162"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/23890"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00052996"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/gustave-dore"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/gustave-dore/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Gustave-Dore"
+    }
+   ]
+  },
+  "durero": {
+   "commons": "Albrecht Dürer",
+   "enwiki": "Albrecht Dürer",
+   "eswiki": "Alberto Durero",
+   "etiqueta": "Alberto Durero",
+   "ids": {
+    "loc": "n79118011",
+    "ulan": "500115493",
+    "viaf": "54146999"
+   },
+   "movimientos": [
+    {
+     "qid": "Q2455000",
+     "texto": "Renacimiento alemán"
+    }
+   ],
+   "muerte": {
+    "fecha": "6 de abril de 1528",
+    "lugar": {
+     "qid": "Q2090",
+     "texto": "Núremberg"
+    }
+   },
+   "nacimiento": {
+    "fecha": "21 de mayo de 1471",
+    "lugar": {
+     "qid": "Q2090",
+     "texto": "Núremberg"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    },
+    {
+     "qid": "Q170790",
+     "texto": "matemático"
+    },
+    {
+     "qid": "Q998628",
+     "texto": "iluminador"
+    },
+    {
+     "qid": "Q13365770",
+     "texto": "grabador en cobre"
+    }
+   ],
+   "qid": "Q5580",
+   "referencias": [
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/11852786X.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/24586"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00056308"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/fa9508c2-c861-457b-b826-aea40412f8de"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/albrecht-durer"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/albrecht-durer/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Albrecht-Durer-German-artist"
+    }
+   ]
+  },
+  "eufronio": {
+   "commons": "Euphronios",
+   "enwiki": "Euphronios",
+   "eswiki": "Eufronio",
+   "etiqueta": "Eufronios",
+   "ids": {
+    "loc": "no91001652",
+    "ulan": "500116286",
+    "viaf": "5722202"
+   },
+   "movimientos": [
+    {
+     "qid": "Q271834",
+     "texto": "Época Arcaica"
+    }
+   ],
+   "muerte": {
+    "fecha": "siglo V a.C.",
+    "lugar": null
+   },
+   "nacimiento": {
+    "fecha": "siglo VI a.C.",
+    "lugar": null
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q15303045",
+     "texto": "ceramógrafo de figuras rojas"
+    },
+    {
+     "qid": "Q21282419",
+     "texto": "pintor ático de vasos"
+    },
+    {
+     "qid": "Q31092701",
+     "texto": "Attic potter"
+    },
+    {
+     "qid": "Q3400050",
+     "texto": "alfarero"
+    },
+    {
+     "qid": "Q15301511",
+     "texto": "ceramógrafo"
+    }
+   ],
+   "qid": "Q358508",
+   "referencias": [
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118531387.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/273427"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00060282"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/euphronios/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Euphronios"
+    }
+   ]
+  },
+  "exekias": {
+   "commons": "Exekias",
+   "enwiki": "Exekias",
+   "eswiki": "Exequias (pintor)",
+   "etiqueta": "Exequias",
+   "ids": {
+    "loc": "n98032839",
+    "ulan": "500027430",
+    "viaf": "13149365916385600862"
+   },
+   "movimientos": [],
+   "muerte": {
+    "fecha": "siglo VI a.C.",
+    "lugar": null
+   },
+   "nacimiento": {
+    "fecha": "siglo VI a.C.",
+    "lugar": {
+     "qid": "Q844930",
+     "texto": "Antigua Atenas"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q15303031",
+     "texto": "pintor de vasos de figuras negras"
+    },
+    {
+     "qid": "Q21505859",
+     "texto": "ceramista de la Antigua Grecia"
+    },
+    {
+     "qid": "Q21282419",
+     "texto": "pintor ático de vasos"
+    },
+    {
+     "qid": "Q15301511",
+     "texto": "ceramógrafo"
+    },
+    {
+     "qid": "Q3400050",
+     "texto": "alfarero"
+    }
+   ],
+   "qid": "Q358541",
+   "referencias": [
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/119536366.html"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00060546"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/exechia"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/exekias/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Exekias"
+    }
+   ]
+  },
+  "gauguin": {
+   "commons": "Paul Gauguin",
+   "enwiki": "Paul Gauguin",
+   "eswiki": "Paul Gauguin",
+   "etiqueta": "Paul Gauguin",
+   "ids": {
+    "loc": "n79055546",
+    "ulan": "500011421",
+    "viaf": "27064953"
+   },
+   "movimientos": [
+    {
+     "qid": "Q166713",
+     "texto": "posimpresionismo"
+    },
+    {
+     "qid": "Q382056",
+     "texto": "Escuela de Pont-Aven"
+    },
+    {
+     "qid": "Q164800",
+     "texto": "simbolismo"
+    },
+    {
+     "qid": "Q847847",
+     "texto": "sintetismo"
+    }
+   ],
+   "muerte": {
+    "fecha": "8 de mayo de 1903",
+    "lugar": {
+     "qid": "Q2178729",
+     "texto": "Atuona"
+    }
+   },
+   "nacimiento": {
+    "fecha": "7 de junio de 1848",
+    "lugar": {
+     "qid": "Q90",
+     "texto": "París"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q1281618",
+     "texto": "escultor"
+    },
+    {
+     "qid": "Q1925963",
+     "texto": "artista gráfico"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    }
+   ],
+   "qid": "Q37693",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T031013"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118537822.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/30451"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00071491"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/paul-gauguin"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/paul-gauguin/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Paul-Gauguin"
+    }
+   ]
+  },
+  "hamilton": {
+   "commons": "Gavin Hamilton",
+   "enwiki": "Gavin Hamilton (artist)",
+   "eswiki": "Gavin Hamilton",
+   "etiqueta": "Gavin Hamilton",
+   "ids": {
+    "loc": "nr89014515",
+    "ulan": "500115642",
+    "viaf": "24875065"
+   },
+   "movimientos": [
+    {
+     "qid": "Q14378",
+     "texto": "neoclasicismo"
+    }
+   ],
+   "muerte": {
+    "fecha": "4 de enero de 1798",
+    "lugar": {
+     "qid": "Q220",
+     "texto": "Roma"
+    }
+   },
+   "nacimiento": {
+    "fecha": "1723",
+    "lugar": {
+     "qid": "Q530296",
+     "texto": "Lanarkshire"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q4773904",
+     "texto": "antropólogo"
+    },
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q1792450",
+     "texto": "historiador del arte"
+    },
+    {
+     "qid": "Q3621491",
+     "texto": "arqueólogo"
+    },
+    {
+     "qid": "Q173950",
+     "texto": "marchante de arte"
+    }
+   ],
+   "qid": "Q1496436",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T036386"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/11914462X.html"
+    },
+    {
+     "obra": "Oxford Dictionary of National Biography",
+     "pid": "P1415",
+     "url": "https://www.oxforddnb.com/view/article/12066"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/35653"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00083174"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/gavin-hamilton"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/gavin-hamilton/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Gavin-Hamilton"
+    }
+   ]
+  },
+  "ingres": {
+   "commons": "Jean Auguste Dominique Ingres",
+   "enwiki": "Jean-Auguste-Dominique Ingres",
+   "eswiki": "Jean-Auguste-Dominique Ingres",
+   "etiqueta": "Jean Auguste Dominique Ingres",
+   "ids": {
+    "loc": "n81047807",
+    "ulan": "500028037",
+    "viaf": "76327826"
+   },
+   "movimientos": [
+    {
+     "qid": "Q37068",
+     "texto": "Romanticismo"
+    },
+    {
+     "qid": "Q14378",
+     "texto": "neoclasicismo"
+    }
+   ],
+   "muerte": {
+    "fecha": "14 de enero de 1867",
+    "lugar": {
+     "qid": "Q90",
+     "texto": "París"
+    }
+   },
+   "nacimiento": {
+    "fecha": "29 de agosto de 1780",
+    "lugar": {
+     "qid": "Q172593",
+     "texto": "Montauban"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q82955",
+     "texto": "político"
+    },
+    {
+     "qid": "Q1259917",
+     "texto": "violinista"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    }
+   ],
+   "qid": "Q23380",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T041299"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/11855560X.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/41067"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00092228"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/jean-auguste-dominique-ingres"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/jean-auguste-dominique-ingres/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/J-A-D-Ingres"
+    }
+   ]
+  },
+  "ivanov": {
+   "commons": "Alexandr Andreevich Ivanov",
+   "enwiki": "Alexander Andreyevich Ivanov",
+   "eswiki": "Aleksandr Andréyevich Ivánov",
+   "etiqueta": "Aleksandr Ivánov",
+   "ids": {
+    "loc": "n81041796",
+    "ulan": "500018443",
+    "viaf": "32269662"
+   },
+   "movimientos": [
+    {
+     "qid": "Q14378",
+     "texto": "neoclasicismo"
+    }
+   ],
+   "muerte": {
+    "fecha": "3 de julio de 1858",
+    "lugar": {
+     "qid": "Q656",
+     "texto": "San Petersburgo"
+    }
+   },
+   "nacimiento": {
+    "fecha": "16 de julio de 1806",
+    "lugar": {
+     "qid": "Q656",
+     "texto": "San Petersburgo"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    }
+   ],
+   "qid": "Q76829",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T042936"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/119089661.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/41214"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00092692"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/aleksandr-andreevic-ivanov"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Aleksandr-Andreyevich-Ivanov"
+    }
+   ]
+  },
+  "john_martin": {
+   "commons": "John Martin",
+   "enwiki": "John Martin (painter)",
+   "eswiki": "John Martin",
+   "etiqueta": "John Martin",
+   "ids": {
+    "loc": "n50040933",
+    "ulan": "500023063",
+    "viaf": "92133015"
+   },
+   "movimientos": [
+    {
+     "qid": "Q37068",
+     "texto": "Romanticismo"
+    }
+   ],
+   "muerte": {
+    "fecha": "17 de febrero de 1854",
+    "lugar": {
+     "qid": "Q18569",
+     "texto": "Douglas"
+    }
+   },
+   "nacimiento": {
+    "fecha": "19 de julio de 1789",
+    "lugar": {
+     "qid": "Q3783796",
+     "texto": "Haydon Bridge"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q329439",
+     "texto": "grabador"
+    },
+    {
+     "qid": "Q644687",
+     "texto": "ilustrador"
+    },
+    {
+     "qid": "Q483501",
+     "texto": "artista"
+    },
+    {
+     "qid": "Q1925963",
+     "texto": "artista gráfico"
+    }
+   ],
+   "qid": "Q937096",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T054660"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/11878224X.html"
+    },
+    {
+     "obra": "Oxford Dictionary of National Biography",
+     "pid": "P1415",
+     "url": "https://www.oxforddnb.com/view/article/18192"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/52936"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00117798"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/john-martin"
+    }
+   ]
+  },
+  "lemoyne": {
+   "commons": "François Lemoyne",
+   "enwiki": "François Lemoyne",
+   "eswiki": "François Lemoyne",
+   "etiqueta": "François Lemoyne",
+   "ids": {
+    "loc": "n85366415",
+    "ulan": "500027784",
+    "viaf": "4939047"
+   },
+   "movimientos": [
+    {
+     "qid": "Q122960",
+     "texto": "Rococó"
+    }
+   ],
+   "muerte": {
+    "fecha": "4 de junio de 1737",
+    "lugar": {
+     "qid": "Q90",
+     "texto": "París"
+    }
+   },
+   "nacimiento": {
+    "fecha": "1688",
+    "lugar": {
+     "qid": "Q90",
+     "texto": "París"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q1569495",
+     "texto": "profesor de educación superior"
+    },
+    {
+     "qid": "Q40348",
+     "texto": "abogado"
+    },
+    {
+     "qid": "Q37226",
+     "texto": "profesor"
+    }
+   ],
+   "qid": "Q732468",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T050273"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/123162939.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/49301"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00107479"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/francois-lemoine"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/francois-lemoyne/"
+    }
+   ]
+  },
+  "masaccio": {
+   "commons": "Masaccio",
+   "enwiki": "Masaccio",
+   "eswiki": "Masaccio",
+   "etiqueta": "Masaccio",
+   "ids": {
+    "loc": "n79006973",
+    "ulan": "500026649",
+    "viaf": "7368513"
+   },
+   "movimientos": [
+    {
+     "qid": "Q1404472",
+     "texto": "Renacimiento italiano"
+    }
+   ],
+   "muerte": {
+    "fecha": "1428",
+    "lugar": {
+     "qid": "Q220",
+     "texto": "Roma"
+    }
+   },
+   "nacimiento": {
+    "fecha": "21 de diciembre de 1401",
+    "lugar": {
+     "qid": "Q52097",
+     "texto": "San Giovanni Valdarno"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    }
+   ],
+   "qid": "Q5811",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T054828"
+    },
+    {
+     "obra": "Dizionario Biografico degli Italiani (Treccani)",
+     "pid": "P1986",
+     "url": "https://www.treccani.it/enciclopedia/masaccio_(Dizionario-Biografico)"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118578618.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/53068"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00118083"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/masaccio"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/masaccio/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Masaccio"
+    }
+   ]
+  },
+  "matsch": {
+   "commons": "Franz von Matsch",
+   "enwiki": "Franz von Matsch",
+   "eswiki": null,
+   "etiqueta": "Franz von Matsch",
+   "ids": {
+    "loc": "n82066326",
+    "ulan": "500029045",
+    "viaf": "64799588"
+   },
+   "movimientos": [],
+   "muerte": {
+    "fecha": "5 de octubre de 1942",
+    "lugar": {
+     "qid": "Q1741",
+     "texto": "Viena"
+    }
+   },
+   "nacimiento": {
+    "fecha": "16 de septiembre de 1861",
+    "lugar": {
+     "qid": "Q1741",
+     "texto": "Viena"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q1281618",
+     "texto": "escultor"
+    },
+    {
+     "qid": "Q1622272",
+     "texto": "profesor universitario"
+    }
+   ],
+   "qid": "Q874720",
+   "referencias": [
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118578863.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/54001"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00118762"
+    }
+   ]
+  },
+  "miguel_angel": {
+   "commons": "Michelangelo Buonarroti",
+   "enwiki": "Michelangelo",
+   "eswiki": "Miguel Ángel",
+   "etiqueta": "Miguel Ángel",
+   "ids": {
+    "loc": "n80152368",
+    "ulan": "500010654",
+    "viaf": "24585191"
+   },
+   "movimientos": [
+    {
+     "qid": "Q1474884",
+     "texto": "Alto Renacimiento"
+    },
+    {
+     "qid": "Q15885248",
+     "texto": "pintura renacentista"
+    }
+   ],
+   "muerte": {
+    "fecha": "18 de febrero de 1564",
+    "lugar": {
+     "qid": "Q220",
+     "texto": "Roma"
+    }
+   },
+   "nacimiento": {
+    "fecha": "6 de marzo de 1475",
+    "lugar": {
+     "qid": "Q52069",
+     "texto": "Caprese Michelangelo"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1281618",
+     "texto": "escultor"
+    },
+    {
+     "qid": "Q2079935",
+     "texto": "arquitecto técnico especializado en diseño técnico"
+    },
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q42973",
+     "texto": "arquitecto"
+    },
+    {
+     "qid": "Q49757",
+     "texto": "poeta"
+    }
+   ],
+   "qid": "Q5592",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T057716"
+    },
+    {
+     "obra": "Dizionario Biografico degli Italiani (Treccani)",
+     "pid": "P1986",
+     "url": "https://www.treccani.it/enciclopedia/michelangelo-buonarroti_(Dizionario-Biografico)"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118582143.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/55890"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00122309"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/dfbe65f6-9d4e-44f4-89f7-739512909435"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/michelangelo-buonarroti"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/michel-ange/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Michelangelo"
+    }
+   ]
+  },
+  "poussin": {
+   "commons": "Nicolas Poussin",
+   "enwiki": "Nicolas Poussin",
+   "eswiki": "Nicolas Poussin",
+   "etiqueta": "Nicolas Poussin",
+   "ids": {
+    "loc": "n80028152",
+    "ulan": "500005036",
+    "viaf": "24606800"
+   },
+   "movimientos": [
+    {
+     "qid": "Q170292",
+     "texto": "clasicismo"
+    }
+   ],
+   "muerte": {
+    "fecha": "19 de noviembre de 1665",
+    "lugar": {
+     "qid": "Q220",
+     "texto": "Roma"
+    }
+   },
+   "nacimiento": {
+    "fecha": "junio de 1594",
+    "lugar": {
+     "qid": "Q209770",
+     "texto": "Les Andelys"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q1925963",
+     "texto": "artista gráfico"
+    },
+    {
+     "qid": "Q2079935",
+     "texto": "arquitecto técnico especializado en diseño técnico"
+    },
+    {
+     "qid": "Q3391743",
+     "texto": "artista visual"
+    }
+   ],
+   "qid": "Q41554",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T069093"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118596047.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/64559"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00145293"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/06111dec-e411-4f3d-ad52-d8688bb21c24"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/poussin"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/nicolas-poussin/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Nicolas-Poussin"
+    }
+   ]
+  },
+  "rembrandt": {
+   "commons": "Rembrandt",
+   "enwiki": "Rembrandt",
+   "eswiki": "Rembrandt",
+   "etiqueta": "Rembrandt",
+   "ids": {
+    "loc": "n79142935",
+    "ulan": "500011051",
+    "viaf": "64013650"
+   },
+   "movimientos": [
+    {
+     "qid": "Q2352880",
+     "texto": "pintura del Siglo de oro neerlandés"
+    }
+   ],
+   "muerte": {
+    "fecha": "4 de octubre de 1669",
+    "lugar": {
+     "qid": "Q727",
+     "texto": "Ámsterdam"
+    }
+   },
+   "nacimiento": {
+    "fecha": "15 de julio de 1606",
+    "lugar": {
+     "qid": "Q43631",
+     "texto": "Leiden"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    },
+    {
+     "qid": "Q10732476",
+     "texto": "coleccionista de arte"
+    },
+    {
+     "qid": "Q10862983",
+     "texto": "aguafuertista"
+    }
+   ],
+   "qid": "Q5598",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T071362"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/11859964X.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/66219"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00150778"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/66e6b86d-6430-4dc6-b5fc-f8b88564c08b"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/harmenszoon-van-rijn-rembrandt"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/rembrandt/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Rembrandt-van-Rijn"
+    }
+   ]
+  },
+  "ribera": {
+   "commons": "José de Ribera",
+   "enwiki": "Jusepe de Ribera",
+   "eswiki": "José de Ribera",
+   "etiqueta": "José de Ribera",
+   "ids": {
+    "loc": "n82095006",
+    "ulan": "500008521",
+    "viaf": "83103470"
+   },
+   "movimientos": [
+    {
+     "qid": "Q37853",
+     "texto": "barroco"
+    }
+   ],
+   "muerte": {
+    "fecha": "3 de septiembre de 1652",
+    "lugar": {
+     "qid": "Q2634",
+     "texto": "Nápoles"
+    }
+   },
+   "nacimiento": {
+    "fecha": "12 de enero de 1591",
+    "lugar": {
+     "qid": "Q738013",
+     "texto": "Játiva"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    },
+    {
+     "qid": "Q1925963",
+     "texto": "artista gráfico"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    },
+    {
+     "qid": "Q2079935",
+     "texto": "arquitecto técnico especializado en diseño técnico"
+    }
+   ],
+   "qid": "Q297838",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T071858"
+    },
+    {
+     "obra": "Diccionario Biográfico Español (Real Academia de la Historia)",
+     "pid": "P4459",
+     "url": "https://dbe.rah.es/biografias/4189/jose-de-ribera"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118788604.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/66553"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00151925"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/37bb9553-eccf-459b-8d69-33a6f3cfd004"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/ribera-jusepe-de-detto-lo-spagnoletto"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Jose-de-Ribera"
+    }
+   ]
+  },
+  "rubens": {
+   "commons": "Peter Paul Rubens",
+   "enwiki": "Peter Paul Rubens",
+   "eswiki": "Pedro Pablo Rubens",
+   "etiqueta": "Pedro Pablo Rubens",
+   "ids": {
+    "loc": "n79055561",
+    "ulan": "500002921",
+    "viaf": "56647196"
+   },
+   "movimientos": [
+    {
+     "qid": "Q1994273",
+     "texto": "pintura barroca de Flandes"
+    },
+    {
+     "qid": "Q37853",
+     "texto": "barroco"
+    }
+   ],
+   "muerte": {
+    "fecha": "30 de mayo de 1640",
+    "lugar": {
+     "qid": "Q12892",
+     "texto": "Amberes"
+    }
+   },
+   "nacimiento": {
+    "fecha": "28 de junio de 1577",
+    "lugar": {
+     "qid": "Q3167",
+     "texto": "Siegen"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q193391",
+     "texto": "diplomático"
+    },
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q1925963",
+     "texto": "artista gráfico"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    },
+    {
+     "qid": "Q2079935",
+     "texto": "arquitecto técnico especializado en diseño técnico"
+    }
+   ],
+   "qid": "Q5599",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T074324"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/11860354X.html"
+    },
+    {
+     "obra": "Oxford Dictionary of National Biography",
+     "pid": "P1415",
+     "url": "https://www.oxforddnb.com/view/article/63010"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/68737"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00157426"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/099c7adf-d261-4e54-8a3b-7807500ca539"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/peter-paul-rubens"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/pierre-paul-rubens/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Peter-Paul-Rubens"
+    }
+   ]
+  },
+  "rubliov": {
+   "commons": "Andrej Rublëv",
+   "enwiki": "Andrei Rublev",
+   "eswiki": "Andréi Rubliov",
+   "etiqueta": "Andréi Rubliov",
+   "ids": {
+    "loc": "n82073069",
+    "ulan": "500001430",
+    "viaf": "229794719"
+   },
+   "movimientos": [],
+   "muerte": {
+    "fecha": "29 de enero de 1430",
+    "lugar": {
+     "qid": "Q1954245",
+     "texto": "Monasterio de Andrónikov"
+    }
+   },
+   "nacimiento": {
+    "fecha": "década de 1360",
+    "lugar": {
+     "qid": "Q170770",
+     "texto": "Principado de Moscú"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q4199058",
+     "texto": "iconógrafo"
+    },
+    {
+     "qid": "Q998628",
+     "texto": "iluminador"
+    },
+    {
+     "qid": "Q733786",
+     "texto": "monje"
+    }
+   ],
+   "qid": "Q838",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T074366"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/322466"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/andrej-rublev"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/andrei-roublev/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Saint-Andrey-Rublyov"
+    }
+   ]
+  },
+  "scorel": {
+   "commons": "Jan van Scorel",
+   "enwiki": "Jan van Scorel",
+   "eswiki": "Jan van Scorel",
+   "etiqueta": "Jan van Scorel",
+   "ids": {
+    "loc": "no90014288",
+    "ulan": "500029872",
+    "viaf": "59356315"
+   },
+   "movimientos": [],
+   "muerte": {
+    "fecha": "6 de diciembre de 1562",
+    "lugar": {
+     "qid": "Q803",
+     "texto": "Utrecht"
+    }
+   },
+   "nacimiento": {
+    "fecha": "1 de agosto de 1495",
+    "lugar": {
+     "qid": "Q1002717",
+     "texto": "Schoorl"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q42973",
+     "texto": "arquitecto"
+    },
+    {
+     "qid": "Q1925963",
+     "texto": "artista gráfico"
+    },
+    {
+     "qid": "Q3391743",
+     "texto": "artista visual"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    }
+   ],
+   "qid": "Q282708",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T077004"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/11923632X.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/71591"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00166464"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/e5468778-c85e-434c-8d0a-fe13aa660bda"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/jan-van-scorel"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/jan-van-scorel/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Jan-van-Scorel"
+    }
+   ]
+  },
+  "tiepolo_d": {
+   "commons": "Giovanni Domenico Tiepolo",
+   "enwiki": "Giovanni Domenico Tiepolo",
+   "eswiki": "Giovanni Domenico Tiepolo",
+   "etiqueta": "Giovanni Domenico Tiepolo",
+   "ids": {
+    "loc": "n80045042",
+    "ulan": "500025154",
+    "viaf": "46771018"
+   },
+   "movimientos": [],
+   "muerte": {
+    "fecha": "3 de marzo de 1804",
+    "lugar": {
+     "qid": "Q641",
+     "texto": "Venecia"
+    }
+   },
+   "nacimiento": {
+    "fecha": "30 de agosto de 1727",
+    "lugar": {
+     "qid": "Q641",
+     "texto": "Venecia"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    },
+    {
+     "qid": "Q1925963",
+     "texto": "artista gráfico"
+    },
+    {
+     "qid": "Q3391743",
+     "texto": "artista visual"
+    }
+   ],
+   "qid": "Q435316",
+   "referencias": [
+    {
+     "obra": "Dizionario Biografico degli Italiani (Treccani)",
+     "pid": "P1986",
+     "url": "https://www.treccani.it/enciclopedia/giandomenico-tiepolo_(Dizionario-Biografico)"
+    },
+    {
+     "obra": "Diccionario Biográfico Español (Real Academia de la Historia)",
+     "pid": "P4459",
+     "url": "https://dbe.rah.es/biografias/24355/giovanni-domenico-tiepolo"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118642820.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/77454"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00182842"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/fc70379e-56bd-4cc4-acaf-dfe46fbb52b2"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/giandomenico-tiepolo"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Giovanni-Domenico-Tiepolo"
+    }
+   ]
+  },
+  "tiepolo_g": {
+   "commons": "Giovanni Battista Tiepolo",
+   "enwiki": "Giovanni Battista Tiepolo",
+   "eswiki": "Giovanni Battista Tiepolo",
+   "etiqueta": "Giovanni Battista Tiepolo",
+   "ids": {
+    "loc": "n80045041",
+    "ulan": "500018523",
+    "viaf": "71399712"
+   },
+   "movimientos": [
+    {
+     "qid": "Q122960",
+     "texto": "Rococó"
+    },
+    {
+     "qid": "Q37853",
+     "texto": "barroco"
+    }
+   ],
+   "muerte": {
+    "fecha": "27 de marzo de 1770",
+    "lugar": {
+     "qid": "Q2807",
+     "texto": "Madrid"
+    }
+   },
+   "nacimiento": {
+    "fecha": "5 de marzo de 1696",
+    "lugar": {
+     "qid": "Q641",
+     "texto": "Venecia"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q22669155",
+     "texto": "pintor al fresco"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    },
+    {
+     "qid": "Q2079935",
+     "texto": "arquitecto técnico especializado en diseño técnico"
+    },
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q1925963",
+     "texto": "artista gráfico"
+    }
+   ],
+   "qid": "Q186202",
+   "referencias": [
+    {
+     "obra": "Dizionario Biografico degli Italiani (Treccani)",
+     "pid": "P1986",
+     "url": "https://www.treccani.it/enciclopedia/giambattista-tiepolo_(Dizionario-Biografico)"
+    },
+    {
+     "obra": "Diccionario Biográfico Español (Real Academia de la Historia)",
+     "pid": "P4459",
+     "url": "https://dbe.rah.es/biografias/17147/giovanni-batistta-tiepolo"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118622625.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/77453"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00182841"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/bd9f7dfa-2508-4fd3-bda5-e53e2ec6406d"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/giambattista-tiepolo"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Giovanni-Battista-Tiepolo"
+    }
+   ]
+  },
+  "tiziano": {
+   "commons": "Titian",
+   "enwiki": "Titian",
+   "eswiki": "Tiziano",
+   "etiqueta": "Tiziano",
+   "ids": {
+    "loc": "n79074519",
+    "ulan": "500031075",
+    "viaf": "109266837"
+   },
+   "movimientos": [
+    {
+     "qid": "Q610687",
+     "texto": "escuela veneciana"
+    },
+    {
+     "qid": "Q1474884",
+     "texto": "Alto Renacimiento"
+    }
+   ],
+   "muerte": {
+    "fecha": "27 de agosto de 1576",
+    "lugar": {
+     "qid": "Q641",
+     "texto": "Venecia"
+    }
+   },
+   "nacimiento": {
+    "fecha": "c. 1490",
+    "lugar": {
+     "qid": "Q41065",
+     "texto": "Pieve di Cadore"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    },
+    {
+     "qid": "Q2079935",
+     "texto": "arquitecto técnico especializado en diseño técnico"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    },
+    {
+     "qid": "Q3391743",
+     "texto": "artista visual"
+    }
+   ],
+   "qid": "Q47551",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T085242"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118622994.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/77655"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00183273"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/d5a82a70-aa3f-4355-b733-97c04d9690ab"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/tiziano-vecellio"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/titien/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Titian"
+    }
+   ]
+  },
+  "turner": {
+   "commons": "Joseph Mallord William Turner",
+   "enwiki": "J. M. W. Turner",
+   "eswiki": "J. M. W. Turner",
+   "etiqueta": "Joseph Mallord William Turner",
+   "ids": {
+    "loc": "n79060712",
+    "ulan": "500026846",
+    "viaf": "100900492"
+   },
+   "movimientos": [
+    {
+     "qid": "Q37068",
+     "texto": "Romanticismo"
+    },
+    {
+     "qid": "Q107424419",
+     "texto": "Escuela inglesa de pintura"
+    }
+   ],
+   "muerte": {
+    "fecha": "19 de diciembre de 1851",
+    "lugar": {
+     "qid": "Q5094624",
+     "texto": "Cheyne Walk"
+    }
+   },
+   "nacimiento": {
+    "fecha": "c. 23 de abril de 1775",
+    "lugar": {
+     "qid": "Q23041988",
+     "texto": "Maiden Lane"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q21600439",
+     "texto": "pintor de paisajes"
+    },
+    {
+     "qid": "Q15296811",
+     "texto": "dibujante"
+    },
+    {
+     "qid": "Q11569986",
+     "texto": "grabador"
+    },
+    {
+     "qid": "Q2079935",
+     "texto": "arquitecto técnico especializado en diseño técnico"
+    }
+   ],
+   "qid": "Q159758",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T086656"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/11862475X.html"
+    },
+    {
+     "obra": "Oxford Dictionary of National Biography",
+     "pid": "P1415",
+     "url": "https://www.oxforddnb.com/view/article/27854"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/78519"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00186304"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/william-turner"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/joseph-mallord-william-turner/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/J-M-W-Turner"
+    }
+   ]
+  },
+  "van_dyck": {
+   "commons": "Anthony van Dyck",
+   "enwiki": "Anthony van Dyck",
+   "eswiki": "Anton van Dyck",
+   "etiqueta": "Anton van Dyck",
+   "ids": {
+    "loc": "n50070302",
+    "ulan": "500115190",
+    "viaf": "17231738"
+   },
+   "movimientos": [
+    {
+     "qid": "Q808561",
+     "texto": "pintura del Barroco"
+    }
+   ],
+   "muerte": {
+    "fecha": "9 de diciembre de 1641",
+    "lugar": {
+     "qid": "Q880829",
+     "texto": "Blackfriars"
+    }
+   },
+   "nacimiento": {
+    "fecha": "22 de marzo de 1599",
+    "lugar": {
+     "qid": "Q12892",
+     "texto": "Amberes"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q10862983",
+     "texto": "aguafuertista"
+    },
+    {
+     "qid": "Q487596",
+     "texto": "dramaturgo"
+    },
+    {
+     "qid": "Q3387717",
+     "texto": "director de escena"
+    },
+    {
+     "qid": "Q333634",
+     "texto": "traductor"
+    }
+   ],
+   "qid": "Q150679",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T024345"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118528386.html"
+    },
+    {
+     "obra": "Oxford Dictionary of National Biography",
+     "pid": "P1415",
+     "url": "https://www.oxforddnb.com/view/article/28081"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/25230"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00056870"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/9c576ae4-8b53-4507-8f13-8e65f0e4cf40"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/antoon-van-dyck"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/antoine-van-dyck/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Anthony-Van-Dyck"
+    }
+   ]
+  },
+  "velazquez": {
+   "commons": "Diego Velázquez",
+   "enwiki": "Diego Velázquez",
+   "eswiki": "Diego Velázquez",
+   "etiqueta": "Diego Velázquez",
+   "ids": {
+    "loc": "n79063457",
+    "ulan": "500016881",
+    "viaf": "76324831"
+   },
+   "movimientos": [
+    {
+     "qid": "Q37853",
+     "texto": "barroco"
+    }
+   ],
+   "muerte": {
+    "fecha": "6 de agosto de 1660",
+    "lugar": {
+     "qid": "Q2807",
+     "texto": "Madrid"
+    }
+   },
+   "nacimiento": {
+    "fecha": "1599",
+    "lugar": {
+     "qid": "Q8717",
+     "texto": "Sevilla"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q483501",
+     "texto": "artista"
+    },
+    {
+     "qid": "Q3391743",
+     "texto": "artista visual"
+    }
+   ],
+   "qid": "Q297",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T088463"
+    },
+    {
+     "obra": "Diccionario Biográfico Español (Real Academia de la Historia)",
+     "pid": "P4459",
+     "url": "https://dbe.rah.es/biografias/5114/diego-rodriguez-de-silva-y-velazquez"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118626426.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/79750"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00189236"
+    },
+    {
+     "obra": "Enciclopedia del Museo del Prado",
+     "pid": "P5321",
+     "url": "https://www.museodelprado.es/coleccion/artista/wd/434337e9-77e4-4597-a962-ef47304d930d"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/diego-rodriguez-de-silva-y-velazquez"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/velazquez-diego-1599-1660/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Diego-Velazquez"
+    }
+   ]
+  },
+  "vernet": {
+   "commons": "Carle Vernet",
+   "enwiki": "Carle Vernet",
+   "eswiki": "Carle Vernet",
+   "etiqueta": "Carle Vernet",
+   "ids": {
+    "loc": "n87151336",
+    "ulan": "500011057",
+    "viaf": "36925590"
+   },
+   "movimientos": [],
+   "muerte": {
+    "fecha": "27 de noviembre de 1836",
+    "lugar": {
+     "qid": "Q90",
+     "texto": "París"
+    }
+   },
+   "nacimiento": {
+    "fecha": "14 de agosto de 1758",
+    "lugar": {
+     "qid": "Q1479",
+     "texto": "Burdeos"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q16947657",
+     "texto": "litógrafo"
+    },
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q1925963",
+     "texto": "artista gráfico"
+    },
+    {
+     "qid": "Q3391743",
+     "texto": "artista visual"
+    }
+   ],
+   "qid": "Q585852",
+   "referencias": [
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118804235.html"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/80559"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00190160"
+    },
+    {
+     "obra": "Encyclopædia Universalis",
+     "pid": "P3219",
+     "url": "https://www.universalis.fr/encyclopedie/vernet-antoine-charles-horace-dit-carle/"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Carle-Vernet"
+    }
+   ]
+  },
+  "villalpando": {
+   "commons": "Cristóbal de Villalpando",
+   "enwiki": "Cristóbal de Villalpando",
+   "eswiki": "Cristóbal de Villalpando",
+   "etiqueta": "Cristóbal de Villalpando",
+   "ids": {
+    "loc": "n98018028",
+    "ulan": "500013182",
+    "viaf": "50072029"
+   },
+   "movimientos": [],
+   "muerte": {
+    "fecha": "20 de agosto de 1714",
+    "lugar": {
+     "qid": "Q1489",
+     "texto": "Ciudad de México"
+    }
+   },
+   "nacimiento": {
+    "fecha": "c. 1669",
+    "lugar": {
+     "qid": "Q1489",
+     "texto": "Ciudad de México"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    }
+   ],
+   "qid": "Q674866",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T089631"
+    },
+    {
+     "obra": "Diccionario Biográfico Español (Real Academia de la Historia)",
+     "pid": "P4459",
+     "url": "https://dbe.rah.es/biografias/17067/cristobal-villalpando-de-los-reyes"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/81042"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00191158"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/Cristobal-de-Villalpando"
+    }
+   ]
+  },
+  "watts": {
+   "commons": "George Frederic Watts",
+   "enwiki": "George Frederic Watts",
+   "eswiki": "George Frederick Watts",
+   "etiqueta": "George Frederick Watts",
+   "ids": {
+    "loc": "n50043705",
+    "ulan": "500026988",
+    "viaf": "10095477"
+   },
+   "movimientos": [
+    {
+     "qid": "Q189458",
+     "texto": "academicismo"
+    },
+    {
+     "qid": "Q164800",
+     "texto": "simbolismo"
+    }
+   ],
+   "muerte": {
+    "fecha": "1 de julio de 1904",
+    "lugar": {
+     "qid": "Q5157132",
+     "texto": "Compton"
+    }
+   },
+   "nacimiento": {
+    "fecha": "23 de febrero de 1817",
+    "lugar": {
+     "qid": "Q84",
+     "texto": "Londres"
+    }
+   },
+   "ocupaciones": [
+    {
+     "qid": "Q1028181",
+     "texto": "pintor"
+    },
+    {
+     "qid": "Q1281618",
+     "texto": "escultor"
+    }
+   ],
+   "qid": "Q183245",
+   "referencias": [
+    {
+     "obra": "Grove Art Online (Oxford)",
+     "pid": "P8406",
+     "url": "https://doi.org/10.1093/gao/9781884446054.article.T090866"
+    },
+    {
+     "obra": "Deutsche Biographie (NDB/ADB)",
+     "pid": "P7902",
+     "url": "https://www.deutsche-biographie.de/118806351.html"
+    },
+    {
+     "obra": "Oxford Dictionary of National Biography",
+     "pid": "P1415",
+     "url": "https://www.oxforddnb.com/view/article/36781"
+    },
+    {
+     "obra": "RKD, Instituto Neerlandés de Historia del Arte",
+     "pid": "P650",
+     "url": "https://rkd.nl/artists/83078"
+    },
+    {
+     "obra": "Benezit Dictionary of Artists (Oxford)",
+     "pid": "P2843",
+     "url": "https://doi.org/10.1093/benz/9780199773787.article.B00194974"
+    },
+    {
+     "obra": "Enciclopedia Treccani",
+     "pid": "P3365",
+     "url": "https://www.treccani.it/enciclopedia/george-frederick-watts"
+    },
+    {
+     "obra": "Encyclopædia Britannica",
+     "pid": "P1417",
+     "url": "https://www.britannica.com/biography/George-Frederick-Watts"
+    }
+   ]
+  }
+ },
+ "consultado": "2026-09-28"
+}

@@ -1,0 +1,1315 @@
+{
+ "autores": {
+  "behzad": {
+   "clasificaciones": [
+    "calligraphers",
+    "artists (visual artists)",
+    "illustrators",
+    "painters (artists)",
+    "Iranian",
+    "Persian (culture)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1536,
+    "hasta": 1536,
+    "lugar": null
+   },
+   "muerte_texto": "1536",
+   "nacimiento": {
+    "desde": 1445,
+    "hasta": 1445,
+    "lugar": "Tabrīz"
+   },
+   "nacimiento_texto": "1445",
+   "nombre": "Bihzad",
+   "nota": "Bihzad is often considered the most famous figure in Iranian painting. Khwandamir praised Bihzad in his book, Habib al-siyar (Beloved of careers, 1524) for his style that is firmly based on linear precision and compositional balance. Before moving to the Safavid court in Tabrīz, he may have worked for Muhammad Shaybani (reigned 1500-1510) from 1507 to 1510. Bihzad may also have been the head of the royal manuscript workshop during the rule of Ismail I (reigned 1501-1524). Reliable evidence also suggests that Bihzad was the court painter of Tahmasp (reigned 1524-1576). Well-known Safavid authors, Dust Muhammad, Qazi Ahmad, and Iskandar Munshi confirm this in various texts. Only four illustrations in a copy of Sa'di's Bustan (Orchard), produced for the library of Husayn Bayqara, are widely accepted as his work. Two major paintings attributed to him are Roundel Depicting A Youth (ca. 1524) and a Folio in Gulistan Palace, Tehrān. ",
+   "ulan": "500116616",
+   "url": "https://vocab.getty.edu/page/ulan/500116616"
+  },
+  "bellini": {
+   "clasificaciones": [
+    "miniature painters",
+    "architects",
+    "artists (visual artists)",
+    "designers",
+    "draftsmen (artists)",
+    "history artists",
+    "painters (artists)",
+    "Venetian (Republic, culture or style)",
+    "Italian (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1516,
+    "hasta": 1516,
+    "lugar": "Venezia"
+   },
+   "muerte_texto": "1516",
+   "nacimiento": {
+    "desde": 1431,
+    "hasta": 1431,
+    "lugar": "Venezia"
+   },
+   "nacimiento_texto": "1431",
+   "nombre": "Bellini, Giovanni",
+   "nota": "Giovanni was a leading master in 15th-century Venice. He expanded his workshop after ca. 1490, training and influencing his numerous shop-hands, imitators (generically known as Belliniani), and several major Venetian painters of the next generation. Giovanni absorbed a wide range of artistic influences, both from within the Venetian tradition and from outside. He inspired a technical revolution in the art of painting, gradually abandoning the traditional Italian medium, egg tempera, to instead use the technique of oil painting that had been pioneered in the Netherlands. Italian painter. Comment on works: Religious; portraits",
+   "ulan": "500019244",
+   "url": "https://vocab.getty.edu/page/ulan/500019244"
+  },
+  "blake": {
+   "clasificaciones": [
+    "miniature painters",
+    "artists (visual artists)",
+    "writers (clerical workers)",
+    "engravers (printmakers)",
+    "philosophers",
+    "poets",
+    "watercolorists",
+    "draftsmen (artists)",
+    "illustrators",
+    "painters (artists)",
+    "printmakers",
+    "English (culture or style)",
+    "British (modern)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1827,
+    "hasta": 1827,
+    "lugar": "London"
+   },
+   "muerte_texto": "1827",
+   "nacimiento": {
+    "desde": 1757,
+    "hasta": 1757,
+    "lugar": "London"
+   },
+   "nacimiento_texto": "1757",
+   "nombre": "Blake, William",
+   "nota": "English poet and printmaker who became one of leading figures of what would later be called Romanticism. His most original work is to be found in his hand-printed books of prophecy and personal mythology, done by a process he called \"illuminated printing.\" Blake was largely forgotten until Rossetti and other Pre-Raphaelites hailed his work as visionary, and by the 20th century his ideas were seen as blueprints for the counterculture ideas of the 1960s. His wife Catherine assisted him in hand-coloring his illuminated prints.",
+   "ulan": "500012489",
+   "url": "https://vocab.getty.edu/page/ulan/500012489"
+  },
+  "bosco": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "draftsmen (artists)",
+    "history artists",
+    "painters (artists)",
+    "Dutch (culture or style)",
+    "North Netherlandish",
+    "Netherlandish",
+    "South Netherlandish",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1516,
+    "hasta": 1516,
+    "lugar": null
+   },
+   "muerte_texto": "1516",
+   "nacimiento": {
+    "desde": 1440,
+    "hasta": 1440,
+    "lugar": null
+   },
+   "nacimiento_texto": "1440",
+   "nombre": "Bosch, Hieronymus",
+   "nota": "Considered the most distinctive and idiosyncratic of 15th-century Netherlandish artists, he produced a body of work remarkable for its depiction of fantastic, often diabolic, creatures, generally moralizing representations of the consequences of sin and folly. He was the first European artist to give free rein to almost uncontrolled association, formal inventivity, and free choice of ideas. Comment on works: Allegory",
+   "ulan": "500000759",
+   "url": "https://vocab.getty.edu/page/ulan/500000759"
+  },
+  "bouguereau": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "watercolorists",
+    "genre artists",
+    "draftsmen (artists)",
+    "painters (artists)",
+    "French (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1905,
+    "hasta": 1905,
+    "lugar": "La Rochelle"
+   },
+   "muerte_texto": "1905",
+   "nacimiento": {
+    "desde": 1825,
+    "hasta": 1825,
+    "lugar": "La Rochelle"
+   },
+   "nacimiento_texto": "1825",
+   "nombre": "Bouguereau, William-Adolphe",
+   "nota": "Comment on works: Mythology",
+   "ulan": "500011205",
+   "url": "https://vocab.getty.edu/page/ulan/500011205"
+  },
+  "breu": {
+   "clasificaciones": [
+    "miniature painters",
+    "artists (visual artists)",
+    "draftsmen (artists)",
+    "painters (artists)",
+    "German (culture, style, period)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1547,
+    "hasta": 1547,
+    "lugar": null
+   },
+   "muerte_texto": "1547",
+   "nacimiento": {
+    "desde": 1500,
+    "hasta": 1500,
+    "lugar": "Augsburg"
+   },
+   "nacimiento_texto": "1500",
+   "nombre": "Breu, Jörg, the younger",
+   "nota": null,
+   "ulan": "500025707",
+   "url": "https://vocab.getty.edu/page/ulan/500025707"
+  },
+  "bruegel": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "engravers (printmakers)",
+    "draftsmen (artists)",
+    "painters (artists)",
+    "printmakers",
+    "Dutch (culture or style)",
+    "Belgian (modern)",
+    "Flemish (culture or style)",
+    "Netherlandish",
+    "South Netherlandish",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1569,
+    "hasta": 1569,
+    "lugar": "Bruxelles"
+   },
+   "muerte_texto": "1569",
+   "nacimiento": {
+    "desde": 1515,
+    "hasta": 1515,
+    "lugar": "Breda"
+   },
+   "nacimiento_texto": "1515",
+   "nombre": "Bruegel, Pieter, I",
+   "nota": "Possibly born in Breda and likely trained by Pieter Coecke van Aelst. Bruegel is considered one of the greatest artists in 16th-century northern Europe. His work, mainly landscapes, scenes of peasant life and allegory, is a blend of religion, folklore, and humanism. The influence of his work was widespread and long-lasting. Comment on works: Landscapes; Genre; Religious",
+   "ulan": "500013247",
+   "url": "https://vocab.getty.edu/page/ulan/500013247"
+  },
+  "caravaggio": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "engravers (printmakers)",
+    "genre artists",
+    "painters (artists)",
+    "Italian (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1610,
+    "hasta": 1610,
+    "lugar": "Port'Ercole"
+   },
+   "muerte_texto": "1610",
+   "nacimiento": {
+    "desde": 1571,
+    "hasta": 1571,
+    "lugar": "Caravaggio"
+   },
+   "nacimiento_texto": "1571",
+   "nombre": "Caravaggio, Michelangelo Merisi da",
+   "nota": "An extremely original and influential artist, known for his decorum-defying naturalism, tenebrism, and method of painting 'alla prima.' His naturalism is dervied from Flemish art mediated through 16th-century Veneto-Lombard painting. This naturalism may have influenced his decision to paint in oil in a narrow range of earth colors. He is called 'Caravaggio' after his birthplace near Milan. After an apprenticeship with Simone Peterzano, he moved to Rome circa 1588. His early secular works typically consist of half-length, often androgynous, figures set in a shallow space, typically with prominent, illusionistic still-life elements (he worked in the workshop of the Roman artist Giuseppe Cesari as a fruit and flower specialist). These paintings are often considered homoerotic and may embody poetical, allegorical, or emblematic conceits. Caravaggio had a number of high-ranking ecclesiastical patrons including Cardinal del Monte, who gave him his first monumental commission for the Contarelli chapel in S. Luigi dei Francesi. These paintings (\"Calling of St. Matthew,\" \"Martyrdom of St. Matthew,\" St. Matthew Writing his Gospel\" (1599-1600) contain Caravaggio's earliest use of the tenebrism for which he is very well-known. The strong contrasts in light and dark are in keeping with the actual restricted light of the chapel and emphasize the spiritual significance of the painted scenes. Another important commission was for the controversial monumental paintings \"Martyrdom of St. Peter\" and \"Conversion of St. Paul\" (1600-01) for the Cerasi chapel in Sta Maria del Popolo. After these commissions, which depicted traditional subject matter in completely new ways, he almost exclusively painted large-scale religious pictures, for which he received many commissions. His turbulent life often led to scandal and in 1606 he fled Rome after killing his opponent in a brawl over a wager on a game of tennis. Wounded, he fled to Naples where he resumed painting monumental devotional works. He went to Malta in 1608 where he joined the Order of St. John; this was short-lived, however, and he was imprisoned after quarreling with a superior. After escaping and spending time in Sicily and again in Naples, he died of malarial fever while returning to Rome in hope of a pardon. His late religious paintings are in a new style in which all inessential elements are removed and the crowded drama and energy of his earlier paintings are replaced by a sense of quiet and contemplation. He had no pupils but he had a plethora of followers (the 'Caravaggisti').  Comment on works: Genre; Religious",
+   "ulan": "500115312",
+   "url": "https://vocab.getty.edu/page/ulan/500115312"
+  },
+  "cole": {
+   "clasificaciones": [
+    "authors",
+    "artists (visual artists)",
+    "engravers (printmakers)",
+    "poets",
+    "landscapists",
+    "illustrators",
+    "painters (artists)",
+    "American (North American)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1848,
+    "hasta": 1848,
+    "lugar": "Catskill"
+   },
+   "muerte_texto": "1848",
+   "nacimiento": {
+    "desde": 1801,
+    "hasta": 1801,
+    "lugar": "Lancashire"
+   },
+   "nacimiento_texto": "1801",
+   "nombre": "Cole, Thomas",
+   "nota": "American painter. Comment on works: Landscapes, allegory",
+   "ulan": "500028323",
+   "url": "https://vocab.getty.edu/page/ulan/500028323"
+  },
+  "cormon": {
+   "clasificaciones": [
+    "history painters",
+    "artists (visual artists)",
+    "teachers",
+    "muralists (painters)",
+    "religious artists",
+    "painters (artists)",
+    "Parisian",
+    "French (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1924,
+    "hasta": 1924,
+    "lugar": "Paris"
+   },
+   "muerte_texto": "1924",
+   "nacimiento": {
+    "desde": 1845,
+    "hasta": 1845,
+    "lugar": "Paris"
+   },
+   "nacimiento_texto": "1845",
+   "nombre": "Cormon, Fernand",
+   "nota": "Cormon was best known as a painter of historical and religious subjects in academic style, although he also produced some portraits. Comment on works: muralist",
+   "ulan": "500115385",
+   "url": "https://vocab.getty.edu/page/ulan/500115385"
+  },
+  "corot": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "lithographers",
+    "draftsmen (artists)",
+    "landscapists",
+    "graphic artists",
+    "painters (artists)",
+    "photographers",
+    "printmakers",
+    "French (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1875,
+    "hasta": 1875,
+    "lugar": "Paris"
+   },
+   "muerte_texto": "1875",
+   "nacimiento": {
+    "desde": 1796,
+    "hasta": 1796,
+    "lugar": "Paris"
+   },
+   "nacimiento_texto": "1796",
+   "nombre": "Corot, Jean-Baptiste-Camille",
+   "nota": "Corot is primarily noted for his landscapes, which inspired and in some ways anticipated the landscape painting of the Impressionists. His oil sketches, remarkable for their technical freedom and clear color, have come to be as highly regarded as the finished pictures. French painter and draftsman. Comment on works: Landscapes",
+   "ulan": "500115390",
+   "url": "https://vocab.getty.edu/page/ulan/500115390"
+  },
+  "cranach": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "designers",
+    "court painters",
+    "engravers (printmakers)",
+    "woodcutters (printmakers)",
+    "draftsmen (artists)",
+    "portraitists",
+    "painters (artists)",
+    "printmakers",
+    "German (culture, style, period)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1553,
+    "hasta": 1553,
+    "lugar": "Weimar"
+   },
+   "muerte_texto": "1553",
+   "nacimiento": {
+    "desde": 1472,
+    "hasta": 1472,
+    "lugar": "Kronach"
+   },
+   "nacimiento_texto": "1472",
+   "nombre": "Cranach, Lucas, the elder",
+   "nota": "He is best known for influential scenes with landscapes incorporating remarkable effects of distance and atmosphere and for his popular woodcuts. No work is clearly identified by Lucas the elder before he went to Vienna at age 30; he may be the creator of earlier works currently attributed to various anonymous masters. He is sometimes mistakenly associated with the surname of \"Sunder\" or \"Sonder,\" the family with this name being related to Lucas Cranach through marriage and also having come from the town of Kronach.",
+   "ulan": "500115364",
+   "url": "https://vocab.getty.edu/page/ulan/500115364"
+  },
+  "danby": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "draftsmen (artists)",
+    "painters (artists)",
+    "English (culture or style)",
+    "British (modern)",
+    "Irish",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1861,
+    "hasta": 1861,
+    "lugar": null
+   },
+   "muerte_texto": "1861",
+   "nacimiento": {
+    "desde": 1793,
+    "hasta": 1793,
+    "lugar": null
+   },
+   "nacimiento_texto": "1793",
+   "nombre": "Danby, Francis",
+   "nota": "Comment on works: history, genre, Landscapes",
+   "ulan": "500024662",
+   "url": "https://vocab.getty.edu/page/ulan/500024662"
+  },
+  "david": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "draftsmen (artists)",
+    "portraitists",
+    "painters (artists)",
+    "owners",
+    "Parisian",
+    "French (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1825,
+    "hasta": 1825,
+    "lugar": "Bruxelles"
+   },
+   "muerte_texto": "1825",
+   "nacimiento": {
+    "desde": 1748,
+    "hasta": 1748,
+    "lugar": "Paris"
+   },
+   "nacimiento_texto": "1748",
+   "nombre": "David, Jacques-Louis",
+   "nota": "David was considered the most influential painter of the Neoclassical movement in France, characterized by a style of austere and ethical painting that reflects the moral climate of the last years of the ancien régime. He became an active revolutionary and worked for the new French Republic. He was then attracted to Napoleon I and developed an Empire style marked by warm Venetian color. Following the restoration of the Bourbon monarchy in 1816, David went into exile in Brussels. He had a large number of pupils, and his influence was felt  by the majority of French 19th-century painters. His compositional innovations were a break with the existing Rococo fantasy. Comment on works: Portraits: History.",
+   "ulan": "500115221",
+   "url": "https://vocab.getty.edu/page/ulan/500115221"
+  },
+  "delacroix": {
+   "clasificaciones": [
+    "authors",
+    "decorative painters",
+    "artists (visual artists)",
+    "lithographers",
+    "muralists (painters)",
+    "watercolorists",
+    "genre artists",
+    "draftsmen (artists)",
+    "graphic artists",
+    "painters (artists)",
+    "pastelists",
+    "photographers",
+    "owners",
+    "Parisian",
+    "French (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1863,
+    "hasta": 1863,
+    "lugar": "Paris"
+   },
+   "muerte_texto": "1863",
+   "nacimiento": {
+    "desde": 1798,
+    "hasta": 1798,
+    "lugar": "Saint-Maurice"
+   },
+   "nacimiento_texto": "1798",
+   "nombre": "Delacroix, Eugène",
+   "nota": "Delacroix was one of the most innovative and successful painters of the first half of the 19th century. He is known as  the last great history painter and his art is the ideal of Romanticism in the visual arts. Delacroix's career is marked by the paradox between the revolutionary and the conventional. He was in conflict with the artist Ingres and was seen as the leading figure of the French Romantic movement; he was famed for undermining the tradition of painting established by David, yet he benefited from official patronage from the beginning of the Restoration (1814-1830) until the Second Empire (1852-1870). French painter. Comment on works: history, genre",
+   "ulan": "500115509",
+   "url": "https://vocab.getty.edu/page/ulan/500115509"
+  },
+  "dore": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "watercolorists",
+    "draftsmen (artists)",
+    "landscapists",
+    "illustrators",
+    "painters (artists)",
+    "printmakers",
+    "sculptors",
+    "Austrian",
+    "French (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1883,
+    "hasta": 1883,
+    "lugar": "Paris"
+   },
+   "muerte_texto": "1883",
+   "nacimiento": {
+    "desde": 1832,
+    "hasta": 1832,
+    "lugar": "Strasbourg"
+   },
+   "nacimiento_texto": "1832",
+   "nombre": "Doré, Gustave",
+   "nota": "French illustrator, painter and sculptor, best known for his illustrations of epic literature, such as those by Dante, Cervantes, Hugo, and Milton, as well as contemporary texts, such as those by Balzac. In 1872, he began to record the conditions of London slums. These engravings are rich in dramatic detail and show a harsh and nightmarish world. His work influenced that of Van Gough and later, the Symbolists. French artist. Comment on works: genre, Portraits",
+   "ulan": "500013657",
+   "url": "https://vocab.getty.edu/page/ulan/500013657"
+  },
+  "durero": {
+   "clasificaciones": [
+    "authors",
+    "artists (visual artists)",
+    "designers",
+    "art theorists",
+    "engravers (printmakers)",
+    "mathematicians",
+    "woodcutters (printmakers)",
+    "draftsmen (artists)",
+    "jewelers",
+    "illustrators",
+    "portraitists",
+    "religious artists",
+    "painters (artists)",
+    "printmakers",
+    "theorists",
+    "Bavarian (culture or style)",
+    "Austrian",
+    "German (culture, style, period)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1528,
+    "hasta": 1528,
+    "lugar": "Nürnberg"
+   },
+   "muerte_texto": "1528",
+   "nacimiento": {
+    "desde": 1471,
+    "hasta": 1471,
+    "lugar": "Nürnberg"
+   },
+   "nacimiento_texto": "1471",
+   "nombre": "Dürer, Albrecht",
+   "nota": "The son of a Nuremburg goldsmith of the same name, Albrecht Dürer was a prolific, popular, and widely influential artist. He studied in Venice and brought Italianate painting styles and forms to Germany. He is perhaps best known for having made great advancements in the techniques and art of printmaking.",
+   "ulan": "500115493",
+   "url": "https://vocab.getty.edu/page/ulan/500115493"
+  },
+  "eufronio": {
+   "clasificaciones": [
+    "potters",
+    "artists (visual artists)",
+    "vase painters",
+    "Athenian",
+    "Ancient Greek (culture or style)",
+    "Attic (culture)",
+    "Greek (modern)",
+    "male"
+   ],
+   "muerte": {
+    "desde": -440,
+    "hasta": -440,
+    "lugar": null
+   },
+   "muerte_texto": "440 a.C.",
+   "nacimiento": {
+    "desde": -540,
+    "hasta": -540,
+    "lugar": null
+   },
+   "nacimiento_texto": "540 a.C.",
+   "nombre": "Euphronios",
+   "nota": "Euphronios was a vase painter and potter working in the red-figure technique in Athens from about 520 to 470 BCE. He signed his name on eighteen vases, six times as painter and twelve times as potter. To judge by their drawing style, the vases that he signed as potter seem to be later than those he signed as painter. In his early career Euphronios was one of a group of Athenian vase painters who have been dubbed 'the Pioneers' by modern scholars. Working ca. 520 to 500 BCE, they were the first to exploit the possibilities of drawing in the new red-figure technique. Like his colleagues, Euphronios was interested in showing the human body in a variety of poses, and he used overlapping and foreshortening to give his scenes a sense of depth. On their vases, the Pioneers often depicted one another and even exchanged playful insults about each other. Later in his career, Euphronios's signature as potter appeared alongside the names of several of the finest vase painters of this period, including Douris, Makron, and Onesimos. The precise details surrounding Euphronios's later role as potter are unclear. Perhaps as he got older and his eyesight failed, he switched to the more tactile, less visual craft of potting a vase. Or the potter signature may mean that Euphronios actually owned the workshop, a sign of his prosperity and success in the industry. ",
+   "ulan": "500116286",
+   "url": "https://vocab.getty.edu/page/ulan/500116286"
+  },
+  "exekias": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "vase painters",
+    "Athenian",
+    "Ancient Greek (culture or style)",
+    "Greek (modern)",
+    "male"
+   ],
+   "muerte": {
+    "desde": -500,
+    "hasta": -500,
+    "lugar": null
+   },
+   "muerte_texto": "500 a.C.",
+   "nacimiento": {
+    "desde": -560,
+    "hasta": -560,
+    "lugar": null
+   },
+   "nacimiento_texto": "560 a.C.",
+   "nombre": "Exekias",
+   "nota": "Exekias worked as a potter and vase painter in the black-figure technique in Athens from about 540 to 520 BCE. He began his career as a potter for a workshop of vase painters who are collectively known as Group E. At some point, he separated from Group E and began to decorate vases as well as potting them. Exekias was a remarkably innovative artist, and his work as both a potter and painter made him especially sensitive to the relationship between a vase's form and its decoration. As a potter, he appears to have invented new shapes and redesigned old ones. As a painter, his work was incredibly detailed and took advantage of the engraving-like quality of the black-figure technique. Scholars admire the dignity and solemnity of Exekias's figures and the new ways in which he depicted standard Greek myths. Rather than showing the action of the story, as was the usual habit of artists at this time, Exekias chose to depict the moment before or after the action, introducing a new emphasis on the psychology of a scene. He also may have invented a new vase painting technique called coral red, in which parts of the vase intentionally turn red during firing, rather than the usual black. ",
+   "ulan": "500027430",
+   "url": "https://vocab.getty.edu/page/ulan/500027430"
+  },
+  "gauguin": {
+   "clasificaciones": [
+    "authors",
+    "artists (visual artists)",
+    "ceramicists",
+    "watercolorists",
+    "history artists",
+    "graphic artists",
+    "illustrators",
+    "painters (artists)",
+    "pastelists",
+    "printmakers",
+    "sculptors",
+    "French (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1903,
+    "hasta": 1903,
+    "lugar": "Atuona"
+   },
+   "muerte_texto": "1903",
+   "nacimiento": {
+    "desde": 1848,
+    "hasta": 1848,
+    "lugar": "Paris"
+   },
+   "nacimiento_texto": "1848",
+   "nombre": "Gauguin, Paul",
+   "nota": "He was one of the leading French painters of the Postimpressionist period. He is noted for his imaginative subjects and expressive use of color, in attempts to capture a more primitive emotion in his works. He professed an appreciation of exotic peoples, whom he believed to be innocent of modern civilization's woes.",
+   "ulan": "500011421",
+   "url": "https://vocab.getty.edu/page/ulan/500011421"
+  },
+  "hamilton": {
+   "clasificaciones": [
+    "miniature painters",
+    "art collectors",
+    "archaeologists",
+    "art dealers",
+    "artists (visual artists)",
+    "antiquaries",
+    "muralists (painters)",
+    "dealers",
+    "portraitists",
+    "painters (artists)",
+    "pastelists",
+    "owners",
+    "Scottish",
+    "British (modern)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1798,
+    "hasta": 1798,
+    "lugar": "Roma"
+   },
+   "muerte_texto": "1798",
+   "nacimiento": {
+    "desde": 1723,
+    "hasta": 1723,
+    "lugar": "Scotland"
+   },
+   "nacimiento_texto": "1723",
+   "nombre": "Hamilton, Gavin",
+   "nota": "Born in Murdieston, Lothian. Scottish painter; act. in Rome. Comment on works: History; Portraits",
+   "ulan": "500115642",
+   "url": "https://vocab.getty.edu/page/ulan/500115642"
+  },
+  "ingres": {
+   "clasificaciones": [
+    "miniature painters",
+    "directors (administrators)",
+    "architects",
+    "artists (visual artists)",
+    "designers",
+    "engravers (printmakers)",
+    "lithographers",
+    "graphic designers",
+    "draftsmen (artists)",
+    "graphic artists",
+    "portraitists",
+    "lecturers",
+    "painters (artists)",
+    "Parisian",
+    "French (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1867,
+    "hasta": 1867,
+    "lugar": "Paris"
+   },
+   "muerte_texto": "1867",
+   "nacimiento": {
+    "desde": 1780,
+    "hasta": 1780,
+    "lugar": "Montauban"
+   },
+   "nacimiento_texto": "1780",
+   "nombre": "Ingres, Jean-Auguste-Dominique",
+   "nota": "Placed in the studio of Jacques Louis David (1748-1825) in 1796. He won second place in the Prix de Rome competion in 1800, and first place in 1801.",
+   "ulan": "500028037",
+   "url": "https://vocab.getty.edu/page/ulan/500028037"
+  },
+  "ivanov": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "watercolorists",
+    "draftsmen (artists)",
+    "graphic artists",
+    "painters (artists)",
+    "Russian (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1858,
+    "hasta": 1858,
+    "lugar": "Sankt-Peterburg"
+   },
+   "muerte_texto": "1858",
+   "nacimiento": {
+    "desde": 1806,
+    "hasta": 1806,
+    "lugar": "Sankt-Peterburg"
+   },
+   "nacimiento_texto": "1806",
+   "nombre": "Ivanov, Aleksandr",
+   "nota": null,
+   "ulan": "500018443",
+   "url": "https://vocab.getty.edu/page/ulan/500018443"
+  },
+  "john_martin": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "engravers (printmakers)",
+    "watercolorists",
+    "history artists",
+    "landscapists",
+    "painters (artists)",
+    "printmakers",
+    "English (culture or style)",
+    "British (modern)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1854,
+    "hasta": 1854,
+    "lugar": "Douglas"
+   },
+   "muerte_texto": "1854",
+   "nacimiento": {
+    "desde": 1789,
+    "hasta": 1789,
+    "lugar": "Haydon Bridge"
+   },
+   "nacimiento_texto": "1789",
+   "nombre": "Martin, John",
+   "nota": "Instrumental in the formation of the Society of British Artists. Painted large compositions of biblical and historical subjects. Comment on works: History; Landscapes",
+   "ulan": "500023063",
+   "url": "https://vocab.getty.edu/page/ulan/500023063"
+  },
+  "lemoyne": {
+   "clasificaciones": [
+    "decorative painters",
+    "ceiling painters (artists)",
+    "manufacturers",
+    "artists (visual artists)",
+    "court painters",
+    "decorative artists",
+    "draftsmen (artists)",
+    "painters (artists)",
+    "pastelists",
+    "Parisian",
+    "French (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1737,
+    "hasta": 1737,
+    "lugar": "Paris"
+   },
+   "muerte_texto": "1737",
+   "nacimiento": {
+    "desde": 1688,
+    "hasta": 1688,
+    "lugar": "Paris"
+   },
+   "nacimiento_texto": "1688",
+   "nombre": "Lemoyne, François",
+   "nota": "Comment on works: History; Mythology; Genre",
+   "ulan": "500027784",
+   "url": "https://vocab.getty.edu/page/ulan/500027784"
+  },
+  "masaccio": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "painters (artists)",
+    "Florentine",
+    "Italian (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1428,
+    "hasta": 1428,
+    "lugar": "Roma"
+   },
+   "muerte_texto": "1428",
+   "nacimiento": {
+    "desde": 1401,
+    "hasta": 1401,
+    "lugar": "Castel San Giovanni"
+   },
+   "nacimiento_texto": "1401",
+   "nombre": "Masaccio",
+   "nota": "Masaccio's father was the notary Ser Giovanni di Mone (Simone) Cassai. When Ser Giovanni died in 1406, Masaccio's mother, Jacopa di Martinozzo di Dino, married Tedesco di Feo, an apothecary in Masaccio's native San Giovanni (located between Florence and Arezzo). Masaccio is recorded as a \"painter\" by the age of 16, and a few years later he was listed among painters in the guild records of the Arte de' Medici e Speziali. It is a tradition that Masaccio's master was Masolino, with whom he later often collaborated; however, this is unlikely because Masolino was not a member of the painters' guild until 1423, and thus would not have had apprentices during Masaccio's youth. Masaccio is often noted as the founder of Italian Renaissance painting, because he learned from the intial experiments of Giotto to create figures, drapery, and objects as fully three-dimensional with gravitational weight. In addition, his pictorial space is arranged by using linear perspective, light and shadow are portrayed as if light were entering this space from a single source, and his figures appear to be present, conscious characters who react and display emotion. Giorgio Vasari, a 16th-century biographer of artists, explained that Masaccio followed in the footsteps of sculptors Brunelleschi and Donatello, even though he worked in the medium of painting. ",
+   "ulan": "500026649",
+   "url": "https://vocab.getty.edu/page/ulan/500026649"
+  },
+  "matsch": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "painters (artists)",
+    "sculptors",
+    "Austrian",
+    "German (culture, style, period)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1942,
+    "hasta": 1942,
+    "lugar": "Wien"
+   },
+   "muerte_texto": "1942",
+   "nacimiento": {
+    "desde": 1861,
+    "hasta": 1861,
+    "lugar": "Wien"
+   },
+   "nacimiento_texto": "1861",
+   "nombre": "Matsch, Franz von",
+   "nota": "Comment on works: sculptor",
+   "ulan": "500029045",
+   "url": "https://vocab.getty.edu/page/ulan/500029045"
+  },
+  "miguel_angel": {
+   "clasificaciones": [
+    "architects",
+    "artists (visual artists)",
+    "court painters",
+    "designers",
+    "fresco painters",
+    "poets",
+    "draftsmen (artists)",
+    "painters (artists)",
+    "sculptors",
+    "Florentine",
+    "Roman (modern culture)",
+    "Italian (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1564,
+    "hasta": 1564,
+    "lugar": "Roma"
+   },
+   "muerte_texto": "1564",
+   "nacimiento": {
+    "desde": 1475,
+    "hasta": 1475,
+    "lugar": "Caprese Michelangelo"
+   },
+   "nacimiento_texto": "1475",
+   "nombre": "Buonarroti, Michelangelo",
+   "nota": "In his time, Michelangelo was famous as a sculptor, painter, architect, and poet. He is remembered today as one of the chief creators of the High Renaissance in Florence and Rome, particularly in the arenas of sculpture and fresco painting. His professional career lasted over 70 years and included many stylistic changes. He was enormously influential to other artists. Michelangelo's father was the administrator of the small Florentine dependent town, Caprese. In Florence at age 13 (which was relatively late), Michelangelo became an apprentice to the city's most prominent painter, Domenico Ghirlandaio. His patron was the leading citizen and ruler of Florence, Lorenzo de' Medici. Michelangelo was typical of his period in that he excelled at and regarded the three arts of painting, sculpture, and architecture as manifestations of the fundamental discipline of \"disegno\" (drawing), which was itself based on a profound knowledge of the male human form.",
+   "ulan": "500010654",
+   "url": "https://vocab.getty.edu/page/ulan/500010654"
+  },
+  "poussin": {
+   "clasificaciones": [
+    "decorative painters",
+    "ceiling painters (artists)",
+    "artists (visual artists)",
+    "watercolorists",
+    "draftsmen (artists)",
+    "history artists",
+    "painters (artists)",
+    "French (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1665,
+    "hasta": 1665,
+    "lugar": "Roma"
+   },
+   "muerte_texto": "1665",
+   "nacimiento": {
+    "desde": 1594,
+    "hasta": 1594,
+    "lugar": "Les Andelys"
+   },
+   "nacimiento_texto": "1594",
+   "nombre": "Poussin, Nicolas",
+   "nota": "Poussin was born into a family of some local distinction in Normandy, where he probably received early training in painting. He spent most of his formative years in Paris, and he then went to Italy by at least 1624. He was a popular and influential painter who successfully subordinated dramatic narrative and the expression of extreme states of human passions to the formal harmony of designs, which were based on the beauty and precision of abstract forms. His work epitomized the contemporary search for equilibrium and synthesis between the forces of the Classical and the Baroque around which most artistic critical debate in Rome was concentrated during the 1630s. F",
+   "ulan": "500005036",
+   "url": "https://vocab.getty.edu/page/ulan/500005036"
+  },
+  "rembrandt": {
+   "clasificaciones": [
+    "art collectors",
+    "artists (visual artists)",
+    "engravers (printmakers)",
+    "teachers",
+    "etchers",
+    "collectors",
+    "draftsmen (artists)",
+    "portraitists",
+    "painters (artists)",
+    "printmakers",
+    "Dutch (culture or style)",
+    "North Netherlandish",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1669,
+    "hasta": 1669,
+    "lugar": "Amsterdam"
+   },
+   "muerte_texto": "1669",
+   "nacimiento": {
+    "desde": 1606,
+    "hasta": 1606,
+    "lugar": "Leiden"
+   },
+   "nacimiento_texto": "1606",
+   "nombre": "Rembrandt van Rijn",
+   "nota": "Noted as one of the most popular and influential artists of his period. His work is characterized by the Baroque interest in dramatic scenes and strong contrasts of light on a dark stage. His works include paintings, etchings, and drawings of subjects including portraits, landscapes, figures, animals, biblical and secular history and mythology.",
+   "ulan": "500011051",
+   "url": "https://vocab.getty.edu/page/ulan/500011051"
+  },
+  "ribera": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "court painters",
+    "etchers",
+    "draftsmen (artists)",
+    "history artists",
+    "painters (artists)",
+    "printmakers",
+    "Italian (culture or style)",
+    "Spanish (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1652,
+    "hasta": 1652,
+    "lugar": "Napoli"
+   },
+   "muerte_texto": "1652",
+   "nacimiento": {
+    "desde": 1590,
+    "hasta": 1590,
+    "lugar": "Játiva"
+   },
+   "nacimiento_texto": "1590",
+   "nombre": "Ribera, Jusepe de",
+   "nota": "Ribera is considered one of the most important figures in European painting in the 17th century and the Counter-Reformation. He was Spanish, but spent nearly his entire career in Italy. He was initially influenced by followers of Caravaggio who were active in Rome; he later incorporated stylistic innovations of Venice and Flanders in his own highly personal compositions. ",
+   "ulan": "500008521",
+   "url": "https://vocab.getty.edu/page/ulan/500008521"
+  },
+  "rubens": {
+   "clasificaciones": [
+    "authors",
+    "directors (administrators)",
+    "art collectors",
+    "artists (visual artists)",
+    "court painters",
+    "writers (clerical workers)",
+    "diplomats",
+    "collectors",
+    "draftsmen (artists)",
+    "copyists",
+    "painters (artists)",
+    "printmakers",
+    "sculptors",
+    "Flemish (culture or style)",
+    "South Netherlandish",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1640,
+    "hasta": 1640,
+    "lugar": "Antwerpen"
+   },
+   "muerte_texto": "1640",
+   "nacimiento": {
+    "desde": 1577,
+    "hasta": 1577,
+    "lugar": "Siegen"
+   },
+   "nacimiento_texto": "1577",
+   "nombre": "Rubens, Peter Paul",
+   "nota": "Rubens was an important and influential artist, as well as an international diplomat, successful businessman, devout Catholic, and an intellectual fluent in six languages. After study with local Antwerp painters, Rubens studied in Italy, copying works from antiquity and Renaissance masters. Rubens is famed for an energetic Baroque style that blends northern European realism with the grandeur and monumentality of Italian art. His work is characterized by a free, expressive technique that seemed to captured the feeling of 'joie de vivre.' His workshop was extremely prolific, with its many assistants helping to produce great numbers of paintings of many subjects, book illustrations, tapestry designs, festival decorations, and engraved reproductions of his paintings. He greatly influenced contemporary artists and later generations as well, and was in knighted in 1630, by Charles I of England.",
+   "ulan": "500002921",
+   "url": "https://vocab.getty.edu/page/ulan/500002921"
+  },
+  "rubliov": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "monks (people)",
+    "fresco painters",
+    "iconographers (painters)",
+    "painters (artists)",
+    "Russian (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1430,
+    "hasta": 1430,
+    "lugar": "Moskva"
+   },
+   "muerte_texto": "1430",
+   "nacimiento": {
+    "desde": 1350,
+    "hasta": 1350,
+    "lugar": null
+   },
+   "nacimiento_texto": "1350",
+   "nombre": "Rublyov, Andrey",
+   "nota": null,
+   "ulan": "500001430",
+   "url": "https://vocab.getty.edu/page/ulan/500001430"
+  },
+  "scorel": {
+   "clasificaciones": [
+    "architects",
+    "canons (clergy)",
+    "artists (visual artists)",
+    "court painters",
+    "clergy",
+    "master builders",
+    "draftsmen (artists)",
+    "painters (artists)",
+    "Dutch (culture or style)",
+    "North Netherlandish",
+    "Flemish (culture or style)",
+    "Netherlandish",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1562,
+    "hasta": 1562,
+    "lugar": "Utrecht"
+   },
+   "muerte_texto": "1562",
+   "nacimiento": {
+    "desde": 1495,
+    "hasta": 1495,
+    "lugar": "Schoorl"
+   },
+   "nacimiento_texto": "1495",
+   "nombre": "Scorel, Jan van",
+   "nota": "Comment on works: Religious",
+   "ulan": "500029872",
+   "url": "https://vocab.getty.edu/page/ulan/500029872"
+  },
+  "tiepolo_d": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "engravers (printmakers)",
+    "fresco painters",
+    "draftsmen (artists)",
+    "history artists",
+    "painters (artists)",
+    "Venetian (Republic, culture or style)",
+    "Italian (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1804,
+    "hasta": 1804,
+    "lugar": "Venezia"
+   },
+   "muerte_texto": "1804",
+   "nacimiento": {
+    "desde": 1727,
+    "hasta": 1727,
+    "lugar": "Venezia"
+   },
+   "nacimiento_texto": "1727",
+   "nombre": "Tiepolo, Giovanni Domenico",
+   "nota": "Painter, son of Giovanni Battista Tiepolo (1696-1770). Comment on works: Religious; History",
+   "ulan": "500025154",
+   "url": "https://vocab.getty.edu/page/ulan/500025154"
+  },
+  "tiepolo_g": {
+   "clasificaciones": [
+    "decorative painters",
+    "artists (visual artists)",
+    "engravers (printmakers)",
+    "fresco painters",
+    "etchers",
+    "watercolorists",
+    "miscellaneous",
+    "draftsmen (artists)",
+    "history artists",
+    "painters (artists)",
+    "printmakers",
+    "Venetian (Republic, culture or style)",
+    "Italian (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1770,
+    "hasta": 1770,
+    "lugar": "Madrid"
+   },
+   "muerte_texto": "1770",
+   "nacimiento": {
+    "desde": 1696,
+    "hasta": 1696,
+    "lugar": "Venezia"
+   },
+   "nacimiento_texto": "1696",
+   "nombre": "Tiepolo, Giovanni Battista",
+   "nota": "He was the most renowned painter of 18th-century Italy and the last great representative of the grand tradition in Italian art. He was famed as a draftsman and canvas and fresco painter, specializing in dramatic religious and mythological scenes. He enjoyed international patronage. Comment on works: History",
+   "ulan": "500018523",
+   "url": "https://vocab.getty.edu/page/ulan/500018523"
+  },
+  "tiziano": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "fresco painters",
+    "draftsmen (artists)",
+    "history artists",
+    "painters (artists)",
+    "owners",
+    "printmakers",
+    "Venetian (Republic, culture or style)",
+    "Italian (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1576,
+    "hasta": 1576,
+    "lugar": "Venezia"
+   },
+   "muerte_texto": "1576",
+   "nacimiento": {
+    "desde": 1483,
+    "hasta": 1483,
+    "lugar": "Pieve di Cadore"
+   },
+   "nacimiento_texto": "1483",
+   "nombre": "Titian",
+   "nota": "Titian was an extremely popular and influential painter, developing a painterly style that differed tremendously from contemporary Roman and Florentine styles; he emphasized atmosphere, color, and brushstrokes as he depicted sensual figures, textures (of garments, flesh, etc.), and landscapes in the backgrounds of his paintings. His sensuous mythological scenes showed his ability to depict any hue or texture. Titian's portraits combined incisive, sensitive characterizations with an opulent treatment of accessories, eventually developing into the spare, official style that inspired other Italians, and also Peter Paul Rubens, Anthony van Dyck, and others. In his later paintings, what appears from a distance as form and color prove upon closer inspection to be blobs of paint, thumb marks, and brush scratches. Titian explored the potential of oil paint, experimenting with its expressive as much as its representational possibilities. I",
+   "ulan": "500031075",
+   "url": "https://vocab.getty.edu/page/ulan/500031075"
+  },
+  "turner": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "mezzotinters",
+    "engravers (printmakers)",
+    "etchers",
+    "watercolorists",
+    "draftsmen (artists)",
+    "landscapists",
+    "illustrators",
+    "lecturers",
+    "painters (artists)",
+    "owners",
+    "printmakers",
+    "English (culture or style)",
+    "British (modern)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1851,
+    "hasta": 1851,
+    "lugar": "Chelsea"
+   },
+   "muerte_texto": "1851",
+   "nacimiento": {
+    "desde": 1775,
+    "hasta": 1775,
+    "lugar": "London"
+   },
+   "nacimiento_texto": "1775",
+   "nombre": "Turner, Joseph Mallord William",
+   "nota": "Turner dominated British landscape painting throughout the first half of the 19th century. He established a reputation in the Royal Academy, London, as a topographical watercolorist and painter of Sublime and historical landscapes. Turner's body of work includes around three hundred paintings and over twenty thousand drawings and watercolors, the majority of which were given to the English government upon his death.  Comment on works: Marines, views",
+   "ulan": "500026846",
+   "url": "https://vocab.getty.edu/page/ulan/500026846"
+  },
+  "van_dyck": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "court painters",
+    "etchers",
+    "watercolorists",
+    "draftsmen (artists)",
+    "landscapists",
+    "portraitists",
+    "painters (artists)",
+    "printmakers",
+    "English (culture or style)",
+    "British (modern)",
+    "Flemish (culture or style)",
+    "South Netherlandish",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1641,
+    "hasta": 1641,
+    "lugar": "London"
+   },
+   "muerte_texto": "1641",
+   "nacimiento": {
+    "desde": 1599,
+    "hasta": 1599,
+    "lugar": "Antwerpen"
+   },
+   "nacimiento_texto": "1599",
+   "nombre": "Dyck, Anthony van",
+   "nota": "Born the seventh of twelve children to a wealthy silk merchant in Belgium, Anthony van Dyck began to paint at an early age. By the age of nineteen, he had become a teacher in Antwerp. Soon afterward, he collaborated and trained with the famous Flemish painter Peter Paul Rubens. He studied and worked in Venice and Paris. Van Dyck was famed as a portrait painter in France and England, creating portraits for Charles I and Louis XIV.  Comment on works: Portraits; Religious; History.",
+   "ulan": "500115190",
+   "url": "https://vocab.getty.edu/page/ulan/500115190"
+  },
+  "velazquez": {
+   "clasificaciones": [
+    "decorative painters",
+    "artists (visual artists)",
+    "court painters",
+    "oil painters",
+    "genre artists",
+    "landscapists",
+    "mythological artists",
+    "portraitists",
+    "religious artists",
+    "painters (artists)",
+    "Andalusian",
+    "Spanish (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1660,
+    "hasta": 1660,
+    "lugar": "Madrid"
+   },
+   "muerte_texto": "1660",
+   "nacimiento": {
+    "desde": 1599,
+    "hasta": 1599,
+    "lugar": "Sevilla"
+   },
+   "nacimiento_texto": "1599",
+   "nombre": "Velázquez, Diego",
+   "nota": "Son of Juan Rodríguez da Silva, who came from a Portuguese family that had settled in Andalusia in the early 16th century. Diego had a classical education, but preferred painting; he studied. under Francisco de Herrera the Elder. Velázquez was one of the most important European artists of the 17th century, spending his career from 1623 in the service of Philip IV of Spain.",
+   "ulan": "500016881",
+   "url": "https://vocab.getty.edu/page/ulan/500016881"
+  },
+  "vernet": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "engravers (printmakers)",
+    "lithographers",
+    "draftsmen (artists)",
+    "painters (artists)",
+    "owners",
+    "printmakers",
+    "Parisian",
+    "French (culture or style)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1836,
+    "hasta": 1836,
+    "lugar": "Paris"
+   },
+   "muerte_texto": "1836",
+   "nacimiento": {
+    "desde": 1758,
+    "hasta": 1758,
+    "lugar": "Bordeaux"
+   },
+   "nacimiento_texto": "1758",
+   "nombre": "Vernet, Carle",
+   "nota": "Comment on works: Horses; Landscapes; History; Battles",
+   "ulan": "500011057",
+   "url": "https://vocab.getty.edu/page/ulan/500011057"
+  },
+  "villalpando": {
+   "clasificaciones": [
+    "artists (visual artists)",
+    "painters (artists)",
+    "Mexican",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1714,
+    "hasta": 1714,
+    "lugar": "Ciudad de México"
+   },
+   "muerte_texto": "1714",
+   "nacimiento": {
+    "desde": 1640,
+    "hasta": 1640,
+    "lugar": "Ciudad de México"
+   },
+   "nacimiento_texto": "1640",
+   "nombre": "Villalpando, Cristóbal de",
+   "nota": "Comment on works: religious",
+   "ulan": "500013182",
+   "url": "https://vocab.getty.edu/page/ulan/500013182"
+  },
+  "watts": {
+   "clasificaciones": [
+    "miniature painters",
+    "artists (visual artists)",
+    "etchers",
+    "genre artists",
+    "draftsmen (artists)",
+    "stonecutters",
+    "graphic artists",
+    "painters (artists)",
+    "sculptors",
+    "English (culture or style)",
+    "British (modern)",
+    "male"
+   ],
+   "muerte": {
+    "desde": 1904,
+    "hasta": 1904,
+    "lugar": "Compton"
+   },
+   "muerte_texto": "1904",
+   "nacimiento": {
+    "desde": 1817,
+    "hasta": 1817,
+    "lugar": "London"
+   },
+   "nacimiento_texto": "1817",
+   "nombre": "Watts, George Frederick",
+   "nota": "British painter and sculptor. Comment on works: History; Portraits",
+   "ulan": "500026988",
+   "url": "https://vocab.getty.edu/page/ulan/500026988"
+  }
+ },
+ "consultado": "2026-09-28"
+}

@@ -1,0 +1,2368 @@
+{
+ "behzad": {
+  "bio": "Kamal al-Din Behzad trabajó en Herat bajo el timúrida Husayn Bayqara (1470-1506), primero para Mir Ali Shir Navai y luego para el sultán, a las órdenes de Mirak Naqqash, que lo crió tras quedar huérfano [1][2]. Después de 1506 su vida está mal documentada; Babur lo vincula con Shaybani Khan, señor de Herat en 1507-1510 [1]. Pasó sus últimos años en Tabriz al servicio del sha Tahmasp; el decreto de 1522 que lo pone al frente del taller real es de autenticidad dudosa [1]. Murió hacia 1535-1536 y fue enterrado en Tabriz [1]. Sus obras seguras son las pinturas firmadas del Bustán de Saadí de El Cairo (1488-1489) [1][2]. Su estilo influyó en Bujará y en la India mogol [1].",
+  "clave": "behzad",
+  "discrepancias": [
+   "Nacimiento: la ULAN da 1445 en Tabriz; Wikidata 1450 en Herat; Britannica «c. 1455?» en Herat. La Encyclopaedia Iranica (Soucek) dice expresamente que su fecha de nacimiento es desconocida y no da lugar de nacimiento. Solo dice que se crió con Mirak Naqqash, en Herat. Resolución: año desconocido. Herat es probable como lugar de crianza y formación, y Britannica lo propone con reservas como lugar de nacimiento. Tabriz (ULAN) no tiene respaldo: es donde murió y fue enterrado.",
+   "Muerte: Wikidata dice 1535 en Herat, lo que contradice a la Iranica (murió al servicio de Tahmasp y fue enterrado en Tabriz, según Dust Muhammad) y a Britannica (Tabriz). La ULAN da 1536. La Iranica fecha la muerte por un cronograma como «935/1535-36». Ojo: 935 de la hégira corresponde a 1528-1529, así que la cifra hegiriana y la gregoriana de la entrada no concuerdan (conviene revisarlo en la edición impresa).",
+   "Nombramiento de 1522: Britannica lo da por hecho (director de la biblioteca real en Tabriz, adonde habría llegado en 1522 con Tahmasp). La Iranica lo cuestiona: el decreto a nombre de Ismail está en un manuscrito fechado en 1519, y los autores safávidas solo lo relacionan con Tahmasp.",
+   "Bustán de El Cairo: la Iranica habla de un frontispicio doble y cuatro ilustraciones; Britannica, de cinco miniaturas; la ULAN, de cuatro. Britannica atribuye con seguridad 32 obras (1486-1495); la Iranica dice que solo unas pocas son de aceptación general."
+  ],
+  "fuentes": [
+   {
+    "autor": "Priscilla P. Soucek",
+    "n": 1,
+    "obra": "Encyclopaedia Iranica, vol. IV, fasc. 2, pp. 114-116 (1989)",
+    "titulo": "BEHZĀD, KAMĀL-AL-DĪN",
+    "url": "https://www.iranicaonline.org/articles/behzad-kamal-al-din/"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Behzād",
+    "url": "https://www.britannica.com/biography/Behzad"
+   }
+  ],
+  "notas": "La Encyclopaedia Iranica tiene un muro de Cloudflare: WebFetch y curl devolvían 403 y solo cargó en el navegador. Se leyó la entrada completa de Soucek (1989, actualizada en 2013; DOI 10.1163/2330-4804_EIRO_COM_6856). Grove y Universalis (suscripción) no se consultaron.",
+  "retirado": [
+   "«Cuando la ciudad pasó a los safávidas se trasladó a Tabriz, donde el sha Ismail lo puso en 1522 al frente de la biblioteca real»: corregido. Según la Iranica, la fecha y las circunstancias del traslado se desconocen, el decreto de 1522 es de autenticidad dudosa y las fuentes safávidas lo vinculan con Tahmasp, no con Ismail.",
+   "«Sus figuras, con… rostros individualizados»: contradicho. La Iranica dice que sus figuras son tipos idealizados, no individuos, aunque transmiten un ánimo y una personalidad más sutiles de lo habitual.",
+   "«Marcaron la pintura persa, otomana y mogol durante un siglo»: corregido. La Iranica documenta su influencia en Bujará (vía Shaykhzada) y en la India mogol; de los otomanos dice que mitificaron su figura, no que su pintura siguiera su estilo.",
+   "«Las pocas páginas firmadas, como las del Bustán de El Cairo, son la referencia»: confirmado (Iranica, Britannica)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "h. 1535-1536 (según un cronograma)",
+    "fuente": 1,
+    "lugar": "Tabriz (enterrado junto a Kamal Khojandi)"
+   },
+   "nacimiento": {
+    "fecha": "desconocida (Britannica: «c. 1455?»)",
+    "fuente": 1,
+    "lugar": "no documentado; se crió en Herat (Britannica lo da por nacido allí, con interrogante)"
+   }
+  }
+ },
+ "bellini": {
+  "bio": "Giovanni Bellini nació en Venecia hacia 1427 según Vasari, fecha discutida; era hijo de Jacopo y probablemente hermano menor de Gentile [1][2]. En 1453 su hermana Nicolosia se casó con Mantegna, cuya huella se ve en la «Oración en el huerto» [1][2]. Fue abandonando el temple al huevo por el óleo de origen flamenco [3], y quizá le influyó Antonello da Messina, en Venecia en 1475–1476 [2]. Desde hacia 1490 amplió un taller que formó a la generación siguiente [3]. En 1506 Durero lo llamó «muy viejo y aún el mejor pintor de todos» [2]. Con más de ochenta y cinco años pintó el «Festín de los dioses» (1514) [1]. Murió en Venecia el 29 de noviembre de 1516 [1].",
+  "clave": "bellini",
+  "discrepancias": [
+   "Nacimiento: el DBI da hacia 1427 siguiendo a Vasari, que lo hace morir nonagenario, y advierte que hay opiniones distintas [1]; la Enciclopedia Treccani dice «probablemente hacia 1430», con noticias desde 1459 [4]; ULAN da 1431/1436 [3]; Wikidata, c. 1430."
+  ],
+  "fuentes": [
+   {
+    "autor": "Terisio Pignatti",
+    "n": 1,
+    "obra": "Dizionario Biografico degli Italiani, vol. 7 (1970)",
+    "titulo": "BELLINI, Giovanni, detto Giambellino",
+    "url": "https://www.treccani.it/enciclopedia/bellini-giovanni-detto-giambellino_(Dizionario-Biografico)"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "The National Gallery, Londres",
+    "titulo": "Giovanni Bellini",
+    "url": "https://www.nationalgallery.org.uk/artists/giovanni-bellini"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Bellini, Giovanni",
+    "url": "https://www.getty.edu/vow/ULANFullDisplay?find=&place=&nation=&logic=&note=&role=&subjectid=500019244"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Bellini, Giovanni",
+    "url": "https://www.treccani.it/enciclopedia/giovanni-bellini"
+   }
+  ],
+  "notas": "La Enciclopedia del Museo del Prado devolvió 403 y Britannica también; no se citan.",
+  "retirado": [
+   "«Fundó la escuela veneciana del color junto a su hermano Gentile y su cuñado Mantegna»: Mantegna era paduano y ninguna fuente leída habla de una fundación conjunta; se sustituye por la relación documentada (boda de 1453 e influencia temprana).",
+   "«Tuvo por alumnos a Giorgione y a Tiziano»: no respaldado por las fuentes leídas; la Treccani solo habla de afinidad tonal con ellos en su obra tardía [4] y la National Gallery de que Tiziano modificó el «Festín de los dioses» [2]. Se sustituye por lo que dice ULAN (taller que formó a pintores de la generación siguiente).",
+   "«Adoptó el óleo cuando en Venecia todavía se pintaba al temple» y «una luz húmeda que se convirtió en la marca de la ciudad»: se conserva el paso gradual al óleo [3]; lo de la «marca de la ciudad» no está respaldado y se quita.",
+   "«Siguió cambiando de estilo hasta pasados los ochenta años»: se sustituye por el dato concreto (Festín de los dioses, 1514, con más de 85 años según el DBI) [1]."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "29 de noviembre de 1516",
+    "fuente": 1,
+    "lugar": "Venecia"
+   },
+   "nacimiento": {
+    "fecha": "hacia 1427 (discutida)",
+    "fuente": 1,
+    "lugar": "Venecia"
+   }
+  }
+ },
+ "blake": {
+  "bio": "Nacido en Londres el 28 de noviembre de 1757 [1], atribuyó a una visión de su hermano Robert, muerto en 1787, el secreto de su «Illuminated Printing»: texto e imagen trazados sobre el cobre con un líquido resistente al ácido [2]. El método le permitió ser a la vez cajista, impresor, encuadernador y vendedor de su poesía [2]; Catherine Boucher, con quien casó en 1782, le ayudaba a colorear e imprimir [2], y no hay dos ejemplares iguales [3]. Tras el fracaso de su exposición de 1809 se hundió en la pobreza [2][5]; sus últimos años, gracias a John Linnell, fueron más cómodos [3]. En su mitología, Urizen encarna la razón [4]. Murió en Londres el 12 de agosto de 1827 [1][3].",
+  "clave": "blake",
+  "discrepancias": [],
+  "fuentes": [
+   {
+    "autor": "G.E. Bentley",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "William Blake",
+    "url": "https://www.britannica.com/biography/William-Blake"
+   },
+   {
+    "autor": "G.E. Bentley",
+    "n": 2,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "William Blake: Marriage to Catherine Boucher",
+    "url": "https://www.britannica.com/biography/William-Blake/Marriage-to-Catherine-Boucher"
+   },
+   {
+    "autor": "G.E. Bentley",
+    "n": 3,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "William Blake: Last years",
+    "url": "https://www.britannica.com/biography/William-Blake/Last-years"
+   },
+   {
+    "autor": "G.E. Bentley",
+    "n": 4,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "William Blake: Blake as a poet",
+    "url": "https://www.britannica.com/biography/William-Blake/Blake-as-a-poet"
+   },
+   {
+    "autor": null,
+    "n": 5,
+    "obra": "Tate",
+    "titulo": "William Blake – Exhibition guide",
+    "url": "https://www.tate.org.uk/whats-on/tate-britain/william-blake/exhibition-guide"
+   }
+  ],
+  "notas": "William Blake Archive (blakearchive.org) rechazó la conexión; ODNB, Grove y Benezit son de suscripción. El Met (essay William Blake) devolvió 429.",
+  "retirado": [
+   "«para no depender de impresores ni editores»: la fuente dice que el método le permitió ser su propio cajista, impresor, encuadernador y vendedor; se reformula con esas palabras en vez de atribuirle un propósito.",
+   "«Vendió poquísimo en vida y murió en la pobreza»: corregido. Britannica dice que se hundió en la pobreza entre 1809 y 1818, pero que sus últimos años (1818–1827) fueron cómodos y productivos gracias a Linnell.",
+   "«invierte la teología cristiana: crear el mundo midiéndolo es el primer acto de tiranía»: interpretación no respaldada por las fuentes leídas; se deja solo que Urizen encarna la razón."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "12 de agosto de 1827",
+    "fuente": 3,
+    "lugar": "Londres (Fountain Court, Strand)"
+   },
+   "nacimiento": {
+    "fecha": "28 de noviembre de 1757",
+    "fuente": 1,
+    "lugar": "Londres"
+   }
+  }
+ },
+ "bosco": {
+  "bio": "Jheronimus van Aken nació hacia 1450 en ’s-Hertogenbosch, aunque no consta el año [1][2][3]. Hijo y nieto de pintores, aparece documentado desde 1474 [2] y en 1486 ingresó en la cofradía de Nuestra Señora de su ciudad [1][3]. Firmaba «Jheronimus Bosch», nombre tomado de su lugar de residencia, y Felipe el Hermoso le encargó un Juicio Final [3]. De las 35 a 40 pinturas que se le atribuyen solo siete están firmadas y ninguna fechada, de modo que su cronología es insegura [1]. Fue enterrado en su ciudad el 9 de agosto de 1516 [1]. Felipe II lo apreció mucho, y por eso la colección más importante de su obra está en el Prado [3].",
+  "clave": "bosco",
+  "discrepancias": [
+   "Nacimiento: la ULAN da 1440; Wikidata, Britannica y el Prado «hacia 1450». El Prado advierte que el año no puede fijarse con seguridad.",
+   "Muerte: Wikidata da el 9 de agosto de 1516 como fecha de muerte, pero Britannica la da como fecha de entierro («buried August 9, 1516»).",
+   "Primera mención documental: la ficha del Prado la sitúa el 5 de abril de 1474; la voz de Yarza Luaces menciona como primera vinculación con su padre el encargo de un retablo en 1475-1476.",
+   "Adscripción: la ULAN lo clasifica a la vez como holandés, norneerlandés y surneerlandés; la voz del Prado lo llama «pintor flamenco»."
+  ],
+  "fuentes": [
+   {
+    "autor": "Kathleen Kuiper y editores de Britannica",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Hiëronymus Bosch",
+    "url": "https://www.britannica.com/biography/Hieronymus-Bosch"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Museo Nacional del Prado (ficha de autor de la colección)",
+    "titulo": "El Bosco",
+    "url": "https://www.museodelprado.es/coleccion/artista/wd/c9716e4a-4c24-44dd-ac65-44bc4661c8b5"
+   },
+   {
+    "autor": "Joaquín Yarza Luaces",
+    "n": 3,
+    "obra": "Enciclopedia del Museo del Prado",
+    "titulo": "Bosco, El. Hieronymus van Aeken Bosch",
+    "url": "https://www.museodelprado.es/aprende/enciclopedia/voz/bosco-el-hieronymus-van-aeken-bosch/f475dc36-4d42-4318-9637-5d20605ec7fb"
+   }
+  ],
+  "notas": "Grove, Benezit y Universalis (suscripción) no se consultaron. Tampoco la entrada de la Treccani.",
+  "retirado": [
+   "«Vivió toda su vida en la misma ciudad»: ninguna fuente lo afirma así. Solo documentan su actividad en ’s-Hertogenbosch, y el Prado dice que no se sabe dónde vivían sus padres cuando nació.",
+   "«No se conserva ni un solo escrito suyo»: no verificado en las fuentes leídas. Se sustituye por el dato de Britannica sobre firmas y fechas.",
+   "«Un pintor que nunca pisó España»: no verificado. Se retira.",
+   "«De la que tomó el nombre con que firmaba» y «Felipe II reunió sus tablas / el Prado tiene la mejor colección»: confirmado por el Prado."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "1516 (enterrado el 9 de agosto de 1516)",
+    "fuente": 1,
+    "lugar": "’s-Hertogenbosch (Bolduque)"
+   },
+   "nacimiento": {
+    "fecha": "h. 1450 (año no documentado)",
+    "fuente": 1,
+    "lugar": "’s-Hertogenbosch (Bolduque)"
+   }
+  }
+ },
+ "bouguereau": {
+  "bio": "Nacido en La Rochelle, estudió en la École des Beaux-Arts y ganó el Premio de Roma en 1850 [1][2]. A su regreso decoró varias mansiones inspirándose en los frescos de Pompeya y Herculano [1]. Recibió una medalla de honor en la Exposición de París de 1878 y otra en el Salón de 1885 [1]. Con Alexandre Cabanel fue el defensor más influyente del academicismo francés: dibujo preciso, contorno y acabado [1]. Contra eso se rebelaron los impresionistas [1]. Sus escenas campesinas se las disputaban los coleccionistas estadounidenses [3]. En 1984 una gran retrospectiva recorrió el Petit Palais de París, el Museo de Bellas Artes de Montreal y el Wadsworth Atheneum de Hartford [2].",
+  "clave": "bouguereau",
+  "discrepancias": [
+   "Días exactos: Wikidata da el 30 de noviembre de 1825 y el 19 de agosto de 1905, pero ninguna fuente académica leída los da. El Orsay y la ULAN solo dan los años.",
+   "Estudios en la École des Beaux-Arts: el Getty los sitúa entre 1843 y 1850 [1]; algunas fuentes no académicas de la búsqueda dan 1846 como año de ingreso (no se han usado)."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "J. Paul Getty Museum, Museum Collection",
+    "titulo": "William-Adolphe Bouguereau",
+    "url": "https://www.getty.edu/art/collection/person/103K3Z"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Musée d'Orsay",
+    "titulo": "La Jeunesse et l'Amour – William Bouguereau (RF 704)",
+    "url": "https://www.musee-orsay.fr/en/artworks/la-jeunesse-et-lamour-70032"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "The Metropolitan Museum of Art",
+    "titulo": "William Bouguereau, Breton Brother and Sister (1871)",
+    "url": "https://www.metmuseum.org/art/collection/search/435754"
+   }
+  ],
+  "notas": "La URL de Britannica que venía en las referencias (/biography/William-Adolphe-Bouguereau) muestra en realidad el artículo general «academy of art», sin biografía del pintor, así que no se ha citado. RKD, Grove, Benezit y Universalis no se consultaron o son de suscripción. La anécdota de Renoir («Bon Dieu, je vois comme Bouguereau!») está en el Getty, pero no se ha incluido.",
+  "retirado": [
+   "«Durante medio siglo el pintor más prestigioso de la Academia y del Salón»: lo he sustituido por la formulación del Getty (junto con Cabanel, el defensor más influyente del academicismo) y por sus medallas documentadas.",
+   "«El siglo XX lo olvidó hasta la retrospectiva de 1984»: la retrospectiva de 1984 está documentada por el Orsay, pero el olvido previo no lo afirma ninguna fuente leída. He dejado solo la exposición.",
+   "«Y de Argentina»: no se ha encontrado fuente académica. Lo he retirado y he conservado solo a los coleccionistas estadounidenses (Met).",
+   "«Un acabado tan pulido que no se ve la pincelada»: lo he reformulado según el Getty (dibujo preciso, contorno y acabado)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "1905",
+    "fuente": 2,
+    "lugar": "La Rochelle"
+   },
+   "nacimiento": {
+    "fecha": "1825",
+    "fuente": 2,
+    "lugar": "La Rochelle"
+   }
+  }
+ },
+ "breu": {
+  "bio": "Hijo de Jörg Breu el Viejo, trabajó en el taller paterno como aprendiz y oficial y lo heredó en 1534 [1]. Fue pintor y dibujante para xilografía y vidriera [1]. En 1536-1537 trabajó en Neuburg an der Donau para Otón Enrique del Palatinado, y de ese encargo quedan restos de frescos en el castillo de Grünau (1537) [1]. En 1538 pintó la sala de oficio de la casa de los tejedores de Augsburgo, y miniaturas para un manuscrito de lujo hoy en Eton College [1]. Su monograma se parece al de su padre [1]. Solo las obras que lo llevan permiten separarlos: sus figuras son más pequeñas y esbeltas, con paños más quebrados, de gusto ya manierista [1].",
+  "clave": "breu",
+  "discrepancias": [
+   "Nacimiento: la NDB da «después de 1510» [1]; la ULAN da 1500 [2]; Wikidata, 1510. Las tres coinciden en Augsburgo.",
+   "Lugar de muerte: la NDB y Wikidata dan Augsburgo; la ULAN no lo consigna [2]."
+  ],
+  "fuentes": [
+   {
+    "autor": "Wolfgang Wegner",
+    "n": 1,
+    "obra": "Neue Deutsche Biographie 2 (1955), p. 605 (Deutsche Biographie)",
+    "titulo": "Breu, Jörg der Jüngere",
+    "url": "https://www.deutsche-biographie.de/sfz5837.html"
+   }
+  ],
+  "notas": "La página del RKD (https://rkd.nl/artists/12439) no se pudo leer como texto y Benezit es de suscripción. La ULAN no tiene nota biográfica para este artista. La NDB, escrita por un especialista y editada por la Comisión Histórica de la Academia Bávara de Ciencias, es la fuente principal. Tiene fecha (1955), así que alguna atribución puede haberse revisado después.",
+  "retirado": [
+   "«Pequeñas tablas de tema bíblico»: la NDB no las menciona entre sus obras seguras (frescos, xilografías, miniaturas, dibujos). Lo he retirado. La NDB solo le atribuye, sin certeza, una tabla, Artemisa conquista Rodas (1535, Múnich).",
+   "«Murió joven»: murió en 1547, pero ninguna fuente lo subraya. He dejado solo la fecha.",
+   "«Un problema habitual en los talleres familiares alemanes del XVI»: es una generalización sin fuente. La he sustituido por el argumento concreto de la NDB (monograma parecido al paterno y rasgos de estilo que los distinguen)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "1547",
+    "fuente": 1,
+    "lugar": "Augsburgo"
+   },
+   "nacimiento": {
+    "fecha": "después de 1510",
+    "fuente": 1,
+    "lugar": "Augsburgo"
+   }
+  }
+ },
+ "bruegel": {
+  "bio": "Se formó, según Karel van Mander, con Pieter Coecke van Aelst, con cuya hija Mayken se casó en Bruselas en 1563 [1]. En 1551 ingresó como maestro en el gremio de San Lucas de Amberes [2]. En 1552-1553 recorrió Italia hasta Sicilia y vivió en Roma, y los dibujos de los Alpes que hizo en ese viaje nutrieron grabados para el editor Hieronymus Cock [1][3]. Sus últimas obras, lejos de ignorar Italia, muestran una marcada afinidad con el arte italiano [1]. Pintó sobre todo para coleccionistas: Niclaes Jonghelinck tenía dieciséis cuadros suyos en 1566 [1]. Su hijo Pieter el Joven y su hermano Jan montaron un taller de réplicas de sus composiciones muy demandadas en Flandes [4].",
+  "clave": "bruegel",
+  "discrepancias": [
+   "Nacimiento: Britannica da «c. 1525, probablemente Breda» [1]; la Enciclopedia del Prado, «Breda, 1525/1530» [2]; la ficha de colección del Prado, «¿Bruegel (Países Bajos)?, ca. 1525/30» [3]; la Getty ULAN da 1515 y Breda; Wikidata, c. 1525 y Breda.",
+   "Muerte: Britannica da «5/9 de septiembre de 1569» [1]; Wikidata fija el 9 de septiembre."
+  ],
+  "fuentes": [
+   {
+    "autor": "Britannica Editors",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Pieter Bruegel, the Elder",
+    "url": "https://www.britannica.com/biography/Pieter-Bruegel-the-Elder"
+   },
+   {
+    "autor": "Matías Díaz Padrón",
+    "n": 2,
+    "obra": "Enciclopedia del Museo del Prado",
+    "titulo": "Bruegel el Viejo, Pieter",
+    "url": "https://www.museodelprado.es/aprende/enciclopedia/voz/bruegel-el-viejo-pieter/7db5ac82-26fd-4d5d-93b3-a13b48e848d1"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Museo Nacional del Prado, colección",
+    "titulo": "Pieter Bruegel el Viejo (ficha de autor)",
+    "url": "https://www.museodelprado.es/coleccion/artista/wd/4ba0568b-d3b4-4831-a4aa-b97480d65f77"
+   },
+   {
+    "autor": "J. J. P. P.",
+    "n": 4,
+    "obra": "Enciclopedia del Museo del Prado",
+    "titulo": "Brueghel el Joven, Pieter",
+    "url": "https://www.museodelprado.es/aprende/enciclopedia/voz/brueghel-el-joven-pieter/9c9fdf72-efe6-4d5d-99a2-0ed41dcd673c"
+   }
+  ],
+  "notas": "La página del RKD (https://rkd.nl/artists/13292) redirige a data.rkd.nl y solo devuelve tripletas RDF, así que no se ha usado. Benezit y Universalis son de suscripción y no se han leído. Britannica y el Prado se leyeron a través del navegador porque bloquean las peticiones automáticas (403).",
+  "retirado": [
+   "«Volvió sin apenas rastro italiano en su pintura, salvo el paisaje de montaña»: Britannica dice lo contrario, que sus últimas obras muestran una marcada afinidad con el arte italiano (Rafael, pintura veneciana, Miguel Ángel). Lo he corregido.",
+   "«Se le llamó ‹el campesino›»: Britannica solo recoge el alias «Boeren Bruegel» entre sus variantes de nombre, sin explicarlo; el Prado documenta otro apodo, «Pierre le Drôle». Lo he retirado.",
+   "«Coleccionistas cultos de Amberes y Bruselas»: lo he concretado con lo que dan las fuentes (Jonghelinck, dieciséis cuadros en 1566).",
+   "Que los hijos copiaran «durante décadas» y que eso «complicó para siempre» la atribución: solo está respaldado el taller de réplicas de Pieter el Joven con su hermano; he retirado la valoración sobre la atribución."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "5 o 9 de septiembre de 1569",
+    "fuente": 1,
+    "lugar": "Bruselas"
+   },
+   "nacimiento": {
+    "fecha": "c. 1525",
+    "fuente": 1,
+    "lugar": "probablemente Breda (Brabante)"
+   }
+  }
+ },
+ "caravaggio": {
+  "bio": "Michelangelo Merisi nació en Milán, probablemente el 25 de septiembre de 1571, y fue bautizado allí el 30; Caravaggio era el pueblo de origen de su familia [1]. Aprendiz de Simone Peterzano desde 1584, hacia 1592 llegó a Roma, donde pintó flores y frutas para el Cavalier d'Arpino [2]. En 1599 recibió las historias de san Mateo de la capilla Contarelli [2]. Pintaba directamente sobre el lienzo, con muy poca preparación, y usaba como modelos a gente corriente [3]. En 1606 mató a Ranuccio Tomassoni en una riña y huyó de Roma a Nápoles, Malta y Sicilia [1][2][3]. Buscando el perdón papal, murió en Porto Ercole el 18 de julio de 1610, quizá de malaria [1][3][4].",
+  "clave": "caravaggio",
+  "discrepancias": [
+   "Wikidata da el 29 de septiembre de 1571 como fecha de nacimiento; el DBI (F. Bologna, 2009) da «verosímilmente» el 25, con bautismo en Milán el 30.",
+   "La nota de ULAN dice que se le llama Caravaggio por su lugar de nacimiento cerca de Milán; el DBI sostiene que nació en Milán y que Caravaggio era el lugar de origen de sus padres.",
+   "Causa de muerte: ULAN la da como fiebre malárica sin reservas; la National Gallery escribe «perhaps with malaria»."
+  ],
+  "fuentes": [
+   {
+    "autor": "Ferdinando Bologna",
+    "n": 1,
+    "obra": "Dizionario Biografico degli Italiani, vol. 73 (2009), Treccani",
+    "titulo": "MERISI, Michelangelo (detto il Caravaggio)",
+    "url": "https://www.treccani.it/enciclopedia/michelangelo-merisi_(Dizionario-Biografico)"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Caravàggio, Michelangelo Merisi detto il",
+    "url": "https://www.treccani.it/enciclopedia/michelangelo-merisi-detto-il-caravaggio"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "The National Gallery, Londres",
+    "titulo": "Michelangelo Merisi da Caravaggio (1571 - 1610)",
+    "url": "https://www.nationalgallery.org.uk/artists/michelangelo-merisi-da-caravaggio"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Caravaggio, Michelangelo Merisi da",
+    "url": "https://vocab.getty.edu/page/ulan/500115312"
+   }
+  ],
+  "notas": "Britannica (403) y la Enciclopedia del Museo del Prado (403) no cargaron; Grove, Benezit y Universalis son de suscripción.",
+  "retirado": [
+   "«con una condena de muerte encima»: ninguna de las fuentes leídas menciona una condena a muerte; se sustituye por lo que sí dicen (huida de la justicia y búsqueda del perdón papal).",
+   "«sin dibujo previo»: matizado a «directamente sobre el lienzo, con muy poca preparación», que es lo que dice la National Gallery.",
+   "«Murió a los treinta y ocho en circunstancias que aún se discuten»: se sustituye por la fecha y el lugar del DBI y la causa probable (malaria) según la National Gallery.",
+   "«una luz de foco que sacaba las figuras de la oscuridad»: formulación no verificada literalmente; eliminada por falta de espacio (ULAN respalda el tenebrismo en términos generales)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "18 de julio de 1610",
+    "fuente": 1,
+    "lugar": "Porto Ercole"
+   },
+   "nacimiento": {
+    "fecha": "probablemente 25 de septiembre de 1571 (bautizado el 30)",
+    "fuente": 1,
+    "lugar": "Milán"
+   }
+  }
+ },
+ "cole": {
+  "bio": "Thomas Cole nació el 1 de febrero de 1801 en Bolton, Lancashire, y emigró con su familia a Estados Unidos en 1818 [1][2]. Fue retratista itinerante en Filadelfia, Ohio y Pittsburgh [2]. Se le atribuye el arranque de la Escuela del Río Hudson, primer gran movimiento artístico estadounidense [1][2]. Viajó por Europa entre 1829 y 1832 [3]. Para el comerciante Luman Reed pintó en 1835–1836 «El curso del imperio», y en 1839–1840 «El viaje de la vida»: ciclos alegóricos donde el paisaje sigue siendo protagonista [1][3]. Denunció el daño de la industria y el ferrocarril a los Catskill [2]. Murió de pleuresía en Catskill (Nueva York) el 11 de febrero de 1848 [1].",
+  "clave": "cole",
+  "discrepancias": [
+   "Lugar de muerte: Wikidata da «Nueva York» (la ciudad); NPS y Treccani dan Catskill, estado de Nueva York [1][3], igual que ULAN.",
+   "Edad al emigrar: NPS y el sitio histórico dan 1818, a los diecisiete años [1][2]; Treccani dice que emigró a los diecinueve [3]."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "U.S. National Park Service",
+    "titulo": "Thomas Cole",
+    "url": "https://www.nps.gov/people/thomas-cole.htm"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Thomas Cole National Historic Site",
+    "titulo": "Thomas Cole: American Artist",
+    "url": "https://thomascole.org/thomas-cole/"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Cole, Thomas",
+    "url": "https://www.treccani.it/enciclopedia/thomas-cole"
+   }
+  ],
+  "notas": "El ensayo del Met (Heilbrunn Timeline) y las páginas de la New-York Historical Society devolvieron 429/403; Britannica 403; nga.gov rechazó la conexión.",
+  "retirado": [
+   "«Fundó la Escuela del Río Hudson, la primera corriente propiamente estadounidense»: matizado a «se le atribuye el arranque… primer gran movimiento artístico», que es lo que dicen NPS y el sitio histórico.",
+   "«Ciclos sobre el auge y la caída de los imperios, en los que la naturaleza siempre sobrevive a la civilización»: es interpretación no respaldada por las fuentes leídas; se sustituye por la lectura de Treccani (el paisaje sigue siendo protagonista)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "11 de febrero de 1848",
+    "fuente": 1,
+    "lugar": "Catskill, Nueva York"
+   },
+   "nacimiento": {
+    "fecha": "1 de febrero de 1801",
+    "fuente": 1,
+    "lugar": "Bolton (Bolton-le-Moors), Lancashire"
+   }
+  }
+ },
+ "cormon": {
+  "bio": "Fernand-Anne Piestre, llamado Cormon, nació y murió en París (1845–1924) [1][2]. Pintor de historia y de temas religiosos de factura académica y muralista [1], hizo carrera oficial bajo la Tercera República: medallas en el Salón desde 1870 y encargos públicos [2]. Su Caín (1880, Musée d'Orsay), de 4 × 7 metros e inspirado en «La Conciencia» de Victor Hugo, lo compró el Estado, le valió la Legión de Honor e inauguró su especialidad prehistórica, pintada con modelos vivos vestidos de pieles [2]. Por su atelier libre pasaron Émile Bernard (1884–1886), Toulouse-Lautrec y, de marzo a junio de 1886, Van Gogh [3][4]. Aquellos alumnos desafiaban sus principios académicos; tras un enfrentamiento en abril de 1886, Cormon cerró temporalmente el taller [4].",
+  "clave": "cormon",
+  "discrepancias": [
+   "Wikidata precisa los días (24 de diciembre de 1845; 20 de marzo de 1924, VIII distrito de París); las fuentes académicas leídas solo dan los años, que coinciden."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Cormon, Fernand",
+    "url": "https://vocab.getty.edu/page/ulan/500115385"
+   },
+   {
+    "autor": "Stéphanie Cabanne",
+    "n": 2,
+    "obra": "L'Histoire par l'image (Réunion des musées nationaux – Grand Palais)",
+    "titulo": "Un tableau d'inspiration anthropologique [Caïn, 1880]",
+    "url": "https://histoire-image.org/etudes/tableau-inspiration-anthropologique"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Van Gogh Museum, catálogo Contemporaries of Van Gogh 1",
+    "titulo": "Emile Bernard - Fragment of a Venus (recto), Figures in a Street (verso)",
+    "url": "https://catalogues.vangoghmuseum.com/contemporaries-of-van-gogh-1/cat02"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Van Gogh Museum, catálogo Contemporaries of Van Gogh 1",
+    "titulo": "Henri de Toulouse-Lautrec - Portrait of Vincent van Gogh",
+    "url": "https://catalogues.vangoghmuseum.com/contemporaries-of-van-gogh-1/cat132"
+   }
+  ],
+  "notas": "Britannica (403) y RKD (403) no cargaron; Grove y Benezit son de suscripción y no se leyeron. La ficha del Musée d'Orsay sobre Caín devolvió 403; los datos de Caín proceden del estudio de L'Histoire par l'image (RMN-GP).",
+  "retirado": [
+   "«y los dejó hacer»: lo contradice el catálogo del Van Gogh Museum: los alumnos «intransigentes» desafiaban sus principios académicos, en abril de 1886 hubo un enfrentamiento y Cormon cerró temporalmente el taller; Bernard fue expulsado en febrero de 1886.",
+   "«hoy se le recuerda sobre todo por su taller»: juicio de valoración sin fuente; se sustituye por los datos del taller."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "1924",
+    "fuente": 1,
+    "lugar": "París"
+   },
+   "nacimiento": {
+    "fecha": "1845",
+    "fuente": 1,
+    "lugar": "París"
+   }
+  }
+ },
+ "corot": {
+  "bio": "Jean-Baptiste-Camille Corot nació en París en julio de 1796 y murió en la misma ciudad en 1875 [1][2]. Se formó con los paisajistas clasicistas Michallon y Bertin, pero pintó también del natural en Fontainebleau [2]. El viaje a Italia de 1825–1828 fue decisivo; volvió en 1834 y 1843 [1][2]. En invierno componía en el taller paisajes mitológicos y religiosos para el Salón [1]; sus estudios al óleo se aprecian hoy tanto como sus cuadros acabados [3], y su tratamiento de la luz influyó en los impresionistas [1][3]. Ayudó a Daumier, ciego, y a la viuda de Millet, y firmaba, apenas retocadas, obras de sus alumnos, origen de falsificaciones y de problemas de atribución [1][2].",
+  "clave": "corot",
+  "discrepancias": [
+   "Fecha de nacimiento: la National Gallery de Londres da el 17 de julio de 1796; Wikidata, el 16 de julio. ULAN y Treccani solo dan el año. En la biografía se deja «julio de 1796»."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "The National Gallery, Londres",
+    "titulo": "Jean-Baptiste-Camille Corot (1796 - 1875)",
+    "url": "https://www.nationalgallery.org.uk/artists/jean-baptiste-camille-corot"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Corot, Jean-Baptiste-Camille",
+    "url": "https://www.treccani.it/enciclopedia/jean-baptiste-camille-corot"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Corot, Camille",
+    "url": "https://vocab.getty.edu/page/ulan/500115390"
+   }
+  ],
+  "notas": "Britannica (403) y RKD (403) no cargaron; Grove, Benezit y Universalis son de suscripción. El ensayo del Met (Heilbrunn) devolvió 429.",
+  "retirado": [
+   "«firmó cuadros de amigos necesitados para que pudieran venderlos»: corregido; Treccani y la National Gallery hablan de obras de sus alumnos (o copias de sus cuadros hechas por pintores jóvenes) que él firmaba tras retocarlas.",
+   "«hoy se aprecian más que sus grandes composiciones de salón»: matizado; ULAN dice que se valoran tanto como los cuadros acabados.",
+   "«mantuvo a la viuda de Millet y a Daumier ciego»: se conserva como «ayudó», que es lo que dice Treccani; «mantuvo» no está respaldado.",
+   "«Tuvo fama de generoso hasta lo temerario»: valoración sin fuente, eliminada."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "1875",
+    "fuente": 2,
+    "lugar": "París"
+   },
+   "nacimiento": {
+    "fecha": "17 de julio de 1796",
+    "fuente": 1,
+    "lugar": "París"
+   }
+  }
+ },
+ "cranach": {
+  "bio": "Nació probablemente en 1472 en Kronach, de donde tomó el apellido [1][3]. Sus primeras obras conocidas son de Viena, hacia 1502 [1][2]. En 1505 llegó a Wittenberg como pintor de corte de Federico el Sabio y sirvió a tres electores sucesivos [1][2]. Obtuvo en 1520 el privilegio de una botica, imprimió en su casa textos de la Reforma y parte de la Biblia de Lutero, y fue burgomaestre varias veces [1][2][3]. Fue padrino en la boda de Lutero y luego de un hijo suyo, y difundió su retrato [2][3]. Su taller estandarizó el trabajo para delegarlo: salieron de él más de cincuenta versiones de Adán y Eva [3][4]. Murió en Weimar el 16 de octubre de 1553 [1][3].",
+  "clave": "cranach",
+  "discrepancias": [
+   "Llegada a Wittenberg: Britannica da la primavera de 1505; el Prado dice que fue reclamado en 1504.",
+   "Burgomaestre: Britannica dice tres veces entre 1537 y 1544; el Prado tres veces entre 1534 y 1540; el Cranach Digital Archive, de forma intermitente de 1537/38 a 1543/44.",
+   "Nacimiento: Wikidata da el 4 de octubre de 1472; las fuentes académicas solo el año («probablemente 1472»)."
+  ],
+  "fuentes": [
+   {
+    "autor": "Friedrich Thöne; Donald King",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Lucas Cranach, the Elder",
+    "url": "https://www.britannica.com/biography/Lucas-Cranach-the-Elder"
+   },
+   {
+    "autor": "D. G. L.",
+    "n": 2,
+    "obra": "Enciclopedia del Museo del Prado",
+    "titulo": "Cranach el Viejo, Lucas",
+    "url": "https://www.museodelprado.es/aprende/enciclopedia/voz/cranach-el-viejo-lucas/64710912-33a4-4a5f-be8d-5bdeeee53c60"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Cranach Digital Archive (Stiftung Museum Kunstpalast / TH Köln)",
+    "titulo": "Lucas Cranach the Elder (biografía)",
+    "url": "https://lucascranach.org/home/lucas-cranach"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Cranach Digital Archive",
+    "titulo": "Adam (DE_SPSG_GKI1195)",
+    "url": "https://lucascranach.org/en/DE_SPSG_GKI1195"
+   }
+  ],
+  "notas": "El Cranach Digital Archive es un proyecto académico (Museum Kunstpalast de Düsseldorf y TH Köln). Benezit y Universalis (suscripción) no se consultaron.",
+  "retirado": [
+   "«Amigo de Lutero y padrino de uno de sus hijos»: confirmado (CDA). Se añade que fue padrino en su boda.",
+   "«Impresor, boticario y alcalde»: confirmado (Prado, CDA, Britannica).",
+   "«Repitió el tema de Adán y Eva decenas de veces con variaciones mínimas»: corregido. Según el CDA son más de cincuenta versiones, de distintos tamaños, poses y fondos, así que las variaciones no son mínimas.",
+   "«Esa producción en serie es la razón de que el mismo cuadro exista en tantos museos»: inferencia no formulada así por ninguna fuente. Se sustituye por el dato de la estandarización del taller."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "16 de octubre de 1553",
+    "fuente": 3,
+    "lugar": "Weimar"
+   },
+   "nacimiento": {
+    "fecha": "probablemente 1472",
+    "fuente": 3,
+    "lugar": "Kronach"
+   }
+  }
+ },
+ "danby": {
+  "bio": "Nacido el 16 de noviembre de 1793 en Common, Killinick (condado de Wexford), estudió en la escuela de dibujo de la Dublin Society [1]. En 1813 fue a pie de Londres a Bristol, donde llegó a ser el miembro más conocido de la escuela local [1]. Instalado en Londres desde 1824, acusó a John Martin de plagiar su Apertura del sexto sello, que en la Royal Academy de 1828 atrajo tales multitudes que hubo que cambiarla de sala [1]. En 1829, acosado por acreedores y separado de su mujer, huyó al continente con su amante Ellen Evans, y vivió entre Brujas, Suiza y París [1]. Volvió en 1839 [1] y murió en Exmouth el 10 de febrero de 1861 [1].",
+  "clave": "danby",
+  "discrepancias": [
+   "Fecha de muerte: el Dictionary of Irish Biography da el 10 de febrero de 1861; Wikidata, el 9 de febrero.",
+   "La Enciclopedia Treccani (https://www.treccani.it/enciclopedia/francis-danby) dice que vivió junto al lago de Ginebra «desde 1841 hasta la muerte», lo que contradice al DIB (regreso a Londres en 1839, Exmouth desde 1846 y muerte allí); no se ha usado."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Dictionary of Irish Biography (Royal Irish Academy)",
+    "titulo": "Danby, Francis",
+    "url": "https://www.dib.ie/biography/danby-francis-a2393"
+   }
+  ],
+  "notas": "ULAN no da lugar ni fecha exactos. ODNB, Grove y Benezit son de suscripción. El autor de la voz del DIB no aparecía en el texto leído, así que se deja en null.",
+  "retirado": [
+   "«Formó en Bristol un grupo de paisajistas»: el DIB dice que fue el miembro más conocido de la escuela de Bristol, no que la formara; corregido.",
+   "«compitió en Londres con John Martin en el género del desastre bíblico»: se sustituye por el hecho documentado (acusó a Martin de plagio en 1826).",
+   "«durante once años»: el exilio fue de 1829 a 1839, unos diez años; corregido.",
+   "«tiempo que pasó en Suiza construyendo barcas de vela»: pasó por Bélgica, Alemania, Suiza y París; el DIB solo menciona su afición a los barcos y la vela en Exmouth, después de 1846. Eliminado.",
+   "«su carrera nunca se recuperó del todo»: contradicho por el DIB, según el cual a su vuelta tuvo más éxito que antes (El diluvio, 1840; compra de la reina Victoria, 1845)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "10 de febrero de 1861",
+    "fuente": 1,
+    "lugar": "Exmouth (Devon)"
+   },
+   "nacimiento": {
+    "fecha": "16 de noviembre de 1793",
+    "fuente": 1,
+    "lugar": "Common, Killinick, condado de Wexford (Irlanda)"
+   }
+  }
+ },
+ "david": {
+  "bio": "Discípulo de Joseph-Marie Vien, ganó el Premio de Roma en 1774 tras varios fracasos [1]. El Juramento de los Horacios, expuesto en el Salón de 1785, se tomó como manifiesto de la vuelta a la Antigüedad [1]. Jacobino cercano a Robespierre, en 1792 fue elegido diputado de la Convención y votó la ejecución de Luis XVI [1]. Organizó fiestas nacionales y funerales de los mártires revolucionarios, y en 1793 pintó La muerte de Marat [1]. Después fue pintor de Napoleón [1][2]. Con la vuelta de los Borbones se exilió a Bruselas, donde murió [1][2]. Entre sus alumnos figuraron Gérard, Gros e Ingres [1].",
+  "clave": "david",
+  "discrepancias": [
+   "Exilio: Britannica lo sitúa «tras la caída de Napoleón en 1815» [1]; la ULAN dice que se exilió en Bruselas tras la restauración borbónica, en 1816 [2]. Por eso la biografía no da año."
+  ],
+  "fuentes": [
+   {
+    "autor": "Roy Donald McMullen; Britannica Editors",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Jacques-Louis David",
+    "url": "https://www.britannica.com/biography/Jacques-Louis-David-French-painter"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "David, Jacques-Louis (nota biográfica)",
+    "url": "https://vocab.getty.edu/page/ulan/500115221"
+   }
+  ],
+  "notas": "Treccani y RKD no se consultaron para este autor. Grove y Universalis son de suscripción.",
+  "retirado": [
+   "«Murió sin volver a Francia»: las fuentes leídas dicen que murió en Bruselas, pero no que no volviera nunca. Lo he retirado.",
+   "«Su neoclasicismo fue durante treinta años el estilo oficial de un país en revolución permanente»: es una valoración sin fuente. La he sustituido por hechos concretos (Horacios, Marat, alumnos).",
+   "«Organizó las fiestas cívicas del nuevo régimen»: se conserva, precisado según Britannica (fiestas nacionales y funerales de los mártires)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "29 de diciembre de 1825",
+    "fuente": 1,
+    "lugar": "Bruselas"
+   },
+   "nacimiento": {
+    "fecha": "30 de agosto de 1748",
+    "fuente": 1,
+    "lugar": "París"
+   }
+  }
+ },
+ "delacroix": {
+  "bio": "Nació en Charenton-Saint-Maurice el 26 de abril de 1798 y murió en París el 13 de agosto de 1863 [1][2]. Fue alumno de Pierre-Narcisse Guérin, en cuyo taller conoció a Géricault [1][2]. El Salón de 1827 lo presentó como cabeza de la corriente romántica frente a Ingres, cabeza de la clasicista [2][3]. De enero a julio de 1832 recorrió Marruecos, Argelia y España con la misión diplomática del conde de Mornay, y sus apuntes le dieron temas hasta el final [1][2]. Decoró el Palais-Bourbon, el Luxemburgo, la Galería de Apolo del Louvre y una capilla de Saint-Sulpice [1]. Su Diario, publicado en 1893-1895 [2], está entre los cuadernos de artista más penetrantes desde Leonardo [1].",
+  "clave": "delacroix",
+  "discrepancias": [
+   "Lugar de nacimiento: la ULAN y Wikidata dicen «Saint-Maurice»; Britannica y la Treccani «Charenton-Saint-Maurice». Es el mismo municipio con distinto nombre."
+  ],
+  "fuentes": [
+   {
+    "autor": "René Huyghe",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Eugène Delacroix",
+    "url": "https://www.britannica.com/biography/Eugene-Delacroix"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Delacroix, Eugène",
+    "url": "https://www.treccani.it/enciclopedia/eugene-delacroix"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Delacroix, Eugène",
+    "url": "https://vocab.getty.edu/page/ulan/500115509"
+   }
+  ],
+  "notas": "Grove, Benezit y Universalis (suscripción) no se consultaron. Tampoco la ficha del RKD.",
+  "retirado": [
+   "«Una rivalidad que dividió a la crítica de su tiempo»: se conserva la oposición Ingres/Delacroix (Treccani, ULAN), pero se retira la afirmación general sobre la crítica.",
+   "«Un viaje a Marruecos en 1832»: se precisa que el viaje (enero-julio de 1832) incluyó Argelia y España y que fue con la misión del conde de Mornay (Britannica).",
+   "«Su diario, publicado póstumamente»: confirmado. Se publicó en 1893-1895 (Treccani), treinta años después de su muerte."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "13 de agosto de 1863",
+    "fuente": 1,
+    "lugar": "París"
+   },
+   "nacimiento": {
+    "fecha": "26 de abril de 1798",
+    "fuente": 1,
+    "lugar": "Charenton-Saint-Maurice"
+   }
+  }
+ },
+ "dore": {
+  "bio": "Nació en Estrasburgo el 6 de enero de 1832 y murió en París el 23 de enero de 1883 [1]. De 1848 a 1851 dibujó caricaturas semanales para el Journal pour rire [1]. Su fama se debe al libro ilustrado con grabado en madera: con más de cuarenta grabadores produjo más de noventa libros [1], entre ellos el Infierno de Dante (1861), el Quijote y los Cuentos de Perrault (1862), la Biblia y El paraíso perdido (1865) [2][3]. En 1872 empezó a retratar los barrios pobres de Londres [4]. El Museo de Orsay le da un lugar en el imaginario colectivo [3]. Después de 1870 se dedicó sobre todo a pintar y esculpir, con menos reconocimiento [1][2].",
+  "clave": "dore",
+  "discrepancias": [
+   "Fecha de la Biblia: Britannica da 1866 (la «large folio Bible») y la Treccani 1864. Se omite el año en la biografía.",
+   "La ULAN incluye «Austrian» entre sus clasificaciones, sin respaldo en las otras fuentes. Wikidata sitúa la muerte en el VII distrito de París; las fuentes académicas dicen solo «París»."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Gustave Doré",
+    "url": "https://www.britannica.com/biography/Gustave-Dore"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Doré, Gustave",
+    "url": "https://www.treccani.it/enciclopedia/gustave-dore"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Musée d'Orsay",
+    "titulo": "Gustave Doré (1832–1883): Master of Imagination (exposición, 2014)",
+    "url": "https://www.musee-orsay.fr/en/program/whats-on/exhibitions/gustave-dore-1832-1883-master-imagination"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Doré, Gustave",
+    "url": "https://vocab.getty.edu/page/ulan/500013657"
+   }
+  ],
+  "notas": "La página de Orsay y Britannica solo cargaron en el navegador. Grove, ODNB, Benezit y Universalis (suscripción) no se consultaron.",
+  "retirado": [
+   "«El ilustrador más difundido del siglo XIX»: superlativo no respaldado. Britannica dice «uno de los ilustradores de libros más prolíficos y exitosos».",
+   "«Un taller de más de cuarenta grabadores»: confirmado por Britannica (más de 40 grabadores en madera).",
+   "«Su imaginería fijó durante generaciones el aspecto que “debían” tener el infierno de Dante y el Diluvio»: reformulado con lo que dice Orsay sobre su lugar en el imaginario colectivo. La mención al Diluvio no está respaldada.",
+   "«Ambicionaba ser reconocido como pintor y nunca lo consiguió del todo»: la ambición no está documentada en las fuentes leídas. Queda lo que dicen la Treccani y Britannica: pintura y escultura le dieron menos reconocimiento y, según Britannica, carecen de la vivacidad de sus ilustraciones."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "23 de enero de 1883",
+    "fuente": 1,
+    "lugar": "París"
+   },
+   "nacimiento": {
+    "fecha": "6 de enero de 1832",
+    "fuente": 1,
+    "lugar": "Estrasburgo"
+   }
+  }
+ },
+ "durero": {
+  "bio": "Hijo segundo del orfebre Albrecht Dürer el Viejo, emigrado de Hungría a Núremberg en 1455, se formó en el taller paterno y desde 1486 con el pintor Michael Wolgemut [1][2]. Viajó a Italia en 1494-1495 y en 1505-1507 [1][3]. Hacia 1496 sustituyó su primera sigla por el monograma que lo identificaría [2]. Llevó el grabado a la categoría de arte independiente [3]. Según la tradición, demandó a Marcantonio Raimondi por copiar sus grabados, uno de los primeros pleitos documentados sobre propiedad intelectual [4]. En sus últimos años escribió sobre geometría y perspectiva (1525), fortificación (1527) y proporción humana (1528) [2][3]. Trabajó para los emperadores Maximiliano I y Carlos V [1][3].",
+  "clave": "durero",
+  "discrepancias": [
+   "Tratado de la proporción: el Met dice que solo el primero de los cuatro libros se publicó en vida del artista (1528) [3]; Treccani los da como póstumos, de finales de 1528 [2]. Por eso la biografía solo dice «1528».",
+   "Primer viaje a Italia: Britannica lo presenta como probable («seems to have undertaken») [1]; el Met lo da como seguro, 1494-1495 [3]."
+  ],
+  "fuentes": [
+   {
+    "autor": "Eberhard Ruhmer; Britannica Editors",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Albrecht Dürer",
+    "url": "https://www.britannica.com/biography/Albrecht-Durer-German-artist"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Enciclopedia Treccani (Enciclopedia on line)",
+    "titulo": "Dürer, Albrecht",
+    "url": "https://www.treccani.it/enciclopedia/albrecht-durer"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "The Metropolitan Museum of Art, Heilbrunn Timeline of Art History",
+    "titulo": "Albrecht Dürer (1471–1528)",
+    "url": "https://www.metmuseum.org/essays/albrecht-durer-1471-1528"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Princeton University Art Museum",
+    "titulo": "Marcantonio Raimondi, Adam (after Albrecht Dürer), 1505–09",
+    "url": "https://artmuseum.princeton.edu/art/collections/objects/5360"
+   }
+  ],
+  "notas": "El Prado tiene ficha de autor, pero no se encontró en ella el enlace a la voz de la enciclopedia. Los títulos de los tratados según Treccani son: Unterweisung der Messung (1525), Befestigung der Städte (1527) y Vier Bücher von menschlicher Proportion (1528).",
+  "retirado": [
+   "«Firmaba con un monograma que se falsificó tanto en vida que llegó a pleitear por él en Venecia»: la fuente leída (Princeton) dice que llevó a los tribunales a Marcantonio Raimondi acusándolo de copiar sus grabados, pero no menciona ni el monograma ni Venecia. Lo he reformulado según esa fuente y he mantenido aparte el dato de Treccani sobre el monograma. Las fuentes secundarias remiten el episodio a Vasari, que no he leído.",
+   "«El primer artista del norte en pensarse a sí mismo como intelectual»: es una valoración que ninguna fuente formula así. La he retirado y he dejado los tratados con título y fecha.",
+   "«Llevó el grabado a una precisión que nadie había alcanzado»: la he sustituido por la formulación del Met (elevó el grabado a arte independiente)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "6 de abril de 1528",
+    "fuente": 1,
+    "lugar": "Núremberg"
+   },
+   "nacimiento": {
+    "fecha": "21 de mayo de 1471",
+    "fuente": 1,
+    "lugar": "Núremberg"
+   }
+  }
+ },
+ "eufronio": {
+  "bio": "Eufronio trabajó en Atenas como pintor y alfarero de figuras rojas entre hacia 520 y 470 a.C. [1]. La técnica, surgida hacia 520 a.C., invertía la de figuras negras: fondo barnizado de negro, figuras reservadas en el color de la arcilla y detalles pintados en línea fina en vez de incisos [2]. Fue uno de los «Pioneros», que ensayaron escorzos y superposiciones del cuerpo [1]; su crátera de Heracles y Anteo (Louvre G 103, hacia 515–510 a.C.) lo muestra [3]. Firmó dieciocho vasos: seis como pintor y doce, posteriores, como alfarero, junto a Duris, Macrón y Onésimo; quizá le falló la vista, o quizá pasó a dirigir el taller [1].",
+  "clave": "eufronio",
+  "discrepancias": [
+   "Los datos estructurados de ULAN incluidos en el lote dan «nacimiento 540 a.C., muerte 440 a.C.», que son fechas de trabajo estimadas; la nota del mismo registro habla de actividad entre 520 y 470 a.C. [1]. Wikidata solo da siglos (VI y V a.C.)."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Euphronios",
+    "url": "https://www.getty.edu/vow/ULANFullDisplay?find=&place=&nation=&logic=&note=&role=&subjectid=500116286"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "The Fitzwilliam Museum, Universidad de Cambridge",
+    "titulo": "Black, Red and White",
+    "url": "https://fitzmuseum.cam.ac.uk/explore-our-collection/highlights/context/tradition-and-change/black-red-and-white"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Musée du Louvre",
+    "titulo": "At the Heart of a Merciless Struggle",
+    "url": "https://www.louvre.fr/en/exhibitions-and-events/exhibitions/olympism/highlights/at-the-heart-of-a-merciless-struggle"
+   }
+  ],
+  "notas": "El ensayo del Met sobre las técnicas de figuras negras y rojas (Heilbrunn Timeline) devolvió 429 con un control de Vercel; la página de la Getty Museum sobre Euphronios no muestra texto sin JavaScript; Britannica 403; el Beazley Archive (CARC, Oxford) tras verificación de navegador.",
+  "retirado": [
+   "«Firmó como pintor de joven y como alfarero de mayor, quizá porque la vista dejó de acompañarle»: se conserva, pero ULAN presenta la vista como una de dos hipótesis; la otra es que la firma de alfarero indique que era dueño del taller [1]. Se dan ambas.",
+   "«Lo que permitía dibujar la anatomía con pincel en lugar de rascarla»: se reformula con las palabras de la Fitzwilliam (detalles pintados frente a detalles incisos) [2]."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "desconocida (activo hasta hacia 470 a.C.)",
+    "fuente": 1,
+    "lugar": "desconocido"
+   },
+   "nacimiento": {
+    "fecha": "desconocida (activo desde hacia 520 a.C.)",
+    "fuente": 1,
+    "lugar": "desconocido (activo en Atenas)"
+   }
+  }
+ },
+ "exekias": {
+  "bio": "Alfarero y pintor ateniense de figuras negras, activo hacia 550–525 a.C. [1] o 540–520 a.C. [2], se le considera, junto al Pintor de Amasis, el maestro más fino y original de la técnica a mediados del siglo VI a.C. [1]. Empezó como alfarero del taller llamado Grupo E y luego decoró también sus vasos [2]. Se conservan trece vasos con su firma: dos como alfarero y pintor, once solo como alfarero [1]. Parece haber inventado formas nuevas, quizá la crátera de cáliz [1][2]. En lugar de la acción, lo habitual entonces, pintaba el instante anterior o posterior —Aquiles y Áyax jugando en el ánfora del Vaticano—, dando peso a la psicología de la escena [2][1].",
+  "clave": "exekias",
+  "discrepancias": [
+   "Periodo de actividad: Britannica, c. 550–525 a.C.; la nota del ULAN, c. 540–520 a.C. (con fechas de vida estimadas de 560 y 500 a.C.)."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Exekias",
+    "url": "https://www.britannica.com/biography/Exekias"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Exekias (500027430)",
+    "url": "https://vocab.getty.edu/page/ulan/500027430"
+   }
+  ],
+  "notas": "Wikidata sitúa su nacimiento en Atenas, pero ninguna fuente académica leída da lugar de nacimiento: Atenas es su lugar de actividad. Treccani (exechia) no se consultó.",
+  "retirado": [
+   "«El mayor pintor de figuras negras del Ática»: Britannica lo pone a la par del Pintor de Amasis; matizado.",
+   "«uno de los pocos que firmaba a la vez como alfarero y como pintor, señal de que hacía el vaso entero»: se sustituye por el dato: dos vasos firmados como alfarero y pintor y once solo como alfarero.",
+   "«lo que lo separa de todos sus contemporáneos»: exagerado; el ULAN dice solo que se apartaba de la costumbre de la época."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "desconocida",
+    "fuente": 1,
+    "lugar": null
+   },
+   "nacimiento": {
+    "fecha": "desconocida (activo c. 550–525 a.C.)",
+    "fuente": 1,
+    "lugar": "Atenas (lugar de actividad)"
+   }
+  }
+ },
+ "gauguin": {
+  "bio": "Tras seis años en la marina mercante, su tutor Gustave Arosa le consiguió un puesto de agente de bolsa; empezó a pintar con Pissarro [1]. Expuso con los impresionistas desde 1880 y perdió el empleo con el crac bursátil de 1882 [1]. En Pont-Aven, en Bretaña, llegó en 1888 con La visión después del sermón a los planos de color y los contornos marcados que llamó «sintetismo», y en 1891 el crítico Albert Aurier lo proclamó jefe de los simbolistas [1]. Buscó en Tahití (1891) una cultura que creía ajena a los males de la civilización moderna [1][2]. En 1901 se retiró a Hiva Oa, en las Marquesas, donde murió solo, enfermo de sífilis y con un pleito pendiente [1].",
+  "clave": "gauguin",
+  "discrepancias": [],
+  "fuentes": [
+   {
+    "autor": "Douglas Cooper; Britannica Editors",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Paul Gauguin",
+    "url": "https://www.britannica.com/biography/Paul-Gauguin"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Gauguin, Paul (nota biográfica)",
+    "url": "https://vocab.getty.edu/page/ulan/500011421"
+   }
+  ],
+  "notas": "Solo se ha leído a fondo una fuente académica (Britannica) más la nota de la ULAN. Treccani, RKD y Grove no se consultaron para este autor. Britannica recoge además la tesis de Kaufmann y Wildegans (2008) sobre la oreja de Van Gogh, que no se ha incluido.",
+  "retirado": [
+   "«Fue agente de bolsa hasta los treinta y cinco años y lo dejó todo por pintar»: según Britannica perdió el empleo con el crac bursátil de 1882, a los 34 años, y no fue una renuncia voluntaria. Lo he corregido.",
+   "«Murió endeudado»: ninguna fuente leída lo dice. Lo he sustituido por lo que sí consta (sífilis, pleito pendiente, murió solo).",
+   "«Abrió camino al fauvismo»: Britannica solo dice en general que influyó en las vanguardias de principios del siglo XX, sin nombrar el fauvismo. Lo he retirado.",
+   "«Anterior a la civilización europea»: lo he reformulado según la nota de la ULAN («inocentes de los males de la civilización moderna»)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "8 de mayo de 1903",
+    "fuente": 1,
+    "lugar": "Atuona, Hiva Oa (islas Marquesas)"
+   },
+   "nacimiento": {
+    "fecha": "7 de junio de 1848",
+    "fuente": 1,
+    "lugar": "París"
+   }
+  }
+ },
+ "hamilton": {
+  "bio": "Nacido en 1723 en Lanarkshire y educado en la Universidad de Glasgow [2][5], estudió en Roma con Agostino Masucci, pintó retratos de la aristocracia en Londres a comienzos de la década de 1750 y en 1756 volvió a Roma para quedarse [1][2][5]. Allí fue pintor, arqueólogo y marchante: excavó yacimientos antiguos de los alrededores y vendió muchos hallazgos a coleccionistas británicos [1]. Entre 1760 y 1775 pintó seis grandes escenas de la Ilíada, cada una para un mecenas distinto [4][5]; los grabados de Domenico Cunego les dieron audiencia internacional [4][5], y sus lienzos influyeron en la generación francesa siguiente, sobre todo en Jacques-Louis David [3]. Murió en Roma el 4 de enero de 1798 [1].",
+  "clave": "hamilton",
+  "discrepancias": [
+   "Lugar de nacimiento: Britannica, Bertram Shotts (Lanarkshire); British Museum, Murdieston House (Lanark); ULAN, Murdieston (Lothian); National Galleries of Scotland, North Lanarkshire; Treccani, Lanark.",
+   "Llegada a Roma: Britannica dice que vivió en Roma desde 1742 (salvo c. 1752–54 en Londres); el British Museum, que estuvo en Roma en 1742–48 y en Londres en 1752–56; las National Galleries of Scotland, que llegó en 1748, volvió a Londres en 1751 y se asentó en Italia en 1756; Treccani, que se asentó en Roma después de 1748.",
+   "El British Museum advierte que algunas publicaciones antiguas dan por error 1730 como año de nacimiento."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Gavin Hamilton",
+    "url": "https://www.britannica.com/biography/Gavin-Hamilton"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "National Galleries of Scotland",
+    "titulo": "Gavin Hamilton",
+    "url": "https://www.nationalgalleries.org/art-and-artists/artists/gavin-hamilton"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "National Galleries of Scotland",
+    "titulo": "Andromache Bewailing the Death of Hector (NG 2428)",
+    "url": "https://www.nationalgalleries.org/art-and-artists/5683"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "National Galleries of Scotland",
+    "titulo": "Achilles Lamenting the Death of Patroclus (NG 2339)",
+    "url": "https://www.nationalgalleries.org/art-and-artists/5009"
+   },
+   {
+    "autor": null,
+    "n": 5,
+    "obra": "British Museum",
+    "titulo": "Gavin Hamilton (BIOG30463)",
+    "url": "https://www.britishmuseum.org/collection/term/BIOG30463"
+   },
+   {
+    "autor": null,
+    "n": 6,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Hamilton, Gavin",
+    "url": "https://www.treccani.it/enciclopedia/gavin-hamilton"
+   }
+  ],
+  "notas": "La fuente 6 (Treccani) respalda la difusión de la serie homérica por grabados y su papel en los círculos neoclásicos, aunque no se cita en el texto por no añadir nada nuevo. ODNB, Grove y Benezit son de suscripción.",
+  "retirado": [
+   "«excavó en Hadriano y en Ostia»: no pude leerlo en ninguna fuente académica (solo apareció en resúmenes de buscador); se deja solo lo que dice Britannica: excavaciones de yacimientos cercanos a Roma.",
+   "«vendió a la aristocracia británica buena parte de las antigüedades que hoy están en Inglaterra»: exagerado; Britannica dice que vendió muchos hallazgos a coleccionistas británicos. Corregido.",
+   "«Sus escenas homéricas, difundidas por grabado, fueron una de las fuentes del neoclasicismo europeo, David incluido»: respaldado en lo sustancial (NGS: influencia en David; grabados de Cunego); se conserva con esas fuentes."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "4 de enero de 1798",
+    "fuente": 1,
+    "lugar": "Roma"
+   },
+   "nacimiento": {
+    "fecha": "1723",
+    "fuente": 2,
+    "lugar": "Lanarkshire (Escocia); lugar exacto discutido"
+   }
+  }
+ },
+ "ingres": {
+  "bio": "Nació en Montauban el 29 de agosto de 1780 y murió en París el 14 de enero de 1867 [1]. Su padre le enseñó dibujo y violín, y fue dos años segundo violín en la orquesta del Capitolio de Toulouse: de ahí la expresión francesa «violon d'Ingres» [2]. Entró en el taller de David en 1796 o 1797 y ganó el premio de Roma en 1801 [1][3][4]. Sostenía que «le dessin est la probité de l'art» [5]. La crítica le reprochó sus deformaciones anatómicas (a la Gran odalisca le sobraban, según uno, tres vértebras), que anticipan experimentos del siglo XX [1]. Encabezó el clasicismo frente a Delacroix y dirigió la Academia de Francia en Roma entre 1834 y 1841 [1][3].",
+  "clave": "ingres",
+  "discrepancias": [
+   "Entrada en el taller de David: la ULAN y la Treccani dan 1796; Britannica 1797."
+  ],
+  "fuentes": [
+   {
+    "autor": "Andrew Carrington Shelton",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Jean-Auguste-Dominique Ingres",
+    "url": "https://www.britannica.com/biography/J-A-D-Ingres"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Musées Occitanie (red de museos de la región Occitania)",
+    "titulo": "Le violon d'Ingres (Musée Ingres Bourdelle, Montauban)",
+    "url": "https://musees-occitanie.fr/oeuvre/le-violon-dingres/"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Ingres, Jean-Auguste-Dominique",
+    "url": "https://www.treccani.it/enciclopedia/jean-auguste-dominique-ingres"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Ingres, Jean-Auguste-Dominique",
+    "url": "https://vocab.getty.edu/page/ulan/500028037"
+   },
+   {
+    "autor": null,
+    "n": 5,
+    "obra": "Musée du Louvre (minisitio de la exposición Ingres)",
+    "titulo": "Ingres et la peinture troubadour",
+    "url": "https://mini-site.louvre.fr/ingres/1.7.2.2.1_fr.html"
+   }
+  ],
+  "notas": "Grove, Benezit y Universalis (suscripción) no se consultaron. La cita «le dessin est la probité de l'art» aparece en el minisitio del Louvre; no se encontró la fuente primaria.",
+  "retirado": [
+   "«Defendía que el dibujo es la probidad del arte»: confirmado con la cita original (Louvre).",
+   "«Deformaba la anatomía… algo que sus críticos le echaron en cara y que sus herederos del siglo XX celebraron»: se mantiene la crítica (Britannica). «Celebraron» se corrige a lo que dice la fuente: sus distorsiones «anticipan» experimentos del modernismo del siglo XX.",
+   "«Tocaba el violín lo bastante bien como para dejar una expresión al idioma francés»: confirmado y precisado (segundo violín en la orquesta del Capitolio de Toulouse; la expresión nace a finales del siglo XIX en el círculo de Gautier)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "14 de enero de 1867",
+    "fuente": 1,
+    "lugar": "París"
+   },
+   "nacimiento": {
+    "fecha": "29 de agosto de 1780",
+    "fuente": 1,
+    "lugar": "Montauban"
+   }
+  }
+ },
+ "ivanov": {
+  "bio": "Aleksandr Ivánov nació en San Petersburgo en 1806 [1]. Llegó a Roma en octubre de 1830 y vivió veintiocho años en Italia [1][2][3]. De 1837 a 1857 pintó «La aparición de Cristo al pueblo», hoy en la Galería Tretiakov [1][2]; se conservan más de trescientos estudios en la Tretiakov y setenta y siete en el Museo Ruso [3]. Al final, a partir de la «Vida de Jesús» de Strauss, proyectó una serie bíblica [1]. En 1858 volvió a San Petersburgo; el cuadro, expuesto en el Palacio de Invierno y en la Academia, fue recibido con indiferencia [2]. Murió de cólera en casa de los hermanos Botkin, horas antes de que el emperador quisiera comprarlo por 15.000 rublos [2].",
+  "clave": "ivanov",
+  "discrepancias": [
+   "Día de la muerte: Golovina da el 3 de julio de 1858 [2] (igual que Wikidata); el artículo de Markina da el 4 de julio [3]. Probablemente diferencia de calendario o de fuente; no se resuelve con lo leído.",
+   "Nacimiento: Wikidata da 16 de julio de 1806; ninguna fuente leída da el día."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Ivanov, Aleksandr Andreevič",
+    "url": "https://www.treccani.it/enciclopedia/aleksandr-andreevic-ivanov"
+   },
+   {
+    "autor": "Lyubov Golovina",
+    "n": 2,
+    "obra": "The Tretyakov Gallery Magazine, n.º 4 (2005)",
+    "titulo": "«The Appearance of Christ to the People»: A Life-long Enterprise",
+    "url": "https://www.tretyakovgallerymagazine.com/articles/4-2005-09/appearance-christ-people-life-long-enterprise"
+   },
+   {
+    "autor": "Lyudmila Markina",
+    "n": 3,
+    "obra": "The Tretyakov Gallery Magazine, n.º 4 (2006)",
+    "titulo": "The Enigma of Alexander Ivanov. Bicentenary of the Artist",
+    "url": "https://www.tretyakovgallerymagazine.com/articles/4-2006-13/enigma-alexander-ivanov-bicentenary-artist"
+   }
+  ],
+  "notas": "Britannica devolvió 403.",
+  "retirado": [
+   "«Más de seiscientos estudios»: las cifras respaldadas son más de 300 en la Tretiakov y 77 en el Museo Ruso [3]; se corrige.",
+   "«Pasó veinte años en Roma pintando un solo cuadro»: se precisa; vivió 28 años en Italia y trabajó en el cuadro de 1837 a 1857 [1][2].",
+   "«Murió de cólera semanas después de exponerlo»: se conserva la muerte por cólera y la fría acogida [2]; el intervalo de «semanas» no consta en lo leído y se quita."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "3 de julio de 1858",
+    "fuente": 2,
+    "lugar": "San Petersburgo"
+   },
+   "nacimiento": {
+    "fecha": "1806",
+    "fuente": 1,
+    "lugar": "San Petersburgo"
+   }
+  }
+ },
+ "john_martin": {
+  "bio": "John Martin nació en julio de 1789 en Haydon Bridge, Northumberland, y murió en 1854 en Douglas, isla de Man [1][2]. Se formó en Newcastle y estudió arquitectura y perspectiva en Londres [1]. Pintó catástrofes pobladas de figuras diminutas y arquitecturas fantásticas, como «El Diluvio» (1834) [1]. Sus mezzotintas asequibles para la Biblia y el «Paraíso perdido» colgaron en casas de todo el mundo, y más de cinco mil personas pagaron por ver «El festín de Baltasar» en 1821 [2][4]. La Royal Academy nunca lo eligió; Constable lo llamó «pintor de pantomimas» [4]. Desde finales de la década de 1820 publicó planes de alcantarillado, malecón y ferrocarril para Londres que nunca se hicieron como él quería [3].",
+  "clave": "john_martin",
+  "discrepancias": [],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Martin, John",
+    "url": "https://www.treccani.it/enciclopedia/john-martin"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Tate (nota de prensa)",
+    "titulo": "John Martin: Apocalypse – Press Release",
+    "url": "https://www.tate.org.uk/press/press-releases/john-martin-apocalypse"
+   },
+   {
+    "autor": "Martin Myrone",
+    "n": 3,
+    "obra": "Tate",
+    "titulo": "John Martin: Taking the train to the New Jerusalem?",
+    "url": "https://www.tate.org.uk/art/artists/john-martin-371/john-martin-taking-train-new-jerusalem"
+   },
+   {
+    "autor": "Jonathan Griffin",
+    "n": 4,
+    "obra": "Tate Etc., n.º 23 (otoño de 2011)",
+    "titulo": "AAAARGH!: John Martin",
+    "url": "https://www.tate.org.uk/tate-etc/issue-23-autumn-2011/aaaargh"
+   }
+  ],
+  "notas": "Las fechas exactas de Wikidata (19 de julio de 1789, 17 de febrero de 1854) no se confirmaron en ninguna fuente leída; ULAN coincide en años y lugares pero no se abrió su página.",
+  "retirado": [
+   "«Un desprecio crítico casi igual de grande»: matizado; Tate habla de opinión dividida, con detractores (Constable, Ruskin, la Royal Academy) y defensores (Bulwer-Lytton, Dickens) [2][4].",
+   "«Proyectos de ingeniería para el alcantarillado de Londres que nadie le compró»: se precisa; eran planes de alcantarillado, malecón y ferrocarril, tomados en serio pero bloqueados, y llegó a patentar un sistema de drenaje [3]."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "1854",
+    "fuente": 1,
+    "lugar": "Douglas, isla de Man"
+   },
+   "nacimiento": {
+    "fecha": "julio de 1789",
+    "fuente": 2,
+    "lugar": "Haydon Bridge, Northumberland"
+   }
+  }
+ },
+ "laocoonte": {
+  "bio": "Plinio el Viejo alaba el Laocoonte del palacio de Tito como obra superior a toda pintura o escultura, hecha de común acuerdo por Agesandro, Polidoro y Atenodoro, de Rodas, y afirma que salió de un solo bloque [1]. Ya en 1898 el diccionario de Harper juzgaba inexacta esa afirmación [3]. El grupo apareció en 1506 en el Esquilino, se identificó enseguida con el de Plinio y lo compró Julio II; los Museos Vaticanos lo fechan hacia 40–30 a.C., con debate [2]. La Getty ULAN los hace emigrar a Italia a comienzos del Imperio y les atribuye algunos o todos los grupos de la gruta de Tiberio en Sperlonga, hallados en 1957 [4][5].",
+  "clave": "laocoonte",
+  "discrepancias": [
+   "Cronología: los Museos Vaticanos fechan el grupo hacia 40–30 a.C. y reconocen el debate [2]; ULAN sitúa la actividad de Agesandro hacia 10–20 d.C., en Italia, a comienzos del Imperio [4]; Stewart data Sperlonga en época de Tiberio [5]. La etiqueta «activos c. siglo I a.C.» de la colección es por tanto discutible: el arco razonable es siglo I a.C.–comienzos del I d.C.",
+   "Numeración de Plinio: el pasaje es 36.37 en la numeración moderna por párrafos; la traducción de Bostock y Riley en Perseus lo sitúa en el capítulo 4 del libro 36, y Harper lo cita como xxxvi. 5 [1][3]."
+  ],
+  "fuentes": [
+   {
+    "autor": "Plinio el Viejo (trad. John Bostock y H. T. Riley)",
+    "n": 1,
+    "obra": "Plinio el Viejo, Historia natural 36.37 (libro 36, cap. 4 en la ed. de Bostock y Riley, 1855), Perseus Digital Library, Tufts University",
+    "titulo": "Pliny the Elder, The Natural History, Book XXXVI, chapter 4",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D36%3Achapter%3D4"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Musei Vaticani",
+    "titulo": "Laocoön (Museo Pio-Clementino, Cortile Ottagono), cat. 1059",
+    "url": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/museo-pio-clementino/Cortile-Ottagono/laocoonte.html"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Harper's Dictionary of Classical Antiquities (1898), ed. Harry Thurston Peck, Perseus Digital Library",
+    "titulo": "Laocoön",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0062%3Aentry%3Dlaocoon-harpers"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Agesandros of Rhodes",
+    "url": "https://www.getty.edu/vow/ULANFullDisplay?find=&role=&nation=&subjectid=500021781"
+   },
+   {
+    "autor": "A. F. Stewart",
+    "n": 5,
+    "obra": "The Journal of Roman Studies 67 (1977), pp. 76–90 (resumen)",
+    "titulo": "To Entertain an Emperor: Sperlonga, Laokoon and Tiberius at the Dinner-Table",
+    "url": "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/to-entertain-an-emperor-sperlonga-laokoon-and-tiberius-at-the-dinnertable/6B3212CB77301D89E6F1C843E05E7E95"
+   }
+  ],
+  "notas": "Sin registro propio en Wikidata/ULAN para el trío; se usó el registro ULAN de Agesandros of Rhodes (500021781). Del artículo de Stewart solo se leyó el resumen en Cambridge Core. Conviene, si se quiere mencionar la firma de Sperlonga, verificarla en el catálogo de los Museos Vaticanos o en el del Museo Archeologico Nazionale di Sperlonga.",
+  "retirado": [
+   "«La restauración moderna ha desmentido [el bloque único]: son varios bloques»: la inexactitud de Plinio está respaldada (Harper, 1898) [3], pero no pude leer una fuente sobre la restauración ni sobre el número de piezas; se atribuye a Harper y se quita la mención a la restauración.",
+   "«No se conserva ninguna otra obra firmada por ellos»: contradice la propia frase siguiente y lo que dice ULAN, que les atribuye grupos de Sperlonga [4]; se elimina.",
+   "«Las firmas halladas en Sperlonga»: no conseguí leer una fuente académica que transcriba la firma del grupo de Escila (Smarthistory, Khan Academy y el Ministerio de Cultura italiano no cargaron; el catálogo en línea de los Vaticanos dio timeout); se sustituye por la atribución de ULAN."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "desconocida",
+    "fuente": 1,
+    "lugar": "desconocido"
+   },
+   "nacimiento": {
+    "fecha": "desconocida",
+    "fuente": 1,
+    "lugar": "Rodas (según Plinio)"
+   }
+  }
+ },
+ "lemoyne": {
+  "bio": "Nació en París en 1688 y murió allí el 4 de junio de 1737 [1][2]. Se formó con Louis Galloche y en la Academia real, que lo admitió en 1718 [1][2]. Entre 1723 y 1727 estuvo en Italia, donde estudió a Miguel Ángel, Correggio y Veronés [1][2]. Su obra mayor es la Apoteosis de Hércules, techo del Salón de Hércules de Versalles con 142 figuras, cuyo boceto de 1732 conserva el Louvre [3][4]. La terminó en 1736, tras cuatro años de trabajo, y Luis XV lo nombró primer pintor del rey; al año siguiente se suicidó, agotado por el encargo [3]. Fueron alumnos suyos Natoire y, brevemente, Boucher [1][5].",
+  "clave": "lemoyne",
+  "discrepancias": [
+   "Fechas del techo de Hércules: la Treccani da 1731-1736; Versalles dice que se terminó en 1736 tras cuatro años (es decir, desde 1732/33); el RKD sitúa su actividad en Versalles en 1729-1736; el boceto del Louvre es de 1732.",
+   "Intervalo hasta el suicidio: la Treccani dice «pocos meses después» de terminar el techo; Versalles, «un año después, en 1737»."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "RKD, Instituto Neerlandés de Historia del Arte (RKDartists)",
+    "titulo": "François Le Moine",
+    "url": "https://rkd.nl/artists/49301"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Lemoine, François",
+    "url": "https://www.treccani.it/enciclopedia/francois-lemoine"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Château de Versailles",
+    "titulo": "The King's State Apartment (Salon d'Hercule)",
+    "url": "https://en.chateauversailles.fr/discover/estate/palace/king-state-apartment"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Musée du Louvre, Collections",
+    "titulo": "Apothéose d'Hercule (maquette du plafond du Salon d'Hercule), INV 6713",
+    "url": "https://collections.louvre.fr/en/ark:/53355/cl010236524"
+   },
+   {
+    "autor": null,
+    "n": 5,
+    "obra": "The National Gallery, Londres",
+    "titulo": "François Boucher (1703-1770)",
+    "url": "https://www.nationalgallery.org.uk/artists/francois-boucher"
+   }
+  ],
+  "notas": "Para Lemoyne no había referencias en Britannica ni en el Prado. La nota de la ULAN solo trae «Comment on works». El RKD solo cargó en el navegador. La Wallace Collection también lo da como maestro de Boucher, pero con fechas de vida erróneas para Lemoyne (1688-1770), así que no se cita.",
+  "retirado": [
+   "«Primer pintor del rey y autor del techo del Salón de Hércules, que le costó cuatro años»: confirmado (Versalles).",
+   "«Al día siguiente de recibir un encargo mayor se quitó la vida con su espada»: no verificado. Ninguna fuente leída menciona el nuevo encargo, el plazo de un día ni la espada. Queda solo el suicidio en 1737 (RKD, Treccani, Versalles).",
+   "«Agotado por el trabajo y por la muerte de su mujer»: el agotamiento por el encargo está confirmado (Versalles); la muerte de su mujer no se ha verificado y se retira.",
+   "«Fue maestro de Boucher»: matizado. La National Gallery dice que Boucher se formó «brevemente» con él; el RKD no lo incluye entre sus alumnos y sí a Natoire.",
+   "«Uno de los que llevaron la pintura francesa del gran estilo al rococó»: no respaldado por las fuentes leídas. Se retira."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "4 de junio de 1737 (suicidio)",
+    "fuente": 1,
+    "lugar": "París"
+   },
+   "nacimiento": {
+    "fecha": "1688",
+    "fuente": 1,
+    "lugar": "París"
+   }
+  }
+ },
+ "marianos": {
+  "bio": "Marianos y su hijo Hanina solo se conocen por dos pavimentos de mosaico [1]. En la sinagoga de Beit Alfa, descubierta en 1929 por miembros del kibutz y excavada ese año por E. L. Sukenik, una inscripción griega pide que se recuerde a «los artesanos que realizaron esta obra, Marianos y su hijo Hanina» [1][2][3]. Otra, en arameo, fecha el suelo en el reinado del emperador Justino, probablemente Justino I (518–527) [1][2]. Sus nombres reaparecen en un mosaico de una sinagoga de Beit Shean excavada por Nehemya Zori en 1962, que conserva inscripciones griegas y en alfabeto samaritano [1][4]. Trabajaban en la manera grecooriental de la época: frontalidad, motivos repetidos, sin modelado ni perspectiva [1].",
+  "clave": "marianos",
+  "discrepancias": [
+   "Carácter de la sinagoga de Beit Shean: la ficha la llamaba samaritana; la base de datos de Kinneret la clasifica como judía pero registra inscripciones griegas y samaritanas (Naveh 1981; CIIP V/2); la Encyclopaedia Judaica dice solo «un pavimento ornamental contiguo a una sinagoga de Beit Shean». Se evita el adjetivo.",
+   "Fecha: la inscripción aramea nombra a «Justino»; la Encyclopaedia Judaica lo identifica con Justino I (518–527) y el texto del Ministerio israelí dice «probablemente Justino I»."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Encyclopaedia Judaica (Gale, 2007), reproducida en Jewish Virtual Library",
+    "titulo": "Marianos",
+    "url": "https://jewishvirtuallibrary.org/marianos"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Ministerio de Asuntos Exteriores de Israel, reproducido en Jewish Virtual Library",
+    "titulo": "Archaeology in Israel: Beit Alpha",
+    "url": "https://jewishvirtuallibrary.org/beit-alpha"
+   },
+   {
+    "autor": "C. Ben David, M. Osband, M. Aviam",
+    "n": 3,
+    "obra": "The Bornblum Eretz Israel Synagogues Website (Kinneret Academic College)",
+    "titulo": "Beth Alpha",
+    "url": "https://synagogues.kinneret.ac.il/synagogues/beth-alpha/"
+   },
+   {
+    "autor": "C. Ben David, M. Osband, M. Aviam",
+    "n": 4,
+    "obra": "The Bornblum Eretz Israel Synagogues Website (Kinneret Academic College)",
+    "titulo": "Beth Shean",
+    "url": "https://synagogues.kinneret.ac.il/synagogues/beth-shean/"
+   }
+  ],
+  "notas": "Sin registro en ULAN ni Wikidata. No se encontró una página de la Autoridad de Antigüedades de Israel ni de Parques Nacionales con el texto de las inscripciones; la publicación original de Sukenik (1932) y la de Zori (Eretz-Israel 8, 1967) solo constan como bibliografía en las fuentes leídas, no se leyeron.",
+  "retirado": [
+   "«una sinagoga samaritana de la cercana Beit Shean»: matizado (ver discrepancias).",
+   "«el nombre del padre, griego; el del hijo, hebreo»: no aparece en ninguna fuente leída; eliminado.",
+   "«figuras planas y ojos enormes»: se sustituye por la caracterización de la Encyclopaedia Judaica (frontalidad, falta de modelado y de perspectiva).",
+   "«sin la pretensión clásica de los talleres de Antioquía»: comparación sin fuente, eliminada.",
+   "«No se conserva ningún retrato suyo»: evidente pero sin fuente; se sustituye por «solo se conocen por dos pavimentos», que dice la Encyclopaedia Judaica.",
+   "«Todo lo que se sabe de ellos son dos firmas en griego»: se conserva el sentido; la griega de Beit Alfa está confirmada, y en Beit Shean la base de Kinneret registra inscripciones griegas sin precisar en las fuentes leídas en qué lengua va la de los artistas."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "desconocida",
+    "fuente": 1,
+    "lugar": "desconocido"
+   },
+   "nacimiento": {
+    "fecha": "desconocida",
+    "fuente": 1,
+    "lugar": "desconocido"
+   }
+  }
+ },
+ "masaccio": {
+  "bio": "Masaccio nació el 21 de diciembre de 1401 en Castel San Giovanni, hoy San Giovanni Valdarno [1]. En enero de 1422 ya figuraba como «pictor» en el gremio florentino de Medici e Speziali [1]. En 1426 pintó el políptico del Carmine de Pisa, cuya tabla central está en la National Gallery [1][2]. Trabajó «codo con codo» con Masolino en la capilla Brancacci, y tuvo a Brunelleschi por maestro de perspectiva en la Trinidad de Santa Maria Novella [1]. Sus figuras pesan y reciben la luz de una sola fuente [4]. Murió en Roma hacia 1428, antes del 18 de noviembre de 1429 [1][5]. Vasari enumera a quienes estudiaron la Brancacci, de Leonardo a Miguel Ángel [3].",
+  "clave": "masaccio",
+  "discrepancias": [
+   "Muerte: ULAN y la Enciclopedia Treccani dan 1428 [4][5]; el DBI solo fija que murió en Roma antes del 18 de noviembre de 1429, según una nota del catastro florentino, y lo documenta vivo en Florencia el 29 de julio de 1427 [1].",
+   "Lugar de nacimiento: ULAN enlaza «Castel San Giovanni» con el homónimo de la provincia de Piacenza (Emilia-Romaña), aunque su propia nota lo sitúa entre Florencia y Arezzo [4]; el DBI lo identifica con San Giovanni Valdarno, provincia de Arezzo [1]. El registro geográfico de ULAN es erróneo.",
+   "Edad: la National Gallery dice que murió a los 27 [2]; con nacimiento en diciembre de 1401 y muerte en 1428 tendría 26. La traducción de Vasari en Wikisource arrastra en nota fechas decimonónicas desechadas (1402–1443) [3]."
+  ],
+  "fuentes": [
+   {
+    "autor": "Angelo Tartuferi",
+    "n": 1,
+    "obra": "Dizionario Biografico degli Italiani (Treccani)",
+    "titulo": "MASACCIO",
+    "url": "https://www.treccani.it/enciclopedia/masaccio_(Dizionario-Biografico)"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "The National Gallery, Londres",
+    "titulo": "Masaccio",
+    "url": "https://www.nationalgallery.org.uk/artists/masaccio"
+   },
+   {
+    "autor": "Giorgio Vasari",
+    "n": 3,
+    "obra": "Giorgio Vasari, Vidas (trad. inglesa de Mrs. Jonathan Foster), texto en Wikisource",
+    "titulo": "Lives of the Most Excellent Painters, Sculptors, and Architects/Masaccio",
+    "url": "https://en.wikisource.org/wiki/Lives_of_the_Most_Excellent_Painters,_Sculptors,_and_Architects/Masaccio"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Masaccio",
+    "url": "https://www.getty.edu/vow/ULANFullDisplay?find=&place=&nation=&logic=&note=&role=&subjectid=500026649"
+   },
+   {
+    "autor": null,
+    "n": 5,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Masàccio",
+    "url": "https://www.treccani.it/enciclopedia/masaccio"
+   }
+  ],
+  "notas": "Britannica (referencia abierta) devolvió 403 y no se pudo leer. Vasari se cita como fuente primaria a través del texto de la traducción de Foster alojado en Wikisource (no es Wikipedia).",
+  "retirado": [
+   "«Fue el primero en aplicar a la figura pintada la perspectiva de Brunelleschi»: la prioridad absoluta no la afirma ninguna fuente leída; se sustituye por lo que dice el DBI (Brunelleschi como maestro de perspectiva, implicado en la Trinidad).",
+   "«Hacer que la luz del fresco viniera de donde de verdad entra la luz en la capilla»: ninguna fuente leída menciona la ventana real de la Brancacci; ULAN solo habla de luz desde una fuente única.",
+   "«Durante un siglo los pintores florentinos fueron a la Brancacci a copiarlo»: Vasari da la lista de artistas que la estudiaron, pero no el «siglo»; se conserva la lista.",
+   "«Murió a los veintisiete años»: dudoso (ver discrepancias); se da la fecha en vez de la edad."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "antes del 18 de noviembre de 1429 (tradicionalmente 1428)",
+    "fuente": 1,
+    "lugar": "Roma"
+   },
+   "nacimiento": {
+    "fecha": "21 de diciembre de 1401",
+    "fuente": 1,
+    "lugar": "Castel San Giovanni (hoy San Giovanni Valdarno, Arezzo)"
+   }
+  }
+ },
+ "matsch": {
+  "bio": "Franz Matsch nació en Viena el 16 de septiembre de 1861 y murió allí en octubre de 1942 [1][2]. Desde 1875 estudió en la Kunstgewerbeschule, donde conoció a Gustav y Ernst Klimt; con ellos formó hacia 1879 la «Künstler-Compagnie», que decoró teatros de la monarquía y las escaleras del Burgtheater y del Kunsthistorisches Museum [1][2]. Con Klimt recibió el encargo de las pinturas del Aula Magna de la Universidad de Viena; tras el escándalo de las de Klimt, que renunció en 1905, la colaboración terminó y Matsch volvió al historicismo [1][2]. Retratista solicitado por la casa imperial, fue ennoblecido en 1912 y diseñó el reloj Anker de Viena [1][2].",
+  "clave": "matsch",
+  "discrepancias": [
+   "Muerte: el Wien Geschichte Wiki y Wikidata dan el 5 de octubre de 1942; la Klimt-Datenbank, el 4 de octubre.",
+   "Casa natal: el Wien Geschichte Wiki (que cita el libro de bautismos de la parroquia de Alservorstadt) da Laudongasse 27, en Alsergrund; la Klimt-Datenbank da Josefstädter Straße 23."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Wien Geschichte Wiki (Ayuntamiento de Viena, a partir del Historisches Lexikon Wien de Felix Czeike)",
+    "titulo": "Franz Matsch",
+    "url": "https://www.geschichtewiki.wien.gv.at/Franz_Matsch"
+   },
+   {
+    "autor": "BM",
+    "n": 2,
+    "obra": "Gustav Klimt-Datenbank (Klimt-Foundation, Viena)",
+    "titulo": "Franz Matsch",
+    "url": "https://www.klimt-database.com/en/network-vienna-1900/colleagues/franz-matsch/"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Matsch, Franz von",
+    "url": "https://vocab.getty.edu/page/ulan/500029045"
+   }
+  ],
+  "notas": "RKD devolvió 403; Benezit es de suscripción. No hay entrada en Britannica ni Treccani entre las referencias. ULAN (fuente 3) confirma Viena como lugar de nacimiento y muerte y su actividad de escultor.",
+  "retirado": [
+   "«Cuando Klimt rompió hacia la Secesión, Matsch se quedó en el academicismo»: matizado; la Klimt-Datenbank indica que hacia 1900 Matsch también exploró vías modernas (Padre, perdónalos, 1903) y que lo que divergió fue sobre todo la clientela; volvió al historicismo tras el fracaso de las pinturas de la universidad.",
+   "«prosperó como retratista de la corte»: se conserva en la forma que respaldan las fuentes (retratista solicitado por la casa imperial).",
+   "«lo que explica que hoy se le recuerde mucho menos»: juicio sin fuente, eliminado.",
+   "«decoró teatros y museos por todo el imperio»: concretado con los encargos que citan las fuentes."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "5 de octubre de 1942",
+    "fuente": 1,
+    "lugar": "Viena"
+   },
+   "nacimiento": {
+    "fecha": "16 de septiembre de 1861",
+    "fuente": 1,
+    "lugar": "Viena (Alsergrund, Laudongasse 27)"
+   }
+  }
+ },
+ "miguel_angel": {
+  "bio": "Nacido en Caprese el 6 de marzo de 1475, entró a los trece años en el taller de Domenico Ghirlandaio y tuvo por protector a Lorenzo de' Medici [1]. Se tenía por escultor antes que pintor [1]. En 1505 Julio II le encargó su tumba monumental; recortados los fondos, el papa lo puso a pintar la bóveda de la Sixtina [1][2]. Firmó el contrato el 8 de mayo de 1508 y la terminó en 1512 [3][2]; trabajó de pie sobre un andamio, con el cuello doblado hacia atrás, no tumbado [4]. Nueve escenas del Génesis, profetas, sibilas y desnudos se ordenan dentro de una arquitectura pintada [3][2]. Murió en Roma el 18 de febrero de 1564 [1][2].",
+  "clave": "miguel_angel",
+  "discrepancias": [
+   "Fechas de la bóveda: los Musei Vaticani [3] dan el contrato el 8 de mayo de 1508 y la conclusión el 31 de octubre de 1512; el Dizionario Biografico [2] sitúa el comienzo de la pintura en enero de 1509 y la obra acabada en septiembre de 1512; Britannica [1] da 1508–12."
+  ],
+  "fuentes": [
+   {
+    "autor": "Creighton E. Gilbert",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Michelangelo",
+    "url": "https://www.britannica.com/biography/Michelangelo"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Dizionario Biografico degli Italiani (Treccani)",
+    "titulo": "BUONARROTI, Michelangelo",
+    "url": "https://www.treccani.it/enciclopedia/michelangelo-buonarroti_(Dizionario-Biografico)"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Musei Vaticani",
+    "titulo": "Cappella Sistina – La volta",
+    "url": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/cappella-sistina/volta.html"
+   },
+   {
+    "autor": "The Editors of Encyclopaedia Britannica",
+    "n": 4,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "How did Michelangelo paint the ceiling of the Sistine Chapel?",
+    "url": "https://www.britannica.com/question/How-did-Michelangelo-paint-the-ceiling-of-the-Sistine-Chapel"
+   }
+  ],
+  "notas": "Grove Art y Benezit (suscripción) no se consultaron. La Enciclopedia del Museo del Prado no cargó (403) por WebFetch. El autor de la voz del DBI no se consigna porque solo lo vi a través de un resumen automático, no en el texto.",
+  "retirado": [
+   "«salió con la vista dañada durante meses»: ninguna de las fuentes leídas lo recoge (el DBI no menciona daño en la vista); eliminado.",
+   "«En sus 343 figuras»: la cifra no aparece en ninguna fuente leída; eliminada.",
+   "«no hay paisaje, ni arquitectura pintada, ni atributos»: falso en cuanto a la arquitectura; los Musei Vaticani describen las escenas del Génesis dentro de un marco arquitectónico pintado. Corregido.",
+   "«aceptó el encargo a regañadientes»: las fuentes dicen que la propuesta inicial (doce apóstoles) le pareció «cosa pobre» y que el papa le dio control del programa, no exactamente reticencia; se sustituye por el hecho documentado (fondos de la tumba recortados y encargo de la bóveda)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "18 de febrero de 1564",
+    "fuente": 1,
+    "lugar": "Roma"
+   },
+   "nacimiento": {
+    "fecha": "6 de marzo de 1475",
+    "fuente": 1,
+    "lugar": "Caprese (hoy Caprese Michelangelo)"
+   }
+  }
+ },
+ "poussin": {
+  "bio": "Nicolas Poussin nació en Les Andelys, Normandía, en 1594 y murió en Roma en 1665 [1]. Vivió en París desde 1612 y a comienzos de 1624, tras pasar por Venecia, llegó a Roma, donde transcurrió casi toda su vida [1][2]. Tras la fría acogida de su Martirio de san Erasmo (1629) dejó de buscar encargos oficiales y pintó sobre todo cuadros de caballete para coleccionistas privados, como Cassiano dal Pozzo, que le encargó la primera serie de los Siete sacramentos [1][2]. Su estancia en París de 1640 a 1642, al servicio de Luis XIII, lo dejó insatisfecho [1][2]. Componía modelando figurillas de cera que disponía e iluminaba dentro de una caja [3][4].",
+  "clave": "poussin",
+  "discrepancias": [
+   "Wikidata precisa «junio de 1594» y el 19 de noviembre de 1665; Treccani, la National Gallery y ULAN solo dan los años, que coinciden."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Poussin, Nicolas",
+    "url": "https://www.treccani.it/enciclopedia/poussin"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "The National Gallery, Londres",
+    "titulo": "Nicolas Poussin (1594 - 1665)",
+    "url": "https://www.nationalgallery.org.uk/artists/nicolas-poussin"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Fitzwilliam Museum, Universidad de Cambridge (proyecto Extreme Unction)",
+    "titulo": "Poussin's working methods",
+    "url": "https://extreme-unction.fitzmuseum.cam.ac.uk/working-methods"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "J. Paul Getty Museum",
+    "titulo": "Poussin and the Dance (exposición)",
+    "url": "https://www.getty.edu/art/exhibitions/poussin_dance/explore.html"
+   },
+   {
+    "autor": null,
+    "n": 5,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Poussin, Nicolas",
+    "url": "https://vocab.getty.edu/page/ulan/500005036"
+   }
+  ],
+  "notas": "Britannica (403), la Enciclopedia del Museo del Prado (403) y RKD (403) no cargaron; el ensayo del Met devolvió 429. Grove, Benezit y Universalis son de suscripción. La nota de ULAN confirma la llegada a Italia «by at least 1624».",
+  "retirado": [
+   "«defendía que la pintura se dirige a la inteligencia»: no hallado en las fuentes leídas (Treccani solo dice que en su estilo «el dibujo prevaleció sobre el color y la idea sobre el sentimiento»); eliminado.",
+   "«Su nombre acabó designando toda una manera de entender el clasicismo»: no verificado; eliminado.",
+   "«volvió a París solo dos, mal avenido con la corte»: matizado a lo que dicen las fuentes: 1640–1642, encargos monumentales para Luis XIII que lo dejaron «incomprendido y descontento» (Treccani) y tuvieron menos éxito (National Gallery)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "1665",
+    "fuente": 1,
+    "lugar": "Roma"
+   },
+   "nacimiento": {
+    "fecha": "1594",
+    "fuente": 1,
+    "lugar": "Les Andelys (Normandía)"
+   }
+  }
+ },
+ "rembrandt": {
+  "bio": "Nacido en Leiden el 15 de julio de 1606, hijo de un molinero, se formó con Jacob van Swanenburgh y, durante seis meses, con Pieter Lastman en Ámsterdam [1]. Sus aguafuertes le dieron fama internacional en vida [1]. Cerca de una décima parte de su obra pintada y grabada son estudios de su propio rostro y autorretratos [1], que en el Rijksmuseum van de hacia 1628 a 1661 [3]. Endeudado por la casa comprada en 1639 y por su colección, quebró en 1656; el inventario de sus bienes levantado ese año documenta su alcance [2]. Murió en Ámsterdam el 4 de octubre de 1669 [1] y fue enterrado en la Westerkerk [2].",
+  "clave": "rembrandt",
+  "discrepancias": [],
+  "fuentes": [
+   {
+    "autor": "Ernst van de Wetering",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Rembrandt",
+    "url": "https://www.britannica.com/biography/Rembrandt-van-Rijn"
+   },
+   {
+    "autor": "Ernst van de Wetering",
+    "n": 2,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Rembrandt: Rembrandt's late style (Third and Fourth Amsterdam periods)",
+    "url": "https://www.britannica.com/biography/Rembrandt-van-Rijn/Rembrandts-late-style"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Rijksmuseum",
+    "titulo": "Rembrandt van Rijn",
+    "url": "https://www.rijksmuseum.nl/en/collection/node/Rembrandt-van-Rijn--ba2dc062acd137ffeac364321b7b10df"
+   }
+  ],
+  "notas": "Enciclopedia del Prado, RKD y Treccani no se consultaron para este autor; Britannica (voz de Ernst van de Wetering) basta. Grove y Benezit son de suscripción.",
+  "retirado": [
+   "«unas ochenta veces a lo largo de cuarenta años … la serie de autorretratos más extensa del arte europeo»: ninguna fuente académica leída da la cifra ni el superlativo; se sustituye por «cerca de una décima parte de su obra» (Britannica).",
+   "«de joven acomodado a anciano arruinado»: Britannica desmiente el mito de que murió pobre y olvidado (en 1667 Cosimo de' Medici lo llamó «pittore famoso»); eliminado.",
+   "«una de las mejores descripciones que existen del taller de un pintor del siglo XVII»: no respaldado; la fuente dice que el inventario documenta el tamaño y alcance de su colección. Corregido."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "4 de octubre de 1669",
+    "fuente": 1,
+    "lugar": "Ámsterdam"
+   },
+   "nacimiento": {
+    "fecha": "15 de julio de 1606",
+    "fuente": 1,
+    "lugar": "Leiden"
+   }
+  }
+ },
+ "ribera": {
+  "bio": "Hijo de un zapatero, nació en Játiva en 1591 [1][2]. Salió hacia Italia entre 1607 y 1609 y no volvió nunca [2]: en 1611 trabajaba en Parma para los Farnesio, y en 1613 estaba en Roma, entre los seguidores de Caravaggio [1][2]. En 1616 se instaló para siempre en Nápoles, capital del virreinato español, donde casó con la hija del pintor Giovan Bernardo Azzolino [1]; fue conocido como «lo Spagnoletto» [3]. Sus primeras obras llevan el naturalismo caravaggesco a un realismo acentuado, a veces despiadado [1][3]; desde 1630 aclara el color siguiendo a los venecianos [1]. Murió en Nápoles el 3 de septiembre de 1652 [2].",
+  "clave": "ribera",
+  "discrepancias": [
+   "Nacimiento: la RAH da el 17 de febrero de 1591 (probablemente la fecha de bautismo, aunque la cabecera no lo aclara); Wikidata da el 12 de enero de 1591; ULAN da 1590; el Prado y Treccani solo dan 1591."
+  ],
+  "fuentes": [
+   {
+    "autor": "Nicola Spinosa",
+    "n": 1,
+    "obra": "Enciclopedia del Museo del Prado",
+    "titulo": "Ribera, José de. El Españoleto",
+    "url": "https://www.museodelprado.es/aprende/enciclopedia/voz/ribera-jose-de-el-espaoleto/7af49b35-e253-4470-9c0f-9e7b73180b87"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Diccionario Biográfico Español (Real Academia de la Historia)",
+    "titulo": "José de Ribera",
+    "url": "https://historia-hispanica.rah.es/biografias/38871-jose-de-ribera"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Ribera, Jusepe de, detto lo Spagnoletto",
+    "url": "https://www.treccani.it/enciclopedia/ribera-jusepe-de-detto-lo-spagnoletto"
+   }
+  ],
+  "notas": "Grove y Benezit son de suscripción; Britannica no se consultó para este autor.",
+  "retirado": [
+   "«se instaló muy joven en Nápoles»: corregido. Llegó a Italia muy joven (1607–1609), pero pasó por Parma y Roma y no se instaló en Nápoles hasta 1616, con unos 25 años.",
+   "«pieles gastadas, pies sucios, arrugas, en santos y filósofos tratados como campesinos»: las fuentes hablan de un naturalismo de «realismo acentuado» o «despiadado» y citan series de filósofos y santos, pero no esa caracterización concreta; se sustituye por su formulación."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "3 de septiembre de 1652",
+    "fuente": 2,
+    "lugar": "Nápoles"
+   },
+   "nacimiento": {
+    "fecha": "17 de febrero de 1591",
+    "fuente": 2,
+    "lugar": "Játiva (Valencia)"
+   }
+  }
+ },
+ "rubens": {
+  "bio": "Nació en Siegen, adonde había huido su padre calvinista, y se formó con Tobias Verhaecht, Adam van Noort y Otto van Veen [1]. Entre 1600 y 1608 trabajó en Italia al servicio del duque de Mantua [1]. De vuelta en Amberes fue pintor de corte de los archiduques Alberto e Isabel y levantó el taller de pintor más famoso de Europa: él pintaba el boceto al óleo y los ayudantes, como el joven Van Dyck, ejecutaban el cuadro grande [1]. Como agente de la infanta Isabel negoció la paz de 1630 entre España e Inglaterra [1][2]. Lo armaron caballero Carlos I de Inglaterra y, en 1631, Felipe IV: único pintor así honrado por ambos reyes [3]. Hablaba seis lenguas [4].",
+  "clave": "rubens",
+  "discrepancias": [
+   "Caballería inglesa: la nota de la ULAN la fecha en 1630 [4]; Britannica dice «en vísperas de su partida de Inglaterra», sin año [1]."
+  ],
+  "fuentes": [
+   {
+    "autor": "Charles Scribner; Britannica Editors",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Peter Paul Rubens",
+    "url": "https://www.britannica.com/biography/Peter-Paul-Rubens"
+   },
+   {
+    "autor": "Alejandro Vergara",
+    "n": 2,
+    "obra": "Enciclopedia del Museo del Prado",
+    "titulo": "Rubens, Pedro Pablo",
+    "url": "https://www.museodelprado.es/aprende/enciclopedia/voz/rubens-pedro-pablo/0e58fabf-fce4-426d-8ff3-945c15f4030b"
+   },
+   {
+    "autor": "Charles Scribner; Britannica Editors",
+    "n": 3,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Peter Paul Rubens: Later career",
+    "url": "https://www.britannica.com/biography/Peter-Paul-Rubens/Later-career"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Rubens, Peter Paul (nota biográfica)",
+    "url": "https://vocab.getty.edu/page/ulan/500002921"
+   }
+  ],
+  "notas": "El dato de las seis lenguas solo lo da la nota de la ULAN; ni Britannica ni el Prado lo mencionan en lo leído.",
+  "retirado": [
+   "«Sus bocetos de su propia mano suelen preferirse hoy a los grandes lienzos acabados por el taller»: es un juicio de gusto que ninguna fuente leída respalda. Lo he sustituido por el método de taller que describe Britannica (boceto al óleo del maestro, ejecución por los ayudantes, retoque final).",
+   "«El taller más productivo de Europa»: lo he ajustado a la fórmula de Britannica («el taller de pintor más famoso de Europa»); la ULAN dice «extremely prolific».",
+   "«Diplomático al servicio de los Habsburgo»: lo he precisado según Britannica (agente de la infanta Isabel, y el título de secretario del consejo privado que le dio Felipe IV)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "30 de mayo de 1640",
+    "fuente": 1,
+    "lugar": "Amberes"
+   },
+   "nacimiento": {
+    "fecha": "28 de junio de 1577",
+    "fuente": 1,
+    "lugar": "Siegen (Westfalia)"
+   }
+  }
+ },
+ "rubliov": {
+  "bio": "Andréi Rubliov nació entre 1360 y 1370 y murió en Moscú en 1430 [1]. Monje vinculado al monasterio de la Trinidad de san Sergio de Rádonezh, pasó su madurez en el de Andrónikov, en Moscú, hoy museo dedicado a él [1][2]. En 1405 trabajó con Teófanes el Griego en la catedral de la Anunciación, y en 1408, con el monje Daniil, en la Dormición de Vladímir [1]. La Trinidad, pintada para la tumba de san Sergio hacia 1411 o en la década de 1420, fue fijada en 1551 por el concilio de los Cien Capítulos como modelo a pintar «como Andréi Rubliov» [1][2]. La Iglesia ortodoxa rusa lo canonizó en 1988 [2].",
+  "clave": "rubliov",
+  "discrepancias": [
+   "Nacimiento: ULAN da 1350; Treccani, entre 1360 y 1370 [1]; Wikidata, década de 1360.",
+   "Muerte: bio_actual daba 1428; Treccani y ULAN dan 1430 [1]; Wikidata precisa 29 de enero de 1430, fecha que ninguna fuente leída confirma.",
+   "Fecha de la Trinidad: Treccani da 1411 o 1422–1427 [1]; Sheredega la sitúa en la década de 1420, con el debate entre la iglesia de madera (1411) y la de piedra decorada en 1425–1427 [2]."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Rublëv, Andrej",
+    "url": "https://www.treccani.it/enciclopedia/andrej-rublev"
+   },
+   {
+    "autor": "Natalya Sheredega",
+    "n": 2,
+    "obra": "The Tretyakov Gallery Magazine, n.º 3 (2005)",
+    "titulo": "Andrei Rublev: Image of the \"Holy Trinity\"",
+    "url": "https://www.tretyakovgallerymagazine.com/node/7196"
+   }
+  ],
+  "notas": "Britannica (referencia abierta) está tras un muro de Cloudflare (403) y no se pudo leer.",
+  "retirado": [
+   "Años «c. 1360–1428»: la muerte es 1430 según las fuentes.",
+   "«Es el único pintor de iconos al que la Iglesia ortodoxa rusa ha canonizado»: la canonización de 1988 está respaldada [2]; la exclusividad no, y se elimina.",
+   "«Solo la Trinidad está documentada como suya sin dudas serias»: no respaldado tal cual; Sheredega recuerda incluso que en el siglo XIX Rovinski atribuyó la Trinidad a un italiano [2]. Se sustituye por los encargos que Treccani documenta (1405, 1408).",
+   "«Monje del monasterio de Andrónikov»: matizado; Treccani lo sitúa como monje de la Trinidad-San Sergio y en Andrónikov en su madurez."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "1430",
+    "fuente": 1,
+    "lugar": "Moscú (monasterio de Andrónikov)"
+   },
+   "nacimiento": {
+    "fecha": "entre 1360 y 1370",
+    "fuente": 1,
+    "lugar": "desconocido"
+   }
+  }
+ },
+ "scorel": {
+  "bio": "Hacia 1517 trabajaba en Utrecht con Jan Gossaert [1][2]. En 1519 pasó por Núremberg, donde conoció a Durero, y desde Venecia se embarcó en peregrinación a Tierra Santa [1][2][3]. En Roma lo protegió Adriano VI, papa nacido en Utrecht, que en 1522 lo nombró conservador de la colección pontificia del Belvedere [1][3]. Tras la muerte del papa en 1523 volvió a Utrecht, donde fue canónigo del capítulo de Santa María [2][3]. Allí introdujo en la pintura holandesa desnudos, arquitecturas clásicas y paisajes imaginarios a la italiana [1][3]. Sus retratos colectivos de peregrinos de Jerusalén están en el origen del retrato de grupo holandés [2]. Fue también arquitecto y técnico hidráulico, y maestro de Maarten van Heemskerck y Antonis Mor [2].",
+  "clave": "scorel",
+  "discrepancias": [
+   "Nombramiento como conservador del Belvedere: el Prado lo fecha en 1522 [3]; Britannica lo sitúa en el breve pontificado de Adriano VI (1522-1523) sin año exacto [1].",
+   "Formación con Gossaert: Britannica la sitúa en Utrecht «hacia 1517» [1]; Treccani dice «por algún tiempo», en Utrecht, sin año [2]."
+  ],
+  "fuentes": [
+   {
+    "autor": "Britannica Editors",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Jan van Scorel",
+    "url": "https://www.britannica.com/biography/Jan-van-Scorel"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Enciclopedia Treccani (Enciclopedia on line)",
+    "titulo": "Scorel, Jan van",
+    "url": "https://www.treccani.it/enciclopedia/jan-van-scorel"
+   },
+   {
+    "autor": "B. F.",
+    "n": 3,
+    "obra": "Enciclopedia del Museo del Prado",
+    "titulo": "Scorel, Jan van",
+    "url": "https://www.museodelprado.es/aprende/enciclopedia/voz/scorel-jan-van/7640399e-3897-44e2-bd0d-fee3c3e3f503"
+   }
+  ],
+  "notas": "El día exacto de nacimiento (1 de agosto de 1495) solo aparece en el fragmento visible de la Enciclopedia Italiana de 1936 (G. I. Hoogewerff) enlazado desde la página de Treccani; no he leído la entrada completa, así que he dado «agosto de 1495» según Britannica. El RKD no se ha podido leer (solo tripletas RDF).",
+  "retirado": [
+   "«Organista»: ninguna de las fuentes leídas lo menciona. Lo he retirado.",
+   "«Ingeniero de drenajes»: Britannica dice «ingeniero» y Treccani «tecnico idraulico»; lo he reformulado como técnico hidráulico, sin la precisión de «drenajes».",
+   "«Viajó a Jerusalén y luego a Roma»: es correcto, pero he añadido la escala previa en Núremberg y Venecia que dan las fuentes."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "6 de diciembre de 1562",
+    "fuente": 1,
+    "lugar": "Utrecht"
+   },
+   "nacimiento": {
+    "fecha": "agosto de 1495",
+    "fuente": 1,
+    "lugar": "Schoorl, cerca de Alkmaar"
+   }
+  }
+ },
+ "tiepolo_d": {
+  "bio": "Hijo de Giambattista y de Cecilia Guardi, se formó en el taller paterno [1][2]. Debutó en Venecia en 1747 con un vía crucis para el oratorio de San Polo [1][2]. Entre 1750 y 1753 estuvo en Wurzburgo con su padre y su hermano Lorenzo: pintó las sobrepuertas del Kaisersaal y grabó las Idee pittoresche sopra la Fuga in Egitto [1]. En 1762 los acompañó a Madrid, y en el Palacio Real pintó por su cuenta la Glorificación de España [1]. En 1770, muerto el padre, volvió a Venecia [1]. En la villa familiar de Zianigo fechó en 1797 los frescos de la sala de los Pulcinella, año del álbum de dibujos Divertimento per li regazzi [1].",
+  "clave": "tiepolo_d",
+  "discrepancias": [
+   "Fecha de nacimiento: el DBI (2019) da el 30 de agosto de 1727, con bautismo el 10 de septiembre en Santa Ternita [1]. El resumen visible de la Enciclopedia Italiana de 1937 (Giuseppe Fiocco), enlazado desde la misma página, da el 8 de agosto de 1727. Wikidata y la ULAN coinciden con el DBI."
+  ],
+  "fuentes": [
+   {
+    "autor": "Enrico Lucchese",
+    "n": 1,
+    "obra": "Dizionario Biografico degli Italiani, vol. 95 (2019), Treccani",
+    "titulo": "TIEPOLO, Giandomenico",
+    "url": "https://www.treccani.it/enciclopedia/giandomenico-tiepolo_(Dizionario-Biografico)"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Diccionario Biográfico Español (Real Academia de la Historia)",
+    "titulo": "Giovanni Doménico Tiépolo",
+    "url": "https://historia-hispanica.rah.es/biografias/42960-giovanni-domenico-tiepolo"
+   }
+  ],
+  "notas": "La voz del Diccionario Biográfico Español (el enlace dbe.rah.es redirige a historia-hispanica.rah.es) solo muestra en abierto el primer tramo. De ahí salen el vía crucis de San Polo (1747-1749) y la ayuda al padre en Wurzburgo. No se consultaron la Enciclopedia del Prado ni Britannica.",
+  "retirado": [
+   "«Cuando quedó libre de la sombra paterna desarrolló una obra propia»: el DBI muestra que ya tenía obra propia antes de la muerte del padre (vía crucis de 1747, escenas de género desde Wurzburgo, la foresteria de Villa Valmarana en 1757). Lo he reformulado.",
+   "«Más irónica y terrena, poblada de payasos»: lo he concretado con lo que dan las fuentes (los Pulcinella de Zianigo y del Divertimento per li regazzi). «Payasos» no es exacto: se trata de la máscara de Pulcinella.",
+   "«Escenas de la Venecia que se acababa»: el DBI habla de dibujos con escenas de vida contemporánea fechados en 1791, pero no de la Venecia en decadencia. Lo he retirado por interpretativo."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "3 de marzo de 1804",
+    "fuente": 1,
+    "lugar": "Venecia"
+   },
+   "nacimiento": {
+    "fecha": "30 de agosto de 1727",
+    "fuente": 1,
+    "lugar": "Venecia"
+   }
+  }
+ },
+ "tiepolo_g": {
+  "bio": "Nació en Venecia, probablemente el 5 de marzo de 1696 [1][2]. Discípulo de Gregorio Lazzarini, maduró como fresquista en Udine y en los palacios Archinto y Dugnani de Milán [3]. En diciembre de 1750 llegó a Wurzburgo con sus hijos Domenico y Lorenzo, y allí pintó el Kaisersaal y la escalera de la Residenz, firmada en 1753 [1][3]. Carlos III lo llamó para decorar el Palacio Real, y llegó a Madrid el 4 de junio de 1762 [1][3]. En una corte donde pesaba Mengs [1], el medio oficial le fue hostil [2]. Murió de repente en Madrid la noche del 26 al 27 de marzo de 1770 [1].",
+  "clave": "tiepolo_g",
+  "discrepancias": [
+   "Fin de los techos del Palacio Real: Britannica dice 1764; el Prado, «el invierno de 1766»; la cronología de la RAH, el 5 de septiembre de 1767.",
+   "Llamada a Madrid: el Prado la fecha en 1761; la RAH dice que salió de Venecia el 31 de marzo de 1762; el DBI, que llegó a Madrid el 4 de junio de 1762.",
+   "Muerte: Wikidata, Britannica y la RAH dan el 27 de marzo de 1770; el DBI precisa «la noche del 26 al 27»."
+  ],
+  "fuentes": [
+   {
+    "autor": "Enrico Lucchese",
+    "n": 1,
+    "obra": "Dizionario Biografico degli Italiani (Treccani)",
+    "titulo": "TIEPOLO, Giambattista",
+    "url": "https://www.treccani.it/enciclopedia/giambattista-tiepolo_(Dizionario-Biografico)"
+   },
+   {
+    "autor": "Rodolfo Pallucchini",
+    "n": 2,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Giovanni Battista Tiepolo (y sección «Later life»)",
+    "url": "https://www.britannica.com/biography/Giovanni-Battista-Tiepolo"
+   },
+   {
+    "autor": "Catherine Whistler",
+    "n": 3,
+    "obra": "Enciclopedia del Museo del Prado",
+    "titulo": "Tiepolo, Giambattista",
+    "url": "https://www.museodelprado.es/aprende/enciclopedia/voz/tiepolo-giambattista/17d5bc8a-8de6-4cda-8ccb-dc4be64da7da"
+   },
+   {
+    "autor": null,
+    "n": 5,
+    "obra": "Real Academia de la Historia, Historia Hispánica (antes DB~e)",
+    "titulo": "Giovanni Batistta Tiépolo",
+    "url": "https://historia-hispanica.rah.es/biografias/42959-giovanni-batistta-tiepolo"
+   }
+  ],
+  "notas": "De la RAH solo se pudo leer el arranque de la biografía y la cronología («hechos»); el texto completo está tras «Continúa leyendo». Por eso se cita solo en las discrepancias. Benezit (suscripción) no se consultó.",
+  "retirado": [
+   "«El último gran fresquista italiano»: la ULAN lo llama «último gran representante de la gran tradición del arte italiano», pero se retira de la biografía por espacio. Queda la ULAN como fuente 4 sin cita en el texto.",
+   "«Capaz de resolver bóvedas enteras con cielos altísimos y figuras vistas en escorzo desde abajo»: descripción formal genérica, no verificada en esos términos. Se retira.",
+   "«Murió al servicio de Carlos III mientras el gusto giraba ya hacia el neoclasicismo que su obra hacía parecer antigua»: la muerte al servicio del rey está confirmada (Prado: pintor de cámara que seguía con encargos reales). El giro neoclásico no aparece formulado así; se sustituye por lo documentado: Mengs tenía peso en la corte (DBI) y el medio oficial le fue hostil (Britannica)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "noche del 26 al 27 de marzo de 1770",
+    "fuente": 1,
+    "lugar": "Madrid"
+   },
+   "nacimiento": {
+    "fecha": "5 de marzo de 1696 (presumiblemente)",
+    "fuente": 1,
+    "lugar": "Venecia"
+   }
+  }
+ },
+ "tiziano": {
+  "bio": "Nació en Pieve di Cadore hacia 1488-1490, fecha aún discutida [1][2][3]. Se formó con Gentile y Giovanni Bellini y hacia 1507 se asoció con Giorgione [3]. Carlos V, que lo retrató en Bolonia, lo ennobleció en 1533 [3]; Tiziano viajó a Roma en 1545-1546 y a la corte imperial de Augsburgo en 1548 y 1550-1551 [1][3]. Después trabajó sobre todo para los Austrias, con Felipe II como su mecenas más constante, y por eso el Prado guarda la colección más extensa de su obra [3][4]. Vasari escribió, elogiándolos, que sus cuadros tardíos de cerca no se reconocían y de lejos parecían perfectos [4]. Murió en Venecia el 27 de agosto de 1576, de fiebre, durante una epidemia de peste [4].",
+  "clave": "tiziano",
+  "discrepancias": [
+   "Año de nacimiento: la ULAN da 1483; Wikidata «c. 1490»; Britannica 1488/90 (y recuerda que la fecha tradicional era 1477); el Dizionario Biografico «probablemente hacia 1489»; el Prado «h. 1490»; la Treccani «1488-90» y dice que la cuestión no está resuelta.",
+   "Causa de muerte: el DBI precisa que murió «de fiebre» durante una epidemia de peste, no necesariamente de peste."
+  ],
+  "fuentes": [
+   {
+    "autor": "Harold E. Wethey",
+    "n": 1,
+    "obra": "Encyclopædia Britannica",
+    "titulo": "Titian (y sección «Late life and works of Titian»)",
+    "url": "https://www.britannica.com/biography/Titian"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Tiziano Vecellio",
+    "url": "https://www.treccani.it/enciclopedia/tiziano-vecellio"
+   },
+   {
+    "autor": "Charles Hope",
+    "n": 3,
+    "obra": "Enciclopedia del Museo del Prado",
+    "titulo": "Tiziano Vecellio di Gregorio",
+    "url": "https://www.museodelprado.es/aprende/enciclopedia/voz/tiziano-vecellio-di-gregorio/482f79ee-aaea-4c3c-907b-305de794f85a"
+   },
+   {
+    "autor": "Charles Hope",
+    "n": 4,
+    "obra": "Dizionario Biografico degli Italiani, vol. 98 (2020)",
+    "titulo": "VECELLIO, Tiziano",
+    "url": "https://www.treccani.it/enciclopedia/tiziano-vecellio_(Dizionario-Biografico)/"
+   }
+  ],
+  "notas": "La Enciclopedia del Prado y la Britannica solo cargaron en el navegador (WebFetch y curl devolvían 403). Grove y Benezit (suscripción) no se consultaron.",
+  "retirado": [
+   "«Fue el primer artista europeo que trabajó para media Europa sin moverse de Venecia»: contradicho. Viajó a Bolonia (1530, 1532-1533, 1543), a Roma (1545-1546), a Augsburgo (1548 y 1550-1551) y a Milán (1548) según Britannica, Prado y Treccani. La primacía tampoco está respaldada.",
+   "«Su última manera desconcertó a sus contemporáneos»: no respaldado. El DBI cita a Vasari, que calificaba ese modo de pintar de «juicioso, bello y estupendo». Se conserva la observación de Vasari (de cerca no se reconoce nada, de lejos parece perfecto) y se corrige su sentido.",
+   "«Murió durante la peste de 1576»: se mantiene, pero se precisa que murió de fiebre durante la epidemia.",
+   "«Muy anciano, sin que se sepa su edad exacta»: reformulado como incertidumbre sobre la fecha de nacimiento, que es lo que dicen las fuentes."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "27 de agosto de 1576",
+    "fuente": 4,
+    "lugar": "Venecia"
+   },
+   "nacimiento": {
+    "fecha": "h. 1488-1490 (probablemente h. 1489)",
+    "fuente": 4,
+    "lugar": "Pieve di Cadore"
+   }
+  }
+ },
+ "turner": {
+  "bio": "Joseph Mallord William Turner nació el 23 de abril de 1775 en Maiden Lane, Covent Garden, hijo de un barbero [1]. Entró en las escuelas de la Royal Academy en diciembre de 1789, con catorce años, y fue académico en 1802 [1]. La crítica acusó su obra tardía de «extravagancia y exageración» y la comparó con ensalada de langosta o espuma de jabón; Ruskin la defendió desde 1843 [1]. En 1846 se instaló con Sophia Booth en Davis Place, Chelsea, y dio en llamarse «almirante Booth» [1]. Murió en Chelsea el 19 de diciembre de 1851 [1][3]. Su legado a la nación, fijado en 1856, reúne casi trescientos óleos y unas treinta mil obras sobre papel [2].",
+  "clave": "turner",
+  "discrepancias": [
+   "Lugar exacto de la muerte: ULAN da Chelsea [3] y Wikidata Cheyne Walk; Tate sitúa su casa de Chelsea en el 6 de Davis Place, Cremorne New Road [1]. No es contradicción de fondo (Davis Place se incorporó después a Cheyne Walk), pero ninguna fuente leída lo explicita."
+  ],
+  "fuentes": [
+   {
+    "autor": "David Blayney Brown",
+    "n": 1,
+    "obra": "Tate, J.M.W. Turner: Sketchbooks, Drawings and Watercolours (Tate Research Publication, 2012)",
+    "titulo": "Joseph Mallord William Turner 1775–1851",
+    "url": "https://www.tate.org.uk/art/research-publications/jmw-turner/joseph-mallord-william-turner-1775-1851-r1141041"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "The National Gallery, Londres",
+    "titulo": "The Turner Bequest",
+    "url": "https://www.nationalgallery.org.uk/about-us/history/the-turner-bequest"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Turner, Joseph Mallord William",
+    "url": "https://www.getty.edu/vow/ULANFullDisplay?find=&place=&nation=&logic=&note=&role=&subjectid=500026846"
+   }
+  ],
+  "notas": "Britannica devolvió 403; la ficha de artista de Tate no trae texto biográfico, así que se usó el ensayo de David Blayney Brown en la publicación de investigación de Tate.",
+  "retirado": [
+   "«Casi trescientos lienzos y treinta mil obras sobre papel»: se conserva, pero precisado como el legado fijado en 1856, que incluye además unos 300 cuadernos de dibujo [2].",
+   "«Vivió sus últimos años bajo nombre falso, los vecinos lo conocían como el almirante Booth»: Tate solo dice que «dio en llamarse Admiral Booth» [1]; lo de los vecinos no está respaldado.",
+   "«Sus contemporáneos leyeron [su pintura tardía] como obra sin acabar»: la crítica citada por Tate habla de extravagancia y exageración, no de inacabamiento; se sustituye."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "19 de diciembre de 1851",
+    "fuente": 3,
+    "lugar": "Chelsea, Londres"
+   },
+   "nacimiento": {
+    "fecha": "23 de abril de 1775",
+    "fuente": 1,
+    "lugar": "21 Maiden Lane, Covent Garden, Londres"
+   }
+  }
+ },
+ "van_dyck": {
+  "bio": "Antoon van Dyck nació en Amberes en 1599 y murió en Londres en 1641 [1]. A los diez años entró en el taller de Hendrick van Balen y hacia los diecisiete ya trabajaba por su cuenta [1][2]. Hacia 1618, año en que ingresó como maestro en la guilda de San Lucas, colaboró brevemente con Rubens [1]. Tras una corta estancia en Londres (1621) pasó a Italia hasta 1627 y fue el retratista de la aristocracia genovesa [1][2]. En 1632 se instaló en Londres como pintor de corte de Carlos I [1][2]. Sus retratos del rey y su familia fijaron una nueva norma para el retrato inglés [2] y ejercieron un influjo determinante sobre la retratística británica del siglo XVIII [1].",
+  "clave": "van_dyck",
+  "discrepancias": [
+   "Wikidata precisa 22 de marzo de 1599 y 9 de diciembre de 1641 en Blackfriars (Londres); Treccani, la National Gallery y ULAN solo dan los años, que coinciden."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Van Dyck, Antoon",
+    "url": "https://www.treccani.it/enciclopedia/antoon-van-dyck"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "The National Gallery, Londres",
+    "titulo": "Anthony van Dyck (1599 - 1641)",
+    "url": "https://www.nationalgallery.org.uk/artists/anthony-van-dyck"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Dyck, Anthony van",
+    "url": "https://vocab.getty.edu/page/ulan/500115190"
+   }
+  ],
+  "notas": "Britannica (403), Enciclopedia del Museo del Prado (403) y RKD (403) no cargaron; el ensayo del Met devolvió 429. Grove, ODNB, Benezit y Universalis son de suscripción.",
+  "retirado": [
+   "«principal colaborador de Rubens antes de los veinte años»: matizado; Treccani habla de una colaboración breve desde c. 1618 y advierte que identificar su mano en obras del maestro es problemático.",
+   "«su manera de retratar —figura alargada, pose desenvuelta, mirada de lado—»: descripción formal no respaldada literalmente por las fuentes leídas; eliminada.",
+   "«durante siglo y medio»: sustituido por lo que dice Treccani (influjo determinante en el retrato inglés del siglo XVIII).",
+   "«Niño prodigio»: concretado con los datos (taller de Van Balen a los diez años, obra independiente hacia los diecisiete)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "1641",
+    "fuente": 1,
+    "lugar": "Londres"
+   },
+   "nacimiento": {
+    "fecha": "1599",
+    "fuente": 1,
+    "lugar": "Amberes"
+   }
+  }
+ },
+ "velazquez": {
+  "bio": "Bautizado en Sevilla el 6 de junio de 1599 [2], pasó unos meses con Francisco de Herrera el Viejo y en 1611 firmó contrato de aprendizaje con Francisco Pacheco, luego su suegro [2][1]. A los veinticuatro años se trasladó a Madrid; tras retratar a Felipe IV, el rey lo nombró pintor de cámara, primero de muchos cargos palatinos, algunos con pesadas tareas administrativas [1]. Solo salió de España dos veces, ambas a Italia: en 1629, a estudiar, y en 1649, a comprar pinturas y esculturas para el rey [1]. En sus últimas obras las pinceladas, que de cerca parecen incoherentes, resultan exactas a la distancia debida [1]. Murió en Madrid el 6 de agosto de 1660 [1].",
+  "clave": "velazquez",
+  "discrepancias": [
+   "Solo consta la fecha de bautismo (6 de junio de 1599, RAH); ULAN y Wikidata dan solo el año 1599."
+  ],
+  "fuentes": [
+   {
+    "autor": "Enriqueta Harris",
+    "n": 1,
+    "obra": "Enciclopedia del Museo del Prado",
+    "titulo": "Velázquez, Diego Rodríguez de Silva y",
+    "url": "https://www.museodelprado.es/aprende/enciclopedia/voz/velazquez-diego-rodriguez-de-silva-y/264aa37c-c2ac-4690-9b7d-b9eccb5978e9"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Diccionario Biográfico Español (Real Academia de la Historia)",
+    "titulo": "Diego Rodríguez de Silva y Velázquez",
+    "url": "https://historia-hispanica.rah.es/biografias/39477-diego-rodriguez-de-silva-y-velazquez"
+   }
+  ],
+  "notas": "La Enciclopedia del Prado dice que el rey lo nombró «en seguida pintor de cámara» en 1623; la bibliografía suele distinguir entre pintor del rey (1623) y pintor de cámara (1628), pero no lo he podido comprobar en una fuente leída, así que se mantiene la formulación del Prado. dbe.rah.es redirige ahora a historia-hispanica.rah.es y solo se ve el comienzo de la voz; no consta autor en lo que se ve.",
+  "retirado": [
+   "«poco más de un centenar de cuadros»: la cifra no aparece en las fuentes leídas; eliminada.",
+   "«Dos viajes a Italia le cambiaron la manera»: se reformula con lo que dice el Prado (el primero, de estudio; el segundo, con comisión del rey)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "6 de agosto de 1660",
+    "fuente": 1,
+    "lugar": "Madrid"
+   },
+   "nacimiento": {
+    "fecha": "bautizado el 6 de junio de 1599",
+    "fuente": 2,
+    "lugar": "Sevilla"
+   }
+  }
+ },
+ "vernet": {
+  "bio": "Antoine-Charles-Horace Vernet, llamado Carle, nació en Burdeos en 1758 [2] y se formó con su padre, Claude-Joseph Vernet [1]. En 1782 ganó el Prix de Rome [1][2]. Su hermana Émilie, pintora, fue detenida el 25 de junio de 1794 y guillotinada el 24 de julio [3][1]. En 1808 Napoleón le concedió la Legión de Honor por una de sus escenas de batalla [1]. Se le conoció sobre todo como pintor de caballos en movimiento: carreras, cacerías, caballería [1]; desde 1816 se dedicó a estampas de vendedores callejeros, mercados de caballos y dandis [1], muchas de ellas litografías [4]. Fomentó el talento de su hijo Horace [1]. Murió en París en 1836 [2].",
+  "clave": "vernet",
+  "discrepancias": [
+   "Las fechas exactas (14 de agosto de 1758 y 27 de noviembre de 1836) vienen de Wikidata; no las encontré en una fuente académica leída, que solo dan los años."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "J. Paul Getty Museum",
+    "titulo": "Carle Vernet (biografía de la colección)",
+    "url": "https://www.getty.edu/art/collection/person/103KRJ"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Vernet, Carle (500011057)",
+    "url": "https://vocab.getty.edu/page/ulan/500011057"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Paris Musées – Petit Palais",
+    "titulo": "Émilie Vernet (1760-1794)",
+    "url": "https://www.parismuseescollections.paris.fr/fr/petit-palais/oeuvres/emilie-vernet-1760-1794"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "National Gallery of Art, Washington",
+    "titulo": "Carle Vernet",
+    "url": "https://www.nga.gov/artists/3283-carle-vernet"
+   }
+  ],
+  "notas": "La URL de Britannica para Carle Vernet redirige al artículo «Romanticism» y no trae biografía, así que no se cita. Benezit y Universalis son de suscripción; el RKD solo devolvió datos RDF, sin texto biográfico.",
+  "retirado": [
+   "«La ejecución de su hermana lo apartó de la pintura durante años»: no respaldado; el Getty dice solo que su obra no refleja esa tragedia. Eliminado.",
+   "«volvió con Napoleón, para quien pintó campañas»: se sustituye por el dato verificado (Legión de Honor en 1808 por una escena de batalla).",
+   "«terminó como uno de los primeros litógrafos franceses»: no pude verificar el «uno de los primeros»; queda que desde 1816 hizo estampas, muchas litografías (NGA conserva litografías suyas de 1816 en adelante)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "1836",
+    "fuente": 2,
+    "lugar": "París"
+   },
+   "nacimiento": {
+    "fecha": "1758",
+    "fuente": 2,
+    "lugar": "Burdeos"
+   }
+  }
+ },
+ "villalpando": {
+  "bio": "Se desconoce la partida de bautismo de Cristóbal de Villalpando; en 1669 inició sus trámites matrimoniales en el Sagrario de la catedral de México, y de ahí se deduce que nació hacia 1649 [1][2]. Murió en la Ciudad de México el 20 de agosto de 1714 [1]. Su primera obra fechada es el retablo de Huaquechula, Puebla (1675) [2]. En la década de 1680 llegó a un estilo propio, de colores claros y pincelada suelta, que reinterpretaba a Rubens —conocido en Nueva España por grabados y copias— y a los madrileños Rizi y Carreño [2][3]. El cabildo le encargó los cuatro lienzos monumentales de la sacristía de la catedral de México [2]. En Puebla pintó la cúpula del Altar de los Reyes de la catedral [4].",
+  "clave": "villalpando",
+  "discrepancias": [
+   "Nacimiento: ULAN da 1640; Wikidata, «c. 1669»; la ficha, c. 1649. La bibliografía mexicana respalda c. 1649: el catálogo razonado del IIE-UNAM y Fomento Cultural Banamex (1997) se titula «Cristóbal de Villalpando, ca. 1649-1714», y explica que, a falta de partida de bautismo, la fecha se deduce de que en 1669 inició sus trámites matrimoniales, suponiéndole unos 20 años (según lo resume Flores, UNAM 2001); Huerta Carrillo (INAH, 1997) dice que nació en 1649 «según su acta de matrimonio». El 1669 de Wikidata parece ser el año del matrimonio tomado por el del nacimiento. El 1640 de ULAN no tiene respaldo en las fuentes leídas.",
+   "La afirmación de que el nacimiento fue en la Ciudad de México procede de Huerta Carrillo (INAH); el catálogo, según Flores, parte solo del expediente matrimonial en el Sagrario de la catedral metropolitana."
+  ],
+  "fuentes": [
+   {
+    "autor": "Alejandro Huerta Carrillo",
+    "n": 1,
+    "obra": "Antropología. Revista Interdisciplinaria del INAH, núm. 45 (1997), pp. 54-56",
+    "titulo": "Notas sobre el pintor Cristóbal de Villalpando",
+    "url": "https://revistas.inah.gob.mx/index.php/antropologia/article/view/19205"
+   },
+   {
+    "autor": "Oscar Humberto Flores Flores",
+    "n": 2,
+    "obra": "Universidad Nacional Autónoma de México, Facultad de Filosofía y Letras (tesis de licenciatura, 2001; reseña del catálogo razonado del Seminario de Arte Virreinal del IIE-UNAM)",
+    "titulo": "El pintor barroco novohispano Cristóbal de Villalpando (1690-1714)",
+    "url": "https://tesiunamdocumentos.dgb.unam.mx/pd2001/287601/287601.pdf"
+   },
+   {
+    "autor": "M.ª Concepción García Sáinz",
+    "n": 3,
+    "obra": "Archivo Español de Arte, núm. 283 (1998), CSIC",
+    "titulo": "Cristóbal de Villalpando (ca. 1649-1714) [reseña de la exposición]",
+    "url": "https://xn--archivoespaoldearte-53b.revistas.csic.es/index.php/aea/article/download/716/727/725"
+   },
+   {
+    "autor": "Susana Verónica Volkow Fernández",
+    "n": 4,
+    "obra": "Repositorio Athenea Digital, Facultad de Filosofía y Letras, UNAM",
+    "titulo": "Iconografía de la cúpula pintada por Cristóbal de Villalpando en el Altar de los Reyes de la Catedral de Puebla (tesis de maestría, 2009)",
+    "url": "https://ru.atheneadigital.filos.unam.mx/jspui/handle/FFYL_UNAM/7136"
+   },
+   {
+    "autor": null,
+    "n": 5,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Villalpando, Cristóbal de",
+    "url": "https://vocab.getty.edu/page/ulan/500013182"
+   }
+  ],
+  "notas": "El Diccionario Biográfico Español (dbe.rah.es redirige a historia-hispanica.rah.es) no pudo leerse: la página se genera por JavaScript y no devuelve texto. Britannica (403) y RKD (403) tampoco cargaron; Grove y Benezit son de suscripción. El comunicado del Met sobre Villalpando devolvió 429. No se pudo verificar en fuente académica la fecha de la cúpula del Altar de los Reyes (en prensa se da 1688), por eso se omite.",
+  "retirado": [
+   "«la cúpula del Ochavo de la catedral poblana»: corregido; la tesis de la UNAM (Volkow, 2009) sitúa la cúpula pintada por Villalpando en el Altar (capilla) de los Reyes de la catedral de Puebla, no en la capilla del Ochavo.",
+   "«que no dependen ya de los modelos europeos que le llegaban grabados»: contradicho; Flores (resumiendo el catálogo del IIE) y García Sáinz subrayan su deuda con Rubens —conocido por grabados y copias— y con la escuela madrileña (Rizi, Carreño), que reinterpretó con libertad.",
+   "«El pintor más ambicioso del barroco novohispano»: valoración sin fuente, eliminada.",
+   "«a una escala enorme»: se conserva de forma concreta (lienzos monumentales de la sacristía)."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "20 de agosto de 1714",
+    "fuente": 1,
+    "lugar": "Ciudad de México"
+   },
+   "nacimiento": {
+    "fecha": "c. 1649",
+    "fuente": 1,
+    "lugar": "Ciudad de México"
+   }
+  }
+ },
+ "watts": {
+  "bio": "George Frederic Watts nació en Londres el 23 de febrero de 1817 y murió el 1 de julio de 1904 [1]. En Italia (1843–1847) estudió a los venecianos del siglo XVI, de quienes tomó su colorido cálido [2]. Pintó alegorías como La esperanza (1885) para «sugerir grandes pensamientos que apelen a la imaginación y al corazón» [1]. Rechazó dos veces un título de baronet (1885 y 1894) y en 1902 entró en la recién creada Orden del Mérito [1]. Desde 1883 donó a la National Portrait Gallery sus retratos del «Hall of Fame»; su regalo a la nación nutrió también la Tate [3][4]. Su galería de Compton la diseñó, por encargo suyo, el arquitecto local Christopher Hatton Turnor [5].",
+  "clave": "watts",
+  "discrepancias": [
+   "Lugar de muerte: ULAN y Wikidata dan Compton; Treccani escribe «Compton, Londra», lo que es ambiguo (Compton está en Surrey); la Britannica de 1911 da la fecha pero no el lugar. No se ha podido leer el Oxford DNB para resolverlo."
+  ],
+  "fuentes": [
+   {
+    "autor": "Malcolm Bell",
+    "n": 1,
+    "obra": "Encyclopædia Britannica, 11.ª ed. (1911), vol. 28 (transcripción en Wikisource)",
+    "titulo": "Watts, George Frederick",
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Watts,_George_Frederick"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Enciclopedia Treccani",
+    "titulo": "Watts, George Frederick",
+    "url": "https://www.treccani.it/enciclopedia/george-frederick-watts"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Watts Gallery – Artists' Village",
+    "titulo": "Faces of Fame: G F Watts X Simon Frederick",
+    "url": "https://www.wattsgallery.org.uk/press/faces-of-fame-g-f-watts-x-simon-frederick"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Watts Gallery – Artists' Village",
+    "titulo": "G F Watts's Self-portrait, 1867 acquired for the nation and allocated to Watts Gallery",
+    "url": "https://www.wattsgallery.org.uk/press/g-f-wattss-self-portrait-1867-acquired-for-the-nation-and-allocated-to-watts-gallery"
+   },
+   {
+    "autor": null,
+    "n": 5,
+    "obra": "Watts Gallery – Artists' Village",
+    "titulo": "Who designed Watts Gallery?",
+    "url": "https://www.wattsgallery.org.uk/blog/who-designed-watts-gallery"
+   },
+   {
+    "autor": null,
+    "n": 6,
+    "obra": "Getty Union List of Artist Names (ULAN)",
+    "titulo": "Watts, George Frederic",
+    "url": "https://vocab.getty.edu/page/ulan/500026988"
+   }
+  ],
+  "notas": "Britannica en línea (403), RKD (403) y NPG (403) no cargaron; Grove, ODNB y Benezit son de suscripción. La fuente 1 es la 11.ª edición de la Britannica leída en su transcripción de Wikisource (no es texto de Wikipedia).",
+  "retirado": [
+   "«rechazó dos veces el título de barón»: corregido; lo que rechazó (1885 y 1894) fue un título de baronet, que no es una baronía.",
+   "«Su galería en Compton, levantada por él mismo»: corregido; según la propia Watts Gallery la diseñó el arquitecto local Christopher Hatton Turnor por encargo de Watts.",
+   "«Quiso pintar ‹ideas, no cosas›»: no se encontró en ninguna fuente leída; se sustituye por la cita que recoge la Britannica de 1911.",
+   "«en una Inglaterra que prefería la anécdota»: juicio sin fuente, eliminado.",
+   "«sigue siendo el mejor sitio para verlo»: valoración sin fuente, eliminada."
+  ],
+  "vida": {
+   "muerte": {
+    "fecha": "1 de julio de 1904",
+    "fuente": 6,
+    "lugar": "Compton (Surrey)"
+   },
+   "nacimiento": {
+    "fecha": "23 de febrero de 1817",
+    "fuente": 1,
+    "lugar": "Londres"
+   }
+  }
+ }
+}

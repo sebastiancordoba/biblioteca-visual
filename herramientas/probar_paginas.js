@@ -63,6 +63,24 @@ for (const l of libros) BOOKS[l].details.forEach((d, i) => {
 });
 ck(desajustes.length === 0, `título y «Abrir en el visor» coinciden con el índice del visor (${desajustes.length} desajustes)` + (desajustes[0] ? ': ' + desajustes[0] : ''));
 
+console.log('\n== crédito de cada foto ==');
+/* CC BY y CC BY-SA obligan a citar autor y licencia: toda vista servida desde Commons tiene
+   que llevar su crédito, en la aplicación y en la página de la obra. */
+{
+  const sinCred = [];
+  for (const l of libros) BOOKS[l].groups.forEach((g, i) => g.forEach((v, k) => {
+    if (/^https:\/\/upload\.wikimedia\.org/.test(v.src) && !v.cred) sinCred.push(`${l} ${i}.${k}`);
+  }));
+  ck(sinCred.length === 0, `toda vista de Commons lleva su crédito en la aplicación (${sinCred.length} sin él)` + (sinCred[0] ? ': ' + sinCred.slice(0, 4).join(', ') : ''));
+  const pagSin = [];
+  for (const l of libros) BOOKS[l].groups.forEach((g, i) => {
+    const p = fs.readFileSync(path.join(SITIO, FICHAS[l][i], 'index.html'), 'utf8');
+    const conCred = g.filter(v => v.cred).length, enPag = (p.match(/class="credito"/g) || []).length;
+    if (enPag < conCred) pagSin.push(`${l} ${i} (${enPag}/${conCred})`);
+  });
+  ck(pagSin.length === 0, `y en la página de cada obra, bajo cada vista (${pagSin.length} incompletas)` + (pagSin[0] ? ': ' + pagSin.slice(0, 4).join(', ') : ''));
+}
+
 console.log('\n== para compartir y para buscadores ==');
 const obras = paginas.filter(p => p.includes('/obras/'));
 const sinOg = obras.filter(p => !/<meta property="og:image" content="https:\/\/[^"]+"/.test(fs.readFileSync(p, 'utf8')));

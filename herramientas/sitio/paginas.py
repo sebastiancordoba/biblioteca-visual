@@ -113,6 +113,20 @@ def absoluta(rel, ancho=REJILLA):
     return (URL_SITIO + url) if es_propia else url
 
 
+def credito(c):
+    """Autor y licencia de la foto: CC BY y CC BY-SA obligan a darlos. En dominio público no
+    se nombra fotógrafo (el campo de Commons sería el autor de la obra)."""
+    if not c: return ""
+    enl = lambda u, t: f'<a href="{e(u)}">{e(t)}</a>' if u else e(t)
+    partes = []
+    if c.get("a"):
+        pre = "" if re.match(r"(?i)(photo|foto|photograph)", c["a"]) else "Foto: "
+        partes.append(pre + enl(c.get("au"), c["a"]))
+    partes.append(enl(c.get("lu"), c.get("l") or ""))
+    partes.append(enl(c.get("f"), "Wikimedia Commons"))
+    return f'<span class="credito">{" · ".join(p for p in partes if p)}</span>'
+
+
 def tarjeta(href, img, antetitulo, titulo, sub, R, texto=""):
     return (f'<a class="tarjeta" href="{e(href)}">'
             f'<span class="tarjeta-img"><img src="{e(img)}" alt="" loading="lazy" decoding="async"></span>'
@@ -163,7 +177,7 @@ def generar():
             lk = ENL.get(principal[2:])
             otras = "".join(
                 f'<figure><a href="{e(app)}/{v}"><img src="{e(src(x["src"], R))}" alt="{e(x["title"])}" loading="lazy"></a>'
-                f'<figcaption>{e(x["title"])}</figcaption></figure>' for v, x in enumerate(vistas) if v)
+                f'<figcaption>{e(x["title"])}{credito(x.get("cred"))}</figcaption></figure>' for v, x in enumerate(vistas) if v)
             enlaces = [f'<a class="boton oro" href="{e(app)}">Abrir en el visor · zoom 40×</a>']
             if lk:
                 enlaces.append(f'<a class="boton" href="{e(lk["commons"])}" rel="noopener">Archivo original en Commons · '
@@ -182,7 +196,7 @@ def generar():
   </header>
   <figure class="principal">
     <a href="{e(app)}" title="Abrir en el visor"><img src="{e(src(principal, R, VISOR))}" alt="{e(vistas[0]['title'])}" fetchpriority="high"></a>
-    <figcaption>{e(vistas[0]['title'])}</figcaption>
+    <figcaption>{e(vistas[0]['title'])}{credito(vistas[0].get('cred'))}</figcaption>
   </figure>
   <div class="acciones">{"".join(enlaces)}</div>
   <p class="entradilla">{e(d['snippet'])}</p>
@@ -247,8 +261,37 @@ def generar():
                        absoluta(libros[0]["groups"][0][0]["src"]), None, "libros"))
 
     # ---- un autor
+    # Cada dato con su fuente: la biografía con sus notas, qué dice cada fuente sobre el
+    # nacimiento y la muerte (y dónde discrepan), la nota del Getty, las obras de referencia
+    # académicas y los registros de autoridad. Ver herramientas/autores_wikidata.py,
+    # autores_ulan.py y el campo «fuentes» de data_autores.py.
+    _fa = os.path.join(AQUI, "datos", "autores_fuentes.json")     # incorporar_fuentes.py
+    FA = json.load(io.open(_fa, encoding="utf-8")) if os.path.exists(_fa) else {}
+    WD = json.load(io.open(os.path.join(AQUI, "datos", "autores_wikidata.json"), encoding="utf-8"))["autores"]
+    UL = json.load(io.open(os.path.join(AQUI, "datos", "autores_ulan.json"), encoding="utf-8"))["autores"]
+    PAGO = {"P8406", "P2843", "P1415", "P3219"}
+    AUTORIDAD = {"P650", "P7902"}
+
+    def con_notas(texto_, clave):
+        """Escapa el texto y convierte [1], [2, 3] en llamadas a las notas."""
+        t = e(texto_)
+        return re.sub(r"\[(\d+(?:\s*[,–-]\s*\d+)*)\]",
+                      lambda m: "".join(f'<sup><a href="#f{n}" id="r{n}-{k}">{n}</a></sup>'
+                                        for k, n in enumerate(re.findall(r"\d+", m.group(1)))), t)
+
+    def dominio(url):
+        return re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
+
+    def sin_notas(t):
+        return re.sub(r"\s*\[[\d,\s–-]+\]", "", t)
+
+    def celda(f, lugar):
+        partes = [x for x in (f, lugar) if x]
+        return e(", ".join(partes)) if partes else '<span class="nd">no consta</span>'
+
     for a in autores:
         R = "../../"
+        fa, wd, ul = FA.get(a["clave"], {}), WD.get(a["clave"]), UL.get(a["clave"])
         obras = "".join(
             tarjeta(f"{R}{FICHAS[o['libro']][o['i']]}/",
                     src(next(L for L in libros if L["id"] == o["libro"])["groups"][o["i"]][0]["src"], R),
@@ -257,6 +300,62 @@ def generar():
         retrato = (f'<figure class="retrato"><img src="{R}{e(imagen(a["retrato"])[0])}" alt="{e(a["nombre"])}">'
                    f'<figcaption>{e(a.get("retratoPie", ""))}</figcaption></figure>' if a.get("retrato")
                    else '<figure class="retrato vacio"><span>No se conserva retrato</span></figure>')
+        fuentes = fa.get("fuentes") or []
+        bio = con_notas(fa.get("bio") or a["bio"], a["clave"])
+
+        # qué dice cada fuente
+        filas = []
+        vida = fa.get("vida") or {}
+        if vida:
+            nac, mue = vida.get("nacimiento") or {}, vida.get("muerte") or {}
+            ref = lambda d: (f' <sup><a href="#f{d["fuente"]}">{d["fuente"]}</a></sup>' if d.get("fuente") else "")
+            filas.append(f'<tr><th>Bibliografía académica</th><td>{celda(nac.get("fecha"), nac.get("lugar"))}{ref(nac)}</td>'
+                         f'<td>{celda(mue.get("fecha"), mue.get("lugar"))}{ref(mue)}</td></tr>')
+        if ul:
+            filas.append(f'<tr><th><a href="{e(ul["url"])}">Getty ULAN</a></th>'
+                         f'<td>{celda(ul["nacimiento_texto"], (ul["nacimiento"] or {}).get("lugar"))}</td>'
+                         f'<td>{celda(ul["muerte_texto"], (ul["muerte"] or {}).get("lugar"))}</td></tr>')
+        if wd:
+            filas.append(f'<tr><th><a href="https://www.wikidata.org/wiki/{e(wd["qid"])}">Wikidata</a></th>'
+                         f'<td>{celda(wd["nacimiento"]["fecha"], (wd["nacimiento"]["lugar"] or {}).get("texto"))}</td>'
+                         f'<td>{celda(wd["muerte"]["fecha"], (wd["muerte"]["lugar"] or {}).get("texto"))}</td></tr>')
+        tabla = (f'<section class="bloque"><h2>Qué dice cada fuente</h2><div class="tabla"><table>'
+                 f'<thead><tr><th></th><th>Nacimiento</th><th>Muerte</th></tr></thead><tbody>{"".join(filas)}</tbody></table></div>'
+                 + ("".join(f'<p class="discrepancia">{e(x)}</p>' for x in fa.get("discrepancias") or []))
+                 + '</section>') if filas else ""
+
+        nota = (f'<section class="bloque"><h2>Nota biográfica del Getty</h2>'
+                f'<blockquote lang="en">{e(ul["nota"])}</blockquote>'
+                f'<p class="atribucion">Getty Research Institute, <a href="{e(ul["url"])}">Union List of Artist Names</a>, '
+                f'registro {e(ul["ulan"])}. Datos abiertos bajo licencia ODC-By 1.0.</p></section>'
+                if ul and ul.get("nota") and len(ul["nota"]) > 80 else "")
+        lista_fuentes = (f'<section class="bloque"><h2>Fuentes de la biografía</h2><ol class="fuentes">'
+                         + "".join(f'<li id="f{f["n"]}"><span>{e(f["obra"])}</span>'
+                                   f'{(" — «" + e(f["titulo"]) + "»") if f.get("titulo") else ""}'
+                                   f'{(", " + e(f["autor"])) if f.get("autor") else ""}. '
+                                   f'<a href="{e(f["url"])}">{e(dominio(f["url"]))}</a></li>'
+                                   for f in fuentes)
+                         + '</ol></section>') if fuentes else \
+            '<p class="discrepancia">Esta biografía todavía no está contrastada con fuentes académicas.</p>'
+        refs = [r for r in (wd or {}).get("referencias", []) if r["pid"] not in AUTORIDAD]
+        leer = (f'<section class="bloque"><h2>Para leer más</h2><ul class="refs">'
+                + "".join(f'<li><a href="{e(r["url"])}">{e(r["obra"])}</a>'
+                          f'{" <small>requiere suscripción</small>" if r["pid"] in PAGO else ""}</li>' for r in refs)
+                + '</ul></section>') if refs else ""
+        aut = []
+        if ul: aut.append(("Getty ULAN", ul["url"]))
+        ids = (wd or {}).get("ids", {})
+        if ids.get("viaf"): aut.append(("VIAF", f"https://viaf.org/viaf/{ids['viaf']}/"))
+        if ids.get("loc"): aut.append(("Library of Congress", f"https://id.loc.gov/authorities/names/{ids['loc']}.html"))
+        for r in (wd or {}).get("referencias", []):
+            if r["pid"] in AUTORIDAD: aut.append((r["obra"].split(",")[0].split(" (")[0], r["url"]))
+        if wd: aut.append(("Wikidata", f"https://www.wikidata.org/wiki/{wd['qid']}"))
+        autoridad = (f'<section class="bloque"><h2>Registros de autoridad</h2><p class="autoridad">'
+                     + " · ".join(f'<a href="{e(u)}">{e(t)}</a>' for t, u in aut) + '</p></section>') if aut else ""
+        sin_registro = ("" if (wd or ul) else
+                        '<p class="discrepancia">No tiene registro en la Getty ULAN ni en Wikidata: lo que se sabe de '
+                        'estos autores procede de sus firmas y de las fuentes antiguas citadas.</p>')
+
         cuerpo = f"""
 <nav class="migas"><a href="{R}autores/">Autores</a> › {e(a['nombre'])}</nav>
 <article class="autor-pag">
@@ -265,13 +364,25 @@ def generar():
     <p class="ante">{e(a['oficio'])}</p>
     <h1>{e(a['nombre'])}</h1>
     <p class="autor">{e(a['anios'])}</p>
-    <p class="bio">{e(a['bio'])}</p>
+    <p class="bio">{bio}</p>
   </div>
 </article>
+<div class="autor-datos">
+  {tabla}{sin_registro}
+  {lista_fuentes}
+  {nota}
+  {leer}
+  {autoridad}
+</div>
 <h2 class="seccion">{len(a['obras'])} obra{'s' if len(a['obras']) > 1 else ''} en la colección</h2>
 <div class="rejilla">{obras}</div>"""
         img_og = (URL_SITIO + imagen(a["retrato"])[0]) if a.get("retrato") else None
-        urls.append(pagina(f"autores/{a['clave']}", a["nombre"], a["bio"][:300], cuerpo, img_og, None, "autores"))
+        ld = {"@context": "https://schema.org", "@type": "Person", "name": a["nombre"],
+              "url": URL_SITIO + f"autores/{a['clave']}/",
+              "sameAs": [u for _, u in aut]}
+        if img_og: ld["image"] = img_og
+        urls.append(pagina(f"autores/{a['clave']}", a["nombre"], sin_notas(fa.get("bio") or a["bio"])[:300],
+                           cuerpo, img_og, ld, "autores"))
 
     # ---- índice de autores
     R = "../"

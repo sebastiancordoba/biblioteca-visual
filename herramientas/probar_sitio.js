@@ -14,10 +14,12 @@ const locales = refs.filter(r => !/^https?:/.test(r));
 const rotas = locales.filter(r => !fs.existsSync(path.join(SITIO, r)));
 ck(rotas.length === 0, `${locales.length} referencias a archivos del sitio, ${rotas.length} rotas` + (rotas.length ? ': ' + rotas.slice(0, 3).join(' ') : ''));
 ck(!locales.some(r => /^(\.\/)?(Génesis|Gilgamesh|Ilíada|Atrahasis|Enuma_Elish)\//.test(r)), 'ninguna apunta a las carpetas de la colección, que no se publican');
-const remotas = [...new Set(refs.filter(r => /^https?:/.test(r)))];
+/* Los créditos enlazan la página de cada archivo en Commons (…/wiki/File:x.jpg): es un enlace, no una imagen. */
+const remotas = [...new Set(refs.filter(r => /^https?:/.test(r) && !r.includes('commons.wikimedia.org/wiki/')))];
 ck(remotas.every(u => u.startsWith('https://upload.wikimedia.org/wikipedia/commons/')), `${remotas.length} imágenes remotas, todas de Commons`);
 /* thumb/5/5b/<nombre>/1280px-<nombre>: sin el nombre repetido Commons da 404, que es como falló la primera vez. */
-const malas = remotas.filter(u => u.includes('/thumb/') && !/\/thumb\/\w\/\w\w\/([^/]+)\/\d+px-\1$/.test(u));
+/* …o «1280px-thumbnail.jpg» cuando el nombre pasa de 160 bytes, como hace MediaWiki. */
+const malas = remotas.filter(u => u.includes('/thumb/') && !/\/thumb\/\w\/\w\w\/([^/]+)\/\d+px-(\1|thumbnail\.\w+)$/.test(u));
 ck(malas.length === 0, `miniaturas con el formato de Commons (${malas.length} mal formadas)` + (malas[0] ? ': ' + malas[0] : ''));
 
 console.log('\n== el visor pide el original ==');

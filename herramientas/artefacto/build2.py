@@ -53,8 +53,24 @@ nf="""      const wikiLinkEl = document.getElementById('panelWikiLink');
         origLinkEl.style.display = 'inline-flex';
       } else {
         origLinkEl.style.display = 'none';
+      }
+
+      /* Crédito de la foto que se está viendo: CC BY y CC BY-SA obligan a nombrar al autor
+         y la licencia. En dominio público no se nombra a nadie como fotógrafo. */
+      const credEl = document.getElementById('panelCredito');
+      if (credEl) {
+        const c = item.cred;
+        const enl = (u, t) => u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>` : esc(t);
+        credEl.innerHTML = !c ? '' :
+          (c.a ? (/^(photo|foto|photograph)/i.test(c.a) ? '' : 'Foto: ') + enl(c.au, c.a) + ' · ' : '') +
+          enl(c.lu, c.l || '') + ' · ' + enl(c.f, 'Wikimedia Commons');
       }"""
 assert vf in doc; doc=doc.replace(vf,nf,1)
+
+# ---------- visor: línea de crédito bajo los enlaces del panel ----------
+_m=re.search(r'(<a id="panelWikiLink"[\s\S]*?</a>\s*</div>)', doc)
+assert _m, "no encuentro el bloque de enlaces del panel"
+doc=doc.replace(_m.group(1), _m.group(1)+'\n      <p id="panelCredito" class="credito"></p>', 1)
 
 # ---------- avisar en el visor al superar el detalle de la previa ----------
 va="""      zoomScaleText.innerText = Math.round(zoomScale * 100) + '%';"""

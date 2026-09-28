@@ -336,6 +336,49 @@ ven a 168 px, así que se piden a Commons ya reducidos a 640 px. El pie de cada 
 artistas (Exequias, Eufronio, Villalpando, Jörg Breu y los escultores del Laocoonte) **no se
 conserva retrato**: se dice, en vez de poner una obra suya haciéndola pasar por su cara.
 
+### Autores con fuentes académicas
+
+Cada página de autor muestra de dónde sale cada dato. Tres archivos en
+`herramientas/sitio/datos/`, guardados en el repositorio para que construir no dependa de la
+red (se actualizan volviendo a ejecutar su script):
+
+- `autores_wikidata.json` ← `python3 herramientas/autores_wikidata.py`: fechas y lugares con la
+  precisión que da Wikidata (año, década, «c.»), y los identificadores del autor en las obras de
+  referencia académicas —Grove, Dizionario Biografico degli Italiani, Diccionario Biográfico
+  Español, Iranica, ODNB, Benezit, Prado, Treccani, Universalis, Britannica— con la URL que
+  Wikidata declara para cada una (P1630), no escrita a mano.
+- `autores_ulan.json` ← `python3 herramientas/autores_ulan.py`: el registro de la **Getty ULAN**
+  (fechas como intervalo, lugares, nota biográfica del Getty). Es la fuente principal de las
+  fechas; Wikidata es el contraste.
+- `autores_fuentes.json` ← `python3 herramientas/incorporar_fuentes.py resultado*.json`: la
+  biografía **contrastada con bibliografía académica**, con una llamada `[n]` tras cada
+  afirmación, sus fuentes, y lo que se retiró y por qué. El script rechaza un registro si una
+  llamada no tiene fuente, si una fuente es Wikipedia o si una frase con datos no cita nada, y
+  copia el texto sin llamadas a `data_autores.py` para que la aplicación muestre lo mismo.
+
+Las fuentes discrepan más de lo que parece, y la página lo enseña en vez de elegir a
+escondidas: la ULAN pone a Behzad nacido en Tabriz en 1445, cuando la Encyclopaedia Iranica
+dice que su nacimiento es desconocido y que Tabriz es donde murió; Wikidata da «c. 1669» para
+Villalpando, que es el año de su boda. La verificación de 2026 corrigió además errores de las
+biografías escritas a mano: Blake no murió en la pobreza, en la Sixtina sí hay arquitectura
+pintada, Tiziano sí salió de Venecia, Watts rechazó un título de *baronet*, no de barón.
+
+### Crédito de cada foto
+
+`python3 herramientas/creditos.py` baja de Commons autor y licencia de cada imagen a
+`herramientas/artefacto/datos/creditos.json`. 42 de las 114 son CC BY o CC BY-SA, que **obligan**
+a citar autor y licencia: el visor (artefacto y Pages) y cada página de obra lo muestran bajo
+cada vista. Se usa el campo `Attribution` de Commons si existe (es el texto con el que el autor
+pide ser citado) y si no `Artist`; en dominio público no se nombra fotógrafo, porque ahí `Artist`
+es el autor de la obra. `probar_paginas.js` comprueba que ninguna vista de Commons quede sin él.
+
+### Miniaturas de Commons
+
+`python3 herramientas/sitio/verificar_miniaturas.py` compara cada URL de miniatura que construye
+`comun.py` con la que da la API de Commons (tres peticiones, sin descargar imágenes: una ráfaga de
+descargas a upload.wikimedia.org da 429 enseguida). Cuando el nombre del archivo pasa de 160
+bytes, MediaWiki llama a la miniatura `1280px-thumbnail.jpg`.
+
 ### Identificar de qué archivo salió una imagen antigua
 
 Las primeras obras del Génesis se guardaron antes de que existieran los manifiestos, así que

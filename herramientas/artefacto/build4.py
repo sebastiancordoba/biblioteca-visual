@@ -17,6 +17,9 @@ CSS = """
     .cobertura h2{font-family:var(--font-serif);color:var(--text-title);font-weight:500;
       font-size:1.35rem;letter-spacing:.5px;margin:44px 0 6px}
     .cobertura h2:first-child{margin-top:0}
+    .credito{font-size:.72rem;color:var(--text-muted);margin-top:14px;line-height:1.5}
+    .credito a{color:var(--text-muted);text-decoration:underline;text-underline-offset:2px}
+    .credito a:hover{color:var(--accent-gold)}
     .cob-sub{color:var(--text-muted);font-size:.92rem;max-width:64ch;margin:0 0 18px;font-weight:300}
     .cob-tabla{overflow-x:auto;border:1px solid var(--border-subtle);border-radius:4px}
     .cob-tabla table{border-collapse:collapse;width:100%;min-width:620px}

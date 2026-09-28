@@ -1036,7 +1036,7 @@ La página pertenece a un ejemplar del Bustán («El jardín») del poeta Saadi 
 
 #### Sobre el artista
 
-Kamāl ud-Dīn Behzad (c. 1450-c. 1535) fue el gran pintor de la corte timúrida de Herat, en el actual Afganistán. Cuando la ciudad cayó en manos de los safávidas se trasladó a Tabriz, donde el sha Ismail lo nombró en 1522 director de la biblioteca real. Sus composiciones de arquitectura escalonada y sus figuras individualizadas, con gestos de la vida cotidiana, marcaron la miniatura persa, otomana y mogol durante un siglo.
+Kamāl ud-Dīn Behzad (activo desde c. 1480; murió en 1535-1536) fue el gran pintor de la corte timúrida de Herat, en el actual Afganistán; su fecha de nacimiento no se conoce. Tras la llegada de los safávidas trabajó en Tabriz, donde murió. El nombramiento como director de la biblioteca real que se le atribuye en 1522 es de autenticidad dudosa según la Encyclopaedia Iranica. Sus composiciones de arquitectura escalonada marcaron la pintura de Bujará y de la India mogol.
 
 ---
 

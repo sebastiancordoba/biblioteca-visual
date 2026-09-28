@@ -42,7 +42,10 @@ ARTICULOS = {
 # Discrepancias conocidas y resueltas a favor de otra fuente. Se declaran para que no
 # vuelvan a aparecer como sorpresa, no para taparlas.
 ACEPTADAS = {
- "villalpando": "Wikidata dice 1669; la Wikipedia en español y la bibliografía, «c. 1649»",
+ "villalpando": "Wikidata dice 1669, que es el año de su boda; la bibliografía de la UNAM y el INAH, «c. 1649»",
+ "rubliov":     "Wikidata da 1428 en su primera declaración; la Getty ULAN y la bibliografía, 1430",
+ "bellini":     "Wikidata da 1430; el Dizionario Biografico degli Italiani (Pignatti), hacia 1427, fecha discutida",
+ "behzad":      "la Encyclopaedia Iranica da su nacimiento por desconocido: solo consta la muerte, c. 1535",
  "exekias":     "Wikidata guarda un valor único sin sentido; se usa el periodo de actividad",
  "laocoonte":   "grupo escultórico, no una persona: Wikidata no tiene fechas de nacimiento",
 }
