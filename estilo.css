@@ -158,3 +158,6 @@ blockquote{border-left:2px solid var(--border-subtle);padding:2px 0 2px 18px;col
 .credito{display:block;font-size:.72rem;color:var(--text-muted);margin-top:4px}
 .credito a{color:var(--text-muted);text-decoration:underline;text-underline-offset:2px}
 .credito a:hover{color:var(--accent-gold)}
+
+/* dos notas seguidas: «1, 2», no «12» */
+sup + sup::before{content:",";margin-right:1px}
