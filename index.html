@@ -240,7 +240,13 @@
 
     .autor-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border-subtle); }
     .autor-imgs figure { margin: 0; background: #050608; position: relative; }
-    .autor-imgs img { width: 100%; height: 168px; object-fit: cover; display: block; }
+    .autor-imgs img { width: 100%; height: 190px; object-fit: cover; display: block; }
+    .autor-imgs.sin-foto { grid-template-columns: 1fr; }
+    .autor-imgs .sin-retrato {
+      position: absolute; top: 10px; left: 10px; font-size: .6rem; letter-spacing: 1.2px;
+      text-transform: uppercase; color: var(--text-body); background: rgba(4,5,7,.78);
+      border: 1px solid var(--border-subtle); padding: 3px 8px; border-radius: 2px;
+    }
     .autor-imgs figcaption {
       position: absolute; left: 0; right: 0; bottom: 0;
       background: linear-gradient(180deg, rgba(4,5,7,0), rgba(4,5,7,.92));
@@ -250,7 +256,8 @@
     .autor-imgs .obra { cursor: zoom-in; }
     .autor-imgs .obra:hover img { opacity: .82; }
 
-    .autor-txt { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 6px; }
+    .autor-txt { padding: 18px 20px 18px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+    .autor-linea { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
     .autor-txt h3 {
       font-family: var(--font-serif); font-size: 1.14rem; font-weight: 500;
       color: var(--text-title); margin: 0; line-height: 1.25;
@@ -260,11 +267,18 @@
       color: var(--accent-gold); font-variant-numeric: tabular-nums;
     }
     .autor-oficio { font-size: .8rem; color: var(--text-muted); }
-    .autor-bio { font-size: .86rem; line-height: 1.62; color: var(--text-body); margin: 8px 0 0; }
+    .autor-bio {
+      font-size: .86rem; line-height: 1.62; color: var(--text-body); margin: 8px 0 0;
+      display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+    }
 
     .autor-obras {
-      margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-subtle);
-      display: flex; flex-wrap: wrap; gap: 6px;
+      margin-top: auto; padding-top: 14px; border-top: 1px solid var(--border-subtle);
+      display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+    }
+    .autor-nobras {
+      font-family: var(--font-serif); font-size: .62rem; letter-spacing: 1.6px; text-transform: uppercase;
+      color: var(--text-muted); margin-right: 4px;
     }
     .autor-obra {
       background: none; border: 1px solid var(--border-subtle); border-radius: 3px;
@@ -272,9 +286,11 @@
       padding: 4px 9px; cursor: pointer; transition: color .2s, border-color .2s;
     }
     .autor-obra:hover { color: var(--accent-gold); border-color: var(--accent-gold); }
-    .autor-ficha { display: inline-block; margin: 2px 0 16px; font-size: .82rem; color: var(--accent-gold);
-      text-decoration: none; border-bottom: 1px solid rgba(197,160,70,.35); }
-    .autor-ficha:hover { color: var(--accent-gold-hover); border-bottom-color: var(--accent-gold-hover); }
+    /* align-self: sin él, el enlace se estiraba a todo el ancho de la tarjeta y su subrayado
+       parecía una segunda línea separadora. */
+    .autor-ficha { align-self: flex-start; margin: 4px 0 16px; font-size: .8rem; color: var(--accent-gold);
+      text-decoration: none; }
+    .autor-ficha:hover { color: var(--accent-gold-hover); text-decoration: underline; text-underline-offset: 3px; }
 
     /* BIBLIOTECA
        Una pestaña por libro no escala: con veinte libros la barra superior sería una lista.
@@ -9247,28 +9263,33 @@
       rej.innerHTML = visibles.map(a => {
         const obras = a.obras.map(obraDe).filter(Boolean);
         const muestra = obras[0];
+        /* Retrato y una obra suya, lado a lado. Sin retrato, la obra ocupa todo el ancho con
+           el aviso: antes se repetía la misma obra en las dos mitades. */
         const retrato = a.retrato
           ? `<figure><img src="${a.retrato}" alt="Retrato de ${esc(a.nombre)}" loading="lazy">` +
             `<figcaption>${esc(a.retratoPie || 'Retrato')}</figcaption></figure>`
-          : `<figure><img src="${muestra ? muestra.src : ''}" alt="" loading="lazy">` +
-            `<figcaption>No se conserva retrato</figcaption></figure>`;
+          : '';
         const suya = muestra
           ? `<figure class="obra" data-autor="${a.clave}" data-libro="${muestra.libro}" data-i="${muestra.i}">` +
             `<img src="${muestra.src}" alt="${esc(muestra.title)}" loading="lazy">` +
-            `<figcaption>${esc(muestra.title)}</figcaption></figure>`
+            `<figcaption>${esc(muestra.title)}</figcaption>` +
+            (a.retrato ? '' : `<span class="sin-retrato">No se conserva retrato</span>`) + `</figure>`
           : '';
         const lista = obras.map(o =>
           `<button class="autor-obra" type="button" data-autor="${a.clave}" data-libro="${o.libro}" data-i="${o.i}">` +
           `${esc(o.title)}</button>`).join('');
+        /* La biografía va recortada a cuatro líneas: la entera, con sus notas y fuentes, está
+           en la página del autor, que es a donde lleva el enlace. */
         return `<article class="autor-card">` +
-          `<div class="autor-imgs">${retrato}${suya}</div>` +
+          `<div class="autor-imgs${a.retrato ? '' : ' sin-foto'}">${retrato}${suya}</div>` +
           `<div class="autor-txt"><h3>${esc(a.nombre)}</h3>` +
-          `<span class="autor-vida">${esc(a.anios)}</span>` +
-          `<span class="autor-oficio">${esc(a.oficio)}</span>` +
+          `<p class="autor-linea"><span class="autor-vida">${esc(a.anios)}</span>` +
+          `<span class="autor-oficio">${esc(a.oficio)}</span></p>` +
           `<p class="autor-bio">${esc(a.bio)}</p>` +
           `<a class="autor-ficha" href="${BASE_FICHAS}autores/${a.clave}/"` +
           `${BASE_FICHAS ? ' target="_blank" rel="noopener"' : ''}>Biografía completa y fuentes →</a>` +
-          `<div class="autor-obras">${lista}</div></div></article>`;
+          `<div class="autor-obras"><span class="autor-nobras">${obras.length} obra${obras.length === 1 ? '' : 's'}</span>${lista}</div>` +
+          `</div></article>`;
       }).join('');
 
       /* Al abrir desde un autor, las flechas del visor recorren solo su obra: si entras
