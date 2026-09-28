@@ -17,17 +17,13 @@ hacer y en un artefacto no:
 
 Uso: ./herramientas/construir_artefacto.sh && python3 herramientas/sitio/construir_sitio.py
 """
-import io, json, os, re, shutil, subprocess, sys, unicodedata
+import io, json, os, re, shutil, subprocess, sys
 
-RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from comun import RAIZ, BUILD, SITIO, ENL, REJILLA, VISOR, miniatura, propia
 sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
 from libros import PATRON_RUTA_COMILLAS
 
-BUILD = os.path.join(RAIZ, "build")
-SITIO = os.path.join(BUILD, "sitio")
-ENL = json.load(io.open(os.path.join(RAIZ, "herramientas", "artefacto", "datos", "enlaces.json"),
-                        encoding="utf-8"))
-REJILLA, VISOR, LADO_PROPIO = 1280, 1920, 2560
 TITULO = "Biblioteca Visual de los Grandes Libros"
 
 doc = io.open(os.path.join(BUILD, "pre_imagenes.html"), encoding="utf-8").read()
@@ -36,19 +32,8 @@ if os.path.isdir(SITIO):
 os.makedirs(os.path.join(SITIO, "img"))
 
 
-def miniatura(lk, ancho):
-    """URL de la miniatura de Commons a `ancho` px, o el original si no es más grande.
-    Commons da error si se pide una miniatura mayor que el archivo."""
-    if lk["w"] <= ancho:
-        return lk["original"]
-    base, nombre = lk["original"].rsplit("/", 1)
-    # thumb/5/5b/<nombre>/1280px-<nombre>: el nombre va dos veces.
-    return (base.replace("/wikipedia/commons/", "/wikipedia/commons/thumb/", 1)
-            + f"/{nombre}/{ancho}px-{nombre}")
-
-
 # ---------- rutas de imagen ----------
-HD, propias, cuenta = {}, [], {"commons": 0, "propia": 0, "retrato": 0}
+HD, propias, cuenta = {}, set(), {"commons": 0, "propia": 0, "retrato": 0}
 
 def sustituir(m):
     rel = m.group(1)
@@ -58,33 +43,30 @@ def sustituir(m):
         HD[url] = {"v": miniatura(lk, VISOR), "o": lk["original"]}
         cuenta["commons"] += 1
         return f'"{url}"'
-    if rel.startswith("Autores/"):
-        destino = rel
-        cuenta["retrato"] += 1
-    else:
-        destino = "img/" + unicodedata.normalize("NFD", rel.replace("/", "__")).encode("ascii", "ignore").decode()
-        cuenta["propia"] += 1
-    if destino not in propias:
-        propias.append(destino)
-        dst = os.path.join(SITIO, destino)
-        os.makedirs(os.path.dirname(dst), exist_ok=True)
-        if rel.startswith("Autores/"):
-            shutil.copyfile(os.path.join(RAIZ, rel), dst)
-        else:
-            # Copia reducida para el sitio: la imagen de la colección no se modifica.
-            subprocess.run(["sips", "-Z", str(LADO_PROPIO), "-s", "format", "jpeg",
-                            "-s", "formatOptions", "85", os.path.join(RAIZ, rel), "--out", dst],
-                           check=True, capture_output=True)
+    cuenta["retrato" if rel.startswith("Autores/") else "propia"] += 1
+    destino = propia(rel)
+    propias.add(destino)
     return f'"{destino}"'
 
 doc, n = re.subn(PATRON_RUTA_COMILLAS, sustituir, doc)
 assert n > 100, f"solo {n} rutas de imagen: ¿cambió el patrón?"
+
+# ---------- páginas estáticas (fase 2) ----------
+from paginas import generar as generar_paginas
+FICHAS = generar_paginas()
 
 # ---------- nombre del sitio ----------
 doc = re.sub(r"<title>[^<]*</title>", f"<title>{TITULO}</title>", doc, count=1)
 doc = doc.replace("Los Tres Libros", "Biblioteca Visual")
 doc = doc.replace("<head>", """<head>
   <meta name="description" content="Pintura, escultura, cerámica y arqueología en torno al Génesis, Gilgamesh, la Ilíada, el Atrahasis y el Enuma Elish, en la mayor resolución que existe de cada obra.">""", 1)
+
+# ---------- visor: enlace a la página de la obra ----------
+m = re.search(r'(<a id="panelWikiLink"[\s\S]*?</a>)', doc)
+assert m, "no encuentro el enlace a Wikipedia del panel del visor"
+doc = doc.replace(m.group(1), m.group(1) + """
+        <a id="panelFichaLink" href="#" class="wiki-link-btn" title="Página propia de esta obra, para leerla o compartirla">
+          Ficha de la obra</a>""", 1)
 
 # ---------- visor: 1920 px al abrir, original al acercar ----------
 abrir = "openZoomModal(item.src, item.title);"
@@ -122,6 +104,20 @@ JS = """
       img.src = e.o;
     }
 
+    /* ══════════ Solo en GitHub Pages: la página de cada obra ══════════
+       FICHAS[libro][índice] es la dirección de su página estática (obras/<libro>/<nn-título>/),
+       generada por paginas.py con los mismos índices que usa el visor. */
+    const FICHAS = %s;
+    (function () {
+      const actualizar = updateModalImageAndArrows;
+      updateModalImageAndArrows = function () {
+        actualizar();
+        const a = document.getElementById('panelFichaLink');
+        const r = (FICHAS[currentBook] || [])[currentArtworkGroupIndex];
+        if (a) { a.hidden = !r; if (r) a.href = r + '/'; }
+      };
+    })();
+
     /* ══════════ Solo en GitHub Pages: una dirección por sección ══════════
        #/genesis, #/mapa, #/biblioteca/autores… Se envuelven switchBook y switchTab, así
        que cualquier forma de cambiar de sección deja la dirección al día, y el botón
@@ -140,12 +136,16 @@ JS = """
       switchBook = function (id, btn) { irLibro(id, btn); escribir(); };
       switchTab = function (id, btn) { irPestana(id, btn); escribir(); };
       const leer = () => {
-        const [libro, tab] = location.hash.replace(/^#\\/?/, '').split('/');
+        const [libro, tab, n, v] = location.hash.replace(/^#\\/?/, '').split('/');
         if (!libro || !BOOKS[libro]) return;
         restaurando = true;
         try {
           if (libro !== currentBook) irLibro(libro);
-          if (tab) {
+          /* #/genesis/obra/12[/1]: lo que abre «Abrir en el visor» desde la página de una obra. */
+          if (tab === 'obra') {
+            const g = +n, i = +(v || 0);
+            if (BOOKS[libro].groups[g]) openZoomForArtwork(g, BOOKS[libro].groups[g][i] ? i : 0);
+          } else if (tab) {
             const b = document.querySelector(`[onclick*="switchTab('${tab}-gallery'"]`);
             irPestana(tab + '-gallery', b || undefined);
           }
@@ -154,7 +154,7 @@ JS = """
       window.addEventListener('popstate', leer);
       leer();
     })();
-""" % json.dumps(HD, ensure_ascii=False)
+""" % (json.dumps(HD, ensure_ascii=False), json.dumps(FICHAS, ensure_ascii=False))
 cierre = "  </script>"   # la página tiene un solo <script>, y termina en él
 assert doc.count(cierre) == 1, "no encuentro el cierre del script principal"
 doc = doc.replace(cierre, JS + cierre, 1)

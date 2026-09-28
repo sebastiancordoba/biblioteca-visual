@@ -1,0 +1,320 @@
+# -*- coding: utf-8 -*-
+"""Páginas estáticas del sitio de GitHub Pages (fase 2).
+
+La aplicación (index.html) sigue siendo la que hace lo interactivo —el visor a 40×, el
+mapa, la cronología, el buscador—. Estas páginas son HTML plano, una por cosa que merece
+dirección propia:
+
+    libros/                     índice de libros
+    libros/<libro>/             la colección de un libro
+    obras/<libro>/<nn-titulo>/  una obra: imágenes, los tres textos, sede, enlaces
+    autores/                    índice de autores
+    autores/<clave>/            un autor: retrato, biografía y sus obras
+    mapa/ cronologia/ cobertura/  entradas con dirección limpia a esas vistas de la app
+
+Se cargan rápido, se leen sin JavaScript, las encuentra un buscador (sitemap.xml) y al
+compartirlas muestran la imagen de la obra (Open Graph). Cada una enlaza con la vista
+correspondiente de la aplicación, y la aplicación enlaza de vuelta desde el visor.
+
+Los datos salen de la propia aplicación (extraer_datos.js), no de las fichas en crudo:
+así los índices de obra son exactamente los del visor y el enlace «Abrir en el visor»
+abre la obra que tiene que abrir.
+"""
+import ast, html, io, json, os, re, subprocess, sys
+
+AQUI = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, AQUI)
+from comun import RAIZ, BUILD, SITIO, URL_SITIO, ENL, REJILLA, VISOR, imagen, ascii_
+sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
+sys.path.insert(0, os.path.join(RAIZ, "herramientas", "artefacto"))
+import mapa as _mapa          # museo_de(): la sede de cada obra, la misma que usa el mapa
+
+NOMBRE = "Biblioteca Visual"
+e = lambda s: html.escape(str(s or ""), quote=True)
+
+
+def slug(s, largo=60):
+    s = re.sub(r"[^a-z0-9]+", "-", ascii_(s).lower()).strip("-")
+    return s[:largo].rsplit("-", 1)[0] if len(s) > largo else s
+
+
+def intros():
+    """Las introducciones de readme.py, leídas sin importarlo (importarlo escribe los README)."""
+    arbol = ast.parse(io.open(os.path.join(RAIZ, "herramientas", "readme.py"), encoding="utf-8").read())
+    for n in arbol.body:
+        if isinstance(n, ast.Assign) and getattr(n.targets[0], "id", "") == "INTRO":
+            return ast.literal_eval(n.value)
+    return {}
+
+
+# ---------------------------------------------------------------- plantilla
+def pagina(ruta, titulo, descripcion, cuerpo, imagen_og=None, datos_ld=None, seccion=""):
+    """`ruta` es el directorio de la página relativo a la raíz ('' para la raíz)."""
+    prof = len([p for p in ruta.split("/") if p])
+    R = "../" * prof or "./"
+    canon = URL_SITIO + (ruta + "/" if ruta else "")
+    nav = [("Inicio", R, "inicio"), ("Libros", R + "libros/", "libros"),
+           ("Autores", R + "autores/", "autores"), ("Cronología", R + "#/cronologia", "cronologia"),
+           ("Mapa", R + "#/mapa", "mapa")]
+    og = [f'<meta property="og:title" content="{e(titulo)}">',
+          f'<meta property="og:description" content="{e(descripcion)}">',
+          f'<meta property="og:url" content="{e(canon)}">',
+          '<meta property="og:type" content="website">',
+          f'<meta property="og:site_name" content="{NOMBRE}">',
+          '<meta property="og:locale" content="es_ES">']
+    if imagen_og:
+        og += [f'<meta property="og:image" content="{e(imagen_og)}">',
+               '<meta name="twitter:card" content="summary_large_image">']
+    ld = (f'<script type="application/ld+json">{json.dumps(datos_ld, ensure_ascii=False)}</script>'
+          if datos_ld else "")
+    doc = f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{e(titulo)} · {NOMBRE}</title>
+<meta name="description" content="{e(descripcion)}">
+<link rel="canonical" href="{e(canon)}">
+{chr(10).join(og)}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{R}estilo.css">
+{ld}
+</head>
+<body>
+<header class="cab">
+  <a class="marca" href="{R}">{NOMBRE}</a>
+  <nav>{"".join(f'<a href="{h}"{" aria-current=page" if k == seccion else ""}>{t}</a>' for t, h, k in nav)}</nav>
+</header>
+<main>
+{cuerpo}
+</main>
+<footer class="pie">
+  <p>Imágenes de <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>, cada una con su licencia en la página de su archivo.
+  Análisis y fichas: <a href="https://github.com/sebastiancordoba/biblioteca-visual">biblioteca-visual</a>.</p>
+</footer>
+</body>
+</html>
+"""
+    dst = os.path.join(SITIO, ruta, "index.html")
+    os.makedirs(os.path.dirname(dst), exist_ok=True)
+    io.open(dst, "w", encoding="utf-8").write(doc)
+    return canon
+
+
+def src(rel, R, ancho=REJILLA):
+    url, es_propia = imagen(rel, ancho)
+    return (R + url) if es_propia else url
+
+
+def absoluta(rel, ancho=REJILLA):
+    url, es_propia = imagen(rel, ancho)
+    return (URL_SITIO + url) if es_propia else url
+
+
+def tarjeta(href, img, antetitulo, titulo, sub, R, texto=""):
+    return (f'<a class="tarjeta" href="{e(href)}">'
+            f'<span class="tarjeta-img"><img src="{e(img)}" alt="" loading="lazy" decoding="async"></span>'
+            f'<span class="tarjeta-txt"><small>{e(antetitulo)}</small><strong>{e(titulo)}</strong>'
+            f'<em>{e(sub)}</em>{f"<span>{e(texto)}</span>" if texto else ""}</span></a>')
+
+
+# ---------------------------------------------------------------- generación
+def generar():
+    salida = subprocess.run(["node", os.path.join(AQUI, "extraer_datos.js"),
+                             os.path.join(BUILD, "pre_imagenes.html")],
+                            capture_output=True, text=True, check=True).stdout
+    datos = json.loads(salida)
+    libros, autores = datos["libros"], datos["autores"]
+    INTRO = intros()
+    urls = []
+
+    # dirección de cada obra: libro -> [ruta por índice de grupo]
+    FICHAS = {}
+    for L in libros:
+        rutas, usados = [], set()
+        for g, d in enumerate(L["details"]):
+            num = re.match(r"\d+", os.path.basename(L["groups"][g][0]["src"])).group(0)
+            s = f"{num}-{slug(d['title'])}"
+            while s in usados: s += "-b"
+            usados.add(s)
+            rutas.append(f"obras/{L['id']}/{s}")
+        FICHAS[L["id"]] = rutas
+    autor_de = {}                      # (libro, i) -> autor
+    for a in autores:
+        for o in a["obras"]:
+            autor_de[(o["libro"], o["i"])] = a
+
+    # ---- una página por obra
+    for L in libros:
+        n = len(L["details"])
+        for g, d in enumerate(L["details"]):
+            ruta = FICHAS[L["id"]][g]
+            R = "../../../"
+            vistas = L["groups"][g]
+            principal = vistas[0]["src"]
+            k = _mapa.museo_de(d)
+            sede = _mapa.MUSEOS[k] if k else None
+            a = autor_de.get((L["id"], g))
+            app = f"{R}#/{L['id']}/obra/{g}"
+            ant = FICHAS[L["id"]][g - 1] if g > 0 else None
+            sig = FICHAS[L["id"]][g + 1] if g < n - 1 else None
+            lk = ENL.get(principal[2:])
+            otras = "".join(
+                f'<figure><a href="{e(app)}/{v}"><img src="{e(src(x["src"], R))}" alt="{e(x["title"])}" loading="lazy"></a>'
+                f'<figcaption>{e(x["title"])}</figcaption></figure>' for v, x in enumerate(vistas) if v)
+            enlaces = [f'<a class="boton oro" href="{e(app)}">Abrir en el visor · zoom 40×</a>']
+            if lk:
+                enlaces.append(f'<a class="boton" href="{e(lk["commons"])}" rel="noopener">Archivo original en Commons · '
+                               f'{lk["w"]}×{lk["h"]} px</a>')
+            if d.get("wikiUrl"):
+                enlaces.append(f'<a class="boton" href="{e(d["wikiUrl"])}" rel="noopener">Wikipedia</a>')
+            h1, h2, h3 = L["headings"]
+            cuerpo = f"""
+<nav class="migas"><a href="{R}libros/">Libros</a> › <a href="{R}libros/{L['id']}/">{e(L['corto'])}</a> › Obra {g + 1:02d}</nav>
+<article class="obra">
+  <header class="obra-cab">
+    <p class="ante">{e(L['corto'])} · Obra {g + 1:02d} de {n}</p>
+    <h1>{e(d['title'])}</h1>
+    <p class="autor">{e(d['artist'])}</p>
+    <p class="meta">{e(d['meta'])}</p>
+  </header>
+  <figure class="principal">
+    <a href="{e(app)}" title="Abrir en el visor"><img src="{e(src(principal, R, VISOR))}" alt="{e(vistas[0]['title'])}" fetchpriority="high"></a>
+    <figcaption>{e(vistas[0]['title'])}</figcaption>
+  </figure>
+  <div class="acciones">{"".join(enlaces)}</div>
+  <p class="entradilla">{e(d['snippet'])}</p>
+  <div class="columnas">
+    <div class="textos">
+      <section><h2>{e(h1)}</h2><p>{e(d['analysis'])}</p></section>
+      <section><h2>{e(h2)}</h2><p>{e(d['history'])}</p></section>
+      <section><h2>{e(h3)}</h2><p>{e(d['bio'])}</p></section>
+    </div>
+    <aside class="ficha">
+      <dl>
+        {f"<dt>Fecha</dt><dd>{e(d['fecha'])}</dd>" if d.get('fecha') else ""}
+        {f"<dt>Dónde está</dt><dd>{e(sede[0])}<br><span>{e(sede[1])}</span></dd>" if sede else ""}
+        {f"<dt>Imagen</dt><dd>{e(d.get('px', ''))} · {e(d.get('mp', ''))}</dd>" if d.get('px') else ""}
+        <dt>Libro</dt><dd><a href="{R}libros/{L['id']}/">{e(L['title'])}</a></dd>
+      </dl>
+      {f'''<a class="autor-mini" href="{R}autores/{a['clave']}/">{f'<img src="{R}{e(imagen(a["retrato"])[0])}" alt="">' if a.get('retrato') else ''}<span><small>Autor</small>{e(a['nombre'])}<em>{e(a['anios'])}</em></span></a>''' if a else ""}
+    </aside>
+  </div>
+  {f'<section class="otras"><h2>Otras vistas</h2><div class="rejilla-vistas">{otras}</div></section>' if otras else ""}
+  <nav class="paso">
+    {f'<a href="{R}{ant}/">‹ {e(L["details"][g - 1]["title"])}</a>' if ant else '<span></span>'}
+    {f'<a href="{R}{sig}/">{e(L["details"][g + 1]["title"])} ›</a>' if sig else '<span></span>'}
+  </nav>
+</article>"""
+            ld = {"@context": "https://schema.org", "@type": "VisualArtwork", "name": d["title"],
+                  "description": d["snippet"], "image": absoluta(principal, VISOR),
+                  "url": URL_SITIO + ruta + "/", "isPartOf": {"@type": "Collection", "name": L["title"]}}
+            if a: ld["creator"] = {"@type": "Person", "name": a["nombre"]}
+            if d.get("fecha"): ld["dateCreated"] = d["fecha"]
+            urls.append(pagina(ruta, d["title"], d["snippet"], cuerpo, absoluta(principal), ld, "libros"))
+
+    # ---- un libro
+    for L in libros:
+        R = "../../"
+        cartas = "".join(
+            tarjeta(f"{R}{FICHAS[L['id']][g]}/", src(L["groups"][g][0]["src"], R),
+                    f"Obra {g + 1:02d}", d["title"], d["artist"], R, d["snippet"])
+            for g, d in enumerate(L["details"]))
+        intro = INTRO.get(L["id"], L["sub"])
+        cuerpo = f"""
+<nav class="migas"><a href="{R}libros/">Libros</a> › {e(L['corto'])}</nav>
+<header class="portada-libro">
+  <p class="ante">{e(L['tag'])}</p>
+  <h1>{e(L['title'])}</h1>
+  <p class="intro">{e(intro)}</p>
+  <div class="acciones"><a class="boton oro" href="{R}#/{L['id']}">Explorar en la aplicación: ordenar, buscar y visor</a></div>
+</header>
+<div class="rejilla">{cartas}</div>"""
+        urls.append(pagina(f"libros/{L['id']}", L["title"], intro[:300],
+                           cuerpo, absoluta(L["groups"][0][0]["src"]), None, "libros"))
+
+    # ---- índice de libros
+    R = "../"
+    cartas = "".join(tarjeta(f"{R}libros/{L['id']}/", src(L["groups"][0][0]["src"], R), L["tag"], L["title"],
+                             f"{len(L['details'])} obras", R, L["sub"]) for L in libros)
+    cuerpo = f"""
+<header class="portada-libro"><p class="ante">La colección</p><h1>Libros</h1>
+<p class="intro">Cada libro con sus obras: pintura, escultura, cerámica y arqueología, en la mayor resolución que existe de cada una.</p></header>
+<div class="rejilla libros">{cartas}</div>"""
+    urls.append(pagina("libros", "Libros", "Los libros de la colección y sus obras.", cuerpo,
+                       absoluta(libros[0]["groups"][0][0]["src"]), None, "libros"))
+
+    # ---- un autor
+    for a in autores:
+        R = "../../"
+        obras = "".join(
+            tarjeta(f"{R}{FICHAS[o['libro']][o['i']]}/",
+                    src(next(L for L in libros if L["id"] == o["libro"])["groups"][o["i"]][0]["src"], R),
+                    next(L["corto"] for L in libros if L["id"] == o["libro"]), o["title"], "", R)
+            for o in a["obras"])
+        retrato = (f'<figure class="retrato"><img src="{R}{e(imagen(a["retrato"])[0])}" alt="{e(a["nombre"])}">'
+                   f'<figcaption>{e(a.get("retratoPie", ""))}</figcaption></figure>' if a.get("retrato")
+                   else '<figure class="retrato vacio"><span>No se conserva retrato</span></figure>')
+        cuerpo = f"""
+<nav class="migas"><a href="{R}autores/">Autores</a> › {e(a['nombre'])}</nav>
+<article class="autor-pag">
+  {retrato}
+  <div>
+    <p class="ante">{e(a['oficio'])}</p>
+    <h1>{e(a['nombre'])}</h1>
+    <p class="autor">{e(a['anios'])}</p>
+    <p class="bio">{e(a['bio'])}</p>
+  </div>
+</article>
+<h2 class="seccion">{len(a['obras'])} obra{'s' if len(a['obras']) > 1 else ''} en la colección</h2>
+<div class="rejilla">{obras}</div>"""
+        img_og = (URL_SITIO + imagen(a["retrato"])[0]) if a.get("retrato") else None
+        urls.append(pagina(f"autores/{a['clave']}", a["nombre"], a["bio"][:300], cuerpo, img_og, None, "autores"))
+
+    # ---- índice de autores
+    R = "../"
+    cartas = "".join(
+        f'<a class="autor-carta" href="{R}autores/{a["clave"]}/">'
+        + (f'<img src="{R}{e(imagen(a["retrato"])[0])}" alt="" loading="lazy">' if a.get("retrato") else '<span class="sin"></span>')
+        + f'<strong>{e(a["nombre"])}</strong><em>{e(a["anios"])} · {len(a["obras"])} obra{"s" if len(a["obras"]) > 1 else ""}</em></a>'
+        for a in sorted(autores, key=lambda x: (x["nace"] is None, x["nace"] or 0)))
+    cuerpo = f"""
+<header class="portada-libro"><p class="ante">La colección</p><h1>Autores</h1>
+<p class="intro">Solo los artistas de nombre propio, por orden de nacimiento. Los relieves, las tablillas y los mosaicos anónimos no aparecen aquí: fingir una autoría sería peor que decir que no la hay.</p></header>
+<div class="autores">{cartas}</div>"""
+    urls.append(pagina("autores", "Autores", "Los artistas de la colección, con su biografía y sus obras.",
+                       cuerpo, None, None, "autores"))
+
+    # ---- entradas con dirección limpia a las vistas de la aplicación
+    for k, t in (("mapa", "Mapa"), ("cronologia", "Cronología"), ("cobertura", "Cobertura")):
+        dst = os.path.join(SITIO, k, "index.html")
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        io.open(dst, "w", encoding="utf-8").write(
+            f'<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>{t} · {NOMBRE}</title>'
+            f'<meta http-equiv="refresh" content="0; url=../#/{k}"><link rel="canonical" href="{URL_SITIO}#/{k}">'
+            f'</head><body><p><a href="../#/{k}">{t}</a></p></body></html>')
+
+    # ---- 404, sitemap, robots, estilos
+    io.open(os.path.join(SITIO, "404.html"), "w", encoding="utf-8").write(
+        f'<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
+        f'<title>No encontrada · {NOMBRE}</title><link rel="stylesheet" href="{URL_SITIO}estilo.css"></head><body>'
+        f'<main class="no-hay"><p class="ante">404</p><h1>Esta página no existe</h1>'
+        f'<p>Puede que la obra haya cambiado de número. <a href="{URL_SITIO}libros/">Ver los libros</a> · '
+        f'<a href="{URL_SITIO}">Ir al inicio</a></p></main></body></html>')
+    todas = [URL_SITIO] + sorted(set(urls))
+    io.open(os.path.join(SITIO, "sitemap.xml"), "w", encoding="utf-8").write(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "".join(f"  <url><loc>{html.escape(u)}</loc></url>\n" for u in todas) + "</urlset>\n")
+    io.open(os.path.join(SITIO, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {URL_SITIO}sitemap.xml\n")
+    io.open(os.path.join(SITIO, "estilo.css"), "w", encoding="utf-8").write(
+        io.open(os.path.join(AQUI, "estilo.css"), encoding="utf-8").read())
+
+    print(f"páginas: {sum(len(v) for v in FICHAS.values())} obras · {len(libros)} libros · "
+          f"{len(autores)} autores · {len(todas)} direcciones en sitemap.xml")
+    return FICHAS
+
+
+if __name__ == "__main__":
+    generar()

@@ -465,8 +465,30 @@ que `build4.py` deja justo antes de incrustar las previas, así que lleva todo l
 imagen apunte a las carpetas de la colección, que las miniaturas tengan el formato de Commons,
 que el original se pida una sola vez y que las direcciones se escriban.
 
-Fase siguiente, pendiente: páginas HTML reales por sección y por obra, generadas desde las
-fichas, en lugar de una sola página con direcciones de almohadilla.
+### Páginas estáticas
+
+Además de la aplicación, `paginas.py` genera HTML plano para lo que merece dirección propia:
+`libros/`, `libros/<libro>/`, **`obras/<libro>/<nn-título>/`** (una por obra), `autores/` y
+`autores/<clave>/`, más `sitemap.xml`, `robots.txt` y `404.html`. Se leen sin JavaScript, las
+indexan los buscadores y al compartirlas muestran la imagen (Open Graph y JSON-LD). Lo
+interactivo —visor, mapa, cronología, buscador— se queda en la aplicación: cada página enlaza
+con ella («Abrir en el visor» lleva a `#/<libro>/obra/<n>`) y el visor enlaza de vuelta con
+«Ficha de la obra». `mapa/`, `cronologia/` y `cobertura/` son solo entradas con dirección
+limpia que redirigen a esas vistas.
+
+- **Los datos salen de la propia aplicación**, no de las fichas en crudo:
+  `extraer_datos.js` ejecuta la página con el DOM simulado y devuelve `BOOKS` y `AUTORES`
+  ya filtrados. Así la obra 12 de una página es la obra 12 del visor; reimplementar el
+  filtrado en Python habría sido abrir la puerta a que se desalinearan.
+- `comun.py` decide de dónde sale cada imagen, para la aplicación y para las páginas: las
+  dos piden las mismas miniaturas de Commons y el navegador las reaprovecha.
+- La dirección de una obra lleva el número de su archivo (`42-las-capillas-…`), no su
+  posición: renumerar la colección no rompe enlaces ya compartidos.
+- `estilo.css` repite las variables de la aplicación; si cambia el tema, cambian las dos.
+
+`probar_paginas.js` recorre todas las páginas y comprueba que ningún enlace interno esté
+roto, que cada obra de la aplicación tenga página y que su título y su «Abrir en el visor»
+correspondan al mismo índice que usa el visor.
 
 ## La versión publicada (artefacto)
 

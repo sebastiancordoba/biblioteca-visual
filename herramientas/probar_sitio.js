@@ -40,4 +40,15 @@ ck(location.hash === '#/mapa', `cambiar de sección escribe la dirección (${loc
 switchBook('iliada');
 ck(hist.slice(-2).join(' ') === '#/mapa #/iliada', 'cada cambio queda en el historial del navegador');
 
+console.log('\n== entrar por la dirección de una obra ==');
+/* «Abrir en el visor» en la página de una obra lleva a #/<libro>/obra/<n>: tiene que abrir
+   esa obra, no la primera ni la de otro libro. */
+{
+  const loc2 = { hash: '#/iliada/obra/5' };
+  const r = ejecutar(html, '{abierta: currentArtworkGroupIndex, libro: currentBook, FICHAS}',
+    { location: loc2, history: { pushState() {} }, Image: class {} });
+  ck(r.libro === 'iliada' && r.abierta === 5, `#/iliada/obra/5 abre la obra 5 de la Ilíada (${r.libro} ${r.abierta})`);
+  ck(r.FICHAS && r.FICHAS.iliada && r.FICHAS.iliada.length > 20, 'el visor sabe la dirección de la página de cada obra');
+}
+
 console.log(bad ? `\n*** ${bad} FALLAS ***` : '\ntodo en orden'); process.exit(bad ? 1 : 0);
