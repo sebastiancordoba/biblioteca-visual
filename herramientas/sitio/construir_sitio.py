@@ -69,8 +69,26 @@ doc = doc.replace(_b, "    const BASE_FICHAS = '';", 1)
 # ---------- nombre del sitio ----------
 doc = re.sub(r"<title>[^<]*</title>", f"<title>{TITULO}</title>", doc, count=1)
 doc = doc.replace("Los Tres Libros", "Biblioteca Visual")
-doc = doc.replace("<head>", """<head>
-  <meta name="description" content="Pintura, escultura, cerámica y arqueología en torno al Génesis, Gilgamesh, la Ilíada, el Atrahasis y el Enuma Elish, en la mayor resolución que existe de cada obra.">""", 1)
+
+# ---------- un documento completo ----------
+# pre_imagenes.html es cabecera y cuerpo pegados, sin <!DOCTYPE>, <html>, <head> ni <body>:
+# build.py quita el charset y el viewport porque el artefacto de claude.ai los pone por su
+# cuenta. Publicado tal cual en Pages, el navegador entraba en modo quirks y, sin viewport,
+# un teléfono maquetaba la página a 980 px de ancho y la encogía hasta hacerla ilegible:
+# nada de lo pensado para pantalla estrecha llegaba a aplicarse. Aquí se reconstruye.
+corte = doc.find("\n  <header>")
+assert corte > 0 and doc.count("\n  <header>") == 1, "no encuentro dónde empieza el cuerpo"
+cabeza, cuerpo = doc[:corte], doc[corte:]
+assert "<body" not in cabeza and "<html" not in doc, "pre_imagenes.html ya trae un documento completo"
+doc = ("<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n"
+       '  <meta charset="UTF-8">\n'
+       '  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">\n'
+       '  <meta name="description" content="Pintura, escultura, cerámica y arqueología en torno al Génesis, '
+       'Gilgamesh, la Ilíada, el Atrahasis y el Enuma Elish, en la mayor resolución que existe de cada obra.">\n'
+       '  <link rel="manifest" href="manifest.webmanifest">\n'
+       '  <link rel="icon" type="image/png" sizes="192x192" href="icono-192.png">\n'
+       '  <link rel="apple-touch-icon" href="icono-180.png">\n'
+       + cabeza.strip("\n") + "\n</head>\n<body>" + cuerpo.rstrip() + "\n</body>\n</html>\n")
 
 # ---------- visor: enlace a la página de la obra ----------
 m = re.search(r'(<a id="panelWikiLink"[\s\S]*?</a>)', doc)
@@ -180,6 +198,34 @@ doc = doc.replace("  </style>", CSS, 1)
 
 io.open(os.path.join(SITIO, "index.html"), "w", encoding="utf-8").write(doc)
 io.open(os.path.join(SITIO, ".nojekyll"), "w").write("")
+
+# ---------- aplicación instalable ----------
+# Con el manifiesto, «Añadir a pantalla de inicio» deja un icono que abre el sitio a
+# pantalla completa, sin la barra del navegador, como una aplicación. El icono son las
+# manos de la Creación de Adán, recortadas de la copia local de 10080 px: es ilustración
+# de interfaz, como los retratos de autor, no una pieza de la colección, y la copia de la
+# colección no se toca. Sin esa copia en disco el sitio se construye igual, sin icono.
+json.dump({
+    "name": TITULO, "short_name": "Biblioteca", "lang": "es",
+    "start_url": "./", "scope": "./", "display": "standalone",
+    "background_color": "#07080a", "theme_color": "#07080a",
+    "icons": [{"src": f"icono-{n}.png", "sizes": f"{n}x{n}", "type": "image/png", "purpose": "any"}
+              for n in (192, 512)],
+}, io.open(os.path.join(SITIO, "manifest.webmanifest"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+FRESCO = os.path.join(RAIZ, "Génesis", "01_La_Creacion_de_Adan_Miguel_Angel_1512.jpg")
+try:
+    from PIL import Image
+    Image.MAX_IMAGE_PIXELS = None
+    with Image.open(FRESCO) as im:
+        w, h = im.size
+        # las manos, en proporción del fresco: así vale aunque cambie la resolución del archivo
+        cx, cy, lado = round(w * 0.4665), round(h * 0.4700), round(w * 0.125)
+        manos = im.convert("RGB").crop((cx - lado // 2, cy - lado // 2, cx + lado // 2, cy + lado // 2))
+        for n in (180, 192, 512):
+            manos.resize((n, n), Image.LANCZOS).save(os.path.join(SITIO, f"icono-{n}.png"), optimize=True)
+    print("iconos de la aplicación: 180, 192 y 512 px")
+except Exception as e:     # sin Pillow o sin la copia local: el sitio sigue funcionando
+    print(f"AVISO: sin iconos de la aplicación ({e})")
 
 peso = sum(os.path.getsize(os.path.join(r, f)) for r, _, fs in os.walk(SITIO) for f in fs) / 1e6
 print(f"rutas: {cuenta['commons']} a Commons · {cuenta['retrato']} retratos · {cuenta['propia']} copias propias")

@@ -177,6 +177,84 @@ CSS = """
       border-bottom:1px solid var(--border-subtle)}
     .ciudad-sede h4 span{font-family:var(--font-sans);font-size:.68rem;letter-spacing:0;
       color:var(--text-muted);text-transform:none;font-variant-numeric:tabular-nums}
+
+    /* ---- el mapa en el teléfono ----
+       El mapa ocupa la pantalla entera, por detrás de la barra translúcida de arriba, y la
+       lista es una hoja que sube desde abajo (mapa_js.py la mueve). Antes el marco era una
+       franja de 16/9 —unos 200 px de alto— bajo una cabecera que llenaba la pantalla, con
+       los siete botones de continente tapando un tercio del mapa. */
+    .mapa-hoja-asa{display:none}
+    @media (max-width:760px){
+      body[data-libro="mapa"]{overflow:hidden;padding-bottom:0}
+      body[data-libro="mapa"] .container{margin:0}
+      #mapa-gallery.active{animation:none}
+      .mapa-wrap{position:fixed;left:0;right:0;top:0;bottom:var(--barra-inf);z-index:5;
+        display:block;gap:0;--hoja-vis:150px}
+      .mapa-marco{position:absolute;inset:0;aspect-ratio:auto;border:0;border-radius:0;background:#131722}
+      .mapa-cont{top:calc(var(--alto-barra,56px) + 8px);left:0;right:0;max-width:none;
+        padding:0 12px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:6px}
+      .mapa-cont::-webkit-scrollbar{display:none}
+      .mapa-cont button{flex:0 0 auto;border-radius:999px;padding:7px 13px;font-size:.66rem;
+        background:rgba(10,11,14,.78);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+      .mapa-cont button:disabled{display:none}
+      .mapa-ctrl{top:calc(var(--alto-barra,56px) + 52px);right:12px}
+      .mapa-ctrl button{width:40px;height:40px;border-radius:10px;font-size:1rem}
+      .mapa-pista{left:12px;right:12px;bottom:calc(var(--hoja-vis) + 10px);text-align:center;
+        border-radius:999px;font-size:.7rem;transition:bottom .35s cubic-bezier(.2,.8,.25,1)}
+
+      .mapa-lado{position:absolute;left:0;right:0;bottom:0;top:auto;z-index:6;
+        height:calc(100% - var(--alto-barra,56px) - 6px);
+        display:flex;flex-direction:column;
+        background:rgba(12,13,17,.97);border-top:1px solid rgba(197,160,70,.2);
+        border-radius:18px 18px 0 0;box-shadow:0 -12px 40px rgba(0,0,0,.55);
+        transform:translateY(calc(100% - var(--hoja-vis)));
+        transition:transform .35s cubic-bezier(.2,.8,.25,1);will-change:transform}
+      .mapa-lado.siguiendo{transition:none}
+      .mapa-hoja-asa{display:flex;flex-direction:column;align-items:center;gap:7px;
+        padding:8px 16px 10px;cursor:grab;touch-action:none;flex:0 0 auto}
+      .asa-barra{width:40px;height:5px;border-radius:3px;background:rgba(255,255,255,.26)}
+      .asa-txt{font-size:.7rem;letter-spacing:.3px;color:var(--text-muted);font-variant-numeric:tabular-nums}
+      .mapa-lado-cuerpo{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;
+        -webkit-overflow-scrolling:touch;padding:0 16px calc(24px + env(safe-area-inset-bottom))}
+      .mapa-lado .buscador{margin-bottom:10px}
+      .lado-tog{border-radius:10px;background:rgba(255,255,255,.05);border:0;padding:2px;gap:2px}
+      .tog-btn{border-radius:8px;padding:8px 6px;font-family:var(--font-sans);font-size:.78rem;
+        letter-spacing:.2px;text-transform:none;font-weight:500}
+      .tog-btn.activo{background:rgba(197,160,70,.2);color:var(--accent-gold-hover);font-weight:600}
+      .sede-lista{max-height:none;overflow:visible}
+      .sede-item button{padding:12px 4px}
+      .sede-txt strong{font-size:.92rem}
+      .libro-obras{grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:10px}
+      .libro-obra img{border-radius:8px}
+
+      /* Dentro de la hoja solo se enseña el panel de una ciudad con varios museos: el de
+         una sede o un libro repetiría lo que la lista ya despliega en su sitio. */
+      .sede-detalle{margin:4px 0 14px;padding:14px 0 0}
+      .sede-detalle:empty,.sede-detalle[data-tipo="sede"],.sede-detalle[data-tipo="libro"]{display:none}
+      .obra-min-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+      .obra-min img{border-radius:8px}
+
+      /* La cobertura, en fichas en vez de una tabla de 620 px que obligaba a desplazarse. */
+      .cob-tabla{border:0;overflow:visible}
+      .cob-tabla table{min-width:0}
+      .cob-tabla thead{display:none}
+      .cob-tabla table,.cob-tabla tbody,.cob-tabla tr,.cob-tabla td{display:block}
+      .cob-tabla tr{padding:12px 14px;margin-bottom:8px;background:var(--bg-surface);
+        border:1px solid var(--border-subtle);border-radius:12px}
+      .cob-tabla td{padding:0;border:0;font-size:.86rem}
+      .cob-tabla td:first-child{margin-bottom:4px}
+      .cob-tabla td.pasaje{margin-bottom:4px}
+      .cobertura h2{font-size:1.15rem;margin-top:32px}
+    }
+    /* Sin ratón no hay «pasar por encima»: la tarjeta flotante se quedaba colgada tras el
+       toque. Tocar ya despliega o abre, así que sobra; y los botones + y − también, porque
+       se pellizca. */
+    @media (hover:none) and (pointer:coarse){
+      .mapa-tarjeta{display:none!important}
+      .mapa-ctrl{display:none}
+      .sede-item button:hover{background:none}
+      .sede-item.sel button{background:rgba(197,160,70,.1)}
+    }
   </style>"""
 doc=doc.replace("  </style>",CSS,1)
 

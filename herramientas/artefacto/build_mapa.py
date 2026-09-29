@@ -145,7 +145,13 @@ PANEL=f'''    <div id="mapa-gallery" class="tab-content">
           <div class="mapa-pista" id="mapaPista">Arrastra o usa W A S D · rueda o + / − para acercar · 0 vuelve a Europa</div>
           <div class="mapa-tarjeta" id="mapaTarjeta" hidden></div>
         </div>
-        <aside class="mapa-lado">
+        <aside class="mapa-lado" id="mapaLado">
+          <!-- En el teléfono la lista es una hoja que se desliza sobre el mapa: esta es su asa.
+               En escritorio no se ve y el cuerpo es un bloque normal. -->
+          <div class="mapa-hoja-asa" id="mapaHojaAsa" role="button" tabindex="0"
+               aria-label="Desplegar u ocultar la lista"><span class="asa-barra"></span>
+            <span class="asa-txt">{{CIFRAS}}</span></div>
+          <div class="mapa-lado-cuerpo" id="mapaLadoCuerpo">
           <div id="mapaBuscador"></div>
           <div class="lado-tog" role="tablist" aria-label="Ver por">
             <button type="button" class="tog-btn activo" id="togSedes" role="tab" aria-selected="true">Sedes</button>
@@ -154,6 +160,7 @@ PANEL=f'''    <div id="mapa-gallery" class="tab-content">
           <p class="mapa-nota" id="mapaNota">Ordenadas por número de obras. Al elegir una, el mapa vuela hasta ella y despliega lo que guarda.</p>
           {{NOTA_SIN_SEDE}}
           <ol class="sede-lista" id="sedeLista"></ol>
+          </div>
         </aside>
       </div>
       <div class="sede-detalle" id="sedeDetalle"></div>
@@ -165,6 +172,8 @@ NOTA_SIN_SEDE = ("" if not sin_sede else
   " en colección particular, sin sede pública que situar en el mapa: " +
   ", ".join(f"<em>{x}</em>" for x in sin_sede) + ".</p>")
 PANEL = PANEL.replace("{NOTA_SIN_SEDE}", NOTA_SIN_SEDE)
+_n = sum(len(s["obras"]) for s in lista)
+PANEL = PANEL.replace("{CIFRAS}", f"{_n} obras · {len(lista)} sedes · {paises} países")
 
 DATOS=("    const SEDES = "+json.dumps(lista,ensure_ascii=False)+";\n"
        # el orden del registro, para que la lista de libros del mapa no dependa de las sedes

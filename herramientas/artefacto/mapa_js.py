@@ -47,6 +47,7 @@ JS = r"""
       const factorMarca = s => clamp(1 + Math.log2(Math.max(s, S_REF) / S_REF) * 0.23, 1, 2.4);
       const SEP_PX = 34;
       const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+      const tactil = () => !!(window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches);
       /* El panel del mapa nace dentro de una pestaña oculta, así que el marco mide 0 px
          hasta que se muestra. Sin esta guarda la escala sería 0, el umbral de agrupación
          infinito y los radios Infinity: SVG inválido. */
@@ -58,12 +59,20 @@ JS = r"""
       /* Ajusta un rectángulo del lienzo al marco respetando SU proporción: se amplía la
          dimensión que falte, nunca se recorta. Así ninguna vista deja bandas negras a un
          lado y contenido cortado al otro. */
+      /* En el teléfono el mapa ocupa la pantalla entera, pero no se ve entero: arriba lo
+         tapan la barra translúcida y los continentes, y abajo la hoja con la lista. Lo que
+         se encuadra tiene que quedar centrado en la franja que sí se ve, no debajo de la
+         hoja. En escritorio los dos huecos valen 0 y el encuadre es el de siempre. */
+      let huecoArriba = 0, huecoAbajo = 0;
       function encajar(x0, y0, x1, y1, margen){
         const m = margen == null ? 1.05 : margen;
         const aw = anchoMarco(), ah = altoMarco();
+        const av = Math.max(ah * 0.3, ah - huecoArriba - huecoAbajo);   // alto de la franja visible
         let w = (x1 - x0) * m, h = (y1 - y0) * m;
-        if (w / h < aw / ah) w = h * aw / ah; else h = w * ah / aw;
-        return { x: (x0 + x1) / 2 - w / 2, y: (y0 + y1) / 2 - h / 2, w: w, h: h };
+        if (w / h < aw / av) w = h * aw / av; else h = w * av / aw;
+        const alto = h * ah / av;                                     // el marco entero
+        return { x: (x0 + x1) / 2 - w / 2, y: (y0 + y1) / 2 - h / 2 - huecoArriba * alto / ah,
+                 w: w, h: alto };
       }
       /* La vista inicial y el botón Europa son lo mismo: el encuadre de las sedes
          europeas, no un rectángulo fijo. Así al arrancar caben todas y volver a Europa
@@ -398,8 +407,9 @@ JS = r"""
 
         reescalar();
         pista.textContent = gs.length === SEDES.length
-          ? 'W A S D para moverte · + y − para acercar · pulsa un punto para desplegarlo'
-          : `${gs.length} grupos · acércate o pulsa uno para separarlo`;
+          ? (tactil() ? 'Pellizca para acercar · toca un punto para desplegarlo'
+                      : 'W A S D para moverte · + y − para acercar · pulsa un punto para desplegarlo')
+          : `${gs.length} grupos · ${tactil() ? 'pellizca' : 'acércate'} o toca uno para separarlo`;
       }
 
       /* Punto de sede o de grupo, en unidades de pantalla. */
@@ -590,6 +600,7 @@ JS = r"""
             el.classList.toggle('sel', +el.dataset.i === idx));
         pintarDetalle(SEDES[idx]);
         dibujar();
+        hojaA('medio'); hojaEnfocar('.sede-item.sel');
       }
 
       /* ---------- tarjeta flotante ---------- */
@@ -694,10 +705,13 @@ JS = r"""
               sedeSel = -1; grupoAbierto = -1; ciudadAbierta = null;
               pintarLista();
               pintarContinentes();   // un libro puede no tener obras en algún continente
+              detalle.dataset.tipo = 'libro';
               detalle.innerHTML = libroFiltro ? resumenLibro(libroFiltro) : '';
+              if (libroFiltro) hojaA('medio');
               aplicar(true);
               // encuadrar todas las sedes del libro: si las hay en América, se aleja
               irAVista(libroFiltro ? encajarSedes(activas()) : vistaEuropa(), true);
+              if (libroFiltro) hojaEnfocar('.libro-item.sel');
             });
             lista.appendChild(li);
             /* El libro elegido despliega sus obras aquí mismo, con su miniatura: antes
@@ -812,9 +826,11 @@ JS = r"""
       function elegirSede(idx, volar){
         sedeSel = idx; grupoAbierto = idx; ciudadAbierta = null;
         const s = SEDES[idx];
+        hojaA('medio');
         if (modo === 'sedes') pintarLista();
         if (volar) irAVista(encajarSedes([idx], xCercano(s.x) - s.x), true); else dibujar();
         pintarDetalle(s);
+        hojaEnfocar('.sede-item.sel');
       }
 
       /* Un grupo que no se puede separar sobre el mapa se despliega como lista de
@@ -834,6 +850,8 @@ JS = r"""
                  `<span>${s.obras.length}</span></h4>` +
                  `<div class="obra-min-grid">${obras}</div></div>`;
         }).join('');
+        detalle.dataset.tipo = 'ciudad';
+        hojaA('medio'); hojaEnfocar(null);
         detalle.innerHTML =
           `<div class="sede-cab"><h3>${esc(ciudad)}</h3>` +
           `<p>${esc(pais)} · ${c.sedes.length} museos · ${c.n} obras de la colección</p></div>` +
@@ -851,6 +869,7 @@ JS = r"""
           `<img src="${BOOKS.mapa.groups[o.i][0].src}" alt="${esc(o.t)}" loading="lazy">` +
           `<span class="obra-min-t">${esc(o.t)}</span>` +
           `<span class="obra-min-m">${esc(o.a)} · ${esc(o.libro)}</span></button>`).join('');
+        detalle.dataset.tipo = 'sede';
         detalle.innerHTML = `<div class="sede-cab"><h3>${esc(s.nombre)}</h3>` +
           `<p>${esc(s.ciudad)}, ${esc(s.pais)} · ${s.obras.length} obra${s.obras.length>1?'s':''} de la colección</p></div>` +
           `<div class="obra-min-grid">${obras}</div>`;
@@ -1016,14 +1035,139 @@ JS = r"""
       /* La pestaña arranca oculta: en cuanto el marco recibe tamaño real hay que rehacer
          el encuadre y redibujar, porque lo calculado a 0 px no vale. */
       let medido = false;
+      let alRemedir = null;      // la hoja del teléfono se reajusta con el mismo remedido
       function remedir(){
         if (!visible()) return;
+        if (alRemedir) alRemedir();
         if (!medido) { medido = true; vista = vistaTodo(); vistaObj = Object.assign({}, vista); }
         else { vista.h = vista.w * altoMarco() / anchoMarco(); vistaObj = Object.assign({}, vista); }
         aplicar(true);
       }
       if (typeof ResizeObserver === 'function') new ResizeObserver(remedir).observe(marco);
       window.addEventListener('resize', remedir);
+
+      /* ---------- el teléfono: la lista como hoja deslizable ----------
+         En una pantalla estrecha el mapa ocupa todo y la lista sube desde abajo, como en
+         las aplicaciones de mapas: tres alturas —asomada (buscador y pestañas), media (la
+         mitad) y alta—, que se cambian arrastrando el asa o tocándola. Elegir una sede la
+         deja a media altura con la sede a la vista, de modo que se ven a la vez el punto
+         en el mapa y lo que guarda. El panel de debajo del mapa entra en la hoja: fuera de
+         ella quedaría detrás de la barra de pestañas. */
+      const wrap = marco.parentNode;
+      const hoja = document.getElementById('mapaLado');
+      const asa = document.getElementById('mapaHojaAsa');
+      const cuerpo = document.getElementById('mapaLadoCuerpo');
+      let estadoHoja = 'bajo';
+      function movil(){ return !!(window.matchMedia && window.matchMedia('(max-width: 760px)').matches) && !!hoja && !!cuerpo; }
+      function alturas(){
+        const total = wrap.clientHeight || 600;
+        const arriba = (document.querySelector('header') || {}).offsetHeight || 56;
+        let bajo = 150;
+        const t = togSedes.getBoundingClientRect(), r = hoja.getBoundingClientRect();
+        if (t.bottom > r.top) bajo = Math.round(t.bottom - r.top + 12);
+        return { bajo, medio: Math.round(total * 0.5), alto: Math.round(total - arriba - 6) };
+      }
+      function ponerHoja(px, animar){
+        hoja.classList.toggle('siguiendo', !animar);
+        wrap.style.setProperty('--hoja-vis', px + 'px');
+        /* Lo que la hoja tapa del mapa, para encuadrar en lo que queda. En alto el mapa ya
+           casi no se ve: se encuadra como si estuviera a media altura. */
+        const a = alturas();
+        huecoAbajo = Math.min(px, a.medio);
+        const cr = contBar ? contBar.getBoundingClientRect() : null, mr = marco.getBoundingClientRect();
+        huecoArriba = cr && cr.bottom > mr.top ? Math.round(cr.bottom - mr.top + 6) : 0;
+      }
+      function hojaA(estado){
+        if (!movil()) return;
+        estadoHoja = estado;
+        ponerHoja(alturas()[estado], true);
+        if (asa) asa.setAttribute('aria-expanded', estado !== 'bajo');
+      }
+      /* Lleva a la vista, dentro de la hoja, lo recién elegido. Espera un fotograma a que
+         la lista se haya repintado. */
+      function hojaEnfocar(sel){
+        if (!movil()) return;
+        requestAnimationFrame(() => {
+          const el = sel ? cuerpo.querySelector(sel) : null;
+          const cr = cuerpo.getBoundingClientRect();
+          cuerpo.scrollTo({ top: el ? cuerpo.scrollTop + el.getBoundingClientRect().top - cr.top - 8 : 0,
+                            behavior: 'smooth' });
+        });
+      }
+      function colocarDetalle(){
+        if (!detalle || !cuerpo) return;
+        if (movil()) { if (detalle.parentNode !== cuerpo) cuerpo.insertBefore(detalle, nota); }
+        else if (detalle.parentNode === cuerpo) wrap.parentNode.appendChild(detalle);
+      }
+      function reajustarHoja(){
+        colocarDetalle();
+        if (movil()) { if (visible()) hojaA(estadoHoja); }
+        else { huecoArriba = huecoAbajo = 0; if (hoja) hoja.classList.remove('siguiendo'); }
+      }
+
+      if (hoja && asa && cuerpo) {
+        /* Arrastrar: la hoja sigue al dedo y, al soltar, encaja en la altura más cercana,
+           o en la siguiente si el gesto fue rápido. */
+        let arr = null;
+        const empezar = (y, desdeCuerpo) => {
+          arr = { y0: y, vis0: parseFloat(getComputedStyle(wrap).getPropertyValue('--hoja-vis')) || alturas()[estadoHoja],
+                  desdeCuerpo, decidido: !desdeCuerpo, activo: !desdeCuerpo, py: y, pt: Date.now(), v: 0 };
+        };
+        const mover = (y, ev) => {
+          if (!arr) return;
+          const dy = y - arr.y0;
+          if (!arr.decidido) {
+            if (Math.abs(dy) < 6) return;
+            arr.decidido = true;
+            /* Desde la lista: hacia arriba la hoja sube si aún no está arriba del todo;
+               hacia abajo baja solo si la lista ya está en su principio. Si no, se desplaza
+               la lista con normalidad. */
+            arr.activo = dy < 0 ? estadoHoja !== 'alto' : cuerpo.scrollTop <= 0;
+          }
+          if (!arr.activo) return;
+          if (ev && ev.cancelable) ev.preventDefault();
+          const a = alturas();
+          const px = Math.max(a.bajo * 0.8, Math.min(a.alto, arr.vis0 - dy));
+          const ahora = Date.now();
+          arr.v = (y - arr.py) / Math.max(1, ahora - arr.pt); arr.py = y; arr.pt = ahora;
+          ponerHoja(px, false);
+        };
+        const soltar = () => {
+          if (!arr) return;
+          const a = alturas(), fin = arr;
+          arr = null;
+          if (!fin.activo) return;
+          const vis = parseFloat(getComputedStyle(wrap).getPropertyValue('--hoja-vis')) || a[estadoHoja];
+          const orden = ['bajo', 'medio', 'alto'];
+          let estado = orden.reduce((m, e) => Math.abs(a[e] - vis) < Math.abs(a[m] - vis) ? e : m, 'bajo');
+          if (Math.abs(fin.v) > 0.5 && Date.now() - fin.pt < 90) {
+            const i = orden.indexOf(estadoHoja) + (fin.v < 0 ? 1 : -1);
+            estado = orden[Math.max(0, Math.min(2, i))];
+          }
+          hojaA(estado);
+        };
+        asa.addEventListener('touchstart', ev => empezar(ev.touches[0].clientY, false), { passive: true });
+        cuerpo.addEventListener('touchstart', ev => empezar(ev.touches[0].clientY, true), { passive: true });
+        [asa, cuerpo].forEach(el => {
+          el.addEventListener('touchmove', ev => mover(ev.touches[0].clientY, ev), { passive: false });
+          el.addEventListener('touchend', soltar);
+          el.addEventListener('touchcancel', soltar);
+        });
+        /* Tocar el asa alterna entre asomada y media altura (o baja desde alta). */
+        const alternar = () => hojaA(estadoHoja === 'bajo' ? 'medio' : 'bajo');
+        asa.addEventListener('click', alternar);
+        asa.addEventListener('keydown', ev => {
+          if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); alternar(); }
+        });
+        /* Al escribir en el buscador, la hoja sube: el teclado tapará la mitad de abajo. */
+        cuerpo.addEventListener('focusin', ev => {
+          if (ev.target && ev.target.tagName === 'INPUT') hojaA('alto');
+        });
+        /* Mover el mapa con la hoja alta la baja a media altura: si no, se arrastra a ciegas. */
+        marco.addEventListener('touchstart', () => { if (estadoHoja === 'alto') hojaA('medio'); }, { passive: true });
+        alRemedir = reajustarHoja;
+        reajustarHoja();
+      }
 
       /* ---------- teclado: las mismas teclas que el visor de obras ----------
          W A S D desplazan y + / - acercan, de forma continua mientras se mantienen.

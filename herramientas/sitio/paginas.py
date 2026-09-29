@@ -81,6 +81,9 @@ def pagina(ruta, titulo, descripcion, cuerpo, imagen_og=None, datos_ld=None, sec
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{R}estilo.css">
+<meta name="theme-color" content="#07080a">
+<link rel="manifest" href="{R}manifest.webmanifest">
+<link rel="apple-touch-icon" href="{R}icono-180.png">
 {ld}
 </head>
 <body>

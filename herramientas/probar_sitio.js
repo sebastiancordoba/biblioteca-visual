@@ -8,7 +8,19 @@ let bad = 0; const ck = (o, m) => { console.log((o ? '  ok    ' : '  FALLA ') + 
 if (!fs.existsSync(SITIO + '/index.html')) { console.log('  FALLA falta build/sitio: python3 herramientas/sitio/construir_sitio.py'); process.exit(1); }
 const html = fs.readFileSync(SITIO + '/index.html', 'utf8');
 
-console.log('== imágenes ==');
+console.log('== documento y teléfono ==');
+/* Se publicó meses sin nada de esto: sin doctype el navegador iba en modo quirks, y sin
+   viewport un teléfono maquetaba la página a 980 px y la encogía, de modo que ninguna regla
+   pensada para pantalla estrecha llegaba a aplicarse. */
+ck(/^<!DOCTYPE html>\s*<html lang="es">\s*<head>\s*<meta charset="UTF-8">/i.test(html), 'documento completo: doctype, <html lang>, <head> y charset');
+ck(/<meta name="viewport" content="[^"]*width=device-width[^"]*viewport-fit=cover/.test(html), 'viewport de teléfono, con viewport-fit=cover para la muesca');
+ck((html.match(/<body>/g) || []).length === 1 && /<\/body>\s*<\/html>\s*$/.test(html), 'un solo <body>, cerrado al final');
+ck(/<link rel="manifest" href="manifest.webmanifest">/.test(html) && fs.existsSync(SITIO + '/manifest.webmanifest'),
+   'manifiesto de aplicación para «Añadir a pantalla de inicio»');
+const man = JSON.parse(fs.readFileSync(SITIO + '/manifest.webmanifest', 'utf8'));
+ck(man.display === 'standalone' && man.icons.every(i => fs.existsSync(path.join(SITIO, i.src))), 'se abre como aplicación y sus iconos existen');
+
+console.log('\n== imágenes ==');
 const refs = [...html.matchAll(/["'(]((?:\.\/)?[^"'()\s]+\.(?:jpe?g|png))["')]/gi)].map(m => m[1]);
 const locales = refs.filter(r => !/^https?:/.test(r));
 const rotas = locales.filter(r => !fs.existsSync(path.join(SITIO, r)));

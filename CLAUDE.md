@@ -228,6 +228,43 @@ Todo el tema vive en variables CSS de `:root`, al inicio del `<style>`: fondo ca
 texto. Cambiar el tema es cambiar esas variables, no reglas sueltas. Los íconos son SVG en línea
 (trazo `currentColor`), sin librería de iconos.
 
+## El teléfono: una aplicación, no una web encogida
+
+Por debajo de **760 px** la página cambia de forma, no solo de tamaño (bloque «EL TELÉFONO» al final
+del `<style>` de `index.html`, y el del mapa al final del CSS de `build4.py`):
+
+- **Barra superior** fija, compacta y translúcida con el título (y la flecha de vuelta dentro de un
+  libro); la etiqueta y el párrafo de la cabecera no caben ahí, y el párrafo pasa a encabezar el
+  contenido (`#movilIntro`). El desenfoque va en `header::before`, no en la cabecera: un
+  `backdrop-filter` en ella convertiría a la cabecera en contenedor de la barra de pestañas fija.
+- **Barra de pestañas abajo** con las cinco secciones: es el `.book-switch` de siempre, recolocado.
+  Los iconos se eligen por el `onclick` de cada botón, así que valen para las secciones que añade
+  la cadena de construcción. Una subsección con una sola pestaña se esconde; las demás son un
+  control segmentado.
+- **Mapa a pantalla completa** bajo la barra translúcida, con la lista como **hoja deslizable** de
+  tres alturas (asomada, media, alta). Elegir una sede la deja a media altura con la sede a la
+  vista, y `encajar` centra lo elegido en la franja que se ve (`huecoArriba`/`huecoAbajo`), no
+  debajo de la hoja. El panel de una ciudad entra en la hoja; el de una sede o un libro se oculta,
+  porque la lista ya despliega sus obras.
+- **Visor con gestos**: pellizcar amplía hacia los dedos, doble toque acerca o ajusta, deslizar
+  pasa de obra y, hacia abajo, cierra; un toque muestra u oculta los controles, que con el dedo
+  ya no se esconden solos. El análisis es una hoja que sube al tocar la leyenda.
+- Márgenes de la muesca con `env(safe-area-inset-*)`, que solo tienen valor con
+  `viewport-fit=cover`; los campos de texto a 16 px, porque iOS amplía la página al enfocar uno
+  menor y no la devuelve.
+
+Lo que depende de tener ratón o dedo se decide con `(hover: none) and (pointer: coarse)`, no por el
+ancho. Para probar en el ordenador: servir `build/sitio` por HTTP local y abrirlo en un `<iframe>`
+de 390 px (la ventana de Chrome no baja a ancho de teléfono); los gestos se simulan con `Touch` y
+`TouchEvent` dentro del iframe.
+
+**El sitio de Pages tiene que ser un documento completo.** `build.py` quita el charset y el
+viewport (el artefacto los ponía por su cuenta) y durante meses Pages se publicó así: sin doctype
+iba en modo quirks, y sin viewport un teléfono maquetaba a 980 px y lo encogía todo, de modo que
+ninguna regla de pantalla estrecha llegaba a aplicarse. `construir_sitio.py` reconstruye el
+documento, añade el manifiesto y genera los iconos de «Añadir a pantalla de inicio» (las manos de
+la Creación de Adán, recortadas de la copia local); `probar_sitio.js` lo comprueba.
+
 ## Herramientas (`herramientas/`)
 
 Buscar y descargar arte es el trabajo recurrente de este proyecto, así que está automatizado.
