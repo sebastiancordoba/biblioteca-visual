@@ -4,7 +4,7 @@ Relieves asirios, sellos cilíndricos, tablillas cuneiformes y objetos de culto 
 
 ---
 
-## 🏛️ Galería de la Colección (11 obras)
+## 🏛️ Galería de la Colección (12 obras)
 
 | N° | Obra | Autoría / Procedencia | Ubicación | Wikipedia | Archivo |
 |---|---|---|---|---|---|
@@ -19,6 +19,7 @@ Relieves asirios, sellos cilíndricos, tablillas cuneiformes y objetos de culto 
 | 9 | **Sello cilíndrico del héroe y el toro** | Mesopotamia, periodo acadio (c. 2334–2154 a.C.) | Morgan Library & Museum, Nueva York (Morgan Seal 159) | [Wikipedia](https://es.wikipedia.org/wiki/Sello_cil%C3%ADndrico) | [`09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg`](./09_Sello_Cilindrico_del_Heroe_y_el_Toro_Acadio_2300aC.jpg) |
 | 10 | **El héroe abate al toro** | Mesopotamia acadia, reinado de Naram-Sin (c. 2255–2219 a.C.) | Museos Reales de Arte e Historia, Bruselas (O.01054) | [Wikipedia](https://es.wikipedia.org/wiki/Toro_celestial) | [`11_El_Toro_Celeste_Placa_Votiva_Bruselas_2250aC.jpg`](./11_El_Toro_Celeste_Placa_Votiva_Bruselas_2250aC.jpg) |
 | 11 | **La caza de leones de Asurbanipal** | Palacio Norte de Nínive (c. 645 a.C.) | British Museum, Londres (probablemente 124874) | [Wikipedia](https://es.wikipedia.org/wiki/Cacer%C3%ADa_de_leones_de_Asurbanipal) | [`10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg`](./10_La_Caza_de_Leones_de_Asurbanipal_Ninive_645aC.jpg) |
+| 12 | **La nueva Tablilla V de la Epopeya de Gilgamesh** | Anónimo, escriba babilonio del periodo neobabilónico (c. 626-539 a.C.) | Museo de Sulaymaniyah, Sulaymaniyah, Kurdistán iraquí (T.1447) | [Wikipedia](https://es.wikipedia.org/wiki/Poema_de_Gilgamesh) | [`12_La_nueva_Tablilla_V_de_la_Epopeya_de_Gilgamesh.jpg`](./12_La_nueva_Tablilla_V_de_la_Epopeya_de_Gilgamesh.jpg) |
 
 ---
 
@@ -304,5 +305,30 @@ Los relieves de la sala 10a, fechados en 645-635 a.C., se hicieron para el palac
 #### Autoría y Procedencia
 
 Para Brereton, el rey, protector designado por los dioses, debía mantener el orden venciendo a las fuerzas del caos, entre ellas los enemigos extranjeros y los animales salvajes como el león. Cazando leones, criaturas del territorio indómito, Asurbanipal mostraba que extendía su control sobre lo salvaje, como pastor que protege su rebaño. La caza del león era una tradición antigua: la primera representación de un gobernante cazándolos es anterior a 3000 a.C., y el sello real asirio mostraba al rey matando un león rampante.
+
+---
+
+### 12. La nueva Tablilla V de la Epopeya de Gilgamesh — Anónimo, escriba babilonio del periodo neobabilónico (c. 626-539 a.C.)
+
+![La nueva Tablilla V de la Epopeya de Gilgamesh](./12_La_nueva_Tablilla_V_de_la_Epopeya_de_Gilgamesh.jpg)
+*La Tablilla V de Gilgamesh, anverso (columnas i-ii) — escriba neobabilónico anónimo, Museo de Sulaymaniyah (T.1447)*
+
+#### Ficha Técnica
+
+- Tablilla de arcilla con escritura cuneiforme neobabilónica, mitad izquierda de una tablilla de seis columnas
+- 11 × 9,5 × 3 cm
+- Museo de Sulaymaniyah, Sulaymaniyah, Kurdistán iraquí (T.1447)
+
+#### Lo que hace que destaque
+
+Lo que la distingue es el paisaje. Al-Rawi y George subrayan que la entrada en el Bosque de los Cedros es uno de los pocos episodios de la poesía narrativa babilónica que se detiene en la naturaleza: los cedros dejan caer su resina «como lluvia» (versos 12-16), imagen que gana fuerza porque el incienso de cedro era en Babilonia un lujo importado. La tablilla revela además que el bosque era, en la imaginación babilónica, una selva ruidosa: monos, cigarras y aves forman una sinfonía, o una cacofonía, que entretiene cada día a Humbaba (17-26). En la edición del eBL, las monas «cantan en voz alta» y un monito chilla «como una banda de músicos y tamborileros». Al final, Enkidu admite: «hemos reducido el bosque a un erial» (303), un remordimiento en el que los editores leen, para un lector moderno, algo de pesar ecológico.
+
+#### Contexto Histórico y Arqueológico
+
+La tablilla la adquirió en 2011 el Museo de Sulaymaniyah, en territorio del Gobierno Regional del Kurdistán, junto con otras antigüedades babilónicas del tipo que aparece en el sur de Irak; por eso se desconoce su procedencia exacta. La identificó Farouk Al-Rawi en noviembre de 2011, y la publicó con Andrew George en el Journal of Cuneiform Studies 66 (2014), pp. 69-90. Es la mitad izquierda de una tablilla de seis columnas, de 11 × 9,5 × 3 cm, con el número de museo T.1447. Conserva las columnas i-ii y v-vi. Su hallazgo refutó que el texto de Nínive y el de Uruk reflejaran dos tradiciones regionales, porque es neobabilónica y empieza con el mismo íncipit que el manuscrito asirio. En total alarga la Tablilla V en casi veinte versos.
+
+#### Autoría y Procedencia
+
+La copió un escriba anónimo con «una mano neobabilónica fina y delicada»; el eBL la registra como manuscrito ff, de tipo «biblioteca», procedente de Babilonia. Pertenece a la versión «canónica» del poema, del primer milenio a.C., atribuida a la esquiva figura de Sîn-lēqi-unninni, que se conoce por unos 75 manuscritos: los más antiguos son asirios del siglo VIII a.C. y los más recientes, babilonios del siglo II a.C.. Andrew George, coeditor de la tablilla, publicó en 2003 la edición crítica del poema, la primera en más de setenta años, y la edición digital del eBL de la Tablilla V (2022) ya incorpora este manuscrito.
 
 ---

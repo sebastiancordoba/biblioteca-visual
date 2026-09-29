@@ -11,7 +11,9 @@ echo "── artefacto (el sitio sale del mismo punto)"; ./herramientas/construi
 echo "── sitio";  python3 herramientas/sitio/construir_sitio.py
 echo "── prueba"; node herramientas/probar_sitio.js >/dev/null && echo "probar_sitio ok"
 
-GP="$RAIZ/build/gh-pages"
+# Ruta física (build/ es un enlace fuera de iCloud): git registra el worktree por su ruta real.
+mkdir -p "$RAIZ/build"
+GP="$(cd "$RAIZ/build" && pwd -P)/gh-pages"
 # Si la carpeta del worktree desapareció (build/ se puede borrar entero), git lo sigue
 # teniendo registrado: prune lo olvida. La comparación va por --porcelain y línea exacta,
 # porque la ruta lleva espacios («Mobile Documents») y un grep suelto no la encuentra.

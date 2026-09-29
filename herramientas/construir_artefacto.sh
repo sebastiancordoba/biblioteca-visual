@@ -8,8 +8,11 @@
 set -e
 RAIZ="${0:A:h:h}"
 cd "$RAIZ"
-mkdir -p build
-for f in previas build_mapa build build2 build3 build4; do
+# build/ es un enlace a ~/Library/Caches/biblioteca-visual/build: fuera de iCloud, que con
+# «Optimizar almacenamiento» subía a la nube los intermedios y cada lectura esperaba a bajarlos.
+if [[ -L build ]]; then mkdir -p "$(readlink build)"; else mkdir -p build; fi
+# Sin «previas»: el artefacto de claude.ai ya no se publica y el sitio sirve todo desde Commons.
+for f in build_mapa build build2 build3 build4; do
   echo "── $f"
   python3 "herramientas/artefacto/$f.py" || { echo "FALLÓ $f — se detiene la construcción"; exit 1; }
 done

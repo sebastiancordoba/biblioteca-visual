@@ -97,7 +97,10 @@ const gTodo=grupos(MAPA_W), gCalle=grupos(MIN_W);
 ck(gTodo.length<SEDES.length,`al alejar se agrupan (${gTodo.length} marcadores para ${SEDES.length} sedes)`);
 // al máximo acercamiento útil deben quedar sueltas todas salvo las que comparten ciudad
 const juntas=gCalle.filter(c=>c.sedes.length>1);
-const todasMismaCiudad=juntas.every(c=>new Set(c.sedes.map(s=>s.ciudad)).size===1);
+/* Áreas urbanas que el mapa no puede separar aunque la etiqueta de ciudad sea distinta: el
+   Vaticano es un enclave dentro de Roma, y las dos sedes de Jerusalén se rotulan por barrio. */
+const URBE={'Ciudad del Vaticano':'Roma','Ciudad Vieja':'Jerusalén','Givat Ram':'Jerusalén'};
+const todasMismaCiudad=juntas.every(c=>new Set(c.sedes.map(s=>URBE[s.ciudad]||s.ciudad)).size===1);
 ck(todasMismaCiudad,`al máximo acercamiento solo siguen juntas las sedes de una misma ciudad (${juntas.length} grupos)`);
 juntas.forEach(c=>console.log(`      ${c.sedes[0].ciudad}: ${c.sedes.length} museos, ${c.n} obras`));
 // comprobar el caso que fallaba: los cuatro museos de París

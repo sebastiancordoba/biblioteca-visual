@@ -33,7 +33,9 @@ def miniatura(lk, ancho):
     final = ("thumbnail." + real.rsplit(".", 1)[1]) if len(real.encode("utf-8")) > 160 else nombre
     # Un TIFF no lo muestra ningún navegador: Commons lo sirve convertido a JPEG con este nombre.
     if es_tiff(lk):
-        final = f"lossy-page1-{ancho}px-{nombre}.jpg"
+        # y si además el nombre pasa de 160 bytes, «thumbnail.tif»: lossy-page1-1920px-thumbnail.tif.jpg
+        final = (f"lossy-page1-{ancho}px-thumbnail.{real.rsplit('.', 1)[1]}.jpg" if len(real.encode("utf-8")) > 160
+                 else f"lossy-page1-{ancho}px-{nombre}.jpg")
         return (base.replace("/wikipedia/commons/", "/wikipedia/commons/thumb/", 1) + f"/{nombre}/{final}")
     return (base.replace("/wikipedia/commons/", "/wikipedia/commons/thumb/", 1)
             + f"/{nombre}/{ancho}px-{final}")

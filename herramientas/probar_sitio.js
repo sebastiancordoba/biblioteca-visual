@@ -31,7 +31,7 @@ const remotas = [...new Set(refs.filter(r => /^https?:/.test(r) && !r.includes('
 ck(remotas.every(u => u.startsWith('https://upload.wikimedia.org/wikipedia/commons/')), `${remotas.length} imágenes remotas, todas de Commons`);
 /* thumb/5/5b/<nombre>/1280px-<nombre>: sin el nombre repetido Commons da 404, que es como falló la primera vez. */
 /* …o «1280px-thumbnail.jpg» cuando el nombre pasa de 160 bytes, como hace MediaWiki. */
-const malas = remotas.filter(u => u.includes('/thumb/') && !/\/thumb\/\w\/\w\w\/([^/]+)\/\d+px-(\1|thumbnail\.\w+)$/.test(u));
+const malas = remotas.filter(u => u.includes('/thumb/') && !/\/thumb\/\w\/\w\w\/([^/]+)\/(lossy-page1-)?\d+px-(\1|thumbnail\.\w+)(\.jpg)?$/.test(u));
 ck(malas.length === 0, `miniaturas con el formato de Commons (${malas.length} mal formadas)` + (malas[0] ? ': ' + malas[0] : ''));
 
 console.log('\n== el visor pide el original ==');

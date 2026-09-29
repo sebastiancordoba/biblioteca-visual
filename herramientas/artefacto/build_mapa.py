@@ -31,7 +31,7 @@ PAIS={"Ciudad del Vaticano":"Vaticano","Florencia":"Italia","Venecia":"Italia","
  "Hisarlik, Çanakkale":"Turquía","Bagdad":"Irak","Sulaymaniyah":"Irak",
  "Ciudad de México":"México","Puebla":"México","Damasco":"Siria","Besanzón":"Francia","Kassel":"Alemania","Berlín":"Alemania","Estambul":"Turquía","Adana":"Turquía","Oasis de Jarga":"Egipto","El Cairo":"Egipto","Beit Alfa":"Israel",
  "Ciudad Vieja":"Jerusalén","Buenos Aires":"Argentina",
- "Bruselas":"Bélgica","Varsovia":"Polonia",
+ "Bruselas":"Bélgica","Germigny-des-Prés":"Francia","Sinaí":"Egipto","Roma":"Italia","Cusco":"Perú","Baltimore":"Estados Unidos","Beirut":"Líbano","Nabeul":"Túnez","Lago de Van":"Turquía","Kiev":"Ucrania","Cleveland":"Estados Unidos","Auckland":"Nueva Zelanda","Río de Janeiro":"Brasil","Tokio":"Japón","Tepotzotlán":"México","Ámsterdam":"Países Bajos","Ponce":"Puerto Rico","Lago Tana":"Etiopía","Wellington":"Nueva Zelanda","Port Sunlight":"Reino Unido","Hyderabad":"India","Givat Ram":"Jerusalén","Varsovia":"Polonia",
  "Nueva York":"Estados Unidos","Washington D.C.":"Estados Unidos","Fort Worth":"Estados Unidos",
  "New Haven":"Estados Unidos","Cambridge (Massachusetts)":"Estados Unidos","Róterdam":"Países Bajos"}
 
@@ -41,7 +41,7 @@ CONTINENTE={"Vaticano":"Europa","Italia":"Europa","Austria":"Europa","Francia":"
  "Reino Unido":"Europa","España":"Europa","Chequia":"Europa","Rusia":"Europa",
  "Bélgica":"Europa","Polonia":"Europa",
  "Grecia":"Europa","Alemania":"Europa","Países Bajos":"Europa","Portugal":"Europa",
- "Irak":"Asia","Jerusalén":"Asia","Siria":"Asia","Turquía":"Asia","Israel":"Asia","Irán":"Asia",
+ "Irak":"Asia","Líbano":"Asia","Japón":"Asia","India":"Asia","Ucrania":"Europa","Etiopía":"África","Puerto Rico":"América del Norte","Jerusalén":"Asia","Siria":"Asia","Turquía":"Asia","Israel":"Asia","Irán":"Asia",
  "Estados Unidos":"América del Norte","México":"América del Norte","Canadá":"América del Norte",
  "Brasil":"América del Sur","Argentina":"América del Sur","Perú":"América del Sur",
  "Egipto":"África","Marruecos":"África","Sudáfrica":"África","Túnez":"África",

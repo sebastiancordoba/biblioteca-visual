@@ -269,3 +269,7 @@ ILIADA = ILIADA + ILIADA_L5
 
 from data_lote5 import ILIADA_L7
 ILIADA = ILIADA + ILIADA_L7
+
+# Altas con fuentes (alta_obras.py).
+from data_altas_iliada import ALTAS_ILIADA
+ILIADA = ILIADA + ALTAS_ILIADA

@@ -234,3 +234,7 @@ GENESIS = GENESIS + GENESIS_L8
 # Lote 9: el Génesis fuera de Europa y Estados Unidos (Egipto, Israel, Turquía, Jerusalén, Argentina).
 from data_genesis_mundo import GENESIS_MUNDO
 GENESIS = GENESIS + GENESIS_MUNDO
+
+# Altas con fuentes (alta_obras.py).
+from data_altas_genesis import ALTAS_GENESIS
+GENESIS = GENESIS + ALTAS_GENESIS

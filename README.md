@@ -2,16 +2,18 @@
 
 **[sebastiancordoba.github.io/biblioteca-visual](https://sebastiancordoba.github.io/biblioteca-visual/)**
 
-Pintura, escultura, cerámica y arqueología reunidas en torno a cinco libros fundacionales
-—el **Génesis**, **Gilgamesh**, la **Ilíada**, el **Atrahasis** y el **Enuma Elish**—, cada
+Pintura, escultura, cerámica y arqueología reunidas en torno a siete libros fundacionales
+—el **Génesis**, el **Éxodo**, el **Levítico**, **Gilgamesh**, la **Ilíada**, el **Atrahasis** y el
+**Enuma Elish**—, cada
 obra en la mayor resolución que existe y con un análisis escrito en tres registros: qué la
 hace destacar, su contexto histórico y quién la hizo.
 
-- **100 obras** en 52 sedes de 20 países, de una tablilla de Uruk del 3200 a.C. a Bouguereau.
+- **141 obras** en 84 sedes de 32 países, de una tablilla de Uruk del 3200 a.C. a una escultura
+  de 1902, cada una con sus textos citados a fuentes de museo y bibliografía académica.
 - **Visor con zoom a 40×** sobre el archivo original de Wikimedia Commons: la miniatura se
   cambia por el original en cuanto se acerca la imagen.
 - **Mapa** de dónde está cada obra, **cronología** conjunta de los cinco libros y
-  **cobertura** por capítulos, cantos y tablillas: qué pasajes tienen obra y cuáles faltan.
+  **cobertura** por capítulos, cantos y tablillas, y **temas** que cruzan los libros.
 - Una página propia por [libro](https://sebastiancordoba.github.io/biblioteca-visual/libros/),
   por obra y por [autor](https://sebastiancordoba.github.io/biblioteca-visual/autores/).
 
@@ -41,9 +43,8 @@ herramientas/probar_*.js    la batería de pruebas
 MAPA_DE_COBERTURA.md        qué pasajes de cada libro están representados
 ```
 
-Las imágenes **no están en el repositorio** (son cerca de 900 MB de originales): se bajan de
-Commons con `herramientas/download.py` a partir de los manifiestos `herramientas/*.tsv`, y el
-sitio publicado las pide directamente a Commons.
+Las imágenes **no están en el repositorio ni hace falta tenerlas**: el sitio las pide directamente
+a Commons, y los manifiestos `herramientas/*.tsv` dicen de qué archivo sale cada una.
 
 ```sh
 python3 herramientas/download.py herramientas/atrahasis.tsv   # bajar las imágenes de un libro
