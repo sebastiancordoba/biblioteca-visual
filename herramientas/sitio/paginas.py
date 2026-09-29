@@ -49,11 +49,6 @@ def intros():
 
 # ---------------------------------------------------------------- plantilla
 BIBLIOTECA = ("libros", "autores", "temas")
-ICONOS = {   # los mismos trazos que las pestañas de la Biblioteca en la aplicación
-    "libros": '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>',
-    "autores": '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>',
-    "temas": '<circle cx="6" cy="6" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><circle cx="12" cy="18" r="2.5"></circle><path d="M8 7.5l3 8M16 7.5l-3 8M8.5 6h7"></path>',
-}
 
 
 def pagina(ruta, titulo, descripcion, cuerpo, imagen_og=None, datos_ld=None, seccion="", pestanas=False):
@@ -72,9 +67,7 @@ def pagina(ruta, titulo, descripcion, cuerpo, imagen_og=None, datos_ld=None, sec
     activa = "biblioteca" if seccion in BIBLIOTECA else seccion
     subnav = ("" if not pestanas else
               '<nav class="pestanas" aria-label="Biblioteca">' + "".join(
-                  f'<a href="{R}{k}/"{" aria-current=page" if k == seccion else ""}>'
-                  f'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
-                  f'stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{ICONOS[k]}</svg>{t}</a>'
+                  f'<a href="{R}{k}/"{" aria-current=page" if k == seccion else ""}>{t}</a>'
                   for k, t in (("libros", "Los libros"), ("autores", "Autores"), ("temas", "Temas")))
               + "</nav>")
     og = [f'<meta property="og:title" content="{e(titulo)}">',
@@ -103,6 +96,7 @@ def pagina(ruta, titulo, descripcion, cuerpo, imagen_og=None, datos_ld=None, sec
 <link rel="stylesheet" href="{R}estilo.css">
 <meta name="theme-color" content="#07080a">
 <link rel="manifest" href="{R}manifest.webmanifest">
+<link rel="icon" href="{R}favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="apple-touch-icon" href="{R}icono-180.png">
 {ld}
 </head>

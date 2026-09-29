@@ -49,7 +49,7 @@ def main():
     s = io.open(path, encoding="utf-8").read()
 
     blocks, counts = [], {}
-    DETALLES = {}          # libro -> details YA filtrados, para enlazar los autores
+    DETALLES, GRUPOS = {}, {}   # libro -> details y groups YA filtrados (autores y temas)
     # El literal `const BOOKS = {...}` de index.html queda vacío: cada libro se declara
     # ENTERO aquí, metadatos incluidos, desde el registro. Así un libro nuevo no exige
     # tocar el HTML. El salto de línea tras la llave es obligatorio: sin él, en la segunda
@@ -69,7 +69,7 @@ def main():
         counts[book_id] = len(details)
         print(f"{book_id}: {len(details)} obras, {sum(len(g) for g in groups)} imágenes"
               + (f"  (sin archivo: {', '.join(omitted)})" if omitted else ""))
-        DETALLES[book_id] = details
+        DETALLES[book_id], GRUPOS[book_id] = details, groups
         meta = {"esLibro": True, "corto": libro["corto"], "tag": libro["tag"],
                 "title": libro["title"], "sub": libro["sub"],
                 "firstTab": book_id + "-gallery", "headings": libro["headings"],
@@ -128,6 +128,26 @@ def main():
           f"{sum(1 for x in autores if x['retrato'])} con retrato")
     blocks.append("    const AUTORES = " +
                   json.dumps(autores, ensure_ascii=False, indent=2).replace("\n", "\n    ") + ";")
+
+    # Temas, para la pestaña Temas de la Biblioteca. Las obras vienen por el número de su
+    # archivo; aquí se traducen al índice de los details YA filtrados, que es el del visor
+    # (en el sitio publicado la ruta de la imagen cambia a Commons y el número se pierde).
+    from temas import TEMAS as _TEMAS
+    from libros import POR_ID as _POR_ID
+    temas = []
+    for t in _TEMAS:
+        obras = []
+        for lb, num in t["obras"]:
+            idx = next((i for i, g in enumerate(GRUPOS.get(lb, []))
+                        if os.path.basename(g[0]["src"]).startswith(num + "_")), None)
+            if idx is not None: obras.append({"libro": lb, "i": idx})
+        if not obras: continue
+        temas.append({"clave": t["clave"], "titulo": t["titulo"], "lema": t["lema"],
+                      "libros": list(dict.fromkeys(_POR_ID[lb]["corto"] for lb, _, _ in t["pasajes"])),
+                      "obras": obras})
+    print(f"temas: {len(temas)}")
+    blocks.append("    const TEMAS = " +
+                  json.dumps(temas, ensure_ascii=False, indent=2).replace("\n", "\n    ") + ";")
 
     generated = INI + "\n" + "\n\n".join(blocks) + "\n" + FIN
 

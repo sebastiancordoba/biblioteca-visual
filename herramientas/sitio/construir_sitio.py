@@ -90,6 +90,7 @@ doc = ("<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n"
        '  <meta name="description" content="Pintura, escultura, cerámica y arqueología en torno al Génesis, '
        'Gilgamesh, la Ilíada, el Atrahasis y el Enuma Elish, en la mayor resolución que existe de cada obra.">\n'
        '  <link rel="manifest" href="manifest.webmanifest">\n'
+       '  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">\n'
        '  <link rel="icon" type="image/png" sizes="192x192" href="icono-192.png">\n'
        '  <link rel="apple-touch-icon" href="icono-180.png">\n'
        + cabeza.strip("\n") + "\n</head>\n<body>" + cuerpo.rstrip() + "\n</body>\n</html>\n")
@@ -213,6 +214,8 @@ doc = doc.replace("  </style>", CSS, 1)
 
 io.open(os.path.join(SITIO, "index.html"), "w", encoding="utf-8").write(doc)
 io.open(os.path.join(SITIO, ".nojekyll"), "w").write("")
+# el icono de la pestaña del navegador (lo dibuja favicon.py)
+shutil.copyfile(os.path.join(os.path.dirname(os.path.abspath(__file__)), "favicon.ico"), os.path.join(SITIO, "favicon.ico"))
 
 # ---------- aplicación instalable ----------
 # Con el manifiesto, «Añadir a pantalla de inicio» deja un icono que abre el sitio a

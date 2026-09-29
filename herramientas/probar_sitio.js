@@ -85,4 +85,21 @@ console.log('\n== nombres que llevan a su página, y «Ver en el mapa» ==');
      `#/genesis/mapa/4 abre el mapa y deja #/mapa sin sumar pasos al «atrás» (${m.libro} ${loc.hash})`);
 }
 
+console.log('\n== la pestaña Temas de la Biblioteca ==');
+{
+  /* Temas es una pestaña de la aplicación, no un enlace que saque a otra página (eso
+     cambiaba la cabecera entera). Cada tarjeta lleva a la página del tema. */
+  const loc = { hash: '#/biblioteca/temas' };
+  const r = ejecutar(html, `{ rejilla: document.getElementById('temasRejilla').innerHTML,
+      activa: document.getElementById('temas-gallery').classList.contains('active'), TEMAS }`,
+    { location: loc, history: { pushState() {}, replaceState() {} }, Image: class {} });
+  const tarjetas = (r.rejilla.match(/class="biblio-card" href="temas\/[a-z-]+\/"/g) || []).length;
+  ck(tarjetas === r.TEMAS.length && tarjetas >= 5, `una tarjeta por tema, enlazada a su página (${tarjetas})`);
+  ck(r.activa, '#/biblioteca/temas abre la pestaña Temas');
+  const temasPy = fs.readFileSync(path.join(__dirname, 'temas.py'), 'utf8');
+  const citadas = (temasPy.match(/\("[a-z]+", "\d+[a-z]?"\)/g) || []).length;
+  const resueltas = r.TEMAS.reduce((a, t) => a + t.obras.length, 0);
+  ck(resueltas === citadas, `todas las obras citadas en temas.py llegan a la aplicación (${resueltas} de ${citadas})`);
+}
+
 console.log(bad ? `\n*** ${bad} FALLAS ***` : '\ntodo en orden'); process.exit(bad ? 1 : 0);

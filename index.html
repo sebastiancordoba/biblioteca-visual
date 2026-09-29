@@ -114,7 +114,10 @@
       transition: all 0.25s ease;
     }
 
-    a.tab-btn { text-decoration: none; }
+    /* Las sub-pestañas van sin ícono, solo con su nombre. Las de cada libro los traen del
+       marcado y de montarLibro; se esconden aquí para no tocar cada uno. */
+    .tab-btn svg { display: none; }
+    a.biblio-card { text-decoration: none; }
 
     .tab-btn svg {
       opacity: 0.7;
@@ -1696,20 +1699,11 @@
     </nav>
 
     <nav id="nav-biblioteca" class="book-nav">
-      <button class="tab-btn active" onclick="switchTab('biblioteca-gallery', this)">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-        Los libros
-      </button>
-      <button class="tab-btn" onclick="switchTab('autores-gallery', this)">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-        Autores
-      </button>
-      <!-- Los temas solo existen como páginas del sitio: es un enlace, no una pestaña. El
-           href lo completa el script con BASE_FICHAS (relativo en Pages, absoluto en local). -->
-      <a class="tab-btn" id="tabTemas" href="temas/">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><circle cx="12" cy="18" r="2.5"></circle><path d="M8 7.5l3 8M16 7.5l-3 8M8.5 6h7"></path></svg>
-        Temas
-      </a>
+      <button class="tab-btn active" onclick="switchTab('biblioteca-gallery', this)">Los libros</button>
+      <button class="tab-btn" onclick="switchTab('autores-gallery', this)">Autores</button>
+      <!-- Una pestaña de verdad, no un enlace a temas/: salir a otra página cambiaba toda la
+           cabecera. Cada tarjeta sí lleva a la página del tema, que tiene los pasajes. -->
+      <button class="tab-btn" onclick="switchTab('temas-gallery', this)">Temas</button>
     </nav>
 
     <nav id="nav-genesis" class="book-nav">
@@ -1785,6 +1779,14 @@
       </div>
       <div id="autoresBuscador"></div>
       <div class="autor-rejilla" id="autoresRejilla"></div>
+    </div>
+
+    <div id="temas-gallery" class="tab-content">
+      <p class="autor-intro">El mismo pasaje contado en libros distintos: el Diluvio en el Génesis,
+        Gilgamesh y el Atrahasis; el hombre hecho de barro; la torre de Babel y el templo de Marduk.
+        Cada tema reúne las obras de todos los libros que lo representan, con la referencia exacta
+        de cada texto.</p>
+      <div class="biblio-rejilla" id="temasRejilla"></div>
     </div>
 
     <div id="genesis-gallery" class="tab-content">
@@ -5691,6 +5693,263 @@
         ]
       }
     ];
+
+    const TEMAS = [
+      {
+        "clave": "diluvio",
+        "titulo": "El Diluvio",
+        "lema": "Un dios decide acabar con la humanidad y uno solo se salva en una nave: la misma historia en tres libros.",
+        "libros": [
+          "Atrahasis",
+          "Gilgamesh",
+          "Génesis"
+        ],
+        "obras": [
+          {
+            "libro": "atrahasis",
+            "i": 0
+          },
+          {
+            "libro": "atrahasis",
+            "i": 2
+          },
+          {
+            "libro": "atrahasis",
+            "i": 3
+          },
+          {
+            "libro": "gilgamesh",
+            "i": 0
+          },
+          {
+            "libro": "genesis",
+            "i": 3
+          },
+          {
+            "libro": "genesis",
+            "i": 9
+          },
+          {
+            "libro": "genesis",
+            "i": 40
+          },
+          {
+            "libro": "genesis",
+            "i": 31
+          },
+          {
+            "libro": "genesis",
+            "i": 7
+          },
+          {
+            "libro": "genesis",
+            "i": 41
+          },
+          {
+            "libro": "genesis",
+            "i": 43
+          },
+          {
+            "libro": "genesis",
+            "i": 46
+          },
+          {
+            "libro": "genesis",
+            "i": 10
+          },
+          {
+            "libro": "genesis",
+            "i": 11
+          },
+          {
+            "libro": "genesis",
+            "i": 12
+          },
+          {
+            "libro": "genesis",
+            "i": 32
+          }
+        ]
+      },
+      {
+        "clave": "barro",
+        "titulo": "El ser humano hecho de barro",
+        "lema": "Arcilla y el aliento o la sangre de un dios: cuatro textos cuentan así el origen del hombre.",
+        "libros": [
+          "Génesis",
+          "Atrahasis",
+          "Enuma Elish",
+          "Gilgamesh"
+        ],
+        "obras": [
+          {
+            "libro": "genesis",
+            "i": 0
+          },
+          {
+            "libro": "genesis",
+            "i": 6
+          },
+          {
+            "libro": "atrahasis",
+            "i": 0
+          },
+          {
+            "libro": "atrahasis",
+            "i": 2
+          },
+          {
+            "libro": "enuma",
+            "i": 0
+          },
+          {
+            "libro": "enuma",
+            "i": 1
+          }
+        ]
+      },
+      {
+        "clave": "torre",
+        "titulo": "La torre y el templo",
+        "lema": "Ladrillo cocido para una torre que llegue al cielo, una casa para el dios: Babel, el Esagila de Marduk y el Tabernáculo del Éxodo.",
+        "libros": [
+          "Génesis",
+          "Enuma Elish",
+          "Éxodo",
+          "Levítico"
+        ],
+        "obras": [
+          {
+            "libro": "genesis",
+            "i": 4
+          },
+          {
+            "libro": "genesis",
+            "i": 8
+          },
+          {
+            "libro": "enuma",
+            "i": 5
+          },
+          {
+            "libro": "enuma",
+            "i": 7
+          },
+          {
+            "libro": "enuma",
+            "i": 2
+          },
+          {
+            "libro": "enuma",
+            "i": 4
+          },
+          {
+            "libro": "exodo",
+            "i": 12
+          },
+          {
+            "libro": "levitico",
+            "i": 0
+          }
+        ]
+      },
+      {
+        "clave": "monstruos",
+        "titulo": "Monstruos vencidos",
+        "lema": "El guardián del bosque, el toro del cielo, el dragón de las aguas: el héroe contra el monstruo en Mesopotamia.",
+        "libros": [
+          "Gilgamesh",
+          "Enuma Elish",
+          "Atrahasis"
+        ],
+        "obras": [
+          {
+            "libro": "gilgamesh",
+            "i": 2
+          },
+          {
+            "libro": "gilgamesh",
+            "i": 3
+          },
+          {
+            "libro": "gilgamesh",
+            "i": 1
+          },
+          {
+            "libro": "gilgamesh",
+            "i": 8
+          },
+          {
+            "libro": "gilgamesh",
+            "i": 9
+          },
+          {
+            "libro": "enuma",
+            "i": 2
+          },
+          {
+            "libro": "enuma",
+            "i": 8
+          },
+          {
+            "libro": "atrahasis",
+            "i": 4
+          },
+          {
+            "libro": "atrahasis",
+            "i": 5
+          }
+        ]
+      },
+      {
+        "clave": "duelo",
+        "titulo": "El duelo",
+        "lema": "El primer muerto de la humanidad y el amigo muerto del héroe: el llanto en el Génesis, la Ilíada y Gilgamesh.",
+        "libros": [
+          "Génesis",
+          "Ilíada",
+          "Gilgamesh"
+        ],
+        "obras": [
+          {
+            "libro": "genesis",
+            "i": 45
+          },
+          {
+            "libro": "genesis",
+            "i": 2
+          },
+          {
+            "libro": "genesis",
+            "i": 5
+          },
+          {
+            "libro": "iliada",
+            "i": 5
+          },
+          {
+            "libro": "iliada",
+            "i": 26
+          },
+          {
+            "libro": "iliada",
+            "i": 3
+          },
+          {
+            "libro": "iliada",
+            "i": 6
+          },
+          {
+            "libro": "iliada",
+            "i": 17
+          },
+          {
+            "libro": "iliada",
+            "i": 18
+          }
+        ]
+      }
+    ];
     /* ==== FIN DATOS GENERADOS ==== */
 
     /* ══════════════ PORTADA ══════════════
@@ -5830,14 +6089,6 @@
     }
     const enlaceObra  = (src, texto) => enlaceNombre(urlObra(src), texto, 'a-obra');
     const enlaceAutor = (src, texto) => enlaceNombre(urlAutor(src), texto, 'a-autor');
-
-    /* La pestaña Temas de la Biblioteca lleva a las páginas de temas del sitio. */
-    (function () {
-      const t = document.getElementById('tabTemas');
-      if (!t) return;
-      t.href = BASE_FICHAS + 'temas/';
-      if (/^https?:/.test(BASE_FICHAS)) { t.target = '_blank'; t.rel = 'noopener'; }
-    })();
 
     /* Del visor al mapa: se cierra el visor, se abre el mapa y vuela a la sede de la obra.
        sedeDeObra y verObraEnMapa las define el mapa, que solo existe en la versión construida. */
@@ -6535,7 +6786,30 @@
       if (caja) caja.hidden = librosReales().length <= 6;
     }
 
+    /* ---------- Biblioteca: los temas ----------
+       La misma tarjeta que los libros. Cada una lleva a la página del tema (los pasajes con su
+       referencia y todas sus obras), que existe en el sitio: relativa allí, al sitio público
+       desde el index.html local. */
+    function pintarTemas(){
+      const rejilla = document.getElementById('temasRejilla');
+      if (!rejilla || typeof TEMAS === 'undefined') return;
+      const fuera = /^https?:/.test(BASE_FICHAS) ? ' target="_blank" rel="noopener"' : '';
+      rejilla.innerHTML = TEMAS.map(t => {
+        const o = t.obras[0], g = (BOOKS[o.libro] || {}).groups;
+        const portada = g && g[o.i] && g[o.i][0] ? g[o.i][0].src : '';
+        return `<a class="biblio-card" href="${BASE_FICHAS}temas/${t.clave}/"${fuera}>` +
+               (portada
+                 ? `<span class="biblio-portada" style="background-image:url('${portada}')"></span>`
+                 : `<span class="biblio-portada vacia"></span>`) +
+               `<span class="biblio-texto"><small>${esc(t.libros.join(' · '))}</small>` +
+               `<b>${esc(t.titulo)}</b>` +
+               `<em>${t.obras.length} obras</em>` +
+               `<span>${esc(t.lema)}</span></span></a>`;
+      }).join('');
+    }
+
     (function(){
+      pintarTemas();
       const cuenta = document.getElementById('cuentaLibros');
       if (cuenta) cuenta.innerText = librosReales().length;
       const buscar = document.getElementById('biblioBuscar');

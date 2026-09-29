@@ -200,9 +200,18 @@ Biblioteca · Cronología · Mapa · Cobertura) y `libros/`, `autores/` y `temas
 pestañas debajo. Antes las páginas tenían Libros, Autores y Temas sueltos arriba, repitiendo lo
 que la aplicación agrupa. De cada pestaña había dos versiones y se quedó la mejor en los dos
 sitios: la tarjeta de libro es la de `libros/` (imagen grande, colección, obras y descripción) y la
-de autor es la de la aplicación (retrato y obra, oficio, biografía, obras). Temas solo existe como
-páginas, así que en la aplicación es un enlace (`#tabTemas`). Si se cambia una tarjeta, se cambia
-en las dos (`.biblio-card` / `.tarjeta`, `.autor-card` en `index.html` y en `estilo.css`).
+de autor es la de la aplicación (retrato y obra, oficio, biografía, obras). Si se cambia una
+tarjeta, se cambia en las dos (`.biblio-card` / `.tarjeta`, `.autor-card` en `index.html` y en
+`estilo.css`). Las pestañas van **sin ícono**, solo con su nombre.
+
+Temas es una pestaña de verdad en la aplicación (`#/biblioteca/temas`): primero fue un enlace a
+`temas/`, y al pulsarlo cambiaba la cabecera entera porque se salía a otra página. `inject.py`
+vuelca `TEMAS` con cada obra traducida de su número de archivo al índice del visor; cada
+tarjeta lleva a la página del tema, que es donde están los pasajes.
+
+El icono de la pestaña del navegador es una «B» dorada en Cormorant (`herramientas/sitio/favicon.py`
+→ `favicon.ico`, guardado en el repositorio). Las manos de la Creación de Adán se quedan como
+icono de la aplicación en la pantalla de inicio (180–512 px): a 16 px no se distinguían.
 
 `verificar.js` comprueba la propiedad que motivó todo esto —que ningún libro tenga botón en la
 barra superior—, de modo que si algún día vuelve a colarse uno, salta.
