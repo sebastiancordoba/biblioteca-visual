@@ -194,6 +194,16 @@ libro ya no tiene botón propio. `switchBook` acepta que no se le pase el botón
 
 El buscador de la Biblioteca solo aparece por encima de seis libros: con tres estorba.
 
+La Biblioteca tiene tres pestañas —**Los libros, Autores, Temas**— y son **las mismas en la
+aplicación y en las páginas estáticas**: la barra de `paginas.py` es la de la aplicación (Inicio ·
+Biblioteca · Cronología · Mapa · Cobertura) y `libros/`, `autores/` y `temas/` llevan las mismas
+pestañas debajo. Antes las páginas tenían Libros, Autores y Temas sueltos arriba, repitiendo lo
+que la aplicación agrupa. De cada pestaña había dos versiones y se quedó la mejor en los dos
+sitios: la tarjeta de libro es la de `libros/` (imagen grande, colección, obras y descripción) y la
+de autor es la de la aplicación (retrato y obra, oficio, biografía, obras). Temas solo existe como
+páginas, así que en la aplicación es un enlace (`#tabTemas`). Si se cambia una tarjeta, se cambia
+en las dos (`.biblio-card` / `.tarjeta`, `.autor-card` en `index.html` y en `estilo.css`).
+
 `verificar.js` comprueba la propiedad que motivó todo esto —que ningún libro tenga botón en la
 barra superior—, de modo que si algún día vuelve a colarse uno, salta.
 

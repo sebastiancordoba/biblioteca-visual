@@ -48,15 +48,35 @@ def intros():
 
 
 # ---------------------------------------------------------------- plantilla
-def pagina(ruta, titulo, descripcion, cuerpo, imagen_og=None, datos_ld=None, seccion=""):
-    """`ruta` es el directorio de la página relativo a la raíz ('' para la raíz)."""
+BIBLIOTECA = ("libros", "autores", "temas")
+ICONOS = {   # los mismos trazos que las pestañas de la Biblioteca en la aplicación
+    "libros": '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>',
+    "autores": '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>',
+    "temas": '<circle cx="6" cy="6" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><circle cx="12" cy="18" r="2.5"></circle><path d="M8 7.5l3 8M16 7.5l-3 8M8.5 6h7"></path>',
+}
+
+
+def pagina(ruta, titulo, descripcion, cuerpo, imagen_og=None, datos_ld=None, seccion="", pestanas=False):
+    """`ruta` es el directorio de la página relativo a la raíz ('' para la raíz).
+    `pestanas` pone bajo la cabecera las pestañas de la Biblioteca (libros, autores, temas);
+    va en las páginas índice, que son lo que en la aplicación es la Biblioteca."""
     prof = len([p for p in ruta.split("/") if p])
     R = "../" * prof or "./"
     canon = URL_SITIO + (ruta + "/" if ruta else "")
-    nav = [("Inicio", R, "inicio"), ("Libros", R + "libros/", "libros"),
-           ("Autores", R + "autores/", "autores"), ("Temas", R + "temas/", "temas"),
+    # La misma barra que la aplicación: libros, autores y temas no son secciones de primer
+    # nivel sino pestañas de la Biblioteca. Antes eran tres entradas más arriba y repetían
+    # lo que la aplicación agrupa.
+    nav = [("Inicio", R, "inicio"), ("Biblioteca", R + "libros/", "biblioteca"),
            ("Cronología", R + "#/cronologia", "cronologia"),
-           ("Mapa", R + "#/mapa", "mapa")]
+           ("Mapa", R + "#/mapa", "mapa"), ("Cobertura", R + "#/cobertura", "cobertura")]
+    activa = "biblioteca" if seccion in BIBLIOTECA else seccion
+    subnav = ("" if not pestanas else
+              '<nav class="pestanas" aria-label="Biblioteca">' + "".join(
+                  f'<a href="{R}{k}/"{" aria-current=page" if k == seccion else ""}>'
+                  f'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+                  f'stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{ICONOS[k]}</svg>{t}</a>'
+                  for k, t in (("libros", "Los libros"), ("autores", "Autores"), ("temas", "Temas")))
+              + "</nav>")
     og = [f'<meta property="og:title" content="{e(titulo)}">',
           f'<meta property="og:description" content="{e(descripcion)}">',
           f'<meta property="og:url" content="{e(canon)}">',
@@ -89,8 +109,9 @@ def pagina(ruta, titulo, descripcion, cuerpo, imagen_og=None, datos_ld=None, sec
 <body>
 <header class="cab">
   <a class="marca" href="{R}">{NOMBRE}</a>
-  <nav>{"".join(f'<a href="{h}"{" aria-current=page" if k == seccion else ""}>{t}</a>' for t, h, k in nav)}</nav>
+  <nav>{"".join(f'<a href="{h}"{" aria-current=page" if k == activa else ""}>{t}</a>' for t, h, k in nav)}</nav>
 </header>
+{subnav}
 <main>
 {cuerpo}
 </main>
@@ -347,7 +368,7 @@ def generar():
 <p class="intro">El mismo pasaje contado en libros distintos: el Diluvio en el Génesis, Gilgamesh y el Atrahasis; el hombre hecho de barro; la torre de Babel y el templo de Marduk. Cada tema reúne las obras de todos los libros que lo representan, con la referencia exacta de cada texto.</p></header>
 <div class="rejilla libros">{"".join(cartas)}</div>"""
     urls.append(pagina("temas", "Temas", "Pasajes que se repiten entre el Génesis, Gilgamesh, la Ilíada, el Atrahasis y el Enuma Elish.",
-                       cuerpo, None, None, "temas"))
+                       cuerpo, None, None, "temas", pestanas=True))
 
     # ---- índice de libros
     R = "../"
@@ -358,7 +379,7 @@ def generar():
 <p class="intro">Cada libro con sus obras: pintura, escultura, cerámica y arqueología, en la mayor resolución que existe de cada una.</p></header>
 <div class="rejilla libros">{cartas}</div>"""
     urls.append(pagina("libros", "Libros", "Los libros de la colección y sus obras.", cuerpo,
-                       absoluta(libros[0]["groups"][0][0]["src"]), None, "libros"))
+                       absoluta(libros[0]["groups"][0][0]["src"]), None, "libros", pestanas=True))
 
     # ---- un autor
     # Cada dato con su fuente: la biografía con sus notas, qué dice cada fuente sobre el
@@ -466,18 +487,45 @@ def generar():
                            cuerpo, img_og, ld, "autores"))
 
     # ---- índice de autores
+    # La misma tarjeta que la pestaña Autores de la aplicación, que era la mejor de las dos:
+    # retrato y una obra lado a lado, oficio, biografía recortada y sus obras. La de aquí era
+    # solo el retrato, y a quien no lo tiene le dejaba un recuadro vacío.
     R = "../"
-    cartas = "".join(
-        f'<a class="autor-carta" href="{R}autores/{a["clave"]}/">'
-        + (f'<img src="{R}{e(imagen(a["retrato"])[0])}" alt="" loading="lazy">' if a.get("retrato") else '<span class="sin"></span>')
-        + f'<strong>{e(a["nombre"])}</strong><em>{e(a["anios"])} · {len(a["obras"])} obra{"s" if len(a["obras"]) > 1 else ""}</em></a>'
-        for a in sorted(autores, key=lambda x: (x["nace"] is None, x["nace"] or 0)))
+    POR_ID = {L["id"]: L for L in libros}
+
+    def carta_autor(a):
+        suyas = [(o["libro"], o["i"]) for o in a["obras"]
+                 if o["libro"] in POR_ID and o["i"] < len(POR_ID[o["libro"]]["groups"])]
+        ficha = lambda lb, i: f"{R}{FICHAS[lb][i]}/"
+        titulo = lambda lb, i: POR_ID[lb]["details"][i]["title"]
+        retrato = (f'<figure><img src="{R}{e(imagen(a["retrato"])[0])}" alt="Retrato de {e(a["nombre"])}" loading="lazy">'
+                   f'<figcaption>{e(a.get("retratoPie") or "Retrato")}</figcaption></figure>') if a.get("retrato") else ""
+        muestra = ""
+        if suyas:
+            lb, i = suyas[0]
+            muestra = (f'<figure class="obra"><a href="{ficha(lb, i)}">'
+                       f'<img src="{e(src(POR_ID[lb]["groups"][i][0]["src"], R))}" alt="{e(titulo(lb, i))}" loading="lazy">'
+                       f'<figcaption>{e(titulo(lb, i))}</figcaption></a>'
+                       + ("" if a.get("retrato") else '<span class="sin-retrato">No se conserva retrato</span>')
+                       + "</figure>")
+        n = len(suyas)
+        return (f'<article class="autor-card"><div class="autor-imgs{"" if a.get("retrato") else " sin-foto"}">{retrato}{muestra}</div>'
+                f'<div class="autor-txt"><h3><a href="{R}autores/{a["clave"]}/">{e(a["nombre"])}</a></h3>'
+                f'<p class="autor-linea"><span class="autor-vida">{e(a["anios"])}</span>'
+                f'<span class="autor-oficio">{e(a.get("oficio", ""))}</span></p>'
+                f'<p class="autor-bio">{e(a["bio"])}</p>'
+                f'<a class="autor-ficha" href="{R}autores/{a["clave"]}/">Biografía completa y fuentes →</a>'
+                f'<div class="autor-obras"><span class="autor-nobras">{n} obra{"" if n == 1 else "s"}</span>'
+                + "".join(f'<a class="autor-obra" href="{ficha(lb, i)}">{e(titulo(lb, i))}</a>' for lb, i in suyas)
+                + "</div></div></article>")
+
+    cartas = "".join(carta_autor(a) for a in sorted(autores, key=lambda x: (x["nace"] is None, x["nace"] or 0)))
     cuerpo = f"""
 <header class="portada-libro"><p class="ante">La colección</p><h1>Autores</h1>
 <p class="intro">Solo los artistas de nombre propio, por orden de nacimiento. Los relieves, las tablillas y los mosaicos anónimos no aparecen aquí: fingir una autoría sería peor que decir que no la hay.</p></header>
-<div class="autores">{cartas}</div>"""
+<div class="autor-rejilla">{cartas}</div>"""
     urls.append(pagina("autores", "Autores", "Los artistas de la colección, con su biografía y sus obras.",
-                       cuerpo, None, None, "autores"))
+                       cuerpo, None, None, "autores", pestanas=True))
 
     # ---- entradas con dirección limpia a las vistas de la aplicación
     for k, t in (("mapa", "Mapa"), ("cronologia", "Cronología"), ("cobertura", "Cobertura")):

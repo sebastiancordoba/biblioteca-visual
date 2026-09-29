@@ -108,13 +108,52 @@ figcaption{font-size:.8rem;color:var(--text-muted);margin-top:10px}
 .retrato.vacio{aspect-ratio:4/5;border:1px dashed var(--border-subtle);display:flex;align-items:center;
   justify-content:center;text-align:center;padding:20px;font-size:.8rem;color:var(--text-muted)}
 .bio{max-width:68ch;margin-top:18px}
-.autores{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:28px 22px}
-.autor-carta{display:flex;flex-direction:column;gap:6px;color:var(--text-title)}
-.autor-carta img,.autor-carta .sin{width:100%;aspect-ratio:4/5;object-fit:cover;
-  border:1px solid var(--border-subtle);background:var(--bg-card);transition:border-color .2s}
-.autor-carta:hover img,.autor-carta:hover .sin{border-color:var(--accent-gold)}
-.autor-carta strong{font-family:var(--font-serif);font-weight:500;font-size:.92rem;line-height:1.3}
-.autor-carta em{font-style:normal;font-size:.76rem;color:var(--text-muted)}
+/* índice de autores: la tarjeta de la pestaña Autores de la aplicación (index.html, .autor-card) */
+.autor-rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(330px,100%),1fr));gap:22px}
+.autor-card{background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:6px;
+  overflow:hidden;display:flex;flex-direction:column}
+.autor-imgs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border-subtle)}
+.autor-imgs figure{margin:0;background:#050608;position:relative}
+.autor-imgs a{display:block}
+.autor-imgs img{width:100%;height:190px;object-fit:cover;display:block}
+.autor-imgs.sin-foto{grid-template-columns:1fr}
+.autor-imgs .sin-retrato{position:absolute;top:10px;left:10px;font-size:.6rem;letter-spacing:1.2px;
+  text-transform:uppercase;color:var(--text-body);background:rgba(4,5,7,.78);
+  border:1px solid var(--border-subtle);padding:3px 8px;border-radius:2px}
+.autor-imgs figcaption{position:absolute;left:0;right:0;bottom:0;
+  background:linear-gradient(180deg,rgba(4,5,7,0),rgba(4,5,7,.92));color:var(--text-body);
+  font-size:.62rem;letter-spacing:.3px;padding:14px 8px 5px;text-align:center}
+.autor-imgs .obra a:hover img{opacity:.82}
+.autor-txt{padding:18px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.autor-txt h3{font-family:var(--font-serif);font-size:1.14rem;font-weight:500;margin:0;line-height:1.25}
+.autor-txt h3 a{color:var(--text-title)}
+.autor-txt h3 a:hover{color:var(--accent-gold)}
+.autor-linea{margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+.autor-vida{font-size:.7rem;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent-gold);
+  font-variant-numeric:tabular-nums}
+.autor-oficio{font-size:.8rem;color:var(--text-muted)}
+.autor-bio{font-size:.86rem;line-height:1.62;color:var(--text-body);margin:8px 0 0;
+  display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.autor-ficha{align-self:flex-start;margin:4px 0 16px;font-size:.8rem}
+.autor-ficha:hover{text-decoration:underline;text-underline-offset:3px}
+.autor-obras{margin-top:auto;padding-top:14px;border-top:1px solid var(--border-subtle);
+  display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.autor-nobras{font-family:var(--font-serif);font-size:.62rem;letter-spacing:1.6px;text-transform:uppercase;
+  color:var(--text-muted);margin-right:4px}
+.autor-obra{border:1px solid var(--border-subtle);border-radius:3px;color:var(--text-body);
+  font-size:.7rem;padding:4px 9px;transition:color .2s,border-color .2s}
+.autor-obra:hover{color:var(--accent-gold);border-color:var(--accent-gold)}
+
+/* pestañas de la Biblioteca (libros, autores, temas): las mismas que en la aplicación */
+.pestanas{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;max-width:var(--ancho);
+  margin:0 auto;padding:22px 24px 0}
+.pestanas a{display:inline-flex;align-items:center;gap:8px;padding:10px 24px;border-radius:4px;
+  background:var(--bg-card);border:1px solid var(--border-subtle);color:var(--text-body);
+  font-family:var(--font-serif);font-size:.85rem;letter-spacing:1.5px;transition:all .25s}
+.pestanas a svg{opacity:.7}
+.pestanas a:hover,.pestanas a[aria-current]{background:var(--accent-gold);border-color:var(--accent-gold);
+  color:#050608;font-weight:600}
+.pestanas a:hover svg,.pestanas a[aria-current] svg{opacity:1}
 
 .pie{max-width:var(--ancho);margin:0 auto;padding:26px 24px 40px;border-top:1px solid var(--border-subtle);
   font-size:.78rem;color:var(--text-muted)}
@@ -184,3 +223,4 @@ sup + sup::before{content:",";margin-right:1px}
 .pasajes strong{font-family:var(--font-serif);font-weight:500;color:var(--accent-gold);font-size:.9rem}
 .pasajes span{font-size:.92rem}
 @media (max-width:640px){.pasajes li{grid-template-columns:1fr;gap:4px}}
+@media (max-width:640px){.pestanas{gap:8px;padding:16px 16px 0}.pestanas a{padding:8px 14px;font-size:.78rem;letter-spacing:1px}}
