@@ -168,6 +168,8 @@ CSS = """
     .obra-min img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;
       background:#050608;border:1px solid var(--border-subtle);transition:border-color .2s}
     .obra-min:hover img{border-color:var(--accent-gold)}
+    .obra-min.sel img{border-color:var(--accent-gold);box-shadow:0 0 0 2px var(--accent-gold)}
+    .obra-min.sel .obra-min-t{color:var(--accent-gold)}
     .obra-min-t{font-size:.82rem;color:var(--text-title);line-height:1.35}
     .obra-min-m{font-size:.7rem;color:var(--text-muted);font-variant-numeric:tabular-nums}
     .ciudad-sede{margin-bottom:30px}

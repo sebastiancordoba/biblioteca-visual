@@ -4,12 +4,12 @@
   --bg-body:#07080a; --bg-surface:#0e1014; --bg-card:#12141a;
   --border-subtle:rgba(180,150,70,.18); --accent-gold:#c5a046; --accent-gold-hover:#d8b456;
   --text-title:#f1f2f5; --text-body:#a3aab6; --text-muted:#6a7180;
-  --font-serif:'Cinzel',Georgia,serif; --font-sans:'Inter',system-ui,-apple-system,sans-serif;
+  --font-serif:'Cormorant Garamond',Georgia,serif; --font-sans:'Source Serif 4',Georgia,serif;
   --ancho:1180px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{background:var(--bg-body)}
-body{background:var(--bg-body);color:var(--text-body);font-family:var(--font-sans);
+body{background:var(--bg-body);color:var(--text-body);font-family:var(--font-sans);font-feature-settings:"lnum" 1;
   line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--accent-gold);text-decoration:none}
 a:hover{color:var(--accent-gold-hover)}
@@ -36,6 +36,9 @@ h1{font-family:var(--font-serif);font-weight:500;color:var(--text-title);
 h2{font-family:var(--font-serif);font-weight:500;color:var(--text-title);font-size:1.02rem;
   letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px}
 .autor{color:var(--accent-gold);font-size:1.05rem;margin-top:10px}
+button,input,select,textarea{font-feature-settings:inherit}
+.autor a{color:inherit}
+.autor a:hover,.ficha dd a:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
 .meta{color:var(--text-muted);font-size:.9rem;margin-top:6px}
 
 /* botones */

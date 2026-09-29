@@ -1257,6 +1257,26 @@ JS = r"""
       document.addEventListener('keyup', ev => { pulsadas[ev.key.toLowerCase()] = false; });
       window.addEventListener('blur', () => { for (const k in pulsadas) pulsadas[k] = false; });
 
+      /* «Ver en el mapa» desde una obra (el visor, o #/<libro>/mapa/<n> desde su página).
+         Se empareja por la imagen principal, no por el índice: el mapa numera las obras
+         por la cronología. Espera dos fotogramas a que la pestaña del mapa tenga tamaño, y
+         mide antes de volar: el primer remedido pone la vista del mundo entero y, si
+         llegara después, pisaría el vuelo. */
+      const obraDeSede = src => o => BOOKS.mapa.groups[o.i] && BOOKS.mapa.groups[o.i][0].src === src;
+      window.sedeDeObra = src => SEDES.findIndex(sd => sd.obras.some(obraDeSede(src)));
+      window.verObraEnMapa = function (src) {
+        const idx = window.sedeDeObra(src);
+        if (idx < 0) return false;
+        const o = SEDES[idx].obras.find(obraDeSede(src));
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          remedir();
+          elegirSede(idx, true);
+          const b = detalle.querySelector(`.obra-min[data-obra="${o.i}"]`);
+          if (b) b.classList.add('sel');   // sin scrollIntoView: movía la página entera
+        }));
+        return true;
+      };
+
       // estado inicial: Europa, con la sede mayor ya elegida en la lista y el detalle
       vista = vistaTodo(); vistaObj = Object.assign({}, vista);
       aplicar();
