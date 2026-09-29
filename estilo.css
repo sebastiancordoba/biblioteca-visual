@@ -4,12 +4,12 @@
   --bg-body:#07080a; --bg-surface:#0e1014; --bg-card:#12141a;
   --border-subtle:rgba(180,150,70,.18); --accent-gold:#c5a046; --accent-gold-hover:#d8b456;
   --text-title:#f1f2f5; --text-body:#a3aab6; --text-muted:#6a7180;
-  --font-serif:'Cinzel',Georgia,serif; --font-sans:'Inter',system-ui,-apple-system,sans-serif;
+  --font-serif:'Cormorant Garamond',Georgia,serif; --font-sans:'Source Serif 4',Georgia,serif;
   --ancho:1180px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{background:var(--bg-body)}
-body{background:var(--bg-body);color:var(--text-body);font-family:var(--font-sans);
+body{background:var(--bg-body);color:var(--text-body);font-family:var(--font-sans);font-feature-settings:"lnum" 1;
   line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--accent-gold);text-decoration:none}
 a:hover{color:var(--accent-gold-hover)}
@@ -36,6 +36,9 @@ h1{font-family:var(--font-serif);font-weight:500;color:var(--text-title);
 h2{font-family:var(--font-serif);font-weight:500;color:var(--text-title);font-size:1.02rem;
   letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px}
 .autor{color:var(--accent-gold);font-size:1.05rem;margin-top:10px}
+button,input,select,textarea{font-feature-settings:inherit}
+.autor a{color:inherit}
+.autor a:hover,.ficha dd a:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
 .meta{color:var(--text-muted);font-size:.9rem;margin-top:6px}
 
 /* botones */
@@ -118,6 +121,18 @@ figcaption{font-size:.8rem;color:var(--text-muted);margin-top:10px}
 .no-hay{padding:120px 24px;text-align:center}
 .no-hay p{margin-top:16px}
 
+/* En el teléfono la cabecera es una barra fija y compacta, como en la aplicación, y el
+   menú una fila que se desliza en vez de partirse en dos líneas. */
+@media (max-width:760px){
+  .cab{position:sticky;top:0;z-index:20;gap:6px 16px;padding:calc(env(safe-area-inset-top) + 10px) 16px 0;
+    background:rgba(8,9,12,.86);-webkit-backdrop-filter:saturate(160%) blur(20px);backdrop-filter:saturate(160%) blur(20px)}
+  .marca{font-size:.92rem;letter-spacing:2px}
+  .cab nav{flex:1 0 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:20px;
+    margin:0 -16px;padding:2px 16px 8px}
+  .cab nav::-webkit-scrollbar{display:none}
+  .cab nav a{flex:0 0 auto;padding:6px 0}
+  body{-webkit-tap-highlight-color:transparent}
+}
 @media (max-width:860px){
   main,.cab,.pie{padding-left:16px;padding-right:16px}
   .columnas{grid-template-columns:1fr;gap:36px}

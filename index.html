@@ -1,8 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Pintura, escultura, cerámica y arqueología en torno al Génesis, Gilgamesh, la Ilíada, el Atrahasis y el Enuma Elish, en la mayor resolución que existe de cada obra.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icono-192.png">
+  <link rel="apple-touch-icon" href="icono-180.png">
+  <!-- En el teléfono la página se comporta como una aplicación: el color de la barra del
+       sistema es el del fondo, y añadida a la pantalla de inicio se abre sin la barra del
+       navegador. viewport-fit=cover deja que el fondo llegue bajo la muesca; los márgenes
+       seguros se respetan con env(safe-area-inset-*). -->
+  <meta name="theme-color" content="#07080a">
+  <meta name="color-scheme" content="dark">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Biblioteca">
+  <meta name="format-detection" content="telephone=no">
   <title>Biblioteca Visual de los Grandes Libros</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..600;1,8..60,300..600&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-body: #07080a;
@@ -14,8 +33,8 @@
       --text-title: #f1f2f5;
       --text-body: #949ba8;
       --text-muted: #5a6170;
-      --font-serif: 'Cinzel', serif;
-      --font-sans: 'Inter', sans-serif;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Source Serif 4', Georgia, serif;
     }
 
     * {
@@ -28,8 +47,16 @@
       background-color: var(--bg-body);
       color: var(--text-body);
       font-family: var(--font-sans);
+      /* Cifras alineadas: Cormorant trae por defecto las de estilo antiguo («05» bajo la
+         línea). Como font-feature-settings y no font-variant-numeric, porque el atajo
+         font-variant de algunos rótulos reiniciaba este último. */
+      font-feature-settings: "lnum" 1;
       line-height: 1.6;
       padding-bottom: 80px;
+    }
+    /* Los controles de formulario no heredan la tipografía: el navegador les pone la suya. */
+    button, input, select, textarea {
+      font-feature-settings: inherit;
     }
 
     /* HEADER SOBRIO Y ELEGANTE */
@@ -470,6 +497,9 @@
       pointer-events: none;
     }
 
+    .banner-info { transition: opacity .35s ease; }
+    .banner-info.cargando { opacity: 0; }
+
     .banner-info {
       position: absolute;
       left: 0; bottom: 0;
@@ -585,13 +615,23 @@
       background: none; border: 0; padding: 0; color: inherit; font: inherit;
     }
     .todas-img {
-      display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #050608;
+      display: block; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; background: #050608;
       border: 1px solid var(--border-subtle); border-radius: 3px; transition: border-color .2s;
+      padding: 0; cursor: zoom-in;
     }
     .todas-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
     .todas-card:hover .todas-img { border-color: var(--accent-gold); }
     .todas-card:hover .todas-img img { transform: scale(1.03); }
-    .todas-card:focus-visible { outline: 2px solid var(--accent-gold); outline-offset: 3px; }
+    .todas-img:focus-visible { outline: 2px solid var(--accent-gold); outline-offset: 3px; }
+
+    /* Títulos y autores que llevan a su página: sin subrayado hasta pasar por encima,
+       para que la rejilla no se llene de líneas. */
+    a.enlace-nombre { color: inherit; text-decoration: none; cursor: pointer; }
+    a.enlace-nombre:hover, a.enlace-nombre:focus-visible {
+      text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
+      text-decoration-color: var(--accent-gold);
+    }
+    a.enlace-nombre.a-autor:hover { color: var(--accent-gold); }
     .todas-card.activa .todas-img { border-color: var(--accent-gold); box-shadow: 0 0 0 1px var(--accent-gold); }
     .todas-txt { display: flex; flex-direction: column; gap: 2px; }
     .todas-txt small {
@@ -835,6 +875,9 @@
     .wiki-link-btn svg {
       opacity: 0.7;
     }
+    /* display:inline-flex le ganaba al atributo hidden: sin esto no se esconden. */
+    .wiki-link-btn[hidden] { display: none; }
+    button.wiki-link-btn { background: none; border: 0; padding: 0; font-family: inherit; cursor: pointer; }
 
     /* PANEL EXPANDIBLE DE DETALLES EN LA TARJETA */
     .card-extra-drawer {
@@ -1223,6 +1266,294 @@
       text-shadow: 0 1px 4px rgba(0,0,0,0.9);
     }
 
+    /* ══════════════════ EL TELÉFONO: UNA APLICACIÓN, NO UNA WEB ENCOGIDA ══════════════════
+       Por debajo de 760 px la página cambia de forma, no solo de tamaño: una barra superior
+       fija y compacta con el título, las cinco secciones en una barra de pestañas abajo (donde
+       llega el pulgar), las subsecciones como control segmentado y el contenido a todo el
+       ancho. Antes la cabecera de escritorio se apilaba entera —etiqueta, título, párrafo y
+       un menú partido en tres líneas— y en el mapa ocupaba la pantalla completa.
+       Los márgenes respetan la muesca y la barra de inicio del iPhone (env(safe-area-inset-*),
+       que solo tiene valor con viewport-fit=cover). */
+    .movil-intro { display: none; }
+
+    @media (max-width: 760px) {
+      :root {
+        --barra-inf: calc(58px + env(safe-area-inset-bottom));
+      }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        padding-bottom: calc(var(--barra-inf) + 28px);
+        -webkit-tap-highlight-color: transparent;
+      }
+      button, a, [role="button"] { touch-action: manipulation; }
+
+      /* ---- barra superior ----
+         El desenfoque va en un pseudoelemento y no en la cabecera: backdrop-filter convierte
+         al elemento en contenedor de sus descendientes position:fixed, y la barra de pestañas
+         (que vive dentro de la cabecera) se quedaría pegada a ella en vez de a la pantalla. */
+      header, body[data-libro="inicio"] header {
+        position: sticky; top: 0; z-index: 60;
+        display: flex; flex-wrap: wrap; align-items: center; gap: 8px 6px;
+        padding: calc(env(safe-area-inset-top) + 9px) max(16px, env(safe-area-inset-right)) 9px max(16px, env(safe-area-inset-left));
+        text-align: left; background: none; border-bottom: 1px solid rgba(197,160,70,.13);
+      }
+      header::before {
+        content: ''; position: absolute; inset: 0; z-index: -1;
+        background: rgba(8, 9, 12, .84);
+        -webkit-backdrop-filter: saturate(160%) blur(20px); backdrop-filter: saturate(160%) blur(20px);
+      }
+      .header-tag, .header-sub { display: none; }
+      h1, body[data-libro="inicio"] h1 {
+        flex: 1 1 0; min-width: 0; margin: 0;
+        font-size: 1.08rem; letter-spacing: 1px; line-height: 34px;
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      }
+      #volverBiblioteca {
+        position: static; order: -1; width: 34px; height: 34px; margin-left: -8px;
+        justify-content: center; font-size: 0; gap: 0; border-radius: 50%;
+        color: var(--accent-gold);
+      }
+      #volverBiblioteca svg { width: 22px; height: 22px; }
+      #volverBiblioteca:active { background: rgba(197,160,70,.14); }
+
+      /* ---- barra de pestañas ---- */
+      .book-switch {
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 70;
+        margin: 0; gap: 0; flex-wrap: nowrap; justify-content: space-around;
+        padding: 6px max(6px, env(safe-area-inset-right)) calc(5px + env(safe-area-inset-bottom)) max(6px, env(safe-area-inset-left));
+        border-top: 1px solid rgba(197,160,70,.14);
+      }
+      .book-switch::before {
+        content: ''; position: absolute; inset: 0; z-index: -1;
+        background: rgba(10, 11, 14, .9);
+        -webkit-backdrop-filter: saturate(160%) blur(20px); backdrop-filter: saturate(160%) blur(20px);
+      }
+      .book-btn, .book-btn.active {
+        flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 3px;
+        padding: 3px 0 2px; border: 0;
+        font-family: var(--font-sans); font-size: .64rem; font-weight: 500;
+        letter-spacing: .2px; text-transform: none; color: var(--text-muted);
+        transition: color .15s, transform .15s;
+      }
+      .book-btn.active { color: var(--accent-gold); }
+      .book-btn:hover { color: var(--text-muted); }
+      .book-btn.active:hover { color: var(--accent-gold); }
+      .book-btn:active { transform: scale(.92); }
+      .book-btn .book-count { display: none; }
+      .book-btn::before {
+        content: ''; width: 25px; height: 25px; background: currentColor;
+        -webkit-mask: var(--ico) center / contain no-repeat; mask: var(--ico) center / contain no-repeat;
+      }
+      /* Iconos por destino, del mismo trazo que los del resto de la página. Se eligen por el
+         onclick del botón, así que valen para las secciones que añade la cadena de
+         construcción (Cronología, Mapa, Cobertura) sin tocarla. */
+      .book-btn[onclick*="'inicio'"] { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z'/%3E%3C/svg%3E"); }
+      .book-btn[onclick*="'biblioteca'"] { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 19.5A2.5 2.5 0 0 1 6.5 17H20'/%3E%3Cpath d='M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z'/%3E%3C/svg%3E"); }
+      .book-btn[onclick*="'cronologia'"] { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E"); }
+      .book-btn[onclick*="'mapa'"] { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 6.5v14l6.5-3 7 3 6.5-3v-14l-6.5 3-7-3z'/%3E%3Cpath d='M8.5 3.5v14M15.5 6.5v14'/%3E%3C/svg%3E"); }
+      .book-btn[onclick*="'cobertura'"] { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 6h11M10 12h11M10 18h11'/%3E%3Cpath d='m3 6 1.5 1.5L7 5M3 12l1.5 1.5L7 11M3 18l1.5 1.5L7 17'/%3E%3C/svg%3E"); }
+
+      /* ---- subsecciones: control segmentado ----
+         Una sección con una sola pestaña no tiene nada que elegir: el botón solo repetía el
+         título («56 sedes en 22 países», «Colección»), así que se esconde. */
+      .book-nav {
+        flex: 1 0 100%; justify-content: flex-start; gap: 2px; padding: 2px;
+        background: rgba(255,255,255,.06); border-radius: 10px;
+        overflow-x: auto; scrollbar-width: none;
+      }
+      .book-nav::-webkit-scrollbar { display: none; }
+      .book-nav:has(> .tab-btn:only-child) { display: none !important; }
+      .tab-btn, .tab-btn:hover {
+        flex: 1 0 auto; justify-content: center; gap: 6px;
+        background: none; border: 0; border-radius: 8px; padding: 6px 12px;
+        font-family: var(--font-sans); font-size: .8rem; font-weight: 500; letter-spacing: .1px;
+        color: var(--text-body); white-space: nowrap;
+      }
+      .tab-btn svg { display: none; }
+      .tab-btn.active, .tab-btn.active:hover {
+        background: rgba(197,160,70,.2); color: var(--accent-gold-hover); font-weight: 600;
+      }
+
+      /* ---- contenido ---- */
+      .container, body[data-libro="inicio"] .container {
+        margin: 14px auto 0;
+        padding: 0 max(16px, env(safe-area-inset-right)) 0 max(16px, env(safe-area-inset-left));
+      }
+      /* El párrafo de presentación de cada sección sale de la barra fija y encabeza el
+         contenido, donde se lee una vez y se desplaza con lo demás. */
+      .movil-intro {
+        display: block; margin: 2px 0 18px;
+        font-size: .86rem; line-height: 1.55; font-weight: 300; color: var(--text-body);
+      }
+      body[data-libro="inicio"] .movil-intro, body[data-libro="mapa"] .movil-intro { display: none; }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .tab-content.active { animation: entrar-seccion .28s cubic-bezier(.2,.7,.3,1); }
+        @keyframes entrar-seccion { from { opacity: 0; transform: translateY(8px); } }
+      }
+
+      /* iOS amplía la página al enfocar un campo de menos de 16 px, y ya no la devuelve. */
+      .buscador input, .biblio-filtro input { font-size: 16px; padding: 10px 14px; border-radius: 10px; max-width: none; }
+      .buscador { margin-bottom: 14px; }
+      .buscador-ayuda { width: 30px; height: 30px; }
+
+      .orden-bar {
+        flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
+        margin: 0 -16px 14px; padding: 0 16px 12px;
+      }
+      .orden-bar::-webkit-scrollbar { display: none; }
+      .orden-etq { flex: 0 0 auto; }
+      .orden-btn { flex: 0 0 auto; padding: 7px 13px; border-radius: 999px; border-color: rgba(255,255,255,.08); }
+
+      .grid-3col { gap: 16px; }
+      .artwork-card { border-radius: 14px; box-shadow: none; }
+      .artwork-thumb-wrapper { height: 260px; padding: 10px; }
+      .artwork-body { padding: 16px 16px 12px; }
+      .artwork-title { font-size: 1.1rem; }
+      .artwork-snippet { font-size: .9rem; }
+      .card-extra-drawer { padding: 14px 16px; }
+      .thumb-strip { overflow-x: auto; padding: 8px 12px; }
+      .thumb-strip-btn { flex: 0 0 auto; width: 56px; height: 40px; }
+
+      .biblio-rejilla { grid-template-columns: 1fr; gap: 12px; }
+      .biblio-card { border-radius: 14px; }
+      .autor-rejilla { grid-template-columns: 1fr; gap: 16px; }
+      .autor-card { border-radius: 14px; }
+      .autor-imgs img { height: 170px; }
+      .autor-obra { padding: 6px 10px; }
+
+      .essay-box { padding: 26px 18px; border-radius: 14px; box-shadow: none; }
+      .essay-box h2 { font-size: 1.35rem; }
+      .essay-box h3 { font-size: 1.1rem; }
+      .essay-quote { padding: 14px 16px; }
+
+      /* ---- portada ----
+         La obra arriba y el texto debajo, sin pisarse: en un teléfono en vertical no hay
+         ancho para ponerlos lado a lado, y superpuestos el título tapaba media pintura. */
+      body[data-libro="inicio"] .banner {
+        height: clamp(420px, calc(100dvh - var(--alto-cabecera, 120px) - var(--barra-inf)), 720px);
+        border-radius: 16px; box-shadow: none;
+      }
+      .banner-obra { top: 3%; bottom: 40%; left: 4%; right: 4%; width: auto; background-position: center; }
+      .banner::after { background: linear-gradient(180deg, rgba(4,5,7,0) 0%, rgba(4,5,7,0) 50%, rgba(4,5,7,.9) 64%, rgba(4,5,7,.97) 100%); }
+      .banner-info { padding: 0 20px 22px; max-width: none; right: 0; }
+      .banner-libro { margin-bottom: 6px; }
+      .banner-titulo {
+        font-size: 1.32rem; margin-bottom: 6px;
+        display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+      }
+      .banner-autor { font-size: .9rem; margin-bottom: 2px; }
+      .banner-meta { font-size: .75rem; margin-bottom: 14px; }
+      .banner-ver { padding: 10px 18px; border-radius: 999px; }
+      .banner-progreso { height: 2px; }
+
+      .inicio-cifras { margin-top: 20px; }
+      .inicio-cifras div { flex: 1 1 42%; padding: 12px 14px 14px; }
+      .inicio-cifras b { font-size: 1.4rem; }
+      .inicio-todas { margin-top: 34px; }
+      .inicio-todas-rejilla { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 12px; }
+      .todas-img { border-radius: 10px; }
+      .todas-txt strong { font-size: .82rem; }
+      .todas-txt em, .todas-txt span { font-size: .7rem; }
+    }
+
+    /* Al tocar no hay «hover»: los efectos de pasar el ratón se quedaban enganchados tras
+       el toque. En su lugar, la respuesta de pulsar, como en una aplicación. */
+    @media (hover: none) {
+      .artwork-card:hover, .biblio-card:hover { transform: none; }
+      .artwork-card:hover { border-color: var(--border-subtle); }
+      .artwork-thumb-wrapper:hover img, .todas-card:hover .todas-img img { transform: none; }
+      .artwork-thumb-wrapper:hover .zoom-overlay-btn {
+        background: rgba(8, 10, 14, 0.82); color: var(--text-title); border-color: var(--border-subtle);
+      }
+      .todas-card, .biblio-card, .artwork-thumb-wrapper img, .autor-obra, .orden-btn, .banner-ver {
+        transition: transform .15s ease;
+      }
+      .todas-card:active, .biblio-card:active, .banner-ver:active { transform: scale(.97); }
+      .artwork-thumb-wrapper:active img { transform: scale(.98); }
+      .banner-flecha { display: none; }
+    }
+
+    /* ---- el visor en el teléfono ----
+       Los gestos sustituyen a los botones de ratón: pellizcar amplía, doble toque acerca o
+       ajusta, deslizar pasa de obra o, hacia abajo, cierra. Por eso los botones de zoom, las
+       flechas y la pantalla completa (que Safari en iPhone no admite) sobran al tocar. */
+    @media (hover: none) and (pointer: coarse) {
+      .zoom-ctrl-btn[onclick^="zoomDelta"], .zoom-ctrl-btn[onclick^="resetZoom"],
+      .action-circle-btn[onclick^="toggleFullscreen"] { display: none; }
+      .nav-arrow-btn { display: none !important; }
+      .zoom-modal .zoom-controls-bar { max-width: calc(100% - 78px); }   /* solo queda el botón de cerrar */
+    }
+    .zoom-hoja-asa { display: none; }
+    #zoomScaleText { white-space: nowrap; }
+    /* La leyenda ya lleva su flecha en la caja; la que openZoomModal añade al texto la
+       duplicaba. */
+    #zoomCaptionText svg { display: none; }
+    /* El crédito de la foto es una nota, no un párrafo del análisis: sin esto, la regla de
+       los párrafos del panel le daba el cuerpo del texto. */
+    .zoom-desc-panel p.credito { font-size: .72rem; line-height: 1.5; margin: 10px 0 0; }
+    .zoom-target-img.volviendo { transition: transform .24s cubic-bezier(.2,.7,.3,1), opacity .24s; }
+    .zoom-modal { transition: background-color .2s; }
+
+    @media (max-width: 760px) {
+      .zoom-controls-bar {
+        top: calc(env(safe-area-inset-top) + 10px); left: 12px; transform: none;
+        gap: 2px; padding: 3px 8px; max-width: calc(100% - 126px); overflow: hidden;
+      }
+      .top-right-actions { top: calc(env(safe-area-inset-top) + 8px); right: 10px; gap: 8px; }
+      .action-circle-btn { width: 42px; height: 42px; }
+      .zoom-conjunto { top: calc(env(safe-area-inset-top) + 60px); left: 12px; max-width: calc(100% - 24px); }
+      .nav-arrow-btn { width: 40px; height: 40px; }
+      .nav-arrow-btn.left { left: 8px; }
+      .nav-arrow-btn.right { right: 8px; }
+      .zoom-viewport { height: 100dvh; }
+      .zoom-target-img { max-height: 100dvh; }
+
+      .zoom-caption-box {
+        left: 12px; right: 12px; transform: none; bottom: calc(env(safe-area-inset-bottom) + 12px);
+        justify-content: space-between; padding: 11px 16px; border-radius: 16px;
+        font-size: .82rem; line-height: 1.35; letter-spacing: .3px;
+      }
+      #zoomCaptionText {
+        display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+      }
+
+      /* El análisis, como hoja que sube desde abajo: se abre tocando la leyenda y se cierra
+         deslizándola hacia abajo o tocando la obra. */
+      .zoom-desc-panel,
+      .zoom-modal:not(.user-inactive).hover-bottom .zoom-desc-panel,
+      .zoom-desc-panel:hover {
+        left: 0; right: 0; bottom: 0; width: auto; max-width: none; max-height: 74dvh;
+        border-radius: 20px 20px 0 0; border-width: 1px 0 0;
+        padding: 8px 20px calc(env(safe-area-inset-bottom) + 26px);
+        background: rgba(10, 12, 16, .96); text-shadow: none;
+        overscroll-behavior: contain;
+        opacity: 0 !important; pointer-events: none !important;
+        transform: translateY(100%) !important;
+        transition: transform .32s cubic-bezier(.2,.8,.25,1), opacity .2s;
+      }
+      .zoom-modal.hoja-info .zoom-desc-panel {
+        opacity: 1 !important; pointer-events: auto !important; transform: translateY(var(--hoja-dy, 0px)) !important;
+      }
+      .zoom-modal.hoja-info .zoom-desc-panel.siguiendo { transition: none; }
+      .zoom-hoja-asa {
+        display: block; position: sticky; top: -8px; margin: 0 -20px 6px; padding: 10px 0 12px;
+        background: rgba(10, 12, 16, .96); border: 0; width: calc(100% + 40px); cursor: pointer;
+      }
+      .zoom-hoja-asa::before {
+        content: ''; display: block; margin: 0 auto; width: 40px; height: 5px; border-radius: 3px;
+        background: rgba(255,255,255,.28);
+      }
+      .zoom-desc-panel h3 { font-size: 1.15rem; }
+      .zoom-desc-panel .desc-artist-meta { flex-wrap: wrap; justify-content: flex-start; gap: 8px; }
+      .zoom-desc-panel .desc-artist-meta > span { flex: 1 0 100%; }
+      .zoom-desc-panel .wiki-link-btn {
+        padding: 7px 12px; border: 1px solid var(--border-subtle); border-radius: 999px;
+        font-size: .78rem; color: var(--text-body);
+      }
+      .zoom-desc-panel p { font-size: .95rem; line-height: 1.65; }
+    }
+
     /* ---- añadidos de la versión publicable ---- */
     .orig-link .mp-tag{font-family:var(--font-sans);font-size:.62rem;opacity:.72;
       font-variant-numeric:tabular-nums;margin:0 2px}
@@ -1384,6 +1715,8 @@
     .obra-min img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;
       background:#050608;border:1px solid var(--border-subtle);transition:border-color .2s}
     .obra-min:hover img{border-color:var(--accent-gold)}
+    .obra-min.sel img{border-color:var(--accent-gold);box-shadow:0 0 0 2px var(--accent-gold)}
+    .obra-min.sel .obra-min-t{color:var(--accent-gold)}
     .obra-min-t{font-size:.82rem;color:var(--text-title);line-height:1.35}
     .obra-min-m{font-size:.7rem;color:var(--text-muted);font-variant-numeric:tabular-nums}
     .ciudad-sede{margin-bottom:30px}
@@ -1394,14 +1727,91 @@
     .ciudad-sede h4 span{font-family:var(--font-sans);font-size:.68rem;letter-spacing:0;
       color:var(--text-muted);text-transform:none;font-variant-numeric:tabular-nums}
 
+    /* ---- el mapa en el teléfono ----
+       El mapa ocupa la pantalla entera, por detrás de la barra translúcida de arriba, y la
+       lista es una hoja que sube desde abajo (mapa_js.py la mueve). Antes el marco era una
+       franja de 16/9 —unos 200 px de alto— bajo una cabecera que llenaba la pantalla, con
+       los siete botones de continente tapando un tercio del mapa. */
+    .mapa-hoja-asa{display:none}
+    @media (max-width:760px){
+      body[data-libro="mapa"]{overflow:hidden;padding-bottom:0}
+      body[data-libro="mapa"] .container{margin:0}
+      #mapa-gallery.active{animation:none}
+      .mapa-wrap{position:fixed;left:0;right:0;top:0;bottom:var(--barra-inf);z-index:5;
+        display:block;gap:0;--hoja-vis:150px}
+      .mapa-marco{position:absolute;inset:0;aspect-ratio:auto;border:0;border-radius:0;background:#131722}
+      .mapa-cont{top:calc(var(--alto-barra,56px) + 8px);left:0;right:0;max-width:none;
+        padding:0 12px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:6px}
+      .mapa-cont::-webkit-scrollbar{display:none}
+      .mapa-cont button{flex:0 0 auto;border-radius:999px;padding:7px 13px;font-size:.66rem;
+        background:rgba(10,11,14,.78);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+      .mapa-cont button:disabled{display:none}
+      .mapa-ctrl{top:calc(var(--alto-barra,56px) + 52px);right:12px}
+      .mapa-ctrl button{width:40px;height:40px;border-radius:10px;font-size:1rem}
+      .mapa-pista{left:12px;right:12px;bottom:calc(var(--hoja-vis) + 10px);text-align:center;
+        border-radius:999px;font-size:.7rem;transition:bottom .35s cubic-bezier(.2,.8,.25,1)}
+
+      .mapa-lado{position:absolute;left:0;right:0;bottom:0;top:auto;z-index:6;
+        height:calc(100% - var(--alto-barra,56px) - 6px);
+        display:flex;flex-direction:column;
+        background:rgba(12,13,17,.97);border-top:1px solid rgba(197,160,70,.2);
+        border-radius:18px 18px 0 0;box-shadow:0 -12px 40px rgba(0,0,0,.55);
+        transform:translateY(calc(100% - var(--hoja-vis)));
+        transition:transform .35s cubic-bezier(.2,.8,.25,1);will-change:transform}
+      .mapa-lado.siguiendo{transition:none}
+      .mapa-hoja-asa{display:flex;flex-direction:column;align-items:center;gap:7px;
+        padding:8px 16px 10px;cursor:grab;touch-action:none;flex:0 0 auto}
+      .asa-barra{width:40px;height:5px;border-radius:3px;background:rgba(255,255,255,.26)}
+      .asa-txt{font-size:.7rem;letter-spacing:.3px;color:var(--text-muted);font-variant-numeric:tabular-nums}
+      .mapa-lado-cuerpo{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;
+        -webkit-overflow-scrolling:touch;padding:0 16px calc(24px + env(safe-area-inset-bottom))}
+      .mapa-lado .buscador{margin-bottom:10px}
+      .lado-tog{border-radius:10px;background:rgba(255,255,255,.05);border:0;padding:2px;gap:2px}
+      .tog-btn{border-radius:8px;padding:8px 6px;font-family:var(--font-sans);font-size:.78rem;
+        letter-spacing:.2px;text-transform:none;font-weight:500}
+      .tog-btn.activo{background:rgba(197,160,70,.2);color:var(--accent-gold-hover);font-weight:600}
+      .sede-lista{max-height:none;overflow:visible}
+      .sede-item button{padding:12px 4px}
+      .sede-txt strong{font-size:.92rem}
+      .libro-obras{grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:10px}
+      .libro-obra img{border-radius:8px}
+
+      /* Dentro de la hoja solo se enseña el panel de una ciudad con varios museos: el de
+         una sede o un libro repetiría lo que la lista ya despliega en su sitio. */
+      .sede-detalle{margin:4px 0 14px;padding:14px 0 0}
+      .sede-detalle:empty,.sede-detalle[data-tipo="sede"],.sede-detalle[data-tipo="libro"]{display:none}
+      .obra-min-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+      .obra-min img{border-radius:8px}
+
+      /* La cobertura, en fichas en vez de una tabla de 620 px que obligaba a desplazarse. */
+      .cob-tabla{border:0;overflow:visible}
+      .cob-tabla table{min-width:0}
+      .cob-tabla thead{display:none}
+      .cob-tabla table,.cob-tabla tbody,.cob-tabla tr,.cob-tabla td{display:block}
+      .cob-tabla tr{padding:12px 14px;margin-bottom:8px;background:var(--bg-surface);
+        border:1px solid var(--border-subtle);border-radius:12px}
+      .cob-tabla td{padding:0;border:0;font-size:.86rem}
+      .cob-tabla td:first-child{margin-bottom:4px}
+      .cob-tabla td.pasaje{margin-bottom:4px}
+      .cobertura h2{font-size:1.15rem;margin-top:32px}
+    }
+    /* Sin ratón no hay «pasar por encima»: la tarjeta flotante se quedaba colgada tras el
+       toque. Tocar ya despliega o abre, así que sobra; y los botones + y − también, porque
+       se pellizca. */
+    @media (hover:none) and (pointer:coarse){
+      .mapa-tarjeta{display:none!important}
+      .mapa-ctrl{display:none}
+      .sede-item button:hover{background:none}
+      .sede-item.sel button{background:rgba(197,160,70,.1)}
+    }
+
     /* Solo en GitHub Pages: estado del original en el visor. */
     #zoomScaleText.hd-cargando::after{content:' · HD…';opacity:.6;animation:hdlat 1.2s infinite}
     #zoomScaleText.hd-listo::after{content:' · HD';color:var(--accent-gold)}
     @keyframes hdlat{50%{opacity:.25}}
   </style>
-
-
-
+</head>
+<body>
   <header>
     <span class="header-tag" id="bookTag">Biblioteca Visual</span>
     <h1 id="bookTitle">Colección</h1>
@@ -1488,6 +1898,9 @@
   </header>
 
   <div class="container">
+
+    <!-- En el teléfono, la presentación de la sección (el párrafo de la cabecera) va aquí. -->
+    <p class="movil-intro" id="movilIntro"></p>
 
     <!-- GALLERY TAB (3 COLUMNAS) -->
     <div id="inicio-gallery" class="tab-content active">
@@ -1648,7 +2061,13 @@
           <div class="mapa-pista" id="mapaPista">Arrastra o usa W A S D · rueda o + / − para acercar · 0 vuelve a Europa</div>
           <div class="mapa-tarjeta" id="mapaTarjeta" hidden></div>
         </div>
-        <aside class="mapa-lado">
+        <aside class="mapa-lado" id="mapaLado">
+          <!-- En el teléfono la lista es una hoja que se desliza sobre el mapa: esta es su asa.
+               En escritorio no se ve y el cuerpo es un bloque normal. -->
+          <div class="mapa-hoja-asa" id="mapaHojaAsa" role="button" tabindex="0"
+               aria-label="Desplegar u ocultar la lista"><span class="asa-barra"></span>
+            <span class="asa-txt">139 obras · 84 sedes · 32 países</span></div>
+          <div class="mapa-lado-cuerpo" id="mapaLadoCuerpo">
           <div id="mapaBuscador"></div>
           <div class="lado-tog" role="tablist" aria-label="Ver por">
             <button type="button" class="tog-btn activo" id="togSedes" role="tab" aria-selected="true">Sedes</button>
@@ -1657,6 +2076,7 @@
           <p class="mapa-nota" id="mapaNota">Ordenadas por número de obras. Al elegir una, el mapa vuela hasta ella y despliega lo que guarda.</p>
           <p class="mapa-aparte">3 obras están en colección particular, sin sede pública que situar en el mapa: <em>Jacob y Raquel en el pozo</em>, <em>La Ilíada de García Malo</em>, <em>Juegos fúnebres en honor de Patroclo</em>.</p>
           <ol class="sede-lista" id="sedeLista"></ol>
+          </div>
         </aside>
       </div>
       <div class="sede-detalle" id="sedeDetalle"></div>
@@ -1836,6 +2256,7 @@
 
     <!-- PANEL EXPANDIBLE DE DESCRIPCIÓN TRANSPARENTE CON GLASSMORPHISM (MOVER EL RATÓN ABAJO EN EL VISOR) -->
     <div id="zoomDescPanel" class="zoom-desc-panel">
+      <button type="button" class="zoom-hoja-asa" id="zoomHojaAsa" aria-label="Cerrar el análisis"></button>
       <h3 id="panelTitle">Título de la Obra</h3>
       <div class="desc-artist-meta">
         <span id="panelMeta">Artista | Técnica | Ubicación</span>
@@ -1847,6 +2268,10 @@
         </a>
         <a id="panelFichaLink" href="#" class="wiki-link-btn" title="Página propia de esta obra, para leerla o compartirla">
           Ficha de la obra</a>
+        <button id="panelMapaLink" type="button" class="wiki-link-btn" hidden onclick="verEnMapaDesdeVisor()"
+                title="Ir a la sede de esta obra en el mapa">
+          Ver en el mapa <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+        </button>
       </div>
       <p id="panelCredito" class="credito"></p>
       
@@ -7313,6 +7738,56 @@
        el sitio de GitHub Pages. Desde allí el enlace es relativo —construir_sitio.py deja esto
        vacío—; desde el artefacto de claude.ai o el index.html local va al sitio público. */
     const BASE_FICHAS = '';
+    /* La dirección de la página de cada obra, FICHAS[libro][índice]. Solo existe en GitHub
+       Pages: construir_sitio.py la pone aquí con los mismos índices que paginas.py. En el
+       index.html local vale null y los títulos se quedan como texto. */
+    const FICHAS = {"genesis": ["obras/genesis/01-la-creacion-de-adan", "obras/genesis/02-la-expulsion-del-paraiso", "obras/genesis/03-cain-y-abel", "obras/genesis/04-el-diluvio-universal", "obras/genesis/05-la-torre-de-babel", "obras/genesis/06-cain", "obras/genesis/07-elohim-creando-a-adan", "obras/genesis/08-sombra-y-oscuridad-la-tarde-del-diluvio", "obras/genesis/09-la-confusion-de-las-lenguas", "obras/genesis/10-el-diluvio-universal", "obras/genesis/11-tras-el-diluvio-el-dia-cuadragesimo-primero", "obras/genesis/12-el-diluvio", "obras/genesis/13-la-disminucion-de-las-aguas-del-diluvio", "obras/genesis/14-adan-y-eva", "obras/genesis/15-adan-y-eva", "obras/genesis/16-el-anciano-de-los-dias", "obras/genesis/17-el-sacrificio-de-isaac", "obras/genesis/18-el-sacrificio-de-isaac", "obras/genesis/19-la-trinidad-la-hospitalidad-de-abraham", "obras/genesis/20-la-lucha-de-jacob-con-el-angel", "obras/genesis/21-jacob-luchando-con-el-angel", "obras/genesis/22-la-vision-tras-el-sermon", "obras/genesis/23-agar-en-el-desierto", "obras/genesis/24-la-tunica-de-jose", "obras/genesis/25-la-destruccion-de-sodoma-y-gomorra", "obras/genesis/26-el-jardin-de-las-delicias", "obras/genesis/41-el-pecado-original-y-la-expulsion-del-paraiso", "obras/genesis/27-lot-y-sus-hijas", "obras/genesis/28-eliezer-y-rebeca", "obras/genesis/29-isaac-bendice-a-jacob", "obras/genesis/30-el-sueno-de-jacob", "obras/genesis/31-el-invierno-o-el-diluvio", "obras/genesis/32-la-embriaguez-de-noe", "obras/genesis/33-el-encuentro-de-abraham-y-melquisedec", "obras/genesis/34-la-sinagoga-de-dura-europos", "obras/genesis/35-jose-acusado-por-la-mujer-de-putifar", "obras/genesis/36-jacob-bendice-a-los-hijos-de-jose", "obras/genesis/37-jacob-y-raquel-en-el-pozo", "obras/genesis/38-jose-interpreta-los-suenos-del-faraon", "obras/genesis/39-adan-y-eva", "obras/genesis/40-el-diluvio", "obras/genesis/42-las-capillas-del-desierto-el-bagawat", "obras/genesis/43-el-sacrificio-de-isaac-en-el-suelo-de-una-sinagoga", "obras/genesis/44-el-arca-como-un-cofre-el-mosaico-de-misis", "obras/genesis/45-jose-huye-de-la-mujer-de-putifar-yusuf-y-zulaija", "obras/genesis/46-el-primer-duelo", "obras/genesis/47-noe-embarca-a-los-animales-una-miniatura-armenia-de-isfahan", "obras/genesis/48-la-creacion-de-eva-en-la-iglesia-de-narga-selassie", "obras/genesis/49-el-angel-detiene-la-mano-de-abraham-en-la-iglesia-de-narga", "obras/genesis/50-adan-y-eva-con-sus-trece-parejas-de-gemelos-en-la-zubdetu-t", "obras/genesis/51-adan-y-eva-ante-el-arbol-relieve-de-la-iglesia-de-la-santa", "obras/genesis/52-la-rebeca-velada", "obras/genesis/53-jose-se-da-a-conocer-a-sus-hermanos", "obras/genesis/54-la-huida-de-lot-y-su-familia-de-sodoma", "obras/genesis/55-la-muerte-de-abel", "obras/genesis/56-expulsion-del-paraiso", "obras/genesis/57-la-partida-de-jacob", "obras/genesis/58-el-regreso-de-noe-o-de-abraham-a-la-tierra-de-canaan", "obras/genesis/59-la-entrada-de-los-animales-en-el-arca-de-noe", "obras/genesis/60-abel", "obras/genesis/61-el-sacrificio-de-isaac", "obras/genesis/62-presentacion-de-jacob-a-isaac", "obras/genesis/63-el-sacrificio-de-melquisedec-boceto", "obras/genesis/64-cain", "obras/genesis/65-lot-y-sus-hijas"], "exodo": ["obras/exodo/01-el-paso-del-mar-rojo-ritual-de-vardan", "obras/exodo/02-el-arcangel-miguel-y-el-paso-del-mar-rojo", "obras/exodo/03-asiya-y-sus-doncellas-encuentran-a-moises-en-el-nilo", "obras/exodo/04-la-hagada-de-las-cabezas-de-pajaro-la-preparacion-de-la", "obras/exodo/05-el-angel-yibril-gabriel-trae-a-musa-las-leyes-de-dios", "obras/exodo/06-moises-con-las-tablas-de-la-ley", "obras/exodo/07-la-vara-de-musa-se-convierte-en-dragon-ante-los-magos-del", "obras/exodo/08-moises-se-descalza-ante-la-zarza-ardiente", "obras/exodo/09-las-plagas-de-egipto-ranas-piojos-fieras-y-peste-hagada-de", "obras/exodo/10-moises", "obras/exodo/11-la-adoracion-del-becerro-de-oro", "obras/exodo/12-moises-con-las-tablas-de-la-ley", "obras/exodo/13-el-arca-de-la-alianza-con-los-querubines"], "levitico": ["obras/levitico/01-la-consagracion-del-tabernaculo-y-el-sacerdocio-de-aaron", "obras/levitico/02-el-chivo-expiatorio", "obras/levitico/03-el-sumo-sacerdote-aaron", "obras/levitico/04-aaron-ofrece-el-sacrificio-ante-moises-andre-de-corbie", "obras/levitico/05-inicial-historiada-v-del-levitico-moises-ofrece-un-cordero", "obras/levitico/06-nadab-y-abiu-consumidos-por-el-fuego", "obras/levitico/07-aaron-revestido-con-el-pectoral-hoshen", "obras/levitico/08-la-ofrenda-de-las-dos-aves-puras-el-leproso-el-dia-de-su", "obras/levitico/09-el-altar-de-cuernos-de-tel-beerseba"], "gilgamesh": ["obras/gilgamesh/01-tablilla-xi-el-diluvio", "obras/gilgamesh/02-el-heroe-dominando-un-leon", "obras/gilgamesh/03-gilgamesh-y-huwawa-en-una-tablilla-sumeria", "obras/gilgamesh/04-la-mascara-de-humbaba", "obras/gilgamesh/05-la-tablilla-del-sueno", "obras/gilgamesh/06-el-relieve-de-la-reina-de-la-noche", "obras/gilgamesh/07-el-vaso-de-warka", "obras/gilgamesh/08-lamassu-el-guardian-de-la-puerta", "obras/gilgamesh/09-sello-cilindrico-del-heroe-y-el-toro", "obras/gilgamesh/11-el-heroe-abate-al-toro", "obras/gilgamesh/10-la-caza-de-leones-de-asurbanipal", "obras/gilgamesh/12-la-nueva-tablilla-v-de-la-epopeya-de-gilgamesh"], "iliada": ["obras/iliada/01-aquiles-y-ayax-jugando-a-los-dados", "obras/iliada/02-jupiter-y-tetis", "obras/iliada/03-la-colera-de-aquiles", "obras/iliada/04-andromaca-llorando-a-hector", "obras/iliada/05-el-triunfo-de-aquiles", "obras/iliada/06-aquiles-llorando-la-muerte-de-patroclo", "obras/iliada/07-priamo-pide-a-aquiles-el-cuerpo-de-hector", "obras/iliada/08-la-procesion-del-caballo-de-troya", "obras/iliada/09-el-juicio-de-paris", "obras/iliada/10-la-mascara-de-agamenon", "obras/iliada/11-la-puerta-de-los-leones", "obras/iliada/12-el-casco-de-colmillos-de-jabali", "obras/iliada/13-laocoonte-y-sus-hijos", "obras/iliada/14-guerrero-del-fronton-del-templo-de-afaya", "obras/iliada/15-las-murallas-de-troya", "obras/iliada/22-aquiles-a-punto-de-matar-a-hector", "obras/iliada/23-la-colera-de-aquiles", "obras/iliada/24-el-rescate-del-cuerpo-de-hector", "obras/iliada/25-el-rescate-del-cuerpo-de-hector", "obras/iliada/26-papiro-de-oxirrinco-221", "obras/iliada/27-la-iliada-de-garcia-malo", "obras/iliada/16-la-muerte-de-sarpedon", "obras/iliada/17-tetis-recibe-las-armas-de-aquiles", "obras/iliada/18-aquiles-y-pentesilea", "obras/iliada/19-los-amores-de-paris-y-helena", "obras/iliada/20-briseida-llevada-ante-agamenon", "obras/iliada/21-juegos-funebres-en-honor-de-patroclo", "obras/iliada/28-la-embajada-de-crises-ante-agamenon", "obras/iliada/29-el-sarcofago-de-aquiles-de-tiro", "obras/iliada/30-hector-reprocha-a-paris-su-retirada-del-combate", "obras/iliada/31-aquiles-enloquecido-por-la-perdida-de-patroclo-rechaza-el"], "atrahasis": ["obras/atrahasis/01-la-tablilla-de-atrahasis", "obras/atrahasis/02-enlil-el-dios-que-no-podia-dormir", "obras/atrahasis/03-ea-el-dios-que-aviso-a-atrahasis", "obras/atrahasis/04-despues-de-que-el-diluvio-arrasara-la-lista-real-sumeria", "obras/atrahasis/05-lamashtu-la-que-arrebata-al-nino", "obras/atrahasis/06-la-placa-del-enfermo-lamashtu-expulsada-al-rio"], "enuma": ["obras/enuma/01-cuando-en-lo-alto-el-poema-en-la-biblioteca-de-ninive", "obras/enuma/02-la-copia-de-kish", "obras/enuma/03-el-mushussu-el-dragon-de-marduk", "obras/enuma/04-los-simbolos-de-marduk-en-un-sello", "obras/enuma/05-el-ritual-del-ano-nuevo-donde-se-recitaba-el-poema", "obras/enuma/06-la-tablilla-del-esagil-las-medidas-de-la-casa-de-marduk", "obras/enuma/07-la-azada-y-el-calamo-marduk-y-nabu-en-una-estela-asiria", "obras/enuma/08-asurbanipal-reconstruye-la-casa-de-marduk", "obras/enuma/09-la-imagen-que-se-tomo-por-marduk-contra-tiamat"]};
+
+    /* Nombres que llevan a su página: el título de una obra a su ficha y el autor a la
+       suya. Se busca por la imagen principal y no por el índice, porque la portada, la
+       cronología y el mapa numeran las obras a su manera y la imagen es la misma en todos. */
+    let porImagen = null;
+    function indicePorImagen(){
+      if (porImagen) return porImagen;
+      porImagen = {};
+      librosReales().forEach(id => (BOOKS[id].groups || []).forEach((g, i) => {
+        if (g && g[0]) porImagen[g[0].src] = { libro: id, i: i };
+      }));
+      AUTORES.forEach(a => a.obras.forEach(o => {
+        const g = (BOOKS[o.libro] || {}).groups;
+        const e = g && g[o.i] && g[o.i][0] && porImagen[g[o.i][0].src];
+        if (e) e.autor = a.clave;
+      }));
+      return porImagen;
+    }
+    function urlObra(src){
+      const e = indicePorImagen()[src];
+      const r = e && FICHAS && (FICHAS[e.libro] || [])[e.i];
+      return r ? r + '/' : null;
+    }
+    function urlAutor(src){
+      const e = indicePorImagen()[src];
+      return e && e.autor ? `${BASE_FICHAS}autores/${e.autor}/` : null;
+    }
+    /* stopPropagation: los nombres están dentro de tarjetas y banners que abren el visor. */
+    function enlaceNombre(url, texto, clase){
+      if (!url) return esc(texto);
+      const fuera = /^https?:/.test(url) ? ' target="_blank" rel="noopener"' : '';
+      return `<a class="enlace-nombre${clase ? ' ' + clase : ''}" href="${esc(url)}"${fuera}` +
+             ` onclick="event.stopPropagation()">${esc(texto)}</a>`;
+    }
+    const enlaceObra  = (src, texto) => enlaceNombre(urlObra(src), texto, 'a-obra');
+    const enlaceAutor = (src, texto) => enlaceNombre(urlAutor(src), texto, 'a-autor');
+
+    /* Del visor al mapa: se cierra el visor, se abre el mapa y vuela a la sede de la obra.
+       sedeDeObra y verObraEnMapa las define el mapa, que solo existe en la versión construida. */
+    function verEnMapaDesdeVisor(){
+      const src = bookGroups()[currentArtworkGroupIndex][0].src;
+      if (!window.verObraEnMapa) return;
+      closeZoomModal();
+      switchBook('mapa');
+      window.verObraEnMapa(src);
+    }
 
     /* La cronología funde todos los libros en una sola secuencia; reutiliza las mismas
        entradas de IMG, así que no duplica ni un byte de imagen. */
@@ -11989,8 +12464,8 @@
             <div>
               <div class="artwork-header-row">
                 <span class="artwork-num">${d.epoca ? esc(d.epoca) : (criterio === 'cronologia' && d.fecha ? esc(d.fecha) : 'OBRA ' + String(i + 1).padStart(2, '0'))}</span>
-                <div class="artwork-title">${esc(d.title)}</div>
-                <div class="artwork-artist">${esc(d.artist)}</div>
+                <div class="artwork-title">${enlaceObra(main.src, d.title)}</div>
+                <div class="artwork-artist">${enlaceAutor(main.src, d.artist)}</div>
               </div>
               <div class="artwork-meta-line">${esc(d.meta)}</div>
               <p class="artwork-snippet">${esc(d.snippet || d.analysis)}</p>
@@ -12066,6 +12541,23 @@
         return vistas[pos];
       }
 
+      /* La lámina y el rótulo cambian al momento, pero la transición espera a que la
+         imagen haya llegado. Servida desde Commons tarda un rato, y antes el título de la
+         obra nueva aparecía sobre la pintura anterior (o sobre el fondo vacío) durante uno o
+         dos segundos. Mientras carga, el rótulo se funde y el reloj del banner se detiene;
+         si la imagen no llega en cinco segundos, se pasa igualmente. */
+      const precargadas = {};
+      function precargar(src){
+        if (!precargadas[src]) precargadas[src] = new Promise(listo => {
+          const im = document.createElement('img');
+          im.onload = im.onerror = () => listo();
+          setTimeout(listo, 5000);
+          im.src = src;
+        });
+        return precargadas[src];
+      }
+      let cargando = false;
+
       function pintar(i, haciaAtras){
         if (i == null) return;
         actual = i;
@@ -12081,16 +12573,25 @@
           nueva.appendChild(capa);
         });
         lienzo.appendChild(nueva);
-        const vieja = lamina;
-        requestAnimationFrame(() => requestAnimationFrame(() => {
+        cargando = true;
+        info.classList.add('cargando');
+        precargar(src).then(() => requestAnimationFrame(() => requestAnimationFrame(() => {
+          if (lamina !== nueva) { nueva.remove(); return; }    // entretanto se pidió otra
           nueva.classList.remove('desde-izq');
           nueva.classList.add('dentro');
-          if (vieja) {
+          Array.from(lienzo.children).forEach(vieja => {
+            if (vieja === nueva || !vieja.classList.contains('dentro')) return;
             vieja.classList.remove('dentro');
             vieja.classList.add(haciaAtras ? 'sale-der' : 'sale');
             setTimeout(() => vieja.remove(), 1300);
-          }
-        }));
+          });
+          info.classList.remove('cargando');
+          cargando = false;
+          t0 = Date.now();
+          /* La siguiente del orden, pedida ya para cuando le toque. */
+          const prox = ORDEN[turno % ORDEN.length];
+          if (prox != null) precargar(BOOKS.inicio.groups[prox][0].src);
+        })));
         lamina = nueva;
 
         document.querySelectorAll('.todas-card.activa').forEach(c => c.classList.remove('activa'));
@@ -12100,8 +12601,8 @@
         const fecha = d.fecha ? esc(d.fecha) + ' · ' : '';
         info.innerHTML =
           `<span class="banner-libro">${esc(d.libro)}</span>` +
-          `<h2 class="banner-titulo">${esc(d.title)}</h2>` +
-          `<p class="banner-autor">${esc(d.artist)}</p>` +
+          `<h2 class="banner-titulo">${enlaceObra(BOOKS.inicio.groups[i][0].src, d.title)}</h2>` +
+          `<p class="banner-autor">${enlaceAutor(BOOKS.inicio.groups[i][0].src, d.artist)}</p>` +
           `<p class="banner-meta">${fecha}${esc(d.sede || (d.meta || '').split('|').pop().trim())}</p>` +
           `<button class="banner-ver" type="button">Ver en detalle</button>`;
         info.querySelector('.banner-ver').addEventListener('click', ev => {
@@ -12153,10 +12654,30 @@
         else if (ev.key === 'ArrowRight') pintar(avanzar(), false);
         else pintar(retroceder(), true);
       });
-      banner.addEventListener('click', () => { if (actual !== null) abrir(actual); });
+      banner.addEventListener('click', () => {
+        if (Date.now() - deslizadoEn < 400) return;   // el toque era el final de un deslizamiento
+        if (actual !== null) abrir(actual);
+      });
+
+      /* Con el dedo, deslizar cambia de obra, como en cualquier carrusel del teléfono. */
+      let toque = null, deslizadoEn = 0;
+      banner.addEventListener('touchstart', ev => {
+        const t = ev.touches[0];
+        toque = ev.touches.length === 1 ? { x: t.clientX, y: t.clientY, t: Date.now() } : null;
+      }, { passive: true });
+      banner.addEventListener('touchend', ev => {
+        if (!toque) return;
+        const t = ev.changedTouches[0];
+        const dx = t.clientX - toque.x, dy = t.clientY - toque.y;
+        toque = null;
+        if (Math.abs(dx) < 45 || Math.abs(dx) < Math.abs(dy) * 1.3) return;
+        deslizadoEn = Date.now();
+        if (dx < 0) pintar(avanzar(), false);
+        else { const i = retroceder(); if (i != null) pintar(i, true); }
+      }, { passive: true });
 
       function latido(){
-        if (!pausado) {
+        if (!pausado && !cargando) {
           const pasado = Date.now() - t0;
           if (prog) prog.style.width = Math.min(100, pasado / PAUSA * 100) + '%';
           if (pasado >= PAUSA) pintar(avanzar(), false);
@@ -12190,10 +12711,13 @@
         todas.innerHTML = ORDEN.map(i => {
           const d = BOOKS.inicio.details[i], src = BOOKS.inicio.groups[i][0].src;
           const donde = d.sede || 'Sede no identificada';
-          return `<button class="todas-card" type="button" data-i="${i}">` +
-            `<span class="todas-img"><img src="${src}" alt="" loading="lazy" decoding="async"></span>` +
-            `<span class="todas-txt"><small>${esc(d.libro)}</small><strong>${esc(d.title)}</strong>` +
-            `<em>${esc(d.artist)}</em><span>${esc(donde)}</span></span></button>`;
+          /* Un <div> y no un <button>: dentro van los enlaces del título y del autor, y un
+             botón no puede contener enlaces. El teclado abre el visor desde la imagen. */
+          return `<div class="todas-card" data-i="${i}">` +
+            `<button class="todas-img" type="button" aria-label="Ver ${esc(d.title)} en detalle">` +
+            `<img src="${src}" alt="" loading="lazy" decoding="async"></button>` +
+            `<span class="todas-txt"><small>${esc(d.libro)}</small><strong>${enlaceObra(src, d.title)}</strong>` +
+            `<em>${enlaceAutor(src, d.artist)}</em><span>${esc(donde)}</span></span></div>`;
         }).join('');
         todas.querySelectorAll('.todas-card').forEach(c =>
           c.addEventListener('click', () => abrir(+c.dataset.i)));
@@ -12312,7 +12836,7 @@
            en la página del autor, que es a donde lleva el enlace. */
         return `<article class="autor-card">` +
           `<div class="autor-imgs${a.retrato ? '' : ' sin-foto'}">${retrato}${suya}</div>` +
-          `<div class="autor-txt"><h3>${esc(a.nombre)}</h3>` +
+          `<div class="autor-txt"><h3>${enlaceNombre(`${BASE_FICHAS}autores/${a.clave}/`, a.nombre, 'a-autor')}</h3>` +
           `<p class="autor-linea"><span class="autor-vida">${esc(a.anios)}</span>` +
           `<span class="autor-oficio">${esc(a.oficio)}</span></p>` +
           `<p class="autor-bio">${esc(a.bio)}</p>` +
@@ -12530,6 +13054,17 @@
     window.addEventListener('resize', medirCabecera);
     window.addEventListener('load', medirCabecera);
 
+    /* En el teléfono la barra superior es fija y translúcida, y el mapa se extiende por
+       debajo de ella: su alto real (con la muesca y el control segmentado, que cambia de
+       una sección a otra) se publica en --alto-barra para colocar lo que va debajo. */
+    function medirBarra(){
+      const h = document.querySelector('header');
+      if (h && h.offsetHeight)
+        document.documentElement.style.setProperty('--alto-barra', h.offsetHeight + 'px');
+    }
+    window.addEventListener('resize', medirBarra);
+    window.addEventListener('load', medirBarra);
+
     /* Un buscador encima de la cuadrícula de cada libro. Se monta desde aquí en vez de
        escribirlo en el marcado para que lo tengan también los libros que se añadan y las
        secciones generadas —la cronología, sin ir más lejos—, sin tocar nada. */
@@ -12567,10 +13102,16 @@
       document.getElementById('bookTag').innerText = book.tag;
       document.getElementById('bookTitle').innerText = book.title;
       document.getElementById('bookSub').innerText = book.sub;
+      const intro = document.getElementById('movilIntro');
+      if (intro) intro.innerText = book.sub || '';
 
       document.querySelectorAll('.book-btn').forEach(el => el.classList.remove('active'));
+      /* Sin botón pulsado —al entrar por la dirección (#/mapa) o con «atrás»— se busca el
+         de la sección; antes solo se sabía encontrar el de la Biblioteca, y el Mapa o la
+         Cronología quedaban sin marcar en la barra. */
       const marcar = btnElement ||
-        document.getElementById(book.esLibro || bookId === 'biblioteca' ? 'btnBiblioteca' : '');
+        document.getElementById(book.esLibro || bookId === 'biblioteca' ? 'btnBiblioteca' : '') ||
+        document.querySelector(`.book-btn[onclick*="'${bookId}'"]`);
       if (marcar) marcar.classList.add('active');
 
       document.querySelectorAll('.book-nav').forEach(el => el.classList.remove('active'));
@@ -12592,6 +13133,7 @@
       activeSubView = {};
 
       medirCabecera();
+      medirBarra();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -12672,8 +13214,12 @@
 
       // Cargar información detallada en el panel del visor
       const details = bookDetails()[currentArtworkGroupIndex];
-      document.getElementById('panelTitle').innerText = details.title;
-      document.getElementById('panelMeta').innerText = `${details.artist} | ${details.meta}`;
+      const srcObra = group[0].src;
+      document.getElementById('panelTitle').innerHTML = enlaceObra(srcObra, details.title);
+      document.getElementById('panelMeta').innerHTML = `${enlaceAutor(srcObra, details.artist)} | ${esc(details.meta)}`;
+      /* «Ver en el mapa»: solo donde hay mapa (no en el index.html local) y si la obra tiene sede. */
+      const aMapa = document.getElementById('panelMapaLink');
+      if (aMapa) aMapa.hidden = !(window.sedeDeObra && window.sedeDeObra(srcObra) >= 0);
       document.getElementById('panelAnalysis').innerText = details.analysis;
       document.getElementById('panelHistory').innerText = details.history;
       document.getElementById('panelBio').innerText = details.bio;
@@ -12744,6 +13290,12 @@
     let lastMouseX = -1;
     let lastMouseY = -1;
     let isMouseOverTextPanel = false;
+    /* Si la última interacción fue con el dedo. Se sabe por los eventos de puntero, que
+       distinguen ratón y tacto; los eventos de ratón que el navegador simula tras un toque
+       no llegan como puntero de tipo «mouse», así que no lo desmienten. */
+    let usoTactil = false;
+    window.addEventListener('pointerdown', e => { usoTactil = e.pointerType === 'touch'; }, true);
+    window.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') usoTactil = false; }, true);
 
     let keysPressed = {};
     let panAnimationFrame = null;
@@ -12766,7 +13318,8 @@
 
     function closeZoomModal() {
       zoomModal.classList.remove('active');
-      zoomModal.classList.remove('hover-bottom');
+      zoomModal.classList.remove('hover-bottom', 'hoja-info', 'user-inactive');
+      zoomModal.style.backgroundColor = '';
       if (document.fullscreenElement) {
         document.exitFullscreen().catch(() => {});
       }
@@ -12942,6 +13495,9 @@
     /* TEMPORIZADOR INTELIGENTE DE INACTIVIDAD (1.2 SEGUNDOS) CON RESPETO A LA LECTURA DEL TEXTO */
     function startShortInactivityTimer() {
       if (inactivityTimer) clearTimeout(inactivityTimer);
+      /* Con el dedo no hay cursor que mover para recuperar los controles: se quedan a la
+         vista y un toque en la obra los esconde o los devuelve, como en la fototeca. */
+      if (usoTactil) return;
       
       inactivityTimer = setTimeout(() => {
         if (zoomModal.classList.contains('active') && !isDragging) {
@@ -13058,6 +13614,204 @@
       }
     }, { passive: false });
 
+
+    /* ────────── GESTOS TÁCTILES DEL VISOR ──────────
+       Antes el visor no tenía ni un manejador táctil: en el teléfono la obra no se podía
+       arrastrar ni ampliar, y el 40× solo existía con ratón. Ahora, como en la fototeca:
+         · dos dedos amplían hacia el punto entre ellos y la obra sigue a los dedos;
+         · un dedo arrastra la obra ampliada;
+         · sin ampliar, deslizar en horizontal pasa de obra y deslizar hacia abajo cierra;
+         · doble toque acerca 2,5× hacia ese punto, o vuelve a la obra entera;
+         · un toque muestra u oculta los controles.
+       Durante el gesto la imagen se mueve sin interpolación —con el lerp iría por detrás
+       del dedo—; al soltar, el lerp de siempre se encarga de la inercia y de encajar. */
+    (function(){
+      const centro = () => ({ x: zoomViewport.clientWidth / 2, y: zoomViewport.clientHeight / 2 });
+      const rel = t => { const c = centro(); return { x: t.clientX - c.x, y: t.clientY - c.y }; };
+      const dist = (a, b) => Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+      const medio = (a, b) => rel({ clientX: (a.clientX + b.clientX) / 2, clientY: (a.clientY + b.clientY) / 2 });
+      function fijar(s, tx, ty){
+        zoomScale = targetZoomScale = s;
+        translateX = targetTranslateX = tx;
+        translateY = targetTranslateY = ty;
+        updateTransform();
+      }
+      function animar(){ if (!panAnimationFrame) panAnimationFrame = requestAnimationFrame(updateAnimationLoop); }
+      /* Ampliar a s dejando quieto el punto m (relativo al centro del visor). */
+      function zoomHacia(s, m){
+        s = Math.min(maxScale, Math.max(minScale, s));
+        const qx = (m.x - targetTranslateX) / targetZoomScale, qy = (m.y - targetTranslateY) / targetZoomScale;
+        targetZoomScale = s; targetTranslateX = m.x - s * qx; targetTranslateY = m.y - s * qy;
+        animar();
+      }
+      function alternarControles(){
+        if (zoomModal.classList.contains('hoja-info')) { cerrarHoja(); return; }
+        zoomModal.classList.toggle('user-inactive');
+      }
+
+      let g = null;                 // gesto en curso
+      let ultimoToque = null;       // para reconocer el doble toque
+      let toqueSimple = null;       // temporizador del toque simple, que espera al doble
+      const nuevoArrastre = t => ({ tipo: null, x0: t.clientX, y0: t.clientY, tx0: translateX, ty0: translateY,
+                                     vx: 0, vy: 0, px: t.clientX, py: t.clientY, pt: Date.now() });
+
+      zoomViewport.addEventListener('touchstart', ev => {
+        ev.preventDefault();        // sin ratón simulado ni zoom de página
+        usoTactil = true;
+        if (inactivityTimer) clearTimeout(inactivityTimer);
+        const t = ev.touches;
+        if (t.length >= 2) {
+          const m = medio(t[0], t[1]);
+          g = { tipo: 'pinza', d0: dist(t[0], t[1]) || 1, s0: zoomScale,
+                qx: (m.x - translateX) / zoomScale, qy: (m.y - translateY) / zoomScale };
+        } else if (t.length === 1) {
+          g = nuevoArrastre(t[0]);
+        }
+      }, { passive: false });
+
+      zoomViewport.addEventListener('touchmove', ev => {
+        ev.preventDefault();
+        if (!g) return;
+        const t = ev.touches;
+        if (g.tipo === 'pinza' && t.length >= 2) {
+          /* Por debajo de 1× se deja ceder un poco, con resistencia; al soltar vuelve. */
+          let s = g.s0 * dist(t[0], t[1]) / g.d0;
+          if (s < 1) s = 1 - (1 - s) * 0.35;
+          s = Math.min(maxScale, s);
+          const m = medio(t[0], t[1]);
+          zoomScale = targetZoomScale = s;
+          translateX = targetTranslateX = m.x - s * g.qx;
+          translateY = targetTranslateY = m.y - s * g.qy;
+          zoomTargetImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${zoomScale})`;
+          zoomScaleText.innerText = Math.round(zoomScale * 100) + '%';
+          if (zoomScale > 1.4 && typeof pedirOriginal === 'function') pedirOriginal();
+          return;
+        }
+        if (t.length !== 1 || g.tipo === 'pinza') return;
+        const dx = t[0].clientX - g.x0, dy = t[0].clientY - g.y0;
+        const ahora = Date.now(), dt = Math.max(1, ahora - g.pt);
+        g.vx = (t[0].clientX - g.px) / dt; g.vy = (t[0].clientY - g.py) / dt;
+        g.px = t[0].clientX; g.py = t[0].clientY; g.pt = ahora;
+        if (!g.tipo) {
+          if (Math.hypot(dx, dy) < 8) return;
+          g.tipo = zoomScale > 1.02 ? 'mover'
+                 : Math.abs(dx) > Math.abs(dy) ? 'pasar' : (dy > 0 ? 'cerrar' : 'nada');
+        }
+        if (g.tipo === 'mover') {
+          fijar(zoomScale, g.tx0 + dx, g.ty0 + dy);
+        } else if (g.tipo === 'pasar') {
+          zoomTargetImg.style.transform = `translateX(${dx}px)`;
+          zoomTargetImg.style.opacity = String(1 - Math.min(0.5, Math.abs(dx) / 700));
+        } else if (g.tipo === 'cerrar') {
+          const y = Math.max(0, dy);
+          zoomTargetImg.style.transform = `translateY(${y}px) scale(${1 - Math.min(0.25, y / 1400)})`;
+          zoomModal.style.backgroundColor = `rgba(2,3,4,${1 - Math.min(0.75, y / 400)})`;
+        }
+      }, { passive: false });
+
+      function volver(){
+        zoomTargetImg.classList.add('volviendo');
+        zoomTargetImg.style.opacity = '';
+        zoomModal.style.backgroundColor = '';
+        updateTransform();
+        setTimeout(() => zoomTargetImg.classList.remove('volviendo'), 260);
+      }
+
+      zoomViewport.addEventListener('touchend', ev => {
+        ev.preventDefault();
+        if (!g) return;
+        const quedan = ev.touches.length;
+        if (g.tipo === 'pinza') {
+          if (quedan === 1) {       // de dos dedos a uno: sigue como arrastre, sin salto
+            g = nuevoArrastre(ev.touches[0]); g.tipo = 'mover';
+            return;
+          }
+          if (zoomScale < 1) { targetZoomScale = 1; targetTranslateX = targetTranslateY = 0; animar(); }
+          g = null; return;
+        }
+        if (quedan) return;
+        const gesto = g; g = null;
+        const dx = gesto.px - gesto.x0, dy = gesto.py - gesto.y0;
+        const reciente = Date.now() - gesto.pt < 80;
+        if (gesto.tipo === 'mover') {
+          /* Inercia: el destino queda un poco más allá en la dirección del gesto y el lerp
+             frena hasta él. */
+          if (reciente) { targetTranslateX += gesto.vx * 180; targetTranslateY += gesto.vy * 180; animar(); }
+          return;
+        }
+        if (gesto.tipo === 'pasar') {
+          const rapido = reciente && Math.abs(gesto.vx) > 0.45;
+          if (Math.abs(dx) > zoomViewport.clientWidth * 0.22 || rapido) {
+            navigateSequential(dx < 0 ? 1 : -1);
+            /* La obra nueva entra desde el lado hacia el que se deslizó. */
+            zoomTargetImg.style.transform = `translateX(${dx < 0 ? 60 : -60}px)`;
+            zoomTargetImg.style.opacity = '0';
+            requestAnimationFrame(() => requestAnimationFrame(volver));
+          } else volver();
+          return;
+        }
+        if (gesto.tipo === 'cerrar') {
+          if (dy > 110 || (reciente && gesto.vy > 0.6)) {
+            zoomTargetImg.style.transform = ''; zoomTargetImg.style.opacity = '';
+            closeZoomModal();
+          } else volver();
+          return;
+        }
+        if (gesto.tipo) return;
+        /* Toque: simple o doble. El simple espera un instante por si llega el segundo. */
+        const ahora = Date.now();
+        const p = { x: gesto.x0, y: gesto.y0 };
+        if (ultimoToque && ahora - ultimoToque.t < 300 && Math.hypot(p.x - ultimoToque.x, p.y - ultimoToque.y) < 40) {
+          clearTimeout(toqueSimple); ultimoToque = null;
+          if (targetZoomScale > 1.05) resetZoom();
+          else zoomHacia(2.5, rel({ clientX: p.x, clientY: p.y }));
+          return;
+        }
+        ultimoToque = { t: ahora, x: p.x, y: p.y };
+        clearTimeout(toqueSimple);
+        toqueSimple = setTimeout(alternarControles, 300);
+      }, { passive: false });
+
+      zoomViewport.addEventListener('touchcancel', () => { if (g && g.tipo !== 'mover') volver(); g = null; });
+
+      /* ---- la hoja del análisis ---- */
+      function abrirHoja(){
+        zoomModal.classList.remove('user-inactive');
+        zoomModal.classList.add('hoja-info');
+        zoomDescPanel.scrollTop = 0;
+      }
+      function cerrarHoja(){
+        zoomModal.classList.remove('hoja-info', 'hover-bottom');
+        zoomDescPanel.style.removeProperty('--hoja-dy');
+      }
+      zoomCaptionBox.addEventListener('click', () => {
+        if (!usoTactil) return;           // con ratón la hoja se abre al pasar por encima
+        zoomModal.classList.contains('hoja-info') ? cerrarHoja() : abrirHoja();
+      });
+      const asa = document.getElementById('zoomHojaAsa');
+      if (asa) asa.addEventListener('click', cerrarHoja);
+      /* Deslizar la hoja hacia abajo la cierra, pero solo empezando arriba del todo: si no,
+         no habría forma de volver a subir por el texto. */
+      let h = null;
+      zoomDescPanel.addEventListener('touchstart', ev => {
+        h = zoomDescPanel.scrollTop <= 0 ? { y0: ev.touches[0].clientY, dy: 0 } : null;
+      }, { passive: true });
+      zoomDescPanel.addEventListener('touchmove', ev => {
+        if (!h) return;
+        h.dy = ev.touches[0].clientY - h.y0;
+        if (h.dy <= 0) { zoomDescPanel.style.removeProperty('--hoja-dy'); return; }
+        ev.preventDefault();
+        zoomDescPanel.classList.add('siguiendo');
+        zoomDescPanel.style.setProperty('--hoja-dy', h.dy + 'px');
+      }, { passive: false });
+      zoomDescPanel.addEventListener('touchend', () => {
+        zoomDescPanel.classList.remove('siguiendo');
+        if (h && h.dy > 90) cerrarHoja();
+        else zoomDescPanel.style.removeProperty('--hoja-dy');
+        h = null;
+      });
+    })();
+
     const animKeys = ['w', 'a', 's', 'd', '+', '=', '-', '_', 'numpadadd', 'numpadsubtract'];
 
     document.addEventListener('keydown', (e) => {
@@ -13144,6 +13898,7 @@
       const factorMarca = s => clamp(1 + Math.log2(Math.max(s, S_REF) / S_REF) * 0.23, 1, 2.4);
       const SEP_PX = 34;
       const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+      const tactil = () => !!(window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches);
       /* El panel del mapa nace dentro de una pestaña oculta, así que el marco mide 0 px
          hasta que se muestra. Sin esta guarda la escala sería 0, el umbral de agrupación
          infinito y los radios Infinity: SVG inválido. */
@@ -13155,12 +13910,20 @@
       /* Ajusta un rectángulo del lienzo al marco respetando SU proporción: se amplía la
          dimensión que falte, nunca se recorta. Así ninguna vista deja bandas negras a un
          lado y contenido cortado al otro. */
+      /* En el teléfono el mapa ocupa la pantalla entera, pero no se ve entero: arriba lo
+         tapan la barra translúcida y los continentes, y abajo la hoja con la lista. Lo que
+         se encuadra tiene que quedar centrado en la franja que sí se ve, no debajo de la
+         hoja. En escritorio los dos huecos valen 0 y el encuadre es el de siempre. */
+      let huecoArriba = 0, huecoAbajo = 0;
       function encajar(x0, y0, x1, y1, margen){
         const m = margen == null ? 1.05 : margen;
         const aw = anchoMarco(), ah = altoMarco();
+        const av = Math.max(ah * 0.3, ah - huecoArriba - huecoAbajo);   // alto de la franja visible
         let w = (x1 - x0) * m, h = (y1 - y0) * m;
-        if (w / h < aw / ah) w = h * aw / ah; else h = w * ah / aw;
-        return { x: (x0 + x1) / 2 - w / 2, y: (y0 + y1) / 2 - h / 2, w: w, h: h };
+        if (w / h < aw / av) w = h * aw / av; else h = w * av / aw;
+        const alto = h * ah / av;                                     // el marco entero
+        return { x: (x0 + x1) / 2 - w / 2, y: (y0 + y1) / 2 - h / 2 - huecoArriba * alto / ah,
+                 w: w, h: alto };
       }
       /* La vista inicial y el botón Europa son lo mismo: el encuadre de las sedes
          europeas, no un rectángulo fijo. Así al arrancar caben todas y volver a Europa
@@ -13495,8 +14258,9 @@
 
         reescalar();
         pista.textContent = gs.length === SEDES.length
-          ? 'W A S D para moverte · + y − para acercar · pulsa un punto para desplegarlo'
-          : `${gs.length} grupos · acércate o pulsa uno para separarlo`;
+          ? (tactil() ? 'Pellizca para acercar · toca un punto para desplegarlo'
+                      : 'W A S D para moverte · + y − para acercar · pulsa un punto para desplegarlo')
+          : `${gs.length} grupos · ${tactil() ? 'pellizca' : 'acércate'} o toca uno para separarlo`;
       }
 
       /* Punto de sede o de grupo, en unidades de pantalla. */
@@ -13687,6 +14451,7 @@
             el.classList.toggle('sel', +el.dataset.i === idx));
         pintarDetalle(SEDES[idx]);
         dibujar();
+        hojaA('medio'); hojaEnfocar('.sede-item.sel');
       }
 
       /* ---------- tarjeta flotante ---------- */
@@ -13791,10 +14556,13 @@
               sedeSel = -1; grupoAbierto = -1; ciudadAbierta = null;
               pintarLista();
               pintarContinentes();   // un libro puede no tener obras en algún continente
+              detalle.dataset.tipo = 'libro';
               detalle.innerHTML = libroFiltro ? resumenLibro(libroFiltro) : '';
+              if (libroFiltro) hojaA('medio');
               aplicar(true);
               // encuadrar todas las sedes del libro: si las hay en América, se aleja
               irAVista(libroFiltro ? encajarSedes(activas()) : vistaEuropa(), true);
+              if (libroFiltro) hojaEnfocar('.libro-item.sel');
             });
             lista.appendChild(li);
             /* El libro elegido despliega sus obras aquí mismo, con su miniatura: antes
@@ -13909,9 +14677,11 @@
       function elegirSede(idx, volar){
         sedeSel = idx; grupoAbierto = idx; ciudadAbierta = null;
         const s = SEDES[idx];
+        hojaA('medio');
         if (modo === 'sedes') pintarLista();
         if (volar) irAVista(encajarSedes([idx], xCercano(s.x) - s.x), true); else dibujar();
         pintarDetalle(s);
+        hojaEnfocar('.sede-item.sel');
       }
 
       /* Un grupo que no se puede separar sobre el mapa se despliega como lista de
@@ -13931,6 +14701,8 @@
                  `<span>${s.obras.length}</span></h4>` +
                  `<div class="obra-min-grid">${obras}</div></div>`;
         }).join('');
+        detalle.dataset.tipo = 'ciudad';
+        hojaA('medio'); hojaEnfocar(null);
         detalle.innerHTML =
           `<div class="sede-cab"><h3>${esc(ciudad)}</h3>` +
           `<p>${esc(pais)} · ${c.sedes.length} museos · ${c.n} obras de la colección</p></div>` +
@@ -13948,6 +14720,7 @@
           `<img src="${BOOKS.mapa.groups[o.i][0].src}" alt="${esc(o.t)}" loading="lazy">` +
           `<span class="obra-min-t">${esc(o.t)}</span>` +
           `<span class="obra-min-m">${esc(o.a)} · ${esc(o.libro)}</span></button>`).join('');
+        detalle.dataset.tipo = 'sede';
         detalle.innerHTML = `<div class="sede-cab"><h3>${esc(s.nombre)}</h3>` +
           `<p>${esc(s.ciudad)}, ${esc(s.pais)} · ${s.obras.length} obra${s.obras.length>1?'s':''} de la colección</p></div>` +
           `<div class="obra-min-grid">${obras}</div>`;
@@ -14113,14 +14886,139 @@
       /* La pestaña arranca oculta: en cuanto el marco recibe tamaño real hay que rehacer
          el encuadre y redibujar, porque lo calculado a 0 px no vale. */
       let medido = false;
+      let alRemedir = null;      // la hoja del teléfono se reajusta con el mismo remedido
       function remedir(){
         if (!visible()) return;
+        if (alRemedir) alRemedir();
         if (!medido) { medido = true; vista = vistaTodo(); vistaObj = Object.assign({}, vista); }
         else { vista.h = vista.w * altoMarco() / anchoMarco(); vistaObj = Object.assign({}, vista); }
         aplicar(true);
       }
       if (typeof ResizeObserver === 'function') new ResizeObserver(remedir).observe(marco);
       window.addEventListener('resize', remedir);
+
+      /* ---------- el teléfono: la lista como hoja deslizable ----------
+         En una pantalla estrecha el mapa ocupa todo y la lista sube desde abajo, como en
+         las aplicaciones de mapas: tres alturas —asomada (buscador y pestañas), media (la
+         mitad) y alta—, que se cambian arrastrando el asa o tocándola. Elegir una sede la
+         deja a media altura con la sede a la vista, de modo que se ven a la vez el punto
+         en el mapa y lo que guarda. El panel de debajo del mapa entra en la hoja: fuera de
+         ella quedaría detrás de la barra de pestañas. */
+      const wrap = marco.parentNode;
+      const hoja = document.getElementById('mapaLado');
+      const asa = document.getElementById('mapaHojaAsa');
+      const cuerpo = document.getElementById('mapaLadoCuerpo');
+      let estadoHoja = 'bajo';
+      function movil(){ return !!(window.matchMedia && window.matchMedia('(max-width: 760px)').matches) && !!hoja && !!cuerpo; }
+      function alturas(){
+        const total = wrap.clientHeight || 600;
+        const arriba = (document.querySelector('header') || {}).offsetHeight || 56;
+        let bajo = 150;
+        const t = togSedes.getBoundingClientRect(), r = hoja.getBoundingClientRect();
+        if (t.bottom > r.top) bajo = Math.round(t.bottom - r.top + 12);
+        return { bajo, medio: Math.round(total * 0.5), alto: Math.round(total - arriba - 6) };
+      }
+      function ponerHoja(px, animar){
+        hoja.classList.toggle('siguiendo', !animar);
+        wrap.style.setProperty('--hoja-vis', px + 'px');
+        /* Lo que la hoja tapa del mapa, para encuadrar en lo que queda. En alto el mapa ya
+           casi no se ve: se encuadra como si estuviera a media altura. */
+        const a = alturas();
+        huecoAbajo = Math.min(px, a.medio);
+        const cr = contBar ? contBar.getBoundingClientRect() : null, mr = marco.getBoundingClientRect();
+        huecoArriba = cr && cr.bottom > mr.top ? Math.round(cr.bottom - mr.top + 6) : 0;
+      }
+      function hojaA(estado){
+        if (!movil()) return;
+        estadoHoja = estado;
+        ponerHoja(alturas()[estado], true);
+        if (asa) asa.setAttribute('aria-expanded', estado !== 'bajo');
+      }
+      /* Lleva a la vista, dentro de la hoja, lo recién elegido. Espera un fotograma a que
+         la lista se haya repintado. */
+      function hojaEnfocar(sel){
+        if (!movil()) return;
+        requestAnimationFrame(() => {
+          const el = sel ? cuerpo.querySelector(sel) : null;
+          const cr = cuerpo.getBoundingClientRect();
+          cuerpo.scrollTo({ top: el ? cuerpo.scrollTop + el.getBoundingClientRect().top - cr.top - 8 : 0,
+                            behavior: 'smooth' });
+        });
+      }
+      function colocarDetalle(){
+        if (!detalle || !cuerpo) return;
+        if (movil()) { if (detalle.parentNode !== cuerpo) cuerpo.insertBefore(detalle, nota); }
+        else if (detalle.parentNode === cuerpo) wrap.parentNode.appendChild(detalle);
+      }
+      function reajustarHoja(){
+        colocarDetalle();
+        if (movil()) { if (visible()) hojaA(estadoHoja); }
+        else { huecoArriba = huecoAbajo = 0; if (hoja) hoja.classList.remove('siguiendo'); }
+      }
+
+      if (hoja && asa && cuerpo) {
+        /* Arrastrar: la hoja sigue al dedo y, al soltar, encaja en la altura más cercana,
+           o en la siguiente si el gesto fue rápido. */
+        let arr = null;
+        const empezar = (y, desdeCuerpo) => {
+          arr = { y0: y, vis0: parseFloat(getComputedStyle(wrap).getPropertyValue('--hoja-vis')) || alturas()[estadoHoja],
+                  desdeCuerpo, decidido: !desdeCuerpo, activo: !desdeCuerpo, py: y, pt: Date.now(), v: 0 };
+        };
+        const mover = (y, ev) => {
+          if (!arr) return;
+          const dy = y - arr.y0;
+          if (!arr.decidido) {
+            if (Math.abs(dy) < 6) return;
+            arr.decidido = true;
+            /* Desde la lista: hacia arriba la hoja sube si aún no está arriba del todo;
+               hacia abajo baja solo si la lista ya está en su principio. Si no, se desplaza
+               la lista con normalidad. */
+            arr.activo = dy < 0 ? estadoHoja !== 'alto' : cuerpo.scrollTop <= 0;
+          }
+          if (!arr.activo) return;
+          if (ev && ev.cancelable) ev.preventDefault();
+          const a = alturas();
+          const px = Math.max(a.bajo * 0.8, Math.min(a.alto, arr.vis0 - dy));
+          const ahora = Date.now();
+          arr.v = (y - arr.py) / Math.max(1, ahora - arr.pt); arr.py = y; arr.pt = ahora;
+          ponerHoja(px, false);
+        };
+        const soltar = () => {
+          if (!arr) return;
+          const a = alturas(), fin = arr;
+          arr = null;
+          if (!fin.activo) return;
+          const vis = parseFloat(getComputedStyle(wrap).getPropertyValue('--hoja-vis')) || a[estadoHoja];
+          const orden = ['bajo', 'medio', 'alto'];
+          let estado = orden.reduce((m, e) => Math.abs(a[e] - vis) < Math.abs(a[m] - vis) ? e : m, 'bajo');
+          if (Math.abs(fin.v) > 0.5 && Date.now() - fin.pt < 90) {
+            const i = orden.indexOf(estadoHoja) + (fin.v < 0 ? 1 : -1);
+            estado = orden[Math.max(0, Math.min(2, i))];
+          }
+          hojaA(estado);
+        };
+        asa.addEventListener('touchstart', ev => empezar(ev.touches[0].clientY, false), { passive: true });
+        cuerpo.addEventListener('touchstart', ev => empezar(ev.touches[0].clientY, true), { passive: true });
+        [asa, cuerpo].forEach(el => {
+          el.addEventListener('touchmove', ev => mover(ev.touches[0].clientY, ev), { passive: false });
+          el.addEventListener('touchend', soltar);
+          el.addEventListener('touchcancel', soltar);
+        });
+        /* Tocar el asa alterna entre asomada y media altura (o baja desde alta). */
+        const alternar = () => hojaA(estadoHoja === 'bajo' ? 'medio' : 'bajo');
+        asa.addEventListener('click', alternar);
+        asa.addEventListener('keydown', ev => {
+          if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); alternar(); }
+        });
+        /* Al escribir en el buscador, la hoja sube: el teclado tapará la mitad de abajo. */
+        cuerpo.addEventListener('focusin', ev => {
+          if (ev.target && ev.target.tagName === 'INPUT') hojaA('alto');
+        });
+        /* Mover el mapa con la hoja alta la baja a media altura: si no, se arrastra a ciegas. */
+        marco.addEventListener('touchstart', () => { if (estadoHoja === 'alto') hojaA('medio'); }, { passive: true });
+        alRemedir = reajustarHoja;
+        reajustarHoja();
+      }
 
       /* ---------- teclado: las mismas teclas que el visor de obras ----------
          W A S D desplazan y + / - acercan, de forma continua mientras se mantienen.
@@ -14175,6 +15073,26 @@
       document.addEventListener('keyup', ev => { pulsadas[ev.key.toLowerCase()] = false; });
       window.addEventListener('blur', () => { for (const k in pulsadas) pulsadas[k] = false; });
 
+      /* «Ver en el mapa» desde una obra (el visor, o #/<libro>/mapa/<n> desde su página).
+         Se empareja por la imagen principal, no por el índice: el mapa numera las obras
+         por la cronología. Espera dos fotogramas a que la pestaña del mapa tenga tamaño, y
+         mide antes de volar: el primer remedido pone la vista del mundo entero y, si
+         llegara después, pisaría el vuelo. */
+      const obraDeSede = src => o => BOOKS.mapa.groups[o.i] && BOOKS.mapa.groups[o.i][0].src === src;
+      window.sedeDeObra = src => SEDES.findIndex(sd => sd.obras.some(obraDeSede(src)));
+      window.verObraEnMapa = function (src) {
+        const idx = window.sedeDeObra(src);
+        if (idx < 0) return false;
+        const o = SEDES[idx].obras.find(obraDeSede(src));
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          remedir();
+          elegirSede(idx, true);
+          const b = detalle.querySelector(`.obra-min[data-obra="${o.i}"]`);
+          if (b) b.classList.add('sel');   // sin scrollIntoView: movía la página entera
+        }));
+        return true;
+      };
+
       // estado inicial: Europa, con la sede mayor ya elegida en la lista y el detalle
       vista = vistaTodo(); vistaObj = Object.assign({}, vista);
       aplicar();
@@ -14210,16 +15128,16 @@
     }
 
     /* ══════════ Solo en GitHub Pages: la página de cada obra ══════════
-       FICHAS[libro][índice] es la dirección de su página estática (obras/<libro>/<nn-título>/),
-       generada por paginas.py con los mismos índices que usa el visor. */
-    const FICHAS = {"genesis": ["obras/genesis/01-la-creacion-de-adan", "obras/genesis/02-la-expulsion-del-paraiso", "obras/genesis/03-cain-y-abel", "obras/genesis/04-el-diluvio-universal", "obras/genesis/05-la-torre-de-babel", "obras/genesis/06-cain", "obras/genesis/07-elohim-creando-a-adan", "obras/genesis/08-sombra-y-oscuridad-la-tarde-del-diluvio", "obras/genesis/09-la-confusion-de-las-lenguas", "obras/genesis/10-el-diluvio-universal", "obras/genesis/11-tras-el-diluvio-el-dia-cuadragesimo-primero", "obras/genesis/12-el-diluvio", "obras/genesis/13-la-disminucion-de-las-aguas-del-diluvio", "obras/genesis/14-adan-y-eva", "obras/genesis/15-adan-y-eva", "obras/genesis/16-el-anciano-de-los-dias", "obras/genesis/17-el-sacrificio-de-isaac", "obras/genesis/18-el-sacrificio-de-isaac", "obras/genesis/19-la-trinidad-la-hospitalidad-de-abraham", "obras/genesis/20-la-lucha-de-jacob-con-el-angel", "obras/genesis/21-jacob-luchando-con-el-angel", "obras/genesis/22-la-vision-tras-el-sermon", "obras/genesis/23-agar-en-el-desierto", "obras/genesis/24-la-tunica-de-jose", "obras/genesis/25-la-destruccion-de-sodoma-y-gomorra", "obras/genesis/26-el-jardin-de-las-delicias", "obras/genesis/41-el-pecado-original-y-la-expulsion-del-paraiso", "obras/genesis/27-lot-y-sus-hijas", "obras/genesis/28-eliezer-y-rebeca", "obras/genesis/29-isaac-bendice-a-jacob", "obras/genesis/30-el-sueno-de-jacob", "obras/genesis/31-el-invierno-o-el-diluvio", "obras/genesis/32-la-embriaguez-de-noe", "obras/genesis/33-el-encuentro-de-abraham-y-melquisedec", "obras/genesis/34-la-sinagoga-de-dura-europos", "obras/genesis/35-jose-acusado-por-la-mujer-de-putifar", "obras/genesis/36-jacob-bendice-a-los-hijos-de-jose", "obras/genesis/37-jacob-y-raquel-en-el-pozo", "obras/genesis/38-jose-interpreta-los-suenos-del-faraon", "obras/genesis/39-adan-y-eva", "obras/genesis/40-el-diluvio", "obras/genesis/42-las-capillas-del-desierto-el-bagawat", "obras/genesis/43-el-sacrificio-de-isaac-en-el-suelo-de-una-sinagoga", "obras/genesis/44-el-arca-como-un-cofre-el-mosaico-de-misis", "obras/genesis/45-jose-huye-de-la-mujer-de-putifar-yusuf-y-zulaija", "obras/genesis/46-el-primer-duelo", "obras/genesis/47-noe-embarca-a-los-animales-una-miniatura-armenia-de-isfahan", "obras/genesis/48-la-creacion-de-eva-en-la-iglesia-de-narga-selassie", "obras/genesis/49-el-angel-detiene-la-mano-de-abraham-en-la-iglesia-de-narga", "obras/genesis/50-adan-y-eva-con-sus-trece-parejas-de-gemelos-en-la-zubdetu-t", "obras/genesis/51-adan-y-eva-ante-el-arbol-relieve-de-la-iglesia-de-la-santa", "obras/genesis/52-la-rebeca-velada", "obras/genesis/53-jose-se-da-a-conocer-a-sus-hermanos", "obras/genesis/54-la-huida-de-lot-y-su-familia-de-sodoma", "obras/genesis/55-la-muerte-de-abel", "obras/genesis/56-expulsion-del-paraiso", "obras/genesis/57-la-partida-de-jacob", "obras/genesis/58-el-regreso-de-noe-o-de-abraham-a-la-tierra-de-canaan", "obras/genesis/59-la-entrada-de-los-animales-en-el-arca-de-noe", "obras/genesis/60-abel", "obras/genesis/61-el-sacrificio-de-isaac", "obras/genesis/62-presentacion-de-jacob-a-isaac", "obras/genesis/63-el-sacrificio-de-melquisedec-boceto", "obras/genesis/64-cain", "obras/genesis/65-lot-y-sus-hijas"], "exodo": ["obras/exodo/01-el-paso-del-mar-rojo-ritual-de-vardan", "obras/exodo/02-el-arcangel-miguel-y-el-paso-del-mar-rojo", "obras/exodo/03-asiya-y-sus-doncellas-encuentran-a-moises-en-el-nilo", "obras/exodo/04-la-hagada-de-las-cabezas-de-pajaro-la-preparacion-de-la", "obras/exodo/05-el-angel-yibril-gabriel-trae-a-musa-las-leyes-de-dios", "obras/exodo/06-moises-con-las-tablas-de-la-ley", "obras/exodo/07-la-vara-de-musa-se-convierte-en-dragon-ante-los-magos-del", "obras/exodo/08-moises-se-descalza-ante-la-zarza-ardiente", "obras/exodo/09-las-plagas-de-egipto-ranas-piojos-fieras-y-peste-hagada-de", "obras/exodo/10-moises", "obras/exodo/11-la-adoracion-del-becerro-de-oro", "obras/exodo/12-moises-con-las-tablas-de-la-ley", "obras/exodo/13-el-arca-de-la-alianza-con-los-querubines"], "levitico": ["obras/levitico/01-la-consagracion-del-tabernaculo-y-el-sacerdocio-de-aaron", "obras/levitico/02-el-chivo-expiatorio", "obras/levitico/03-el-sumo-sacerdote-aaron", "obras/levitico/04-aaron-ofrece-el-sacrificio-ante-moises-andre-de-corbie", "obras/levitico/05-inicial-historiada-v-del-levitico-moises-ofrece-un-cordero", "obras/levitico/06-nadab-y-abiu-consumidos-por-el-fuego", "obras/levitico/07-aaron-revestido-con-el-pectoral-hoshen", "obras/levitico/08-la-ofrenda-de-las-dos-aves-puras-el-leproso-el-dia-de-su", "obras/levitico/09-el-altar-de-cuernos-de-tel-beerseba"], "gilgamesh": ["obras/gilgamesh/01-tablilla-xi-el-diluvio", "obras/gilgamesh/02-el-heroe-dominando-un-leon", "obras/gilgamesh/03-gilgamesh-y-huwawa-en-una-tablilla-sumeria", "obras/gilgamesh/04-la-mascara-de-humbaba", "obras/gilgamesh/05-la-tablilla-del-sueno", "obras/gilgamesh/06-el-relieve-de-la-reina-de-la-noche", "obras/gilgamesh/07-el-vaso-de-warka", "obras/gilgamesh/08-lamassu-el-guardian-de-la-puerta", "obras/gilgamesh/09-sello-cilindrico-del-heroe-y-el-toro", "obras/gilgamesh/11-el-heroe-abate-al-toro", "obras/gilgamesh/10-la-caza-de-leones-de-asurbanipal", "obras/gilgamesh/12-la-nueva-tablilla-v-de-la-epopeya-de-gilgamesh"], "iliada": ["obras/iliada/01-aquiles-y-ayax-jugando-a-los-dados", "obras/iliada/02-jupiter-y-tetis", "obras/iliada/03-la-colera-de-aquiles", "obras/iliada/04-andromaca-llorando-a-hector", "obras/iliada/05-el-triunfo-de-aquiles", "obras/iliada/06-aquiles-llorando-la-muerte-de-patroclo", "obras/iliada/07-priamo-pide-a-aquiles-el-cuerpo-de-hector", "obras/iliada/08-la-procesion-del-caballo-de-troya", "obras/iliada/09-el-juicio-de-paris", "obras/iliada/10-la-mascara-de-agamenon", "obras/iliada/11-la-puerta-de-los-leones", "obras/iliada/12-el-casco-de-colmillos-de-jabali", "obras/iliada/13-laocoonte-y-sus-hijos", "obras/iliada/14-guerrero-del-fronton-del-templo-de-afaya", "obras/iliada/15-las-murallas-de-troya", "obras/iliada/22-aquiles-a-punto-de-matar-a-hector", "obras/iliada/23-la-colera-de-aquiles", "obras/iliada/24-el-rescate-del-cuerpo-de-hector", "obras/iliada/25-el-rescate-del-cuerpo-de-hector", "obras/iliada/26-papiro-de-oxirrinco-221", "obras/iliada/27-la-iliada-de-garcia-malo", "obras/iliada/16-la-muerte-de-sarpedon", "obras/iliada/17-tetis-recibe-las-armas-de-aquiles", "obras/iliada/18-aquiles-y-pentesilea", "obras/iliada/19-los-amores-de-paris-y-helena", "obras/iliada/20-briseida-llevada-ante-agamenon", "obras/iliada/21-juegos-funebres-en-honor-de-patroclo", "obras/iliada/28-la-embajada-de-crises-ante-agamenon", "obras/iliada/29-el-sarcofago-de-aquiles-de-tiro", "obras/iliada/30-hector-reprocha-a-paris-su-retirada-del-combate", "obras/iliada/31-aquiles-enloquecido-por-la-perdida-de-patroclo-rechaza-el"], "atrahasis": ["obras/atrahasis/01-la-tablilla-de-atrahasis", "obras/atrahasis/02-enlil-el-dios-que-no-podia-dormir", "obras/atrahasis/03-ea-el-dios-que-aviso-a-atrahasis", "obras/atrahasis/04-despues-de-que-el-diluvio-arrasara-la-lista-real-sumeria", "obras/atrahasis/05-lamashtu-la-que-arrebata-al-nino", "obras/atrahasis/06-la-placa-del-enfermo-lamashtu-expulsada-al-rio"], "enuma": ["obras/enuma/01-cuando-en-lo-alto-el-poema-en-la-biblioteca-de-ninive", "obras/enuma/02-la-copia-de-kish", "obras/enuma/03-el-mushussu-el-dragon-de-marduk", "obras/enuma/04-los-simbolos-de-marduk-en-un-sello", "obras/enuma/05-el-ritual-del-ano-nuevo-donde-se-recitaba-el-poema", "obras/enuma/06-la-tablilla-del-esagil-las-medidas-de-la-casa-de-marduk", "obras/enuma/07-la-azada-y-el-calamo-marduk-y-nabu-en-una-estela-asiria", "obras/enuma/08-asurbanipal-reconstruye-la-casa-de-marduk", "obras/enuma/09-la-imagen-que-se-tomo-por-marduk-contra-tiamat"]};
+       FICHAS (arriba, junto a BASE_FICHAS) da la dirección de su página estática. Se busca
+       por la imagen con urlObra: con FICHAS[currentBook] el botón desaparecía al abrir la
+       obra desde la portada, la cronología o el mapa, que numeran a su manera. */
     (function () {
       const actualizar = updateModalImageAndArrows;
       updateModalImageAndArrows = function () {
         actualizar();
         const a = document.getElementById('panelFichaLink');
-        const r = (FICHAS[currentBook] || [])[currentArtworkGroupIndex];
-        if (a) { a.hidden = !r; if (r) a.href = r + '/'; }
+        const r = urlObra(bookGroups()[currentArtworkGroupIndex][0].src);
+        if (a) { a.hidden = !r; if (r) a.href = r; }
       };
     })();
 
@@ -14245,6 +15163,17 @@
         if (!libro || !BOOKS[libro]) return;
         restaurando = true;
         try {
+          /* #/genesis/mapa/12: «Ver en el mapa» desde la página de una obra. Se abre el mapa,
+             no el libro, y la dirección se sustituye por #/mapa (sin sumar un paso al «atrás»). */
+          if (tab === 'mapa') {
+            const g = BOOKS[libro].groups[+n];
+            if (g && window.verObraEnMapa) {
+              irLibro('mapa');
+              history.replaceState(null, '', '#/mapa');
+              window.verObraEnMapa(g[0].src);
+              return;
+            }
+          }
           if (libro !== currentBook) irLibro(libro);
           /* #/genesis/obra/12[/1]: lo que abre «Abrir en el visor» desde la página de una obra. */
           if (tab === 'obra') {
@@ -14260,3 +15189,5 @@
       leer();
     })();
   </script>
+</body>
+</html>
