@@ -83,6 +83,23 @@ imagen son por lo tanto `./<Libro>/NN_archivo.jpg`, nunca `./NN_archivo.jpg`.
   usada como vista principal cuando supera a la que ya había.
 - Sin acentos ni espacios en los nombres de archivo (el contenido sí los lleva).
 
+## Dónde se construye: fuera de iCloud
+
+La carpeta del proyecto está en iCloud Drive con «Optimizar almacenamiento», y macOS sube a la nube
+los archivos que no se han abierto hace tiempo: cada lectura esperaba a bajarlos, y construir y
+probar tardaba más de diez minutos (con los procesos parados al 0 % de CPU esperando a
+`fileproviderd`). Por eso **`build/` es un enlace simbólico a `~/Library/Caches/biblioteca-visual/build`**,
+un disco local que iCloud no toca; los scripts siguen escribiendo en `build/` sin enterarse. El
+worktree de `gh-pages` vive ahí dentro y `publicar_sitio.sh` lo registra por su ruta física. Si el
+enlace se pierde, basta con volver a crearlo:
+
+```sh
+mkdir -p ~/Library/Caches/biblioteca-visual/build && ln -s ~/Library/Caches/biblioteca-visual/build build
+```
+
+Además la cadena del artefacto ya no genera ni incrusta vistas previas (el artefacto de claude.ai no
+se publica): construir tarda un segundo y la batería entera, unos cinco.
+
 ## Las imágenes ya no se guardan en este ordenador
 
 Desde el 28 de septiembre de 2026 **la colección no guarda copia local de las imágenes**: el sitio las

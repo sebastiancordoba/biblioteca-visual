@@ -24,8 +24,11 @@ def citar_pasajes(ruta):
     sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
     from incorporar_obras import frases_sin_cita
     d = json.load(open(ruta, encoding="utf-8"))
+    # Sirve igual para los resultados de verificación (una lista) y para las fichas de alta
+    # ({"obras": [...]}).
+    registros = d["obras"] if isinstance(d, dict) else d
     n = 0
-    for r in d:
+    for r in registros:
         for campo in ("analysis", "history", "bio"):
             fr = re.split(CORTE, r[campo])
             sin = set(frases_sin_cita(r[campo]))

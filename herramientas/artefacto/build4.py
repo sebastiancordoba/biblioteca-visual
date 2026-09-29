@@ -190,8 +190,10 @@ orden=[]; datos={}
 def idx(rel):
     if rel not in datos:
         p=os.path.join(TH, rel.replace("/","__"))
-        if os.path.exists(p):
-            datos[rel]="data:image/jpeg;base64,"+base64.b64encode(open(p,"rb").read()).decode()
+        # El artefacto de claude.ai ya no se publica: nada de incrustar previas (leerlas de disco era
+        # lo más lento de toda la construcción). Todas las imágenes, con su URL de Commons.
+        if False:
+            pass
         else:
             # Sin copia local no hay vista previa que incrustar: la miniatura de Commons. El
             # artefacto de claude.ai ya no se publica; esto solo evita que la cadena se pare.

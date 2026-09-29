@@ -1,7 +1,7 @@
 {
  "Génesis":("50 capítulos. La colección cubría solo del 1 al 11; la historia patriarcal —el asunto del propio ensayo de la colección— estaba entera vacía.","Cap.",[
   ("1","Creación; el Anciano de los Días","si","Blake"),("1–2","La creación de Adán","si","Miguel Ángel"),
-  ("2","La creación de Eva","no","Miguel Ángel, Sixtina — en Commons solo a 1,3 MP"),
+  ("2","La creación de Eva","si","Mural de Narga Selassie, Etiopía"),
   ("2–3","El Edén","si","El Bosco · Cranach · Durero · El Bagawat, Egipto"),("3","La expulsión del Paraíso","si","Masaccio"),
   ("3","Pecado original y expulsión","no","Miguel Ángel, Sixtina — solo 1,4 MP"),
   ("4","Caín y Abel","si","Tiziano · Cormon · Bouguereau, Buenos Aires"),
@@ -34,6 +34,20 @@
   ("—","Aquiles y Áyax juegan a los dados","si","Exekias"),
   ("arq.","Micenas y Troya","si","Máscara de Agamenón · Puerta de los Leones · Egina · Hisarlik"),
   ("arq.","La copa de Néstor","no","pendiente")]),
+ "Éxodo":("40 capítulos. Moisés, las plagas, el mar Rojo y el Sinaí, en manuscritos armenios, persas, hebreos y etíopes, en la pintura europea y en el arte andino.","Cap.",[
+  ("2","Moisés salvado de las aguas","si","Rashid al-Din, Edimburgo"),("3","La zarza ardiente","si","Icono del Sinaí"),
+  ("7","La vara convertida en serpiente","si","Manuscrito de Shiraz, Berlín"),("7–11","Las plagas de Egipto","si","Hagadá de Oro"),
+  ("12","La Pascua","si","Hagadá de las cabezas de pájaro"),("14–15","El paso del mar Rojo","si","Toros Roslin · mural etíope"),
+  ("16","El maná","no","Poussin, Louvre: solo foto de sala"),("17","El agua de la roca; Amalec","no","sin imagen utilizable"),
+  ("19–20","La Ley en el Sinaí","si","Historias de los profetas · Sinchi Roca, Cusco"),("25–31","El Tabernáculo y el arca","si","Germigny-des-Prés"),
+  ("32","El becerro de oro","si","Poussin"),("32–34","Las tablas; el rostro radiante","si","Rembrandt · Miguel Ángel"),
+  ("35–40","La construcción del Tabernáculo","no","sin obra")]),
+ "Levítico":("27 capítulos. Un libro de leyes y rituales, con pocas escenas: la iconografía es escasa.","Cap.",[
+  ("1–7","Los sacrificios","si","Inicial de Cleveland · Corbie, BnF"),("4","Los cuernos del altar","si","Altar de Tel Beerseba"),
+  ("8–9","La consagración de Aarón","si","Dura Europos · Santa Sofía de Kiev · Luyken"),("10","Nadab y Abiú","si","Luyken"),
+  ("11","Animales puros e impuros","no","solo grabados pobres"),("12–15","Las leyes de pureza","si","Fokke, el leproso"),
+  ("16","El chivo expiatorio","si","Holman Hunt"),("17–26","El código de santidad","no","sin obra"),
+  ("25","El jubileo","no","sin obra"),("27","Votos y diezmos","no","sin obra")]),
  "Gilgamesh":("12 tablillas. Cobertura casi completa para lo que existe: el poema apenas tiene tradición pictórica y su iconografía es arqueológica.","Tablilla",[
   ("I","Las murallas de Uruk","si","Vaso de Warka · Lamassu"),("I","Los sueños de Gilgamesh","si","Tablilla del Sueño"),
   ("II–V","Humbaba y el Bosque de los Cedros","si","Placa babilónica · máscara de terracota"),

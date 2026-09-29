@@ -27,6 +27,32 @@ MUSEOS = {
  "boijmans":   ("Museum Boijmans Van Beuningen","Róterdam",51.9142,4.4731),
  "harvard":    ("Harvard Art Museums","Cambridge (Massachusetts)",42.3741,-71.1143),
  "bnpolonia":  ("Biblioteca Nacional de Polonia","Varsovia",52.2139,21.0044),
+ "israelmus":  ("Museo de Israel","Givat Ram",31.7722,35.2044),
+ "beirut":     ("Museo Nacional de Beirut","Beirut",33.8783,35.5147),
+ "nabeul":     ("Museo de Nabeul","Nabeul",36.4561,10.7376),
+ "akdamar":    ("Iglesia de la Santa Cruz de Akdamar","Lago de Van",38.341,43.035),
+ "kiev":       ("Catedral de Santa Sofía","Kiev",50.4529,30.5143),
+ "cleveland":  ("Cleveland Museum of Art","Cleveland",41.5089,-81.612),
+ "auckland":   ("Auckland Art Gallery Toi o Tāmaki","Auckland",-36.8515,174.7659),
+ "tiem":       ("Museo de Arte Turco e Islámico","Estambul",41.0063,28.9749),
+ "mnba_rio":   ("Museu Nacional de Belas Artes","Río de Janeiro",-22.9087,-43.176),
+ "nmwa":       ("Museo Nacional de Arte Occidental","Tokio",35.7154,139.7759),
+ "virreinato": ("Museo Nacional del Virreinato","Tepotzotlán",19.7137,-99.2231),
+ "rijks":      ("Rijksmuseum","Ámsterdam",52.36,4.8852),
+ "ponce":      ("Museo de Arte de Ponce","Ponce",18.0036,-66.6168),
+ "narga":      ("Iglesia de Narga Selassie","Lago Tana",11.902,37.287),
+ "tepapa":     ("Museo Te Papa Tongarewa","Wellington",-41.2905,174.7821),
+ "munal":      ("Museo Nacional de Arte (MUNAL)","Ciudad de México",19.4361,-99.1397),
+ "ladylever":  ("Lady Lever Art Gallery","Port Sunlight",53.3534,-2.9985),
+ "salarjung":  ("Museo Salar Jung","Hyderabad",17.3713,78.4804),
+ "germigny":   ("Oratorio carolingio de Germigny-des-Prés","Germigny-des-Prés",47.8453,2.2653),
+ "sinai":      ("Monasterio de Santa Catalina del Sinaí","Sinaí",28.5559,33.976),
+ "edimburgo_ul": ("Biblioteca de la Universidad de Edimburgo","Edimburgo",55.9425,-3.189),
+ "vincoli":    ("Basílica de San Pietro in Vincoli","Roma",41.8938,12.493),
+ "sbb":        ("Staatsbibliothek zu Berlin","Berlín",52.5075,13.371),
+ "nypl":       ("New York Public Library","Nueva York",40.7532,-73.9822),
+ "cusco":      ("Catedral del Cusco","Cusco",-13.5165,-71.9785),
+ "walters":    ("Walters Art Museum","Baltimore",39.2966,-76.6158),
  "natgal":     ("National Gallery","Londres",51.5089,-0.1283),
  "prado":      ("Museo Nacional del Prado","Madrid",40.4138,-3.6921),
  "escorial":   ("Monasterio de El Escorial","San Lorenzo de El Escorial",40.5891,-4.1475),
@@ -76,6 +102,8 @@ MUSEOS = {
 
 # ---------- qué museo corresponde a cada ficha ----------
 REGLAS = [
+ ("germigny","germigny"),("santa catalina, sinai","sinai"),("universidad de edimburgo","edimburgo_ul"),("san pietro in vincoli","vincoli"),("staatsbibliothek zu berlin","sbb"),("new york public library","nypl"),("asuncion, cusco","cusco"),("walters art museum","walters"),
+ ("museo de israel","israelmus"),("museo nacional de beirut","beirut"),("museo de nabeul","nabeul"),("akdamar","akdamar"),("santa sofia, kiev","kiev"),("cleveland museum","cleveland"),("auckland art gallery","auckland"),("arte turco e islamico","tiem"),("belas artes, rio de janeiro","mnba_rio"),("arte occidental, tokio","nmwa"),("virreinato","virreinato"),("rijksmuseum","rijks"),("arte de ponce","ponce"),("narga selassie","narga"),("te papa","tepapa"),("munal","munal"),("lady lever","ladylever"),("salar jung","salarjung"),("bibliotheque nationale de france","bnf"),
  ("bagawat","bagawat"),("dar al-kutub","darkutub"),("beit alfa","beitalfa"),
  ("arqueologico de adana","adana"),("patriarcado armenio","patrarm"),
  ("bellas artes, buenos aires","mnba_ba"),
@@ -124,13 +152,16 @@ def museo_de(item):
 if __name__ == "__main__":
     from libros import todos
     from cronologia import ordenar
+    _ENL = json.load(io.open(os.path.join(ROOT,"herramientas","artefacto","datos","enlaces.json"),encoding="utf-8"))
     reg = todos()
     CARPETA = {l["corto"]: l["carpeta"] for l, _ in reg}
     filas=ordenar(*[(l["corto"], e) for l, e in reg if e])
     sin=[]
     cuenta={}
     for a,l,it in filas:
-        if not os.path.exists(os.path.join(CARPETA[l],it["files"][0])): continue
+        # En disco o enlazada en Commons (la misma regla que inject.py).
+        if not (os.path.exists(os.path.join(CARPETA[l],it["files"][0]))
+                or f'{CARPETA[l]}/{it["files"][0]}' in _ENL): continue
         k=museo_de(it)
         if k is None: sin.append((l,it["title"],it["meta"].split("|")[-1].strip()))
         else: cuenta[k]=cuenta.get(k,0)+1

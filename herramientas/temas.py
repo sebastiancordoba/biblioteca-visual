@@ -48,14 +48,16 @@ TEMAS = [
 {
  "clave": "torre",
  "titulo": "La torre y el templo",
- "lema": "Ladrillo cocido para una torre que llegue al cielo: Babel en el Génesis, el Esagila en el Enuma Elish.",
- "intro": "En el Génesis, los hombres cuecen ladrillos, usan betún como argamasa y empiezan una ciudad con una torre cuya cúspide llegue al cielo; Dios confunde su lengua y los dispersa, y la ciudad se llama Babel. En el Enuma Elish, los dioses pasan un año entero moldeando ladrillos para levantar a Marduk su casa en Babilonia, el Esagila, y alzan su cima. Las piezas de la colección muestran esa Babilonia real: la tablilla que da las medidas del templo y de su zigurat, el rey que lo reconstruye y la puerta por la que entraba la procesión de Marduk.",
+ "lema": "Ladrillo cocido para una torre que llegue al cielo, una casa para el dios: Babel, el Esagila de Marduk y el Tabernáculo del Éxodo.",
+ "intro": "En el Génesis, los hombres cuecen ladrillos, usan betún como argamasa y empiezan una ciudad con una torre cuya cúspide llegue al cielo; Dios confunde su lengua y los dispersa, y la ciudad se llama Babel. En el Enuma Elish, los dioses pasan un año entero moldeando ladrillos para levantar a Marduk su casa en Babilonia, el Esagila, y alzan su cima. Las piezas de la colección muestran esa Babilonia real: la tablilla que da las medidas del templo y de su zigurat, el rey que lo reconstruye y la puerta por la que entraba la procesión de Marduk. En el Éxodo, Dios da a Moisés las medidas del Tabernáculo, un santuario que se monta y se desmonta en el desierto, y del arca con sus dos querubines; en el Levítico, Aarón y sus hijos son consagrados para servir en él.",
  "pasajes": [
   ("genesis", "Génesis 11,1–9", "La torre, la confusión de las lenguas y la dispersión de los hombres."),
   ("enuma", "Enuma Elish, tablilla VI, 55–75", "Los dioses fabrican ladrillos durante un año y construyen el Esagila para Marduk."),
+  ("exodo", "Éxodo 25–27", "Las medidas del Tabernáculo y del arca de la alianza, con sus dos querubines."),
+  ("levitico", "Levítico 8–9", "La consagración de Aarón y de sus hijos, y la primera ofrenda en el Tabernáculo."),
  ],
  "obras": [("genesis", "05"), ("genesis", "09"), ("enuma", "06"), ("enuma", "08"), ("enuma", "03"),
-           ("enuma", "05")],
+           ("enuma", "05"), ("exodo", "13"), ("levitico", "01")],
 },
 {
  "clave": "monstruos",

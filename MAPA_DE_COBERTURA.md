@@ -21,7 +21,7 @@ propia colección. El lote de complementos corrige ese desequilibrio.
 | 1 | Creación, separación de la luz | ✓ | Blake, *El Anciano de los Días* (16) |
 | 1 | Elohim crea a Adán | ✓ | Blake (07) |
 | 1–2 | La creación de Adán | ✓ | Miguel Ángel (01) |
-| 2 | **La creación de Eva** | · | Miguel Ángel, Sixtina — en Commons solo a 1,3 MP, hay que ir al Vaticano |
+| 2 | La creación de Eva | ✓ | Mural de Narga Selassie, lago Tana, Etiopía (48); el de Miguel Ángel sigue solo a 1,3 MP en Commons |
 | 2–3 | El Edén | ✓ | El Bosco (26), Cranach (14), Durero (15), Cranach del Museo Soumaya (39), capilla del Éxodo de El Bagawat, Egipto (42b) |
 | 3 | Pecado original y expulsión | ✓ | Miguel Ángel, Sixtina (41) — el panel a 7,6 MP y la bóveda entera a 26,7 MP; la versión de 1,4 MP que circula no era la única |
 | 3 | La expulsión del Paraíso | ✓ | Masaccio (02) |
@@ -35,7 +35,7 @@ propia colección. El lote de complementos corrige ese desequilibrio.
 
 | Cap. | Pasaje | Estado | Obra o candidato |
 |---|---|---|---|
-| 12 | **La llamada de Abram** | ✗ | el Bassano en Commons está a 0,3 MP |
+| 12 | **La llamada de Abram** | ◐ | Scorza, Museu Nacional de Belas Artes, Río (58): el museo lo titula «Noé o Abraham», así que no es seguro |
 | 14 | Melquisedec | ✓ | Rubens, National Gallery of Art — **209 MP** (33) |
 | 15 | **La alianza** | · | sin candidato claro todavía |
 | 18 | La hospitalidad de Abraham | ✓ | Rubliov, *La Trinidad* (19) |
@@ -54,7 +54,7 @@ propia colección. El lote de complementos corrige ese desequilibrio.
 | 37 | La túnica de José | ✓ | Velázquez (24) |
 | 39 | José y la mujer de Putifar | ✓ | Behzad, *Yusuf y Zulaija*, Bustán de El Cairo, 1488 (45) — la versión coránica y persa del pasaje |
 | 41 | Los sueños del faraón | ✓ | Jörg Breu el Joven, Metropolitan (38) |
-| 45 | **José se da a conocer** | · | Cornelis de Vos — no localizado en Commons |
+| 45 | José se da a conocer | ✓ | Andrea Vicentino, Auckland Art Gallery (53); en Commons solo a 1015 px |
 | 49 | **Jacob bendice a Efraín y Manasés** | · | Rembrandt, Kassel — obra maestra tardía |
 
 ---
@@ -119,6 +119,45 @@ iconografía es arqueológica.
 | VI | El héroe y las fieras | ✓ Relieve de Khorsabad (02), sello cilíndrico (09) |
 | XI | El Diluvio | ✓ Tablilla XI (01) |
 | VII–X | **La muerte de Enkidu; el viaje al inframundo** | · sin obra |
+
+---
+
+## ÉXODO (40 capítulos)
+
+| Cap. | Pasaje | Estado | Obra |
+|---|---|---|---|
+| 2 | Moisés salvado de las aguas | ✓ | Jami al-Tawarikh de Rashid al-Din, Edimburgo (03) |
+| 3 | La zarza ardiente | ✓ | Icono del Sinaí (08) |
+| 7 | La vara convertida en serpiente ante el faraón | ✓ | Manuscrito safávida de Shiraz, Berlín (07) |
+| 7–11 | Las plagas de Egipto | ✓ | Hagadá de Oro, British Library (09) |
+| 12 | La Pascua y los panes ácimos | ✓ | Hagadá de las cabezas de pájaro, Museo de Israel (04) |
+| 14–15 | El paso del mar Rojo | ✓ | Toros Roslin, Patriarcado Armenio (01); mural etíope, Walters (02) |
+| 16 | **El maná** | · | Poussin, Louvre — en Commons solo hay una foto de sala |
+| 17 | **El agua de la roca; la batalla contra Amalec** | · | el esmalte de Jean de Court (Walters) no tiene foto del interior |
+| 19–20 | La Ley en el Sinaí | ✓ | Historias de los profetas, NYPL (05); Sinchi Roca, catedral del Cusco (06) |
+| 25–31 | El Tabernáculo y el arca | ✓ | Mosaico de Germigny-des-Prés (13) |
+| 32 | El becerro de oro | ✓ | Poussin, National Gallery (11) |
+| 32–34 | Las tablas y el rostro radiante de Moisés | ✓ | Rembrandt, Berlín (12); Miguel Ángel, San Pietro in Vincoli (10) |
+| 35–40 | **La construcción del Tabernáculo** | · | sin obra |
+
+---
+
+## LEVÍTICO (27 capítulos)
+
+Un libro de leyes y rituales, con pocas escenas: la iconografía es escasa.
+
+| Cap. | Pasaje | Estado | Obra |
+|---|---|---|---|
+| 1–7 | Los sacrificios y ofrendas | ✓ | Inicial de Cleveland (05); manuscrito de Corbie, BnF (04) |
+| 4 | Los cuernos del altar | ✓ | Altar de Tel Beerseba, Museo de Israel (09) |
+| 8–9 | La consagración de Aarón y sus vestiduras | ✓ | Sinagoga de Dura Europos (01); mosaico de Santa Sofía de Kiev (03); Luyken (07) |
+| 10 | Nadab y Abiú | ✓ | Luyken, Rijksmuseum (06) |
+| 11 | **Animales puros e impuros** | · | solo grabados del s. XVIII de poca calidad |
+| 12–15 | Las leyes de pureza | ✓ | Fokke, la purificación del leproso (08) |
+| 16 | El Día de la Expiación y el chivo expiatorio | ✓ | Holman Hunt, Lady Lever Art Gallery (02) |
+| 17–26 | **El código de santidad** | · | sin obra |
+| 25 | **El año sabático y el jubileo** | · | sin obra |
+| 27 | **Votos y diezmos** | · | sin obra |
 
 ---
 

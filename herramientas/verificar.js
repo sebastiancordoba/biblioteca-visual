@@ -62,6 +62,8 @@ const { execSync } = require('child_process');
    institucional. Sustituir en cuanto aparezca una, buscando en la web del museo.
    Ver la sección "Resolución alta no es lo mismo que buena reproducción" de CLAUDE.md. */
 const EXCEPCIONES = {
+  './Génesis/53_Jose_se_da_a_conocer_a_sus_hermanos.jpg':
+    'en Commons solo hay 1015 px; el portal de la Auckland Art Gallery sirve 1600 px, pero el sitio solo enlaza a Commons',
   './Ilíada/04_Andromaca_Llorando_a_Hector_Jacques_Louis_David_Wikipedia_Master.jpg':
     'única reproducción del óleo del Louvre en Commons (WGA); la de 14,6 MP que había era el dibujo preparatorio de 1782, otra obra',
   './Génesis/03_Cain_y_Abel_Tiziano_1544.jpg':
@@ -157,7 +159,8 @@ console.log('\n== Todas las obras, en el orden del banner ==');
   check(conSede >= n - 5, `${conSede} de ${n} obras con su sede canónica`);
   const cif = (document.getElementById('inicioCifras').innerHTML.match(/<b>(\d+)<\/b><span>sedes/) || [])[1];
   const reales = new Set(BOOKS.inicio.details.map(d => d.sede).filter(Boolean)).size;
-  check(+cif === reales && reales < 80, `la portada cuenta ${cif} sedes, las reales, no una por número de inventario`);
+  /* Menos sedes que obras: si se contara una por número de inventario saldrían casi tantas como obras. */
+  check(+cif === reales && reales < n * 0.8, `la portada cuenta ${cif} sedes, las reales, no una por número de inventario`);
 }
 
 console.log('\n== Flechas del banner ==');

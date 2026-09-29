@@ -129,3 +129,7 @@ GILGAMESH = [
 
 from data_lote5 import GILGAMESH_L6
 GILGAMESH = GILGAMESH + GILGAMESH_L6
+
+# Altas con fuentes (alta_obras.py).
+from data_altas_gilgamesh import ALTAS_GILGAMESH
+GILGAMESH = GILGAMESH + ALTAS_GILGAMESH

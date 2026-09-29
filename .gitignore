@@ -15,3 +15,5 @@ build/
 
 # Datos locales de Claude Code (worktrees de otras sesiones, ajustes): no son del proyecto
 .claude/
+# build es un enlace a ~/Library/Caches/biblioteca-visual/build (fuera de iCloud); sin barra para que cubra el enlace
+build
