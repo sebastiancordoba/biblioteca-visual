@@ -3,6 +3,11 @@
 import io, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from libros import todos as _libros
+import json as _json
+_ENL = _json.load(io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "artefacto", "datos", "enlaces.json"), encoding="utf-8"))
+def disponible(folder, f):
+    """En disco o con su original enlazado en Commons (ver inject.py)."""
+    return os.path.exists(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), folder, f)) or f"{folder}/{f}" in _ENL
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # la raíz del repositorio
 
@@ -36,7 +41,7 @@ BOOKS = {l["carpeta"]: (ents, l["tag"], INTRO.get(l["id"], l["sub"]))
 
 for folder, (entries, tag, intro) in BOOKS.items():
     live = [e for e in entries
-            if any(os.path.exists(os.path.join(ROOT, folder, f)) for f in e["files"])]
+            if any(disponible(folder, f) for f in e["files"])]
     if not live: 
         print(f"{folder}: sin imágenes todavía, README omitido"); continue
 
@@ -54,7 +59,7 @@ for folder, (entries, tag, intro) in BOOKS.items():
     for i, e in enumerate(live, 1):
         L += [f"### {i}. {e['title']} — {e['artist']}", ""]
         for f, t in zip(e["files"], e["views"]):
-            if os.path.exists(os.path.join(ROOT, folder, f)):
+            if disponible(folder, f):
                 L += [f"![{e['title']}](./{f})", f"*{t}*", ""]
         L += ["#### Ficha Técnica", ""]
         for part in e["meta"].split("|"):

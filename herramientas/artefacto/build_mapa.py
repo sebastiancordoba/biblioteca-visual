@@ -51,7 +51,10 @@ CONTINENTE={"Vaticano":"Europa","Italia":"Europa","Austria":"Europa","Francia":"
 # coincidan; la carpeta solo se usa para comprobar que la imagen existe.
 CARPETA = {l["corto"]: l["carpeta"] for l, ents in _REG}
 filas=ordenar(*[(l["corto"], ents) for l, ents in _REG if ents])
-filas=[(a,l,it) for a,l,it in filas if os.path.exists(os.path.join(CARPETA[l],it["files"][0]))]
+_ENL=json.load(io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"datos","enlaces.json"),encoding="utf-8"))
+# En disco o enlazada en Commons: la misma regla que inject.py.
+filas=[(a,l,it) for a,l,it in filas
+       if os.path.exists(os.path.join(CARPETA[l],it["files"][0])) or f'{CARPETA[l]}/{it["files"][0]}' in _ENL]
 
 paths,W,H,xy = proyectar(anillos(os.path.join(AQUI,"datos","land50.geojson"),BB), BB, K)
 

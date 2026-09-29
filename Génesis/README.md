@@ -14,7 +14,7 @@ abre [`../index.html`](../index.html) y elige **Génesis** en el selector de lib
 | 2 | **La Expulsión del Paraíso** | Masaccio (1427) | Capilla Brancacci, Basílica de Santa Maria del Carmine, Florencia, Italia | [Wikipedia](https://es.wikipedia.org/wiki/Expulsi%C3%B3n_de_Ad%C3%A1n_y_Eva_del_Para%C3%ADso_terrenal) | [`02_La_Expulsion_del_Paraiso_Masaccio_Wikipedia_Master.jpg`](./02_La_Expulsion_del_Paraiso_Masaccio_Wikipedia_Master.jpg) |
 | 3 | **Caín y Abel** | Tiziano Vecellio (1544) | Sacristía de Santa Maria della Salute, Venecia, Italia | [Wikipedia](https://en.wikipedia.org/wiki/Cain_and_Abel_(Titian)) | [`03_Cain_y_Abel_Tiziano_1544.jpg`](./03_Cain_y_Abel_Tiziano_1544.jpg) |
 | 4 | **El Diluvio Universal** | Miguel Ángel Buonarroti (1509) | Capilla Sixtina, El Vaticano | [Wikipedia](https://es.wikipedia.org/wiki/B%C3%B3veda_de_la_Capilla_Sixtina#El_Diluvio_Universal) | [`04_El_Diluvio_Miguel_Angel_1509.jpg`](./04_El_Diluvio_Miguel_Angel_1509.jpg) |
-| 5 | **La Torre de Babel** | Pieter Bruegel el Viejo (1563) | Kunsthistorisches Museum, Viena, Austria (GG 1026) | [Wikipedia](https://es.wikipedia.org/wiki/La_torre_de_Babel_(Brueghel)) | [`05_La_Torre_de_Babel_Pieter_Bruegel_1563.jpg`](./05_La_Torre_de_Babel_Pieter_Bruegel_1563.jpg) |
+| 5 | **La Torre de Babel** | Pieter Bruegel el Viejo (1563) | Kunsthistorisches Museum, Viena, Austria (GG 1026) | [Wikipedia](https://es.wikipedia.org/wiki/La_torre_de_Babel_(Brueghel)) | [`05_La_Torre_de_Babel_Pieter_Bruegel_Wikipedia_Master.jpg`](./05_La_Torre_de_Babel_Pieter_Bruegel_Wikipedia_Master.jpg) |
 | 6 | **Caín** | Fernand Cormon (1880) | Musée d’Orsay, París, Francia (RF 280) | [Wikipedia](https://en.wikipedia.org/wiki/Cain_(Cormon)) | [`06_Cain_Fernand_Cormon_1880.jpg`](./06_Cain_Fernand_Cormon_1880.jpg) |
 | 7 | **Elohim creando a Adán** | William Blake (1795) | Tate Britain, Londres, Reino Unido (N05055) | [Wikipedia](https://en.wikipedia.org/wiki/William_Blake) | [`07_Elohim_Creando_a_Adan_William_Blake_1795.jpg`](./07_Elohim_Creando_a_Adan_William_Blake_1795.jpg) |
 | 8 | **Sombra y oscuridad - la tarde del diluvio** | J.M.W. Turner (1843) | Tate Britain, Londres, Reino Unido (N00531) | [Wikipedia](https://en.wikipedia.org/wiki/Light_and_Colour_(Goethe%27s_Theory)_%E2%80%93_The_Morning_after_the_Deluge_%E2%80%93_Moses_Writing_the_Book_of_Genesis) | [`08_Sombra_y_Oscuridad_el_Diluvio_JMW_Turner_1843.jpg`](./08_Sombra_y_Oscuridad_el_Diluvio_JMW_Turner_1843.jpg) |
@@ -157,7 +157,7 @@ Miguel Ángel Buonarroti (Caprese, 6 de marzo de 1475 – Roma, 18 de febrero de
 
 ### 5. La Torre de Babel — Pieter Bruegel el Viejo (1563)
 
-![La Torre de Babel](./05_La_Torre_de_Babel_Pieter_Bruegel_1563.jpg)
+![La Torre de Babel](./05_La_Torre_de_Babel_Pieter_Bruegel_Wikipedia_Master.jpg)
 *La Torre de Babel — Pieter Bruegel el Viejo (1563)*
 
 **Ficha técnica:** Óleo sobre tabla de roble | 114,4 cm × 155,5 cm | Kunsthistorisches Museum, Viena, Austria (GG 1026)

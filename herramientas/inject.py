@@ -20,11 +20,17 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # la raíz 
 INI = "    /* ==== DATOS GENERADOS POR inject.py — NO EDITAR A MANO ==== */"
 FIN = "    /* ==== FIN DATOS GENERADOS ==== */"
 
+# Una imagen cuenta como presente si está en disco o si tiene su original enlazado en Commons
+# (enlaces.json): el sitio la sirve desde Commons y la copia local ya no hace falta.
+_ENL = json.load(io.open(os.path.join(ROOT, "herramientas", "artefacto", "datos", "enlaces.json"), encoding="utf-8"))
+def disponible(folder, f):
+    return os.path.exists(os.path.join(ROOT, folder, f)) or f"{folder}/{f}" in _ENL
+
 def build(entries, folder):
     details, groups, omitted = [], [], []
     for e in entries:
         views = [(f, t) for f, t in zip(e["files"], e["views"])
-                 if os.path.exists(os.path.join(ROOT, folder, f))]
+                 if disponible(folder, f)]
         if not views:
             omitted.append(e["title"]); continue
         d = {k: e[k] for k in

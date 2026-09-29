@@ -71,7 +71,12 @@ def titulos_conocidos():
 
 
 def referenciadas():
-    """Las imágenes que la página usa de verdad, en el orden en que aparecen."""
+    """Las imágenes que listan las fichas (todas sus vistas). Antes se leían de index.html, y
+    una imagen que solo está en Commons nunca entraba: la página solo usa lo que ya existe."""
+    from libros import todos
+    fichas = [f"{l['carpeta']}/{f}" for l, ents in todos() for e in ents for f in e["files"]]
+    if fichas:
+        return list(dict.fromkeys(fichas))
     doc = io.open("index.html", encoding="utf-8").read()
     vistas = []
     from libros import CARPETAS

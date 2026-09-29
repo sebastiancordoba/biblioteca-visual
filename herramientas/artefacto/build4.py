@@ -190,7 +190,14 @@ orden=[]; datos={}
 def idx(rel):
     if rel not in datos:
         p=os.path.join(TH, rel.replace("/","__"))
-        datos[rel]="data:image/jpeg;base64,"+base64.b64encode(open(p,"rb").read()).decode()
+        if os.path.exists(p):
+            datos[rel]="data:image/jpeg;base64,"+base64.b64encode(open(p,"rb").read()).decode()
+        else:
+            # Sin copia local no hay vista previa que incrustar: la miniatura de Commons. El
+            # artefacto de claude.ai ya no se publica; esto solo evita que la cadena se pare.
+            _sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "sitio"))
+            from comun import imagen
+            datos[rel]=imagen(rel)[0]
         orden.append(rel)
     return orden.index(rel)
 doc,n=re.subn(PATRON_RUTA_COMILLAS,

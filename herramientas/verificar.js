@@ -37,16 +37,21 @@ for (const [id, b] of Object.entries(BOOKS)) {
     `${id}: tiene sección (${escrito ? 'en el HTML' : montado ? 'montada por la página' : 'NINGUNA'})`);
 }
 
-console.log('\n== Toda imagen referenciada existe en disco ==');
+/* Una imagen está disponible si está en disco o si tiene su original enlazado en Commons
+   (enlaces.json): el sitio la sirve desde Commons y la copia local puede no estar. */
+const ENL = JSON.parse(fs.readFileSync('herramientas/artefacto/datos/enlaces.json', 'utf8'));
+const relDe = u => decodeURIComponent(u).replace(/^\.\//, '');
+const hay = u => fs.existsSync(decodeURIComponent(u)) || relDe(u) in ENL;
+console.log('\n== Toda imagen referenciada existe (en disco o en Commons) ==');
 let imgs = 0, missing = 0;
 for (const [id, b] of Object.entries(BOOKS))
   for (const g of b.groups) for (const v of g) {
     imgs++;
-    if (!fs.existsSync(decodeURIComponent(v.src))) { console.log(`  FALTA  ${v.src}`); missing++; }
+    if (!hay(v.src)) { console.log(`  FALTA  ${v.src}`); missing++; }
   }
 for (const m of html.matchAll(/(?:src|href)="(\.\/[^"]+\.(?:jpe?g|png))"/g)) {
   imgs++;
-  if (!fs.existsSync(m[1])) { console.log(`  FALTA  ${m[1]}`); missing++; }
+  if (!hay(m[1])) { console.log(`  FALTA  ${m[1]}`); missing++; }
 }
 check(missing === 0, `${imgs} referencias de imagen comprobadas, ${missing} rotas`);
 
@@ -74,10 +79,14 @@ let small = 0;
 for (const [id, b] of Object.entries(BOOKS))
   for (const g of b.groups) for (const v of g) {
     const f = decodeURIComponent(v.src);
-    if (!fs.existsSync(f)) continue;
-    const out = execSync(`sips -g pixelWidth -g pixelHeight ${JSON.stringify(f)} 2>/dev/null || true`).toString();
-    const w = +(out.match(/pixelWidth: (\d+)/) || [])[1];
-    const h = +(out.match(/pixelHeight: (\d+)/) || [])[1];
+    /* Sin copia local, las dimensiones del original en Commons, ya guardadas. */
+    let w, h;
+    if (fs.existsSync(f)) {
+      const out = execSync(`sips -g pixelWidth -g pixelHeight ${JSON.stringify(f)} 2>/dev/null || true`).toString();
+      w = +(out.match(/pixelWidth: (\d+)/) || [])[1];
+      h = +(out.match(/pixelHeight: (\d+)/) || [])[1];
+    } else if (ENL[relDe(f)]) { w = ENL[relDe(f)].w; h = ENL[relDe(f)].h; }
+    else continue;
     if (!w || !h || Math.max(w, h) < 1500) {
       if (EXCEPCIONES[f]) console.log(`  aviso  ${w}x${h} ${f.split('/').pop()} — ${EXCEPCIONES[f]}`);
       else { console.log(`  PEQUEÑA ${w}x${h} ${f}`); small++; }
@@ -94,7 +103,7 @@ console.log('\n== Portada ==');
   const capas = (lienzo.children[0] || {}).children || [];
   check(capas.length === 2, `la lámina lleva fondo desenfocado y obra contenida (${capas.length} capas)`);
   const urls = capas.map(c => (/url\("(.+)"\)/.exec(c.style.backgroundImage || '') || [])[1]);
-  check(urls.length > 0 && urls.every(u => u && fs.existsSync(decodeURIComponent(u))),
+  check(urls.length > 0 && urls.every(u => u && hay(u)),
     `las capas apuntan a una imagen que existe: ${urls[0] ? urls[0].split('/').pop() : 'ninguna'}`);
   check(/banner-titulo/.test(info.innerHTML) && /banner-ver/.test(info.innerHTML),
     'la ficha del banner trae título y botón de detalle');
@@ -127,7 +136,7 @@ console.log('\n== Botón Original del visor ==');
       // openZoomForArtwork usa currentBook; se fija abriendo desde ese libro
       const u = urlOriginal();
       comprobadas++;
-      if (!u || (!u.startsWith('http') && !fs.existsSync(decodeURIComponent(u)))) malas++;
+      if (!u || (!u.startsWith('http') && !hay(u))) malas++;
     }
     break;   // basta con un libro: la ruta de resolución es la misma para todos
   }
@@ -521,7 +530,7 @@ console.log('\n== Biblioteca ==');
   /* Un libro dado de alta sin obras todavía no tiene portada que enseñar; los que tienen
      obras, sí, y tiene que existir en disco. */
   const conObras = reales.filter(id => BOOKS[id].details.length);
-  check(portadas.length === conObras.length && portadas.every(u => fs.existsSync(u)),
+  check(portadas.length === conObras.length && portadas.every(u => hay(u)),
     `cada libro con obras lleva portada existente (${portadas.length} de ${conObras.length})`);
 
   /* El buscador solo tiene sentido cuando la lista deja de leerse de un vistazo. */

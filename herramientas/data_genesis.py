@@ -74,7 +74,7 @@ GENESIS = [
 },
 {
  "files": [
-   "05_La_Torre_de_Babel_Pieter_Bruegel_1563.jpg",
+   "05_La_Torre_de_Babel_Pieter_Bruegel_Wikipedia_Master.jpg",
   ],
  "views": [
    "La Torre de Babel — Pieter Bruegel el Viejo (1563)",
