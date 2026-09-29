@@ -40,7 +40,13 @@ def sustituir(m):
     lk = ENL.get(rel)
     if lk:
         url = miniatura(lk, REJILLA)
-        HD[url] = {"v": miniatura(lk, VISOR), "o": lk["original"]}
+        # Los originales gigantes (más de 150 MP: el Sueño de Jacob, la Torre de Babel, el
+        # Jardín de las delicias…) pesan de 65 a 240 MB; el visor se quedaba en «HD…» minutos o
+        # no llegaba a abrirlos. Para ellos el zoom usa la versión de 3840 px, que es el mayor
+        # tamaño estándar que sirve Commons (8000 o 2560 dan error 400). El original entero
+        # sigue a un clic con el botón «Original».
+        HD[url] = {"v": miniatura(lk, VISOR),
+                   "o": lk["original"] if lk["mp"] <= 150 else miniatura(lk, 3840)}
         cuenta["commons"] += 1
         return f'"{url}"'
     cuenta["retrato" if rel.startswith("Autores/") else "propia"] += 1
