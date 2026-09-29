@@ -244,6 +244,91 @@
 
     .sin-resultados { color: var(--text-muted); font-size: .9rem; grid-column: 1 / -1; }
 
+    /* BUSCADOR GENERAL
+       La lupa de la barra superior abre una capa sobre toda la página. Queda por debajo
+       del visor (z-index 9999): al abrir una obra la lista sigue detrás, y al cerrar el
+       visor se vuelve a ella. */
+    .lupa-btn {
+      display: inline-flex; align-items: center; justify-content: center; align-self: center;
+      width: 36px; height: 36px; margin: -6px 0 0 -8px; padding: 0;
+      background: none; border: 1px solid transparent; border-radius: 50%;
+      color: var(--text-muted); cursor: pointer;
+      transition: color .2s ease, border-color .2s ease, background .2s ease;
+    }
+    .lupa-btn:hover, .lupa-btn:focus-visible { color: var(--accent-gold); border-color: rgba(197,160,70,.35); outline: none; }
+    .lupa-btn.activo { color: var(--accent-gold); }
+
+    .bg-capa {
+      position: fixed; inset: 0; z-index: 9000;
+      display: flex; justify-content: center; align-items: flex-start;
+      padding: 9vh 16px 24px;
+      background: rgba(4, 5, 7, .82);
+      -webkit-backdrop-filter: blur(14px) saturate(140%); backdrop-filter: blur(14px) saturate(140%);
+      opacity: 0; visibility: hidden; transition: opacity .18s ease, visibility 0s linear .18s;
+    }
+    .bg-capa.abierta { opacity: 1; visibility: visible; transition: opacity .18s ease; }
+    .bg-panel {
+      width: 100%; max-width: 780px; max-height: 100%;
+      display: flex; flex-direction: column;
+      background: rgba(12, 13, 17, .97); border: 1px solid rgba(197,160,70,.22);
+      border-radius: 10px; box-shadow: 0 30px 80px rgba(0,0,0,.7);
+      overflow: hidden; transform: translateY(-8px); transition: transform .18s ease;
+    }
+    .bg-capa.abierta .bg-panel { transform: none; }
+    .bg-cabeza {
+      display: flex; align-items: center; gap: 12px; padding: 16px 18px;
+      border-bottom: 1px solid var(--border-subtle); color: var(--accent-gold);
+    }
+    .bg-cabeza input {
+      flex: 1 1 auto; min-width: 0; background: none; border: 0; outline: none;
+      color: var(--text-title); font-family: var(--font-sans); font-size: 1.12rem; font-weight: 300;
+    }
+    .bg-cabeza input::placeholder { color: var(--text-muted); opacity: .7; }
+    .bg-cabeza input::-webkit-search-cancel-button { display: none; }
+    .bg-cuenta { font-size: .72rem; letter-spacing: .6px; color: var(--accent-gold); white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .bg-cerrar {
+      background: none; border: 1px solid var(--border-subtle); border-radius: 4px;
+      color: var(--text-muted); font-family: var(--font-sans); font-size: .68rem; letter-spacing: .5px;
+      padding: 3px 7px; cursor: pointer;
+    }
+    .bg-cerrar:hover { color: var(--accent-gold); border-color: var(--accent-gold); }
+    .bg-cuerpo { overflow-y: auto; overscroll-behavior: contain; padding: 8px 0 12px; }
+    .bg-aviso { padding: 8px 20px 2px; font-size: .78rem; color: var(--text-muted); }
+    .bg-aviso b { color: var(--accent-gold); font-weight: 500; }
+    .bg-aviso button { background: none; border: 0; padding: 0; color: var(--accent-gold); cursor: pointer; font: inherit; text-decoration: underline; text-underline-offset: 2px; }
+    .bg-seccion { padding: 12px 20px 4px; font-family: var(--font-serif); font-size: .68rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--text-muted); }
+    .bg-chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 6px 20px 6px; }
+    .bg-chip {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(255,255,255,.03); border: 1px solid var(--border-subtle); border-radius: 999px;
+      color: var(--text-body); font-family: var(--font-sans); font-size: .8rem; padding: 5px 12px 5px 5px; cursor: pointer;
+    }
+    .bg-chip.solo-texto { padding-left: 12px; }
+    .bg-chip:hover, .bg-chip.sel { border-color: var(--accent-gold); color: var(--text-title); }
+    .bg-chip img { width: 24px; height: 24px; border-radius: 50%; object-fit: cover; background: #1a1c21; }
+    .bg-chip small { color: var(--text-muted); font-size: .7rem; }
+    .bg-chip code { font-family: var(--font-sans); color: var(--accent-gold); }
+    .bg-fila {
+      display: flex; gap: 14px; align-items: flex-start; width: 100%;
+      padding: 10px 20px; background: none; border: 0; border-left: 2px solid transparent;
+      text-align: left; color: inherit; font: inherit; cursor: pointer;
+    }
+    .bg-fila:hover, .bg-fila.sel { background: rgba(197,160,70,.07); border-left-color: var(--accent-gold); }
+    .bg-img { flex: 0 0 64px; width: 64px; height: 64px; border-radius: 4px; overflow: hidden; background: #15171b; }
+    .bg-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .bg-txt { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .bg-txt strong { font-family: var(--font-serif); font-weight: 500; font-size: .98rem; color: var(--text-title); line-height: 1.3; }
+    .bg-txt em { font-style: normal; font-size: .8rem; color: var(--text-body); }
+    .bg-txt small { font-size: .72rem; color: var(--text-muted); letter-spacing: .2px; }
+    .bg-extracto { font-size: .76rem; color: var(--text-muted); line-height: 1.5; margin-top: 3px; }
+    .bg-txt mark, .bg-chip mark { background: none; color: var(--accent-gold); font-weight: 600; }
+    .bg-mas { display: block; margin: 8px auto 0; background: none; border: 1px solid var(--border-subtle); border-radius: 4px; color: var(--text-body); padding: 7px 16px; font-size: .78rem; cursor: pointer; }
+    .bg-mas:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
+    .bg-vacio { padding: 26px 20px; color: var(--text-muted); font-size: .88rem; line-height: 1.7; }
+    .bg-pie { display: flex; gap: 16px; flex-wrap: wrap; padding: 9px 20px; border-top: 1px solid var(--border-subtle); font-size: .68rem; color: var(--text-muted); }
+    .bg-pie kbd { font-family: var(--font-sans); font-size: .64rem; border: 1px solid var(--border-subtle); border-radius: 3px; padding: 0 4px; margin-right: 3px; color: var(--text-body); }
+    body.bg-bloqueo { overflow: hidden; }
+
     /* AUTORES
        Solo aparecen los que tienen nombre propio: buena parte de la colección —los
        relieves de Nínive, las tablillas de Uruk, la máscara de Micenas— es anónima, y
@@ -1395,6 +1480,25 @@
       /* iOS amplía la página al enfocar un campo de menos de 16 px, y ya no la devuelve. */
       .buscador input, .biblio-filtro input { font-size: 16px; padding: 10px 14px; border-radius: 10px; max-width: none; }
       .buscador { margin-bottom: 14px; }
+
+      /* La barra de secciones es aquí la barra inferior de pestañas, donde una lupa sin
+         rótulo desentonaría: sube a la esquina de la barra superior, como en cualquier
+         aplicación del teléfono. */
+      .lupa-btn {
+        position: fixed; z-index: 75; margin: 0;
+        top: calc(env(safe-area-inset-top) + 9px); right: max(10px, env(safe-area-inset-right));
+        width: 34px; height: 34px; color: var(--accent-gold);
+      }
+      .lupa-btn svg { width: 21px; height: 21px; }
+      header { padding-right: 52px !important; }
+      .bg-capa { padding: 0; background: rgba(8,9,12,.97); }
+      .bg-panel { max-width: none; height: 100%; border: 0; border-radius: 0; background: none; box-shadow: none; }
+      .bg-cabeza { padding: calc(env(safe-area-inset-top) + 10px) 16px 10px; }
+      .bg-cabeza input { font-size: 16px; }
+      .bg-fila, .bg-seccion, .bg-aviso { padding-left: 16px; padding-right: 16px; }
+      .bg-chips { padding-left: 16px; padding-right: 16px; }
+      .bg-pie { display: none; }
+      .bg-cuerpo { padding-bottom: calc(env(safe-area-inset-bottom) + 16px); }
       .buscador-ayuda { width: 30px; height: 30px; }
 
       .orden-bar {
@@ -1829,6 +1933,11 @@
       <button class="book-btn" onclick="switchBook('cronologia', this)">Cronología</button>
       <button class="book-btn" onclick="switchBook('mapa', this)">Mapa</button>
       <button class="book-btn" onclick="switchBook('cobertura', this)">Cobertura</button>
+      <!-- La lupa va la última: la construcción inserta Cronología, Mapa y Cobertura justo
+           detrás de la Biblioteca, así que queda siempre a la derecha de todas. -->
+      <button type="button" class="lupa-btn" id="lupaGeneral" title="Buscar en toda la colección (/)" aria-label="Buscar en toda la colección">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="20.5" y1="20.5" x2="16" y2="16"></line></svg>
+      </button>
     </div>
 
     <!-- NAV DE SECCIONES POR LIBRO -->
@@ -13089,6 +13198,466 @@
       });
     });
 
+    /* ---------- Buscador general: la lupa de la barra superior ----------
+       Busca en todas las obras de todos los libros con el mismo motor que los buscadores
+       de cada sección (analizar + puntuar), de modo que la sintaxis es la misma, y le añade
+       lo que solo tiene sentido cuando se busca en la colección entera:
+
+         · tolera erratas: un término que no aparece en ninguna ficha se cambia por la
+           palabra más parecida del vocabulario («rembrant» → «rembrandt») y se avisa, con
+           la opción de buscar lo que se escribió tal cual;
+         · entiende los nombres en inglés de personajes y temas («flood», «achilles»);
+         · propone también autores y libros, no solo obras;
+         · si el término no está en el título, enseña el pasaje del análisis donde sale.
+
+       Se abre con la lupa, con «/» o con ⌘K / Ctrl+K. Las flechas ↑ ↓ eligen e Intro abre.
+       Al abrir una obra, las flechas del visor recorren solo los resultados, y al cerrar
+       el visor se vuelve a la lista, que sigue debajo. */
+    const bgAlias = {
+      flood: ['diluvio'], deluge: ['diluvio'], ark: ['arca'], noah: ['noe'], adam: ['adan'],
+      eve: ['eva'], paradise: ['paraiso'], garden: ['jardin', 'eden'], serpent: ['serpiente'],
+      snake: ['serpiente'], creation: ['creacion'], god: ['dios'], tower: ['torre'],
+      cain: ['cain'], sacrifice: ['sacrificio'], joseph: ['jose'], moses: ['moises'],
+      exodus: ['exodo'], egypt: ['egipto'], pharaoh: ['faraon'], leviticus: ['levitico'],
+      iliad: ['iliada'], achilles: ['aquiles'], patroclus: ['patroclo'], troy: ['troya'],
+      helen: ['helena'], priam: ['priamo'], agamemnon: ['agamenon'], odysseus: ['odiseo', 'ulises'],
+      ulysses: ['ulises', 'odiseo'], odiseo: ['ulises'], ulises: ['odiseo'], athena: ['atenea'],
+      aphrodite: ['afrodita'], apollo: ['apolo'], thetis: ['tetis'], hephaestus: ['hefesto'],
+      menelaus: ['menelao'], ajax: ['ayax'], laocoon: ['laocoonte'], hector: ['hector'],
+      tablet: ['tablilla'], relief: ['relieve'], painting: ['pintura', 'oleo'],
+      sculpture: ['escultura'], engraving: ['grabado'], vase: ['vaso', 'crater', 'anfora'],
+      mosaic: ['mosaico'], manuscript: ['manuscrito'], angel: ['angel'], jacob: ['jacob'],
+      babel: ['babel'], michelangelo: ['miguel angel'], titian: ['tiziano'], raphael: ['rafael'],
+      durer: ['durero'], tintoretto: ['tintoretto'], veronese: ['veronese'],
+    };
+
+    (function(){
+      const boton = document.getElementById('lupaGeneral');
+      if (!boton) return;
+
+      /* ---- la capa ---- */
+      const capa = document.createElement('div');
+      capa.className = 'bg-capa';
+      capa.id = 'buscadorGeneral';
+      capa.setAttribute('role', 'dialog');
+      capa.setAttribute('aria-modal', 'true');
+      capa.setAttribute('aria-label', 'Buscar en toda la colección');
+      const panel = document.createElement('div');
+      panel.className = 'bg-panel';
+      const cabeza = document.createElement('div');
+      cabeza.className = 'bg-cabeza';
+      cabeza.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="20.5" y1="20.5" x2="16" y2="16"></line></svg>';
+      const campo = document.createElement('input');
+      campo.type = 'search';
+      campo.id = 'bgCampo';
+      campo.placeholder = 'Buscar obras, autores, museos, personajes, años…';
+      campo.setAttribute('aria-label', 'Buscar en toda la colección');
+      campo.setAttribute('autocomplete', 'off');
+      campo.setAttribute('spellcheck', 'false');
+      cabeza.appendChild(campo);
+      const cuenta = document.createElement('span');
+      cuenta.className = 'bg-cuenta';
+      cuenta.id = 'bgCuenta';
+      cabeza.appendChild(cuenta);
+      const cerrar = document.createElement('button');
+      cerrar.type = 'button';
+      cerrar.className = 'bg-cerrar';
+      cerrar.id = 'bgCerrar';
+      cerrar.textContent = 'Esc';
+      cerrar.title = 'Cerrar';
+      cabeza.appendChild(cerrar);
+      const cuerpo = document.createElement('div');
+      cuerpo.className = 'bg-cuerpo';
+      cuerpo.id = 'bgResultados';
+      cuerpo.setAttribute('role', 'listbox');
+      const pie = document.createElement('div');
+      pie.className = 'bg-pie';
+      pie.innerHTML = '<span><kbd>↑</kbd><kbd>↓</kbd>elegir</span><span><kbd>Intro</kbd>abrir</span>' +
+        '<span><kbd>Esc</kbd>cerrar</span><span><b style="color:var(--accent-gold);font-weight:500">autor:</b> <b style="color:var(--accent-gold);font-weight:500">sede:</b> <b style="color:var(--accent-gold);font-weight:500">año:</b>&lt;1600 · "frase" · -excluir</span>';
+      panel.appendChild(cabeza);
+      panel.appendChild(cuerpo);
+      panel.appendChild(pie);
+      capa.appendChild(panel);
+      document.body.appendChild(capa);
+
+      /* ---- el índice: se construye una sola vez, la primera vez que se abre ---- */
+      let indice = null, vocab = null, corpus = '';
+      function construirIndice(){
+        /* El índice de la obra dentro de su libro, que es el que usa el visor. Se cuenta, no
+           se busca por título: los títulos se repiten entre obras distintas. La portada
+           concatena los libros en orden, así que basta un contador por libro. */
+        const vistos = {};
+        indice = BOOKS.inicio.details.map((d, k) => {
+          const libro = d.libroId;
+          const i = vistos[libro] = (vistos[libro] == null ? 0 : vistos[libro] + 1);
+          const doc = docDeObra(d, d.libro + ' ' + (BOOKS[libro].title || ''));
+          doc.sede = normaliza(d.meta + ' ' + (d.sede || ''));
+          doc.ciudad = doc.pais = doc.sede;
+          return { k, d, libro, i, doc, src: (BOOKS.inicio.groups[k][0] || {}).src || '' };
+        });
+        /* Vocabulario para las erratas, con peso por campo: ante dos palabras igual de
+           cerca gana la que sale en títulos y autores, no la de una nota a pie. */
+        vocab = new Map();
+        const pesoCampo = { obra: 6, autor: 5, sede: 2, libro: 3, texto: 1 };
+        indice.forEach(({ doc }) => Object.keys(pesoCampo).forEach(c =>
+          (doc[c] || '').split(/[^a-z0-9ñ]+/).forEach(w => {
+            if (w.length >= 3) vocab.set(w, (vocab.get(w) || 0) + pesoCampo[c]);
+          })));
+        corpus = indice.map(({ doc }) => [doc.obra, doc.autor, doc.sede, doc.libro, doc.texto].join(' ')).join(' \n ');
+      }
+
+      /* Distancia de edición con transposiciones (Damerau restringida), cortando en cuanto
+         pasa del máximo: se compara contra miles de palabras en cada tecla. */
+      function distancia(a, b, max){
+        if (Math.abs(a.length - b.length) > max) return max + 1;
+        let prev2 = null, prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+        for (let i = 1; i <= a.length; i++) {
+          const cur = [i];
+          let minFila = i;
+          for (let j = 1; j <= b.length; j++) {
+            const coste = a[i - 1] === b[j - 1] ? 0 : 1;
+            let v = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + coste);
+            if (prev2 && i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1])
+              v = Math.min(v, prev2[j - 2] + 1);
+            cur.push(v);
+            if (v < minFila) minFila = v;
+          }
+          if (minFila > max) return max + 1;
+          prev2 = prev; prev = cur;
+        }
+        return prev[b.length];
+      }
+
+      function parecida(t){
+        if (t.length < 4 || /\s/.test(t)) return null;
+        const max = t.length <= 5 ? 1 : 2;
+        let mejor = null, dMejor = max + 1, pMejor = 0;
+        vocab.forEach((peso, w) => {
+          const d = distancia(t, w, max);
+          if (d < dMejor || (d === dMejor && d <= max && peso > pMejor)) { mejor = w; dMejor = d; pMejor = peso; }
+        });
+        return dMejor <= max ? mejor : null;
+      }
+
+      /* ---- la búsqueda ---- */
+      let ignorarErratas = false;
+      function buscar(consulta){
+        if (!indice) construirIndice();
+        const terminos = analizar(consulta);
+        const corregidos = [];
+        terminos.forEach(t => {
+          if (t.tipo !== 'texto') return;
+          t.alts = [t.valor].concat(bgAlias[t.valor] || []);
+          if (t.negado || ignorarErratas) return;
+          if (t.alts.some(v => corpus.includes(v))) return;
+          const p = parecida(t.valor);
+          if (p) { corregidos.push([t.valor, p]); t.alts = [p]; }
+        });
+
+        const positivos = [];
+        terminos.forEach(t => { if (t.tipo === 'texto' && !t.negado) positivos.push(...t.alts); });
+        const frase = normaliza(consulta).replace(/"/g, '').trim();
+
+        const res = [];
+        indice.forEach(e => {
+          let total = 0;
+          for (const t of terminos) {
+            let p;
+            if (t.tipo !== 'texto' || t.negado) p = puntuar(e.doc, [t]);
+            else p = Math.max(...t.alts.map(v => puntuar(e.doc, [Object.assign({}, t, { valor: v })])));
+            if (p < 0) return;
+            total += p;
+          }
+          /* La consulta entera en el título, o en el autor, pesa por encima de todo lo
+             demás: «torre de babel» tiene que dar primero la torre de Babel. */
+          if (frase.length > 2 && !/[:"-]/.test(consulta)) {
+            if (e.doc.obra.includes(frase)) total += 40;
+            else if (e.doc.autor.includes(frase)) total += 25;
+          }
+          res.push({ e, total });
+        });
+        res.sort((a, b) => b.total - a.total || a.e.k - b.e.k);
+        return { res: res.map(r => r.e), terminos, positivos, corregidos };
+      }
+
+      /* Resalta en el texto original lo que coincide en el normalizado: se normaliza
+         carácter a carácter para saber qué letra original corresponde a cada una. */
+      function resaltar(texto, valores){
+        const t = String(texto == null ? '' : texto);
+        const vals = valores.filter(v => v && v.length > 1);
+        if (!vals.length) return esc(t);
+        let n = ''; const mapa = [];
+        for (let i = 0; i < t.length; i++) {
+          const c = normaliza(t[i]);
+          for (let j = 0; j < c.length; j++) { n += c[j]; mapa.push(i); }
+        }
+        const marca = new Array(t.length).fill(false);
+        vals.forEach(v => {
+          let desde = 0, p;
+          while ((p = n.indexOf(v, desde)) !== -1) {
+            for (let q = mapa[p]; q <= mapa[p + v.length - 1]; q++) marca[q] = true;
+            desde = p + v.length;
+          }
+        });
+        let out = '', dentro = false;
+        for (let i = 0; i < t.length; i++) {
+          if (marca[i] && !dentro) { out += '<mark>'; dentro = true; }
+          if (!marca[i] && dentro) { out += '</mark>'; dentro = false; }
+          out += esc(t[i]);
+        }
+        return out + (dentro ? '</mark>' : '');
+      }
+
+      /* El pasaje donde aparece el término, cuando no está a la vista en el título. */
+      function extracto(d, vals){
+        const visibles = normaliza([d.title, d.artist, d.libro, d.sede, d.meta].join(' '));
+        const faltan = vals.filter(v => v.length > 1 && !visibles.includes(v));
+        if (!faltan.length) return '';
+        for (const texto of [d.snippet, d.analysis, d.history, d.bio]) {
+          if (!texto) continue;
+          const n = normaliza(texto);
+          for (const v of faltan) {
+            const p = n.indexOf(v);
+            if (p < 0) continue;
+            let a = Math.max(0, p - 70), b = Math.min(texto.length, p + v.length + 90);
+            if (a > 0) a = texto.indexOf(' ', a) + 1 || a;
+            if (b < texto.length) b = texto.lastIndexOf(' ', b) > p ? texto.lastIndexOf(' ', b) : b;
+            return (a > 0 ? '…' : '') + resaltar(texto.slice(a, b), vals) + (b < texto.length ? '…' : '');
+          }
+        }
+        return '';
+      }
+
+      /* ---- recientes: solo comodidad de quien mira, así que el almacenamiento puede fallar ---- */
+      const CLAVE_RECIENTES = 'buscador-general-recientes';
+      function recientes(){
+        try { return JSON.parse(localStorage.getItem(CLAVE_RECIENTES) || '[]').slice(0, 6); }
+        catch (_) { return []; }
+      }
+      function guardarReciente(q){
+        q = (q || '').trim();
+        if (q.length < 2) return;
+        try {
+          const l = [q].concat(recientes().filter(x => x !== q)).slice(0, 6);
+          localStorage.setItem(CLAVE_RECIENTES, JSON.stringify(l));
+        } catch (_) {}
+      }
+
+      const IDEAS = ['diluvio', 'autor:rembrandt', 'sede:louvre', 'libro:iliada', 'año:<-500',
+                     '"torre de babel"', 'aquiles', 'serpiente', 'año:1500-1600', 'grabado'];
+
+      /* ---- pintar ---- */
+      const LIMITE = 60;
+      let visibles = [];        // obras en pantalla, en orden
+      let conjuntoActual = [];  // todas las encontradas, para que el visor las recorra
+      let nombreConjunto = '';
+      let sel = 0, verTodas = false, fijo = null;
+
+      function fila(e, vals, pos){
+        const d = e.d;
+        const donde = [d.libro, d.sede || ''].filter(Boolean).join(' · ');
+        const ext = extracto(d, vals);
+        return `<button type="button" class="bg-fila" role="option" data-pos="${pos}">` +
+          `<span class="bg-img">${e.src ? `<img src="${e.src}" alt="" loading="lazy" decoding="async">` : ''}</span>` +
+          `<span class="bg-txt"><strong>${resaltar(d.title, vals)}</strong>` +
+          `<em>${resaltar(d.artist, vals)}</em>` +
+          `<small>${resaltar(donde, vals)}</small>` +
+          (ext ? `<span class="bg-extracto">${ext}</span>` : '') +
+          `</span></button>`;
+      }
+
+      function chipsAutoresYLibros(terminos){
+        const txt = terminos.filter(t => t.tipo === 'texto' && !t.negado && !t.campo);
+        if (!txt.length || txt.length !== terminos.length) return '';
+        const casa = cad => txt.every(t => t.alts.some(v => cad.includes(v)));
+        const autores = (typeof AUTORES !== 'undefined' ? AUTORES : [])
+          .filter(a => a.obras && a.obras.length && casa(normaliza(a.nombre))).slice(0, 4);
+        const libros = librosReales().filter(id =>
+          casa(normaliza(BOOKS[id].corto + ' ' + BOOKS[id].title))).slice(0, 3);
+        if (!autores.length && !libros.length) return '';
+        const vals = [].concat(...txt.map(t => t.alts));
+        return '<div class="bg-chips">' +
+          autores.map(a => `<button type="button" class="bg-chip" data-autor="${esc(a.clave)}">` +
+            (a.retrato ? `<img src="${esc(a.retrato)}" alt="">` : `<img alt="">`) +
+            `${resaltar(a.nombre, vals)} <small>${a.obras.length} obra${a.obras.length === 1 ? '' : 's'}</small></button>`).join('') +
+          libros.map(id => `<button type="button" class="bg-chip solo-texto" data-libro="${id}">` +
+            `${resaltar(BOOKS[id].corto, vals)} <small>libro · ${BOOKS[id].details.length} obras</small></button>`).join('') +
+          '</div>';
+      }
+
+      function pintarVacio(){
+        const r = recientes();
+        cuenta.textContent = BOOKS.inicio.details.length + ' obras';
+        cuerpo.innerHTML =
+          (r.length ? '<div class="bg-seccion">Recientes</div><div class="bg-chips">' +
+            r.map(q => `<button type="button" class="bg-chip solo-texto" data-q="${esc(q)}">${esc(q)}</button>`).join('') + '</div>' : '') +
+          '<div class="bg-seccion">Prueba con</div><div class="bg-chips">' +
+          IDEAS.map(q => `<button type="button" class="bg-chip solo-texto" data-q="${esc(q)}"><code>${esc(q)}</code></button>`).join('') +
+          '</div><div class="bg-vacio">Busca en los títulos, los autores, los museos y el texto completo de cada ficha. ' +
+          'No importan los acentos ni las mayúsculas, y se corrigen las erratas.<br>' +
+          'Varios términos se suman · <b style="color:var(--accent-gold);font-weight:500">"entre comillas"</b> busca la frase exacta · ' +
+          '<b style="color:var(--accent-gold);font-weight:500">-palabra</b> la excluye · ' +
+          '<b style="color:var(--accent-gold);font-weight:500">obra: autor: sede: ciudad: pais: libro: año:</b> acotan el campo · ' +
+          '<b style="color:var(--accent-gold);font-weight:500">año:&lt;1600</b>, <b style="color:var(--accent-gold);font-weight:500">año:1500-1600</b>, <b style="color:var(--accent-gold);font-weight:500">año:&lt;-500</b> para a.C.</div>';
+        visibles = []; conjuntoActual = [];
+        enlazar();
+      }
+
+      function pintar(){
+        const q = campo.value || '';
+        if (fijo) return pintarFijo();
+        if (!q.trim()) return pintarVacio();
+        const { res, terminos, positivos, corregidos } = buscar(q);
+        conjuntoActual = res;
+        nombreConjunto = `Búsqueda: «${q.trim()}»`;
+        visibles = verTodas ? res : res.slice(0, LIMITE);
+        if (sel >= visibles.length) sel = 0;
+        cuenta.textContent = res.length === 1 ? '1 obra' : `${res.length} obras`;
+
+        let html = '';
+        if (corregidos.length)
+          html += '<div class="bg-aviso">Mostrando resultados de ' +
+            corregidos.map(([, p]) => `<b>${esc(p)}</b>`).join(', ') +
+            ' · <button type="button" data-literal="1">buscar ' +
+            corregidos.map(([o]) => `«${esc(o)}»`).join(', ') + ' tal cual</button></div>';
+        html += chipsAutoresYLibros(terminos);
+        if (res.length) {
+          html += '<div class="bg-seccion">Obras</div>' + visibles.map((e, p) => fila(e, positivos, p)).join('');
+          if (visibles.length < res.length)
+            html += `<button type="button" class="bg-mas" data-mas="1">Ver las ${res.length} obras</button>`;
+        } else {
+          html += '<div class="bg-vacio">Ninguna obra coincide con «' + esc(q.trim()) + '». ' +
+            'Prueba con menos términos, sin prefijos de campo, o con el nombre en español.</div>';
+        }
+        cuerpo.innerHTML = html;
+        enlazar();
+      }
+
+      /* Las obras de un autor elegido en las sugerencias: por su lista, no por el texto,
+         porque «Taller de Rembrandt» no dice «Rembrandt van Rijn». */
+      function pintarFijo(){
+        const a = AUTORES.find(x => x.clave === fijo);
+        const obras = a ? a.obras.map(obraDe).filter(Boolean) : [];
+        if (!indice) construirIndice();
+        conjuntoActual = obras.map(o => indice.find(e => e.libro === o.libro && e.i === o.i)).filter(Boolean);
+        visibles = conjuntoActual;
+        nombreConjunto = a ? a.nombre : '';
+        if (sel >= visibles.length) sel = 0;
+        cuenta.textContent = visibles.length === 1 ? '1 obra' : `${visibles.length} obras`;
+        cuerpo.innerHTML = `<div class="bg-seccion">Obras de ${esc(nombreConjunto)}</div>` +
+          visibles.map((e, p) => fila(e, [], p)).join('');
+        enlazar();
+      }
+
+      function marcarSel(desplazar){
+        const filas = cuerpo.querySelectorAll('.bg-fila');
+        filas.forEach((f, p) => f.classList.toggle('sel', p === sel));
+        const f = filas[sel];
+        if (desplazar && f && typeof f.scrollIntoView === 'function') f.scrollIntoView({ block: 'nearest' });
+      }
+
+      function enlazar(){
+        cuerpo.querySelectorAll('.bg-fila').forEach(f => {
+          f.addEventListener('click', () => abrirObra(+f.dataset.pos));
+          f.addEventListener('mousemove', () => { if (sel !== +f.dataset.pos) { sel = +f.dataset.pos; marcarSel(false); } });
+        });
+        cuerpo.querySelectorAll('.bg-chip[data-q]').forEach(c =>
+          c.addEventListener('click', () => { campo.value = c.dataset.q; alEscribir(); campo.focus(); }));
+        cuerpo.querySelectorAll('.bg-chip[data-autor]').forEach(c =>
+          c.addEventListener('click', () => {
+            const a = AUTORES.find(x => x.clave === c.dataset.autor);
+            fijo = c.dataset.autor; sel = 0;
+            campo.value = a ? a.nombre : campo.value;
+            pintar(); campo.focus();
+          }));
+        cuerpo.querySelectorAll('.bg-chip[data-libro]').forEach(c =>
+          c.addEventListener('click', () => { guardarReciente(campo.value); cerrarBuscador(); switchBook(c.dataset.libro); }));
+        const lit = cuerpo.querySelector('[data-literal]');
+        if (lit) lit.addEventListener('click', () => { ignorarErratas = true; pintar(); campo.focus(); });
+        const mas = cuerpo.querySelector('[data-mas]');
+        if (mas) mas.addEventListener('click', () => { verTodas = true; pintar(); });
+        marcarSel(false);
+      }
+
+      function abrirObra(pos){
+        const e = visibles[pos];
+        if (!e) return;
+        sel = pos; marcarSel(false);
+        guardarReciente(campo.value);
+        const conjunto = conjuntoActual.map(x => ({ libro: x.libro, i: x.i }));
+        abrirEnConjunto(nombreConjunto, conjunto, e.libro, e.i);
+      }
+
+      let espera = null;
+      function alEscribir(){
+        fijo = null; sel = 0; verTodas = false; ignorarErratas = false;
+        clearTimeout(espera);
+        /* Una pausa mínima: con el texto completo de todas las fichas, buscar en cada
+           pulsación rápida no aporta nada y hace que la lista parpadee. */
+        espera = setTimeout(pintar, 60);
+      }
+      campo.addEventListener('input', alEscribir);
+
+      /* ---- abrir y cerrar ---- */
+      let focoPrevio = null;
+      function abrirBuscador(){
+        if (capa.classList.contains('abierta')) { campo.focus(); campo.select && campo.select(); return; }
+        focoPrevio = document.activeElement;
+        capa.classList.add('abierta');
+        boton.classList.add('activo');
+        document.body.classList.add('bg-bloqueo');
+        pintar();
+        campo.focus();
+        if (campo.select) campo.select();
+      }
+      function cerrarBuscador(){
+        capa.classList.remove('abierta');
+        boton.classList.remove('activo');
+        document.body.classList.remove('bg-bloqueo');
+        if (focoPrevio && typeof focoPrevio.focus === 'function') focoPrevio.focus();
+      }
+      boton.addEventListener('click', abrirBuscador);
+      cerrar.addEventListener('click', cerrarBuscador);
+      capa.addEventListener('click', ev => { if (ev && ev.target === capa) cerrarBuscador(); });
+
+      /* En fase de captura: con el visor abierto encima, Esc y las flechas son suyos, y
+         hay que enterarse antes de que su manejador lo cierre para no cerrar también esto. */
+      document.addEventListener('keydown', ev => {
+        const visor = document.getElementById('zoomModal');
+        if (visor && visor.classList.contains('active')) return;
+        const abierto = capa.classList.contains('abierta');
+        const foco = document.activeElement;
+        const escribiendo = foco && /^(INPUT|TEXTAREA|SELECT)$/.test(foco.tagName || '');
+
+        if ((ev.key === 'k' || ev.key === 'K') && (ev.metaKey || ev.ctrlKey)) {
+          ev.preventDefault(); abrirBuscador(); return;
+        }
+        if (!abierto) {
+          if (ev.key === '/' && !escribiendo && !ev.metaKey && !ev.ctrlKey && !ev.altKey) {
+            ev.preventDefault(); abrirBuscador();
+          }
+          return;
+        }
+        if (ev.key === 'Escape') { ev.preventDefault(); ev.stopPropagation(); cerrarBuscador(); return; }
+        if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp') {
+          if (!visibles.length) return;
+          ev.preventDefault(); ev.stopPropagation();
+          sel = (sel + (ev.key === 'ArrowDown' ? 1 : -1) + visibles.length) % visibles.length;
+          marcarSel(true);
+          return;
+        }
+        if (ev.key === 'Enter' && visibles.length && (foco === campo || !foco || foco === document.body)) {
+          ev.preventDefault(); abrirObra(sel);
+          return;
+        }
+        /* ← → y la barra espaciadora mueven el banner de la portada, que está debajo. */
+        if (ev.key === 'ArrowLeft' || ev.key === 'ArrowRight' || ev.key === ' ') ev.stopPropagation();
+      }, true);
+
+      window.abrirBuscadorGeneral = abrirBuscador;
+      window.buscarEnColeccion = q => buscar(q).res.map(e => ({ libro: e.libro, i: e.i, title: e.d.title }));
+    })();
+
     /* CAMBIO DE LIBRO */
     function switchBook(bookId, btnElement) {
       const book = BOOKS[bookId];
@@ -13959,6 +14528,18 @@
         return encajar(cx - w/2, cy - h/2, cx + w/2, cy + h/2, 1.3);
       }
 
+      /* Pulsar algo en el mapa nunca aleja. encajarSedes da a una sede suelta un cuadro
+         regional de 42 unidades, y quien ya estaba más cerca —dentro de Ciudad de México,
+         con cada museo en su sitio— salía despedido a ese cuadro, los museos se volvían
+         a agrupar y parecía que el clic le devolvía a la vista general. Si el destino es
+         más ancho que lo que se ve, se centra en él a la escala actual, o `factor` veces
+         más cerca cuando lo que se busca es que un grupo se separe. */
+      function sinAlejar(destino, factor){
+        if (destino.w < vista.w) return destino;
+        const w = Math.max(vista.w / factor, MIN_W), h = w * vista.h / vista.w;
+        return { x: destino.x + destino.w / 2 - w / 2, y: destino.y + destino.h / 2 - h / 2, w, h };
+      }
+
       /* vista = ventana del lienzo que se ve; se anima hacia vistaObj */
       /* Se abre en el mundo entero: con obras en tres continentes, empezar en Europa
          escondía media colección. El botón Europa sigue estando para acercarse. */
@@ -14108,7 +14689,11 @@
       /* ---------- agrupación dependiente de la escala ---------- */
       function grupos(){
         const s = escala();
-        const umbral = SEP_PX / s;        // separación mínima en píxeles de pantalla
+        /* La separación mínima crece con los marcadores. Muy acercado miden hasta 2,4
+           veces más (factorMarca) y con un umbral fijo de 34 px dos museos se separaban
+           con los discos aún montados uno encima del otro: el Soumaya y el MUNAL, en
+           Ciudad de México, quedaban así y había que atinar al borde de uno. */
+        const umbral = SEP_PX * factorMarca(s) / s;
         const g = [];
         activas().forEach(i => {
           const sd = SEDES[i];
@@ -14224,13 +14809,17 @@
                  veinticuatro museos repartidos por todo el mapamundi en vez de volar a
                  Europa y dejar que se separaran solos al acercarse. */
               const ciudades = new Set(c.sedes.map(i => SEDES[i].ciudad));
-              const destino = encajarSedes(c0.sedes, off);
+              /* En el tope de acercamiento un grupo ya no se va a separar más: en una
+                 pantalla estrecha el Vaticano y San Pietro in Vincoli siguen juntos ahí.
+                 Volar no haría nada, así que se abre en abanico como los de una ciudad. */
+              const tope = vista.w <= MIN_W * 1.05;
 
-              if (ciudades.size > 1) {
+              if (ciudades.size > 1 && !tope) {
                 ciudadAbierta = null;
-                irAVista(destino, true);
+                irAVista(sinAlejar(encajarSedes(c0.sedes, off), 2.5), true);
                 return;
               }
+              const destino = sinAlejar(encajarSedes(c0.sedes, off), 1);
 
               /* Museos de una misma ciudad: por mucho que se acerque uno caen en el mismo
                  punto, así que se abren en abanico. Se vuela igualmente al encuadre de la
@@ -14679,7 +15268,8 @@
         const s = SEDES[idx];
         hojaA('medio');
         if (modo === 'sedes') pintarLista();
-        if (volar) irAVista(encajarSedes([idx], xCercano(s.x) - s.x), true); else dibujar();
+        if (volar) irAVista(sinAlejar(encajarSedes([idx], xCercano(s.x) - s.x), 1), true);
+        else dibujar();
         pintarDetalle(s);
         hojaEnfocar('.sede-item.sel');
       }
@@ -14937,7 +15527,21 @@
       /* Lleva a la vista, dentro de la hoja, lo recién elegido. Espera un fotograma a que
          la lista se haya repintado. */
       function hojaEnfocar(sel){
-        if (!movil()) return;
+        /* En escritorio la lista lateral tiene su propio desplazamiento (520 px) y va
+           ordenada por número de obras: un museo de una obra, como la Capilla Brancacci,
+           desplegaba sus obras al fondo, fuera de la vista, y pulsarlo en el mapa parecía
+           no hacer nada. Se sube la sede elegida al principio de la lista, con su
+           desplegable debajo. Sin tocar el desplazamiento de la página: movería el mapa. */
+        if (!movil()) {
+          if (!sel) return;
+          requestAnimationFrame(() => {
+            const el = lista.querySelector(sel);
+            if (!el) return;
+            const top = lista.scrollTop + el.getBoundingClientRect().top - lista.getBoundingClientRect().top;
+            if (lista.scrollTo) lista.scrollTo({ top, behavior: 'smooth' }); else lista.scrollTop = top;
+          });
+          return;
+        }
         requestAnimationFrame(() => {
           const el = sel ? cuerpo.querySelector(sel) : null;
           const cr = cuerpo.getBoundingClientRect();
