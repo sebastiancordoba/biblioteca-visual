@@ -108,6 +108,18 @@ JS = r"""
         return encajar(cx - w/2, cy - h/2, cx + w/2, cy + h/2, 1.3);
       }
 
+      /* Pulsar algo en el mapa nunca aleja. encajarSedes da a una sede suelta un cuadro
+         regional de 42 unidades, y quien ya estaba más cerca —dentro de Ciudad de México,
+         con cada museo en su sitio— salía despedido a ese cuadro, los museos se volvían
+         a agrupar y parecía que el clic le devolvía a la vista general. Si el destino es
+         más ancho que lo que se ve, se centra en él a la escala actual, o `factor` veces
+         más cerca cuando lo que se busca es que un grupo se separe. */
+      function sinAlejar(destino, factor){
+        if (destino.w < vista.w) return destino;
+        const w = Math.max(vista.w / factor, MIN_W), h = w * vista.h / vista.w;
+        return { x: destino.x + destino.w / 2 - w / 2, y: destino.y + destino.h / 2 - h / 2, w, h };
+      }
+
       /* vista = ventana del lienzo que se ve; se anima hacia vistaObj */
       /* Se abre en el mundo entero: con obras en tres continentes, empezar en Europa
          escondía media colección. El botón Europa sigue estando para acercarse. */
@@ -257,7 +269,11 @@ JS = r"""
       /* ---------- agrupación dependiente de la escala ---------- */
       function grupos(){
         const s = escala();
-        const umbral = SEP_PX / s;        // separación mínima en píxeles de pantalla
+        /* La separación mínima crece con los marcadores. Muy acercado miden hasta 2,4
+           veces más (factorMarca) y con un umbral fijo de 34 px dos museos se separaban
+           con los discos aún montados uno encima del otro: el Soumaya y el MUNAL, en
+           Ciudad de México, quedaban así y había que atinar al borde de uno. */
+        const umbral = SEP_PX * factorMarca(s) / s;
         const g = [];
         activas().forEach(i => {
           const sd = SEDES[i];
@@ -373,13 +389,17 @@ JS = r"""
                  veinticuatro museos repartidos por todo el mapamundi en vez de volar a
                  Europa y dejar que se separaran solos al acercarse. */
               const ciudades = new Set(c.sedes.map(i => SEDES[i].ciudad));
-              const destino = encajarSedes(c0.sedes, off);
+              /* En el tope de acercamiento un grupo ya no se va a separar más: en una
+                 pantalla estrecha el Vaticano y San Pietro in Vincoli siguen juntos ahí.
+                 Volar no haría nada, así que se abre en abanico como los de una ciudad. */
+              const tope = vista.w <= MIN_W * 1.05;
 
-              if (ciudades.size > 1) {
+              if (ciudades.size > 1 && !tope) {
                 ciudadAbierta = null;
-                irAVista(destino, true);
+                irAVista(sinAlejar(encajarSedes(c0.sedes, off), 2.5), true);
                 return;
               }
+              const destino = sinAlejar(encajarSedes(c0.sedes, off), 1);
 
               /* Museos de una misma ciudad: por mucho que se acerque uno caen en el mismo
                  punto, así que se abren en abanico. Se vuela igualmente al encuadre de la
@@ -828,7 +848,8 @@ JS = r"""
         const s = SEDES[idx];
         hojaA('medio');
         if (modo === 'sedes') pintarLista();
-        if (volar) irAVista(encajarSedes([idx], xCercano(s.x) - s.x), true); else dibujar();
+        if (volar) irAVista(sinAlejar(encajarSedes([idx], xCercano(s.x) - s.x), 1), true);
+        else dibujar();
         pintarDetalle(s);
         hojaEnfocar('.sede-item.sel');
       }
@@ -1086,7 +1107,21 @@ JS = r"""
       /* Lleva a la vista, dentro de la hoja, lo recién elegido. Espera un fotograma a que
          la lista se haya repintado. */
       function hojaEnfocar(sel){
-        if (!movil()) return;
+        /* En escritorio la lista lateral tiene su propio desplazamiento (520 px) y va
+           ordenada por número de obras: un museo de una obra, como la Capilla Brancacci,
+           desplegaba sus obras al fondo, fuera de la vista, y pulsarlo en el mapa parecía
+           no hacer nada. Se sube la sede elegida al principio de la lista, con su
+           desplegable debajo. Sin tocar el desplazamiento de la página: movería el mapa. */
+        if (!movil()) {
+          if (!sel) return;
+          requestAnimationFrame(() => {
+            const el = lista.querySelector(sel);
+            if (!el) return;
+            const top = lista.scrollTop + el.getBoundingClientRect().top - lista.getBoundingClientRect().top;
+            if (lista.scrollTo) lista.scrollTo({ top, behavior: 'smooth' }); else lista.scrollTop = top;
+          });
+          return;
+        }
         requestAnimationFrame(() => {
           const el = sel ? cuerpo.querySelector(sel) : null;
           const cr = cuerpo.getBoundingClientRect();
