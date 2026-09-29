@@ -16,7 +16,7 @@ frameworks) que se abre directamente en el navegador:
 open index.html
 ```
 
-Lo único que se carga de red son las fuentes de Google Fonts (Cinzel + Inter). Todo lo demás son
+Lo único que se carga de red son las fuentes de Google Fonts (Cormorant Garamond + Source Serif 4). Todo lo demás son
 rutas relativas a archivos locales, así que el sitio funciona offline salvo la tipografía.
 
 **Todo el contenido de cara al usuario se escribe en español.** Títulos, análisis, comentarios del
@@ -241,9 +241,29 @@ sumarlos a ojo dejaba el botón «Ver en detalle» cortado por el borde inferior
 ## Estilo visual
 
 Todo el tema vive en variables CSS de `:root`, al inicio del `<style>`: fondo casi negro
-(`--bg-body: #07080a`), acento dorado (`--accent-gold: #c5a046`), Cinzel para títulos y Inter para
-texto. Cambiar el tema es cambiar esas variables, no reglas sueltas. Los íconos son SVG en línea
-(trazo `currentColor`), sin librería de iconos.
+(`--bg-body: #07080a`), acento dorado (`--accent-gold: #c5a046`), Cormorant Garamond para títulos
+(`--font-serif`) y Source Serif 4 para texto (`--font-sans`, que conserva el nombre aunque ya no sea
+de palo seco). Cambiar el tema es cambiar esas variables, no reglas sueltas —y en los tres sitios
+que las declaran: `index.html`, `herramientas/sitio/estilo.css` y el `<link>` de `paginas.py`—.
+Los íconos son SVG en línea (trazo `currentColor`), sin librería de iconos.
+
+Hasta septiembre de 2026 eran Cinzel e Inter, que son justo las que sale por defecto en cualquier
+diseño «clásico» hecho con IA. Cormorant trae cifras de estilo antiguo, así que `body` pide
+`font-feature-settings: "lnum"` (no `font-variant-numeric`, que el atajo `font-variant` de algunos
+rótulos reinicia), y los botones lo heredan explícitamente porque el navegador les pone su fuente.
+
+### Nombres que llevan a su página
+
+En la aplicación, el título de una obra lleva a su ficha y el autor a su página: en las tarjetas
+de libro, la portada (banner y «Todas las obras»), las tarjetas de autor y el visor. Se resuelve
+**por la imagen principal**, no por el índice (`urlObra`, `urlAutor`), porque la portada, la
+cronología y el mapa numeran las obras a su manera. `FICHAS` vale `null` en `index.html` y
+`construir_sitio.py` la rellena; sin ella los títulos quedan como texto.
+
+«Ver en el mapa» está en el visor y en la ficha de cada obra con sede. El mapa expone
+`window.sedeDeObra` y `window.verObraEnMapa` (en `mapa_js.py`); desde la ficha se llega por
+`#/<libro>/mapa/<n>`, que abre el mapa, vuela a la sede, marca la obra y deja la dirección en
+`#/mapa`.
 
 ## El teléfono: una aplicación, no una web encogida
 
