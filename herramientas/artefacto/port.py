@@ -20,7 +20,7 @@ head = s[s.index("<head>")+6 : s.index("</head>")]
 body = s[s.index("<body>")+6 : s.index("</body>")]
 head = re.sub(r'\s*<meta charset[^>]*>', '', head)          # los pone el propio artefacto
 head = re.sub(r'\s*<meta name="viewport"[^>]*>', '', head)
-head = head.replace("Pinturas: Biblioteca Visual de los Grandes Libros", "Los Tres Libros")
+head = head.replace("Biblioteca Visual", "Los Tres Libros")
 
 doc = head + "\n" + body
 

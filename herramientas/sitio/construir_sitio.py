@@ -24,7 +24,7 @@ from comun import RAIZ, BUILD, SITIO, ENL, REJILLA, VISOR, miniatura, propia, es
 sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
 from libros import PATRON_RUTA_COMILLAS
 
-TITULO = "Biblioteca Visual de los Grandes Libros"
+TITULO = "Biblioteca Visual"
 
 doc = io.open(os.path.join(BUILD, "pre_imagenes.html"), encoding="utf-8").read()
 if os.path.isdir(SITIO):

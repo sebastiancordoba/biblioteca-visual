@@ -1,4 +1,4 @@
-# Biblioteca Visual de los Grandes Libros
+# Biblioteca Visual
 
 **[sebastiancordoba.github.io/biblioteca-visual](https://sebastiancordoba.github.io/biblioteca-visual/)**
 

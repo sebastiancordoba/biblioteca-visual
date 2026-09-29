@@ -21,7 +21,7 @@ head=s[s.index("<head>")+6:s.index("</head>")]
 body=s[s.index("<body>")+6:s.index("</body>")]
 head=re.sub(r'\s*<meta charset[^>]*>','',head)
 head=re.sub(r'\s*<meta name="viewport"[^>]*>','',head)
-head=head.replace("Pinturas: Biblioteca Visual de los Grandes Libros","Los Tres Libros")
+head=head.replace("<title>Biblioteca Visual</title>","<title>Los Tres Libros</title>")
 doc=head+"\n"+body
 
 ENL=json.load(io.open(os.path.join(AQUI,"datos","enlaces.json"),encoding="utf-8"))
