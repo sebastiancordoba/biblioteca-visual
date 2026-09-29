@@ -49,9 +49,11 @@
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/libros/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/libros/atrahasis/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/libros/enuma/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/libros/exodo/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/libros/genesis/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/libros/gilgamesh/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/libros/iliada/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/libros/levitico/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/atrahasis/01-la-tablilla-de-atrahasis/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/atrahasis/02-enlil-el-dios-que-no-podia-dormir/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/atrahasis/03-ea-el-dios-que-aviso-a-atrahasis/</loc></url>
@@ -67,6 +69,19 @@
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/enuma/07-la-azada-y-el-calamo-marduk-y-nabu-en-una-estela-asiria/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/enuma/08-asurbanipal-reconstruye-la-casa-de-marduk/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/enuma/09-la-imagen-que-se-tomo-por-marduk-contra-tiamat/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/01-el-paso-del-mar-rojo-ritual-de-vardan/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/02-el-arcangel-miguel-y-el-paso-del-mar-rojo/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/03-asiya-y-sus-doncellas-encuentran-a-moises-en-el-nilo/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/04-la-hagada-de-las-cabezas-de-pajaro-la-preparacion-de-la/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/05-el-angel-yibril-gabriel-trae-a-musa-las-leyes-de-dios/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/06-moises-con-las-tablas-de-la-ley/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/07-la-vara-de-musa-se-convierte-en-dragon-ante-los-magos-del/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/08-moises-se-descalza-ante-la-zarza-ardiente/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/09-las-plagas-de-egipto-ranas-piojos-fieras-y-peste-hagada-de/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/10-moises/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/11-la-adoracion-del-becerro-de-oro/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/12-moises-con-las-tablas-de-la-ley/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/exodo/13-el-arca-de-la-alianza-con-los-querubines/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/01-la-creacion-de-adan/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/02-la-expulsion-del-paraiso/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/03-cain-y-abel/</loc></url>
@@ -114,6 +129,24 @@
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/45-jose-huye-de-la-mujer-de-putifar-yusuf-y-zulaija/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/46-el-primer-duelo/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/47-noe-embarca-a-los-animales-una-miniatura-armenia-de-isfahan/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/48-la-creacion-de-eva-en-la-iglesia-de-narga-selassie/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/49-el-angel-detiene-la-mano-de-abraham-en-la-iglesia-de-narga/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/50-adan-y-eva-con-sus-trece-parejas-de-gemelos-en-la-zubdetu-t/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/51-adan-y-eva-ante-el-arbol-relieve-de-la-iglesia-de-la-santa/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/52-la-rebeca-velada/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/53-jose-se-da-a-conocer-a-sus-hermanos/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/54-la-huida-de-lot-y-su-familia-de-sodoma/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/55-la-muerte-de-abel/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/56-expulsion-del-paraiso/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/57-la-partida-de-jacob/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/58-el-regreso-de-noe-o-de-abraham-a-la-tierra-de-canaan/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/59-la-entrada-de-los-animales-en-el-arca-de-noe/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/60-abel/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/61-el-sacrificio-de-isaac/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/62-presentacion-de-jacob-a-isaac/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/63-el-sacrificio-de-melquisedec-boceto/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/64-cain/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/genesis/65-lot-y-sus-hijas/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/gilgamesh/01-tablilla-xi-el-diluvio/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/gilgamesh/02-el-heroe-dominando-un-leon/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/gilgamesh/03-gilgamesh-y-huwawa-en-una-tablilla-sumeria/</loc></url>
@@ -125,6 +158,7 @@
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/gilgamesh/09-sello-cilindrico-del-heroe-y-el-toro/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/gilgamesh/10-la-caza-de-leones-de-asurbanipal/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/gilgamesh/11-el-heroe-abate-al-toro/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/gilgamesh/12-la-nueva-tablilla-v-de-la-epopeya-de-gilgamesh/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/iliada/01-aquiles-y-ayax-jugando-a-los-dados/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/iliada/02-jupiter-y-tetis/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/iliada/03-la-colera-de-aquiles/</loc></url>
@@ -152,6 +186,19 @@
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/iliada/25-el-rescate-del-cuerpo-de-hector/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/iliada/26-papiro-de-oxirrinco-221/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/iliada/27-la-iliada-de-garcia-malo/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/iliada/28-la-embajada-de-crises-ante-agamenon/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/iliada/29-el-sarcofago-de-aquiles-de-tiro/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/iliada/30-hector-reprocha-a-paris-su-retirada-del-combate/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/iliada/31-aquiles-enloquecido-por-la-perdida-de-patroclo-rechaza-el/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/levitico/01-la-consagracion-del-tabernaculo-y-el-sacerdocio-de-aaron/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/levitico/02-el-chivo-expiatorio/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/levitico/03-el-sumo-sacerdote-aaron/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/levitico/04-aaron-ofrece-el-sacrificio-ante-moises-andre-de-corbie/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/levitico/05-inicial-historiada-v-del-levitico-moises-ofrece-un-cordero/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/levitico/06-nadab-y-abiu-consumidos-por-el-fuego/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/levitico/07-aaron-revestido-con-el-pectoral-hoshen/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/levitico/08-la-ofrenda-de-las-dos-aves-puras-el-leproso-el-dia-de-su/</loc></url>
+  <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/obras/levitico/09-el-altar-de-cuernos-de-tel-beerseba/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/temas/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/temas/barro/</loc></url>
   <url><loc>https://sebastiancordoba.github.io/biblioteca-visual/temas/diluvio/</loc></url>
