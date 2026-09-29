@@ -374,6 +374,18 @@ La caja se monta desde JS sobre cada cuadrícula (`Object.keys(BOOKS)`), no se e
 marcado: así la tienen también las secciones generadas —la cronología— y los libros que se
 añadan, sin tocar nada.
 
+**La lupa** de la barra superior (a la derecha de Cobertura; en el teléfono, en la esquina
+de la barra de arriba) abre el **buscador general**: todas las obras de todos los libros, con
+el mismo motor y la misma sintaxis. Se abre también con `/` o ⌘K / Ctrl+K. Añade lo que solo
+tiene sentido sobre la colección entera: corrige erratas contra el vocabulario de las fichas
+(«rembrant» → Rembrandt, avisando y con opción de buscarlo tal cual), entiende nombres en inglés
+(`bgAlias`: «flood», «achilles»), sugiere autores y libros, y enseña el pasaje del análisis
+donde sale el término si no está en el título. Al abrir una obra, el visor recorre solo los
+resultados y al cerrarlo se vuelve a la lista. El botón va **el último** del `.book-switch`
+porque `build2.py`/`build3.py` insertan Cronología, Mapa y Cobertura detrás de la Biblioteca.
+El índice de cada obra en su libro se cuenta, no se busca por título.
+`probar_buscador_general.js` lo comprueba.
+
 En el mapa el buscador además **vuela a lo encontrado**: filtra las obras igual que el filtro
 por libro, de modo que grupos, abanicos, lista y continentes se adaptan solos, y encuadra las
 sedes que quedan. Si no queda ninguna, la vista se deja como estaba: alejarse a la nada
