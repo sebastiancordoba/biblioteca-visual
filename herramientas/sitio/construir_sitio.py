@@ -20,7 +20,7 @@ Uso: ./herramientas/construir_artefacto.sh && python3 herramientas/sitio/constru
 import io, json, os, re, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from comun import RAIZ, BUILD, SITIO, ENL, REJILLA, VISOR, miniatura, propia
+from comun import RAIZ, BUILD, SITIO, ENL, REJILLA, VISOR, miniatura, propia, es_tiff
 sys.path.insert(0, os.path.join(RAIZ, "herramientas"))
 from libros import PATRON_RUTA_COMILLAS
 
@@ -46,7 +46,7 @@ def sustituir(m):
         # tamaño estándar que sirve Commons (8000 o 2560 dan error 400). El original entero
         # sigue a un clic con el botón «Original».
         HD[url] = {"v": miniatura(lk, VISOR),
-                   "o": lk["original"] if lk["mp"] <= 150 else miniatura(lk, 3840)}
+                   "o": lk["original"] if lk["mp"] <= 150 and not es_tiff(lk) else miniatura(lk, 3840)}
         cuenta["commons"] += 1
         return f'"{url}"'
     cuenta["retrato" if rel.startswith("Autores/") else "propia"] += 1

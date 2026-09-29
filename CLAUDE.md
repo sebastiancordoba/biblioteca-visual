@@ -83,6 +83,27 @@ imagen son por lo tanto `./<Libro>/NN_archivo.jpg`, nunca `./NN_archivo.jpg`.
   usada como vista principal cuando supera a la que ya había.
 - Sin acentos ni espacios en los nombres de archivo (el contenido sí los lleva).
 
+## Las imágenes ya no se guardan en este ordenador
+
+Desde el 28 de septiembre de 2026 **la colección no guarda copia local de las imágenes**: el sitio las
+sirve desde Wikimedia Commons, y una imagen cuenta como presente si está en disco **o** si tiene su
+original enlazado en `herramientas/artefacto/datos/enlaces.json` (así lo aplican `inject.py`,
+`readme.py`, `build_mapa.py`, `verificar.js` y la cadena de previas). Se borraron 121 imágenes (1,4 GB),
+todas con su original en Commons y recuperables con `download.py` y los manifiestos.
+
+Solo quedan cuatro copias locales, porque son mejores que cualquier versión en Commons y el sitio
+genera de ellas su propia copia: la Creación de Adán (10080 px), la Expulsión de Masaccio
+(3429 × 6000), el Elohim de Blake (6072 px) y el Diluvio de Van Scorel. Y los retratos de `Autores/`.
+Como la carpeta está en iCloud Drive con «Optimizar almacenamiento», esos archivos pueden aparecer
+como `dataless`: siguen ahí y se descargan solos al abrirlos.
+
+**Obras nuevas**: no se descargan. `herramientas/alta_obras.py` toma fichas ya redactadas con fuentes,
+les da número, las escribe en `data_<libro>.py` (o `data_altas_<libro>.py` para los libros que ya
+existían) y anota el archivo de Commons en `herramientas/altas.tsv`, de donde `enlaces.py` saca el
+original. Commons solo sirve miniaturas en anchos estándar (1280, 1920, 3840…; 2560 u 8000 dan 400);
+los TIFF se sirven convertidos a JPEG (`lossy-page1-…`), y los originales de más de 150 MP se abren en
+el visor a 3840 px porque pesan cientos de megas.
+
 ## Regla no negociable: máxima calidad de imagen
 
 **Siempre la mejor resolución disponible.** Es el principio rector de la colección: el visor llega a

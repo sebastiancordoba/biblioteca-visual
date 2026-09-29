@@ -24,6 +24,24 @@ LIBROS = [
         "headings": ["Lo que hace que destaque", "Contexto histórico", "Biografía del artista"],
     },
     {
+        "id": "exodo", "corto": "Éxodo", "carpeta": "Éxodo",
+        "datos": "data_exodo", "var": "EXODO",
+        "tag": "Colección Éxodo",
+        "title": "El libro del Éxodo",
+        "sub": "Moisés, las plagas, el paso del mar Rojo y la Ley del Sinaí, en manuscritos "
+               "armenios, persas, hebreos y etíopes, en la pintura europea y en el arte andino.",
+        "headings": ["Lo que hace que destaque", "Contexto histórico", "Biografía del artista"],
+    },
+    {
+        "id": "levitico", "corto": "Levítico", "carpeta": "Levítico",
+        "datos": "data_levitico", "var": "LEVITICO",
+        "tag": "Colección Levítico",
+        "title": "El libro del Levítico",
+        "sub": "El sacerdocio de Aarón, los sacrificios, la pureza y el chivo expiatorio: un libro "
+               "de leyes, en el arte de Dura Europos, de Bizancio y de los manuscritos medievales.",
+        "headings": ["Lo que hace que destaque", "Contexto histórico", "Biografía del artista"],
+    },
+    {
         "id": "gilgamesh", "corto": "Gilgamesh", "carpeta": "Gilgamesh",
         "datos": "data_gilgamesh", "var": "GILGAMESH",
         "tag": "Colección Gilgamesh",
