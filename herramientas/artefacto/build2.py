@@ -68,7 +68,7 @@ nf="""      const wikiLinkEl = document.getElementById('panelWikiLink');
 assert vf in doc; doc=doc.replace(vf,nf,1)
 
 # ---------- visor: línea de crédito bajo los enlaces del panel ----------
-_m=re.search(r'(<a id="panelWikiLink"[\s\S]*?</a>\s*</div>)', doc)
+_m=re.search(r'(<a id="panelWikiLink"[\s\S]*?</a>(?:\s*<button id="panelMapaLink"[\s\S]*?</button>)?\s*</div>)', doc)
 assert _m, "no encuentro el bloque de enlaces del panel"
 doc=doc.replace(_m.group(1), _m.group(1)+'\n      <p id="panelCredito" class="credito"></p>', 1)
 

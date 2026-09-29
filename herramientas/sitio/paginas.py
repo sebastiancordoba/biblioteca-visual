@@ -79,7 +79,7 @@ def pagina(ruta, titulo, descripcion, cuerpo, imagen_og=None, datos_ld=None, sec
 {chr(10).join(og)}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..600;1,8..60,300..600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{R}estilo.css">
 <meta name="theme-color" content="#07080a">
 <link rel="manifest" href="{R}manifest.webmanifest">
@@ -224,6 +224,10 @@ def generar():
                                f'{lk["w"]}×{lk["h"]} px</a>')
             if d.get("wikiUrl"):
                 enlaces.append(f'<a class="boton" href="{e(d["wikiUrl"])}" rel="noopener">Wikipedia</a>')
+            # a su sede en el mapa de la aplicación: #/<libro>/mapa/<n> vuela a ella
+            mapa_url = f"{R}#/{L['id']}/mapa/{g}" if sede else None
+            if mapa_url:
+                enlaces.insert(1, f'<a class="boton" href="{e(mapa_url)}">Ver en el mapa</a>')
             h1, h2, h3 = L["headings"]
             of = OF.get(f"{L['id']}:{NUM_DE[(L['id'], g)]}")
             t1, t2, t3 = ((con_notas(of["analysis"]), con_notas(of["history"]), con_notas(of["bio"])) if of
@@ -239,7 +243,7 @@ def generar():
   <header class="obra-cab">
     <p class="ante">{e(L['corto'])} · Obra {g + 1:02d} de {n}</p>
     <h1>{e(d['title'])}</h1>
-    <p class="autor">{e(d['artist'])}</p>
+    <p class="autor">{f'<a href="{R}autores/{a["clave"]}/">{e(d["artist"])}</a>' if a else e(d['artist'])}</p>
     <p class="meta">{e(d['meta'])}</p>
   </header>
   <figure class="principal">
@@ -258,7 +262,7 @@ def generar():
     <aside class="ficha">
       <dl>
         {f"<dt>Fecha</dt><dd>{e(d['fecha'])}</dd>" if d.get('fecha') else ""}
-        {f"<dt>Dónde está</dt><dd>{e(sede[0])}<br><span>{e(sede[1])}</span></dd>" if sede else ""}
+        {f"<dt>Dónde está</dt><dd><a href='{e(mapa_url)}' title='Ver en el mapa'>{e(sede[0])}</a><br><span>{e(sede[1])}</span></dd>" if sede else ""}
         {f"<dt>Imagen</dt><dd>{e(d.get('px', ''))} · {e(d.get('mp', ''))}</dd>" if d.get('px') else ""}
         <dt>Libro</dt><dd><a href="{R}libros/{L['id']}/">{e(L['title'])}</a></dd>
         {("<dt>Temas</dt><dd>" + "<br>".join(f'<a href="{R}temas/{t["clave"]}/">{e(t["titulo"])}</a>' for t in TEMAS_DE.get((L["id"], g), [])) + "</dd>") if TEMAS_DE.get((L["id"], g)) else ""}

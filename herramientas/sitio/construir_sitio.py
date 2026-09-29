@@ -65,6 +65,10 @@ FICHAS = generar_paginas()
 _b = "    const BASE_FICHAS = 'https://sebastiancordoba.github.io/biblioteca-visual/';"
 assert doc.count(_b) == 1, "no encuentro BASE_FICHAS"
 doc = doc.replace(_b, "    const BASE_FICHAS = '';", 1)
+# ---------- y a la de cada obra: los títulos se vuelven enlaces ----------
+_f = "    const FICHAS = null;"
+assert doc.count(_f) == 1, "no encuentro FICHAS"
+doc = doc.replace(_f, "    const FICHAS = %s;" % json.dumps(FICHAS, ensure_ascii=False), 1)
 
 # ---------- nombre del sitio ----------
 doc = re.sub(r"<title>[^<]*</title>", f"<title>{TITULO}</title>", doc, count=1)
@@ -134,16 +138,16 @@ JS = """
     }
 
     /* ══════════ Solo en GitHub Pages: la página de cada obra ══════════
-       FICHAS[libro][índice] es la dirección de su página estática (obras/<libro>/<nn-título>/),
-       generada por paginas.py con los mismos índices que usa el visor. */
-    const FICHAS = %s;
+       FICHAS (arriba, junto a BASE_FICHAS) da la dirección de su página estática. Se busca
+       por la imagen con urlObra: con FICHAS[currentBook] el botón desaparecía al abrir la
+       obra desde la portada, la cronología o el mapa, que numeran a su manera. */
     (function () {
       const actualizar = updateModalImageAndArrows;
       updateModalImageAndArrows = function () {
         actualizar();
         const a = document.getElementById('panelFichaLink');
-        const r = (FICHAS[currentBook] || [])[currentArtworkGroupIndex];
-        if (a) { a.hidden = !r; if (r) a.href = r + '/'; }
+        const r = urlObra(bookGroups()[currentArtworkGroupIndex][0].src);
+        if (a) { a.hidden = !r; if (r) a.href = r; }
       };
     })();
 
@@ -169,6 +173,17 @@ JS = """
         if (!libro || !BOOKS[libro]) return;
         restaurando = true;
         try {
+          /* #/genesis/mapa/12: «Ver en el mapa» desde la página de una obra. Se abre el mapa,
+             no el libro, y la dirección se sustituye por #/mapa (sin sumar un paso al «atrás»). */
+          if (tab === 'mapa') {
+            const g = BOOKS[libro].groups[+n];
+            if (g && window.verObraEnMapa) {
+              irLibro('mapa');
+              history.replaceState(null, '', '#/mapa');
+              window.verObraEnMapa(g[0].src);
+              return;
+            }
+          }
           if (libro !== currentBook) irLibro(libro);
           /* #/genesis/obra/12[/1]: lo que abre «Abrir en el visor» desde la página de una obra. */
           if (tab === 'obra') {
@@ -183,7 +198,7 @@ JS = """
       window.addEventListener('popstate', leer);
       leer();
     })();
-""" % (json.dumps(HD, ensure_ascii=False), json.dumps(FICHAS, ensure_ascii=False))
+""" % json.dumps(HD, ensure_ascii=False)
 cierre = "  </script>"   # la página tiene un solo <script>, y termina en él
 assert doc.count(cierre) == 1, "no encuentro el cierre del script principal"
 doc = doc.replace(cierre, JS + cierre, 1)

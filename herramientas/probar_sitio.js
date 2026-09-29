@@ -65,4 +65,24 @@ console.log('\n== entrar por la dirección de una obra ==');
   ck(r.FICHAS && r.FICHAS.iliada && r.FICHAS.iliada.length > 20, 'el visor sabe la dirección de la página de cada obra');
 }
 
+console.log('\n== nombres que llevan a su página, y «Ver en el mapa» ==');
+{
+  const r = ejecutar(html, `{ grid: document.getElementById('genesis-grid').innerHTML,
+      todas: document.getElementById('inicioTodas').innerHTML,
+      urlObra, sedeDeObra: window.sedeDeObra, src: BOOKS.genesis.groups[4][0].src, inicio: BOOKS.inicio.groups }`,
+    { location: { hash: '#/genesis' }, history: { pushState() {}, replaceState() {} }, Image: class {} });
+  ck(/class="enlace-nombre a-obra" href="obras\/genesis\/\d\d-[^"]+\/"/.test(r.grid), 'el título de cada tarjeta lleva a la página de la obra');
+  ck(/class="enlace-nombre a-autor" href="autores\/[a-z0-9_-]+\/"/.test(r.grid), 'el autor de cada tarjeta lleva a su página');
+  ck(/a-obra" href="obras\//.test(r.todas), 'también en «Todas las obras» de la portada');
+  /* La portada numera a su manera: la dirección sale de la imagen, no del índice. */
+  ck(r.inicio.every(g => r.urlObra(g[0].src)), 'toda obra de la portada encuentra su página');
+  ck(r.sedeDeObra(r.src) >= 0, 'la Torre de Babel tiene sede en el mapa');
+
+  const loc = { hash: '#/genesis/mapa/4' }, pasos = [];
+  const m = ejecutar(html, '{libro: currentBook}',
+    { location: loc, history: { pushState(_, __, h) { pasos.push(h); }, replaceState(_, __, h) { loc.hash = h; } }, Image: class {} });
+  ck(m.libro === 'mapa' && loc.hash === '#/mapa' && !pasos.length,
+     `#/genesis/mapa/4 abre el mapa y deja #/mapa sin sumar pasos al «atrás» (${m.libro} ${loc.hash})`);
+}
+
 console.log(bad ? `\n*** ${bad} FALLAS ***` : '\ntodo en orden'); process.exit(bad ? 1 : 0);

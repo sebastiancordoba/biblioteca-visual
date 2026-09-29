@@ -17,7 +17,7 @@
   <title>Pinturas: Biblioteca Visual de los Grandes Libros</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..600;1,8..60,300..600&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-body: #07080a;
@@ -29,8 +29,8 @@
       --text-title: #f1f2f5;
       --text-body: #949ba8;
       --text-muted: #5a6170;
-      --font-serif: 'Cinzel', serif;
-      --font-sans: 'Inter', sans-serif;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Source Serif 4', Georgia, serif;
     }
 
     * {
@@ -43,8 +43,16 @@
       background-color: var(--bg-body);
       color: var(--text-body);
       font-family: var(--font-sans);
+      /* Cifras alineadas: Cormorant trae por defecto las de estilo antiguo («05» bajo la
+         línea). Como font-feature-settings y no font-variant-numeric, porque el atajo
+         font-variant de algunos rótulos reiniciaba este último. */
+      font-feature-settings: "lnum" 1;
       line-height: 1.6;
       padding-bottom: 80px;
+    }
+    /* Los controles de formulario no heredan la tipografía: el navegador les pone la suya. */
+    button, input, select, textarea {
+      font-feature-settings: inherit;
     }
 
     /* HEADER SOBRIO Y ELEGANTE */
@@ -603,13 +611,23 @@
       background: none; border: 0; padding: 0; color: inherit; font: inherit;
     }
     .todas-img {
-      display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #050608;
+      display: block; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; background: #050608;
       border: 1px solid var(--border-subtle); border-radius: 3px; transition: border-color .2s;
+      padding: 0; cursor: zoom-in;
     }
     .todas-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
     .todas-card:hover .todas-img { border-color: var(--accent-gold); }
     .todas-card:hover .todas-img img { transform: scale(1.03); }
-    .todas-card:focus-visible { outline: 2px solid var(--accent-gold); outline-offset: 3px; }
+    .todas-img:focus-visible { outline: 2px solid var(--accent-gold); outline-offset: 3px; }
+
+    /* Títulos y autores que llevan a su página: sin subrayado hasta pasar por encima,
+       para que la rejilla no se llene de líneas. */
+    a.enlace-nombre { color: inherit; text-decoration: none; cursor: pointer; }
+    a.enlace-nombre:hover, a.enlace-nombre:focus-visible {
+      text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
+      text-decoration-color: var(--accent-gold);
+    }
+    a.enlace-nombre.a-autor:hover { color: var(--accent-gold); }
     .todas-card.activa .todas-img { border-color: var(--accent-gold); box-shadow: 0 0 0 1px var(--accent-gold); }
     .todas-txt { display: flex; flex-direction: column; gap: 2px; }
     .todas-txt small {
@@ -853,6 +871,9 @@
     .wiki-link-btn svg {
       opacity: 0.7;
     }
+    /* display:inline-flex le ganaba al atributo hidden: sin esto no se esconden. */
+    .wiki-link-btn[hidden] { display: none; }
+    button.wiki-link-btn { background: none; border: 0; padding: 0; font-family: inherit; cursor: pointer; }
 
     /* PANEL EXPANDIBLE DE DETALLES EN LA TARJETA */
     .card-extra-drawer {
@@ -1778,6 +1799,10 @@
         <a id="panelWikiLink" href="#" target="_blank" rel="noopener" class="wiki-link-btn" title="Ver en Wikipedia">
           Ver en Wikipedia <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
         </a>
+        <button id="panelMapaLink" type="button" class="wiki-link-btn" hidden onclick="verEnMapaDesdeVisor()"
+                title="Ir a la sede de esta obra en el mapa">
+          Ver en el mapa <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+        </button>
       </div>
       
       <h4>Análisis Artístico y Teológico</h4>
@@ -5641,6 +5666,56 @@
        el sitio de GitHub Pages. Desde allí el enlace es relativo —construir_sitio.py deja esto
        vacío—; desde el artefacto de claude.ai o el index.html local va al sitio público. */
     const BASE_FICHAS = 'https://sebastiancordoba.github.io/biblioteca-visual/';
+    /* La dirección de la página de cada obra, FICHAS[libro][índice]. Solo existe en GitHub
+       Pages: construir_sitio.py la pone aquí con los mismos índices que paginas.py. En el
+       index.html local vale null y los títulos se quedan como texto. */
+    const FICHAS = null;
+
+    /* Nombres que llevan a su página: el título de una obra a su ficha y el autor a la
+       suya. Se busca por la imagen principal y no por el índice, porque la portada, la
+       cronología y el mapa numeran las obras a su manera y la imagen es la misma en todos. */
+    let porImagen = null;
+    function indicePorImagen(){
+      if (porImagen) return porImagen;
+      porImagen = {};
+      librosReales().forEach(id => (BOOKS[id].groups || []).forEach((g, i) => {
+        if (g && g[0]) porImagen[g[0].src] = { libro: id, i: i };
+      }));
+      AUTORES.forEach(a => a.obras.forEach(o => {
+        const g = (BOOKS[o.libro] || {}).groups;
+        const e = g && g[o.i] && g[o.i][0] && porImagen[g[o.i][0].src];
+        if (e) e.autor = a.clave;
+      }));
+      return porImagen;
+    }
+    function urlObra(src){
+      const e = indicePorImagen()[src];
+      const r = e && FICHAS && (FICHAS[e.libro] || [])[e.i];
+      return r ? r + '/' : null;
+    }
+    function urlAutor(src){
+      const e = indicePorImagen()[src];
+      return e && e.autor ? `${BASE_FICHAS}autores/${e.autor}/` : null;
+    }
+    /* stopPropagation: los nombres están dentro de tarjetas y banners que abren el visor. */
+    function enlaceNombre(url, texto, clase){
+      if (!url) return esc(texto);
+      const fuera = /^https?:/.test(url) ? ' target="_blank" rel="noopener"' : '';
+      return `<a class="enlace-nombre${clase ? ' ' + clase : ''}" href="${esc(url)}"${fuera}` +
+             ` onclick="event.stopPropagation()">${esc(texto)}</a>`;
+    }
+    const enlaceObra  = (src, texto) => enlaceNombre(urlObra(src), texto, 'a-obra');
+    const enlaceAutor = (src, texto) => enlaceNombre(urlAutor(src), texto, 'a-autor');
+
+    /* Del visor al mapa: se cierra el visor, se abre el mapa y vuela a la sede de la obra.
+       sedeDeObra y verObraEnMapa las define el mapa, que solo existe en la versión construida. */
+    function verEnMapaDesdeVisor(){
+      const src = bookGroups()[currentArtworkGroupIndex][0].src;
+      if (!window.verObraEnMapa) return;
+      closeZoomModal();
+      switchBook('mapa');
+      window.verObraEnMapa(src);
+    }
 
     let currentBook = 'inicio';
     const bookDetails = () => BOOKS[currentBook].details;
@@ -5771,8 +5846,8 @@
             <div>
               <div class="artwork-header-row">
                 <span class="artwork-num">${criterio === 'cronologia' && d.fecha ? esc(d.fecha) : 'OBRA ' + String(i + 1).padStart(2, '0')}</span>
-                <div class="artwork-title">${esc(d.title)}</div>
-                <div class="artwork-artist">${esc(d.artist)}</div>
+                <div class="artwork-title">${enlaceObra(main.src, d.title)}</div>
+                <div class="artwork-artist">${enlaceAutor(main.src, d.artist)}</div>
               </div>
               <div class="artwork-meta-line">${esc(d.meta)}</div>
               <p class="artwork-snippet">${esc(d.snippet || d.analysis)}</p>
@@ -5909,8 +5984,8 @@
         const fecha = d.fecha ? esc(d.fecha) + ' · ' : '';
         info.innerHTML =
           `<span class="banner-libro">${esc(d.libro)}</span>` +
-          `<h2 class="banner-titulo">${esc(d.title)}</h2>` +
-          `<p class="banner-autor">${esc(d.artist)}</p>` +
+          `<h2 class="banner-titulo">${enlaceObra(BOOKS.inicio.groups[i][0].src, d.title)}</h2>` +
+          `<p class="banner-autor">${enlaceAutor(BOOKS.inicio.groups[i][0].src, d.artist)}</p>` +
           `<p class="banner-meta">${fecha}${esc(d.sede || (d.meta || '').split('|').pop().trim())}</p>` +
           `<button class="banner-ver" type="button">Ver en detalle</button>`;
         info.querySelector('.banner-ver').addEventListener('click', ev => {
@@ -6019,10 +6094,13 @@
         todas.innerHTML = ORDEN.map(i => {
           const d = BOOKS.inicio.details[i], src = BOOKS.inicio.groups[i][0].src;
           const donde = d.sede || 'Sede no identificada';
-          return `<button class="todas-card" type="button" data-i="${i}">` +
-            `<span class="todas-img"><img src="${src}" alt="" loading="lazy" decoding="async"></span>` +
-            `<span class="todas-txt"><small>${esc(d.libro)}</small><strong>${esc(d.title)}</strong>` +
-            `<em>${esc(d.artist)}</em><span>${esc(donde)}</span></span></button>`;
+          /* Un <div> y no un <button>: dentro van los enlaces del título y del autor, y un
+             botón no puede contener enlaces. El teclado abre el visor desde la imagen. */
+          return `<div class="todas-card" data-i="${i}">` +
+            `<button class="todas-img" type="button" aria-label="Ver ${esc(d.title)} en detalle">` +
+            `<img src="${src}" alt="" loading="lazy" decoding="async"></button>` +
+            `<span class="todas-txt"><small>${esc(d.libro)}</small><strong>${enlaceObra(src, d.title)}</strong>` +
+            `<em>${enlaceAutor(src, d.artist)}</em><span>${esc(donde)}</span></span></div>`;
         }).join('');
         todas.querySelectorAll('.todas-card').forEach(c =>
           c.addEventListener('click', () => abrir(+c.dataset.i)));
@@ -6141,7 +6219,7 @@
            en la página del autor, que es a donde lleva el enlace. */
         return `<article class="autor-card">` +
           `<div class="autor-imgs${a.retrato ? '' : ' sin-foto'}">${retrato}${suya}</div>` +
-          `<div class="autor-txt"><h3>${esc(a.nombre)}</h3>` +
+          `<div class="autor-txt"><h3>${enlaceNombre(`${BASE_FICHAS}autores/${a.clave}/`, a.nombre, 'a-autor')}</h3>` +
           `<p class="autor-linea"><span class="autor-vida">${esc(a.anios)}</span>` +
           `<span class="autor-oficio">${esc(a.oficio)}</span></p>` +
           `<p class="autor-bio">${esc(a.bio)}</p>` +
@@ -6519,8 +6597,12 @@
 
       // Cargar información detallada en el panel del visor
       const details = bookDetails()[currentArtworkGroupIndex];
-      document.getElementById('panelTitle').innerText = details.title;
-      document.getElementById('panelMeta').innerText = `${details.artist} | ${details.meta}`;
+      const srcObra = group[0].src;
+      document.getElementById('panelTitle').innerHTML = enlaceObra(srcObra, details.title);
+      document.getElementById('panelMeta').innerHTML = `${enlaceAutor(srcObra, details.artist)} | ${esc(details.meta)}`;
+      /* «Ver en el mapa»: solo donde hay mapa (no en el index.html local) y si la obra tiene sede. */
+      const aMapa = document.getElementById('panelMapaLink');
+      if (aMapa) aMapa.hidden = !(window.sedeDeObra && window.sedeDeObra(srcObra) >= 0);
       document.getElementById('panelAnalysis').innerText = details.analysis;
       document.getElementById('panelHistory').innerText = details.history;
       document.getElementById('panelBio').innerText = details.bio;
