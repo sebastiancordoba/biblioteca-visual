@@ -209,9 +209,12 @@ Temas es una pestaña de verdad en la aplicación (`#/biblioteca/temas`): primer
 vuelca `TEMAS` con cada obra traducida de su número de archivo al índice del visor; cada
 tarjeta lleva a la página del tema, que es donde están los pasajes.
 
-El icono de la pestaña del navegador es una «B» dorada en Cormorant (`herramientas/sitio/favicon.py`
-→ `favicon.ico`, guardado en el repositorio). Las manos de la Creación de Adán se quedan como
-icono de la aplicación en la pantalla de inicio (180–512 px): a 16 px no se distinguían.
+El icono de la pestaña del navegador es el **Ángel músico de Rosso Fiorentino** (Uffizi),
+recortado a la cabeza y las alas (`herramientas/sitio/favicon.py` → `favicon.ico`, guardado en
+el repositorio; sale de la reproducción WGA de Commons, de dominio público). El recorte se eligió
+probándolo a 16 px: la cabeza sola era una mancha parda; con las alas rojas se lee. Las manos
+de la Creación de Adán se quedan como icono de la aplicación en la pantalla de inicio
+(180–512 px): a 16 px no se distinguían.
 
 `verificar.js` comprueba la propiedad que motivó todo esto —que ningún libro tenga botón en la
 barra superior—, de modo que si algún día vuelve a colarse uno, salta.
