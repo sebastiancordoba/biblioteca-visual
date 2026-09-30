@@ -137,6 +137,8 @@ MUSEOS = {
  "detroit":    ("Detroit Institute of Arts","Detroit",42.3594,-83.0645),
  "lacoste":    ("Castillo de Lacoste","Lacoste",43.8323,5.2737),
  "machecoul":  ("Castillo de Machecoul","Machecoul",46.9937,-1.8233),
+ "moma":       ("Museum of Modern Art","Nueva York",40.7614,-73.9776),
+ "nng":        ("Neue Nationalgalerie","Berlín",52.5070,13.3676),
 }
 
 # ---------- qué museo corresponde a cada ficha ----------
@@ -148,6 +150,7 @@ REGLAS = [
  ("staatliche munzsammlung","munzen_mu"),("staatliche antikensammlungen","antiken_mu"),
  ("antikensammlung, staatliche museen zu berlin","antiken_be"),("kupferstichkabinett, staatliche museen zu berlin","kupfer_be"),
  ("kupferstichkabinett berlin","kupfer_be"),("hamburger kunsthalle","hamburgo"),
+ ("museum of modern art","moma"),("neue nationalgalerie","nng"),
  ("prehistoire, les eyzies","prehistoire"),("naturhistorisches","naturhist"),("archeologie nationale","man"),
  ("musee d'aquitaine","aquitaine"),("museo delle civilta","pigorini"),("musee de l'homme","mhomme"),
  ("lascaux","lascaux"),("trois-freres","troisfreres"),("delos","delos"),("villa de los misterios","pompeya"),

@@ -721,6 +721,63 @@ EROS_SIN_IMAGEN = [
   "notas": "Dudosa. El catálogo razonado remite el dibujo de «Le cœur a ses raisons» a su volumen II, que no he consultado, y lo da como propiedad de Mellerio, no del Petit Palais. Puede que el pie de Bataille lo confunda con «Le silence éternel…» (Petit Palais, inv. 2019), pero la lámina es vertical y esa hoja mide 22,5 × 27,5 cm, en apaisado. No he encontrado ficha en Paris Musées Collections, así que no hay enlace."
  },
  {
+  "pagina": 172,
+  "title": "Mujeres condenadas (Femmes damnées)",
+  "artist": "André Masson (1922)",
+  "meta": "Tinta y aguada sobre papel (por lo que se ve en la reproducción) | Galerie Louise Leiris, París, en 1961 | Paradero actual desconocido",
+  "texto": "Dibujo de 1922 con desnudos femeninos abrazados entre ondas. En 1961 estaba en la Galerie Louise Leiris. Bataille lo reproduce sin comentario.",
+  "motivo": "sin_reproduccion",
+  "enlace": null,
+  "cita": null,
+  "fuentes": [
+   {
+    "autor": "Georges Bataille",
+    "titulo": "The Tears of Eros",
+    "obra": "City Lights Books, San Francisco (1989), trad. de Peter Connor, p. 172",
+    "url": "https://archive.org/details/tearsoferos0000bata"
+   }
+  ],
+  "notas": "Sin identificar en catálogos. El título, como el de la lámina siguiente («Lesbos»), coincide con el de poemas de Baudelaire sobre el amor entre mujeres, pero la relación no está documentada. La foto de página que se le asignó era otra lámina («André Masson: La Fiesta. Galería Louise Leiris»); falta la de esta obra."
+ },
+ {
+  "pagina": 173,
+  "title": "Lesbos",
+  "artist": "André Masson (1922)",
+  "meta": "Tinta y aguada sobre papel (por lo que se ve en la reproducción) | Galerie Louise Leiris, París, en 1961 | Paradero actual desconocido",
+  "texto": "Dibujo de 1922, compañero del anterior, con cuerpos femeninos tendidos y entrelazados. En 1961 estaba en la Galerie Louise Leiris.",
+  "motivo": "sin_reproduccion",
+  "enlace": null,
+  "cita": null,
+  "fuentes": [
+   {
+    "autor": "Georges Bataille",
+    "titulo": "The Tears of Eros",
+    "obra": "City Lights Books, San Francisco (1989), trad. de Peter Connor, p. 173",
+    "url": "https://archive.org/details/tearsoferos0000bata"
+   }
+  ],
+  "notas": "Sin identificar en catálogos; sede actual desconocida. La foto de página que se le asignó era la de «Los lazos rosas» de Delvaux (ahora en esa obra); falta la de esta obra."
+ },
+ {
+  "pagina": 180,
+  "title": "A Sade",
+  "artist": "Hans Bellmer (1947)",
+  "meta": "Lápiz sobre papel (por lo que se ve en la reproducción) | Col. Patricia Echaurren, en 1961 | Paradero actual desconocido",
+  "texto": "Dibujo de cabezas y cuerpos superpuestos en torno a unas costillas, en homenaje al marqués de Sade. Bataille lo fecha en Nueva York, en 1947, y lo sitúa en la colección de Patricia Echaurren.",
+  "motivo": "sin_reproduccion",
+  "enlace": null,
+  "cita": null,
+  "fuentes": [
+   {
+    "autor": "Georges Bataille",
+    "titulo": "The Tears of Eros",
+    "obra": "City Lights Books, San Francisco (1989), trad. de Peter Connor, p. 180",
+    "url": "https://archive.org/details/tearsoferos0000bata"
+   }
+  ],
+  "notas": "Bellmer hizo varios dibujos «À Sade» a mediados de los años cuarenta (hay registro de subasta de uno a lápiz de 1946, de 27 × 20,5 cm), pero no se ha identificado este ni se han podido leer esas fichas. La foto de página que se le asignó era la de los dos dibujos de Bellmer de la p. 179 (ahora en «La muñeca»); falta la de esta obra."
+ },
+ {
   "pagina": 207,
   "title": "Sacrificio humano, folio 54v del Códice Vaticano A (Códice Ríos)",
   "artist": "Anónimo, códice novohispano con glosas en italiano",

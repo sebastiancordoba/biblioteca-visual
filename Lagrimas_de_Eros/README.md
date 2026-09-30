@@ -4,7 +4,7 @@ Las lágrimas de Eros (1961) es el último libro de Georges Bataille: una histor
 
 ---
 
-## 🏛️ Galería de la Colección (88 obras)
+## 🏛️ Galería de la Colección (121 obras)
 
 | N° | Obra | Autoría / Procedencia | Ubicación | Wikipedia | Archivo |
 |---|---|---|---|---|---|
@@ -92,10 +92,43 @@ Las lágrimas de Eros (1961) es el último libro de Georges Bataille: una histor
 | 82 | **El abandono (Las dos amigas)** | Henri de Toulouse-Lautrec (1895) | Colección particular | [Wikipedia](https://es.wikipedia.org/wiki/Henri_de_Toulouse-Lautrec) | [`79_El_abandono_Las_dos_amigas.jpg`](./79_El_abandono_Las_dos_amigas.jpg) |
 | 83 | **Salomé tatuada (Salomé bailando)** | Gustave Moreau (c. 1874) | Musée national Gustave Moreau, París (Cat. 211) | [Wikipedia](https://es.wikipedia.org/wiki/Salom%C3%A9_tatuada) | [`80_Salome_tatuada_Salome_bailando.jpg`](./80_Salome_tatuada_Salome_bailando.jpg) |
 | 84 | **La aparición** | Gustave Moreau (1876) | Musée du Louvre, departamento de Artes Gráficas, fondo del Musée d'Orsay, París (RF 2130) | [Wikipedia](https://es.wikipedia.org/wiki/Gustave_Moreau) | [`81_La_aparicion.jpg`](./81_La_aparicion.jpg) |
-| 85 | **Suplicio chino de los Cien Pedazos (lingchi), Pekín** | Fotógrafo desconocido (c. 1904-1905) | copia de Georges Bataille (colección particular); placa de la Agence Rol en la Bibliothèque nationale de France (Gallica, btv1b6914446r) | [Wikipedia](https://es.wikipedia.org/wiki/Muerte_por_mil_cortes) | [`82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg`](./82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg) |
-| 86 | **De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620)** | David Vinckboons y Dirck Eversen Lons (1620) | ejemplar digitalizado por la Biblioteca Digital Mundial (ítem 515) | [Wikipedia](https://es.wikipedia.org/wiki/Brev%C3%ADsima_relaci%C3%B3n_de_la_destrucci%C3%B3n_de_las_Indias) | [`83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg`](./83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg) |
-| 87 | **La decapitación de James Scott, duque de Monmouth, en Londres en 1685** | Jan Luyken (1698) | Rijksmuseum, Ámsterdam (RP-P-OB-44.637) | [Wikipedia](https://es.wikipedia.org/wiki/James_Scott,_I_duque_de_Monmouth) | [`84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg`](./84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg) |
-| 88 | **Sátiro llorando a una ninfa (La muerte de Procris)** | Piero di Cosimo (c. 1495) | National Gallery, Londres (NG698) | [Wikipedia](https://es.wikipedia.org/wiki/Piero_di_Cosimo) | [`85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg`](./85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg) |
+| 85 | **Pareja** | Henri Matisse | Bibliothèque nationale de France, París (el ejemplar que reproduce Bataille) | [Wikipedia](None) | [`89_Pareja_Master.jpg`](./89_Pareja_Master.jpg) |
+| 86 | **Fauno descubriendo a una durmiente (Faune dévoilant une dormeuse; Júpiter y Antíope, según Rembrandt)** | Pablo Picasso (1936) | Estampa de tirada (ejemplar en el Art Institute of Chicago, 1986.855; paradero del ejemplar del libro no indicado) | [Wikipedia](https://www.artic.edu/artworks/105525/faun-uncovering-a-sleeping-woman-jupiter-and-antiope-after-rembrandt-from-the-vollard-suite) | [`90_Fauno_descubriendo_a_una_durmiente_Master.jpg`](./90_Fauno_descubriendo_a_una_durmiente_Master.jpg) |
+| 87 | **Picador y muchacha** | Pablo Picasso | Paradero actual desconocido | [Wikipedia](None) | [`91_Picador_y_muchacha.jpg`](./91_Picador_y_muchacha.jpg) |
+| 88 | **La pareja** | Pablo Picasso | Paradero actual desconocido | [Wikipedia](None) | [`92_La_pareja.jpg`](./92_La_pareja.jpg) |
+| 89 | **El centauro Neso (Neso y Deyanira)** | Pablo Picasso (1920) | The Museum of Modern Art, Nueva York (184.1952) | [Wikipedia](https://www.moma.org/collection/works/35124) | [`93_Neso_y_Deyanira_MoMA_Master.jpg`](./93_Neso_y_Deyanira_MoMA_Master.jpg) |
+| 90 | **Las hijas de Lot** | Max Ernst (hacia 1941) | Neue Nationalgalerie, Staatliche Museen zu Berlin (Sammlung Ulla und Heiner Pietzsch, B UHP 50/13) | [Wikipedia](https://id.smb.museum/object/2457854) | [`94_Las_hijas_de_Lot_Master.jpg`](./94_Las_hijas_de_Lot_Master.jpg) |
+| 91 | **Mesalina niña (Messaline enfant)** | Max Ernst (1957) | Colección particular (Sotheby's Nueva York, 8 de mayo de 2007, lote 48) | [Wikipedia](https://www.sothebys.com/en/auctions/ecatalogue/2007/impressionist-and-modern-art-evening-sale-n08314/lot.48.html) | [`95_Mesalina_nina_Master.jpg`](./95_Mesalina_nina_Master.jpg) |
+| 92 | **Masacre** | André Masson (1933) | Paradero actual desconocido | [Wikipedia](None) | [`96_Masacre.jpg`](./96_Masacre.jpg) |
+| 93 | **Sillón para Paulina Borghese** | André Masson | Paradero actual desconocido | [Wikipedia](None) | [`97_Sillon_para_Paulina_Borghese.jpg`](./97_Sillon_para_Paulina_Borghese.jpg) |
+| 94 | **Mantis religiosa** | André Masson | Paradero actual desconocido | [Wikipedia](None) | [`99_Mujeres_condenadas.jpg`](./99_Mujeres_condenadas.jpg) |
+| 95 | **La ciudad lunar (La Ville lunaire)** | Paul Delvaux (1944) | Paradero actual sin confirmar | [Wikipedia](None) | [`101_La_ciudad_lunar.jpg`](./101_La_ciudad_lunar.jpg) |
+| 96 | **Los lazos rosas (Les Nœuds roses)** | Paul Delvaux (1937) | Koninklijk Museum voor Schone Kunsten, Amberes (inv. 2850; antes colección particular) | [Wikipedia](https://artinflanders.be/nl/kunst/de-roze-strikken) | [`102_Los_lazos_rosas.jpg`](./102_Los_lazos_rosas.jpg) |
+| 97 | **Tren de noche (Train de nuit)** | Paul Delvaux (1947) | Toyama Prefectural Museum of Art and Design, Toyama (n.º 0059; antes colección particular) | [Wikipedia](https://jmapps.ne.jp/5670/det.html?data_id=205) | [`103_Tren_de_noche.jpg`](./103_Tren_de_noche.jpg) |
+| 98 | **El carnaval del sabio (Le Carnaval du sage)** | René Magritte (1947) | Colección particular (a la venta en M.S. Rau, Nueva Orleans, ref. 30-8762) | [Wikipedia](https://rauantiques.com/products/le-carnaval-du-sage-by-rene-magritte) | [`104_El_carnaval_del_sabio_Master.png`](./104_El_carnaval_del_sabio_Master.png) |
+| 99 | **La muñeca (La Poupée) y dos dibujos** | Hans Bellmer | Paradero de los ejemplares reproducidos desconocido | [Wikipedia](https://www.moma.org/collection/works/434096) | [`105_La_muneca.jpg`](./105_La_muneca.jpg) |
+| 100 | **La habitación (La Chambre)** | Balthus (1952-1954) | Colección particular | [Wikipedia](https://www.bridgemanimages.com/en-US/balthus/la-chambre-1952-1954-oil-on-canvas/oil-on-canvas/asset/75775) | [`107_La_habitacion.jpg`](./107_La_habitacion.jpg) |
+| 101 | **El sueño (Le Rêve)** | Balthus (1955-1956) | Paradero actual desconocido | [Wikipedia](None) | [`108_El_sueno.jpg`](./108_El_sueno.jpg) |
+| 102 | **El ángel de la anatomía (L'Ange de l'anatomie), primer estado** | Leonor Fini (1949) | Colección particular | [Wikipedia](https://www.leonor-fini.com/en/paintings/) | [`109_El_angel_de_la_anatomia.jpg`](./109_El_angel_de_la_anatomia.jpg) |
+| 103 | **La habitación (La Chambre noire)** | Leonor Fini (1939) | Colección particular | [Wikipedia](https://www.leonor-fini.com/en/paintings/) | [`110_La_habitacion_negra.jpg`](./110_La_habitacion_negra.jpg) |
+| 104 | **La amistad (L'Amitié)** | Leonor Fini (1958) | Colección particular | [Wikipedia](https://www.leonor-fini.com/en/paintings/) | [`111_La_amistad_Master.jpg`](./111_La_amistad_Master.jpg) |
+| 105 | **Amor incondicional (L'Amour sans condition)** | Leonor Fini | Colección particular (Sotheby's Nueva York, «Cherchez la femme», 2015, lote 9) | [Wikipedia](https://www.sothebys.com/en/auctions/ecatalogue/2015/cherchez-la-femme-n09398/lot.9.html) | [`112_Amor_incondicional_Master.jpg`](./112_Amor_incondicional_Master.jpg) |
+| 106 | **Dos figuras (Two Figures)** | Francis Bacon (1953) | Colección particular (catálogo razonado CR 53-24) | [Wikipedia](https://www.francis-bacon.com/artworks/paintings/two-figures) | [`113_Dos_figuras_Master.jpg`](./113_Dos_figuras_Master.jpg) |
+| 107 | **La hija pródiga (La Fille prodigue)** | Félix Labisse (1943) | Colección particular (subastada en Sotheby's, 2020) | [Wikipedia](https://www.sothebys.com/en/buy/auction/2020/impressionist-modern-art-day-sale-online/felix-labisse-la-fille-prodigue) | [`114_La_hija_prodiga_Master.jpg`](./114_La_hija_prodiga_Master.jpg) |
+| 108 | **Desnudo dormido (Nue endormie)** | Dorothea Tanning (1954) | Museum of Contemporary Art, Chicago (inv. 84.23; antes colección particular) | [Wikipedia](https://mcachicago.org/art-artists/collection/sleeping-nude/) | [`115_Desnudo_dormido_Master.jpg`](./115_Desnudo_dormido_Master.jpg) |
+| 109 | **Voltaje (Voltage)** | Dorothea Tanning (1942) | Paradero actual no indicado por la fundación | [Wikipedia](https://www.dorotheatanning.org/life-and-work/view/391) | [`116_Voltaje.jpg`](./116_Voltaje.jpg) |
+| 110 | **La mañana poética (La Matinée poétique)** | Félix Labisse (1944) | Paradero actual desconocido | [Wikipedia](None) | [`117_La_manana_poetica.jpg`](./117_La_manana_poetica.jpg) |
+| 111 | **Roberte y el coloso (variante)** | Pierre Klossowski | Paradero actual desconocido | [Wikipedia](None) | [`118_Roberte_y_el_coloso.jpg`](./118_Roberte_y_el_coloso.jpg) |
+| 112 | **Diana y Acteón** | Pierre Klossowski (1954) | Paradero no indicado en el catálogo razonado | [Wikipedia](http://www.pierre-klossowski.fr/pages/page.php?section=artiste&ch=peintures) | [`119_Diana_y_Acteon.jpg`](./119_Diana_y_Acteon.jpg) |
+| 113 | **Dibujos para «Roberte ce soir»** | Pierre Klossowski (1953) | Paradero no indicado en el catálogo razonado | [Wikipedia](http://www.pierre-klossowski.fr/pages/page.php?section=artiste&ch=peintures) | [`120_Dibujos_para_Roberte_ce_soir.jpg`](./120_Dibujos_para_Roberte_ce_soir.jpg) |
+| 114 | **La boca de la verdad** | Stanislao Lepri (1955) | Paradero actual desconocido | [Wikipedia](None) | [`121_La_boca_de_la_verdad.jpg`](./121_La_boca_de_la_verdad.jpg) |
+| 115 | **La tumba (Mon tombeau; antes «de Sade»)** | Clovis Trouille | Paradero actual desconocido | [Wikipedia](None) | [`122_Mi_tumba.jpg`](./122_Mi_tumba.jpg) |
+| 116 | **Primera clase (Mes funérailles)** | Clovis Trouille (1940) | Colección particular (Christie's París, 3 de octubre de 2024, lote 48) | [Wikipedia](https://www.christies.com/en/lot/lot-6498099) | [`123_Primera_clase_Master.jpg`](./123_Primera_clase_Master.jpg) |
+| 117 | **Sacrificio vudú** | Fotógrafo sin nombrar | Paradero de negativos y copias desconocido | [Wikipedia](None) | [`124_Ceremonia_y_posesion_vudu.jpg`](./124_Ceremonia_y_posesion_vudu.jpg) |
+| 118 | **Suplicio chino de los Cien Pedazos (lingchi), Pekín** | Fotógrafo desconocido (c. 1904-1905) | copia de Georges Bataille (colección particular); placa de la Agence Rol en la Bibliothèque nationale de France (Gallica, btv1b6914446r) | [Wikipedia](https://es.wikipedia.org/wiki/Muerte_por_mil_cortes) | [`82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg`](./82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg) |
+| 119 | **De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620)** | David Vinckboons y Dirck Eversen Lons (1620) | ejemplar digitalizado por la Biblioteca Digital Mundial (ítem 515) | [Wikipedia](https://es.wikipedia.org/wiki/Brev%C3%ADsima_relaci%C3%B3n_de_la_destrucci%C3%B3n_de_las_Indias) | [`83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg`](./83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg) |
+| 120 | **La decapitación de James Scott, duque de Monmouth, en Londres en 1685** | Jan Luyken (1698) | Rijksmuseum, Ámsterdam (RP-P-OB-44.637) | [Wikipedia](https://es.wikipedia.org/wiki/James_Scott,_I_duque_de_Monmouth) | [`84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg`](./84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg) |
+| 121 | **Sátiro llorando a una ninfa (La muerte de Procris)** | Piero di Cosimo (c. 1495) | National Gallery, Londres (NG698) | [Wikipedia](https://es.wikipedia.org/wiki/Piero_di_Cosimo) | [`85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg`](./85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg) |
 
 ---
 
@@ -2292,7 +2325,852 @@ Gustave Moreau nació en París el 6 de abril de 1826, hijo del arquitecto Louis
 
 ---
 
-### 85. Suplicio chino de los Cien Pedazos (lingchi), Pekín — Fotógrafo desconocido (c. 1904-1905)
+### 85. Pareja — Henri Matisse
+
+![Pareja](./89_Pareja_Master.jpg)
+*Pareja — Henri Matisse, lámina 64 del «Florilège des Amours de Ronsard» (1948)*
+
+![Pareja](./89_Pareja.jpg)
+*Lámina del libro de Bataille (p. 160)*
+
+#### Ficha Técnica
+
+- Litografía a la sanguina sobre papel de Arches, lámina 64 del «Florilège des Amours de Ronsard» (Skira, 1948; tirada de 320)
+- imagen 25 × 19 cm
+- Bibliothèque nationale de France, París (el ejemplar que reproduce Bataille)
+
+#### Lo que hace que destaque
+
+Dibujo a línea de dos cuerpos abrazados que Bataille reproduce con la indicación «Bibliothèque Nationale». No se ha podido identificar la hoja concreta ni su signatura. Con él empieza la parte del libro dedicada a la pintura de su tiempo, que Bataille llama «manierismo»: «la búsqueda de la fiebre».
+
+#### Contexto Histórico y Arqueológico
+
+Sin identificar: la nota del lote apunta a un estudio para el «Florilège des Amours» de Ronsard (1948), pero no se ha podido cotejar con el catálogo de la BnF ni con Gallica. La definición del manierismo está en el texto de las pp. 160-161, no en un comentario de la lámina. La imagen principal es un ejemplar de la litografía fotografiado por el marchante Eames Fine Art (Londres); coincide trazo a trazo con la lámina, que Bataille reproduce en negro desde el ejemplar de la BnF.
+
+#### Autoría y Procedencia
+
+Henri Matisse (1869-1954), pintor, dibujante y escultor francés, fue la figura central del fauvismo y uno de los grandes maestros del arte del siglo XX.
+
+---
+
+### 86. Fauno descubriendo a una durmiente (Faune dévoilant une dormeuse; Júpiter y Antíope, según Rembrandt) — Pablo Picasso (1936)
+
+![Fauno descubriendo a una durmiente (Faune dévoilant une dormeuse; Júpiter y Antíope, según Rembrandt)](./90_Fauno_descubriendo_a_una_durmiente_Master.jpg)
+*Fauno descubriendo a una durmiente — Pablo Picasso (1936), ejemplar de Bonhams*
+
+#### Ficha Técnica
+
+- Aguatinta al azúcar, con rascador y buril; lámina 27 de la Suite Vollard
+- plancha 31,5 × 41 cm
+- Estampa de tirada (ejemplar en el Art Institute of Chicago, 1986.855; paradero del ejemplar del libro no indicado)
+
+#### Lo que hace que destaque
+
+La lámina reproduce la estampa grabada el 12 de junio de 1936 para la Suite Vollard y estampada y publicada en 1939: un fauno retira el velo de una mujer dormida. El Art Institute of Chicago la cataloga como «Júpiter y Antíope, según Rembrandt». Es una estampa de tirada, así que la conservan varios museos. El pie de Bataille dice «acuarela para la Suite Vollard, 1937» y la fecha en «1930-1936».
+
+#### Contexto Histórico y Arqueológico
+
+Bataille la llama acuarela, pero lo que se reproduce coincide con la aguatinta de la Suite Vollard; se sigue la catalogación del museo. El enlace lleva a un ejemplar de la estampa. La imagen es la hoja entera de un ejemplar subastado en Bonhams (Los Ángeles, 26 de marzo de 2024, lote 65): aguatinta con buril sobre verjurado Montval con filigrana Vollard, plancha 31,6 × 41,8 cm (Bloch 230, Baer 609).
+
+#### Autoría y Procedencia
+
+Pablo Ruiz Picasso (1881-1973), pintor y escultor español, cofundador del cubismo y figura cumbre del arte contemporáneo universal.
+
+---
+
+### 87. Picador y muchacha — Pablo Picasso
+
+![Picador y muchacha](./91_Picador_y_muchacha.jpg)
+*Picador y muchacha — Pablo Picasso*
+
+#### Ficha Técnica
+
+- Tinta y aguada sobre papel (por lo que se ve en la reproducción)
+- Galerie Louise Leiris, París, en 1961
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Dibujo a la aguada de un picador con sombrero de ala ancha junto a una muchacha. En 1961 estaba en la Galerie Louise Leiris, la galería que vendía la obra de Picasso. Bataille lo acompaña de una nota sobre la pasión taurina del pintor desde niño y remite a la película de Jean Desvilles «Picasso, romancero du picador».
+
+#### Contexto Histórico y Arqueológico
+
+Sin identificar en catálogos. Seguramente es uno de los dibujos taurinos de 1959-1960 (la Galerie Louise Leiris expuso «Picasso. Dessins 1959-1960» en 1960), pero no se ha encontrado la hoja; la fecha escrita en la esquina no se lee en la reproducción. «La galería que vendía la obra de Picasso» no está en las fuentes citadas.
+
+#### Autoría y Procedencia
+
+Pablo Ruiz Picasso (1881-1973), pintor y escultor español, cofundador del cubismo y figura cumbre del arte contemporáneo universal.
+
+---
+
+### 88. La pareja — Pablo Picasso
+
+![La pareja](./92_La_pareja.jpg)
+*La pareja — Pablo Picasso*
+
+#### Ficha Técnica
+
+- Tinta y aguada o acuarela sobre papel (por lo que se ve en la reproducción)
+- Galerie Louise Leiris, París, en 1961
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Figuras entrelazadas a la tinta y la aguada. En 1961 la obra estaba en la Galerie Louise Leiris. Bataille no da fecha ni la comenta; la lámina acompaña el principio de su conclusión.
+
+#### Contexto Histórico y Arqueológico
+
+Sin identificar: el título es muy genérico, no hay fecha y no aparece en catálogos en línea.
+
+#### Autoría y Procedencia
+
+Pablo Ruiz Picasso (1881-1973), pintor y escultor español, cofundador del cubismo y figura cumbre del arte contemporáneo universal.
+
+---
+
+### 89. El centauro Neso (Neso y Deyanira) — Pablo Picasso (1920)
+
+![El centauro Neso (Neso y Deyanira)](./93_Neso_y_Deyanira_MoMA_Master.jpg)
+*Neso y Deyanira — Pablo Picasso (1920), MoMA*
+
+#### Ficha Técnica
+
+- Lápiz sobre papel
+- 21 × 26 cm
+- The Museum of Modern Art, Nueva York (184.1952)
+
+#### Lo que hace que destaque
+
+Un centauro se lleva a una mujer; la firma está arriba a la izquierda. Es el mito de Neso y Deyanira, al que Picasso dedicó seis dibujos en Juan-les-Pins entre el 11 y el 22 de septiembre de 1920. Uno de ellos, a grafito sobre papel preparado, está en el Art Institute of Chicago y también pasó por la Galerie Louise Leiris. Pero no es el que reproduce Bataille: el de Chicago muestra otro momento de la escena y ya estaba en Nueva York en 1952.
+
+#### Contexto Histórico y Arqueológico
+
+Solo se sabe que pertenece a la serie de 1920; no se ha localizado la hoja ni su sede. El MoMA tiene otro dibujo del tema (9 de septiembre de 1920), cuya ficha no se pudo abrir (403). La imagen de antes era otra obra, el Neso y Deyanira pintado en color. El dibujo de la lámina es, con toda probabilidad, el del MoMA (184.1952, fechado el 9 de septiembre de 1920; en la hoja se lee «12-9-20»): coinciden encuadre, firma y fecha, la cabeza y la mano alzada del centauro y la posición de cada casco, aunque la lámina, muy lavada, pierde las líneas finas. El MoMA lo adquirió en 1952, así que Bataille debió de usar una fotografía antigua de la Galerie Louise Leiris; el museo dice lápiz, no punta de plata.
+
+#### Autoría y Procedencia
+
+Pablo Ruiz Picasso (1881-1973), pintor y escultor español, cofundador del cubismo y figura cumbre del arte contemporáneo universal.
+
+---
+
+### 90. Las hijas de Lot — Max Ernst (hacia 1941)
+
+![Las hijas de Lot](./94_Las_hijas_de_Lot_Master.jpg)
+*Las hijas de Lot — Max Ernst, Neue Nationalgalerie*
+
+![Las hijas de Lot](./94_Las_hijas_de_Lot.jpg)
+*Lámina del libro de Bataille (p. 166)*
+
+#### Ficha Técnica
+
+- Óleo sobre cartón
+- 33,5 × 28,5 cm
+- Neue Nationalgalerie, Staatliche Museen zu Berlin (Sammlung Ulla und Heiner Pietzsch, B UHP 50/13)
+
+#### Lo que hace que destaque
+
+Las hijas de Lot, que según el Génesis se acostaron con su padre en la cueva donde se refugiaron tras la destrucción de Sodoma. Según Richard Holledge, Ernst lo pintó en 1943: una de las hijas lleva la ropa rasgada y el muslo al aire, «con el descaro de una bailarina de Las Vegas», mientras la otra se esconde con el padre en la cueva. Bataille acompaña la lámina de una nota biográfica sobre el pintor.
+
+#### Contexto Histórico y Arqueológico
+
+La fecha de 1943 viene de un artículo de prensa, no de un catálogo, aunque lo que describe coincide con la lámina. Sede actual desconocida. La nota biográfica de Bataille solo da datos (nacimiento, dadá, exilio en América), así que no se cita. Localizada en la Neue Nationalgalerie de Berlín, con la colección Pietzsch, donada al Land Berlin en 2010. El museo la fecha «hacia 1941» (entre 1939 y 1943) y da como procedencia a William y Doris Copley —Doris Starrels tras volver a casarse, la «Mrs. Doris Starrel» del pie de Bataille—, después Felix Landau y, desde 1999, Pietzsch. La foto del museo es la mayor que sirve (658 × 844 px).
+
+#### Autoría y Procedencia
+
+Max Ernst (1891-1976), pintor, escultor y poeta alemán nacionalizado francés, pionero del dadaísmo y figura primordial del movimiento surrealista.
+
+---
+
+### 91. Mesalina niña (Messaline enfant) — Max Ernst (1957)
+
+![Mesalina niña (Messaline enfant)](./95_Mesalina_nina_Master.jpg)
+*Mesalina niña — Max Ernst (1957), Sotheby's*
+
+![Mesalina niña (Messaline enfant)](./95_Mesalina_nina.jpg)
+*Lámina del libro de Bataille (p. 167)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 122 × 91,5 cm
+- Colección particular (Sotheby's Nueva York, 8 de mayo de 2007, lote 48)
+
+#### Lo que hace que destaque
+
+Una figura femenina geometrizada sobre fondo moteado. Bataille la titula «Mesalina niña», por la emperatriz romana, y remite a la monografía de Patrick Waldberg (Pauvert, 1958).
+
+#### Contexto Histórico y Arqueológico
+
+Los registros de subastas (Sotheby's) mencionan un óleo de Ernst titulado «Messaline enfant», fechado en 1957, pero no se ha podido leer la ficha, así que no se dan ni la fecha ni la sede. «Por la emperatriz romana» es una deducción del título. Firmado y fechado «max ernst 57»; pintado en Sedona (Arizona) en el invierno de 1956-1957 (Spies n.º 3278). Pasó por Iolas, William N. Copley, Barnet Hodes y Richard Feigen, y se vendió en Sotheby's Nueva York en 2007 por 1.104.000 USD; la bibliografía del lote cita «Les Larmes d'Eros». Bataille reproduce un recorte en blanco y negro.
+
+#### Autoría y Procedencia
+
+Max Ernst (1891-1976), pintor, escultor y poeta alemán nacionalizado francés, pionero del dadaísmo y figura primordial del movimiento surrealista.
+
+---
+
+### 92. Masacre — André Masson (1933)
+
+![Masacre](./96_Masacre.jpg)
+*Masacre — André Masson (1933)*
+
+#### Ficha Técnica
+
+- Tinta sobre papel (por lo que se ve en la reproducción); firmado y fechado «33»
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Dibujo a pluma: un hombre con un cuchillo, cuerpos derribados y, al fondo, una figura crucificada. Está firmado y fechado en 1933. Bataille, amigo del pintor, lo reproduce sin comentario.
+
+#### Contexto Histórico y Arqueológico
+
+Sin identificar. El Reina Sofía tiene en depósito otra «Massacre» de 1933 (tinta, 31 × 45 cm, DO01756) sin imagen publicada; su proporción no parece la de la lámina y no se da como la misma. Que Bataille fuera amigo de Masson no está en las fuentes citadas.
+
+#### Autoría y Procedencia
+
+André Masson (1896-1987), pintor y dibujante francés, pionero del dibujo automático y uno de los artistas más intensos del surrealismo.
+
+---
+
+### 93. Sillón para Paulina Borghese — André Masson
+
+![Sillón para Paulina Borghese](./97_Sillon_para_Paulina_Borghese.jpg)
+*Sillón para Paulina Borghese — André Masson*
+
+#### Ficha Técnica
+
+- Dibujo a pluma (por lo que se ve en la reproducción), con una inscripción abajo a la derecha
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Un cuerpo de mujer convertido en sillón. El título alude a Paulina Borghese, hermana de Napoleón. Bataille lo acompaña de una nota sobre Masson: dice que sus primeros dibujos eróticos son de justo después de la guerra y que es de los que mejor expresan la dimensión religiosa del erotismo.
+
+#### Contexto Histórico y Arqueológico
+
+Sin fecha ni sede; no aparece en catálogos en línea. Que Paulina Borghese fuera hermana de Napoleón no está en las fuentes citadas.
+
+#### Autoría y Procedencia
+
+André Masson (1896-1987), pintor y dibujante francés, pionero del dibujo automático y uno de los artistas más intensos del surrealismo.
+
+---
+
+### 94. Mantis religiosa — André Masson
+
+![Mantis religiosa](./99_Mujeres_condenadas.jpg)
+*Lámina del libro de Bataille (p. 170)*
+
+#### Ficha Técnica
+
+- Técnica y fecha sin determinar
+- Galerie Louise Leiris, París, en 1961
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Una mantis religiosa, que en 1961 estaba en la Galerie Louise Leiris. Bataille la reproduce en la misma página que el «Sillón para Paulina Borghese», con su nota sobre Masson.
+
+#### Contexto Histórico y Arqueológico
+
+Sin identificar. En el escaneado de la p. 170 solo se ve el pie, no la imagen. La cita pertenece a la nota sobre Masson que comparten las dos láminas de la página. La imagen es la lámina del libro, con su pie («André Masson: Mantis religiosa. Galería Louise Leiris»).
+
+#### Autoría y Procedencia
+
+André Masson (1896-1987), pintor y dibujante francés, pionero del dibujo automático y uno de los artistas más intensos del surrealismo.
+
+---
+
+### 95. La ciudad lunar (La Ville lunaire) — Paul Delvaux (1944)
+
+![La ciudad lunar (La Ville lunaire)](./101_La_ciudad_lunar.jpg)
+*La ciudad lunar (La Ville lunaire) — Paul Delvaux (1944)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo (por lo que se ve en la reproducción)
+- Col. Alex Salkin, Nueva York, en 1961
+- Paradero actual sin confirmar
+
+#### Lo que hace que destaque
+
+Un esqueleto camina de noche por una calle bajo la luna, entre mujeres desnudas o apenas cubiertas con un paño. Es la primera de dos obras de Delvaux con este título; la segunda, «La Ville lunaire II», es de 1956.
+
+#### Contexto Histórico y Arqueológico
+
+Paradero sin confirmar en una fuente fiable: una web divulgativa la da como óleo de 107,5 × 238 cm en una colección particular de Vaduz. Roucloux solo la cita para compararla con la versión de 1956, que sitúa en el museo de Lovaina la Nueva.
+
+#### Autoría y Procedencia
+
+Paul Delvaux (1897-1994), pintor belga asociado al surrealismo, célebre por sus escenas oníricas de mujeres desnudas en estaciones de tren y plazas arquitectónicas silenciosas.
+
+---
+
+### 96. Los lazos rosas (Les Nœuds roses) — Paul Delvaux (1937)
+
+![Los lazos rosas (Les Nœuds roses)](./102_Los_lazos_rosas.jpg)
+*Los lazos rosas (Les Nœuds roses) — Paul Delvaux (1937)*
+
+![Los lazos rosas (Les Nœuds roses)](./100_Lesbos.jpg)
+*Lámina del libro de Bataille (p. 175)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 120 × 150 cm
+- Koninklijk Museum voor Schone Kunsten, Amberes (inv. 2850; antes colección particular)
+
+#### Lo que hace que destaque
+
+Mujeres desnudas en una plaza de arquitectura italiana al pie de unas montañas, con una calavera en el suelo; una lleva un gran lazo rosa en torno al torso. En 1961 era de Claude Spaak, autor de una monografía sobre Delvaux (Amberes, 1948). Hoy está en el Museo Real de Bellas Artes de Amberes (KMSKA), que la fecha en 1937; Bataille la fecha en 1936.
+
+#### Contexto Histórico y Arqueológico
+
+La ficha de Art in Flanders devolvió 429 y no se pudo leer; el enlace sale del buscador. No está documentado cómo pasó de la colección Spaak al museo. En el pie de Bataille, esta frase también va entre comillas: cita a otro autor.
+
+#### Autoría y Procedencia
+
+Paul Delvaux (1897-1994), pintor belga asociado al surrealismo, célebre por sus escenas oníricas de mujeres desnudas en estaciones de tren y plazas arquitectónicas silenciosas.
+
+---
+
+### 97. Tren de noche (Train de nuit) — Paul Delvaux (1947)
+
+![Tren de noche (Train de nuit)](./103_Tren_de_noche.jpg)
+*Tren de noche (Train de nuit) — Paul Delvaux (1947)*
+
+#### Ficha Técnica
+
+- Óleo sobre tabla
+- 153 × 210 cm
+- Toyama Prefectural Museum of Art and Design, Toyama (n.º 0059; antes colección particular)
+
+#### Lo que hace que destaque
+
+Una sala de espera en penumbra, con un desnudo tendido en un banco, otro de pie junto a una palmera, un espejo que no refleja bien lo que tiene delante y, por la puerta, la estación de noche. La compró en 1981 el museo de Toyama (Japón).
+
+#### Contexto Histórico y Arqueológico
+
+
+
+#### Autoría y Procedencia
+
+Paul Delvaux (1897-1994), pintor belga asociado al surrealismo, célebre por sus escenas oníricas de mujeres desnudas en estaciones de tren y plazas arquitectónicas silenciosas.
+
+---
+
+### 98. El carnaval del sabio (Le Carnaval du sage) — René Magritte (1947)
+
+![El carnaval del sabio (Le Carnaval du sage)](./104_El_carnaval_del_sabio_Master.png)
+*El carnaval del sabio — René Magritte (1947), M.S. Rau*
+
+![El carnaval del sabio (Le Carnaval du sage)](./104_Olympia.jpg)
+*Lámina del libro de Bataille (p. 177)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 62,9 × 48,1 cm
+- Colección particular (a la venta en M.S. Rau, Nueva Orleans, ref. 30-8762)
+
+#### Lo que hace que destaque
+
+Una mujer desnuda de larga melena rubia y antifaz blanco, de pie ante una calle, con un fantasma blanco a su lado, un vaso y una barra de pan. Es de la etapa «Renoir» o «pleno sol» de Magritte, de colores cálidos y pincelada suelta. La compró Robert de Keyn al pintor en 1947, y así lo indica el pie de Bataille. Bataille la acompaña de una nota que une el erotismo del pintor a la poesía.
+
+#### Contexto Histórico y Arqueológico
+
+El pie de la edición española dice «René Magritte: El carnaval del sabio (1947). Col. Robert de Keyn, Bruselas», y es la obra que se ve en la lámina: coinciden la mujer con antifaz, el fantasma, el vaso y el edificio (la lámina recorta arriba y a la derecha). La edición inglesa la titula «Olympia», que es otro cuadro de Magritte (Georgette tendida con una caracola). Firmado abajo a la derecha, con título y fecha al dorso; se expuso en la Galerie Lou Cosyn de Bruselas en 1947. La imagen es la reproducción plana del marchante M.S. Rau, un PNG de paleta reducida. El «soveriegn» del inglés es errata de la edición.
+
+#### Autoría y Procedencia
+
+René Magritte (1898-1967), pintor surrealista belga, conocido por sus ingeniosas y provocativas imágenes que cuestionaban los límites de la realidad y el lenguaje.
+
+---
+
+### 99. La muñeca (La Poupée) y dos dibujos — Hans Bellmer
+
+![La muñeca (La Poupée) y dos dibujos](./105_La_muneca.jpg)
+*La muñeca (La Poupée) y dos dibujos — Hans Bellmer*
+
+![La muñeca (La Poupée) y dos dibujos](./106_A_Sade.jpg)
+*Dos dibujos de Hans Bellmer — Lámina del libro de Bataille (p. 179)*
+
+#### Ficha Técnica
+
+- Una fotografía de la muñeca (p. 178) y dos dibujos a lápiz (p. 179)
+- Paradero de los ejemplares reproducidos desconocido
+
+#### Lo que hace que destaque
+
+Una fotografía nocturna de la muñeca articulada de Bellmer, de pie junto a un arbusto, y dos dibujos de cuerpos entrelazados. Para la muñeca, Bataille remite a «Les Jeux de la poupée», con textos de Paul Éluard (preparado entre 1936 y 1938 y publicado en París en 1949); para los dibujos, a «Anatomie de l'image» (Le Terrain vague, 1957). De la serie de la muñeca hay copias fotográficas en varios museos, por ejemplo en el Metropolitan de Nueva York.
+
+#### Contexto Histórico y Arqueológico
+
+La traducción inglesa dice «Les yeux de la poupée», errata por «Les Jeux de la poupée». No se ha identificado qué copia de la fotografía ni qué dibujos son (el Met no publica imágenes). El enlace lleva al ejemplar del MoMA del libro al que remite Bataille, con 17 fotografías coloreadas a mano, no a la copia concreta que reproduce la lámina. El poema del pie es de Éluard, no de Bataille.
+
+#### Autoría y Procedencia
+
+Hans Bellmer (1902-1975), escultor, fotógrafo y dibujante germano-francés, célebre por sus muñecas articuladas de tamaño natural que exploran el erotismo y la anatomía inconsciente.
+
+---
+
+### 100. La habitación (La Chambre) — Balthus (1952-1954)
+
+![La habitación (La Chambre)](./107_La_habitacion.jpg)
+*La habitación (La Chambre) — Balthus (1952-1954)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 270,5 × 335 cm
+- Colección particular
+
+#### Lo que hace que destaque
+
+Una muchacha desnuda tendida en un diván mientras una figura pequeña descorre la cortina y deja entrar la luz. Es un lienzo grande, pintado entre 1952 y 1954. En 1961 estaba en la Galerie Henriette Gomes de París; hoy es de una colección particular.
+
+#### Contexto Histórico y Arqueológico
+
+No hay ficha institucional a la que enlazar: el enlace lleva a la ficha de la agencia Bridgeman Images, de donde salen los datos (270,5 × 335 cm, colección particular).
+
+#### Autoría y Procedencia
+
+Balthus (Balthasar Klossowski de Rola, 1908-2001), pintor moderno de origen polaco-francés, célebre por sus interiores enigmáticos, sus durmientes y sus atmósferas suspendidas.
+
+---
+
+### 101. El sueño (Le Rêve) — Balthus (1955-1956)
+
+![El sueño (Le Rêve)](./108_El_sueno.jpg)
+*El sueño (Le Rêve) — Balthus (1955-1956)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo (por lo que se ve en la reproducción)
+- Galerie Henriette Gomes, París, en 1961
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Una muchacha duerme en un sofá mientras otra, de pie, se inclina hacia ella con una flor, en una sala con papel pintado a cuadros. En 1961 estaba en la Galerie Henriette Gomes.
+
+#### Contexto Histórico y Arqueológico
+
+Seguramente «Le Rêve I» (1955); de «Le Rêve II» (1956-1957, 198 × 198 cm) hay registros de subasta. No se ha confirmado cuál es ni dónde está.
+
+#### Autoría y Procedencia
+
+Balthus (Balthasar Klossowski de Rola, 1908-2001), pintor moderno de origen polaco-francés, célebre por sus interiores enigmáticos, sus durmientes y sus atmósferas suspendidas.
+
+---
+
+### 102. El ángel de la anatomía (L'Ange de l'anatomie), primer estado — Leonor Fini (1949)
+
+![El ángel de la anatomía (L'Ange de l'anatomie), primer estado](./109_El_angel_de_la_anatomia.jpg)
+*El ángel de la anatomía (L'Ange de l'anatomie), primer estado — Leonor Fini (1949)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 53 × 31 cm
+- Colección particular
+
+#### Lo que hace que destaque
+
+Una figura de melena blanca con el esqueleto y las vísceras a la vista, que abre un manto con los brazos. Bataille reproduce un «primer estado» del cuadro, sin las alas que tiene la versión acabada. El sitio oficial de la artista fecha esa versión en 1949; Bataille da 1950.
+
+#### Contexto Histórico y Arqueológico
+
+La cita de Jean Genet del pie no es de Bataille. El enlace lleva al catálogo de pinturas del sitio oficial, donde la obra sale entre otras.
+
+#### Autoría y Procedencia
+
+Leonor Fini (1907-1996), pintora, diseñadora e ilustradora argentina-italiana afincada en París, figura destacada del surrealismo independiente con un imaginario de esfinges, androginia y metamorfosis.
+
+---
+
+### 103. La habitación (La Chambre noire) — Leonor Fini (1939)
+
+![La habitación (La Chambre noire)](./110_La_habitacion_negra.jpg)
+*La habitación (La Chambre noire) — Leonor Fini (1939)*
+
+![La habitación (La Chambre noire)](./112_Amor_incondicional.jpg)
+*Lámina del libro de Bataille (p. 184), con el pie «La habitación (1941)»*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 100 × 73 cm
+- Colección particular
+
+#### Lo que hace que destaque
+
+Delante, una mujer de pie con coraza sobre un vestido largo; al fondo, dos muchachas en una cama con dosel. El sitio oficial de la artista la titula «La Chambre noire» y la fecha en 1939; Bataille la llama «La habitación» y la fecha en 1941.
+
+#### Contexto Histórico y Arqueológico
+
+Identificada comparando la lámina del libro con la imagen del sitio oficial.
+
+#### Autoría y Procedencia
+
+Leonor Fini (1907-1996), pintora, diseñadora e ilustradora argentina-italiana afincada en París, figura destacada del surrealismo independiente con un imaginario de esfinges, androginia y metamorfosis.
+
+---
+
+### 104. La amistad (L'Amitié) — Leonor Fini (1958)
+
+![La amistad (L'Amitié)](./111_La_amistad_Master.jpg)
+*La amistad — Leonor Fini (1958), Il Ponte*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 60 × 91 cm
+- Colección particular
+
+#### Lo que hace que destaque
+
+Una mujer dormida, envuelta en un velo de encaje, recostada en un esqueleto que la abraza. Bataille la fecha en 1957 y remite a «Le Vampire» de Ornella Volta (Pauvert, 1962); el sitio oficial de la artista da 1958.
+
+#### Contexto Histórico y Arqueológico
+
+Identificada comparando la lámina con la imagen del sitio oficial. La imagen principal es la foto de la subasta de Il Ponte (Milán, subasta 547, 2 de marzo de 2022, lote 301, colección de Valentina Cortese; 250.000 €), con el marco tallado: la subasta da 57 × 92 cm. El 28 de febrero de 2022 el Estado italiano abrió el procedimiento para declararla de interés cultural.
+
+#### Autoría y Procedencia
+
+Leonor Fini (1907-1996), pintora, diseñadora e ilustradora argentina-italiana afincada en París, figura destacada del surrealismo independiente con un imaginario de esfinges, androginia y metamorfosis.
+
+---
+
+### 105. Amor incondicional (L'Amour sans condition) — Leonor Fini
+
+![Amor incondicional (L'Amour sans condition)](./112_Amor_incondicional_Master.jpg)
+*Amor incondicional — Leonor Fini, Sotheby's*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 92,1 × 64,7 cm
+- Colección particular (Sotheby's Nueva York, «Cherchez la femme», 2015, lote 9)
+
+#### Lo que hace que destaque
+
+Una figura de esqueleto, luminosa, sobre fondo oscuro. Bataille la fecha en 1959.
+
+#### Contexto Histórico y Arqueológico
+
+No aparece en el catálogo de pinturas del sitio oficial. Webs secundarias (Tumblr) dan un «L'Amour sans condition» de 1958, óleo sobre lienzo de 36 × 25½ pulgadas, en la Weinstein Gallery de San Francisco; no se ha podido confirmar en una fuente fiable. La imagen de antes era la lámina de «La habitación» (La Chambre noire), que pasa a la obra 110. La de ahora es la del lote de Sotheby's titulado «L'Amour sans condition»: coinciden título y medidas, pero no se ha cotejado con la lámina de la p. 186, que falta. Sotheby's no da fecha (otras webs dicen 1958); procedencia: Galleria Galatea y Galleria Il Fauno de Turín; bibliografía: Jelenski 1968, p. 89.
+
+#### Autoría y Procedencia
+
+Leonor Fini (1907-1996), pintora, diseñadora e ilustradora argentina-italiana afincada en París, figura destacada del surrealismo independiente con un imaginario de esfinges, androginia y metamorfosis.
+
+---
+
+### 106. Dos figuras (Two Figures) — Francis Bacon (1953)
+
+![Dos figuras (Two Figures)](./113_Dos_figuras_Master.jpg)
+*Dos figuras — Francis Bacon (1953), Gagosian*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 152,5 × 116,5 cm
+- Colección particular (catálogo razonado CR 53-24)
+
+#### Lo que hace que destaque
+
+Dos figuras desnudas enlazadas sobre sábanas blancas, delante de un fondo de cortinas con estrías verticales. Bataille lo titula «La habitación» y lo sitúa en la Hanover Gallery de Londres. Estuvo depositado en la Tate de 1957 a 1959. Después de la exposición del Grand Palais de 1971 no se volvió a ver en público hasta 2017, en el Fitzwilliam Museum de Cambridge.
+
+#### Contexto Histórico y Arqueológico
+
+Identificada por la composición: Bataille le da otro título. Se dice que la Hanover Gallery lo expuso en 1953 y que después fue de Lucian Freud, pero las fuentes leídas no lo recogen. La imagen principal es la de la exposición «Francis Bacon: Couplings» de Gagosian (Londres, 2019), foto de Prudence Cuming Associates.
+
+#### Autoría y Procedencia
+
+Francis Bacon (1909-1992), pintor británico de origen irlandés, uno de los creadores figurativos más desgarradores y singulares de la posguerra europea.
+
+---
+
+### 107. La hija pródiga (La Fille prodigue) — Félix Labisse (1943)
+
+![La hija pródiga (La Fille prodigue)](./114_La_hija_prodiga_Master.jpg)
+*La hija pródiga — Félix Labisse (1943), Sotheby's*
+
+![La hija pródiga (La Fille prodigue)](./114_La_hija_prodiga.jpg)
+*Lámina del libro de Bataille (p. 188)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 81 × 60,3 cm
+- Colección particular (subastada en Sotheby's, 2020)
+
+#### Lo que hace que destaque
+
+Una mujer con la cara tapada por la melena y el torso recorrido por las ramas de un árbol, con un pájaro en vuelo. Es de 1943, el año en que, según su biografía oficial, Labisse pintó mucho y cambió de manera. En 1961 era del actor Pierre Brasseur. Se subastó en Montauroux en 2011 y en Sotheby's en 2020, con el libro de Bataille en la bibliografía.
+
+#### Contexto Histórico y Arqueológico
+
+La procedencia de Sotheby's no nombra a Pierre Brasseur, solo al Dr. A. Boutin; el dato de Brasseur es del pie de Bataille, y lo de «actor» no está en las fuentes citadas. La nota biográfica del pie solo da datos y no se cita. «Colección particular» se deduce de la venta de 2020. La imagen principal es la del lote 44 de Sotheby's (mayo de 2020), cuya bibliografía cita «Les Larmes d'Eros» (Brachot 1979, n.º 163).
+
+#### Autoría y Procedencia
+
+Félix Labisse (1905-1982), pintor e ilustrador surrealista francés, creador de universos fantásticos poblados de figuras híbridas y mujeres de tonos azulados y metamórficos.
+
+---
+
+### 108. Desnudo dormido (Nue endormie) — Dorothea Tanning (1954)
+
+![Desnudo dormido (Nue endormie)](./115_Desnudo_dormido_Master.jpg)
+*Desnudo dormido — Dorothea Tanning (1954), MCA Chicago*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 60 × 49,7 cm
+- Museum of Contemporary Art, Chicago (inv. 84.23; antes colección particular)
+
+#### Lo que hace que destaque
+
+Una mujer desnuda recostada en un sofá rojo, con la cabeza perdida entre pliegues de tela o de luz. Bataille lo titula «Mujer dormida» y lo fecha en 1953. La fundación de la artista lo cataloga como «Nue endormie», de 1954, en el Museum of Contemporary Art de Chicago.
+
+#### Contexto Histórico y Arqueológico
+
+Identificada comparando la lámina con la imagen de la fundación. Los centímetros son conversión propia. La imagen principal es la del propio museo, con el marco.
+
+#### Autoría y Procedencia
+
+Dorothea Tanning (1910-2012), pintora, escultora y escritora estadounidense, destacada representante del surrealismo internacional vinculada a Max Ernst.
+
+---
+
+### 109. Voltaje (Voltage) — Dorothea Tanning (1942)
+
+![Voltaje (Voltage)](./116_Voltaje.jpg)
+*Voltaje (Voltage) — Dorothea Tanning (1942)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 28,3 × 30,8 cm
+- Paradero actual no indicado por la fundación
+
+#### Lo que hace que destaque
+
+Un cuerpo de mujer envuelto en un paño blanco, con una trenza que le cruza el pecho y un par de ojos sostenidos en alto por un alambre. Es un lienzo pequeño, de 1942. Bataille lo reproduce sin fecha y con una nota sobre la pintora.
+
+#### Contexto Histórico y Arqueológico
+
+La ficha de la fundación no dice dónde está. Los centímetros son conversión propia.
+
+#### Autoría y Procedencia
+
+Dorothea Tanning (1910-2012), pintora, escultora y escritora estadounidense, destacada representante del surrealismo internacional vinculada a Max Ernst.
+
+---
+
+### 110. La mañana poética (La Matinée poétique) — Félix Labisse (1944)
+
+![La mañana poética (La Matinée poétique)](./117_La_manana_poetica.jpg)
+*La mañana poética (La Matinée poétique) — Félix Labisse (1944)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo (por lo que se ve en la reproducción)
+- Col. Jean Baure, en 1961
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Un retrato de grupo imaginario con desnudos. Según Bataille, de izquierda a derecha: Sade de espaldas, Jean-Louis Barrault, Jarry, William Blake, Apollinaire, el propio Labisse, Picasso y Robert Desnos. Labisse lo expuso en el Salon des Tuileries de 1944.
+
+#### Contexto Histórico y Arqueológico
+
+Sede actual desconocida.
+
+#### Autoría y Procedencia
+
+Félix Labisse (1905-1982), pintor e ilustrador surrealista francés, creador de universos fantásticos poblados de figuras híbridas y mujeres de tonos azulados y metamórficos.
+
+---
+
+### 111. Roberte y el coloso (variante) — Pierre Klossowski
+
+![Roberte y el coloso (variante)](./118_Roberte_y_el_coloso.jpg)
+*Roberte y el coloso (variante) — Pierre Klossowski*
+
+#### Ficha Técnica
+
+- Lápiz sobre papel (por lo que se ve en la reproducción)
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Roberte, la protagonista de las novelas de Klossowski, desnuda salvo por las medias y los guantes, junto a un coloso de uniforme sin cabeza; la cabeza está en el suelo. El tema viene de «Roberte ce soir» (Minuit, 1953).
+
+#### Contexto Histórico y Arqueológico
+
+Sin identificar: no está entre las obras del tema «Roberte et le colosse» del catálogo razonado en línea (todas de 1971, posteriores al libro) ni entre los dibujos de 1953 para «Roberte ce soir».
+
+#### Autoría y Procedencia
+
+Pierre Klossowski (1905-2001), escritor, traductor y dibujante francés, hermano mayor de Balthus, autor de reflexiones decisivas sobre Sade, Nietzsche y el erotismo.
+
+---
+
+### 112. Diana y Acteón — Pierre Klossowski (1954)
+
+![Diana y Acteón](./119_Diana_y_Acteon.jpg)
+*Diana y Acteón — Pierre Klossowski (1954)*
+
+#### Ficha Técnica
+
+- Lápiz sobre papel
+- 210 × 150 cm
+- Paradero no indicado en el catálogo razonado
+
+#### Lo que hace que destaque
+
+Diana, con una pierna en alto, forcejea con Acteón, que ya tiene cabeza de ciervo. Klossowski escribió sobre el mismo mito «Le Bain de Diane» (Pauvert, 1956). El catálogo razonado en línea recoge un gran dibujo del tema de 1954, expuesto en París en 1955 y entre 1981 y 2007 en Berna, Viena, Ginebra, Ixelles, Piran, Londres, Colonia y París.
+
+#### Contexto Histórico y Arqueológico
+
+Identificación probable, comparando con la miniatura del catálogo razonado. Hay otras versiones de 1955 (176 × 78 cm y una pequeña de 27 × 21 cm) y de 1957. El enlace lleva al catálogo general; hay que filtrar por el tema «Diane et Actéon».
+
+#### Autoría y Procedencia
+
+Pierre Klossowski (1905-2001), escritor, traductor y dibujante francés, hermano mayor de Balthus, autor de reflexiones decisivas sobre Sade, Nietzsche y el erotismo.
+
+---
+
+### 113. Dibujos para «Roberte ce soir» — Pierre Klossowski (1953)
+
+![Dibujos para «Roberte ce soir»](./120_Dibujos_para_Roberte_ce_soir.jpg)
+*Dibujos para «Roberte ce soir» — Pierre Klossowski (1953)*
+
+#### Ficha Técnica
+
+- Dos dibujos a lápiz (mina de plomo)
+- 100 × 72 cm cada uno
+- Paradero no indicado en el catálogo razonado
+
+#### Lo que hace que destaque
+
+Dos de las grandes hojas a lápiz que Klossowski dibujó en 1953 para su novela «Roberte ce soir» (Minuit, 1953) y expuso en París en 1955. En la de la p. 195, el coloso con casco y el enano asaltan a Roberte: el catálogo razonado la titula «Roberte, le colosse et le nain». En la de la p. 194, Roberte, con un vestido oscuro, está enlazada a un hombre desnudo.
+
+#### Contexto Histórico y Arqueológico
+
+La p. 195 coincide con «Roberte, le colosse et le nain». La p. 194 parece la miniatura catalogada como «Le discours de Vittorio» (1953, 100 × 72 cm), pero el título encaja mal con la escena: dudoso. Algunas fuentes dicen que Klossowski los dibujó porque Balthus no quiso ilustrar la novela; no se ha comprobado.
+
+#### Autoría y Procedencia
+
+Pierre Klossowski (1905-2001), escritor, traductor y dibujante francés, hermano mayor de Balthus, autor de reflexiones decisivas sobre Sade, Nietzsche y el erotismo.
+
+---
+
+### 114. La boca de la verdad — Stanislao Lepri (1955)
+
+![La boca de la verdad](./121_La_boca_de_la_verdad.jpg)
+*La boca de la verdad — Stanislao Lepri (1955)*
+
+#### Ficha Técnica
+
+- Óleo (por lo que se ve en la reproducción)
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Busto de una mujer con el pecho descubierto: una venda le tapa la parte baja de la cara y lleva pintada una boca con dientes, y otra dentadura aparece sobre el escote. Bataille remite, para Lepri, al libro de Alain Jouffroy «La chambre noire de Lepri» (Milán, 1956).
+
+#### Contexto Histórico y Arqueológico
+
+Sin identificar en catálogos en línea. El título alude a la Bocca della Verità de Roma.
+
+#### Autoría y Procedencia
+
+Stanislao Lepri (1905-1980), pintor italiano adscrito al realismo mágico y al surrealismo, estrecho colaborador y compañero de Leonor Fini en París.
+
+---
+
+### 115. La tumba (Mon tombeau; antes «de Sade») — Clovis Trouille
+
+![La tumba (Mon tombeau; antes «de Sade»)](./122_Mi_tumba.jpg)
+*La tumba (Mon tombeau; antes «de Sade») — Clovis Trouille*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo (por lo que se ve en la reproducción; lámina en la p. 197)
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Un panteón con el nombre «CLOVIS» entre cipreses, rodeado de frailes encapuchados, desnudos y calaveras, bajo un rayo: una escena funeraria erótica y anticlerical. Bataille indica que antes se tituló «de Sade».
+
+#### Contexto Histórico y Arqueológico
+
+Casi seguro es «Mon tombeau», que webs secundarias fechan en 1947-1962 (óleo, 100 × 81 cm, colección particular); no se ha confirmado en una fuente fiable. El pie está en la p. 196 y la imagen en la 197.
+
+#### Autoría y Procedencia
+
+Clovis Trouille (1889-1975), pintor surrealista francés célebre por sus obras anticlericales, satíricas y de un erotismo carnavalesco desbordante.
+
+---
+
+### 116. Primera clase (Mes funérailles) — Clovis Trouille (1940)
+
+![Primera clase (Mes funérailles)](./123_Primera_clase_Master.jpg)
+*Mis funerales (Primera clase) — Clovis Trouille (1940), Christie's*
+
+![Primera clase (Mes funérailles)](./123_Primera_clase.jpg)
+*Lámina del libro de Bataille (p. 198)*
+
+#### Ficha Técnica
+
+- Óleo sobre lienzo
+- 65,2 × 81,2 cm (marco del artista, 90 × 107 cm)
+- Colección particular (Christie's París, 3 de octubre de 2024, lote 48)
+
+#### Lo que hace que destaque
+
+Un escenario fúnebre bajo un dosel con la inicial «T»: una figura con la falda levantada ante un catafalco y dos mujeres desnudas que se tapan la cara. Bataille la acompaña de una nota sobre el pintor, que trabajó mucho tiempo en una fábrica que hacía maniquíes de cera para el Musée Grévin.
+
+#### Contexto Histórico y Arqueológico
+
+Sin identificar en catálogos en línea; sede actual desconocida. Su título es «Mes funérailles» (1); «Première classe» es uno de los alternativos, y con él la cita Christie's en la bibliografía del lote («G. Bataille, Les Larmes d'Éros, 1961, p. 228, titré: Première Classe»). Pintado en 1940; Volta lo fechó en 1946. Quedó en el taller del artista y con sus herederos hasta la venta de 2024 (119.700 €); se expuso en la Exposición internacional del surrealismo de 1947.
+
+#### Autoría y Procedencia
+
+Clovis Trouille (1889-1975), pintor surrealista francés célebre por sus obras anticlericales, satíricas y de un erotismo carnavalesco desbordante.
+
+---
+
+### 117. Sacrificio vudú — Fotógrafo sin nombrar
+
+![Sacrificio vudú](./124_Ceremonia_y_posesion_vudu.jpg)
+*Sacrificio vudú — Fotógrafo sin nombrar*
+
+#### Ficha Técnica
+
+- Serie de fotografías (pp. 199-203)
+- Paradero de negativos y copias desconocido
+
+#### Lo que hace que destaque
+
+Fotografías de una ceremonia vudú con sacrificio de aves. Bataille las atribuye, sin decir su nombre, a «uno de los fotógrafos más notables y reconocidos de hoy». Presenta el sacrificio como un éxtasis cercano a la embriaguez y, para la religión vudú, remite al libro de Alfred Métraux, «uno de los mejores etnógrafos de nuestro tiempo», que se inició en ella para conocerla mejor.
+
+#### Contexto Histórico y Arqueológico
+
+No se ha podido identificar al fotógrafo con fuentes. Se atribuyen a Pierre Verger, que estuvo en Haití en 1949 (Wikipedia, no citable), pero no se ha encontrado quién confirme la autoría de estas fotos. Bataille cita el libro como «Le Vaudoo, Gallimard, Paris, 1955»; el libro de Métraux es «Le Vaudou haïtien» (Gallimard, 1958): cotejarlo con la edición francesa.
+
+#### Autoría y Procedencia
+
+Fotógrafo no identificado que documentó ceremonias del culto vudú en Haití a mediados del siglo XX, citado con admiración por Georges Bataille en Las lágrimas de Eros.
+
+---
+
+### 118. Suplicio chino de los Cien Pedazos (lingchi), Pekín — Fotógrafo desconocido (c. 1904-1905)
 
 ![Suplicio chino de los Cien Pedazos (lingchi), Pekín](./82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg)
 *El condenado atado al poste, la fotografía que Bataille poseía desde 1925 — fotógrafo desconocido (c. 1904-1905), reproducida en «Las lágrimas de Eros»*
@@ -2320,7 +3198,7 @@ Sin autor identificado: la base Turandot de Bourgon no da el nombre del fotógra
 
 ---
 
-### 86. De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620) — David Vinckboons y Dirck Eversen Lons (1620)
+### 119. De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620) — David Vinckboons y Dirck Eversen Lons (1620)
 
 ![De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620)](./83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg)
 *De la tiranía en Yucatán, p. 33 — David Vinckboons y Dirck Eversen Lons (1620), Biblioteca Digital Mundial*
@@ -2345,7 +3223,7 @@ La ficha de Commons atribuye las láminas al dibujante David Vinckboons (1576-16
 
 ---
 
-### 87. La decapitación de James Scott, duque de Monmouth, en Londres en 1685 — Jan Luyken (1698)
+### 120. La decapitación de James Scott, duque de Monmouth, en Londres en 1685 — Jan Luyken (1698)
 
 ![La decapitación de James Scott, duque de Monmouth, en Londres en 1685](./84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg)
 *La decapitación del duque de Monmouth — Jan Luyken (1698), Rijksmuseum, Ámsterdam*
@@ -2370,7 +3248,7 @@ Jan Luyken nació en Ámsterdam el 16 de abril de 1649 y murió allí el 5 de ab
 
 ---
 
-### 88. Sátiro llorando a una ninfa (La muerte de Procris) — Piero di Cosimo (c. 1495)
+### 121. Sátiro llorando a una ninfa (La muerte de Procris) — Piero di Cosimo (c. 1495)
 
 ![Sátiro llorando a una ninfa (La muerte de Procris)](./85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg)
 *Sátiro llorando a una ninfa — Piero di Cosimo (c. 1495), National Gallery, Londres*
