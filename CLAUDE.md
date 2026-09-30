@@ -111,7 +111,9 @@ todas con su original en Commons y recuperables con `download.py` y los manifies
 
 Solo quedan cuatro copias locales, porque son mejores que cualquier versión en Commons y el sitio
 genera de ellas su propia copia: la Creación de Adán (10080 px), la Expulsión de Masaccio
-(3429 × 6000), el Elohim de Blake (6072 px) y el Diluvio de Van Scorel. Y los retratos de `Autores/`.
+(3429 × 6000), el Elohim de Blake (6072 px) y el Diluvio de Van Scorel. Y los retratos de `Autores/`,
+y las obras con derechos vigentes, que no están en Commons (las 36 del siglo XX de Bataille, ver
+«Láminas sin imagen»).
 Como la carpeta está en iCloud Drive con «Optimizar almacenamiento», esos archivos pueden aparecer
 como `dataless`: siguen ahí y se descargan solos al abrirlos.
 
@@ -486,13 +488,19 @@ quedó sin crédito del Ingres hasta que pasó a admitir varias.
 
 ### Láminas sin imagen
 
-Un libro puede listar obras que no se pueden mostrar —derechos de autor vigentes, o sin reproducción
-libre en Commons— con `"sin_imagen": (módulo, variable)` en `libros.py`. Salen al final del libro como
-fichas de texto con un enlace a quien sí puede enseñarlas (museo, fundación, catálogo razonado) y la
-cita del autor si la hay. No pasan por el visor, la portada, la cronología ni el mapa, que parten de
-la imagen. Hoy solo las usa *Las lágrimas de Eros* (`data_eros_sin_imagen.py`: los surrealistas, las
-fotos de vudú y las obras antiguas sin reproducción libre). **No se suben escaneos**: el sitio es
-público.
+Un libro puede listar obras de las que no hay ninguna reproducción que mostrar con
+`"sin_imagen": (módulo, variable)` en `libros.py`. Salen al final del libro como fichas de texto con
+un enlace a quien sí puede enseñarlas (museo, fundación, catálogo razonado) y la cita del autor si la
+hay. No pasan por el visor, la portada, la cronología ni el mapa, que parten de la imagen. Hoy solo
+las usa *Las lágrimas de Eros* (`data_eros_sin_imagen.py`: obras antiguas sin reproducción localizada).
+
+**Las obras con derechos de autor vigentes sí se muestran** (decisión del 30 de septiembre de 2026;
+antes quedaban como láminas sin imagen y no se subían escaneos). Así entraron las 36 obras del siglo
+XX de Bataille —Picasso, Magritte, Balthus, Bacon, los surrealistas, las fotos de vudú—, números 89 a
+124 de `data_eros.py`. No están en Commons, así que van como copia local en `Lagrimas_de_Eros/` y el
+sitio las sirve como archivo propio. La regla de calidad vale igual para ellas: una foto de la página
+del libro, con el pie y en blanco y negro, es provisional hasta encontrar la reproducción del museo,
+del catálogo razonado o de una casa de subastas, comprobada contra la lámina de Bataille.
 
 ### Temas que cruzan los libros
 
@@ -697,8 +705,9 @@ que `build4.py` deja justo antes de incrustar las previas, así que lleva todo l
 - El formato de miniatura de Commons es `thumb/5/5b/<nombre>/1280px-<nombre>`, con el nombre
   **dos veces**; sin la repetición da 404 (así falló la primera construcción). Y no se puede
   pedir una miniatura mayor que el original: en ese caso se usa el original.
-- Lo que no está en Commons va como archivo del sitio: los retratos de `Autores/` y las 6
-  imágenes antiguas del Génesis sin origen conocido, en copia reducida a 2560 px. Al
+- Lo que no está en Commons va como archivo del sitio: los retratos de `Autores/`, las obras con
+  derechos vigentes y las 6 imágenes antiguas del Génesis sin origen conocido, en copia reducida a
+  2560 px. Al
   identificarlas en `titulos_extra.tsv` pasan solas a servirse desde Commons.
 - **Una dirección por sección**: `#/genesis`, `#/mapa`, `#/biblioteca/autores`. Se envuelven
   `switchBook` y `switchTab`, y el botón «atrás» del navegador funciona.

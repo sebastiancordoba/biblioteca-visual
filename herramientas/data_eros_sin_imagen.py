@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-# Láminas de «Las lágrimas de Eros» que la colección no puede mostrar: obras con derechos de autor
-# vigentes, u obras sin reproducción libre en Wikimedia Commons. Salen al final del libro como
+# Láminas de «Las lágrimas de Eros» de las que no se ha localizado ninguna reproducción que mostrar
+# (las obras con derechos vigentes sí se muestran: están en data_eros.py). Salen al final del libro como
 # fichas de texto con un enlace a quien sí puede enseñarlas. Las fuentes de cada una van en «fuentes».
 null, true, false = None, True, False   # la lista se vuelca como JSON
 EROS_SIN_IMAGEN = [
