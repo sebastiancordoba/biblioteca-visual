@@ -2395,7 +2395,7 @@ EROS = [
  },
  {
   "files": [
-   "99_Mujeres_condenadas.jpg"
+   "98_Mantis_religiosa_Lamina.jpg"
   ],
   "views": [
    "Lámina del libro de Bataille (p. 170)"

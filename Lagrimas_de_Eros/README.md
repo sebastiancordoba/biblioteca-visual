@@ -101,7 +101,7 @@ Las lágrimas de Eros (1961) es el último libro de Georges Bataille: una histor
 | 91 | **Mesalina niña (Messaline enfant)** | Max Ernst (1957) | Colección particular (Sotheby's Nueva York, 8 de mayo de 2007, lote 48) | [Wikipedia](https://www.sothebys.com/en/auctions/ecatalogue/2007/impressionist-and-modern-art-evening-sale-n08314/lot.48.html) | [`95_Mesalina_nina_Master.jpg`](./95_Mesalina_nina_Master.jpg) |
 | 92 | **Masacre** | André Masson (1933) | Paradero actual desconocido | [Wikipedia](None) | [`96_Masacre.jpg`](./96_Masacre.jpg) |
 | 93 | **Sillón para Paulina Borghese** | André Masson | Paradero actual desconocido | [Wikipedia](None) | [`97_Sillon_para_Paulina_Borghese.jpg`](./97_Sillon_para_Paulina_Borghese.jpg) |
-| 94 | **Mantis religiosa** | André Masson | Paradero actual desconocido | [Wikipedia](None) | [`99_Mujeres_condenadas.jpg`](./99_Mujeres_condenadas.jpg) |
+| 94 | **Mantis religiosa** | André Masson | Paradero actual desconocido | [Wikipedia](None) | [`98_Mantis_religiosa_Lamina.jpg`](./98_Mantis_religiosa_Lamina.jpg) |
 | 95 | **La ciudad lunar (La Ville lunaire)** | Paul Delvaux (1944) | Paradero actual sin confirmar | [Wikipedia](None) | [`101_La_ciudad_lunar.jpg`](./101_La_ciudad_lunar.jpg) |
 | 96 | **Los lazos rosas (Les Nœuds roses)** | Paul Delvaux (1937) | Koninklijk Museum voor Schone Kunsten, Amberes (inv. 2850; antes colección particular) | [Wikipedia](https://artinflanders.be/nl/kunst/de-roze-strikken) | [`102_Los_lazos_rosas.jpg`](./102_Los_lazos_rosas.jpg) |
 | 97 | **Tren de noche (Train de nuit)** | Paul Delvaux (1947) | Toyama Prefectural Museum of Art and Design, Toyama (n.º 0059; antes colección particular) | [Wikipedia](https://jmapps.ne.jp/5670/det.html?data_id=205) | [`103_Tren_de_noche.jpg`](./103_Tren_de_noche.jpg) |
@@ -2559,7 +2559,7 @@ André Masson (1896-1987), pintor y dibujante francés, pionero del dibujo autom
 
 ### 94. Mantis religiosa — André Masson
 
-![Mantis religiosa](./99_Mujeres_condenadas.jpg)
+![Mantis religiosa](./98_Mantis_religiosa_Lamina.jpg)
 *Lámina del libro de Bataille (p. 170)*
 
 #### Ficha Técnica
