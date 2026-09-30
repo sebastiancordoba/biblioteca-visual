@@ -224,3 +224,8 @@ sup + sup::before{content:",";margin-right:1px}
 .pasajes span{font-size:.92rem}
 @media (max-width:640px){.pasajes li{grid-template-columns:1fr;gap:4px}}
 @media (max-width:640px){.pestanas{gap:8px;padding:16px 16px 0}.pestanas a{padding:8px 14px;font-size:.78rem;letter-spacing:1px}}
+/* «En los libros»: de qué libro viene cada obra y qué dice de ella el autor */
+.ref-libro p{margin:0 0 6px}
+.ref-libro blockquote{border-left-color:var(--accent-gold);font-style:italic;margin:6px 0 16px}
+.ref-libro .cita-original{display:block;margin-top:6px;font-size:.86em;color:var(--text-muted)}
+.ref-libro cite{display:block;margin-top:4px;font-style:normal;font-size:.8em;color:var(--text-muted)}
