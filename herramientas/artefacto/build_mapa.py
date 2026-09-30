@@ -33,13 +33,18 @@ PAIS={"Ciudad del Vaticano":"Vaticano","Florencia":"Italia","Venecia":"Italia","
  "Ciudad Vieja":"Jerusalén","Buenos Aires":"Argentina",
  "Bruselas":"Bélgica","Germigny-des-Prés":"Francia","Sinaí":"Egipto","Roma":"Italia","Cusco":"Perú","Baltimore":"Estados Unidos","Beirut":"Líbano","Nabeul":"Túnez","Lago de Van":"Turquía","Kiev":"Ucrania","Cleveland":"Estados Unidos","Auckland":"Nueva Zelanda","Río de Janeiro":"Brasil","Tokio":"Japón","Tepotzotlán":"México","Ámsterdam":"Países Bajos","Ponce":"Puerto Rico","Lago Tana":"Etiopía","Wellington":"Nueva Zelanda","Port Sunlight":"Reino Unido","Hyderabad":"India","Givat Ram":"Jerusalén","Varsovia":"Polonia",
  "Nueva York":"Estados Unidos","Washington D.C.":"Estados Unidos","Fort Worth":"Estados Unidos",
- "New Haven":"Estados Unidos","Cambridge (Massachusetts)":"Estados Unidos","Róterdam":"Países Bajos"}
+ "New Haven":"Estados Unidos","Cambridge (Massachusetts)":"Estados Unidos","Róterdam":"Países Bajos",
+ "Les Eyzies":"Francia","Saint-Germain-en-Laye":"Francia","Burdeos":"Francia","Montignac":"Francia",
+ "Montesquieu-Avantès":"Francia","Beaune":"Francia","Ruan":"Francia","Lille":"Francia","Lyon":"Francia",
+ "Delos":"Grecia","Pompeya":"Italia","Mantua":"Italia","Turín":"Italia","Čachtice":"Eslovaquia",
+ "Hamburgo":"Alemania","Fráncfort del Meno":"Alemania","Núremberg":"Alemania","Dresde":"Alemania",
+ "Oslo":"Noruega","Ginebra":"Suiza","Atlanta":"Estados Unidos","Detroit":"Estados Unidos"}
 
 # El continente se deduce del país, y el mapa activa solo los botones con obras: si
 # mañana entra una pieza en El Cairo, África se enciende sola.
 CONTINENTE={"Vaticano":"Europa","Italia":"Europa","Austria":"Europa","Francia":"Europa",
  "Reino Unido":"Europa","España":"Europa","Chequia":"Europa","Rusia":"Europa",
- "Bélgica":"Europa","Polonia":"Europa",
+ "Bélgica":"Europa","Polonia":"Europa","Eslovaquia":"Europa","Noruega":"Europa","Suiza":"Europa",
  "Grecia":"Europa","Alemania":"Europa","Países Bajos":"Europa","Portugal":"Europa",
  "Irak":"Asia","Líbano":"Asia","Japón":"Asia","India":"Asia","Ucrania":"Europa","Etiopía":"África","Puerto Rico":"América del Norte","Jerusalén":"Asia","Siria":"Asia","Turquía":"Asia","Israel":"Asia","Irán":"Asia",
  "Estados Unidos":"América del Norte","México":"América del Norte","Canadá":"América del Norte",

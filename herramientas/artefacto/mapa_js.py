@@ -371,7 +371,11 @@ JS = r"""
 
           const radioObras = solo ? radioFan(obrasDe(sd).length, 30, 34) : 0;
           const cabe = solo && holgura(c0) > radioObras * 2 + 14;
-          const abanicoObras = solo && (grupoAbierto === c.sedes[0] || (vista.w < 90 && cabe));
+          /* Con una ciudad abierta en abanico, las sedes vecinas no despliegan solas sus
+             obras: `holgura` mide hasta el punto de la ciudad, no hasta su abanico, y al
+             llegar a 119 sedes las miniaturas de una vecina acababan encima de los museos
+             desplegados. La que se elige a mano se despliega igual. */
+          const abanicoObras = solo && (grupoAbierto === c.sedes[0] || (vista.w < 90 && cabe && !ciudadAbierta));
           if (abanicoObras) fanObras(g, sd);
           if (!solo && ciudadAbierta === claveGrupo(c0)) fanSedes(g, c);
 

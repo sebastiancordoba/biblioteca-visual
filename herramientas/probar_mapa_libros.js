@@ -97,10 +97,12 @@ oyentes.mReset.click(); drenar(400);
 const antesNodos=creados;
 oyentes.mZoomIn.click(); drenar(400);
 const nuevos=creados-antesNodos;
-/* Rehacer los marcadores en cada fotograma costaría del orden de 85 nodos x ~53
+/* Rehacer los marcadores en cada fotograma costaría del orden de un nodo por sede x ~53
    fotogramas. Redibujar solo al cruzar un umbral de agrupación debe quedar muy por
-   debajo de eso. */
-const porFotograma=85*53;
+   debajo de eso. Las sedes son las de la lista (nSedes, arriba): el 85 que había escrito a
+   mano se quedó corto al pasar el mapa de 84 a 119 sedes, y la prueba fallaba sin que el
+   mapa hubiera empeorado. */
+const porFotograma=Math.max(85,nSedes)*53;
 console.log(`   nodos creados al acercar: ${nuevos} (rehacer cada fotograma costaría ~${porFotograma})`);
 ck(nuevos < porFotograma*0.35,
    `acercar reutiliza los marcadores: ${nuevos} nodos, un ${Math.round(nuevos/porFotograma*100)}% del coste de rehacerlos`);

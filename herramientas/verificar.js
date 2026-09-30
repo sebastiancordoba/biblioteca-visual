@@ -77,6 +77,25 @@ const EXCEPCIONES = {
   './Ilíada/26_Papiro_de_Oxirrinco_221_Escolios_de_la_Iliada_s_II.jpg':
     'única imagen de este papiro en Commons: su categoría tiene un solo archivo. Documento único, la alternativa era no tenerlo',
 };
+/* Las mismas excepciones, por el archivo de Commons: en los libros dados de alta con
+   alta_obras.py el número del archivo local se asigna al darlos de alta y puede cambiar. */
+const EXCEPCIONES_COMMONS = {
+  'Lascaux 01.jpg': 'la única imagen del Pozo de Lascaux en Commons, y la lámina central del libro de Bataille',
+  'Grotte des Trois-Frères--Montesquieu-Avantès--Ariège--petit sorcier à la flûte 01.png': 'calco de Breuil; segunda vista',
+  'Dieric Bouts - Hell - WGA02967.jpg': 'la única reproducción plana; las demás son fotos de sala',
+  'Giulio Romano - Jupiter Seducing Olympias - WGA09573.jpg': 'segunda vista, institucional, junto a la foto de 17 MP',
+  'Rost Jan, Flora.jpg': 'la única imagen del tapiz en Commons (Fototeca Zeri)',
+  'François Clouet - The Bath of Diana - WGA5069.jpg': 'la única reproducción institucional de la versión de Ruan',
+  'Lady with a Red Lily, School of Fontainebleau, oil on panel, 16th Century, High Museum of Art.jpg': 'la única imagen en Commons',
+  'Antoine Caron 004.jpg': 'la única imagen; el cuadro no tiene paradero conocido',
+  'Strobel-bautista crop baptist.jpg': 'recorte de detalle; segunda vista',
+  'Géricault -Léda et le Cygne, EBA956a;EBA956b;EBA956c;EBA956d.jpg': 'la única imagen de la hoja de apuntes de la ENSBA',
+  'Cezanne - Die Orgie.jpg': 'la única imagen; el cuadro es de colección particular',
+  'Moreau - Salomé, dite Salomé tatouée, Cat. 211.jpg': 'la reproducción fiel del museo (Joconde); segunda vista',
+  'Supplice Fou-Tchou-Li.jpg': 'fotografía de 1905: documento, no hay otra reproducción',
+  '97705 Hans Baldung Tod und Maedchen.jpg': 'la única imagen del dibujo de Berlín en Commons',
+};
+const nombreCommons = rel => ENL[rel] ? decodeURIComponent(ENL[rel].original.split('/').pop()).replace(/_/g, ' ') : null;
 let small = 0;
 for (const [id, b] of Object.entries(BOOKS))
   for (const g of b.groups) for (const v of g) {
@@ -90,7 +109,8 @@ for (const [id, b] of Object.entries(BOOKS))
     } else if (ENL[relDe(f)]) { w = ENL[relDe(f)].w; h = ENL[relDe(f)].h; }
     else continue;
     if (!w || !h || Math.max(w, h) < 1500) {
-      if (EXCEPCIONES[f]) console.log(`  aviso  ${w}x${h} ${f.split('/').pop()} — ${EXCEPCIONES[f]}`);
+      const exc = EXCEPCIONES[f] || EXCEPCIONES_COMMONS[nombreCommons(relDe(f))];
+      if (exc) console.log(`  aviso  ${w}x${h} ${f.split('/').pop()} — ${exc}`);
       else { console.log(`  PEQUEÑA ${w}x${h} ${f}`); small++; }
     }
   }
@@ -156,7 +176,13 @@ console.log('\n== Todas las obras, en el orden del banner ==');
   check(orden.length && esc_(BOOKS.inicio.details[orden[0]].title) === tituloBanner,
         'la primera de la rejilla es la que abre el banner: el mismo orden');
   const conSede = BOOKS.inicio.details.filter(d => d.sede).length;
-  check(conSede >= n - 5, `${conSede} de ${n} obras con su sede canónica`);
+  /* Sin sede solo pueden quedar las que de verdad no la tienen: colección particular,
+     paradero desconocido, un libro impreso. Un margen fijo («n - 5») se quedaba corto al
+     crecer la colección y, peor, no distinguía una sede sin dar de alta de una que no existe. */
+  const sinSedeRazon = /particular|paradero|no identificada|imprenta|desconocid|no verificad/i;
+  const sinSede = BOOKS.inicio.details.filter(d => !d.sede && !sinSedeRazon.test(d.meta));
+  sinSede.forEach(d => console.log(`   sin sede: ${d.title} — ${d.meta}`));
+  check(sinSede.length === 0, `${conSede} de ${n} obras con su sede canónica; las demás no la tienen (colección particular o paradero desconocido)`);
   const cif = (document.getElementById('inicioCifras').innerHTML.match(/<b>(\d+)<\/b><span>sedes/) || [])[1];
   const reales = new Set(BOOKS.inicio.details.map(d => d.sede).filter(Boolean)).size;
   /* Menos sedes que obras: si se contara una por número de inventario saldrían casi tantas como obras. */

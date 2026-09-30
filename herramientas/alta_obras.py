@@ -126,6 +126,8 @@ def main(entradas):
         io.open(ruta, "w", encoding="utf-8").write(
             "# -*- coding: utf-8 -*-\n# Obras dadas de alta con alta_obras.py, desde fichas redactadas con fuentes.\n"
             "# El texto con sus notas y fuentes está en herramientas/sitio/datos/obras_fuentes.json.\n"
+            # La lista se vuelca como JSON: un campo vacío sale como null, que Python no conoce.
+            "null, true, false = None, True, False\n"
             f"{nombre_var} = " + json.dumps(previas + obras, ensure_ascii=False, indent=1) + "\n")
         if not propio:
             base = os.path.join(RAIZ, "herramientas", POR_ID[lb]["datos"] + ".py")
