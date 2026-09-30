@@ -35,6 +35,12 @@ INTRO = {
    "recitaba cada año nuevo en el templo de Esagila. Su iconografía es la de la ciudad que lo "
    "cantaba: las tablillas, los dragones de la Puerta de Ishtar y los relieves de dioses que "
    "vencen monstruos.",
+ "eros":
+   "Las lágrimas de Eros (1961) es el último libro de Georges Bataille: una historia del erotismo "
+   "contada con imágenes, del Pozo de Lascaux a los surrealistas, que termina en las fotografías de "
+   "un suplicio chino de 1905. Aquí están sus láminas, cada una en la mejor reproducción libre que "
+   "existe y con lo que Bataille dice de ella; las que siguen bajo derechos de autor, o de las que no "
+   "hay reproducción libre, figuran al final como fichas con un enlace a quien sí puede mostrarlas.",
 }
 BOOKS = {l["carpeta"]: (ents, l["tag"], INTRO.get(l["id"], l["sub"]))
          for l, ents in _libros() if l["id"] != "genesis"}

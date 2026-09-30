@@ -44,7 +44,7 @@
  "atrahasis:04": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: La Lista Real Sumeria no es un pasaje del Atrahasis: la ficha solo compara su frase sobre el Diluvio con el relato de Noé, sin asociarla a una tablilla ni a unos versos concretos del poema",
+   "donde": "Sin pasaje concreto: La Lista Real Sumeria es otro texto: su mención del Diluvio es la que la emparenta con el Atrahasis",
    "libro": "atrahasis"
   }
  ],
@@ -62,7 +62,7 @@
  "atrahasis:06": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: Placa de bronce de exorcismo contra Lamashtu; la ficha la sitúa en el ritual neoasirio (Wiggermann), no en un pasaje del Atrahasis, que solo menciona a la Exterminadora en la obra 05",
+   "donde": "Sin pasaje concreto: placa de exorcismo contra Lamashtu, del ritual neoasirio; no ilustra el poema sino las creencias sobre los demonios que lo rodeaban",
    "libro": "atrahasis"
   }
  ],
@@ -136,7 +136,7 @@
  "enuma:05": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: Es el ritual del Año Nuevo, un texto aparte donde se ordena recitar el poema; no ilustra ninguna escena del Enuma Elish",
+   "donde": "Sin pasaje concreto: El ritual del Año Nuevo es el texto que manda recitar el poema, no una escena suya",
    "libro": "enuma"
   }
  ],
@@ -154,7 +154,7 @@
  "enuma:07": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: Estela asiria con los emblemas de Marduk y Nabu; la ficha no la asocia a ningún pasaje concreto del poema",
+   "donde": "Sin pasaje concreto: Estela con los emblemas de Marduk y Nabu, el culto al que servía el poema",
    "libro": "enuma"
   }
  ],
@@ -503,7 +503,7 @@
  "genesis:16": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: La ficha la vincula con «Europe, a Prophecy» y con Urizen (símbolo de la razón opresiva), no con un pasaje del Génesis; el compás es de Blake y de los versos de Milton que anotó un lector, no del texto bíblico",
+   "donde": "Sin pasaje concreto: El Anciano de los Días ilustra la mitología propia de Blake —es Urizen, en «Europe, a Prophecy»—, no un pasaje del Génesis",
    "libro": "genesis"
   }
  ],
@@ -960,7 +960,7 @@
  "genesis:58": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: El propio museo duda entre el retorno de Noé y el de Abraham a Canaán, y el cuadro muestra una caravana sin escena identificable; asignar un pasaje sería forzarlo",
+   "donde": "Sin pasaje concreto: Una caravana de patriarcas que el propio museo no sabe si es el regreso de Noé o el de Abraham a Canaán",
    "libro": "genesis"
   }
  ],
@@ -1047,7 +1047,7 @@
  "gilgamesh:02": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: La ficha solo dice que el Louvre lo llama «héroe» y que a menudo se asimila a Gilgamesh; no lo asocia a ningún pasaje de la epopeya",
+   "donde": "Sin pasaje concreto: El Louvre lo llama solo «héroe»; que sea Gilgamesh es una identificación tradicional, no un episodio del poema",
    "libro": "gilgamesh"
   }
  ],
@@ -1061,7 +1061,7 @@
  "gilgamesh:04": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: La ficha aclara que el vínculo entre el rostro de Huwawa y las vísceras viene de los textos adivinatorios, no de la epopeya; no representa un pasaje",
+   "donde": "Sin pasaje concreto: El rostro de Huwawa hecho de vísceras procede de los textos adivinatorios, no de la epopeya",
    "libro": "gilgamesh"
   }
  ],
@@ -1095,21 +1095,21 @@
  "gilgamesh:08": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: Guardián de palacio asirio; la ficha no lo asocia a ningún pasaje de la epopeya",
+   "donde": "Sin pasaje concreto: Guardián de un palacio asirio: el mundo de la epopeya, no una escena suya",
    "libro": "gilgamesh"
   }
  ],
  "gilgamesh:09": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: Llamar Gilgamesh al héroe es una lectura discutida (podría ser Lakhmu); la ficha no lo asocia a un pasaje concreto",
+   "donde": "Sin pasaje concreto: Que el héroe del sello sea Gilgamesh es una lectura discutida; podría ser Lakhmu",
    "libro": "gilgamesh"
   }
  ],
  "gilgamesh:10": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: Relieve de caza real asirio; la ficha solo lo vincula con la biblioteca de Nínive, no con un pasaje de la epopeya",
+   "donde": "Sin pasaje concreto: Relieve de caza real del palacio de Asurbanipal, en cuya biblioteca se halló la epopeya",
    "libro": "gilgamesh"
   }
  ],
@@ -1146,7 +1146,7 @@
  "iliada:01": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: La partida de dados entre Aquiles y Áyax no aparece en la Ilíada: la ficha dice expresamente que se la inventó el pintor",
+   "donde": "Sin pasaje concreto: La partida de dados entre Aquiles y Áyax no está en la Ilíada: la inventó el pintor Exekias",
    "libro": "iliada"
   }
  ],
@@ -1163,7 +1163,7 @@
  "iliada:03": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: Ifigenia en Áulide procede de Eurípides y de Racine; la Ilíada no cuenta el engaño de la boda ni el sacrificio de Ifigenia",
+   "donde": "Sin pasaje concreto: El sacrificio de Ifigenia procede de Eurípides y de Racine; la Ilíada no lo cuenta",
    "libro": "iliada"
   }
  ],
@@ -1218,7 +1218,7 @@
  "iliada:08": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: El caballo de madera pertenece al ciclo troyano (Odisea, Eneida 2); la Ilíada termina con los funerales de Héctor y no lo menciona",
+   "donde": "Sin pasaje concreto: El caballo de madera pertenece al ciclo troyano (Odisea, Eneida II); la Ilíada termina antes, con los funerales de Héctor",
    "libro": "iliada"
   }
  ],
@@ -1235,14 +1235,14 @@
  "iliada:10": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: La ficha trata de la autenticidad de la máscara y de Schliemann, y no la asocia a ningún verso de la Ilíada",
+   "donde": "Sin pasaje concreto: La máscara de oro de Micenas: el mundo micénico que evoca el poema, no un verso concreto",
    "libro": "iliada"
   }
  ],
  "iliada:11": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: La ficha describe la puerta como monumento micénico y no la asocia a ningún pasaje concreto del poema",
+   "donde": "Sin pasaje concreto: La Puerta de los Leones de Micenas: el mundo micénico que evoca el poema, no un verso concreto",
    "libro": "iliada"
   }
  ],
@@ -1259,21 +1259,21 @@
  "iliada:13": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: Laocoonte y las serpientes no están en la Ilíada: la ficha remite a Virgilio (Eneida) y a Plinio",
+   "donde": "Sin pasaje concreto: Laocoonte y las serpientes no están en la Ilíada: vienen de la Eneida de Virgilio",
    "libro": "iliada"
   }
  ],
  "iliada:14": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: El frontón de Afaya muestra un combate en Troya de los héroes de Egina, sin asociarse a ningún episodio concreto de la Ilíada",
+   "donde": "Sin pasaje concreto: Un combate en Troya de los héroes de Egina, sin un episodio concreto del poema",
    "libro": "iliada"
   }
  ],
  "iliada:15": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: La ficha habla del yacimiento de Hisarlik y de sus nueve ciudades, sin asociarlo a un pasaje concreto del poema",
+   "donde": "Sin pasaje concreto: El yacimiento de Hisarlik, la ciudad que se identifica con Troya",
    "libro": "iliada"
   }
  ],
@@ -1300,7 +1300,7 @@
  "iliada:18": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: Aquiles y Pentesilea pertenecen a la Etiópida, poema perdido del ciclo troyano; la Ilíada no los cuenta",
+   "donde": "Sin pasaje concreto: Aquiles y Pentesilea pertenecen a la Etiópida, poema perdido del ciclo troyano",
    "libro": "iliada"
   }
  ],
@@ -1384,7 +1384,7 @@
  "iliada:27": [
   {
    "cita": null,
-   "donde": "Sin pasaje concreto: Es la portada de una traducción de la Ilíada entera al castellano, no ilustra ningún pasaje concreto",
+   "donde": "Sin pasaje concreto: Portada de una traducción castellana de la Ilíada entera",
    "libro": "iliada"
   }
  ],

@@ -34,9 +34,20 @@ def primer_enlace(h):
     return ("https:" + u) if u.startswith("//") else u
 
 
+def credito_fijo(titulo):
+    """Crédito para archivos que exigen atribución y no la declaran en Commons. La Wellcome
+       Collection sube con CC BY 4.0 y pide ser citada así, pero deja vacío el campo Artist."""
+    if re.search(r"Wellcome [LMV]\d{7}", titulo): return "Wellcome Collection"
+    return None
+
+
 def main():
-    titulo_de = {"File:" + urllib.parse.unquote(lk["original"].rsplit("/", 1)[1]).replace("_", " "): rel
-                 for rel, lk in ENL.items()}
+    # Un mismo archivo de Commons puede servir a varias imágenes de la colección —el Júpiter y
+    # Tetis de Ingres está en la Ilíada y en Las lágrimas de Eros—, así que cada título lleva la
+    # lista de sus imágenes. Con un diccionario de uno a uno, la Ilíada se quedaba sin crédito.
+    titulo_de = {}
+    for rel, lk in ENL.items():
+        titulo_de.setdefault("File:" + urllib.parse.unquote(lk["original"].rsplit("/", 1)[1]).replace("_", " "), []).append(rel)
     ts, salida = sorted(titulo_de), {}
     for i in range(0, len(ts), 50):
         args = ["curl", "-s", "--get", "https://commons.wikimedia.org/w/api.php",
@@ -52,11 +63,12 @@ def main():
             em = {k: v.get("value") for k, v in p["imageinfo"][0].get("extmetadata", {}).items()}
             lic = texto(em.get("LicenseShortName")) or texto(em.get("UsageTerms"))
             dp = bool(re.search(r"public domain|dominio público|^PD|CC0", lic or "", re.I))
-            rel = titulo_de[t]
-            salida[rel] = {
+            for rel in titulo_de[t]:
+              salida[rel] = {
                 # «Attribution» es el texto con el que el autor pide que se le cite; si no
                 # lo hay, el campo Artist.
-                "autor": None if dp else ((texto(em.get("Attribution")) or texto(em.get("Artist")))[:90] or None),
+                "autor": None if dp else ((texto(em.get("Attribution")) or texto(em.get("Artist")))[:90]
+                                          or credito_fijo(t)),
                 "autor_url": None if dp else primer_enlace(em.get("Artist")),
                 "licencia": "Dominio público" if dp and not re.search("CC0", lic or "") else lic,
                 "licencia_url": em.get("LicenseUrl"),

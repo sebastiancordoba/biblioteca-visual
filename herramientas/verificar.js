@@ -179,7 +179,7 @@ console.log('\n== Todas las obras, en el orden del banner ==');
   /* Sin sede solo pueden quedar las que de verdad no la tienen: colección particular,
      paradero desconocido, un libro impreso. Un margen fijo («n - 5») se quedaba corto al
      crecer la colección y, peor, no distinguía una sede sin dar de alta de una que no existe. */
-  const sinSedeRazon = /particular|paradero|no identificada|imprenta|desconocid|no verificad/i;
+  const sinSedeRazon = /particular|paradero|no identificada|imprenta|desconocid|no verificad|ejemplar digitalizado/i;
   const sinSede = BOOKS.inicio.details.filter(d => !d.sede && !sinSedeRazon.test(d.meta));
   sinSede.forEach(d => console.log(`   sin sede: ${d.title} — ${d.meta}`));
   check(sinSede.length === 0, `${conSede} de ${n} obras con su sede canónica; las demás no la tienen (colección particular o paradero desconocido)`);

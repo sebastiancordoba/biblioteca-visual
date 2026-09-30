@@ -5,7 +5,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Qué es esto
 
 Una colección de arte curada: imágenes en máxima resolución de obras que ilustran grandes libros
-(el Génesis, Gilgamesh, La Ilíada, el Atrahasis y el Enuma Elish), acompañadas de análisis histórico y teológico
+(el Génesis, el Éxodo, el Levítico, Gilgamesh, La Ilíada, el Atrahasis, el Enuma Elish y *Las lágrimas
+de Eros* de Bataille), acompañadas de análisis histórico y teológico
 escrito, y un visor web para inspeccionarlas en súper detalle.
 
 **No es un proyecto de software con build.** No hay `package.json`, dependencias, tests ni
@@ -30,7 +31,7 @@ Pinturas/
 ├── CLAUDE.md
 ├── .gitignore          ← deja las imágenes fuera de git (ver «Control de versiones»)
 ├── herramientas/       ← scripts de búsqueda, descarga y generación (ver abajo)
-└── <Libro>/            ← una carpeta por libro (Génesis/, Gilgamesh/, Ilíada/, Atrahasis/, Enuma_Elish/)
+└── <Libro>/            ← una carpeta por libro (Génesis/, Ilíada/, Lagrimas_de_Eros/…)
     ├── NN_*.jpg        ← las imágenes
     ├── NN_*.md         ← fichas sueltas heredadas (solo Génesis 01-09; ya no se mantienen:
     │                     el texto vivo está en herramientas/data_<libro>.py)
@@ -464,6 +465,34 @@ ven a 168 px, así que se piden a Commons ya reducidos a 640 px. El pie de cada 
 —autorretrato, retrato por otro, fotografía o efigie póstuma— porque no es lo mismo, y de cinco
 artistas (Exequias, Eufronio, Villalpando, Jörg Breu y los escultores del Laocoonte) **no se
 conserva retrato**: se dice, en vez de poner una obra suya haciéndola pasar por su cara.
+
+### En los libros: de dónde viene cada obra
+
+Cada ficha muestra —en la tarjeta, en el visor y en su página— el bloque **«En los libros»**: el
+libro, el lugar exacto y un fragmento breve del texto que la obra ilustra. Los pasajes de los libros
+«de texto» están en **`herramientas/referencias.json`**, por `libro:número de archivo`, y `inject.py`
+los funde con las fichas; los de *Las lágrimas de Eros* van en la propia ficha (`referencias`), con la
+cita de Bataille. Traducciones usadas: Reina-Valera 1960 (Génesis, Éxodo, Levítico), Emilio Crespo
+(Ilíada, versos contados en su numeración), Andrew George en la versión de Fabián Chueca (Gilgamesh) y
+Stephanie Dalley (Atrahasis y Enuma Elish, traducidas del inglés con el original al lado). Una obra sin
+pasaje concreto —un lamassu, la máscara de Agamenón— lo dice («Sin pasaje concreto: …») en vez de
+forzar uno.
+
+**Una obra puede estar en varios libros.** Dos fichas son la misma obra si su vista principal sale
+del mismo original de Commons: `inject.py` las enlaza («También en») y junta sus referencias. El
+primer caso es el *Júpiter y Tetis* de Ingres (Ilíada y Bataille). Cuidado con lo que presupone «un
+archivo, una imagen»: `creditos.py` asociaba cada archivo de Commons a una sola imagen, y la Ilíada se
+quedó sin crédito del Ingres hasta que pasó a admitir varias.
+
+### Láminas sin imagen
+
+Un libro puede listar obras que no se pueden mostrar —derechos de autor vigentes, o sin reproducción
+libre en Commons— con `"sin_imagen": (módulo, variable)` en `libros.py`. Salen al final del libro como
+fichas de texto con un enlace a quien sí puede enseñarlas (museo, fundación, catálogo razonado) y la
+cita del autor si la hay. No pasan por el visor, la portada, la cronología ni el mapa, que parten de
+la imagen. Hoy solo las usa *Las lágrimas de Eros* (`data_eros_sin_imagen.py`: los surrealistas, las
+fotos de vudú y las obras antiguas sin reproducción libre). **No se suben escaneos**: el sitio es
+público.
 
 ### Temas que cruzan los libros
 

@@ -192,6 +192,31 @@ dioses, con los textos que comparten su estructura y con los objetos del mundo q
 | VII | Los cincuenta nombres de Marduk | ✓ Sello de Marduk y Nabu (04), estela de Bel-harran-beli-usur (07) |
 | — | La recitación en el Año Nuevo | ✓ Ritual del akītu (05) |
 
+## LAS LÁGRIMAS DE EROS (Bataille, 1961)
+
+Aquí no se trata de pasajes que falten: el libro ya elige sus láminas. La cobertura dice cuáles
+de ellas se pueden mostrar: 85 obras tienen imagen libre, y 69 figuran al final del libro como
+fichas sin imagen, por derechos de autor vigentes o porque no hay reproducción libre.
+
+| Cap. | Capítulo | Estado |
+|---|---|---|
+| I.1 | La conciencia de la muerte: las venus paleolíticas | ✓ Trasimeno · La Ferrassie · Lespugue · Brassempouy · Laussel · Willendorf · Grimaldi (01–07) — falta: la «carta de baraja» de Laussel y Sireuil, sin imagen libre |
+| I.1 | El Pozo de Lascaux | ◐ Escena del Pozo — en Commons solo a 315 px (08) — falta: la lámina central del libro: hace falta una reproducción mejor |
+| I.2 | Trabajo y juego: las cuevas de Trois-Frères; Ain Sakhri | ✓ Hombre-bisonte · el Hechicero · los amantes de Ain Sakhri (09–11) — falta: Isturitz, La Magdeleine y el bastón de Gourdan, sin imagen libre |
+| II.I | Dioniso o la Antigüedad | ✓ Delos · monedas de Lete y Tasos · Macrón · Pintor de Pentesilea · Cleofrades · Villa de los Misterios (12–18) — falta: seis láminas de vasos, un mosaico de Timgad y Hancarville, sin imagen libre |
+| II.II.1 | La condena cristiana: el infierno y el Juicio | ✓ Spranger · Bouts · Van der Weyden · Carpaccio (19–22) |
+| II.II.2 | El erotismo vuelve a la pintura | ✓ Durero · Cranach · Baldung (23–34) — falta: la «Pareja» de Durero y el Hércules y Ónfale de Baldung, sin imagen libre |
+| II.II.3 | El manierismo | ✓ Giulio Romano · Gossaert · Bronzino · Correggio · Fontainebleau · Spranger · Zucchi · Tiziano · Caron · Tintoretto (35–49) — falta: Las lágrimas de Eros de Fontainebleau (Argel/Louvre), Daniele da Volterra y Cornelis van Haarlem, sin imagen libre |
+| II.II.4 | El libertinaje del siglo XVIII y Sade | ✓ Vermeer · Strobel · Picart según Poussin · Rembrandt · Rubens · Füssli (50–58) — falta: Boucher y el dibujo de Füssli, sin imagen libre |
+| II.II.5 | Goya | ✓ Las viejas · la maja desnuda · Caprichos · Disparates · disciplinantes · caníbales · la degollación (59–67) |
+| II.II.6 | Gilles de Rais y Erzsébet Báthory | ◐ El castillo de Čachtice (68) — falta: el retrato de Báthory de Commons es una pintura de 2018; el Herodes de Arcimboldo y los castillos de Machecoul y Lacoste, sin imagen |
+| II.II.7 | La evolución del mundo moderno | ✓ Géricault · Prud'hon · Ingres · Delacroix (69–74) |
+| II.II.8 | Delacroix, Manet, Degas, Moreau | ✓ Manet · Cézanne · Degas · Toulouse-Lautrec · Moreau (75–81) — falta: Las dos amigas de Albi, la Dalila de Moreau y el Redon, sin imagen libre |
+| II.II.8 | **Los surrealistas** | · Picasso, Ernst, Masson, Delvaux, Magritte, Bellmer, Balthus, Fini, Bacon, Tanning, Klossowski… — derechos vigentes — falta: 36 fichas sin imagen, con enlace a su museo cuando se ha identificado |
+| C.2 | **El sacrificio vudú** | · Fotografías atribuidas a Pierre Verger — derechos vigentes |
+| C.3 | El suplicio chino | ✓ Fotografías de Pekín, 1904-1905 (82) |
+| C.3 | Una tradición del horror | ✓ El Miroir de 1620 · Luyken · Piero di Cosimo (83–85) — falta: el Códice Ríos, Mary Aubrey y el yab-yum del Guimet, sin imagen libre |
+
 ---
 
 ## Fuentes de altísima resolución que conviene recordar

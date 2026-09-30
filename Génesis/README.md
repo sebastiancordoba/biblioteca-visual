@@ -63,7 +63,7 @@ abre [`../index.html`](../index.html) y elige **Génesis** en el selector de lib
 | 51 | **Adán y Eva ante el árbol, relieve de la iglesia de la Santa Cruz de Aghtamar** | Manuel, arquitecto del rey Gagik I Artsruni, y un clérigo escultor anónimo (915-921) | Iglesia de la Santa Cruz (Surb Khach), isla de Akdamar, lago de Van (Gevaş, Turquía) | [Wikipedia](https://es.wikipedia.org/wiki/Catedral_armenia_de_la_Santa_Cruz) | [`51_Adan_y_Eva_ante_el_arbol_relieve_de_la_iglesia_de_la_Santa_C.jpg`](./51_Adan_y_Eva_ante_el_arbol_relieve_de_la_iglesia_de_la_Santa_C.jpg) |
 | 52 | **La Rebeca velada** | Giovanni Maria Benzoni (antes de 1876) | Museo Salar Jung, Hyderabad (L-100) | [Wikipedia](https://es.wikipedia.org/wiki/Rebeca) | [`52_La_Rebeca_velada.jpg`](./52_La_Rebeca_velada.jpg) |
 | 53 | **José se da a conocer a sus hermanos** | Andrea Michieli, llamado Andrea Vicentino (c. 1575-1600) | Auckland Art Gallery Toi o Tāmaki, Auckland (M1882/2/1) | [Wikipedia](https://es.wikipedia.org/wiki/Jos%C3%A9_(patriarca)) | [`53_Jose_se_da_a_conocer_a_sus_hermanos.jpg`](./53_Jose_se_da_a_conocer_a_sus_hermanos.jpg) |
-| 54 | **La huida de Lot y su familia de Sodoma (según Rubens)** | Atribuido a Jacob Jordaens, según Rubens (c. 1618-1620) | Museo Nacional de Arte Occidental, Tokio (P.1978-0006) | [Wikipedia](https://es.wikipedia.org/wiki/Lot_(b%C3%ADblico)) | [`54_La_huida_de_Lot_y_su_familia_de_Sodoma_segun_Rubens.jpg`](./54_La_huida_de_Lot_y_su_familia_de_Sodoma_segun_Rubens.jpg) |
+| 54 | **La huida de Lot y su familia de Sodoma** | Atribuido a Jacob Jordaens, según Rubens (c. 1618-1620) | Museo Nacional de Arte Occidental, Tokio (P.1978-0006) | [Wikipedia](https://es.wikipedia.org/wiki/Lot_(b%C3%ADblico)) | [`54_La_huida_de_Lot_y_su_familia_de_Sodoma_segun_Rubens.jpg`](./54_La_huida_de_Lot_y_su_familia_de_Sodoma_segun_Rubens.jpg) |
 | 55 | **La muerte de Abel** | Santiago Rebull (1851) | Museo Nacional de Arte (MUNAL), Ciudad de México | [Wikipedia](https://es.wikipedia.org/wiki/Santiago_Rebull) | [`55_La_muerte_de_Abel.jpg`](./55_La_muerte_de_Abel.jpg) |
 | 56 | **Expulsión del Paraíso** | Juan Correa (c. 1670-1700) | Museo Nacional del Virreinato, Tepotzotlán (10-6812) | [Wikipedia](https://es.wikipedia.org/wiki/Juan_Correa_(pintor_mexicano)) | [`56_Expulsion_del_Paraiso.jpg`](./56_Expulsion_del_Paraiso.jpg) |
 | 57 | **La partida de Jacob** | Rodolfo Amoedo (1884) | Museu Nacional de Belas Artes, Río de Janeiro | [Wikipedia](https://es.wikipedia.org/wiki/Rodolfo_Amoedo) | [`57_La_partida_de_Jacob.jpg`](./57_La_partida_de_Jacob.jpg) |
@@ -1229,9 +1229,9 @@ Andrea Michieli nació hacia 1542 en Vicenza y murió en Venecia el 15 de mayo d
 
 ---
 
-### 54. La huida de Lot y su familia de Sodoma (según Rubens) — Atribuido a Jacob Jordaens, según Rubens (c. 1618-1620)
+### 54. La huida de Lot y su familia de Sodoma — Atribuido a Jacob Jordaens, según Rubens (c. 1618-1620)
 
-![La huida de Lot y su familia de Sodoma (según Rubens)](./54_La_huida_de_Lot_y_su_familia_de_Sodoma_segun_Rubens.jpg)
+![La huida de Lot y su familia de Sodoma](./54_La_huida_de_Lot_y_su_familia_de_Sodoma_segun_Rubens.jpg)
 *La huida de Lot y su familia de Sodoma — atribuido a Jacob Jordaens según Rubens (c. 1618-1620), Museo Nacional de Arte Occidental, Tokio*
 
 **Ficha técnica:** Óleo sobre lienzo | 169,5 × 198,5 cm | Museo Nacional de Arte Occidental, Tokio (P.1978-0006)
