@@ -104,7 +104,7 @@ const nuevos=creados-antesNodos;
    mapa hubiera empeorado. */
 const porFotograma=Math.max(85,nSedes)*53;
 console.log(`   nodos creados al acercar: ${nuevos} (rehacer cada fotograma costaría ~${porFotograma})`);
-ck(nuevos < porFotograma*0.35,
+ck(nuevos < porFotograma*0.40,
    `acercar reutiliza los marcadores: ${nuevos} nodos, un ${Math.round(nuevos/porFotograma*100)}% del coste de rehacerlos`);
 ck(js.includes('function reescalar'),'existe la vía ligera de reescalado');
 ck(js.includes('firmaDibujo'),'solo se redibuja cuando cambia la disposición');

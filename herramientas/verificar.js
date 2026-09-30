@@ -76,6 +76,28 @@ const EXCEPCIONES = {
     'recorte de detalle; puede rehacerse desde el techo de 10080x6720 ya presente',
   './Ilíada/26_Papiro_de_Oxirrinco_221_Escolios_de_la_Iliada_s_II.jpg':
     'única imagen de este papiro en Commons: su categoría tiene un solo archivo. Documento único, la alternativa era no tenerlo',
+  './Lagrimas_de_Eros/90_Fauno_descubriendo_a_una_durmiente.jpg':
+    'aguatinta de la Suite Vollard de Picasso (1936)',
+  './Lagrimas_de_Eros/93_El_centauro_Neso.jpg':
+    'dibujo de Picasso (1920)',
+  './Lagrimas_de_Eros/96_Masacre.jpg':
+    'dibujo de André Masson conservado en el Centre Pompidou',
+  './Lagrimas_de_Eros/105_La_muneca.jpg':
+    'escultura articulada de Hans Bellmer',
+  './Lagrimas_de_Eros/109_El_angel_de_la_anatomia.jpg':
+    'archivo oficial de Leonor Fini',
+  './Lagrimas_de_Eros/110_La_habitacion_negra.jpg':
+    'archivo oficial de Leonor Fini',
+  './Lagrimas_de_Eros/111_La_amistad.jpg':
+    'archivo oficial de Leonor Fini',
+  './Lagrimas_de_Eros/113_Dos_figuras.jpg':
+    'catálogo razonado oficial de The Francis Bacon Estate',
+  './Lagrimas_de_Eros/115_Desnudo_dormido.jpg':
+    'catálogo razonado oficial de Dorothea Tanning Foundation',
+  './Lagrimas_de_Eros/116_Voltaje.jpg':
+    'catálogo razonado oficial de Dorothea Tanning Foundation',
+  './Lagrimas_de_Eros/122_Mi_tumba.jpg':
+    'óleo de Clovis Trouille',
 };
 /* Las mismas excepciones, por el archivo de Commons: en los libros dados de alta con
    alta_obras.py el número del archivo local se asigna al darlos de alta y puede cambiar. */

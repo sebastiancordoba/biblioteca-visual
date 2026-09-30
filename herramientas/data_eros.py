@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# Obras dadas de alta con alta_obras.py, desde fichas redactadas con fuentes.
-# El texto con sus notas y fuentes está en herramientas/sitio/datos/obras_fuentes.json.
 null, true, false = None, True, False
 EROS = [
  {
@@ -2168,6 +2166,889 @@ EROS = [
      "en": "It was not violence, but perversion and sexual obsession that linked the figures of Gustave Moreau to the anguishing nudity of eroticism.",
      "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
      "pagina": 157
+    }
+   }
+  ]
+ },
+ {
+  "files": [
+   "89_Pareja.jpg"
+  ],
+  "views": [
+   "Pareja — Henri Matisse"
+  ],
+  "title": "Pareja",
+  "artist": "Henri Matisse",
+  "meta": "Dibujo a línea (técnica y fecha sin determinar) | Bibliothèque nationale de France, París (según Bataille)",
+  "wikiUrl": null,
+  "snippet": "Dibujo a línea de dos cuerpos abrazados que Bataille reproduce con la indicación «Bibliothèque Nationale». No se ha podido identificar la hoja concreta ni su signatura. Con él empieza la parte del libro dedicada a la pintura de su tiempo, que Bataille llama «manierismo»: «la búsqueda de la fiebre».",
+  "analysis": "Dibujo a línea de dos cuerpos abrazados que Bataille reproduce con la indicación «Bibliothèque Nationale». No se ha podido identificar la hoja concreta ni su signatura. Con él empieza la parte del libro dedicada a la pintura de su tiempo, que Bataille llama «manierismo»: «la búsqueda de la fiebre».",
+  "history": "Sin identificar: la nota del lote apunta a un estudio para el «Florilège des Amours» de Ronsard (1948), pero no se ha podido cotejar con el catálogo de la BnF ni con Gallica. La definición del manierismo está en el texto de las pp. 160-161, no en un comentario de la lámina.",
+  "bio": "Henri Matisse (1869-1954), pintor, dibujante y escultor francés, fue la figura central del fauvismo y uno de los grandes maestros del arte del siglo XX.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 160",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "90_Fauno_descubriendo_a_una_durmiente.jpg"
+  ],
+  "views": [
+   "Fauno descubriendo a una durmiente (Faune dévoilant une dormeuse; Júpiter y Antíope, según Rembrandt) — Pablo Picasso (1936)"
+  ],
+  "title": "Fauno descubriendo a una durmiente (Faune dévoilant une dormeuse; Júpiter y Antíope, según Rembrandt)",
+  "artist": "Pablo Picasso (1936)",
+  "meta": "Aguatinta al azúcar, con rascador y buril; lámina 27 de la Suite Vollard | plancha 31,5 × 41 cm | Estampa de tirada (ejemplar en el Art Institute of Chicago, 1986.855; paradero del ejemplar del libro no indicado)",
+  "wikiUrl": "https://www.artic.edu/artworks/105525/faun-uncovering-a-sleeping-woman-jupiter-and-antiope-after-rembrandt-from-the-vollard-suite",
+  "snippet": "La lámina reproduce la estampa grabada el 12 de junio de 1936 para la Suite Vollard y estampada y publicada en 1939: un fauno retira el velo de una mujer dormida. El Art Institute of Chicago la cataloga como «Júpiter y Antíope, según Rembrandt». Es una estampa de tirada, así que la conservan varios museos. El pie de Bataille dice «acuarela para la Suite Vollard, 1937» y la fecha en «1930-1936».",
+  "analysis": "La lámina reproduce la estampa grabada el 12 de junio de 1936 para la Suite Vollard y estampada y publicada en 1939: un fauno retira el velo de una mujer dormida. El Art Institute of Chicago la cataloga como «Júpiter y Antíope, según Rembrandt». Es una estampa de tirada, así que la conservan varios museos. El pie de Bataille dice «acuarela para la Suite Vollard, 1937» y la fecha en «1930-1936».",
+  "history": "Bataille la llama acuarela, pero lo que se reproduce coincide con la aguatinta de la Suite Vollard; se sigue la catalogación del museo. El enlace lleva a un ejemplar de la estampa.",
+  "bio": "Pablo Ruiz Picasso (1881-1973), pintor y escultor español, cofundador del cubismo y figura cumbre del arte contemporáneo universal.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 161",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "91_Picador_y_muchacha.jpg"
+  ],
+  "views": [
+   "Picador y muchacha — Pablo Picasso"
+  ],
+  "title": "Picador y muchacha",
+  "artist": "Pablo Picasso",
+  "meta": "Tinta y aguada sobre papel (por lo que se ve en la reproducción) | Galerie Louise Leiris, París, en 1961 | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Dibujo a la aguada de un picador con sombrero de ala ancha junto a una muchacha. En 1961 estaba en la Galerie Louise Leiris, la galería que vendía la obra de Picasso. Bataille lo acompaña de una nota sobre la pasión taurina del pintor desde niño y remite a la película de Jean Desvilles «Picasso, romancero du picador».",
+  "analysis": "Dibujo a la aguada de un picador con sombrero de ala ancha junto a una muchacha. En 1961 estaba en la Galerie Louise Leiris, la galería que vendía la obra de Picasso. Bataille lo acompaña de una nota sobre la pasión taurina del pintor desde niño y remite a la película de Jean Desvilles «Picasso, romancero du picador».",
+  "history": "Sin identificar en catálogos. Seguramente es uno de los dibujos taurinos de 1959-1960 (la Galerie Louise Leiris expuso «Picasso. Dessins 1959-1960» en 1960), pero no se ha encontrado la hoja; la fecha escrita en la esquina no se lee en la reproducción. «La galería que vendía la obra de Picasso» no está en las fuentes citadas.",
+  "bio": "Pablo Ruiz Picasso (1881-1973), pintor y escultor español, cofundador del cubismo y figura cumbre del arte contemporáneo universal.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 163",
+    "cita": {
+     "es": "Desde su primera infancia, en efecto, vivió en el ambiente de las corridas […], y la corrida conservó un lugar central en su vida (como atestiguan sus dibujos).",
+     "en": "From his early childhood, indeed, he lived in the atmosphere of bullfights (Cf. Roland Penrose, Picasso, His Life and Work, London, 1958), and the corrida retained a central place in his life (as is witnessed in his drawings",
+     "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
+     "pagina": 163
+    }
+   }
+  ]
+ },
+ {
+  "files": [
+   "92_La_pareja.jpg"
+  ],
+  "views": [
+   "La pareja — Pablo Picasso"
+  ],
+  "title": "La pareja",
+  "artist": "Pablo Picasso",
+  "meta": "Tinta y aguada o acuarela sobre papel (por lo que se ve en la reproducción) | Galerie Louise Leiris, París, en 1961 | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Figuras entrelazadas a la tinta y la aguada. En 1961 la obra estaba en la Galerie Louise Leiris. Bataille no da fecha ni la comenta; la lámina acompaña el principio de su conclusión.",
+  "analysis": "Figuras entrelazadas a la tinta y la aguada. En 1961 la obra estaba en la Galerie Louise Leiris. Bataille no da fecha ni la comenta; la lámina acompaña el principio de su conclusión.",
+  "history": "Sin identificar: el título es muy genérico, no hay fecha y no aparece en catálogos en línea.",
+  "bio": "Pablo Ruiz Picasso (1881-1973), pintor y escultor español, cofundador del cubismo y figura cumbre del arte contemporáneo universal.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 164",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "93_El_centauro_Neso.jpg"
+  ],
+  "views": [
+   "El centauro Neso (Neso y Deyanira) — Pablo Picasso (1920)"
+  ],
+  "title": "El centauro Neso (Neso y Deyanira)",
+  "artist": "Pablo Picasso (1920)",
+  "meta": "Punta de plata sobre papel (según Bataille) | Galerie Louise Leiris, París, en 1961 | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Un centauro se lleva a una mujer; la firma está arriba a la izquierda. Es el mito de Neso y Deyanira, al que Picasso dedicó seis dibujos en Juan-les-Pins entre el 11 y el 22 de septiembre de 1920. Uno de ellos, a grafito sobre papel preparado, está en el Art Institute of Chicago y también pasó por la Galerie Louise Leiris. Pero no es el que reproduce Bataille: el de Chicago muestra otro momento de la escena y ya estaba en Nueva York en 1952.",
+  "analysis": "Un centauro se lleva a una mujer; la firma está arriba a la izquierda. Es el mito de Neso y Deyanira, al que Picasso dedicó seis dibujos en Juan-les-Pins entre el 11 y el 22 de septiembre de 1920. Uno de ellos, a grafito sobre papel preparado, está en el Art Institute of Chicago y también pasó por la Galerie Louise Leiris. Pero no es el que reproduce Bataille: el de Chicago muestra otro momento de la escena y ya estaba en Nueva York en 1952.",
+  "history": "Solo se sabe que pertenece a la serie de 1920; no se ha localizado la hoja ni su sede. El MoMA tiene otro dibujo del tema (9 de septiembre de 1920), cuya ficha no se pudo abrir (403).",
+  "bio": "Pablo Ruiz Picasso (1881-1973), pintor y escultor español, cofundador del cubismo y figura cumbre del arte contemporáneo universal.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 165",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "94_Las_hijas_de_Lot.jpg"
+  ],
+  "views": [
+   "Las hijas de Lot — Max Ernst (1943)"
+  ],
+  "title": "Las hijas de Lot",
+  "artist": "Max Ernst (1943)",
+  "meta": "Óleo sobre lienzo (por lo que se ve en la reproducción) | Col. Mrs. Doris Starrels, Los Ángeles, en 1961 | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Las hijas de Lot, que según el Génesis se acostaron con su padre en la cueva donde se refugiaron tras la destrucción de Sodoma. Según Richard Holledge, Ernst lo pintó en 1943: una de las hijas lleva la ropa rasgada y el muslo al aire, «con el descaro de una bailarina de Las Vegas», mientras la otra se esconde con el padre en la cueva. Bataille acompaña la lámina de una nota biográfica sobre el pintor.",
+  "analysis": "Las hijas de Lot, que según el Génesis se acostaron con su padre en la cueva donde se refugiaron tras la destrucción de Sodoma. Según Richard Holledge, Ernst lo pintó en 1943: una de las hijas lleva la ropa rasgada y el muslo al aire, «con el descaro de una bailarina de Las Vegas», mientras la otra se esconde con el padre en la cueva. Bataille acompaña la lámina de una nota biográfica sobre el pintor.",
+  "history": "La fecha de 1943 viene de un artículo de prensa, no de un catálogo, aunque lo que describe coincide con la lámina. Sede actual desconocida. La nota biográfica de Bataille solo da datos (nacimiento, dadá, exilio en América), así que no se cita.",
+  "bio": "Max Ernst (1891-1976), pintor, escultor y poeta alemán nacionalizado francés, pionero del dadaísmo y figura primordial del movimiento surrealista.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 166",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "95_Mesalina_nina.jpg"
+  ],
+  "views": [
+   "Mesalina niña (Messaline enfant) — Max Ernst"
+  ],
+  "title": "Mesalina niña (Messaline enfant)",
+  "artist": "Max Ernst",
+  "meta": "Óleo sobre lienzo (por lo que se ve en la reproducción) | Paradero actual sin confirmar",
+  "wikiUrl": null,
+  "snippet": "Una figura femenina geometrizada sobre fondo moteado. Bataille la titula «Mesalina niña», por la emperatriz romana, y remite a la monografía de Patrick Waldberg (Pauvert, 1958).",
+  "analysis": "Una figura femenina geometrizada sobre fondo moteado. Bataille la titula «Mesalina niña», por la emperatriz romana, y remite a la monografía de Patrick Waldberg (Pauvert, 1958).",
+  "history": "Los registros de subastas (Sotheby's) mencionan un óleo de Ernst titulado «Messaline enfant», fechado en 1957, pero no se ha podido leer la ficha, así que no se dan ni la fecha ni la sede. «Por la emperatriz romana» es una deducción del título.",
+  "bio": "Max Ernst (1891-1976), pintor, escultor y poeta alemán nacionalizado francés, pionero del dadaísmo y figura primordial del movimiento surrealista.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 167",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "96_Masacre.jpg"
+  ],
+  "views": [
+   "Masacre — André Masson (1933)"
+  ],
+  "title": "Masacre",
+  "artist": "André Masson (1933)",
+  "meta": "Tinta sobre papel (por lo que se ve en la reproducción); firmado y fechado «33» | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Dibujo a pluma: un hombre con un cuchillo, cuerpos derribados y, al fondo, una figura crucificada. Está firmado y fechado en 1933. Bataille, amigo del pintor, lo reproduce sin comentario.",
+  "analysis": "Dibujo a pluma: un hombre con un cuchillo, cuerpos derribados y, al fondo, una figura crucificada. Está firmado y fechado en 1933. Bataille, amigo del pintor, lo reproduce sin comentario.",
+  "history": "Sin identificar. El Reina Sofía tiene en depósito otra «Massacre» de 1933 (tinta, 31 × 45 cm, DO01756) sin imagen publicada; su proporción no parece la de la lámina y no se da como la misma. Que Bataille fuera amigo de Masson no está en las fuentes citadas.",
+  "bio": "André Masson (1896-1987), pintor y dibujante francés, pionero del dibujo automático y uno de los artistas más intensos del surrealismo.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 168",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "97_Sillon_para_Paulina_Borghese.jpg"
+  ],
+  "views": [
+   "Sillón para Paulina Borghese — André Masson"
+  ],
+  "title": "Sillón para Paulina Borghese",
+  "artist": "André Masson",
+  "meta": "Dibujo a pluma (por lo que se ve en la reproducción), con una inscripción abajo a la derecha | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Un cuerpo de mujer convertido en sillón. El título alude a Paulina Borghese, hermana de Napoleón. Bataille lo acompaña de una nota sobre Masson: dice que sus primeros dibujos eróticos son de justo después de la guerra y que es de los que mejor expresan la dimensión religiosa del erotismo.",
+  "analysis": "Un cuerpo de mujer convertido en sillón. El título alude a Paulina Borghese, hermana de Napoleón. Bataille lo acompaña de una nota sobre Masson: dice que sus primeros dibujos eróticos son de justo después de la guerra y que es de los que mejor expresan la dimensión religiosa del erotismo.",
+  "history": "Sin fecha ni sede; no aparece en catálogos en línea. Que Paulina Borghese fuera hermana de Napoleón no está en las fuentes citadas.",
+  "bio": "André Masson (1896-1987), pintor y dibujante francés, pionero del dibujo automático y uno de los artistas más intensos del surrealismo.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 170",
+    "cita": {
+     "es": "El imponente erotismo de André Masson tiene muchas afinidades con el de William Blake. Masson era un ferviente admirador de Sade.",
+     "en": "Andre Masson's imposing eroticism has many affinities with that of William Blake. Masson was a fervent admirer of Sade.",
+     "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
+     "pagina": 170
+    }
+   }
+  ]
+ },
+ {
+  "files": [
+   "98_Mantis_religiosa.jpg"
+  ],
+  "views": [
+   "Mantis religiosa — André Masson"
+  ],
+  "title": "Mantis religiosa",
+  "artist": "André Masson",
+  "meta": "Técnica y fecha sin determinar | Galerie Louise Leiris, París, en 1961 | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Una mantis religiosa, que en 1961 estaba en la Galerie Louise Leiris. Bataille la reproduce en la misma página que el «Sillón para Paulina Borghese», con su nota sobre Masson.",
+  "analysis": "Una mantis religiosa, que en 1961 estaba en la Galerie Louise Leiris. Bataille la reproduce en la misma página que el «Sillón para Paulina Borghese», con su nota sobre Masson.",
+  "history": "Sin identificar. En el escaneado de la p. 170 solo se ve el pie, no la imagen. La cita pertenece a la nota sobre Masson que comparten las dos láminas de la página.",
+  "bio": "André Masson (1896-1987), pintor y dibujante francés, pionero del dibujo automático y uno de los artistas más intensos del surrealismo.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 170",
+    "cita": {
+     "es": "Masson es sin duda uno de los mejores intérpretes de las honduras religiosas, profundas e inquietantes, del erotismo.",
+     "en": "Masson is without doubt one of the best exponents of the profound and troubling religious depths of erotism.",
+     "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
+     "pagina": 170
+    }
+   }
+  ]
+ },
+ {
+  "files": [
+   "99_Mujeres_condenadas.jpg"
+  ],
+  "views": [
+   "Mujeres condenadas (Femmes damnées) — André Masson (1922)"
+  ],
+  "title": "Mujeres condenadas (Femmes damnées)",
+  "artist": "André Masson (1922)",
+  "meta": "Tinta y aguada sobre papel (por lo que se ve en la reproducción) | Galerie Louise Leiris, París, en 1961 | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Dibujo de 1922 con desnudos femeninos abrazados entre ondas. En 1961 estaba en la Galerie Louise Leiris. Bataille lo reproduce sin comentario.",
+  "analysis": "Dibujo de 1922 con desnudos femeninos abrazados entre ondas. En 1961 estaba en la Galerie Louise Leiris. Bataille lo reproduce sin comentario.",
+  "history": "Sin identificar en catálogos. El título, como el de la lámina siguiente («Lesbos»), coincide con el de poemas de Baudelaire sobre el amor entre mujeres, pero la relación no está documentada.",
+  "bio": "André Masson (1896-1987), pintor y dibujante francés, pionero del dibujo automático y uno de los artistas más intensos del surrealismo.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 172",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "100_Lesbos.jpg"
+  ],
+  "views": [
+   "Lesbos — André Masson (1922)"
+  ],
+  "title": "Lesbos",
+  "artist": "André Masson (1922)",
+  "meta": "Tinta y aguada sobre papel (por lo que se ve en la reproducción) | Galerie Louise Leiris, París, en 1961 | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Dibujo de 1922, compañero del anterior, con cuerpos femeninos tendidos y entrelazados. En 1961 estaba en la Galerie Louise Leiris.",
+  "analysis": "Dibujo de 1922, compañero del anterior, con cuerpos femeninos tendidos y entrelazados. En 1961 estaba en la Galerie Louise Leiris.",
+  "history": "Sin identificar en catálogos; sede actual desconocida.",
+  "bio": "André Masson (1896-1987), pintor y dibujante francés, pionero del dibujo automático y uno de los artistas más intensos del surrealismo.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 173",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "101_La_ciudad_lunar.jpg"
+  ],
+  "views": [
+   "La ciudad lunar (La Ville lunaire) — Paul Delvaux (1944)"
+  ],
+  "title": "La ciudad lunar (La Ville lunaire)",
+  "artist": "Paul Delvaux (1944)",
+  "meta": "Óleo sobre lienzo (por lo que se ve en la reproducción) | Col. Alex Salkin, Nueva York, en 1961 | Paradero actual sin confirmar",
+  "wikiUrl": null,
+  "snippet": "Un esqueleto camina de noche por una calle bajo la luna, entre mujeres desnudas o apenas cubiertas con un paño. Es la primera de dos obras de Delvaux con este título; la segunda, «La Ville lunaire II», es de 1956.",
+  "analysis": "Un esqueleto camina de noche por una calle bajo la luna, entre mujeres desnudas o apenas cubiertas con un paño. Es la primera de dos obras de Delvaux con este título; la segunda, «La Ville lunaire II», es de 1956.",
+  "history": "Paradero sin confirmar en una fuente fiable: una web divulgativa la da como óleo de 107,5 × 238 cm en una colección particular de Vaduz. Roucloux solo la cita para compararla con la versión de 1956, que sitúa en el museo de Lovaina la Nueva.",
+  "bio": "Paul Delvaux (1897-1994), pintor belga asociado al surrealismo, célebre por sus escenas oníricas de mujeres desnudas en estaciones de tren y plazas arquitectónicas silenciosas.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 174",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "102_Los_lazos_rosas.jpg"
+  ],
+  "views": [
+   "Los lazos rosas (Les Nœuds roses) — Paul Delvaux (1937)"
+  ],
+  "title": "Los lazos rosas (Les Nœuds roses)",
+  "artist": "Paul Delvaux (1937)",
+  "meta": "Óleo sobre lienzo | 120 × 150 cm | Koninklijk Museum voor Schone Kunsten, Amberes (inv. 2850; antes colección particular)",
+  "wikiUrl": "https://artinflanders.be/nl/kunst/de-roze-strikken",
+  "snippet": "Mujeres desnudas en una plaza de arquitectura italiana al pie de unas montañas, con una calavera en el suelo; una lleva un gran lazo rosa en torno al torso. En 1961 era de Claude Spaak, autor de una monografía sobre Delvaux (Amberes, 1948). Hoy está en el Museo Real de Bellas Artes de Amberes (KMSKA), que la fecha en 1937; Bataille la fecha en 1936.",
+  "analysis": "Mujeres desnudas en una plaza de arquitectura italiana al pie de unas montañas, con una calavera en el suelo; una lleva un gran lazo rosa en torno al torso. En 1961 era de Claude Spaak, autor de una monografía sobre Delvaux (Amberes, 1948). Hoy está en el Museo Real de Bellas Artes de Amberes (KMSKA), que la fecha en 1937; Bataille la fecha en 1936.",
+  "history": "La ficha de Art in Flanders devolvió 429 y no se pudo leer; el enlace sale del buscador. No está documentado cómo pasó de la colección Spaak al museo. En el pie de Bataille, esta frase también va entre comillas: cita a otro autor.",
+  "bio": "Paul Delvaux (1897-1994), pintor belga asociado al surrealismo, célebre por sus escenas oníricas de mujeres desnudas en estaciones de tren y plazas arquitectónicas silenciosas.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 175",
+    "cita": {
+     "es": "[Delvaux] «se desarrolló en una dirección paralela al surrealismo, sin llegar a formar parte de él».",
+     "en": "\"he developed in a direction that paralleled Surrealism, without becoming a part of it.\"",
+     "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
+     "pagina": 175
+    }
+   }
+  ]
+ },
+ {
+  "files": [
+   "103_Tren_de_noche.jpg"
+  ],
+  "views": [
+   "Tren de noche (Train de nuit) — Paul Delvaux (1947)"
+  ],
+  "title": "Tren de noche (Train de nuit)",
+  "artist": "Paul Delvaux (1947)",
+  "meta": "Óleo sobre tabla | 153 × 210 cm | Toyama Prefectural Museum of Art and Design, Toyama (n.º 0059; antes colección particular)",
+  "wikiUrl": "https://jmapps.ne.jp/5670/det.html?data_id=205",
+  "snippet": "Una sala de espera en penumbra, con un desnudo tendido en un banco, otro de pie junto a una palmera, un espejo que no refleja bien lo que tiene delante y, por la puerta, la estación de noche. La compró en 1981 el museo de Toyama (Japón).",
+  "analysis": "Una sala de espera en penumbra, con un desnudo tendido en un banco, otro de pie junto a una palmera, un espejo que no refleja bien lo que tiene delante y, por la puerta, la estación de noche. La compró en 1981 el museo de Toyama (Japón).",
+  "history": "",
+  "bio": "Paul Delvaux (1897-1994), pintor belga asociado al surrealismo, célebre por sus escenas oníricas de mujeres desnudas en estaciones de tren y plazas arquitectónicas silenciosas.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 176",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "104_Olympia.jpg"
+  ],
+  "views": [
+   "Olympia — René Magritte (1947-1948)"
+  ],
+  "title": "Olympia",
+  "artist": "René Magritte (1947-1948)",
+  "meta": "Óleo sobre lienzo | Colección particular (estuvo expuesta en el Musée René Magritte de Jette, Bruselas)",
+  "wikiUrl": null,
+  "snippet": "Georgette Berger, la mujer de Magritte, desnuda y tendida al aire libre con una caracola sobre el vientre. Es de propiedad particular: fue robada a mano armada del Musée René Magritte de Jette en 2009, apareció en 2012 y después volvió a exponerse en Malinas, por primera vez en más de diez años. Bataille la acompaña de una nota que une el erotismo del pintor a la poesía.",
+  "analysis": "Georgette Berger, la mujer de Magritte, desnuda y tendida al aire libre con una caracola sobre el vientre. Es de propiedad particular: fue robada a mano armada del Musée René Magritte de Jette en 2009, apareció en 2012 y después volvió a exponerse en Malinas, por primera vez en más de diez años. Bataille la acompaña de una nota que une el erotismo del pintor a la poesía.",
+  "history": "Bataille la fecha en 1947; la prensa sobre el robo da 1948. No se ha encontrado una ficha institucional a la que enlazar. El «soveriegn» del inglés es errata de la edición.",
+  "bio": "René Magritte (1898-1967), pintor surrealista belga, conocido por sus ingeniosas y provocativas imágenes que cuestionaban los límites de la realidad y el lenguaje.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 177",
+    "cita": {
+     "es": "Si su erotismo es soberano, lo es en la medida en que es poesía. El erotismo no puede revelarse por entero sin la poesía.",
+     "en": "If his erotism is soveriegn, it is to the extent that it is poetry. Erotism cannot be entirely revealed without poetry.",
+     "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
+     "pagina": 177
+    }
+   }
+  ]
+ },
+ {
+  "files": [
+   "105_La_muneca.jpg"
+  ],
+  "views": [
+   "La muñeca (La Poupée) y dos dibujos — Hans Bellmer"
+  ],
+  "title": "La muñeca (La Poupée) y dos dibujos",
+  "artist": "Hans Bellmer",
+  "meta": "Una fotografía de la muñeca (p. 178) y dos dibujos a lápiz (p. 179) | Paradero de los ejemplares reproducidos desconocido",
+  "wikiUrl": "https://www.moma.org/collection/works/434096",
+  "snippet": "Una fotografía nocturna de la muñeca articulada de Bellmer, de pie junto a un arbusto, y dos dibujos de cuerpos entrelazados. Para la muñeca, Bataille remite a «Les Jeux de la poupée», con textos de Paul Éluard (preparado entre 1936 y 1938 y publicado en París en 1949); para los dibujos, a «Anatomie de l'image» (Le Terrain vague, 1957). De la serie de la muñeca hay copias fotográficas en varios museos, por ejemplo en el Metropolitan de Nueva York.",
+  "analysis": "Una fotografía nocturna de la muñeca articulada de Bellmer, de pie junto a un arbusto, y dos dibujos de cuerpos entrelazados. Para la muñeca, Bataille remite a «Les Jeux de la poupée», con textos de Paul Éluard (preparado entre 1936 y 1938 y publicado en París en 1949); para los dibujos, a «Anatomie de l'image» (Le Terrain vague, 1957). De la serie de la muñeca hay copias fotográficas en varios museos, por ejemplo en el Metropolitan de Nueva York.",
+  "history": "La traducción inglesa dice «Les yeux de la poupée», errata por «Les Jeux de la poupée». No se ha identificado qué copia de la fotografía ni qué dibujos son (el Met no publica imágenes). El enlace lleva al ejemplar del MoMA del libro al que remite Bataille, con 17 fotografías coloreadas a mano, no a la copia concreta que reproduce la lámina. El poema del pie es de Éluard, no de Bataille.",
+  "bio": "Hans Bellmer (1902-1975), escultor, fotógrafo y dibujante germano-francés, célebre por sus muñecas articuladas de tamaño natural que exploran el erotismo y la anatomía inconsciente.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 179",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "106_A_Sade.jpg"
+  ],
+  "views": [
+   "A Sade — Hans Bellmer (1947)"
+  ],
+  "title": "A Sade",
+  "artist": "Hans Bellmer (1947)",
+  "meta": "Lápiz sobre papel (por lo que se ve en la reproducción) | Col. Patricia Echaurren, en 1961 | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Dibujo de cabezas y cuerpos superpuestos en torno a unas costillas, en homenaje al marqués de Sade. Bataille lo fecha en Nueva York, en 1947, y lo sitúa en la colección de Patricia Echaurren.",
+  "analysis": "Dibujo de cabezas y cuerpos superpuestos en torno a unas costillas, en homenaje al marqués de Sade. Bataille lo fecha en Nueva York, en 1947, y lo sitúa en la colección de Patricia Echaurren.",
+  "history": "Bellmer hizo varios dibujos «À Sade» a mediados de los años cuarenta (hay registro de subasta de uno a lápiz de 1946, de 27 × 20,5 cm), pero no se ha identificado este ni se han podido leer esas fichas.",
+  "bio": "Hans Bellmer (1902-1975), escultor, fotógrafo y dibujante germano-francés, célebre por sus muñecas articuladas de tamaño natural que exploran el erotismo y la anatomía inconsciente.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 180",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "107_La_habitacion.jpg"
+  ],
+  "views": [
+   "La habitación (La Chambre) — Balthus (1952-1954)"
+  ],
+  "title": "La habitación (La Chambre)",
+  "artist": "Balthus (1952-1954)",
+  "meta": "Óleo sobre lienzo | 270,5 × 335 cm | Colección particular",
+  "wikiUrl": "https://www.bridgemanimages.com/en-US/balthus/la-chambre-1952-1954-oil-on-canvas/oil-on-canvas/asset/75775",
+  "snippet": "Una muchacha desnuda tendida en un diván mientras una figura pequeña descorre la cortina y deja entrar la luz. Es un lienzo grande, pintado entre 1952 y 1954. En 1961 estaba en la Galerie Henriette Gomes de París; hoy es de una colección particular.",
+  "analysis": "Una muchacha desnuda tendida en un diván mientras una figura pequeña descorre la cortina y deja entrar la luz. Es un lienzo grande, pintado entre 1952 y 1954. En 1961 estaba en la Galerie Henriette Gomes de París; hoy es de una colección particular.",
+  "history": "No hay ficha institucional a la que enlazar: el enlace lleva a la ficha de la agencia Bridgeman Images, de donde salen los datos (270,5 × 335 cm, colección particular).",
+  "bio": "Balthus (Balthasar Klossowski de Rola, 1908-2001), pintor moderno de origen polaco-francés, célebre por sus interiores enigmáticos, sus durmientes y sus atmósferas suspendidas.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 181",
+    "cita": {
+     "es": "Los cuadros de Balthus son pocos y, aunque haya que contarlo entre los pintores más «modernos», nada los distingue claramente de los de los pintores tradicionales.",
+     "en": "Balthus's paintings are few in number and, although he is to be counted among the most \"modern\" of painters, nothing clearly distinguishes them from those of traditional painters.",
+     "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
+     "pagina": 181
+    }
+   }
+  ]
+ },
+ {
+  "files": [
+   "108_El_sueno.jpg"
+  ],
+  "views": [
+   "El sueño (Le Rêve) — Balthus (1955-1956)"
+  ],
+  "title": "El sueño (Le Rêve)",
+  "artist": "Balthus (1955-1956)",
+  "meta": "Óleo sobre lienzo (por lo que se ve en la reproducción) | Galerie Henriette Gomes, París, en 1961 | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Una muchacha duerme en un sofá mientras otra, de pie, se inclina hacia ella con una flor, en una sala con papel pintado a cuadros. En 1961 estaba en la Galerie Henriette Gomes.",
+  "analysis": "Una muchacha duerme en un sofá mientras otra, de pie, se inclina hacia ella con una flor, en una sala con papel pintado a cuadros. En 1961 estaba en la Galerie Henriette Gomes.",
+  "history": "Seguramente «Le Rêve I» (1955); de «Le Rêve II» (1956-1957, 198 × 198 cm) hay registros de subasta. No se ha confirmado cuál es ni dónde está.",
+  "bio": "Balthus (Balthasar Klossowski de Rola, 1908-2001), pintor moderno de origen polaco-francés, célebre por sus interiores enigmáticos, sus durmientes y sus atmósferas suspendidas.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 182",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "109_El_angel_de_la_anatomia.jpg"
+  ],
+  "views": [
+   "El ángel de la anatomía (L'Ange de l'anatomie), primer estado — Leonor Fini (1949)"
+  ],
+  "title": "El ángel de la anatomía (L'Ange de l'anatomie), primer estado",
+  "artist": "Leonor Fini (1949)",
+  "meta": "Óleo sobre lienzo | 53 × 31 cm | Colección particular",
+  "wikiUrl": "https://www.leonor-fini.com/en/paintings/",
+  "snippet": "Una figura de melena blanca con el esqueleto y las vísceras a la vista, que abre un manto con los brazos. Bataille reproduce un «primer estado» del cuadro, sin las alas que tiene la versión acabada. El sitio oficial de la artista fecha esa versión en 1949; Bataille da 1950.",
+  "analysis": "Una figura de melena blanca con el esqueleto y las vísceras a la vista, que abre un manto con los brazos. Bataille reproduce un «primer estado» del cuadro, sin las alas que tiene la versión acabada. El sitio oficial de la artista fecha esa versión en 1949; Bataille da 1950.",
+  "history": "La cita de Jean Genet del pie no es de Bataille. El enlace lleva al catálogo de pinturas del sitio oficial, donde la obra sale entre otras.",
+  "bio": "Leonor Fini (1907-1996), pintora, diseñadora e ilustradora argentina-italiana afincada en París, figura destacada del surrealismo independiente con un imaginario de esfinges, androginia y metamorfosis.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 183",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "110_La_habitacion_negra.jpg"
+  ],
+  "views": [
+   "La habitación (La Chambre noire) — Leonor Fini (1939)"
+  ],
+  "title": "La habitación (La Chambre noire)",
+  "artist": "Leonor Fini (1939)",
+  "meta": "Óleo sobre lienzo | 100 × 73 cm | Colección particular",
+  "wikiUrl": "https://www.leonor-fini.com/en/paintings/",
+  "snippet": "Delante, una mujer de pie con coraza sobre un vestido largo; al fondo, dos muchachas en una cama con dosel. El sitio oficial de la artista la titula «La Chambre noire» y la fecha en 1939; Bataille la llama «La habitación» y la fecha en 1941.",
+  "analysis": "Delante, una mujer de pie con coraza sobre un vestido largo; al fondo, dos muchachas en una cama con dosel. El sitio oficial de la artista la titula «La Chambre noire» y la fecha en 1939; Bataille la llama «La habitación» y la fecha en 1941.",
+  "history": "Identificada comparando la lámina del libro con la imagen del sitio oficial.",
+  "bio": "Leonor Fini (1907-1996), pintora, diseñadora e ilustradora argentina-italiana afincada en París, figura destacada del surrealismo independiente con un imaginario de esfinges, androginia y metamorfosis.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 184",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "111_La_amistad.jpg"
+  ],
+  "views": [
+   "La amistad (L'Amitié) — Leonor Fini (1958)"
+  ],
+  "title": "La amistad (L'Amitié)",
+  "artist": "Leonor Fini (1958)",
+  "meta": "Óleo sobre lienzo | 60 × 91 cm | Colección particular",
+  "wikiUrl": "https://www.leonor-fini.com/en/paintings/",
+  "snippet": "Una mujer dormida, envuelta en un velo de encaje, recostada en un esqueleto que la abraza. Bataille la fecha en 1957 y remite a «Le Vampire» de Ornella Volta (Pauvert, 1962); el sitio oficial de la artista da 1958.",
+  "analysis": "Una mujer dormida, envuelta en un velo de encaje, recostada en un esqueleto que la abraza. Bataille la fecha en 1957 y remite a «Le Vampire» de Ornella Volta (Pauvert, 1962); el sitio oficial de la artista da 1958.",
+  "history": "Identificada comparando la lámina con la imagen del sitio oficial.",
+  "bio": "Leonor Fini (1907-1996), pintora, diseñadora e ilustradora argentina-italiana afincada en París, figura destacada del surrealismo independiente con un imaginario de esfinges, androginia y metamorfosis.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 185",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "112_Amor_incondicional.jpg"
+  ],
+  "views": [
+   "Amor incondicional (L'Amour sans condition) — Leonor Fini (1959)"
+  ],
+  "title": "Amor incondicional (L'Amour sans condition)",
+  "artist": "Leonor Fini (1959)",
+  "meta": "Óleo (por lo que se ve en la reproducción) | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Una figura de esqueleto, luminosa, sobre fondo oscuro. Bataille la fecha en 1959.",
+  "analysis": "Una figura de esqueleto, luminosa, sobre fondo oscuro. Bataille la fecha en 1959.",
+  "history": "No aparece en el catálogo de pinturas del sitio oficial. Webs secundarias (Tumblr) dan un «L'Amour sans condition» de 1958, óleo sobre lienzo de 36 × 25½ pulgadas, en la Weinstein Gallery de San Francisco; no se ha podido confirmar en una fuente fiable.",
+  "bio": "Leonor Fini (1907-1996), pintora, diseñadora e ilustradora argentina-italiana afincada en París, figura destacada del surrealismo independiente con un imaginario de esfinges, androginia y metamorfosis.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 186",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "113_Dos_figuras.jpg"
+  ],
+  "views": [
+   "Dos figuras (Two Figures) — Francis Bacon (1953)"
+  ],
+  "title": "Dos figuras (Two Figures)",
+  "artist": "Francis Bacon (1953)",
+  "meta": "Óleo sobre lienzo | 152,5 × 116,5 cm | Colección particular (catálogo razonado CR 53-24)",
+  "wikiUrl": "https://www.francis-bacon.com/artworks/paintings/two-figures",
+  "snippet": "Dos figuras desnudas enlazadas sobre sábanas blancas, delante de un fondo de cortinas con estrías verticales. Bataille lo titula «La habitación» y lo sitúa en la Hanover Gallery de Londres. Estuvo depositado en la Tate de 1957 a 1959. Después de la exposición del Grand Palais de 1971 no se volvió a ver en público hasta 2017, en el Fitzwilliam Museum de Cambridge.",
+  "analysis": "Dos figuras desnudas enlazadas sobre sábanas blancas, delante de un fondo de cortinas con estrías verticales. Bataille lo titula «La habitación» y lo sitúa en la Hanover Gallery de Londres. Estuvo depositado en la Tate de 1957 a 1959. Después de la exposición del Grand Palais de 1971 no se volvió a ver en público hasta 2017, en el Fitzwilliam Museum de Cambridge.",
+  "history": "Identificada por la composición: Bataille le da otro título. Se dice que la Hanover Gallery lo expuso en 1953 y que después fue de Lucian Freud, pero las fuentes leídas no lo recogen.",
+  "bio": "Francis Bacon (1909-1992), pintor británico de origen irlandés, uno de los creadores figurativos más desgarradores y singulares de la posguerra europea.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 187",
+    "cita": {
+     "es": "Francis Bacon, joven pintor inglés y uno de los más importantes de su generación, empieza a darse a conocer por sus cuadros insólitos, marcados por su carácter brusco.",
+     "en": "Francis Bacon, a young English painter and among the most important of his generation, is becoming known through his unusual paintings marked by their brusque character.",
+     "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
+     "pagina": 187
+    }
+   }
+  ]
+ },
+ {
+  "files": [
+   "114_La_hija_prodiga.jpg"
+  ],
+  "views": [
+   "La hija pródiga (La Fille prodigue) — Félix Labisse (1943)"
+  ],
+  "title": "La hija pródiga (La Fille prodigue)",
+  "artist": "Félix Labisse (1943)",
+  "meta": "Óleo sobre lienzo | 81 × 60,3 cm | Colección particular (subastada en Sotheby's, 2020)",
+  "wikiUrl": "https://www.sothebys.com/en/buy/auction/2020/impressionist-modern-art-day-sale-online/felix-labisse-la-fille-prodigue",
+  "snippet": "Una mujer con la cara tapada por la melena y el torso recorrido por las ramas de un árbol, con un pájaro en vuelo. Es de 1943, el año en que, según su biografía oficial, Labisse pintó mucho y cambió de manera. En 1961 era del actor Pierre Brasseur. Se subastó en Montauroux en 2011 y en Sotheby's en 2020, con el libro de Bataille en la bibliografía.",
+  "analysis": "Una mujer con la cara tapada por la melena y el torso recorrido por las ramas de un árbol, con un pájaro en vuelo. Es de 1943, el año en que, según su biografía oficial, Labisse pintó mucho y cambió de manera. En 1961 era del actor Pierre Brasseur. Se subastó en Montauroux en 2011 y en Sotheby's en 2020, con el libro de Bataille en la bibliografía.",
+  "history": "La procedencia de Sotheby's no nombra a Pierre Brasseur, solo al Dr. A. Boutin; el dato de Brasseur es del pie de Bataille, y lo de «actor» no está en las fuentes citadas. La nota biográfica del pie solo da datos y no se cita. «Colección particular» se deduce de la venta de 2020.",
+  "bio": "Félix Labisse (1905-1982), pintor e ilustrador surrealista francés, creador de universos fantásticos poblados de figuras híbridas y mujeres de tonos azulados y metamórficos.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 188",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "115_Desnudo_dormido.jpg"
+  ],
+  "views": [
+   "Desnudo dormido (Nue endormie) — Dorothea Tanning (1954)"
+  ],
+  "title": "Desnudo dormido (Nue endormie)",
+  "artist": "Dorothea Tanning (1954)",
+  "meta": "Óleo sobre lienzo | 59,8 × 49,7 cm | Museum of Contemporary Art, Chicago (inv. 84.23; antes colección particular)",
+  "wikiUrl": "https://www.dorotheatanning.org/life-and-work/view/79",
+  "snippet": "Una mujer desnuda recostada en un sofá rojo, con la cabeza perdida entre pliegues de tela o de luz. Bataille lo titula «Mujer dormida» y lo fecha en 1953. La fundación de la artista lo cataloga como «Nue endormie», de 1954, en el Museum of Contemporary Art de Chicago.",
+  "analysis": "Una mujer desnuda recostada en un sofá rojo, con la cabeza perdida entre pliegues de tela o de luz. Bataille lo titula «Mujer dormida» y lo fecha en 1953. La fundación de la artista lo cataloga como «Nue endormie», de 1954, en el Museum of Contemporary Art de Chicago.",
+  "history": "Identificada comparando la lámina con la imagen de la fundación. Los centímetros son conversión propia.",
+  "bio": "Dorothea Tanning (1910-2012), pintora, escultora y escritora estadounidense, destacada representante del surrealismo internacional vinculada a Max Ernst.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 189",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "116_Voltaje.jpg"
+  ],
+  "views": [
+   "Voltaje (Voltage) — Dorothea Tanning (1942)"
+  ],
+  "title": "Voltaje (Voltage)",
+  "artist": "Dorothea Tanning (1942)",
+  "meta": "Óleo sobre lienzo | 28,3 × 30,8 cm | Paradero actual no indicado por la fundación",
+  "wikiUrl": "https://www.dorotheatanning.org/life-and-work/view/391",
+  "snippet": "Un cuerpo de mujer envuelto en un paño blanco, con una trenza que le cruza el pecho y un par de ojos sostenidos en alto por un alambre. Es un lienzo pequeño, de 1942. Bataille lo reproduce sin fecha y con una nota sobre la pintora.",
+  "analysis": "Un cuerpo de mujer envuelto en un paño blanco, con una trenza que le cruza el pecho y un par de ojos sostenidos en alto por un alambre. Es un lienzo pequeño, de 1942. Bataille lo reproduce sin fecha y con una nota sobre la pintora.",
+  "history": "La ficha de la fundación no dice dónde está. Los centímetros son conversión propia.",
+  "bio": "Dorothea Tanning (1910-2012), pintora, escultora y escritora estadounidense, destacada representante del surrealismo internacional vinculada a Max Ernst.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 190",
+    "cita": {
+     "es": "Tras un periodo aparentemente tradicional (en el sentido en que es «tradicional» el arte de Balthus), su pintura alcanzó una profunda abstracción que conserva intacto su erotismo fundamental.",
+     "en": "after an apparently traditional period (in the way Balthus's art is \"traditional\"), her painting attained a profound abstractness that holds intact its fundamental eroticism.",
+     "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
+     "pagina": 190
+    }
+   }
+  ]
+ },
+ {
+  "files": [
+   "117_La_manana_poetica.jpg"
+  ],
+  "views": [
+   "La mañana poética (La Matinée poétique) — Félix Labisse (1944)"
+  ],
+  "title": "La mañana poética (La Matinée poétique)",
+  "artist": "Félix Labisse (1944)",
+  "meta": "Óleo sobre lienzo (por lo que se ve en la reproducción) | Col. Jean Baure, en 1961 | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Un retrato de grupo imaginario con desnudos. Según Bataille, de izquierda a derecha: Sade de espaldas, Jean-Louis Barrault, Jarry, William Blake, Apollinaire, el propio Labisse, Picasso y Robert Desnos. Labisse lo expuso en el Salon des Tuileries de 1944.",
+  "analysis": "Un retrato de grupo imaginario con desnudos. Según Bataille, de izquierda a derecha: Sade de espaldas, Jean-Louis Barrault, Jarry, William Blake, Apollinaire, el propio Labisse, Picasso y Robert Desnos. Labisse lo expuso en el Salon des Tuileries de 1944.",
+  "history": "Sede actual desconocida.",
+  "bio": "Félix Labisse (1905-1982), pintor e ilustrador surrealista francés, creador de universos fantásticos poblados de figuras híbridas y mujeres de tonos azulados y metamórficos.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 191",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "118_Roberte_y_el_coloso.jpg"
+  ],
+  "views": [
+   "Roberte y el coloso (variante) — Pierre Klossowski"
+  ],
+  "title": "Roberte y el coloso (variante)",
+  "artist": "Pierre Klossowski",
+  "meta": "Lápiz sobre papel (por lo que se ve en la reproducción) | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Roberte, la protagonista de las novelas de Klossowski, desnuda salvo por las medias y los guantes, junto a un coloso de uniforme sin cabeza; la cabeza está en el suelo. El tema viene de «Roberte ce soir» (Minuit, 1953).",
+  "analysis": "Roberte, la protagonista de las novelas de Klossowski, desnuda salvo por las medias y los guantes, junto a un coloso de uniforme sin cabeza; la cabeza está en el suelo. El tema viene de «Roberte ce soir» (Minuit, 1953).",
+  "history": "Sin identificar: no está entre las obras del tema «Roberte et le colosse» del catálogo razonado en línea (todas de 1971, posteriores al libro) ni entre los dibujos de 1953 para «Roberte ce soir».",
+  "bio": "Pierre Klossowski (1905-2001), escritor, traductor y dibujante francés, hermano mayor de Balthus, autor de reflexiones decisivas sobre Sade, Nietzsche y el erotismo.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 192",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "119_Diana_y_Acteon.jpg"
+  ],
+  "views": [
+   "Diana y Acteón — Pierre Klossowski (1954)"
+  ],
+  "title": "Diana y Acteón",
+  "artist": "Pierre Klossowski (1954)",
+  "meta": "Lápiz sobre papel | 210 × 150 cm | Paradero no indicado en el catálogo razonado",
+  "wikiUrl": "http://www.pierre-klossowski.fr/pages/page.php?section=artiste&ch=peintures",
+  "snippet": "Diana, con una pierna en alto, forcejea con Acteón, que ya tiene cabeza de ciervo. Klossowski escribió sobre el mismo mito «Le Bain de Diane» (Pauvert, 1956). El catálogo razonado en línea recoge un gran dibujo del tema de 1954, expuesto en París en 1955 y entre 1981 y 2007 en Berna, Viena, Ginebra, Ixelles, Piran, Londres, Colonia y París.",
+  "analysis": "Diana, con una pierna en alto, forcejea con Acteón, que ya tiene cabeza de ciervo. Klossowski escribió sobre el mismo mito «Le Bain de Diane» (Pauvert, 1956). El catálogo razonado en línea recoge un gran dibujo del tema de 1954, expuesto en París en 1955 y entre 1981 y 2007 en Berna, Viena, Ginebra, Ixelles, Piran, Londres, Colonia y París.",
+  "history": "Identificación probable, comparando con la miniatura del catálogo razonado. Hay otras versiones de 1955 (176 × 78 cm y una pequeña de 27 × 21 cm) y de 1957. El enlace lleva al catálogo general; hay que filtrar por el tema «Diane et Actéon».",
+  "bio": "Pierre Klossowski (1905-2001), escritor, traductor y dibujante francés, hermano mayor de Balthus, autor de reflexiones decisivas sobre Sade, Nietzsche y el erotismo.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 193",
+    "cita": {
+     "es": "Pierre Klossowski, nacido en París en 1905, es el hermano mayor de Balthus. Se le conoce sobre todo como escritor.",
+     "en": "Pierre Klossowski, born in Paris in 1905, is the older brother of Balthus (cf. p. 181). He is known above all as a writer",
+     "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
+     "pagina": 193
+    }
+   }
+  ]
+ },
+ {
+  "files": [
+   "120_Dibujos_para_Roberte_ce_soir.jpg"
+  ],
+  "views": [
+   "Dibujos para «Roberte ce soir» — Pierre Klossowski (1953)"
+  ],
+  "title": "Dibujos para «Roberte ce soir»",
+  "artist": "Pierre Klossowski (1953)",
+  "meta": "Dos dibujos a lápiz (mina de plomo) | 100 × 72 cm cada uno | Paradero no indicado en el catálogo razonado",
+  "wikiUrl": "http://www.pierre-klossowski.fr/pages/page.php?section=artiste&ch=peintures",
+  "snippet": "Dos de las grandes hojas a lápiz que Klossowski dibujó en 1953 para su novela «Roberte ce soir» (Minuit, 1953) y expuso en París en 1955. En la de la p. 195, el coloso con casco y el enano asaltan a Roberte: el catálogo razonado la titula «Roberte, le colosse et le nain». En la de la p. 194, Roberte, con un vestido oscuro, está enlazada a un hombre desnudo.",
+  "analysis": "Dos de las grandes hojas a lápiz que Klossowski dibujó en 1953 para su novela «Roberte ce soir» (Minuit, 1953) y expuso en París en 1955. En la de la p. 195, el coloso con casco y el enano asaltan a Roberte: el catálogo razonado la titula «Roberte, le colosse et le nain». En la de la p. 194, Roberte, con un vestido oscuro, está enlazada a un hombre desnudo.",
+  "history": "La p. 195 coincide con «Roberte, le colosse et le nain». La p. 194 parece la miniatura catalogada como «Le discours de Vittorio» (1953, 100 × 72 cm), pero el título encaja mal con la escena: dudoso. Algunas fuentes dicen que Klossowski los dibujó porque Balthus no quiso ilustrar la novela; no se ha comprobado.",
+  "bio": "Pierre Klossowski (1905-2001), escritor, traductor y dibujante francés, hermano mayor de Balthus, autor de reflexiones decisivas sobre Sade, Nietzsche y el erotismo.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 194",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "121_La_boca_de_la_verdad.jpg"
+  ],
+  "views": [
+   "La boca de la verdad — Stanislao Lepri (1955)"
+  ],
+  "title": "La boca de la verdad",
+  "artist": "Stanislao Lepri (1955)",
+  "meta": "Óleo (por lo que se ve en la reproducción) | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Busto de una mujer con el pecho descubierto: una venda le tapa la parte baja de la cara y lleva pintada una boca con dientes, y otra dentadura aparece sobre el escote. Bataille remite, para Lepri, al libro de Alain Jouffroy «La chambre noire de Lepri» (Milán, 1956).",
+  "analysis": "Busto de una mujer con el pecho descubierto: una venda le tapa la parte baja de la cara y lleva pintada una boca con dientes, y otra dentadura aparece sobre el escote. Bataille remite, para Lepri, al libro de Alain Jouffroy «La chambre noire de Lepri» (Milán, 1956).",
+  "history": "Sin identificar en catálogos en línea. El título alude a la Bocca della Verità de Roma.",
+  "bio": "Stanislao Lepri (1905-1980), pintor italiano adscrito al realismo mágico y al surrealismo, estrecho colaborador y compañero de Leonor Fini en París.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 196",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "122_Mi_tumba.jpg"
+  ],
+  "views": [
+   "La tumba (Mon tombeau; antes «de Sade») — Clovis Trouille"
+  ],
+  "title": "La tumba (Mon tombeau; antes «de Sade»)",
+  "artist": "Clovis Trouille",
+  "meta": "Óleo sobre lienzo (por lo que se ve en la reproducción; lámina en la p. 197) | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Un panteón con el nombre «CLOVIS» entre cipreses, rodeado de frailes encapuchados, desnudos y calaveras, bajo un rayo: una escena funeraria erótica y anticlerical. Bataille indica que antes se tituló «de Sade».",
+  "analysis": "Un panteón con el nombre «CLOVIS» entre cipreses, rodeado de frailes encapuchados, desnudos y calaveras, bajo un rayo: una escena funeraria erótica y anticlerical. Bataille indica que antes se tituló «de Sade».",
+  "history": "Casi seguro es «Mon tombeau», que webs secundarias fechan en 1947-1962 (óleo, 100 × 81 cm, colección particular); no se ha confirmado en una fuente fiable. El pie está en la p. 196 y la imagen en la 197.",
+  "bio": "Clovis Trouille (1889-1975), pintor surrealista francés célebre por sus obras anticlericales, satíricas y de un erotismo carnavalesco desbordante.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 196",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "123_Primera_clase.jpg"
+  ],
+  "views": [
+   "Primera clase — Clovis Trouille"
+  ],
+  "title": "Primera clase",
+  "artist": "Clovis Trouille",
+  "meta": "Óleo (por lo que se ve en la reproducción) | Paradero actual desconocido",
+  "wikiUrl": null,
+  "snippet": "Un escenario fúnebre bajo un dosel con la inicial «T»: una figura con la falda levantada ante un catafalco y dos mujeres desnudas que se tapan la cara. Bataille la acompaña de una nota sobre el pintor, que trabajó mucho tiempo en una fábrica que hacía maniquíes de cera para el Musée Grévin.",
+  "analysis": "Un escenario fúnebre bajo un dosel con la inicial «T»: una figura con la falda levantada ante un catafalco y dos mujeres desnudas que se tapan la cara. Bataille la acompaña de una nota sobre el pintor, que trabajó mucho tiempo en una fábrica que hacía maniquíes de cera para el Musée Grévin.",
+  "history": "Sin identificar en catálogos en línea; sede actual desconocida.",
+  "bio": "Clovis Trouille (1889-1975), pintor surrealista francés célebre por sus obras anticlericales, satíricas y de un erotismo carnavalesco desbordante.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 198",
+    "cita": {
+     "es": "Clovis Trouille, nacido en el Aisne en 1889, llegó a ser uno de los pintores más extraños de su generación.",
+     "en": "Clovis Trouille, born in Aisne in 1889, became one of the strangest painters of his generation.",
+     "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
+     "pagina": 198
+    }
+   }
+  ]
+ },
+ {
+  "files": [
+   "124_Ceremonia_y_posesion_vudu.jpg"
+  ],
+  "views": [
+   "Sacrificio vudú — Fotógrafo sin nombrar"
+  ],
+  "title": "Sacrificio vudú",
+  "artist": "Fotógrafo sin nombrar",
+  "meta": "Serie de fotografías (pp. 199-203) | Paradero de negativos y copias desconocido",
+  "wikiUrl": null,
+  "snippet": "Fotografías de una ceremonia vudú con sacrificio de aves. Bataille las atribuye, sin decir su nombre, a «uno de los fotógrafos más notables y reconocidos de hoy». Presenta el sacrificio como un éxtasis cercano a la embriaguez y, para la religión vudú, remite al libro de Alfred Métraux, «uno de los mejores etnógrafos de nuestro tiempo», que se inició en ella para conocerla mejor.",
+  "analysis": "Fotografías de una ceremonia vudú con sacrificio de aves. Bataille las atribuye, sin decir su nombre, a «uno de los fotógrafos más notables y reconocidos de hoy». Presenta el sacrificio como un éxtasis cercano a la embriaguez y, para la religión vudú, remite al libro de Alfred Métraux, «uno de los mejores etnógrafos de nuestro tiempo», que se inició en ella para conocerla mejor.",
+  "history": "No se ha podido identificar al fotógrafo con fuentes. Se atribuyen a Pierre Verger, que estuvo en Haití en 1949 (Wikipedia, no citable), pero no se ha encontrado quién confirme la autoría de estas fotos. Bataille cita el libro como «Le Vaudoo, Gallimard, Paris, 1955»; el libro de Métraux es «Le Vaudou haïtien» (Gallimard, 1958): cotejarlo con la edición francesa.",
+  "bio": "Fotógrafo no identificado que documentó ceremonias del culto vudú en Haití a mediados del siglo XX, citado con admiración por Georges Bataille en Las lágrimas de Eros.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 199",
+    "cita": {
+     "es": "No añadiré nada a estas fotografías tan bellas, que debemos a uno de los fotógrafos más notables y reconocidos de hoy, salvo que mirarlas con pasión es entrar en un mundo tan lejano del nuestro como sea posible.",
+     "en": "I will add nothing to these very beautiful photographs, which we owe to one of today's most remarkable and renowned photographers, except to say that to look at them with passion is to penetrate a world as far away as possible from our own.",
+     "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
+     "pagina": 199
     }
    }
   ]

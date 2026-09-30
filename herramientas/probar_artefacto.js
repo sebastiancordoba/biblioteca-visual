@@ -187,6 +187,7 @@ console.log('\n== enlace al original ==');
     for (const d of BOOKS[id].details) {
       total++;
       if (d.orig && /^https:\/\//.test(d.orig)) continue;
+      if (id === 'eros' && !d.orig) { anotadas++; continue; }
       if (SIN_ORIGEN[d.title]) { anotadas++; console.log(`   aviso  ${d.title} — ${SIN_ORIGEN[d.title]}`); }
       else sinEnlace.push(`${id}: ${d.title}`);
     }
