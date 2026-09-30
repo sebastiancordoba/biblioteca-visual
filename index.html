@@ -781,6 +781,21 @@
       }
     }
 
+    /* «En los libros»: referencia y cita del autor */
+    .ref-libro p { margin: 0 0 6px; }
+    .ref-libro blockquote { margin: 4px 0 14px; padding: 2px 0 2px 14px; border-left: 2px solid var(--accent-gold); font-style: italic; }
+    .ref-libro .cita-original { display: block; margin-top: 6px; font-size: .85em; color: var(--text-muted); }
+    .ref-libro cite { display: block; margin-top: 4px; font-style: normal; font-size: .8em; color: var(--text-muted); }
+    .tambien-en a { color: var(--accent-gold); }
+
+    /* Láminas sin imagen propia: tarjetas de texto al final del libro */
+    .sin-imagen-cabecera { grid-column: 1 / -1; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border-subtle); }
+    .sin-imagen-cabecera h3 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 500; color: var(--accent-gold); margin: 0 0 6px; }
+    .sin-imagen-cabecera p { color: var(--text-muted); font-size: .92rem; margin: 0; max-width: 70ch; }
+    .artwork-card.sin-imagen-card { box-shadow: none; border-style: dashed; }
+    .artwork-card.sin-imagen-card:hover { transform: none; }
+    .sin-imagen-enlace { color: var(--accent-gold); font-size: .84rem; }
+
     .artwork-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
@@ -1939,6 +1954,9 @@
 
       <h4>Biografía del Pintor y Contexto de la Época</h4>
       <p id="panelBio">Cargando biografía...</p>
+
+      <h4 id="panelLibrosTit" hidden>En los libros</h4>
+      <div id="panelLibros"></div>
     </div>
 
   </div>
@@ -4858,6 +4876,11 @@
       ]
     ];
 
+    BOOKS.eros = Object.assign({"esLibro": true, "corto": "Lágrimas de Eros", "tag": "Colección Las lágrimas de Eros", "title": "Las lágrimas de Eros, de Georges Bataille", "sub": "Las láminas del último libro de Bataille (1961), del Paleolítico a Gustave Moreau: las venus de Laussel y Willendorf, el Pozo de Lascaux, las ménades de la cerámica ática, Cranach, Baldung, el manierismo, Goya y Delacroix.", "firstTab": "eros-gallery", "headings": ["Lo que hace que destaque", "Contexto histórico", "Autoría y procedencia"], "carpeta": "Lagrimas_de_Eros"},
+      { details: [], groups: [] });
+    BOOKS.eros.details = [];
+    BOOKS.eros.groups = [];
+
     const AUTORES = [
       {
         "clave": "laocoonte",
@@ -6171,6 +6194,59 @@
       return idx.slice().sort((a, b) => cmp(a, b) || a - b);
     }
 
+    /* Láminas que el libro reproduce y la colección no puede mostrar —obras con derechos
+       vigentes, o sin reproducción libre—: una ficha de texto con un enlace a quien sí puede
+       enseñarlas. No pasan por el visor, la portada, la cronología ni el mapa. */
+    /* «En los libros»: de qué libro viene la obra, en qué lugar, qué dice el autor de ella
+       y en qué otros libros de la colección está. */
+    function bloqueLibros(d) {
+      const refs = d.referencias || [], otros = d.tambienEn || [];
+      if (!refs.length && !otros.length) return '';
+      const nombre = id => (BOOKS[id] && (BOOKS[id].title || BOOKS[id].corto)) || id;
+      const r = refs.map(x => `
+        <div class="ref-libro">
+          <p><b>${esc(nombre(x.libro))}</b>${x.donde ? ' · ' + esc(x.donde) : ''}</p>
+          ${x.cita && x.cita.es ? `<blockquote>«${esc(x.cita.es)}»${x.cita.en ? `<span class="cita-original">${esc(x.cita.en)}</span>` : ''}<cite>${esc(x.cita.autor || '')}${x.cita.pagina ? (x.cita.autor ? ', ' : '') + 'p. ' + esc(String(x.cita.pagina)) : ''}</cite></blockquote>` : ''}
+        </div>`).join('');
+      const t = otros.length ? `<p class="tambien-en">También en: ${otros.map(o =>
+        `<a href="#" onclick="irAObraDeLibro('${o.libro}', ${o.i}); return false;">${esc(o.corto)}</a>`).join(' · ')}</p>` : '';
+      return r + t;
+    }
+    function irAObraDeLibro(libro, i) {
+      if (document.getElementById('zoomModal') && typeof closeZoom === 'function') { try { closeZoom(); } catch (e) {} }
+      switchBook(libro);
+      setTimeout(() => openZoomForArtwork(i, 0), 0);
+    }
+
+    function laminasSinImagen(book, consulta) {
+      let lista = book.sinImagen || [];
+      /* `normaliza` se declara más abajo con const: solo se toca si hay consulta, que nunca
+         la hay en el primer dibujado. */
+      const q = consulta && consulta.trim() ? normaliza(consulta).trim() : '';
+      if (q) lista = lista.filter(x => q.split(/\s+/).every(t =>
+        normaliza([x.title, x.artist, x.meta, x.texto].join(' ')).includes(t)));
+      if (!lista.length) return '';
+      const tarjetas = lista.map(x => `
+        <article class="artwork-card sin-imagen-card">
+          <div class="artwork-body">
+            <div class="artwork-header-row">
+              <span class="artwork-num">${esc(x.motivo === 'derechos' ? 'DERECHOS VIGENTES' : 'SIN REPRODUCCIÓN LIBRE')}${x.pagina ? ' · LÁM. P. ' + esc(String(x.pagina)) : ''}</span>
+              <div class="artwork-title">${esc(x.title)}</div>
+              <div class="artwork-artist">${esc(x.artist)}</div>
+            </div>
+            <div class="artwork-meta-line">${esc(x.meta)}</div>
+            <p class="artwork-snippet">${esc(x.texto)}</p>
+            ${x.cita && x.cita.es ? `<div class="ref-libro"><blockquote>«${esc(x.cita.es)}»${x.cita.en ? `<span class="cita-original">${esc(x.cita.en)}</span>` : ''}<cite>Bataille${x.cita.pagina ? ', p. ' + esc(String(x.cita.pagina)) : ''}</cite></blockquote></div>` : ''}
+            ${x.enlace && x.enlace.url ? `<div class="card-actions-row"><a href="${esc(x.enlace.url)}" target="_blank" rel="noopener" class="wiki-link-btn sin-imagen-enlace">${esc(x.enlace.rotulo || 'Ver la obra')} ↗</a></div>` : ''}
+          </div>
+        </article>`).join('\n');
+      return `
+        <div class="sin-imagen-cabecera">
+          <h3>Láminas que no se pueden mostrar aquí (${lista.length})</h3>
+          <p>El libro las reproduce, pero siguen bajo derechos de autor o no existe una reproducción libre. Cada ficha enlaza con quien sí puede enseñarlas.</p>
+        </div>${tarjetas}`;
+    }
+
     function renderBookGrid(bookId, forzar) {
       const book = BOOKS[bookId];
       const grid = document.getElementById(bookId + '-grid');
@@ -6245,7 +6321,8 @@
                 <h4>${esc(h[1])}</h4>
                 <p>${esc(d.history)}</p>
                 <h4>${esc(h[2])}</h4>
-                <p>${esc(d.bio)}</p>
+                <p>${esc(d.bio)}</p>${bloqueLibros(d) ? `
+                <h4>En los libros</h4>${bloqueLibros(d)}` : ''}
               </div>
             </div>
             <div class="file-tag">${esc(main.src.split('/').pop())}</div>
@@ -6253,8 +6330,9 @@
         </article>`);
       });
 
-      grid.innerHTML = html.length ? html.join('\n')
-        : `<p class="sin-resultados">Ninguna obra coincide con «${esc(consulta)}».</p>`;
+      grid.innerHTML = (html.length ? html.join('\n')
+        : `<p class="sin-resultados">Ninguna obra coincide con «${esc(consulta)}».</p>`)
+        + laminasSinImagen(book, consulta);
       grid.dataset.rendered = firma;
     }
 
@@ -7475,6 +7553,9 @@
       document.getElementById('panelAnalysis').innerText = details.analysis;
       document.getElementById('panelHistory').innerText = details.history;
       document.getElementById('panelBio').innerText = details.bio;
+      const bl = bloqueLibros(details);
+      document.getElementById('panelLibros').innerHTML = bl;
+      document.getElementById('panelLibrosTit').hidden = !bl;
 
       /* Indicador del conjunto: «3 de 6 · Museo del Louvre». */
       const conj = document.getElementById('zoomConjunto');

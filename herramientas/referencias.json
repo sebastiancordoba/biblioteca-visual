@@ -1,0 +1,1529 @@
+{
+ "atrahasis:01": [
+  {
+   "cita": {
+    "autor": "Atrahasis, tablilla I, col. i (incipit) · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "When the gods instead of man Did the work, bore the loads, The gods’ load was too great, The work too hard, the trouble too much,",
+    "es": "Cuando los dioses, en vez del hombre, hacían el trabajo, cargaban con las cargas, la carga de los dioses era demasiado grande, el trabajo demasiado duro, la fatiga demasiada."
+   },
+   "donde": "Tablilla I, col. i (comienzo del poema: «Cuando los dioses, en vez del hombre»)",
+   "libro": "atrahasis"
+  }
+ ],
+ "atrahasis:02": [
+  {
+   "cita": {
+    "autor": "Atrahasis, tablilla I, col. vii · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "The country was as noisy as a bellowing bull. The God grew restless at their racket, Ellil had to listen to their noise. He addressed the great gods, ‘The noise of mankind has become too much, I am losing sleep over their racket.",
+    "es": "El país bramaba como un toro. El dios se inquietó con su alboroto; Ellil tuvo que oír su ruido. Habló a los grandes dioses: «El ruido de la humanidad se ha vuelto excesivo, pierdo el sueño con su alboroto."
+   },
+   "donde": "Tablilla I, col. vii (el ruido de la humanidad y el desvelo de Enlil), y su repetición al comienzo de la tablilla II",
+   "libro": "atrahasis"
+  }
+ ],
+ "atrahasis:03": [
+  {
+   "cita": {
+    "autor": "Atrahasis, tablilla III, col. i · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "Wall, listen constantly to me! Reed hut, make sure you attend to all my words! Dismantle the house, build a boat, Reject possessions, and save living things.",
+    "es": "¡Muro, escúchame sin cesar! ¡Cabaña de cañas, atiende bien todas mis palabras! Derriba la casa, construye una barca, rechaza las posesiones y salva lo que tiene vida."
+   },
+   "donde": "Tablilla III, col. i (Enki avisa a Atrahasis y le manda construir la barca)",
+   "libro": "atrahasis"
+  },
+  {
+   "cita": {
+    "autor": "Atrahasis, tablilla I, col. iv-v · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "Nintu shall mix clay With his flesh and his blood. Then a god and a man Will be mixed together in clay.",
+    "es": "Nintu mezclará la arcilla con su carne y su sangre. Así un dios y un hombre quedarán mezclados en la arcilla."
+   },
+   "donde": "Tablilla I (Enki propone crear al hombre con arcilla mezclada con la sangre de un dios)",
+   "libro": "atrahasis"
+  }
+ ],
+ "atrahasis:04": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: La Lista Real Sumeria no es un pasaje del Atrahasis: la ficha solo compara su frase sobre el Diluvio con el relato de Noé, sin asociarla a una tablilla ni a unos versos concretos del poema",
+   "libro": "atrahasis"
+  }
+ ],
+ "atrahasis:05": [
+  {
+   "cita": {
+    "autor": "Atrahasis, tablilla III, col. vii · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "Let there be the pasittu-demon among the people, To snatch the baby from its mother’s lap.",
+    "es": "Que haya entre la gente el demonio pasittu, para arrebatar al niño del regazo de su madre."
+   },
+   "donde": "Tablilla III, col. vii (tras el Diluvio, los dioses ponen límites a la población: el demonio pasittu)",
+   "libro": "atrahasis"
+  }
+ ],
+ "atrahasis:06": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: Placa de bronce de exorcismo contra Lamashtu; la ficha la sitúa en el ritual neoasirio (Wiggermann), no en un pasaje del Atrahasis, que solo menciona a la Exterminadora en la obra 05",
+   "libro": "atrahasis"
+  }
+ ],
+ "enuma:01": [
+  {
+   "cita": {
+    "autor": "Enuma Elish, tablilla I · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "When skies above were not yet named Nor earth below pronounced by name, Apsu, the first one, their begetter And maker Tiamat, who bore them all, Had mixed their waters together,",
+    "es": "Cuando el cielo de arriba aún no tenía nombre ni la tierra de abajo se pronunciaba por su nombre, Apsu, el primero, su engendrador, y la creadora Tiamat, que los parió a todos, mezclaban sus aguas."
+   },
+   "donde": "Tablilla I (comienzo del poema: «Cuando en lo alto»)",
+   "libro": "enuma"
+  },
+  {
+   "cita": null,
+   "donde": "Tablilla III (Anshar envía a Kakka a repetir ante los dioses los preparativos de Tiamat)",
+   "libro": "enuma"
+  }
+ ],
+ "enuma:02": [
+  {
+   "cita": {
+    "autor": "Enuma Elish, tablilla I · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "He poured sleep upon him so that he was sleeping soundly, Put Apsu to sleep, drenched with sleep. [ ] He held Apsu down and slew him;",
+    "es": "Derramó sobre él el sueño, de modo que dormía profundamente, dejó dormido a Apsu, empapado de sueño. […] Sujetó a Apsu y lo mató."
+   },
+   "donde": "Tablilla I (Ea duerme a Apsu y lo mata; nace Marduk)",
+   "libro": "enuma"
+  }
+ ],
+ "enuma:03": [
+  {
+   "cita": {
+    "autor": "Enuma Elish, tablilla I · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "She stationed a horned serpent, a mushussu-dragon, and a lahmu-hero,",
+    "es": "Situó una serpiente cornuda, un dragón mušḫuššu y un héroe lahmu,"
+   },
+   "donde": "Tablilla I (Tiamat pone en pie a sus criaturas, entre ellas el mušḫuššu)",
+   "libro": "enuma"
+  },
+  {
+   "cita": {
+    "autor": "Enuma Elish, tablilla V · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "Smashed their weapons, tied them at his feet, Made images of them and had them set up at the door of Apsu. ‘Let this be a sign that will never in future be forgotten!’",
+    "es": "Destrozó sus armas, las ató a sus pies, hizo imágenes de ellas y las hizo colocar a la puerta del Apsu: «¡Que esto sea una señal que nunca en el futuro se olvide!»."
+   },
+   "donde": "Tablilla V (Marduk pone imágenes de las once criaturas a la puerta del Apsu)",
+   "libro": "enuma"
+  }
+ ],
+ "enuma:04": [
+  {
+   "cita": {
+    "autor": "Enuma Elish, tablilla I · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "She stationed a horned serpent, a mushussu-dragon, and a lahmu-hero,",
+    "es": "Situó una serpiente cornuda, un dragón mušḫuššu y un héroe lahmu,"
+   },
+   "donde": "Tablilla I (Tiamat pone en pie a sus criaturas, entre ellas el mušḫuššu)",
+   "libro": "enuma"
+  },
+  {
+   "cita": {
+    "autor": "Enuma Elish, tablilla V · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "Smashed their weapons, tied them at his feet, Made images of them and had them set up at the door of Apsu. ‘Let this be a sign that will never in future be forgotten!’",
+    "es": "Destrozó sus armas, las ató a sus pies, hizo imágenes de ellas y las hizo colocar a la puerta del Apsu: «¡Que esto sea una señal que nunca en el futuro se olvide!»."
+   },
+   "donde": "Tablilla V (Marduk pone imágenes de las once criaturas a la puerta del Apsu)",
+   "libro": "enuma"
+  }
+ ],
+ "enuma:05": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: Es el ritual del Año Nuevo, un texto aparte donde se ordena recitar el poema; no ilustra ninguna escena del Enuma Elish",
+   "libro": "enuma"
+  }
+ ],
+ "enuma:06": [
+  {
+   "cita": {
+    "autor": "Enuma Elish, tablilla VI · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "For a whole year they made bricks for it. When the second year arrived, They had raised the top of Esagila in front of (?) the Apsu; They had built a high ziggurrat for the Apsu.",
+    "es": "Durante un año entero hicieron ladrillos para él. Al llegar el segundo año, habían levantado la cima del Esagila frente (?) al Apsu; habían construido un alto zigurat para el Apsu."
+   },
+   "donde": "Tablilla VI (los dioses construyen Babilonia y levantan el Esagila)",
+   "libro": "enuma"
+  }
+ ],
+ "enuma:07": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: Estela asiria con los emblemas de Marduk y Nabu; la ficha no la asocia a ningún pasaje concreto del poema",
+   "libro": "enuma"
+  }
+ ],
+ "enuma:08": [
+  {
+   "cita": {
+    "autor": "Enuma Elish, tablilla VI · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "When the second year arrived, They had raised the top of Esagila in front of (?) the Apsu;",
+    "es": "Al llegar el segundo año, habían levantado la cima del Esagila frente (?) al Apsu."
+   },
+   "donde": "Tablilla VI (los dioses construyen el Esagila, la casa de Marduk)",
+   "libro": "enuma"
+  }
+ ],
+ "enuma:09": [
+  {
+   "cita": {
+    "autor": "Enuma Elish, tablilla IV · trad. inglesa de Stephanie Dalley, traducida al español",
+    "en": "Put lightning in front of him, His body was filled with an ever-blazing flame.",
+    "es": "Puso el rayo delante de sí, y su cuerpo se llenó de una llama siempre ardiente."
+   },
+   "donde": "Tablilla IV (Marduk se arma y avanza contra Tiamat)",
+   "libro": "enuma"
+  }
+ ],
+ "exodo:01": [
+  {
+   "cita": {
+    "autor": "Éxodo 14, 28 · Reina-Valera 1960",
+    "es": "Y volvieron las aguas, y cubrieron los carros y la caballería, y todo el ejército de Faraón que había entrado tras ellos en el mar; no quedó de ellos ni uno."
+   },
+   "donde": "Éxodo 14, 21-31 (el paso del mar Rojo y el ahogamiento del ejército de Faraón)",
+   "libro": "exodo"
+  }
+ ],
+ "exodo:02": [
+  {
+   "cita": {
+    "autor": "Éxodo 14, 27 · Reina-Valera 1960",
+    "es": "Entonces Moisés extendió su mano sobre el mar, y cuando amanecía, el mar se volvió en toda su fuerza, y los egipcios al huir se encontraban con el mar; y Jehová derribó a los egipcios en medio del mar."
+   },
+   "donde": "Éxodo 14, 21-31 (el mar engulle al faraón y su ejército)",
+   "libro": "exodo"
+  },
+  {
+   "cita": {
+    "autor": "Éxodo 15, 21 · Reina-Valera 1960",
+    "es": "Y María les respondía: Cantad a Jehová, porque en extremo se ha engrandecido; Ha echado en el mar al caballo y al jinete."
+   },
+   "donde": "Éxodo 15, 20-21 (el canto de Miriam)",
+   "libro": "exodo"
+  }
+ ],
+ "exodo:03": [
+  {
+   "cita": {
+    "autor": "Éxodo 2, 5 · Reina-Valera 1960",
+    "es": "Y la hija de Faraón descendió a lavarse al río, y paseándose sus doncellas por la ribera del río, vio ella la arquilla en el carrizal, y envió una criada suya a que la tomase."
+   },
+   "donde": "Éxodo 2, 3-10 (Moisés salvado de las aguas por la hija de Faraón; el manuscrito sigue la tradición islámica, que nombra a la esposa del faraón, Asiya)",
+   "libro": "exodo"
+  }
+ ],
+ "exodo:04": [
+  {
+   "cita": {
+    "autor": "Éxodo 12, 8 · Reina-Valera 1960",
+    "es": "Y aquella noche comerán la carne asada al fuego, y panes sin levadura; con hierbas amargas lo comerán."
+   },
+   "donde": "Éxodo 12, 8 y 12, 15-20 (los panes sin levadura y las hierbas amargas de la Pascua)",
+   "libro": "exodo"
+  }
+ ],
+ "exodo:05": [
+  {
+   "cita": {
+    "autor": "Éxodo 31, 18 · Reina-Valera 1960",
+    "es": "Y dio a Moisés, cuando acabó de hablar con él en el monte de Sinaí, dos tablas del testimonio, tablas de piedra escritas con el dedo de Dios."
+   },
+   "donde": "Éxodo 24, 12-18 y 31, 18 (Moisés recibe la Ley en el Sinaí; la miniatura sigue el relato coránico, 7:145, con un libro entregado por el ángel)",
+   "libro": "exodo"
+  }
+ ],
+ "exodo:06": [
+  {
+   "cita": {
+    "autor": "Éxodo 31, 18 · Reina-Valera 1960",
+    "es": "Y dio a Moisés, cuando acabó de hablar con él en el monte de Sinaí, dos tablas del testimonio, tablas de piedra escritas con el dedo de Dios."
+   },
+   "donde": "Éxodo 31, 18 (las tablas del testimonio entregadas a Moisés; las inscripciones del lienzo proceden de un grabado francés y resumen la Ley en el doble mandamiento evangélico)",
+   "libro": "exodo"
+  }
+ ],
+ "exodo:07": [
+  {
+   "cita": {
+    "autor": "Éxodo 7, 12 · Reina-Valera 1960",
+    "es": "pues echó cada uno su vara, las cuales se volvieron culebras; mas la vara de Aarón devoró las varas de ellos."
+   },
+   "donde": "Éxodo 7, 8-13 (la vara convertida en culebra ante Faraón y los magos; la miniatura sigue el relato coránico, 7:107-117)",
+   "libro": "exodo"
+  }
+ ],
+ "exodo:08": [
+  {
+   "cita": {
+    "autor": "Éxodo 3, 5 · Reina-Valera 1960",
+    "es": "Y dijo: No te acerques; quita tu calzado de tus pies, porque el lugar en que tú estás, tierra santa es."
+   },
+   "donde": "Éxodo 3, 1-6 (la zarza ardiente)",
+   "libro": "exodo"
+  }
+ ],
+ "exodo:09": [
+  {
+   "cita": {
+    "autor": "Éxodo 8, 17 · Reina-Valera 1960",
+    "es": "Y ellos lo hicieron así; y Aarón extendió su mano con su vara, y golpeó el polvo de la tierra, el cual se volvió piojos, así en los hombres como en las bestias"
+   },
+   "donde": "Éxodo 8, 1-24 y 9, 1-7 (las plagas de las ranas, los piojos, las moscas o fieras y la peste del ganado)",
+   "libro": "exodo"
+  }
+ ],
+ "exodo:10": [
+  {
+   "cita": {
+    "autor": "Éxodo 34, 29 · Reina-Valera 1960",
+    "es": "Y aconteció que descendiendo Moisés del monte Sinaí con las dos tablas del testimonio en su mano, al descender del monte, no sabía Moisés que la piel de su rostro resplandecía, después que hubo hablado con Dios."
+   },
+   "donde": "Éxodo 34, 29-35 (el rostro resplandeciente de Moisés al bajar del Sinaí con las tablas)",
+   "libro": "exodo"
+  }
+ ],
+ "exodo:11": [
+  {
+   "cita": {
+    "autor": "Éxodo 32, 4 · Reina-Valera 1960",
+    "es": "y él los tomó de las manos de ellos, y le dio forma con buril, e hizo de ello un becerro de fundición. Entonces dijeron: Israel, estos son tus dioses, que te sacaron de la tierra de Egipto."
+   },
+   "donde": "Éxodo 32, 1-6 (el becerro de oro)",
+   "libro": "exodo"
+  },
+  {
+   "cita": {
+    "autor": "Éxodo 32, 19 · Reina-Valera 1960",
+    "es": "Y aconteció que cuando él llegó al campamento, y vio el becerro y las danzas, ardió la ira de Moisés, y arrojó las tablas de sus manos, y las quebró al pie del monte."
+   },
+   "donde": "Éxodo 32, 15-20 (Moisés baja del monte y rompe las tablas)",
+   "libro": "exodo"
+  }
+ ],
+ "exodo:12": [
+  {
+   "cita": {
+    "autor": "Éxodo 32, 19 · Reina-Valera 1960",
+    "es": "ardió la ira de Moisés, y arrojó las tablas de sus manos, y las quebró al pie del monte."
+   },
+   "donde": "Éxodo 32, 15-19 (Moisés con las tablas, ¿a punto de romperlas?)",
+   "libro": "exodo"
+  },
+  {
+   "cita": {
+    "autor": "Éxodo 34, 4 · Reina-Valera 1960",
+    "es": "Y Moisés alisó dos tablas de piedra como las primeras; y se levantó de mañana y subió al monte Sinaí, como le mandó Jehová, y llevó en su mano las dos tablas de piedra."
+   },
+   "donde": "Éxodo 34, 1-4 (las segundas tablas; la otra lectura posible de la escena)",
+   "libro": "exodo"
+  }
+ ],
+ "exodo:13": [
+  {
+   "cita": {
+    "autor": "Éxodo 25, 20 · Reina-Valera 1960",
+    "es": "Y los querubines extenderán por encima las alas, cubriendo con sus alas el propiciatorio; sus rostros el uno enfrente del otro, mirando al propiciatorio los rostros de los querubines."
+   },
+   "donde": "Éxodo 25, 18-22 (el arca y los querubines de oro sobre el propiciatorio)",
+   "libro": "exodo"
+  }
+ ],
+ "genesis:01": [
+  {
+   "cita": {
+    "autor": "Génesis 2, 7 · Reina-Valera 1960",
+    "es": "Entonces Jehová Dios formó al hombre del polvo de la tierra, y sopló en su nariz aliento de vida, y fue el hombre un ser viviente."
+   },
+   "donde": "Génesis 2, 7 (Dios insufla la vida en Adán)",
+   "libro": "genesis"
+  },
+  {
+   "cita": {
+    "autor": "Génesis 1, 27 · Reina-Valera 1960",
+    "es": "Y creó Dios al hombre a su imagen, a imagen de Dios lo creó; varón y hembra los creó."
+   },
+   "donde": "Génesis 1, 26-27 (el hombre a imagen de Dios)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:02": [
+  {
+   "cita": {
+    "autor": "Génesis 3, 23-24 · Reina-Valera 1960",
+    "es": "Y lo sacó Jehová del huerto del Edén, para que labrase la tierra de que fue tomado. Echó, pues, fuera al hombre, y puso al oriente del huerto de Edén querubines, y una espada encendida que se revolvía por todos lados, para guardar el camino del árbol de la vida."
+   },
+   "donde": "Génesis 3, 22-24 (la expulsión del Edén)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:03": [
+  {
+   "cita": {
+    "autor": "Génesis 4, 8 · Reina-Valera 1960",
+    "es": "Y dijo Caín a su hermano Abel: Salgamos al campo. Y aconteció que estando ellos en el campo, Caín se levantó contra su hermano Abel, y lo mató."
+   },
+   "donde": "Génesis 4, 1-16 (Caín mata a Abel)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:04": [
+  {
+   "cita": {
+    "autor": "Génesis 7, 21 · Reina-Valera 1960",
+    "es": "Y murió toda carne que se mueve sobre la tierra, así de aves como de ganado y de bestias, y de todo reptil que se arrastra sobre la tierra, y todo hombre."
+   },
+   "donde": "Génesis 7, 17-24 (las aguas del Diluvio)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:05": [
+  {
+   "cita": {
+    "autor": "Génesis 11, 4 · Reina-Valera 1960",
+    "es": "Y dijeron: Vamos, edifiquémonos una ciudad y una torre, cuya cúspide llegue al cielo; y hagámonos un nombre, por si fuéremos esparcidos sobre la faz de toda la tierra."
+   },
+   "donde": "Génesis 11, 1-9 (la torre de Babel)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:06": [
+  {
+   "cita": {
+    "autor": "Génesis 4, 12 · Reina-Valera 1960",
+    "es": "errante y extranjero serás en la tierra"
+   },
+   "donde": "Génesis 4, 11-16 (la condena y el destierro de Caín)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:07": [
+  {
+   "cita": {
+    "autor": "Génesis 2, 7 · Reina-Valera 1960",
+    "es": "Entonces Jehová Dios formó al hombre del polvo de la tierra, y sopló en su nariz aliento de vida, y fue el hombre un ser viviente."
+   },
+   "donde": "Génesis 2, 7 (Dios forma a Adán)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:08": [
+  {
+   "cita": {
+    "autor": "Génesis 7, 18 · Reina-Valera 1960",
+    "es": "Y subieron las aguas y crecieron en gran manera sobre la tierra; y flotaba el arca sobre la superficie de las aguas."
+   },
+   "donde": "Génesis 7, 17-24 (las aguas cubren la tierra)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:09": [
+  {
+   "cita": {
+    "autor": "Génesis 11, 7-8 · Reina-Valera 1960",
+    "es": "Ahora, pues, descendamos, y confundamos allí su lengua, para que ninguno entienda el habla de su compañero. Así los esparció Jehová desde allí sobre la faz de toda la tierra, y dejaron de edificar la ciudad."
+   },
+   "donde": "Génesis 11, 1-9 (la confusión de las lenguas)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:10": [
+  {
+   "cita": {
+    "autor": "Génesis 7, 21 · Reina-Valera 1960",
+    "es": "Y murió toda carne que se mueve sobre la tierra, así de aves como de ganado y de bestias, y de todo reptil que se arrastra sobre la tierra, y todo hombre."
+   },
+   "donde": "Génesis 7, 17-24 (el Diluvio)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:11": [
+  {
+   "cita": {
+    "autor": "Génesis 8, 6 · Reina-Valera 1960",
+    "es": "Sucedió que al cabo de cuarenta días abrió Noé la ventana del arca que había hecho"
+   },
+   "donde": "Génesis 8, 6 (el día cuadragésimo primero, Noé abre la ventana)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:12": [
+  {
+   "cita": {
+    "autor": "Génesis 7, 11 · Reina-Valera 1960",
+    "es": "El año seiscientos de la vida de Noé, en el mes segundo, a los diecisiete días del mes, aquel día fueron rotas todas las fuentes del grande abismo, y las cataratas de los cielos fueron abiertas"
+   },
+   "donde": "Génesis 7, 11-24 (el Diluvio en su apogeo)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:13": [
+  {
+   "cita": {
+    "autor": "Génesis 8, 5 · Reina-Valera 1960",
+    "es": "en el décimo, al primero del mes, se descubrieron las cimas de los montes"
+   },
+   "donde": "Génesis 8, 1-5 (las aguas disminuyen)",
+   "libro": "genesis"
+  },
+  {
+   "cita": {
+    "autor": "Génesis 9, 13 · Reina-Valera 1960",
+    "es": "Mi arco he puesto en las nubes, el cual será por señal del pacto entre mí y la tierra."
+   },
+   "donde": "Génesis 9, 8-17 (el arco iris, señal del pacto)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:14": [
+  {
+   "cita": {
+    "autor": "Génesis 3, 6 · Reina-Valera 1960",
+    "es": "Y vio la mujer que el árbol era bueno para comer, y que era agradable a los ojos, y árbol codiciable para alcanzar la sabiduría; y tomó de su fruto, y comió; y dio también a su marido, el cual comió así como ella."
+   },
+   "donde": "Génesis 3, 1-7 (la caída: Eva toma el fruto y lo da a Adán)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:15": [
+  {
+   "cita": {
+    "autor": "Génesis 3, 6 · Reina-Valera 1960",
+    "es": "Y vio la mujer que el árbol era bueno para comer, y que era agradable a los ojos, y árbol codiciable para alcanzar la sabiduría; y tomó de su fruto, y comió; y dio también a su marido, el cual comió así como ella."
+   },
+   "donde": "Génesis 3, 1-7 (la caída: Eva toma el fruto y lo da a Adán)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:16": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: La ficha la vincula con «Europe, a Prophecy» y con Urizen (símbolo de la razón opresiva), no con un pasaje del Génesis; el compás es de Blake y de los versos de Milton que anotó un lector, no del texto bíblico",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:17": [
+  {
+   "cita": {
+    "autor": "Génesis 22, 10 · Reina-Valera 1960",
+    "es": "Y extendió Abraham su mano y tomó el cuchillo para degollar a su hijo."
+   },
+   "donde": "Génesis 22, 1-19 (el sacrificio de Isaac)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:18": [
+  {
+   "cita": {
+    "autor": "Génesis 22, 10 · Reina-Valera 1960",
+    "es": "Y extendió Abraham su mano y tomó el cuchillo para degollar a su hijo."
+   },
+   "donde": "Génesis 22, 1-19 (el sacrificio de Isaac)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:19": [
+  {
+   "cita": {
+    "autor": "Génesis 18, 2 · Reina-Valera 1960",
+    "es": "Y alzó sus ojos y miró, y he aquí tres varones que estaban junto a él; y cuando los vio, salió corriendo de la puerta de su tienda a recibirlos, y se postró en tierra"
+   },
+   "donde": "Génesis 18, 1-8 (los tres visitantes en Mamré)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:20": [
+  {
+   "cita": {
+    "autor": "Génesis 32, 24 · Reina-Valera 1960",
+    "es": "Así se quedó Jacob solo; y luchó con él un varón hasta que rayaba el alba."
+   },
+   "donde": "Génesis 32, 22-32 (Jacob lucha con el ángel en el Yaboc)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:21": [
+  {
+   "cita": {
+    "autor": "Génesis 32, 25 · Reina-Valera 1960",
+    "es": "Y cuando el varón vio que no podía con él, tocó en el sitio del encaje de su muslo, y se descoyuntó el muslo de Jacob mientras con él luchaba."
+   },
+   "donde": "Génesis 32, 22-32 (Jacob lucha con el ángel en el Yaboc)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:22": [
+  {
+   "cita": {
+    "autor": "Génesis 32, 24 · Reina-Valera 1960",
+    "es": "Así se quedó Jacob solo; y luchó con él un varón hasta que rayaba el alba."
+   },
+   "donde": "Génesis 32, 22-32 (la lucha de Jacob con el ángel, que evoca el sermón)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:23": [
+  {
+   "cita": {
+    "autor": "Génesis 21, 19 · Reina-Valera 1960",
+    "es": "Entonces Dios le abrió los ojos, y vio una fuente de agua"
+   },
+   "donde": "Génesis 21, 14-19 (Agar e Ismael en el desierto)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:24": [
+  {
+   "cita": {
+    "autor": "Génesis 37, 33 · Reina-Valera 1960",
+    "es": "Y él la reconoció, y dijo: La túnica de mi hijo es; alguna mala bestia lo devoró; José ha sido despedazado."
+   },
+   "donde": "Génesis 37, 31-35 (los hermanos presentan la túnica a Jacob)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:25": [
+  {
+   "cita": {
+    "autor": "Génesis 19, 24 · Reina-Valera 1960",
+    "es": "Entonces Jehová hizo llover sobre Sodoma y sobre Gomorra azufre y fuego de parte de Jehová desde los cielos"
+   },
+   "donde": "Génesis 19, 24-26 (fuego sobre Sodoma y Gomorra; la mujer de Lot)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:26": [
+  {
+   "cita": {
+    "autor": "Génesis 1, 9-10 · Reina-Valera 1960",
+    "es": "Dijo también Dios: Júntense las aguas que están debajo de los cielos en un lugar, y descúbrase lo seco. Y fue así. Y llamó Dios a lo seco Tierra, y a la reunión de las aguas llamó Mares. Y vio Dios que era bueno."
+   },
+   "donde": "Génesis 1, 9-13 (el tercer día de la Creación, en el exterior cerrado)",
+   "libro": "genesis"
+  },
+  {
+   "cita": {
+    "autor": "Génesis 2, 22 · Reina-Valera 1960",
+    "es": "Y de la costilla que Jehová Dios tomó del hombre, hizo una mujer, y la trajo al hombre."
+   },
+   "donde": "Génesis 2, 21-22 (Dios presenta a Eva a Adán)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:27": [
+  {
+   "cita": {
+    "autor": "Génesis 19, 32 · Reina-Valera 1960",
+    "es": "Ven, demos a beber vino a nuestro padre, y durmamos con él, y conservaremos de nuestro padre descendencia."
+   },
+   "donde": "Génesis 19, 30-38 (Lot y sus hijas en la cueva)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:28": [
+  {
+   "cita": {
+    "autor": "Génesis 24, 17-18 · Reina-Valera 1960",
+    "es": "Entonces el criado corrió hacia ella, y dijo: Te ruego que me des a beber un poco de agua de tu cántaro. Ella respondió: Bebe, señor mío; y se dio prisa a bajar su cántaro sobre su mano, y le dio a beber."
+   },
+   "donde": "Génesis 24, 15-27 (Eliezer y Rebeca junto al pozo)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:29": [
+  {
+   "cita": {
+    "autor": "Génesis 27, 23 · Reina-Valera 1960",
+    "es": "Y no le conoció, porque sus manos eran vellosas como las manos de Esaú; y le bendijo."
+   },
+   "donde": "Génesis 27, 18-30 (Isaac bendice a Jacob)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:30": [
+  {
+   "cita": {
+    "autor": "Génesis 28, 11 · Reina-Valera 1960",
+    "es": "Y llegó a un cierto lugar, y durmió allí, porque ya el sol se había puesto; y tomó de las piedras de aquel paraje y puso a su cabecera, y se acostó en aquel lugar."
+   },
+   "donde": "Génesis 28, 10-22 (el sueño de Jacob en Betel)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:31": [
+  {
+   "cita": {
+    "autor": "Génesis 7, 21 · Reina-Valera 1960",
+    "es": "Y murió toda carne que se mueve sobre la tierra, así de aves como de ganado y de bestias, y de todo reptil que se arrastra sobre la tierra, y todo hombre."
+   },
+   "donde": "Génesis 7, 17-23 (el Diluvio)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:32": [
+  {
+   "cita": {
+    "autor": "Génesis 9, 21 · Reina-Valera 1960",
+    "es": "y bebió del vino, y se embriagó, y estaba descubierto en medio de su tienda."
+   },
+   "donde": "Génesis 9, 18-27 (la embriaguez de Noé)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:33": [
+  {
+   "cita": {
+    "autor": "Génesis 14, 18 · Reina-Valera 1960",
+    "es": "Entonces Melquisedec, rey de Salem y sacerdote del Dios Altísimo, sacó pan y vino"
+   },
+   "donde": "Génesis 14, 18-20 (Melquisedec sale al encuentro de Abraham)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:34": [
+  {
+   "cita": {
+    "autor": "Génesis 22, 10 · Reina-Valera 1960",
+    "es": "Y extendió Abraham su mano y tomó el cuchillo para degollar a su hijo."
+   },
+   "donde": "Génesis 22, 9-13 (la aqedá, el sacrificio de Isaac, sobre el nicho de la Torá)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:35": [
+  {
+   "cita": {
+    "autor": "Génesis 39, 16 · Reina-Valera 1960",
+    "es": "Y ella puso junto a sí la ropa de José, hasta que vino su señor a su casa."
+   },
+   "donde": "Génesis 39, 13-18 (la mujer de Potifar acusa a José)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:36": [
+  {
+   "cita": {
+    "autor": "Génesis 48, 14 · Reina-Valera 1960",
+    "es": "Entonces Israel extendió su mano derecha, y la puso sobre la cabeza de Efraín, que era el menor, y su mano izquierda sobre la cabeza de Manasés, colocando así sus manos adrede, aunque Manasés era el primogénito."
+   },
+   "donde": "Génesis 48, 13-20 (Jacob bendice a Efraín y Manasés)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:37": [
+  {
+   "cita": {
+    "autor": "Génesis 29, 10 · Reina-Valera 1960",
+    "es": "Y sucedió que cuando Jacob vio a Raquel, hija de Labán hermano de su madre, y las ovejas de Labán el hermano de su madre, se acercó Jacob y removió la piedra de la boca del pozo, y abrevó el rebaño de Labán hermano de su madre."
+   },
+   "donde": "Génesis 29, 1-14 (Jacob conoce a Raquel junto al pozo)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:38": [
+  {
+   "cita": {
+    "autor": "Génesis 41, 26 · Reina-Valera 1960",
+    "es": "Las siete vacas hermosas siete años son; y las espigas hermosas son siete años: el sueño es uno mismo."
+   },
+   "donde": "Génesis 41, 1-36 (José interpreta los sueños del faraón)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:39": [
+  {
+   "cita": {
+    "autor": "Génesis 3, 6 · Reina-Valera 1960",
+    "es": "Y vio la mujer que el árbol era bueno para comer, y que era agradable a los ojos, y árbol codiciable para alcanzar la sabiduría; y tomó de su fruto, y comió; y dio también a su marido, el cual comió así como ella."
+   },
+   "donde": "Génesis 3, 1-7 (la caída: Eva toma el fruto y lo da a Adán)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:40": [
+  {
+   "cita": {
+    "autor": "Génesis 7, 12 · Reina-Valera 1960",
+    "es": "y hubo lluvia sobre la tierra cuarenta días y cuarenta noches."
+   },
+   "donde": "Génesis 7, 11-24 (el Diluvio)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:41": [
+  {
+   "cita": {
+    "autor": "Génesis 3, 6 · Reina-Valera 1960",
+    "es": "Y vio la mujer que el árbol era bueno para comer, y que era agradable a los ojos, y árbol codiciable para alcanzar la sabiduría; y tomó de su fruto, y comió; y dio también a su marido, el cual comió así como ella."
+   },
+   "donde": "Génesis 3, 1-13 (el pecado original)",
+   "libro": "genesis"
+  },
+  {
+   "cita": {
+    "autor": "Génesis 3, 24 · Reina-Valera 1960",
+    "es": "Echó, pues, fuera al hombre, y puso al oriente del huerto de Edén querubines, y una espada encendida que se revolvía por todos lados, para guardar el camino del árbol de la vida."
+   },
+   "donde": "Génesis 3, 22-24 (la expulsión del Paraíso)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:42": [
+  {
+   "cita": {
+    "autor": "Génesis 3, 6 · Reina-Valera 1960",
+    "es": "Y vio la mujer que el árbol era bueno para comer, y que era agradable a los ojos, y árbol codiciable para alcanzar la sabiduría; y tomó de su fruto, y comió; y dio también a su marido, el cual comió así como ella."
+   },
+   "donde": "Génesis 3, 1-7 (Adán y Eva)",
+   "libro": "genesis"
+  },
+  {
+   "cita": {
+    "autor": "Génesis 6, 14 · Reina-Valera 1960",
+    "es": "Hazte un arca de madera de gofer; harás aposentos en el arca, y la calafatearás con brea por dentro y por fuera"
+   },
+   "donde": "Génesis 6, 14-16 (el arca de Noé)",
+   "libro": "genesis"
+  },
+  {
+   "cita": {
+    "autor": "Génesis 22, 10 · Reina-Valera 1960",
+    "es": "Y extendió Abraham su mano y tomó el cuchillo para degollar a su hijo."
+   },
+   "donde": "Génesis 22, 1-19 (Abraham a punto de sacrificar a Isaac)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:43": [
+  {
+   "cita": {
+    "autor": "Génesis 22, 13 · Reina-Valera 1960",
+    "es": "Entonces alzó Abraham sus ojos y miró, y he aquí a sus espaldas un carnero trabado en un zarzal por sus cuernos; y fue Abraham y tomó el carnero, y lo ofreció en holocausto en lugar de su hijo."
+   },
+   "donde": "Génesis 22, 1-19 (el sacrificio de Isaac)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:44": [
+  {
+   "cita": {
+    "autor": "Génesis 7, 15 · Reina-Valera 1960",
+    "es": "Vinieron, pues, con Noé al arca, de dos en dos de toda carne en que había espíritu de vida."
+   },
+   "donde": "Génesis 7, 7-16 (la entrada en el arca)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:45": [
+  {
+   "cita": {
+    "autor": "Génesis 39, 12 · Reina-Valera 1960",
+    "es": "Y ella lo asió por su ropa, diciendo: Duerme conmigo. Entonces él dejó su ropa en las manos de ella, y huyó y salió."
+   },
+   "donde": "Génesis 39, 7-20 (José huye de la mujer de Potifar)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:46": [
+  {
+   "cita": {
+    "autor": "Génesis 4, 8 · Reina-Valera 1960",
+    "es": "Y dijo Caín a su hermano Abel: Salgamos al campo. Y aconteció que estando ellos en el campo, Caín se levantó contra su hermano Abel, y lo mató."
+   },
+   "donde": "Génesis 4, 8 (la muerte de Abel; el duelo de Adán y Eva no está en el texto bíblico)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:47": [
+  {
+   "cita": {
+    "autor": "Génesis 7, 9 · Reina-Valera 1960",
+    "es": "de dos en dos entraron con Noé en el arca; macho y hembra, como mandó Dios a Noé."
+   },
+   "donde": "Génesis 7, 7-9 (Noé y los animales entran en el arca)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:48": [
+  {
+   "cita": {
+    "autor": "Génesis 2, 21-22 · Reina-Valera 1960",
+    "es": "Entonces Jehová Dios hizo caer sueño profundo sobre Adán, y mientras éste dormía, tomó una de sus costillas, y cerró la carne en su lugar. Y de la costilla que Jehová Dios tomó del hombre, hizo una mujer, y la trajo al hombre."
+   },
+   "donde": "Génesis 2, 21-22 (la creación de Eva)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:49": [
+  {
+   "cita": {
+    "autor": "Génesis 22, 11-12 · Reina-Valera 1960",
+    "es": "Entonces el ángel de Jehová le dio voces desde el cielo, y dijo: Abraham, Abraham. Y él respondió: Heme aquí. Y dijo: No extiendas tu mano sobre el muchacho, ni le hagas nada; porque ya conozco que temes a Dios, por cuanto no me rehusaste tu hijo, tu único."
+   },
+   "donde": "Génesis 22, 1-19 (el ángel detiene la mano de Abraham)",
+   "libro": "genesis"
+  },
+  {
+   "cita": {
+    "autor": "Génesis 28, 12 · Reina-Valera 1960",
+    "es": "Y soñó: y he aquí una escalera que estaba apoyada en tierra, y su extremo tocaba en el cielo; y he aquí ángeles de Dios que subían y descendían por ella."
+   },
+   "donde": "Génesis 28, 10-12 (Jacob sueña la escala, en el panel contiguo)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:50": [
+  {
+   "cita": {
+    "autor": "Génesis 4, 4 · Reina-Valera 1960",
+    "es": "Y Abel trajo también de los primogénitos de sus ovejas, de lo más gordo de ellas. Y miró Jehová con agrado a Abel y a su ofrenda"
+   },
+   "donde": "Génesis 4, 3-5 (las ofrendas de Caín y Abel; la disputa por la gemela es tradición islámica, no bíblica)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:51": [
+  {
+   "cita": {
+    "autor": "Génesis 3, 6 · Reina-Valera 1960",
+    "es": "Y vio la mujer que el árbol era bueno para comer, y que era agradable a los ojos, y árbol codiciable para alcanzar la sabiduría; y tomó de su fruto, y comió; y dio también a su marido, el cual comió así como ella."
+   },
+   "donde": "Génesis 3, 1-7 (la caída: Eva toma el fruto y lo da a Adán)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:52": [
+  {
+   "cita": {
+    "autor": "Génesis 24, 64-65 · Reina-Valera 1960",
+    "es": "Rebeca también alzó sus ojos, y vio a Isaac, y descendió del camello; porque había preguntado al criado: ¿Quién es este varón que viene por el campo hacia nosotros? Y el criado había respondido: Este es mi señor. Ella entonces tomó el velo, y se cubrió."
+   },
+   "donde": "Génesis 24, 64-65 (Rebeca se cubre con el velo)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:53": [
+  {
+   "cita": {
+    "autor": "Génesis 45, 4 · Reina-Valera 1960",
+    "es": "Yo soy José vuestro hermano, el que vendisteis para Egipto"
+   },
+   "donde": "Génesis 45, 1-15 (José se da a conocer)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:54": [
+  {
+   "cita": {
+    "autor": "Génesis 19, 16 · Reina-Valera 1960",
+    "es": "Y deteniéndose él, los varones asieron de su mano, y de la mano de su mujer y de las manos de sus dos hijas, según la misericordia de Jehová para con él; y lo sacaron y lo pusieron fuera de la ciudad."
+   },
+   "donde": "Génesis 19, 15-17 (los ángeles sacan a Lot y a su familia de Sodoma)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:55": [
+  {
+   "cita": {
+    "autor": "Génesis 4, 8 · Reina-Valera 1960",
+    "es": "Y dijo Caín a su hermano Abel: Salgamos al campo. Y aconteció que estando ellos en el campo, Caín se levantó contra su hermano Abel, y lo mató."
+   },
+   "donde": "Génesis 4, 1-8 (la muerte de Abel)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:56": [
+  {
+   "cita": {
+    "autor": "Génesis 3, 24 · Reina-Valera 1960",
+    "es": "Echó, pues, fuera al hombre, y puso al oriente del huerto de Edén querubines, y una espada encendida que se revolvía por todos lados, para guardar el camino del árbol de la vida."
+   },
+   "donde": "Génesis 3, 24 (los querubines custodian el camino del árbol de la vida)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:57": [
+  {
+   "cita": {
+    "autor": "Génesis 28, 5 · Reina-Valera 1960",
+    "es": "Así envió Isaac a Jacob, el cual fue a Padan-aram, a Labán hijo de Betuel arameo, hermano de Rebeca madre de Jacob y de Esaú."
+   },
+   "donde": "Génesis 27, 41-28, 5 (Jacob parte hacia Padan-aram)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:58": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: El propio museo duda entre el retorno de Noé y el de Abraham a Canaán, y el cuadro muestra una caravana sin escena identificable; asignar un pasaje sería forzarlo",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:59": [
+  {
+   "cita": {
+    "autor": "Génesis 7, 9 · Reina-Valera 1960",
+    "es": "de dos en dos entraron con Noé en el arca; macho y hembra, como mandó Dios a Noé."
+   },
+   "donde": "Génesis 7, 1-9 (los animales entran en el arca)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:60": [
+  {
+   "cita": {
+    "autor": "Génesis 4, 8 · Reina-Valera 1960",
+    "es": "Y dijo Caín a su hermano Abel: Salgamos al campo. Y aconteció que estando ellos en el campo, Caín se levantó contra su hermano Abel, y lo mató."
+   },
+   "donde": "Génesis 4, 8 (la muerte de Abel)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:61": [
+  {
+   "cita": {
+    "autor": "Génesis 22, 10 · Reina-Valera 1960",
+    "es": "Y extendió Abraham su mano y tomó el cuchillo para degollar a su hijo."
+   },
+   "donde": "Génesis 22, 1-19 (el sacrificio de Isaac)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:62": [
+  {
+   "cita": {
+    "autor": "Génesis 27, 23 · Reina-Valera 1960",
+    "es": "Y no le conoció, porque sus manos eran vellosas como las manos de Esaú; y le bendijo."
+   },
+   "donde": "Génesis 27, 18-29 (Jacob se presenta a Isaac)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:63": [
+  {
+   "cita": {
+    "autor": "Génesis 14, 18 · Reina-Valera 1960",
+    "es": "Entonces Melquisedec, rey de Salem y sacerdote del Dios Altísimo, sacó pan y vino"
+   },
+   "donde": "Génesis 14, 18-20 (Melquisedec ofrece pan y vino)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:64": [
+  {
+   "cita": {
+    "autor": "Génesis 4, 9 · Reina-Valera 1960",
+    "es": "Y Jehová dijo a Caín: ¿Dónde está Abel tu hermano? Y él respondió: No sé. ¿Soy yo acaso guarda de mi hermano?"
+   },
+   "donde": "Génesis 4, 9-16 (Dios interpela a Caín)",
+   "libro": "genesis"
+  }
+ ],
+ "genesis:65": [
+  {
+   "cita": {
+    "autor": "Génesis 19, 32 · Reina-Valera 1960",
+    "es": "Ven, demos a beber vino a nuestro padre, y durmamos con él, y conservaremos de nuestro padre descendencia."
+   },
+   "donde": "Génesis 19, 30-38 (Lot y sus hijas)",
+   "libro": "genesis"
+  }
+ ],
+ "gilgamesh:01": [
+  {
+   "cita": {
+    "autor": "Tablilla XI, 133-134 · trad. de Andrew George, versión española de Fabián Chueca Crespo",
+    "es": "Observé el tiempo, estaba silencioso y en calma, pero toda la gente había vuelto a la arcilla."
+   },
+   "donde": "Tablilla XI, 129-161 (el fin del Diluvio, las aves y el sacrificio en el monte Nimush)",
+   "libro": "gilgamesh"
+  }
+ ],
+ "gilgamesh:02": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: La ficha solo dice que el Louvre lo llama «héroe» y que a menudo se asimila a Gilgamesh; no lo asocia a ningún pasaje de la epopeya",
+   "libro": "gilgamesh"
+  }
+ ],
+ "gilgamesh:03": [
+  {
+   "cita": null,
+   "donde": "Gilgamesh y Huwawa (sumerio) (la expedición a la Montaña de los Cedros)",
+   "libro": "gilgamesh"
+  }
+ ],
+ "gilgamesh:04": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: La ficha aclara que el vínculo entre el rostro de Huwawa y las vísceras viene de los textos adivinatorios, no de la epopeya; no representa un pasaje",
+   "libro": "gilgamesh"
+  }
+ ],
+ "gilgamesh:05": [
+  {
+   "cita": {
+    "autor": "Tablilla I, 267-268 · trad. de Andrew George, versión española de Fabián Chueca Crespo",
+    "es": "Como a una esposa lo amaste, acariciaste y abrazaste: un poderoso compañero llegará a ti, y será el salvador de su amigo."
+   },
+   "donde": "Tablilla I, 245-293 (los sueños de Gilgamesh y su interpretación por Ninsun)",
+   "libro": "gilgamesh"
+  }
+ ],
+ "gilgamesh:06": [
+  {
+   "cita": null,
+   "donde": "Tablilla VI, 6-79 (Ishtar propone matrimonio a Gilgamesh y él la rechaza)",
+   "libro": "gilgamesh"
+  }
+ ],
+ "gilgamesh:07": [
+  {
+   "cita": {
+    "autor": "Tablilla I, 11-12 · trad. de Andrew George, versión española de Fabián Chueca Crespo",
+    "es": "Construyó la muralla de Uruk la Cercada, de la santa Eanna, el almacén sagrado."
+   },
+   "donde": "Tablilla I, 11-22 (las murallas de Uruk y Eanna, templo de Ishtar)",
+   "libro": "gilgamesh"
+  }
+ ],
+ "gilgamesh:08": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: Guardián de palacio asirio; la ficha no lo asocia a ningún pasaje de la epopeya",
+   "libro": "gilgamesh"
+  }
+ ],
+ "gilgamesh:09": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: Llamar Gilgamesh al héroe es una lectura discutida (podría ser Lakhmu); la ficha no lo asocia a un pasaje concreto",
+   "libro": "gilgamesh"
+  }
+ ],
+ "gilgamesh:10": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: Relieve de caza real asirio; la ficha solo lo vincula con la biblioteca de Nínive, no con un pasaje de la epopeya",
+   "libro": "gilgamesh"
+  }
+ ],
+ "gilgamesh:11": [
+  {
+   "cita": {
+    "autor": "Tablilla VI, 145-148 · trad. de Andrew George, versión española de Fabián Chueca Crespo",
+    "es": "Entonces Gilgamesh como un carnicero, valiente y diestro, entre la unión de los cuernos y el punto de sacrificio [hundió] su cuchillo. Después de dar muerte al Toro Celeste, llevaron su corazón arriba y lo depositaron ante Shamash."
+   },
+   "donde": "Tablilla VI, 113-147 (Anu entrega el Toro Celeste a Ishtar y Gilgamesh y Enkidu lo matan)",
+   "libro": "gilgamesh"
+  }
+ ],
+ "gilgamesh:12": [
+  {
+   "cita": {
+    "autor": "Tablilla V, 24-26 · trad. inglesa de Andrew George (Penguin), traducida al español",
+    "en": "[Monkey mothers] sing aloud, a youngster monkey shrieks: [like a band] of musicians and drummers, daily they bash out a rhythm in the presence of Humbaba.",
+    "es": "«[Las monas] cantan en voz alta, un monito chilla: [como una banda] de músicos y tamborileros, cada día machacan su ritmo en presencia de Humbaba.»"
+   },
+   "donde": "Tablilla V, 1-30 (la entrada en el Bosque de los Cedros)",
+   "libro": "gilgamesh"
+  },
+  {
+   "cita": {
+    "autor": "Tablilla V, 304 · trad. inglesa de Andrew George (Penguin), traducida al español",
+    "en": "[My friend,] we have reduced the forest [to] a wasteland, [how] shall we answer Enlil in Nippur?",
+    "es": "«[Amigo mío,] hemos reducido el bosque [a] un erial, [¿cómo] responderemos a Enlil en Nippur?»"
+   },
+   "donde": "Tablilla V, 300-304 (Enkidu lamenta haber reducido el bosque a un erial)",
+   "libro": "gilgamesh"
+  }
+ ],
+ "iliada:01": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: La partida de dados entre Aquiles y Áyax no aparece en la Ilíada: la ficha dice expresamente que se la inventó el pintor",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:02": [
+  {
+   "cita": {
+    "autor": "Ilíada I, 500-502 · trad. de Emilio Crespo (Gredos)",
+    "es": "Se sentó delante de él mismo, le abrazó las rodillas con la izquierda y, asiendo con la diestra su barba por debajo, dijo, suplicante, al soberano Zeus Cronión:"
+   },
+   "donde": "Canto I, 493-530 (Tetis suplica a Zeus)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:03": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: Ifigenia en Áulide procede de Eurípides y de Racine; la Ilíada no cuenta el engaño de la boda ni el sacrificio de Ifigenia",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:04": [
+  {
+   "cita": {
+    "autor": "Ilíada XXIV, 723-724 · trad. de Emilio Crespo (Gredos)",
+    "es": "Entre éstas, Andrómaca, de blancos brazos, inició el llanto, mientras sujetaba la cabeza del homicida Héctor en sus manos:"
+   },
+   "donde": "Canto XXIV, 719-739 (el lamento de Andrómaca ante el cadáver de Héctor)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:05": [
+  {
+   "cita": {
+    "autor": "Ilíada XXII, 396-398 · trad. de Emilio Crespo (Gredos)",
+    "es": "Le taladró por detrás los tendones de ambos pies desde el tobillo al talón, enhebró correas de bovina piel que ató a la caja del carro y dejó que la cabeza arrastrara."
+   },
+   "donde": "Canto XXII, 395-404 (Aquiles arrastra el cadáver de Héctor)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:06": [
+  {
+   "cita": {
+    "autor": "Ilíada XVIII, 23-27 · trad. de Emilio Crespo (Gredos)",
+    "es": "Cogió con ambas manos el requemado hollín y se lo derramó sobre la cabeza, afeando su amable rostro, mientras la negra ceniza se posaba sobre su túnica de néctar. Y extendido en el polvo cuan largo era, gran espacio"
+   },
+   "donde": "Canto XVIII, 22-34 (Aquiles se entrega al dolor por Patroclo)",
+   "libro": "iliada"
+  },
+  {
+   "cita": {
+    "autor": "Ilíada XVIII, 352-355 · trad. de Emilio Crespo (Gredos)",
+    "es": "Lo depositaron en un lecho y lo taparon con un fino lienzo desde los pies a la cabeza y encima con un blanco manto. Entonces toda la noche en torno de Aquiles, de rápidos pies, pasaron los mirmidones gimiendo y llorando por Patroclo,"
+   },
+   "donde": "Canto XVIII, 343-355 (el cuerpo de Patroclo es lavado y velado)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:07": [
+  {
+   "cita": {
+    "autor": "Ilíada XXIV, 477-479 · trad. de Emilio Crespo (Gredos)",
+    "es": "Entró el alto Príamo sin que ellos lo notaran, se paró cerca y estrechó las rodillas de Aquiles y le besó las manos terribles y homicidas que a tantos hijos suyos habían matado."
+   },
+   "donde": "Canto XXIV, 477-512 (Príamo suplica a Aquiles)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:08": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: El caballo de madera pertenece al ciclo troyano (Odisea, Eneida 2); la Ilíada termina con los funerales de Héctor y no lo menciona",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:09": [
+  {
+   "cita": {
+    "autor": "Ilíada XXIV, 28-30 · trad. de Emilio Crespo (Gredos)",
+    "es": "contra Príamo y contra su hueste por culpa de Alejandro, que había humillado a las diosas cuando llegaron a su aprisco y él se pronunció por la que le concedió la dolorosa lascivia"
+   },
+   "donde": "Canto XXIV, 25-30 (alusión al juicio de Paris)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:10": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: La ficha trata de la autenticidad de la máscara y de Schliemann, y no la asocia a ningún verso de la Ilíada",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:11": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: La ficha describe la puerta como monumento micénico y no la asocia a ningún pasaje concreto del poema",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:12": [
+  {
+   "cita": {
+    "autor": "Ilíada X, 261-265 · trad. de Emilio Crespo (Gredos)",
+    "es": "[…] y en la cabeza se caló un morrión fabricado de bovina piel. En su interior, múltiples correas muy prietas lo tensaban; por fuera, blancos colmillos de jabalí, de albos dientes, se sujetaban densos aquí y allá con pericia y destreza; y el fondo estaba forrado de fieltro."
+   },
+   "donde": "Canto X, 261-265 (el morrión con colmillos de jabalí que se calza Ulises)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:13": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: Laocoonte y las serpientes no están en la Ilíada: la ficha remite a Virgilio (Eneida) y a Plinio",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:14": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: El frontón de Afaya muestra un combate en Troya de los héroes de Egina, sin asociarse a ningún episodio concreto de la Ilíada",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:15": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: La ficha habla del yacimiento de Hisarlik y de sus nueve ciudades, sin asociarlo a un pasaje concreto del poema",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:16": [
+  {
+   "cita": {
+    "autor": "Ilíada XVI, 671-673 · trad. de Emilio Crespo (Gredos)",
+    "es": "y envíalo luego para que lo lleven ante los raudos escoltas, ante el Sueño y la Muerte, hermanos gemelos, quienes pronto lo depositarán en el pingüe pueblo de la vasta Licia,"
+   },
+   "donde": "Canto XVI, 666-683 (Apolo entrega el cuerpo de Sarpedón al Sueño y la Muerte)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:17": [
+  {
+   "cita": {
+    "autor": "Ilíada XVIII, 614-617 · trad. de Emilio Crespo (Gredos)",
+    "es": "Tras terminar toda la armadura, el ilustre cojitranco la levantó y la presentó delante de la madre de Aquiles, que, cual gavilán, descendió de un salto del nevado Olimpo, llevando las chispeantes armas de parte de Hefesto."
+   },
+   "donde": "Canto XVIII, 369-617 (Tetis en la fragua de Hefesto; el dios forja las armas de Aquiles)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:18": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: Aquiles y Pentesilea pertenecen a la Etiópida, poema perdido del ciclo troyano; la Ilíada no los cuenta",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:19": [
+  {
+   "cita": {
+    "autor": "Ilíada III, 441-442 · trad. de Emilio Crespo (Gredos)",
+    "es": "Mas, ea, acostémonos y deleitémonos en el amor. Nunca el deseo me ha cubierto así las mientes como ahora,"
+   },
+   "donde": "Canto III, 380-447 (Afrodita lleva a Helena junto a Paris en su alcoba)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:20": [
+  {
+   "cita": {
+    "autor": "Ilíada I, 345-347 · trad. de Emilio Crespo (Gredos)",
+    "es": "Así habló, y Patroclo obedeció a su compañero, y sacó de la tienda a Briseida, la de bellas mejillas, y se la dio para llevarla."
+   },
+   "donde": "Canto I, 318-348 (los heraldos se llevan a Briseida)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:21": [
+  {
+   "cita": {
+    "autor": "Ilíada XXIII, 259-261 · trad. de Emilio Crespo (Gredos)",
+    "es": "Y sacó de las naves premios para los certámenes: calderas, trípodes, caballos, mulas, magníficas cabezas de reses, mujeres de bellos talles y grisáceo hierro."
+   },
+   "donde": "Canto XXIII, 257-650 (los juegos fúnebres en honor de Patroclo: la carrera de carros)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:22": [
+  {
+   "cita": {
+    "autor": "Ilíada XXII, 276-278 · trad. de Emilio Crespo (Gredos)",
+    "es": "[…] Palas Atenea la sacó y se la devolvió a Aquiles sin que Héctor, pastor de huestes, lo notara."
+   },
+   "donde": "Canto XXII, 214-305 (Atenea engaña a Héctor y devuelve su lanza a Aquiles)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:23": [
+  {
+   "cita": {
+    "autor": "Ilíada I, 197-198 · trad. de Emilio Crespo (Gredos)",
+    "es": "Se detuvo detrás y cogió de la rubia cabellera al Pelida, a él solo apareciéndose. De los demás nadie la veía."
+   },
+   "donde": "Canto I, 188-222 (Atenea detiene a Aquiles cuando va a desenvainar la espada contra Agamenón)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:24": [
+  {
+   "cita": {
+    "autor": "Ilíada XXIV, 475-476 · trad. de Emilio Crespo (Gredos)",
+    "es": "Acababa de dejar el alimento después de comer y beber, y la mesa aún estaba puesta al lado."
+   },
+   "donde": "Canto XXIV, 473-512 (Príamo entra en la tienda de Aquiles)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:25": [
+  {
+   "cita": {
+    "autor": "Ilíada XXIV, 478-479 · trad. de Emilio Crespo (Gredos)",
+    "es": "y estrechó las rodillas de Aquiles y le besó las manos terribles y homicidas que a tantos hijos suyos habían matado."
+   },
+   "donde": "Canto XXIV, 477-506 (Príamo suplica a Aquiles el cuerpo de Héctor)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:26": [
+  {
+   "cita": null,
+   "donde": "Canto XXI (el papiro conserva un comentario a este canto, no el texto de Homero)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:27": [
+  {
+   "cita": null,
+   "donde": "Sin pasaje concreto: Es la portada de una traducción de la Ilíada entera al castellano, no ilustra ningún pasaje concreto",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:28": [
+  {
+   "cita": {
+    "autor": "Ilíada I, 12-14 · trad. de Emilio Crespo (Gredos)",
+    "es": "Pues aquél llegó a las veloces naves de los aqueos cargado de inmensos rescates para liberar a su hija, llevando en sus manos las ínfulas del flechador Apolo"
+   },
+   "donde": "Canto I, 12-32 (Crises llega a las naves y Agamenón lo despide)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:29": [
+  {
+   "cita": {
+    "autor": "Ilíada XXII, 396-398 · trad. de Emilio Crespo (Gredos)",
+    "es": "Le taladró por detrás los tendones de ambos pies desde el tobillo al talón, enhebró correas de bovina piel que ató a la caja del carro y dejó que la cabeza arrastrara."
+   },
+   "donde": "Canto XXII, 395-404 (Aquiles arrastra el cadáver de Héctor)",
+   "libro": "iliada"
+  },
+  {
+   "cita": {
+    "autor": "Ilíada XXIV, 505-506 · trad. de Emilio Crespo (Gredos)",
+    "es": "y he osado hacer lo que ningún terrestre mortal hasta ahora: acercar a mi boca la mano del asesino de mi hijo."
+   },
+   "donde": "Canto XXIV, 477-506 (Príamo suplica a Aquiles el cuerpo de Héctor)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:30": [
+  {
+   "cita": {
+    "autor": "Ilíada VI, 321-322 · trad. de Emilio Crespo (Gredos)",
+    "es": "Lo halló en la habitación manipulando las muy bellas armas, el broquel y la coraza, y palpando las piezas del corvo arco."
+   },
+   "donde": "Canto VI, 318-331 (Héctor reprocha a Paris en su cámara)",
+   "libro": "iliada"
+  }
+ ],
+ "iliada:31": [
+  {
+   "cita": {
+    "autor": "Ilíada XVIII, 70-73 · trad. de Emilio Crespo (Gredos)",
+    "es": "La augusta madre se presentó ante el gimiente hijo y tras exhalar un agudo gemido le abrazó la cabeza y llena de lástima dijo estas aladas palabras: «¡Hijo! ¿Por qué lloras? ¿Qué pena ha llegado a tu mente?"
+   },
+   "donde": "Canto XVIII, 65-93 (Tetis sale del mar a consolar a Aquiles por la muerte de Patroclo)",
+   "libro": "iliada"
+  }
+ ],
+ "levitico:01": [
+  {
+   "cita": {
+    "autor": "Levítico 9, 8 · Reina-Valera 1960",
+    "es": "Entonces se acercó Aarón al altar y degolló el becerro de la expiación que era por él."
+   },
+   "donde": "Levítico 8-9 (la consagración de Aarón y sus hijos y su primer sacrificio en el Tabernáculo)",
+   "libro": "levitico"
+  }
+ ],
+ "levitico:02": [
+  {
+   "cita": {
+    "autor": "Levítico 16, 21 · Reina-Valera 1960",
+    "es": "y pondrá Aarón sus dos manos sobre la cabeza del macho cabrío vivo, y confesará sobre él todas las iniquidades de los hijos de Israel, todas sus rebeliones y todos sus pecados, poniéndolos así sobre la cabeza del macho cabrío, y lo enviará al desierto por mano de un hombre destinado para esto."
+   },
+   "donde": "Levítico 16, 7-10 y 16, 20-22 (el macho cabrío para Azazel)",
+   "libro": "levitico"
+  }
+ ],
+ "levitico:03": [
+  {
+   "cita": {
+    "autor": "Levítico 8, 8 · Reina-Valera 1960",
+    "es": "Luego le puso encima el pectoral, y puso dentro del mismo los Urim y Tumim."
+   },
+   "donde": "Levítico 8, 7-9 (Aarón revestido con el efod, el pectoral, la mitra y la lámina de oro)",
+   "libro": "levitico"
+  }
+ ],
+ "levitico:04": [
+  {
+   "cita": {
+    "autor": "Levítico 1, 5 · Reina-Valera 1960",
+    "es": "Entonces degollará el becerro en la presencia de Jehová; y los sacerdotes hijos de Aarón ofrecerán la sangre, y la rociarán alrededor sobre el altar, el cual está a la puerta del tabernáculo de reunión."
+   },
+   "donde": "Levítico 1, 1-5 y 9, 7-9 (Moisés transmite la ley del holocausto; Aarón degüella la víctima en el altar)",
+   "libro": "levitico"
+  }
+ ],
+ "levitico:05": [
+  {
+   "cita": {
+    "autor": "Levítico 1, 10 · Reina-Valera 1960",
+    "es": "Si su ofrenda para holocausto fuere del rebaño, de las ovejas o de las cabras, macho sin defecto lo ofrecerá."
+   },
+   "donde": "Levítico 1, 10-13 (el holocausto del rebaño: cordero o cabra sin defecto)",
+   "libro": "levitico"
+  }
+ ],
+ "levitico:06": [
+  {
+   "cita": {
+    "autor": "Levítico 10, 2 · Reina-Valera 1960",
+    "es": "Y salió fuego de delante de Jehová y los quemó, y murieron delante de Jehová."
+   },
+   "donde": "Levítico 10, 1-3 (Nadab y Abiú y el fuego extraño)",
+   "libro": "levitico"
+  }
+ ],
+ "levitico:07": [
+  {
+   "cita": {
+    "autor": "Levítico 8, 8 · Reina-Valera 1960",
+    "es": "Luego le puso encima el pectoral, y puso dentro del mismo los Urim y Tumim."
+   },
+   "donde": "Levítico 8, 7-9 (Moisés viste a Aarón con el pectoral y los Urim y Tumim)",
+   "libro": "levitico"
+  }
+ ],
+ "levitico:08": [
+  {
+   "cita": {
+    "autor": "Levítico 14, 6 · Reina-Valera 1960",
+    "es": "Después tomará la avecilla viva, el cedro, la grana y el hisopo, y los mojará con la avecilla viva en la sangre de la avecilla muerta sobre las aguas corrientes"
+   },
+   "donde": "Levítico 14, 1-7 (la purificación del leproso con dos avecillas)",
+   "libro": "levitico"
+  }
+ ],
+ "levitico:09": [
+  {
+   "cita": {
+    "autor": "Levítico 4, 7 · Reina-Valera 1960",
+    "es": "Y el sacerdote pondrá de esa sangre sobre los cuernos del altar del incienso aromático, que está en el tabernáculo de reunión delante de Jehová"
+   },
+   "donde": "Levítico 4, 7 (la sangre sobre los cuernos del altar)",
+   "libro": "levitico"
+  }
+ ]
+}

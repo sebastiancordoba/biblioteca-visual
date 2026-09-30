@@ -79,6 +79,19 @@ LIBROS = [
                "de Ishtar.",
         "headings": ["Lo que hace que destaque", "Contexto histórico y arqueológico", "Procedencia"],
     },
+    {
+        "id": "eros", "corto": "Lágrimas de Eros", "carpeta": "Lagrimas_de_Eros",
+        "datos": "data_eros", "var": "EROS",
+        "tag": "Colección Las lágrimas de Eros",
+        "title": "Las lágrimas de Eros, de Georges Bataille",
+        "sub": "Las láminas del último libro de Bataille (1961), del Paleolítico a Gustave Moreau: "
+               "las venus de Laussel y Willendorf, el Pozo de Lascaux, las ménades de la cerámica "
+               "ática, Cranach, Baldung, el manierismo, Goya y Delacroix.",
+        "headings": ["Lo que hace que destaque", "Contexto histórico", "Autoría y procedencia"],
+        # Láminas del libro que no se pueden mostrar: obras con derechos vigentes o sin
+        # reproducción libre. Salen al final del libro como fichas de texto con un enlace.
+        "sin_imagen": ("data_eros_sin_imagen", "EROS_SIN_IMAGEN"),
+    },
 ]
 
 POR_ID = {l["id"]: l for l in LIBROS}
@@ -100,6 +113,16 @@ def entradas(libro):
     except ModuleNotFoundError:
         return []
     return list(getattr(mod, libro["var"], []))
+
+
+def sin_imagen(libro):
+    """Fichas de texto de las láminas que el libro reproduce y la colección no puede mostrar."""
+    if not libro.get("sin_imagen"): return []
+    modulo, var = libro["sin_imagen"]
+    try:
+        return list(getattr(importlib.import_module(modulo), var, []))
+    except ModuleNotFoundError:
+        return []
 
 
 def todos():

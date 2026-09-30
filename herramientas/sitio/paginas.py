@@ -180,12 +180,33 @@ def tarjeta(href, img, antetitulo, titulo, sub, R, texto=""):
 
 
 # ---------------------------------------------------------------- generación
+def en_libros(d, R):
+    """«En los libros»: de qué libro viene la obra, dónde, y qué dice de ella el autor."""
+    refs = d.get("referencias") or []
+    if not refs: return ""
+    e = html.escape
+    filas = []
+    for x in refs:
+        c = x.get("cita") or {}
+        cita = (f'<blockquote>«{e(c["es"])}»'
+                + (f'<span class="cita-original">{e(c["en"])}</span>' if c.get("en") else "")
+                + f'<cite>{e(c.get("autor") or "")}{", " if c.get("autor") and c.get("pagina") else ""}'
+                + (f'p. {e(str(c["pagina"]))}' if c.get("pagina") else "") + '</cite></blockquote>') if c.get("es") else ""
+        filas.append(f'<div class="ref-libro"><p><b>{e(TITULO_LIBRO.get(x["libro"], x["libro"]))}</b>'
+                     f'{" · " + e(x["donde"]) if x.get("donde") else ""}</p>{cita}</div>')
+    return f'<section class="en-libros"><h2>En los libros</h2>{"".join(filas)}</section>'
+
+
+TITULO_LIBRO = {}
+
+
 def generar():
     salida = subprocess.run(["node", os.path.join(AQUI, "extraer_datos.js"),
                              os.path.join(BUILD, "pre_imagenes.html")],
                             capture_output=True, text=True, check=True).stdout
     datos = json.loads(salida)
     libros, autores = datos["libros"], datos["autores"]
+    TITULO_LIBRO.update({L["id"]: L["title"] for L in libros})
     INTRO = intros()
     urls = []
 
@@ -272,6 +293,7 @@ def generar():
       <section><h2>{e(h1)}</h2><p>{t1}</p></section>
       <section><h2>{e(h2)}</h2><p>{t2}</p></section>
       <section><h2>{e(h3)}</h2><p>{t3}</p></section>
+      {en_libros(d, R)}
       <div class="autor-datos">{pie_fuentes}</div>
     </div>
     <aside class="ficha">
@@ -279,7 +301,7 @@ def generar():
         {f"<dt>Fecha</dt><dd>{e(d['fecha'])}</dd>" if d.get('fecha') else ""}
         {f"<dt>Dónde está</dt><dd><a href='{e(mapa_url)}' title='Ver en el mapa'>{e(sede[0])}</a><br><span>{e(sede[1])}</span></dd>" if sede else ""}
         {f"<dt>Imagen</dt><dd>{e(d.get('px', ''))} · {e(d.get('mp', ''))}</dd>" if d.get('px') else ""}
-        <dt>Libro</dt><dd><a href="{R}libros/{L['id']}/">{e(L['title'])}</a></dd>
+        <dt>{"Libros" if d.get("tambienEn") else "Libro"}</dt><dd><a href="{R}libros/{L['id']}/">{e(L['title'])}</a>{"".join(f'<br><a href="{R}{FICHAS[o["libro"]][o["i"]]}/">{e(TITULO_LIBRO[o["libro"]])}</a>' for o in d.get("tambienEn") or [])}</dd>
         {("<dt>Temas</dt><dd>" + "<br>".join(f'<a href="{R}temas/{t["clave"]}/">{e(t["titulo"])}</a>' for t in TEMAS_DE.get((L["id"], g), [])) + "</dd>") if TEMAS_DE.get((L["id"], g)) else ""}
       </dl>
       {f'''<a class="autor-mini" href="{R}autores/{a['clave']}/">{f'<img src="{R}{e(imagen(a["retrato"])[0])}" alt="">' if a.get('retrato') else ''}<span><small>Autor</small>{e(a['nombre'])}<em>{e(a['anios'])}</em></span></a>''' if a else ""}

@@ -7,7 +7,7 @@ Solo se incluyen las obras cuyas imágenes existen realmente en disco.
 """
 import io, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from libros import todos as _libros
+from libros import todos as _libros, sin_imagen as _sin_imagen
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "artefacto"))
 _cwd = os.getcwd()
 from mapa import museo_de as _museo_de, MUSEOS as _MUSEOS     # mapa.py cambia de directorio al importarse
@@ -23,6 +23,9 @@ FIN = "    /* ==== FIN DATOS GENERADOS ==== */"
 # Una imagen cuenta como presente si está en disco o si tiene su original enlazado en Commons
 # (enlaces.json): el sitio la sirve desde Commons y la copia local ya no hace falta.
 _ENL = json.load(io.open(os.path.join(ROOT, "herramientas", "artefacto", "datos", "enlaces.json"), encoding="utf-8"))
+_RUTA_REFS = os.path.join(ROOT, "herramientas", "referencias.json")
+_REFS = json.load(io.open(_RUTA_REFS, encoding="utf-8")) if os.path.exists(_RUTA_REFS) else {}
+
 def disponible(folder, f):
     return os.path.exists(os.path.join(ROOT, folder, f)) or f"{folder}/{f}" in _ENL
 
@@ -35,6 +38,9 @@ def build(entries, folder):
             omitted.append(e["title"]); continue
         d = {k: e[k] for k in
              ("title","artist","meta","wikiUrl","snippet","analysis","history","bio")}
+        # De qué libro viene la obra, dónde y, si lo hay, qué dice el autor de ella.
+        if e.get("referencias"):
+            d["referencias"] = e["referencias"]
         # El año permite ordenar la galería cronológicamente sin recalcularlo en el navegador.
         a = _anio(e)
         if a is not None:
@@ -66,6 +72,13 @@ def main():
         for d in details:
             k = _museo_de(d)
             d["sede"] = f"{_MUSEOS[k][0]}, {_MUSEOS[k][1]}" if k else None
+        # El pasaje de cada obra en los libros de la colección (referencias.json, por el número
+        # de su archivo): se suma a las referencias que ya traiga la ficha.
+        for d, g in zip(details, groups):
+            num = re.match(r"\d+", os.path.basename(g[0]["src"])).group(0)
+            for r in _REFS.get(f"{book_id}:{num}", []):
+                d.setdefault("referencias", [])
+                if r not in d["referencias"]: d["referencias"].append(r)
         counts[book_id] = len(details)
         print(f"{book_id}: {len(details)} obras, {sum(len(g) for g in groups)} imágenes"
               + (f"  (sin archivo: {', '.join(omitted)})" if omitted else ""))
@@ -80,6 +93,48 @@ def main():
         blocks.append(f"    BOOKS.{book_id} = Object.assign({m},\n"
                       f"      {{ details: [], groups: [] }});\n"
                       f"    BOOKS.{book_id}.details = {d};\n    BOOKS.{book_id}.groups = {g};")
+        # Láminas sin imagen propia: no entran en details ni en groups, de modo que el visor,
+        # la portada, la cronología y el mapa —que parten de la imagen— no se enteran.
+        si = _sin_imagen(libro)
+        if si:
+            campos = ("title", "artist", "meta", "texto", "motivo", "enlace", "pagina", "cita")
+            j = json.dumps([{k: x.get(k) for k in campos} for x in si], ensure_ascii=False, indent=2).replace("\n", "\n    ")
+            blocks.append(f"    BOOKS.{book_id}.sinImagen = {j};")
+            print(f"{book_id}: {len(si)} láminas sin imagen")
+
+    # ---- la misma obra en varios libros ----
+    # Dos fichas son la misma obra si su vista principal sale del mismo original de Commons.
+    # Cada una enlaza con las demás («También en») y todas juntan sus referencias: el Júpiter y
+    # Tetis de Ingres está en la Ilíada y en Las lágrimas de Eros.
+    from urllib.parse import unquote
+    from libros import POR_ID as _LIB
+    def _original(libro, i):
+        src = GRUPOS[libro][i][0]["src"][2:]
+        x = _ENL.get(src)
+        return unquote(x["original"]) if x else None
+    misma = {}
+    for libro in DETALLES:
+        for i in range(len(DETALLES[libro])):
+            k = _original(libro, i)
+            if k: misma.setdefault(k, []).append((libro, i))
+    for copias in misma.values():
+        if len(copias) < 2: continue
+        refs = []
+        for libro, i in copias:
+            for r in DETALLES[libro][i].get("referencias") or []:
+                if r not in refs: refs.append(r)
+        for libro, i in copias:
+            d = DETALLES[libro][i]
+            d["tambienEn"] = [{"libro": l, "i": j, "corto": _LIB[l]["corto"]} for l, j in copias if l != libro]
+            if refs: d["referencias"] = refs
+    print(f"obras en más de un libro: {sum(1 for c in misma.values() if len(c) > 1)}")
+    # Los details ya están volcados en blocks: se reescriben los de los libros afectados.
+    for libro in {l for c in misma.values() if len(c) > 1 for l, _ in c}:
+        d = json.dumps(DETALLES[libro], ensure_ascii=False, indent=2).replace("\n", "\n    ")
+        pre = f"    BOOKS.{libro}.details = "
+        k = next(n for n, b in enumerate(blocks) if pre in b)
+        cab, resto = blocks[k].split(pre, 1)
+        blocks[k] = cab + pre + d + ";\n    BOOKS." + libro + ".groups = " + resto.split(f";\n    BOOKS.{libro}.groups = ", 1)[1]
 
     # ---- autores ----
     # Cada autor se enlaza con sus obras por el campo `artist` de las fichas, sin listas

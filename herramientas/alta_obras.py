@@ -105,7 +105,8 @@ def main(entradas):
         porlibro.setdefault(lb, []).append({
             "files": files, "views": o["views"], "title": o["title"], "artist": o["artist"],
             "meta": o["meta"], "wikiUrl": o.get("wikiUrl"), "snippet": o["snippet"],
-            **{c: limpia(o[c]) for c in CAMPOS}})
+            **{c: limpia(o[c]) for c in CAMPOS},
+            **({"referencias": o["referencias"]} if o.get("referencias") else {})})
         fuentes[f"{lb}:{num}"] = {"id": f"{lb}:{num}", "meta": o["meta"],
                                   **{c: o[c] for c in CAMPOS},
                                   "fuentes": o["fuentes"], "discrepancias": o.get("discrepancias", []),
