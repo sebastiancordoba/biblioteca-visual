@@ -1119,7 +1119,10 @@ EROS_SIN_IMAGEN = [
   "meta": "Una fotografía de la muñeca (p. 178) y dos dibujos a lápiz (p. 179) | Paradero de los ejemplares reproducidos desconocido",
   "texto": "Una fotografía nocturna de la muñeca articulada de Bellmer, de pie junto a un arbusto, y dos dibujos de cuerpos entrelazados. Para la muñeca, Bataille remite a «Les Jeux de la poupée», con textos de Paul Éluard (preparado entre 1936 y 1938 y publicado en París en 1949); para los dibujos, a «Anatomie de l'image» (Le Terrain vague, 1957). De la serie de la muñeca hay copias fotográficas en varios museos, por ejemplo en el Metropolitan de Nueva York.",
   "motivo": "derechos",
-  "enlace": null,
+  "enlace": {
+   "rotulo": "Ver «Les Jeux de la poupée» (1949) en el MoMA",
+   "url": "https://www.moma.org/collection/works/434096"
+  },
   "cita": null,
   "fuentes": [
    {
@@ -1133,9 +1136,15 @@ EROS_SIN_IMAGEN = [
     "titulo": "Hans Bellmer, La Poupée (1938), 2005.100.643",
     "obra": "The Metropolitan Museum of Art",
     "url": "https://www.metmuseum.org/art/collection/search/285869"
+   },
+   {
+    "autor": null,
+    "titulo": "Hans Bellmer, Les jeux de la poupée (The Doll’s Games), publicado en 1949 (fotografías de 1936-1937), 443.2022",
+    "obra": "The Museum of Modern Art, Nueva York",
+    "url": "https://www.moma.org/collection/works/434096"
    }
   ],
-  "notas": "La traducción inglesa dice «Les yeux de la poupée», errata por «Les Jeux de la poupée». No se ha identificado qué copia de la fotografía ni qué dibujos son (el Met no publica imágenes). El poema del pie es de Éluard, no de Bataille."
+  "notas": "La traducción inglesa dice «Les yeux de la poupée», errata por «Les Jeux de la poupée». No se ha identificado qué copia de la fotografía ni qué dibujos son (el Met no publica imágenes). El enlace lleva al ejemplar del MoMA del libro al que remite Bataille, con 17 fotografías coloreadas a mano, no a la copia concreta que reproduce la lámina. El poema del pie es de Éluard, no de Bataille."
  },
  {
   "pagina": 180,
@@ -1163,7 +1172,10 @@ EROS_SIN_IMAGEN = [
   "meta": "Óleo sobre lienzo | 270,5 × 335 cm | Colección particular",
   "texto": "Una muchacha desnuda tendida en un diván mientras una figura pequeña descorre la cortina y deja entrar la luz. Es un lienzo grande, pintado entre 1952 y 1954. En 1961 estaba en la Galerie Henriette Gomes de París; hoy es de una colección particular.",
   "motivo": "derechos",
-  "enlace": null,
+  "enlace": {
+   "rotulo": "Ver la obra en Bridgeman Images",
+   "url": "https://www.bridgemanimages.com/en-US/balthus/la-chambre-1952-1954-oil-on-canvas/oil-on-canvas/asset/75775"
+  },
   "cita": {
    "es": "Los cuadros de Balthus son pocos y, aunque haya que contarlo entre los pintores más «modernos», nada los distingue claramente de los de los pintores tradicionales.",
    "en": "Balthus's paintings are few in number and, although he is to be counted among the most \"modern\" of painters, nothing clearly distinguishes them from those of traditional painters.",
@@ -1182,9 +1194,15 @@ EROS_SIN_IMAGEN = [
     "titulo": "Balthus, La camera, 1952-1954 (pie de imagen)",
     "obra": "Katarte / Bridgeman Images",
     "url": "https://www.katarte.it/balthus-pittore-misterioso-fascinoso-e-discusso/45-balthus-la-chambre-1952-54-270x335/"
+   },
+   {
+    "autor": null,
+    "titulo": "La Chambre, 1952-1954 (oil on canvas), Balthus, n.º 75775",
+    "obra": "Bridgeman Images",
+    "url": "https://www.bridgemanimages.com/en-US/balthus/la-chambre-1952-1954-oil-on-canvas/oil-on-canvas/asset/75775"
    }
   ],
-  "notas": "No hay ficha institucional a la que enlazar; los datos vienen del pie de Bridgeman Images."
+  "notas": "No hay ficha institucional a la que enlazar: el enlace lleva a la ficha de la agencia Bridgeman Images, de donde salen los datos (270,5 × 335 cm, colección particular)."
  },
  {
   "pagina": 182,
