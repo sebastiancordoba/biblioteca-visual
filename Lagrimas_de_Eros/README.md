@@ -4,7 +4,7 @@ Las lágrimas de Eros (1961) es el último libro de Georges Bataille: una histor
 
 ---
 
-## 🏛️ Galería de la Colección (121 obras)
+## 🏛️ Galería de la Colección (124 obras)
 
 | N° | Obra | Autoría / Procedencia | Ubicación | Wikipedia | Archivo |
 |---|---|---|---|---|---|
@@ -102,33 +102,36 @@ Las lágrimas de Eros (1961) es el último libro de Georges Bataille: una histor
 | 92 | **Masacre** | André Masson (1933) | Paradero actual desconocido | [Wikipedia](None) | [`96_Masacre.jpg`](./96_Masacre.jpg) |
 | 93 | **Sillón para Paulina Borghese** | André Masson | Paradero actual desconocido | [Wikipedia](None) | [`97_Sillon_para_Paulina_Borghese.jpg`](./97_Sillon_para_Paulina_Borghese.jpg) |
 | 94 | **Mantis religiosa** | André Masson | Paradero actual desconocido | [Wikipedia](None) | [`98_Mantis_religiosa_Lamina.jpg`](./98_Mantis_religiosa_Lamina.jpg) |
-| 95 | **La ciudad lunar (La Ville lunaire)** | Paul Delvaux (1944) | Paradero actual sin confirmar | [Wikipedia](None) | [`101_La_ciudad_lunar.jpg`](./101_La_ciudad_lunar.jpg) |
-| 96 | **Los lazos rosas (Les Nœuds roses)** | Paul Delvaux (1937) | Koninklijk Museum voor Schone Kunsten, Amberes (inv. 2850; antes colección particular) | [Wikipedia](https://artinflanders.be/nl/kunst/de-roze-strikken) | [`102_Los_lazos_rosas.jpg`](./102_Los_lazos_rosas.jpg) |
-| 97 | **Tren de noche (Train de nuit)** | Paul Delvaux (1947) | Toyama Prefectural Museum of Art and Design, Toyama (n.º 0059; antes colección particular) | [Wikipedia](https://jmapps.ne.jp/5670/det.html?data_id=205) | [`103_Tren_de_noche.jpg`](./103_Tren_de_noche.jpg) |
-| 98 | **El carnaval del sabio (Le Carnaval du sage)** | René Magritte (1947) | Colección particular (a la venta en M.S. Rau, Nueva Orleans, ref. 30-8762) | [Wikipedia](https://rauantiques.com/products/le-carnaval-du-sage-by-rene-magritte) | [`104_El_carnaval_del_sabio_Master.png`](./104_El_carnaval_del_sabio_Master.png) |
-| 99 | **La muñeca (La Poupée) y dos dibujos** | Hans Bellmer | Paradero de los ejemplares reproducidos desconocido | [Wikipedia](https://www.moma.org/collection/works/434096) | [`105_La_muneca.jpg`](./105_La_muneca.jpg) |
-| 100 | **La habitación (La Chambre)** | Balthus (1952-1954) | Colección particular | [Wikipedia](https://www.bridgemanimages.com/en-US/balthus/la-chambre-1952-1954-oil-on-canvas/oil-on-canvas/asset/75775) | [`107_La_habitacion.jpg`](./107_La_habitacion.jpg) |
-| 101 | **El sueño (Le Rêve)** | Balthus (1955-1956) | Paradero actual desconocido | [Wikipedia](None) | [`108_El_sueno.jpg`](./108_El_sueno.jpg) |
-| 102 | **El ángel de la anatomía (L'Ange de l'anatomie), primer estado** | Leonor Fini (1949) | Colección particular | [Wikipedia](https://www.leonor-fini.com/en/paintings/) | [`109_El_angel_de_la_anatomia.jpg`](./109_El_angel_de_la_anatomia.jpg) |
-| 103 | **La habitación (La Chambre noire)** | Leonor Fini (1939) | Colección particular | [Wikipedia](https://www.leonor-fini.com/en/paintings/) | [`110_La_habitacion_negra.jpg`](./110_La_habitacion_negra.jpg) |
-| 104 | **La amistad (L'Amitié)** | Leonor Fini (1958) | Colección particular | [Wikipedia](https://www.leonor-fini.com/en/paintings/) | [`111_La_amistad_Master.jpg`](./111_La_amistad_Master.jpg) |
-| 105 | **Amor incondicional (L'Amour sans condition)** | Leonor Fini | Colección particular (Sotheby's Nueva York, «Cherchez la femme», 2015, lote 9) | [Wikipedia](https://www.sothebys.com/en/auctions/ecatalogue/2015/cherchez-la-femme-n09398/lot.9.html) | [`112_Amor_incondicional_Master.jpg`](./112_Amor_incondicional_Master.jpg) |
-| 106 | **Dos figuras (Two Figures)** | Francis Bacon (1953) | Colección particular (catálogo razonado CR 53-24) | [Wikipedia](https://www.francis-bacon.com/artworks/paintings/two-figures) | [`113_Dos_figuras_Master.jpg`](./113_Dos_figuras_Master.jpg) |
-| 107 | **La hija pródiga (La Fille prodigue)** | Félix Labisse (1943) | Colección particular (subastada en Sotheby's, 2020) | [Wikipedia](https://www.sothebys.com/en/buy/auction/2020/impressionist-modern-art-day-sale-online/felix-labisse-la-fille-prodigue) | [`114_La_hija_prodiga_Master.jpg`](./114_La_hija_prodiga_Master.jpg) |
-| 108 | **Desnudo dormido (Nue endormie)** | Dorothea Tanning (1954) | Museum of Contemporary Art, Chicago (inv. 84.23; antes colección particular) | [Wikipedia](https://mcachicago.org/art-artists/collection/sleeping-nude/) | [`115_Desnudo_dormido_Master.jpg`](./115_Desnudo_dormido_Master.jpg) |
-| 109 | **Voltaje (Voltage)** | Dorothea Tanning (1942) | Paradero actual no indicado por la fundación | [Wikipedia](https://www.dorotheatanning.org/life-and-work/view/391) | [`116_Voltaje.jpg`](./116_Voltaje.jpg) |
-| 110 | **La mañana poética (La Matinée poétique)** | Félix Labisse (1944) | Paradero actual desconocido | [Wikipedia](None) | [`117_La_manana_poetica.jpg`](./117_La_manana_poetica.jpg) |
-| 111 | **Roberte y el coloso (variante)** | Pierre Klossowski | Paradero actual desconocido | [Wikipedia](None) | [`118_Roberte_y_el_coloso.jpg`](./118_Roberte_y_el_coloso.jpg) |
-| 112 | **Diana y Acteón** | Pierre Klossowski (1954) | Paradero no indicado en el catálogo razonado | [Wikipedia](http://www.pierre-klossowski.fr/pages/page.php?section=artiste&ch=peintures) | [`119_Diana_y_Acteon.jpg`](./119_Diana_y_Acteon.jpg) |
-| 113 | **Dibujos para «Roberte ce soir»** | Pierre Klossowski (1953) | Paradero no indicado en el catálogo razonado | [Wikipedia](http://www.pierre-klossowski.fr/pages/page.php?section=artiste&ch=peintures) | [`120_Dibujos_para_Roberte_ce_soir.jpg`](./120_Dibujos_para_Roberte_ce_soir.jpg) |
-| 114 | **La boca de la verdad** | Stanislao Lepri (1955) | Paradero actual desconocido | [Wikipedia](None) | [`121_La_boca_de_la_verdad.jpg`](./121_La_boca_de_la_verdad.jpg) |
-| 115 | **La tumba (Mon tombeau; antes «de Sade»)** | Clovis Trouille | Paradero actual desconocido | [Wikipedia](None) | [`122_Mi_tumba.jpg`](./122_Mi_tumba.jpg) |
-| 116 | **Primera clase (Mes funérailles)** | Clovis Trouille (1940) | Colección particular (Christie's París, 3 de octubre de 2024, lote 48) | [Wikipedia](https://www.christies.com/en/lot/lot-6498099) | [`123_Primera_clase_Master.jpg`](./123_Primera_clase_Master.jpg) |
-| 117 | **Sacrificio vudú** | Fotógrafo sin nombrar | Paradero de negativos y copias desconocido | [Wikipedia](None) | [`124_Ceremonia_y_posesion_vudu.jpg`](./124_Ceremonia_y_posesion_vudu.jpg) |
-| 118 | **Suplicio chino de los Cien Pedazos (lingchi), Pekín** | Fotógrafo desconocido (c. 1904-1905) | copia de Georges Bataille (colección particular); placa de la Agence Rol en la Bibliothèque nationale de France (Gallica, btv1b6914446r) | [Wikipedia](https://es.wikipedia.org/wiki/Muerte_por_mil_cortes) | [`82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg`](./82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg) |
-| 119 | **De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620)** | David Vinckboons y Dirck Eversen Lons (1620) | ejemplar digitalizado por la Biblioteca Digital Mundial (ítem 515) | [Wikipedia](https://es.wikipedia.org/wiki/Brev%C3%ADsima_relaci%C3%B3n_de_la_destrucci%C3%B3n_de_las_Indias) | [`83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg`](./83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg) |
-| 120 | **La decapitación de James Scott, duque de Monmouth, en Londres en 1685** | Jan Luyken (1698) | Rijksmuseum, Ámsterdam (RP-P-OB-44.637) | [Wikipedia](https://es.wikipedia.org/wiki/James_Scott,_I_duque_de_Monmouth) | [`84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg`](./84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg) |
-| 121 | **Sátiro llorando a una ninfa (La muerte de Procris)** | Piero di Cosimo (c. 1495) | National Gallery, Londres (NG698) | [Wikipedia](https://es.wikipedia.org/wiki/Piero_di_Cosimo) | [`85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg`](./85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg) |
+| 95 | **Mujeres condenadas (Femmes damnées)** | André Masson (1922) | Paradero actual desconocido | [Wikipedia](None) | [`99_Mujeres_condenadas_Lamina_ed_inglesa.png`](./99_Mujeres_condenadas_Lamina_ed_inglesa.png) |
+| 96 | **Lesbos** | André Masson (1922) | Paradero actual desconocido | [Wikipedia](None) | [`100_Lesbos_Lamina_ed_inglesa.png`](./100_Lesbos_Lamina_ed_inglesa.png) |
+| 97 | **La ciudad lunar (La Ville lunaire)** | Paul Delvaux (1944) | Paradero actual sin confirmar | [Wikipedia](None) | [`101_La_ciudad_lunar_Master.jpg`](./101_La_ciudad_lunar_Master.jpg) |
+| 98 | **Los lazos rosas (Les Nœuds roses)** | Paul Delvaux (1937) | Koninklijk Museum voor Schone Kunsten, Amberes (inv. 2850; antes colección particular) | [Wikipedia](https://artinflanders.be/nl/kunst/de-roze-strikken) | [`102_Los_lazos_rosas.jpg`](./102_Los_lazos_rosas.jpg) |
+| 99 | **Tren de noche (Train de nuit)** | Paul Delvaux (1947) | Toyama Prefectural Museum of Art and Design, Toyama (n.º 0059; antes colección particular) | [Wikipedia](https://jmapps.ne.jp/5670/det.html?data_id=205) | [`103_Tren_de_noche.jpg`](./103_Tren_de_noche.jpg) |
+| 100 | **El carnaval del sabio (Le Carnaval du sage)** | René Magritte (1947) | Colección particular (a la venta en M.S. Rau, Nueva Orleans, ref. 30-8762) | [Wikipedia](https://rauantiques.com/products/le-carnaval-du-sage-by-rene-magritte) | [`104_El_carnaval_del_sabio_Master.png`](./104_El_carnaval_del_sabio_Master.png) |
+| 101 | **La muñeca (La Poupée) y dos dibujos** | Hans Bellmer | Paradero de los ejemplares reproducidos desconocido | [Wikipedia](https://www.moma.org/collection/works/434096) | [`105_La_muneca.jpg`](./105_La_muneca.jpg) |
+| 102 | **A Sade** | Hans Bellmer (1947) | Paradero actual desconocido | [Wikipedia](None) | [`106_A_Sade_Lamina_ed_inglesa.png`](./106_A_Sade_Lamina_ed_inglesa.png) |
+| 103 | **La habitación (La Chambre)** | Balthus (1952-1954) | Colección particular | [Wikipedia](https://www.bridgemanimages.com/en-US/balthus/la-chambre-1952-1954-oil-on-canvas/oil-on-canvas/asset/75775) | [`107_La_habitacion.jpg`](./107_La_habitacion.jpg) |
+| 104 | **El sueño (Le Rêve)** | Balthus (1955-1956) | Paradero actual desconocido | [Wikipedia](None) | [`108_El_sueno.jpg`](./108_El_sueno.jpg) |
+| 105 | **El ángel de la anatomía (L'Ange de l'anatomie), primer estado** | Leonor Fini (1949) | Colección particular | [Wikipedia](https://www.leonor-fini.com/en/paintings/) | [`109_El_angel_de_la_anatomia.jpg`](./109_El_angel_de_la_anatomia.jpg) |
+| 106 | **La habitación (La Chambre noire)** | Leonor Fini (1939) | Colección particular | [Wikipedia](https://www.leonor-fini.com/en/paintings/) | [`110_La_habitacion_negra.jpg`](./110_La_habitacion_negra.jpg) |
+| 107 | **La amistad (L'Amitié)** | Leonor Fini (1958) | Colección particular | [Wikipedia](https://www.leonor-fini.com/en/paintings/) | [`111_La_amistad_Master.jpg`](./111_La_amistad_Master.jpg) |
+| 108 | **Amor incondicional (L'Amour sans condition)** | Leonor Fini | Colección particular (Sotheby's Nueva York, «Cherchez la femme», 2015, lote 9) | [Wikipedia](https://www.sothebys.com/en/auctions/ecatalogue/2015/cherchez-la-femme-n09398/lot.9.html) | [`112_Amor_incondicional_Master.jpg`](./112_Amor_incondicional_Master.jpg) |
+| 109 | **Dos figuras (Two Figures)** | Francis Bacon (1953) | Colección particular (catálogo razonado CR 53-24) | [Wikipedia](https://www.francis-bacon.com/artworks/paintings/two-figures) | [`113_Dos_figuras_Master.jpg`](./113_Dos_figuras_Master.jpg) |
+| 110 | **La hija pródiga (La Fille prodigue)** | Félix Labisse (1943) | Colección particular (subastada en Sotheby's, 2020) | [Wikipedia](https://www.sothebys.com/en/buy/auction/2020/impressionist-modern-art-day-sale-online/felix-labisse-la-fille-prodigue) | [`114_La_hija_prodiga_Master.jpg`](./114_La_hija_prodiga_Master.jpg) |
+| 111 | **Desnudo dormido (Nue endormie)** | Dorothea Tanning (1954) | Museum of Contemporary Art, Chicago (inv. 84.23; antes colección particular) | [Wikipedia](https://mcachicago.org/art-artists/collection/sleeping-nude/) | [`115_Desnudo_dormido_Master.jpg`](./115_Desnudo_dormido_Master.jpg) |
+| 112 | **Voltaje (Voltage)** | Dorothea Tanning (1942) | Paradero actual no indicado por la fundación | [Wikipedia](https://www.dorotheatanning.org/life-and-work/view/391) | [`116_Voltaje.jpg`](./116_Voltaje.jpg) |
+| 113 | **La mañana poética (La Matinée poétique)** | Félix Labisse (1944) | Paradero actual desconocido | [Wikipedia](None) | [`117_La_manana_poetica.jpg`](./117_La_manana_poetica.jpg) |
+| 114 | **Roberte y el coloso (variante)** | Pierre Klossowski | Paradero actual desconocido | [Wikipedia](None) | [`118_Roberte_y_el_coloso.jpg`](./118_Roberte_y_el_coloso.jpg) |
+| 115 | **Diana y Acteón** | Pierre Klossowski (1954) | Paradero no indicado en el catálogo razonado | [Wikipedia](http://www.pierre-klossowski.fr/pages/page.php?section=artiste&ch=peintures) | [`119_Diana_y_Acteon.jpg`](./119_Diana_y_Acteon.jpg) |
+| 116 | **Dibujos para «Roberte ce soir»** | Pierre Klossowski (1953) | Paradero no indicado en el catálogo razonado | [Wikipedia](http://www.pierre-klossowski.fr/pages/page.php?section=artiste&ch=peintures) | [`120_Dibujos_para_Roberte_ce_soir.jpg`](./120_Dibujos_para_Roberte_ce_soir.jpg) |
+| 117 | **La boca de la verdad** | Stanislao Lepri (1955) | Paradero actual desconocido | [Wikipedia](None) | [`121_La_boca_de_la_verdad.jpg`](./121_La_boca_de_la_verdad.jpg) |
+| 118 | **La tumba (Mon tombeau; antes «de Sade»)** | Clovis Trouille | Paradero actual desconocido | [Wikipedia](None) | [`122_Mi_tumba.jpg`](./122_Mi_tumba.jpg) |
+| 119 | **Primera clase (Mes funérailles)** | Clovis Trouille (1940) | Colección particular (Christie's París, 3 de octubre de 2024, lote 48) | [Wikipedia](https://www.christies.com/en/lot/lot-6498099) | [`123_Primera_clase_Master.jpg`](./123_Primera_clase_Master.jpg) |
+| 120 | **Sacrificio vudú** | Fotógrafo sin nombrar | Paradero de negativos y copias desconocido | [Wikipedia](None) | [`124_Ceremonia_y_posesion_vudu.jpg`](./124_Ceremonia_y_posesion_vudu.jpg) |
+| 121 | **Suplicio chino de los Cien Pedazos (lingchi), Pekín** | Fotógrafo desconocido (c. 1904-1905) | copia de Georges Bataille (colección particular); placa de la Agence Rol en la Bibliothèque nationale de France (Gallica, btv1b6914446r) | [Wikipedia](https://es.wikipedia.org/wiki/Muerte_por_mil_cortes) | [`82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg`](./82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg) |
+| 122 | **De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620)** | David Vinckboons y Dirck Eversen Lons (1620) | ejemplar digitalizado por la Biblioteca Digital Mundial (ítem 515) | [Wikipedia](https://es.wikipedia.org/wiki/Brev%C3%ADsima_relaci%C3%B3n_de_la_destrucci%C3%B3n_de_las_Indias) | [`83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg`](./83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg) |
+| 123 | **La decapitación de James Scott, duque de Monmouth, en Londres en 1685** | Jan Luyken (1698) | Rijksmuseum, Ámsterdam (RP-P-OB-44.637) | [Wikipedia](https://es.wikipedia.org/wiki/James_Scott,_I_duque_de_Monmouth) | [`84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg`](./84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg) |
+| 124 | **Sátiro llorando a una ninfa (La muerte de Procris)** | Piero di Cosimo (c. 1495) | National Gallery, Londres (NG698) | [Wikipedia](https://es.wikipedia.org/wiki/Piero_di_Cosimo) | [`85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg`](./85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg) |
 
 ---
 
@@ -2582,10 +2585,63 @@ André Masson (1896-1987), pintor y dibujante francés, pionero del dibujo autom
 
 ---
 
-### 95. La ciudad lunar (La Ville lunaire) — Paul Delvaux (1944)
+### 95. Mujeres condenadas (Femmes damnées) — André Masson (1922)
+
+![Mujeres condenadas (Femmes damnées)](./99_Mujeres_condenadas_Lamina_ed_inglesa.png)
+*Lámina del libro de Bataille (p. 172), edición inglesa de City Lights (1989)*
+
+#### Ficha Técnica
+
+- Tinta y aguada sobre papel (por lo que se ve en la reproducción)
+- Galerie Louise Leiris, París, en 1961
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Dibujo de 1922 con desnudos femeninos abrazados entre ondas. En 1961 estaba en la Galerie Louise Leiris. Bataille lo reproduce sin comentario.
+
+#### Contexto Histórico y Arqueológico
+
+Sin identificar en catálogos. El título, como el de la lámina siguiente («Lesbos»), coincide con el de poemas de Baudelaire sobre el amor entre mujeres, pero la relación no está documentada. La imagen es la lámina de la edición inglesa de City Lights (1989), recortada de su página: no se ha encontrado ninguna reproducción de la obra. La foto de página que se le había asignado era otra lámina de la edición española, «La Fiesta».
+
+#### Autoría y Procedencia
+
+André Masson (1896-1987), pintor y dibujante francés, pionero del dibujo automático y uno de los artistas más intensos del surrealismo.
+
+---
+
+### 96. Lesbos — André Masson (1922)
+
+![Lesbos](./100_Lesbos_Lamina_ed_inglesa.png)
+*Lámina del libro de Bataille (p. 173), edición inglesa de City Lights (1989)*
+
+#### Ficha Técnica
+
+- Tinta y aguada sobre papel (por lo que se ve en la reproducción)
+- Galerie Louise Leiris, París, en 1961
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Dibujo de 1922, compañero del anterior, con cuerpos femeninos tendidos y entrelazados. En 1961 estaba en la Galerie Louise Leiris.
+
+#### Contexto Histórico y Arqueológico
+
+Sin identificar en catálogos; sede actual desconocida. La imagen es la lámina de la edición inglesa de City Lights (1989), recortada de su página: no se ha encontrado ninguna reproducción de la obra. La foto de página que se le había asignado era la de «Los lazos rosas» de Delvaux, que ahora está en esa obra.
+
+#### Autoría y Procedencia
+
+André Masson (1896-1987), pintor y dibujante francés, pionero del dibujo automático y uno de los artistas más intensos del surrealismo.
+
+---
+
+### 97. La ciudad lunar (La Ville lunaire) — Paul Delvaux (1944)
+
+![La ciudad lunar (La Ville lunaire)](./101_La_ciudad_lunar_Master.jpg)
+*La ciudad lunar — Paul Delvaux (1944)*
 
 ![La ciudad lunar (La Ville lunaire)](./101_La_ciudad_lunar.jpg)
-*La ciudad lunar (La Ville lunaire) — Paul Delvaux (1944)*
+*Lámina del libro de Bataille (p. 174)*
 
 #### Ficha Técnica
 
@@ -2599,7 +2655,7 @@ Un esqueleto camina de noche por una calle bajo la luna, entre mujeres desnudas 
 
 #### Contexto Histórico y Arqueológico
 
-Paradero sin confirmar en una fuente fiable: una web divulgativa la da como óleo de 107,5 × 238 cm en una colección particular de Vaduz. Roucloux solo la cita para compararla con la versión de 1956, que sitúa en el museo de Lovaina la Nueva.
+Paradero sin confirmar en una fuente fiable: una web divulgativa la da como óleo de 107,5 × 238 cm en una colección particular de Vaduz. Roucloux solo la cita para compararla con la versión de 1956, que sitúa en el museo de Lovaina la Nueva. La imagen principal es la única reproducción en color que se ha encontrado: un escaneo de libro (con la trama de imprenta visible) publicado en WikiArt, sin fuente institucional ni de subasta. Coincide con la lámina —la mujer del paño amarillo, el desnudo junto a la columna, el esqueleto de espaldas, la pareja de la derecha y la luna— y lleva la firma «P. DELVAUX 9-44».
 
 #### Autoría y Procedencia
 
@@ -2607,7 +2663,7 @@ Paul Delvaux (1897-1994), pintor belga asociado al surrealismo, célebre por sus
 
 ---
 
-### 96. Los lazos rosas (Les Nœuds roses) — Paul Delvaux (1937)
+### 98. Los lazos rosas (Les Nœuds roses) — Paul Delvaux (1937)
 
 ![Los lazos rosas (Les Nœuds roses)](./102_Los_lazos_rosas.jpg)
 *Los lazos rosas (Les Nœuds roses) — Paul Delvaux (1937)*
@@ -2635,7 +2691,7 @@ Paul Delvaux (1897-1994), pintor belga asociado al surrealismo, célebre por sus
 
 ---
 
-### 97. Tren de noche (Train de nuit) — Paul Delvaux (1947)
+### 99. Tren de noche (Train de nuit) — Paul Delvaux (1947)
 
 ![Tren de noche (Train de nuit)](./103_Tren_de_noche.jpg)
 *Tren de noche (Train de nuit) — Paul Delvaux (1947)*
@@ -2660,7 +2716,7 @@ Paul Delvaux (1897-1994), pintor belga asociado al surrealismo, célebre por sus
 
 ---
 
-### 98. El carnaval del sabio (Le Carnaval du sage) — René Magritte (1947)
+### 100. El carnaval del sabio (Le Carnaval du sage) — René Magritte (1947)
 
 ![El carnaval del sabio (Le Carnaval du sage)](./104_El_carnaval_del_sabio_Master.png)
 *El carnaval del sabio — René Magritte (1947), M.S. Rau*
@@ -2680,7 +2736,7 @@ Una mujer desnuda de larga melena rubia y antifaz blanco, de pie ante una calle,
 
 #### Contexto Histórico y Arqueológico
 
-El pie de la edición española dice «René Magritte: El carnaval del sabio (1947). Col. Robert de Keyn, Bruselas», y es la obra que se ve en la lámina: coinciden la mujer con antifaz, el fantasma, el vaso y el edificio (la lámina recorta arriba y a la derecha). La edición inglesa la titula «Olympia», que es otro cuadro de Magritte (Georgette tendida con una caracola). Firmado abajo a la derecha, con título y fecha al dorso; se expuso en la Galerie Lou Cosyn de Bruselas en 1947. La imagen es la reproducción plana del marchante M.S. Rau, un PNG de paleta reducida. El «soveriegn» del inglés es errata de la edición.
+El pie de la edición española dice «René Magritte: El carnaval del sabio (1947). Col. Robert de Keyn, Bruselas», y es la obra que se ve en la lámina: coinciden la mujer con antifaz, el fantasma, el vaso y el edificio (la lámina recorta arriba y a la derecha). La edición inglesa de City Lights (1989) pone en esa página otra lámina: «Olympia» (Georgette tendida con una caracola), otro cuadro de Magritte; las cartas de Bataille a su editor piden el «Carnaval du sage». Firmado abajo a la derecha, con título y fecha al dorso; se expuso en la Galerie Lou Cosyn de Bruselas en 1947. La imagen es la reproducción plana del marchante M.S. Rau, un PNG de paleta reducida. El «soveriegn» del inglés es errata de la edición.
 
 #### Autoría y Procedencia
 
@@ -2688,7 +2744,7 @@ René Magritte (1898-1967), pintor surrealista belga, conocido por sus ingeniosa
 
 ---
 
-### 99. La muñeca (La Poupée) y dos dibujos — Hans Bellmer
+### 101. La muñeca (La Poupée) y dos dibujos — Hans Bellmer
 
 ![La muñeca (La Poupée) y dos dibujos](./105_La_muneca.jpg)
 *La muñeca (La Poupée) y dos dibujos — Hans Bellmer*
@@ -2715,7 +2771,32 @@ Hans Bellmer (1902-1975), escultor, fotógrafo y dibujante germano-francés, cé
 
 ---
 
-### 100. La habitación (La Chambre) — Balthus (1952-1954)
+### 102. A Sade — Hans Bellmer (1947)
+
+![A Sade](./106_A_Sade_Lamina_ed_inglesa.png)
+*Lámina del libro de Bataille (p. 180), edición inglesa de City Lights (1989)*
+
+#### Ficha Técnica
+
+- Lápiz sobre papel (por lo que se ve en la reproducción)
+- Col. Patricia Echaurren, en 1961
+- Paradero actual desconocido
+
+#### Lo que hace que destaque
+
+Dibujo de cabezas y cuerpos superpuestos en torno a unas costillas, en homenaje al marqués de Sade. Bataille lo fecha en Nueva York, en 1947, y lo sitúa en la colección de Patricia Echaurren.
+
+#### Contexto Histórico y Arqueológico
+
+Bellmer hizo varios dibujos «À Sade» a mediados de los años cuarenta (hay registro de subasta de uno a lápiz de 1946, de 27 × 20,5 cm), pero no se ha identificado este ni se han podido leer esas fichas. La imagen es la lámina de la edición inglesa de City Lights (1989), recortada de su página: no se ha encontrado ninguna reproducción de la obra. La foto de página que se le había asignado era la de los dos dibujos de Bellmer de la p. 179, que ahora está en «La muñeca».
+
+#### Autoría y Procedencia
+
+Hans Bellmer (1902-1975), escultor, fotógrafo y dibujante germano-francés, célebre por sus muñecas articuladas de tamaño natural que exploran el erotismo y la anatomía inconsciente.
+
+---
+
+### 103. La habitación (La Chambre) — Balthus (1952-1954)
 
 ![La habitación (La Chambre)](./107_La_habitacion.jpg)
 *La habitación (La Chambre) — Balthus (1952-1954)*
@@ -2740,7 +2821,7 @@ Balthus (Balthasar Klossowski de Rola, 1908-2001), pintor moderno de origen pola
 
 ---
 
-### 101. El sueño (Le Rêve) — Balthus (1955-1956)
+### 104. El sueño (Le Rêve) — Balthus (1955-1956)
 
 ![El sueño (Le Rêve)](./108_El_sueno.jpg)
 *El sueño (Le Rêve) — Balthus (1955-1956)*
@@ -2765,7 +2846,7 @@ Balthus (Balthasar Klossowski de Rola, 1908-2001), pintor moderno de origen pola
 
 ---
 
-### 102. El ángel de la anatomía (L'Ange de l'anatomie), primer estado — Leonor Fini (1949)
+### 105. El ángel de la anatomía (L'Ange de l'anatomie), primer estado — Leonor Fini (1949)
 
 ![El ángel de la anatomía (L'Ange de l'anatomie), primer estado](./109_El_angel_de_la_anatomia.jpg)
 *El ángel de la anatomía (L'Ange de l'anatomie), primer estado — Leonor Fini (1949)*
@@ -2790,7 +2871,7 @@ Leonor Fini (1907-1996), pintora, diseñadora e ilustradora argentina-italiana a
 
 ---
 
-### 103. La habitación (La Chambre noire) — Leonor Fini (1939)
+### 106. La habitación (La Chambre noire) — Leonor Fini (1939)
 
 ![La habitación (La Chambre noire)](./110_La_habitacion_negra.jpg)
 *La habitación (La Chambre noire) — Leonor Fini (1939)*
@@ -2818,7 +2899,7 @@ Leonor Fini (1907-1996), pintora, diseñadora e ilustradora argentina-italiana a
 
 ---
 
-### 104. La amistad (L'Amitié) — Leonor Fini (1958)
+### 107. La amistad (L'Amitié) — Leonor Fini (1958)
 
 ![La amistad (L'Amitié)](./111_La_amistad_Master.jpg)
 *La amistad — Leonor Fini (1958), Il Ponte*
@@ -2843,10 +2924,13 @@ Leonor Fini (1907-1996), pintora, diseñadora e ilustradora argentina-italiana a
 
 ---
 
-### 105. Amor incondicional (L'Amour sans condition) — Leonor Fini
+### 108. Amor incondicional (L'Amour sans condition) — Leonor Fini
 
 ![Amor incondicional (L'Amour sans condition)](./112_Amor_incondicional_Master.jpg)
 *Amor incondicional — Leonor Fini, Sotheby's*
+
+![Amor incondicional (L'Amour sans condition)](./112_Amor_incondicional_Lamina_ed_inglesa.png)
+*Lámina del libro de Bataille (p. 186), edición inglesa de City Lights (1989)*
 
 #### Ficha Técnica
 
@@ -2860,7 +2944,7 @@ Una figura de esqueleto, luminosa, sobre fondo oscuro. Bataille la fecha en 1959
 
 #### Contexto Histórico y Arqueológico
 
-No aparece en el catálogo de pinturas del sitio oficial. Webs secundarias (Tumblr) dan un «L'Amour sans condition» de 1958, óleo sobre lienzo de 36 × 25½ pulgadas, en la Weinstein Gallery de San Francisco; no se ha podido confirmar en una fuente fiable. La imagen de antes era la lámina de «La habitación» (La Chambre noire), que pasa a la obra 110. La de ahora es la del lote de Sotheby's titulado «L'Amour sans condition»: coinciden título y medidas, pero no se ha cotejado con la lámina de la p. 186, que falta. Sotheby's no da fecha (otras webs dicen 1958); procedencia: Galleria Galatea y Galleria Il Fauno de Turín; bibliografía: Jelenski 1968, p. 89.
+No aparece en el catálogo de pinturas del sitio oficial. Webs secundarias (Tumblr) dan un «L'Amour sans condition» de 1958, óleo sobre lienzo de 36 × 25½ pulgadas, en la Weinstein Gallery de San Francisco; no se ha podido confirmar en una fuente fiable. La imagen de antes era la lámina de «La habitación» (La Chambre noire), que pasa a la obra 110. La de ahora es la del lote de Sotheby's titulado «L'Amour sans condition»: coinciden título y medidas, y la composición es la de la lámina de la p. 186 de la edición inglesa («Unconditional Love (1959)»): la figura esqueletada arriba, que alarga un brazo, y el globo de luz abajo a la izquierda. Sotheby's no da fecha (otras webs dicen 1958); procedencia: Galleria Galatea y Galleria Il Fauno de Turín; bibliografía: Jelenski 1968, p. 89.
 
 #### Autoría y Procedencia
 
@@ -2868,7 +2952,7 @@ Leonor Fini (1907-1996), pintora, diseñadora e ilustradora argentina-italiana a
 
 ---
 
-### 106. Dos figuras (Two Figures) — Francis Bacon (1953)
+### 109. Dos figuras (Two Figures) — Francis Bacon (1953)
 
 ![Dos figuras (Two Figures)](./113_Dos_figuras_Master.jpg)
 *Dos figuras — Francis Bacon (1953), Gagosian*
@@ -2893,7 +2977,7 @@ Francis Bacon (1909-1992), pintor británico de origen irlandés, uno de los cre
 
 ---
 
-### 107. La hija pródiga (La Fille prodigue) — Félix Labisse (1943)
+### 110. La hija pródiga (La Fille prodigue) — Félix Labisse (1943)
 
 ![La hija pródiga (La Fille prodigue)](./114_La_hija_prodiga_Master.jpg)
 *La hija pródiga — Félix Labisse (1943), Sotheby's*
@@ -2921,7 +3005,7 @@ Félix Labisse (1905-1982), pintor e ilustrador surrealista francés, creador de
 
 ---
 
-### 108. Desnudo dormido (Nue endormie) — Dorothea Tanning (1954)
+### 111. Desnudo dormido (Nue endormie) — Dorothea Tanning (1954)
 
 ![Desnudo dormido (Nue endormie)](./115_Desnudo_dormido_Master.jpg)
 *Desnudo dormido — Dorothea Tanning (1954), MCA Chicago*
@@ -2946,7 +3030,7 @@ Dorothea Tanning (1910-2012), pintora, escultora y escritora estadounidense, des
 
 ---
 
-### 109. Voltaje (Voltage) — Dorothea Tanning (1942)
+### 112. Voltaje (Voltage) — Dorothea Tanning (1942)
 
 ![Voltaje (Voltage)](./116_Voltaje.jpg)
 *Voltaje (Voltage) — Dorothea Tanning (1942)*
@@ -2971,7 +3055,7 @@ Dorothea Tanning (1910-2012), pintora, escultora y escritora estadounidense, des
 
 ---
 
-### 110. La mañana poética (La Matinée poétique) — Félix Labisse (1944)
+### 113. La mañana poética (La Matinée poétique) — Félix Labisse (1944)
 
 ![La mañana poética (La Matinée poétique)](./117_La_manana_poetica.jpg)
 *La mañana poética (La Matinée poétique) — Félix Labisse (1944)*
@@ -2996,7 +3080,7 @@ Félix Labisse (1905-1982), pintor e ilustrador surrealista francés, creador de
 
 ---
 
-### 111. Roberte y el coloso (variante) — Pierre Klossowski
+### 114. Roberte y el coloso (variante) — Pierre Klossowski
 
 ![Roberte y el coloso (variante)](./118_Roberte_y_el_coloso.jpg)
 *Roberte y el coloso (variante) — Pierre Klossowski*
@@ -3020,7 +3104,7 @@ Pierre Klossowski (1905-2001), escritor, traductor y dibujante francés, hermano
 
 ---
 
-### 112. Diana y Acteón — Pierre Klossowski (1954)
+### 115. Diana y Acteón — Pierre Klossowski (1954)
 
 ![Diana y Acteón](./119_Diana_y_Acteon.jpg)
 *Diana y Acteón — Pierre Klossowski (1954)*
@@ -3045,7 +3129,7 @@ Pierre Klossowski (1905-2001), escritor, traductor y dibujante francés, hermano
 
 ---
 
-### 113. Dibujos para «Roberte ce soir» — Pierre Klossowski (1953)
+### 116. Dibujos para «Roberte ce soir» — Pierre Klossowski (1953)
 
 ![Dibujos para «Roberte ce soir»](./120_Dibujos_para_Roberte_ce_soir.jpg)
 *Dibujos para «Roberte ce soir» — Pierre Klossowski (1953)*
@@ -3070,7 +3154,7 @@ Pierre Klossowski (1905-2001), escritor, traductor y dibujante francés, hermano
 
 ---
 
-### 114. La boca de la verdad — Stanislao Lepri (1955)
+### 117. La boca de la verdad — Stanislao Lepri (1955)
 
 ![La boca de la verdad](./121_La_boca_de_la_verdad.jpg)
 *La boca de la verdad — Stanislao Lepri (1955)*
@@ -3094,7 +3178,7 @@ Stanislao Lepri (1905-1980), pintor italiano adscrito al realismo mágico y al s
 
 ---
 
-### 115. La tumba (Mon tombeau; antes «de Sade») — Clovis Trouille
+### 118. La tumba (Mon tombeau; antes «de Sade») — Clovis Trouille
 
 ![La tumba (Mon tombeau; antes «de Sade»)](./122_Mi_tumba.jpg)
 *La tumba (Mon tombeau; antes «de Sade») — Clovis Trouille*
@@ -3118,7 +3202,7 @@ Clovis Trouille (1889-1975), pintor surrealista francés célebre por sus obras 
 
 ---
 
-### 116. Primera clase (Mes funérailles) — Clovis Trouille (1940)
+### 119. Primera clase (Mes funérailles) — Clovis Trouille (1940)
 
 ![Primera clase (Mes funérailles)](./123_Primera_clase_Master.jpg)
 *Mis funerales (Primera clase) — Clovis Trouille (1940), Christie's*
@@ -3146,7 +3230,7 @@ Clovis Trouille (1889-1975), pintor surrealista francés célebre por sus obras 
 
 ---
 
-### 117. Sacrificio vudú — Fotógrafo sin nombrar
+### 120. Sacrificio vudú — Fotógrafo sin nombrar
 
 ![Sacrificio vudú](./124_Ceremonia_y_posesion_vudu.jpg)
 *Sacrificio vudú — Fotógrafo sin nombrar*
@@ -3170,7 +3254,7 @@ Fotógrafo no identificado que documentó ceremonias del culto vudú en Haití a
 
 ---
 
-### 118. Suplicio chino de los Cien Pedazos (lingchi), Pekín — Fotógrafo desconocido (c. 1904-1905)
+### 121. Suplicio chino de los Cien Pedazos (lingchi), Pekín — Fotógrafo desconocido (c. 1904-1905)
 
 ![Suplicio chino de los Cien Pedazos (lingchi), Pekín](./82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg)
 *El condenado atado al poste, la fotografía que Bataille poseía desde 1925 — fotógrafo desconocido (c. 1904-1905), reproducida en «Las lágrimas de Eros»*
@@ -3198,7 +3282,7 @@ Sin autor identificado: la base Turandot de Bourgon no da el nombre del fotógra
 
 ---
 
-### 119. De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620) — David Vinckboons y Dirck Eversen Lons (1620)
+### 122. De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620) — David Vinckboons y Dirck Eversen Lons (1620)
 
 ![De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620)](./83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg)
 *De la tiranía en Yucatán, p. 33 — David Vinckboons y Dirck Eversen Lons (1620), Biblioteca Digital Mundial*
@@ -3223,7 +3307,7 @@ La ficha de Commons atribuye las láminas al dibujante David Vinckboons (1576-16
 
 ---
 
-### 120. La decapitación de James Scott, duque de Monmouth, en Londres en 1685 — Jan Luyken (1698)
+### 123. La decapitación de James Scott, duque de Monmouth, en Londres en 1685 — Jan Luyken (1698)
 
 ![La decapitación de James Scott, duque de Monmouth, en Londres en 1685](./84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg)
 *La decapitación del duque de Monmouth — Jan Luyken (1698), Rijksmuseum, Ámsterdam*
@@ -3248,7 +3332,7 @@ Jan Luyken nació en Ámsterdam el 16 de abril de 1649 y murió allí el 5 de ab
 
 ---
 
-### 121. Sátiro llorando a una ninfa (La muerte de Procris) — Piero di Cosimo (c. 1495)
+### 124. Sátiro llorando a una ninfa (La muerte de Procris) — Piero di Cosimo (c. 1495)
 
 ![Sátiro llorando a una ninfa (La muerte de Procris)](./85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg)
 *Sátiro llorando a una ninfa — Piero di Cosimo (c. 1495), National Gallery, Londres*
