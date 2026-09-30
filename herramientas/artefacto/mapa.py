@@ -135,6 +135,8 @@ MUSEOS = {
  "moreau":     ("Musée Gustave Moreau","París",48.8793,2.3321),
  "high":       ("High Museum of Art","Atlanta",33.7901,-84.3855),
  "detroit":    ("Detroit Institute of Arts","Detroit",42.3594,-83.0645),
+ "lacoste":    ("Castillo de Lacoste","Lacoste",43.8323,5.2737),
+ "machecoul":  ("Castillo de Machecoul","Machecoul",46.9937,-1.8233),
 }
 
 # ---------- qué museo corresponde a cada ficha ----------
@@ -154,7 +156,7 @@ REGLAS = [
  ("borghese","borghese"),("palazzo pitti","pitti"),("beaux-arts, ruan","ruan"),("art et d'histoire, ginebra","ginebra"),
  ("sabauda","sabauda"),("san fernando","sanfernando"),("beaux-arts de paris","ensba"),
  ("ecole nationale superieure des beaux-arts","ensba"),("beaux-arts, lyon","lyon"),("gustave moreau","moreau"),
- ("high museum","high"),("detroit institute","detroit"),
+ ("high museum","high"),("detroit institute","detroit"),("lacoste","lacoste"),("machecoul","machecoul"),
  ("germigny","germigny"),("santa catalina, sinai","sinai"),("universidad de edimburgo","edimburgo_ul"),("san pietro in vincoli","vincoli"),("staatsbibliothek zu berlin","sbb"),("new york public library","nypl"),("asuncion, cusco","cusco"),("walters art museum","walters"),
  ("museo de israel","israelmus"),("museo nacional de beirut","beirut"),("museo de nabeul","nabeul"),("akdamar","akdamar"),("santa sofia, kiev","kiev"),("cleveland museum","cleveland"),("auckland art gallery","auckland"),("arte turco e islamico","tiem"),("belas artes, rio de janeiro","mnba_rio"),("arte occidental, tokio","nmwa"),("virreinato","virreinato"),("rijksmuseum","rijks"),("arte de ponce","ponce"),("narga selassie","narga"),("te papa","tepapa"),("munal","munal"),("lady lever","ladylever"),("salar jung","salarjung"),("bibliotheque nationale de france","bnf"),
  ("bagawat","bagawat"),("dar al-kutub","darkutub"),("beit alfa","beitalfa"),

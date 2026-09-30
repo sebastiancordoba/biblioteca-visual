@@ -613,40 +613,6 @@ EROS_SIN_IMAGEN = [
   "notas": "Identificación NO lograda de ninguna de las dos. La imagen de la derecha es un grabado y no consta que sea de Boucher; el pie de Bataille es ambiguo. Sin sede y sin enlace. La cita de la p. 103 es sobre Boucher en general, no sobre estas láminas."
  },
  {
-  "pagina": 125,
-  "title": "Ezzelin Bracciaferro meditando sobre el cuerpo de Meduna (en el libro, «Corazón abierto…»)",
-  "artist": "Johann Heinrich Füssli / Henry Fuseli (1779)",
-  "meta": "Dibujo | British Museum, Londres (1892,0314.1) | hay otra versión en el Kunsthaus de Zúrich",
-  "texto": "Un hombre con espada, sentado en el borde de una cama y con la mano en la frente, contempla a una mujer tendida en el suelo con los ojos vendados; sobre la cama, un reloj de arena. Es el tema de Ezzelin Bracciaferro, conde de Rávena, que medita sobre el cuerpo de Meduna, a la que mató por infidelidad durante su ausencia en Tierra Santa, según reza la inscripción del grabado de Thomas Holloway (1791) derivado de Füssli. Bataille cita como fuente la Bibliothèque Nationale y el libro «The Drawings of Henry Fuseli» (Nueva York, 1949).",
-  "motivo": "sin_reproduccion",
-  "enlace": {
-   "rotulo": "Ver el dibujo en el British Museum",
-   "url": "https://www.britishmuseum.org/collection/object/P_1892-0314-1"
-  },
-  "cita": null,
-  "fuentes": [
-   {
-    "autor": "Georges Bataille",
-    "titulo": "The Tears of Eros",
-    "obra": "City Lights Books, San Francisco (1989), trad. de Peter Connor, p. 125",
-    "url": "https://archive.org/details/tearsoferos0000bata"
-   },
-   {
-    "autor": "Thomas Holloway (grabador), según Füssli",
-    "titulo": "Count Ezzelin Bracciaferro musing over the body of Meduna (1791), 1853-1210-565",
-    "obra": "British Museum vía Wikimedia Commons",
-    "url": "https://www.britishmuseum.org/collection/object/P_1853-1210-565"
-   },
-   {
-    "autor": "Johann Heinrich Füssli",
-    "titulo": "Ezzelin Bracciaferro musing over Meduna (1779), 1892,0314.1",
-    "obra": "British Museum vía Wikimedia Commons",
-    "url": "https://commons.wikimedia.org/wiki/File:F%C3%BCssli_-_Ezzelin_Bracciaferro_musing_over_Meduna._1779,_1892,0314.1.jpg"
-   }
-  ],
-  "notas": "Identificación PROBABLE: comparé visualmente la lámina con la imagen del dibujo del British Museum (coinciden la pose, el reloj de arena, la venda y los rizos de la mujer). Bataille dice Bibliothèque Nationale; el libro de Ganz (1949) reproduce el dibujo, así que la sede puede ser un error o una copia. La web del British Museum devolvió 403 (no pude abrirla): la URL del enlace sigue el patrón estándar del museo y no está comprobada. La técnica del dibujo no consta en la fuente; la fecha 1779 es la de la etiqueta de Commons."
- },
- {
   "pagina": 137,
   "title": "Retrato de Herodes (Herodes compuesto de niños)",
   "artist": "Giuseppe Arcimboldo (atribuido; siglo XVI)",
@@ -676,67 +642,6 @@ EROS_SIN_IMAGEN = [
    }
   ],
   "notas": "Sin enlace: no he encontrado una ficha de museo de esta versión (colección particular); los lotes de Sotheby's son otras versiones (seguidor de Arcimboldo) y no sirven de enlace. La atribución a Arcimboldo es la de Bataille; la fecha c. 1566 que da Commons procede de una web sin fiabilidad y no se usa. Medidas, soporte y paradero actual del ejemplar Cardazzo sin confirmar."
- },
- {
-  "pagina": 138,
-  "title": "El castillo de Machecoul, de Gilles de Rais (fotografía)",
-  "artist": "Fotografía del lugar (autor sin identificar)",
-  "meta": "Castillo y plaza fuerte, siglos XIII-XVI | Machecoul (Loira Atlántico) | inscrito como monumento histórico (17 de marzo de 2004)",
-  "texto": "Antiguo castillo feudal de finales del siglo XIII, construido en tres campañas: una torre circular de principios del XIII, un châtelet del XV y una residencia de hacia 1500, a los que se añadieron fortificaciones hacia 1580-1600. La base Mérimée lo registra como «château dit de Gilles de Retz». Bataille lo reproduce al empezar el capítulo dedicado a Gilles de Rais.",
-  "motivo": "sin_reproduccion",
-  "enlace": {
-   "rotulo": "Ver la ficha del castillo en la base Mérimée",
-   "url": "https://pop.culture.gouv.fr/notice/merimee/PA00108639"
-  },
-  "cita": {
-   "es": "Sade conocía a Gilles de Rais y apreciaba en ese hombre una dureza de piedra.",
-   "en": "Sade knew of Gilles de Rais, and appreciated in this man a hardness of stone.",
-   "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
-   "pagina": 138
-  },
-  "fuentes": [
-   {
-    "autor": null,
-    "titulo": "Château dit «de Gilles de Retz» et place forte (PA00108639)",
-    "obra": "POP, base Mérimée, Ministère de la Culture",
-    "url": "https://pop.culture.gouv.fr/notice/merimee/PA00108639"
-   },
-   {
-    "autor": "Georges Bataille",
-    "titulo": "The Tears of Eros",
-    "obra": "City Lights Books, San Francisco (1989), trad. de Peter Connor, p. 138",
-    "url": "https://archive.org/details/tearsoferos0000bata"
-   }
-  ],
-  "notas": "Es una fotografía del lugar, no una obra. El vínculo con Gilles de Rais consta en el nombre de la ficha Mérimée y en el pie de Bataille; la ficha no da más detalles. La cita se refiere a Gilles de Rais, no al castillo."
- },
- {
-  "pagina": 138,
-  "title": "El castillo de Lacoste, del marqués de Sade (fotografía)",
-  "artist": "Fotografía del lugar (autor sin identificar)",
-  "meta": "Castillo | Lacoste (Vaucluse) | inscrito como monumento histórico (21 de agosto de 1992); propiedad privada",
-  "texto": "Castillo de Lacoste, en Vaucluse, hoy de propiedad privada. Está inscrito como monumento histórico desde 1992, con sus patios y sus fosos secos, y la base Mérimée anota su relación con la obra literaria del marqués de Sade. Bataille lo reproduce en la misma página que el castillo de Gilles de Rais, al empezar el capítulo que los relaciona.",
-  "motivo": "sin_reproduccion",
-  "enlace": {
-   "rotulo": "Ver la ficha del castillo en la base Mérimée",
-   "url": "https://pop.culture.gouv.fr/notice/merimee/PA00082229"
-  },
-  "cita": null,
-  "fuentes": [
-   {
-    "autor": null,
-    "titulo": "Château de Lacoste (PA00082229)",
-    "obra": "POP, base Mérimée, Ministère de la Culture",
-    "url": "https://pop.culture.gouv.fr/notice/merimee/PA00082229"
-   },
-   {
-    "autor": "Georges Bataille",
-    "titulo": "The Tears of Eros",
-    "obra": "City Lights Books, San Francisco (1989), trad. de Peter Connor, p. 138",
-    "url": "https://archive.org/details/tearsoferos0000bata"
-   }
-  ],
-  "notas": "Es una fotografía del lugar. El pie remite a la p. 111, que no habla del castillo, así que no hay cita."
  },
  {
   "pagina": 154,

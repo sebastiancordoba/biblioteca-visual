@@ -38,7 +38,8 @@ PAIS={"Ciudad del Vaticano":"Vaticano","Florencia":"Italia","Venecia":"Italia","
  "Montesquieu-Avantès":"Francia","Beaune":"Francia","Ruan":"Francia","Lille":"Francia","Lyon":"Francia",
  "Delos":"Grecia","Pompeya":"Italia","Mantua":"Italia","Turín":"Italia","Čachtice":"Eslovaquia",
  "Hamburgo":"Alemania","Fráncfort del Meno":"Alemania","Núremberg":"Alemania","Dresde":"Alemania",
- "Oslo":"Noruega","Ginebra":"Suiza","Atlanta":"Estados Unidos","Detroit":"Estados Unidos"}
+ "Oslo":"Noruega","Ginebra":"Suiza","Atlanta":"Estados Unidos","Detroit":"Estados Unidos",
+ "Lacoste":"Francia","Machecoul":"Francia"}
 
 # El continente se deduce del país, y el mapa activa solo los botones con obras: si
 # mañana entra una pieza en El Cairo, África se enciende sola.

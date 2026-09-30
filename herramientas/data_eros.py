@@ -1463,6 +1463,29 @@ EROS = [
  },
  {
   "files": [
+   "86_Ezzelin_Bracciaferro_medita_ante_el_cuerpo_de_Meduna.jpg"
+  ],
+  "views": [
+   "Ezzelin Bracciaferro medita ante Meduna — Henry Fuseli (1779), British Museum"
+  ],
+  "title": "Ezzelin Bracciaferro medita ante el cuerpo de Meduna",
+  "artist": "Henry Fuseli (1779)",
+  "meta": "Dibujo | medidas sin verificar | British Museum, Londres (1892,0314.1)",
+  "wikiUrl": "https://es.wikipedia.org/wiki/Johann_Heinrich_F%C3%BCssli",
+  "snippet": "Un caballero se sujeta la frente al borde del lecho mientras a sus pies yace la esposa que acaba de matar: Fuseli inventó la historia y Lavater la usó para ilustrar el remordimiento.",
+  "analysis": "El tema es un crimen consumado y su resaca: el catálogo del Museo Soane lo resume, con palabras de Lavater, como «un caballero que acaba de asesinar a su amante», encadenado por el remordimiento y acusado por la presencia de su víctima, que «deplora su locura pero no se arrepiente». La descripción del British Museum para el grabado de Holloway según la misma composición precisa que el conde está sentado con la cabeza en la mano y medita sobre la muerte de su esposa, a la que ha matado por infidelidad y que yace a sus pies. En la lámina que reproduce Bataille el caballero, con la espada al cinto, se apoya la frente en la mano, y junto a él, sobre el lecho, hay un reloj de arena; la mujer yace tendida en el suelo con el cuerpo cubierto por una túnica. El Web Gallery of Art ve en la figura sentada, de «mirada hueca», el motivo con que Fuseli expresa el horror, la incredulidad y la impotencia ante el destino. Bataille coloca la lámina, sin comentarla, en el capítulo «El libertinaje en el siglo XVIII y el marqués de Sade», entre Boucher y las brujas de Macbeth del propio Fuseli. El pie la titula «Open Heart…» y remite a la Bibliothèque Nationale y a «The Drawings of Henry Füseli», Nueva York, 1949.",
+  "history": "Fuseli pintó tres versiones del tema, y la del Museo Soane de Londres (P143) es la única que se conoce hoy. Esa pintura se expuso en la Royal Academy en 1780 con el título «The Italian Count» y parece ser una versión reducida hecha como modelo para la mezzotinta de Smith de 1781. La composición se difundió después por los «Ensayos de fisionomía» de Lavater: la grabó Lips para la edición francesa de 1781-1786 y Holloway para la inglesa. El catálogo del Soane menciona un boceto preparatorio en el British Museum (Schiff 417), inscrito «Zurich Feb 1779», relacionado con una de las pinturas perdidas. El archivo de Commons reproduce un dibujo del British Museum con el número 1892,0314.1 y la fecha 1779. John Soane compró la pintura al pintor Henry Tresham en julio de 1802, y Antoine-Jean Gros hizo un dibujo a partir de ella (Louvre, R.F. 29956/22).",
+  "bio": "Henry Fuseli, Johann Heinrich Füssli (1741-1825), fue pintor, poeta, dibujante e ilustrador suizo afincado en Inglaterra. Martin Myrone lo cuenta entre las mentes creativas más inventivas de su tiempo, dedicado a lo misterioso y lo imaginativo. Los personajes de este cuadro son invención suya: cuando Lord Byron quiso averiguar la fuente de «Ezzelin y Meduna», el pintor le respondió que se los había inventado. Según Tomory, citado por el Soane, la figura de Ezzelin se inspira en el tirano Ezzelino da Romano (muerto en 1259), llamado Braccioferro o Brazo de Hierro. Byron se refirió a la pintura en su diario el 20 de marzo de 1814.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 125",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
    "57_Las_hermanas_fatidicas_Macbeth_acto_I_escena_3.jpg"
   ],
   "views": [
@@ -1721,6 +1744,57 @@ EROS = [
     "libro": "eros",
     "donde": "Lámina de la p. 136",
     "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "87_El_castillo_de_Lacoste_del_marques_de_Sade.jpg"
+  ],
+  "views": [
+   "El castillo de Lacoste — fotografía de Suwannee.payne (2013), Lacoste"
+  ],
+  "title": "El castillo de Lacoste, del marqués de Sade",
+  "artist": "Anónimo, castillo medieval acondicionado por los Sade (c. 1741-1771)",
+  "meta": "Castillo en ruinas; fotografía de 2013 | — | Lacoste, Vaucluse (Mérimée PA00082229)",
+  "wikiUrl": "https://es.wikipedia.org/wiki/Lacoste_(Vaucluse)",
+  "snippet": "Las ruinas del castillo provenzal donde Sade tuvo su residencia principal entre 1771 y 1777, y que la crítica considera la matriz de los castillos de su obra, empezando por el Silling de «Las 120 jornadas de Sodoma».",
+  "analysis": "Bataille reproduce una fotografía del castillo de Lacoste en la misma página que la del castillo de Machecoul, al abrir el capítulo «Gilles de Rais y Erzsébet Báthory». El pie solo dice «Lacoste (Vaucluse): el castillo del marqués de Sade» y remite a la página 111, donde Bataille escribe que Sade pasó treinta años de su vida en prisión y pobló su soledad de sueños de gritos terribles y cuerpos ensangrentados. El sentido de la lámina lo da la crítica sadiana: para Geneviève Goubier-Robert, La Coste es la matriz que engendra los castillos de la ficción, y en particular el más acabado de todos, Silling, propiedad de Durcet en «Las 120 jornadas de Sodoma». La ficha del Ministerio de Cultura francés declara como interés del edificio su vínculo con la obra literaria del marqués de Sade. La fotografía de la colección no es la de 1961 del libro sino una de 2013, que la ficha del archivo describe solo como «Château de Lacoste, Vaucluse, France». El archivo figura en la categoría de esculturas de Vaucluse, y otra fotografía de Commons describe un «monumento al marqués de Sade delante del castillo de Lacoste», sin dar su autor ni su fecha.",
+  "history": "Según François Champarnaud, entre 1771 y 1777 el castillo de La Coste, cerca de Aviñón, puede considerarse la residencia principal del marqués. El edificio se amuebló en el siglo XVIII en dos oleadas: la del conde de Sade, padre del marqués, hacia 1741-1743, y la del hijo hacia 1767 y 1771, antes de que se entregara al teatro en el verano de 1772. Los cuadros de su galería se conocen por dos inventarios, de 1769 y de 1778. Henri Fauville reconstruyó en «Lacoste: Sade en Provence» (Edisud, 1984) la historia del castillo desde la Edad Media, y en ella Sade aparece, según la reseña de Michel Delon, como «un aristócrata arrogante, imbuido de sus privilegios, aferrado a una fortuna que mengua». El castillo, con sus patios y sus fosos secos, está inscrito como monumento histórico por orden del 21 de agosto de 1992 y es de propiedad privada.",
+  "bio": "No es obra de un autor: es un castillo señorial cuya construcción, según la reseña del libro de Fauville, se remonta a la Edad Media. Lo acondicionaron en el siglo XVIII el conde de Sade y su hijo, el marqués Donatien Alphonse François de Sade. La base Mérimée no da fechas de construcción, solo su protección y su vínculo con la obra de Sade. La fotografía es de la usuaria de Commons Suwannee.payne, tomada el 10 de junio de 2013 y publicada con licencia CC BY-SA 3.0.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 138",
+    "cita": null
+   }
+  ]
+ },
+ {
+  "files": [
+   "88_El_castillo_de_Machecoul_de_Gilles_de_Rais.jpg"
+  ],
+  "views": [
+   "El castillo de Machecoul — fotografía de Melutopia (2011), Machecoul-Saint-Même"
+  ],
+  "title": "El castillo de Machecoul, de Gilles de Rais",
+  "artist": "Anónimo, castillo de los señores de Retz (c. 1235-1600)",
+  "meta": "Castillo en ruinas; fotografía de 2011 | — | Machecoul-Saint-Même, Loira Atlántico (Mérimée PA00108639)",
+  "wikiUrl": "https://es.wikipedia.org/wiki/Machecoul",
+  "snippet": "Las ruinas del castillo de los señores de Retz, donde Gilles de Rais, compañero de Juana de Arco, fue detenido en 1440 antes de ser juzgado y ejecutado en Nantes.",
+  "analysis": "Bataille abre con esta fotografía, y la del castillo de Sade en Lacoste, el capítulo «Gilles de Rais y Erzsébet Báthory», bajo el pie «Machecoul: el castillo de Gilles de Rais». En la misma página escribe que Sade conocía a Gilles de Rais y apreciaba en él «una dureza de piedra», y cita las declaraciones del proceso sobre los niños asesinados. Más adelante presenta a Gilles de Rais como el extremo de una violencia que después decae: «En sus fortalezas, Gilles de Rais torturó y mató a decenas de niños, quizá incluso a cientos». La lámina no es, pues, una obra de arte sino el escenario de los crímenes cuyo proceso Bataille había editado dos años antes en «Le Procès de Gilles de Rais» (1959). La fotografía de la colección no es la del libro: es de 2011 y su ficha la describe como «Château de Gilles de Retz - Machecoul, Loire-Atlantique».",
+  "history": "La base Mérimée describe un antiguo castillo feudal de finales del siglo XIII con tres campañas de construcción en alzado: una torre circular de comienzos del siglo XIII, un châtelet del siglo XV y el basamento de una residencia de hacia 1500 con troneras a la francesa. Hacia 1580-1600 se le añadieron nuevas fortificaciones. El ayuntamiento atribuye su construcción, entre 1235 y 1248, a Pierre de Dreux, duque de Bretaña, y señala que los Gondy lo transformaron después en fortaleza abaluartada. Situado sobre el Falleron, controlaba el comercio de la sal y la gestión del agua, y se excava arqueológicamente desde 2008. En su castillo de Machecoul fue detenido Gilles de Rais en 1440, antes de ser juzgado en Nantes por brujería, herejía y asesinato. Fue ejecutado en Nantes el 26 de octubre de 1440. Las ruinas están inscritas como monumento histórico desde el 17 de marzo de 2004.",
+  "bio": "No es obra de un autor: es el castillo de los señores de Retz, levantado según el ayuntamiento por Pierre de Dreux y rehecho en los siglos XIV y XV. Fue residencia de Gilles de Rais, mariscal de Francia. Salomon Reinach resumía en 1904 que el mariscal, compañero de Juana de Arco desde 1428 y encargado de velar por ella, fue acusado en 1440 de haber mancillado y matado a varios centenares de niños. Bataille publicó los documentos del proceso con una introducción suya (Club français du livre, 1959). Jean-Pierre Le Bouler ha estudiado esa introducción a propósito de lo que Bataille pensaba de la caballería medieval. La fotografía es del usuario de Commons Melutopia, tomada el 29 de septiembre de 2011 y publicada con licencia CC BY-SA 3.0.",
+  "referencias": [
+   {
+    "libro": "eros",
+    "donde": "Lámina de la p. 138",
+    "cita": {
+     "es": "En sus fortalezas, Gilles de Rais torturó y mató a decenas de niños, quizá incluso a cientos.",
+     "en": "In his fortresses, Gilles de Rais tortured and killed dozens of children, perhaps even hundreds.",
+     "autor": "Georges Bataille, «Las lágrimas de Eros» (1961), traducido al español de la ed. inglesa de City Lights (1989)",
+     "pagina": 142
+    }
    }
   ]
  },

@@ -74,7 +74,7 @@
   ("VI","Los dioses construyen el Esagila","si","Tablilla del Esagil · estela de Asurbanipal"),
   ("VII","Los cincuenta nombres de Marduk","si","Sello de Marduk y Nabu · estela de Bel-harran-beli-usur"),
   ("—","La recitación en el Año Nuevo","si","Ritual del akītu, Louvre")]),
- "Las lágrimas de Eros":("Las láminas del último libro de Bataille. La cobertura no mide pasajes que falten sino qué láminas se pueden mostrar: 85 con imagen libre y 69 sin ella, por derechos de autor o porque no hay reproducción libre.","Cap.",[
+ "Las lágrimas de Eros":("Las láminas del último libro de Bataille. La cobertura no mide pasajes que falten sino qué láminas se pueden mostrar: 88 con imagen libre y 66 sin ella, por derechos de autor o porque no hay reproducción libre.","Cap.",[
   ("I.1","La conciencia de la muerte: las venus paleolíticas","si","Trasimeno · La Ferrassie · Lespugue · Brassempouy · Laussel · Willendorf · Grimaldi"),
   ("I.1","El Pozo de Lascaux","casi","Escena del Pozo — en Commons solo a 315 px"),
   ("I.2","Trabajo y juego: las cuevas de Trois-Frères; Ain Sakhri","si","Hombre-bisonte · el Hechicero · los amantes de Ain Sakhri"),
@@ -84,7 +84,7 @@
   ("II.II.3","El manierismo","si","Giulio Romano · Gossaert · Bronzino · Correggio · Fontainebleau · Spranger · Zucchi · Tiziano · Caron · Tintoretto"),
   ("II.II.4","El libertinaje del siglo XVIII y Sade","si","Vermeer · Strobel · Picart según Poussin · Rembrandt · Rubens · Füssli"),
   ("II.II.5","Goya","si","Las viejas · la maja desnuda · Caprichos · Disparates · disciplinantes · caníbales · la degollación"),
-  ("II.II.6","Gilles de Rais y Erzsébet Báthory","casi","El castillo de Čachtice"),
+  ("II.II.6","Gilles de Rais y Erzsébet Báthory","si","Los castillos de Machecoul, Lacoste y Čachtice"),
   ("II.II.7","La evolución del mundo moderno","si","Géricault · Prud'hon · Ingres · Delacroix"),
   ("II.II.8","Delacroix, Manet, Degas, Moreau","si","Manet · Cézanne · Degas · Toulouse-Lautrec · Moreau"),
   ("II.II.8","Los surrealistas","no","Picasso, Ernst, Masson, Delvaux, Magritte, Bellmer, Balthus, Fini, Bacon, Tanning, Klossowski… — derechos vigentes"),

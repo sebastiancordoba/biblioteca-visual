@@ -4,7 +4,7 @@ Las lágrimas de Eros (1961) es el último libro de Georges Bataille: una histor
 
 ---
 
-## 🏛️ Galería de la Colección (85 obras)
+## 🏛️ Galería de la Colección (88 obras)
 
 | N° | Obra | Autoría / Procedencia | Ubicación | Wikipedia | Archivo |
 |---|---|---|---|---|---|
@@ -64,35 +64,38 @@ Las lágrimas de Eros (1961) es el último libro de Georges Bataille: una histor
 | 54 | **La cama francesa (Het ledikant)** | Rembrandt (1646) | Rijksmuseum, Ámsterdam (RP-P-OB-633) | [Wikipedia](https://es.wikipedia.org/wiki/Rembrandt) | [`54_La_cama_francesa_Het_ledikant.jpg`](./54_La_cama_francesa_Het_ledikant.jpg) |
 | 55 | **Cabeza de Medusa** | Pedro Pablo Rubens y Frans Snyders (c. 1613) | Kunsthistorisches Museum, Gemäldegalerie, Viena (GG 3834) | [Wikipedia](https://es.wikipedia.org/wiki/Pedro_Pablo_Rubens) | [`55_Cabeza_de_Medusa.jpg`](./55_Cabeza_de_Medusa.jpg) |
 | 56 | **Las consecuencias de la guerra** | Pedro Pablo Rubens (1637-1638) | Galleria Palatina, Palazzo Pitti, Florencia (Palatina 86) | [Wikipedia](https://es.wikipedia.org/wiki/Los_horrores_de_la_guerra) | [`56_Las_consecuencias_de_la_guerra.jpg`](./56_Las_consecuencias_de_la_guerra.jpg) |
-| 57 | **Las hermanas fatídicas (Macbeth, acto I, escena 3)** | John Raphael Smith, según Henry Füssli (1785) | The Metropolitan Museum of Art, Nueva York (59.570.361) | [Wikipedia](https://es.wikipedia.org/wiki/Johann_Heinrich_F%C3%BCssli) | [`57_Las_hermanas_fatidicas_Macbeth_acto_I_escena_3.jpg`](./57_Las_hermanas_fatidicas_Macbeth_acto_I_escena_3.jpg) |
-| 58 | **La pesadilla** | Henry Füssli (1781) | Detroit Institute of Arts, Detroit (55.5.A) | [Wikipedia](https://es.wikipedia.org/wiki/La_pesadilla) | [`58_La_pesadilla.jpg`](./58_La_pesadilla.jpg) |
-| 59 | **Las viejas (El Tiempo)** | Francisco de Goya (c. 1810-1812) | Palais des Beaux-Arts, Lille (P 50) | [Wikipedia](https://es.wikipedia.org/wiki/El_Tiempo_y_las_viejas) | [`59_Las_viejas_El_Tiempo.jpg`](./59_Las_viejas_El_Tiempo.jpg) |
-| 60 | **La maja desnuda** | Francisco de Goya (1795-1800) | Museo Nacional del Prado, Madrid (P00742) | [Wikipedia](https://es.wikipedia.org/wiki/La_maja_desnuda) | [`60_La_maja_desnuda.jpg`](./60_La_maja_desnuda.jpg) |
-| 61 | **Tántalo (Capricho 9)** | Francisco de Goya (c. 1798-1799) | Metropolitan Museum of Art, Nueva York (30.54.42) | [Wikipedia](https://es.wikipedia.org/wiki/T%C3%A1ntalo_(Goya)) | [`61_Tantalo_Capricho_9.jpg`](./61_Tantalo_Capricho_9.jpg) |
-| 62 | **El amor y la muerte (Capricho 10)** | Francisco de Goya (c. 1797-1799) | Rijksmuseum, Ámsterdam (RP-P-1921-2031) | [Wikipedia](https://es.wikipedia.org/wiki/Los_Caprichos) | [`62_El_amor_y_la_muerte_Capricho_10.jpg`](./62_El_amor_y_la_muerte_Capricho_10.jpg) |
-| 63 | **Disparate desordenado (Disparate matrimonial)** | Francisco de Goya (c. 1815-1819) | Metropolitan Museum of Art, Nueva York (24.30.8) | [Wikipedia](https://es.wikipedia.org/wiki/Los_disparates) | [`63_Disparate_desordenado_Disparate_matrimonial.jpg`](./63_Disparate_desordenado_Disparate_matrimonial.jpg) |
-| 64 | **Procesión de disciplinantes** | Francisco de Goya (1808-1812) | Real Academia de Bellas Artes de San Fernando, Madrid (0674) | [Wikipedia](https://es.wikipedia.org/wiki/Procesi%C3%B3n_de_disciplinantes) | [`64_Procesion_de_disciplinantes.jpg`](./64_Procesion_de_disciplinantes.jpg) |
-| 65 | **Caníbales preparando a sus víctimas** | Francisco de Goya (c. 1798-1800) | Musée des Beaux-Arts et d'Archéologie, Besanzón (896.1.176) | [Wikipedia](None) | [`65_Canibales_preparando_a_sus_victimas.jpg`](./65_Canibales_preparando_a_sus_victimas.jpg) |
-| 66 | **Caníbales contemplando restos humanos** | Francisco de Goya (c. 1798-1800) | Musée des Beaux-Arts et d'Archéologie, Besanzón (896.1.177) | [Wikipedia](None) | [`66_Canibales_contemplando_restos_humanos.jpg`](./66_Canibales_contemplando_restos_humanos.jpg) |
-| 67 | **La degollación** | Seguidor de Goya (c. 1808) | Museo Nacional del Prado, Madrid (P007110) | [Wikipedia](https://es.wikipedia.org/wiki/Francisco_de_Goya) | [`67_La_degollacion.jpg`](./67_La_degollacion.jpg) |
-| 68 | **El castillo de Čachtice, de Erzsébet Báthory** | Anónimo, Reino de Hungría (s. XIII, 1200-1250) | Čachtice, región de Trenčín, Eslovaquia | [Wikipedia](https://es.wikipedia.org/wiki/Isabel_B%C3%A1thory) | [`68_El_castillo_de_Cachtice_de_Erzsebet_Bathory.jpg`](./68_El_castillo_de_Cachtice_de_Erzsebet_Bathory.jpg) |
-| 69 | **Leda y el cisne** | Théodore Géricault (c. 1816-1817) | École nationale supérieure des beaux-arts, París (EBA 956 a-d) | [Wikipedia](https://es.wikipedia.org/wiki/Th%C3%A9odore_G%C3%A9ricault) | [`69_Leda_y_el_cisne.jpg`](./69_Leda_y_el_cisne.jpg) |
-| 70 | **Phrosine y Mélidore** | Pierre-Paul Prud'hon (1797) | Rijksmuseum, Ámsterdam (RP-P-1955-57) | [Wikipedia](https://es.wikipedia.org/wiki/Pierre-Paul_Prud%27hon) | [`70_Phrosine_y_Melidore.jpg`](./70_Phrosine_y_Melidore.jpg) |
-| 71 | **Júpiter y Tetis** | Jean-Auguste-Dominique Ingres (1811) | Musée Granet, Aix-en-Provence, Francia (depósito del Estado de 1835; propiedad de la ciudad desde 2024) | [Wikipedia](https://es.wikipedia.org/wiki/J%C3%BApiter_y_Tetis) | [`71_Jupiter_y_Tetis.jpg`](./71_Jupiter_y_Tetis.jpg) |
-| 72 | **Estudio de mujer desnuda tendida en un diván, llamado «La mujer de las medias blancas»** | Eugène Delacroix (1825-1826) | Musée du Louvre, París (RF 1657) | [Wikipedia](https://es.wikipedia.org/wiki/Eug%C3%A8ne_Delacroix) | [`72_Estudio_de_mujer_desnuda_tendida_en_un_divan_llamado_La_muje.jpg`](./72_Estudio_de_mujer_desnuda_tendida_en_un_divan_llamado_La_muje.jpg) |
-| 73 | **Mujer acariciando un loro** | Eugène Delacroix (1827) | Musée des Beaux-Arts, Lyon (B 566) | [Wikipedia](https://es.wikipedia.org/wiki/Mujer_acariciando_un_loro) | [`73_Mujer_acariciando_un_loro.jpg`](./73_Mujer_acariciando_un_loro.jpg) |
-| 74 | **La muerte de Sardanápalo** | Eugène Delacroix (1827) | Musée du Louvre, París (RF 2346) | [Wikipedia](https://es.wikipedia.org/wiki/La_muerte_de_Sard%C3%A1n%C3%A1palo) | [`74_La_muerte_de_Sardanapalo.jpg`](./74_La_muerte_de_Sardanapalo.jpg) |
-| 75 | **Olympia (aguafuerte, plancha pequeña)** | Édouard Manet (1867) | Metropolitan Museum of Art, Nueva York (31.31.1) | [Wikipedia](https://es.wikipedia.org/wiki/Olympia_(Manet)) | [`75_Olympia_aguafuerte_plancha_pequena.jpg`](./75_Olympia_aguafuerte_plancha_pequena.jpg) |
-| 76 | **El festín (La orgía)** | Paul Cézanne (c. 1867) | Colección particular (FWN 596) | [Wikipedia](https://es.wikipedia.org/wiki/Paul_C%C3%A9zanne) | [`76_El_festin_La_orgia.jpg`](./76_El_festin_La_orgia.jpg) |
-| 77 | **Una moderna Olympia** | Paul Cézanne (1873-1874) | Musée d'Orsay, París (RF 1951 31) | [Wikipedia](https://es.wikipedia.org/wiki/Paul_C%C3%A9zanne) | [`77_Una_moderna_Olympia.jpg`](./77_Una_moderna_Olympia.jpg) |
-| 78 | **Tres muchachas sentadas (La Maison Tellier)** | Edgar Degas (1877-1881) | Rijksmuseum, Ámsterdam (RP-P-1967-88) | [Wikipedia](https://es.wikipedia.org/wiki/Edgar_Degas) | [`78_Tres_muchachas_sentadas_La_Maison_Tellier.jpg`](./78_Tres_muchachas_sentadas_La_Maison_Tellier.jpg) |
-| 79 | **El abandono (Las dos amigas)** | Henri de Toulouse-Lautrec (1895) | Colección particular | [Wikipedia](https://es.wikipedia.org/wiki/Henri_de_Toulouse-Lautrec) | [`79_El_abandono_Las_dos_amigas.jpg`](./79_El_abandono_Las_dos_amigas.jpg) |
-| 80 | **Salomé tatuada (Salomé bailando)** | Gustave Moreau (c. 1874) | Musée national Gustave Moreau, París (Cat. 211) | [Wikipedia](https://es.wikipedia.org/wiki/Salom%C3%A9_tatuada) | [`80_Salome_tatuada_Salome_bailando.jpg`](./80_Salome_tatuada_Salome_bailando.jpg) |
-| 81 | **La aparición** | Gustave Moreau (1876) | Musée du Louvre, departamento de Artes Gráficas, fondo del Musée d'Orsay, París (RF 2130) | [Wikipedia](https://es.wikipedia.org/wiki/Gustave_Moreau) | [`81_La_aparicion.jpg`](./81_La_aparicion.jpg) |
-| 82 | **Suplicio chino de los Cien Pedazos (lingchi), Pekín** | Fotógrafo desconocido (c. 1904-1905) | copia de Georges Bataille (colección particular); placa de la Agence Rol en la Bibliothèque nationale de France (Gallica, btv1b6914446r) | [Wikipedia](https://es.wikipedia.org/wiki/Muerte_por_mil_cortes) | [`82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg`](./82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg) |
-| 83 | **De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620)** | David Vinckboons y Dirck Eversen Lons (1620) | ejemplar digitalizado por la Biblioteca Digital Mundial (ítem 515) | [Wikipedia](https://es.wikipedia.org/wiki/Brev%C3%ADsima_relaci%C3%B3n_de_la_destrucci%C3%B3n_de_las_Indias) | [`83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg`](./83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg) |
-| 84 | **La decapitación de James Scott, duque de Monmouth, en Londres en 1685** | Jan Luyken (1698) | Rijksmuseum, Ámsterdam (RP-P-OB-44.637) | [Wikipedia](https://es.wikipedia.org/wiki/James_Scott,_I_duque_de_Monmouth) | [`84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg`](./84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg) |
-| 85 | **Sátiro llorando a una ninfa (La muerte de Procris)** | Piero di Cosimo (c. 1495) | National Gallery, Londres (NG698) | [Wikipedia](https://es.wikipedia.org/wiki/Piero_di_Cosimo) | [`85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg`](./85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg) |
+| 57 | **Ezzelin Bracciaferro medita ante el cuerpo de Meduna** | Henry Fuseli (1779) | British Museum, Londres (1892,0314.1) | [Wikipedia](https://es.wikipedia.org/wiki/Johann_Heinrich_F%C3%BCssli) | [`86_Ezzelin_Bracciaferro_medita_ante_el_cuerpo_de_Meduna.jpg`](./86_Ezzelin_Bracciaferro_medita_ante_el_cuerpo_de_Meduna.jpg) |
+| 58 | **Las hermanas fatídicas (Macbeth, acto I, escena 3)** | John Raphael Smith, según Henry Füssli (1785) | The Metropolitan Museum of Art, Nueva York (59.570.361) | [Wikipedia](https://es.wikipedia.org/wiki/Johann_Heinrich_F%C3%BCssli) | [`57_Las_hermanas_fatidicas_Macbeth_acto_I_escena_3.jpg`](./57_Las_hermanas_fatidicas_Macbeth_acto_I_escena_3.jpg) |
+| 59 | **La pesadilla** | Henry Füssli (1781) | Detroit Institute of Arts, Detroit (55.5.A) | [Wikipedia](https://es.wikipedia.org/wiki/La_pesadilla) | [`58_La_pesadilla.jpg`](./58_La_pesadilla.jpg) |
+| 60 | **Las viejas (El Tiempo)** | Francisco de Goya (c. 1810-1812) | Palais des Beaux-Arts, Lille (P 50) | [Wikipedia](https://es.wikipedia.org/wiki/El_Tiempo_y_las_viejas) | [`59_Las_viejas_El_Tiempo.jpg`](./59_Las_viejas_El_Tiempo.jpg) |
+| 61 | **La maja desnuda** | Francisco de Goya (1795-1800) | Museo Nacional del Prado, Madrid (P00742) | [Wikipedia](https://es.wikipedia.org/wiki/La_maja_desnuda) | [`60_La_maja_desnuda.jpg`](./60_La_maja_desnuda.jpg) |
+| 62 | **Tántalo (Capricho 9)** | Francisco de Goya (c. 1798-1799) | Metropolitan Museum of Art, Nueva York (30.54.42) | [Wikipedia](https://es.wikipedia.org/wiki/T%C3%A1ntalo_(Goya)) | [`61_Tantalo_Capricho_9.jpg`](./61_Tantalo_Capricho_9.jpg) |
+| 63 | **El amor y la muerte (Capricho 10)** | Francisco de Goya (c. 1797-1799) | Rijksmuseum, Ámsterdam (RP-P-1921-2031) | [Wikipedia](https://es.wikipedia.org/wiki/Los_Caprichos) | [`62_El_amor_y_la_muerte_Capricho_10.jpg`](./62_El_amor_y_la_muerte_Capricho_10.jpg) |
+| 64 | **Disparate desordenado (Disparate matrimonial)** | Francisco de Goya (c. 1815-1819) | Metropolitan Museum of Art, Nueva York (24.30.8) | [Wikipedia](https://es.wikipedia.org/wiki/Los_disparates) | [`63_Disparate_desordenado_Disparate_matrimonial.jpg`](./63_Disparate_desordenado_Disparate_matrimonial.jpg) |
+| 65 | **Procesión de disciplinantes** | Francisco de Goya (1808-1812) | Real Academia de Bellas Artes de San Fernando, Madrid (0674) | [Wikipedia](https://es.wikipedia.org/wiki/Procesi%C3%B3n_de_disciplinantes) | [`64_Procesion_de_disciplinantes.jpg`](./64_Procesion_de_disciplinantes.jpg) |
+| 66 | **Caníbales preparando a sus víctimas** | Francisco de Goya (c. 1798-1800) | Musée des Beaux-Arts et d'Archéologie, Besanzón (896.1.176) | [Wikipedia](None) | [`65_Canibales_preparando_a_sus_victimas.jpg`](./65_Canibales_preparando_a_sus_victimas.jpg) |
+| 67 | **Caníbales contemplando restos humanos** | Francisco de Goya (c. 1798-1800) | Musée des Beaux-Arts et d'Archéologie, Besanzón (896.1.177) | [Wikipedia](None) | [`66_Canibales_contemplando_restos_humanos.jpg`](./66_Canibales_contemplando_restos_humanos.jpg) |
+| 68 | **La degollación** | Seguidor de Goya (c. 1808) | Museo Nacional del Prado, Madrid (P007110) | [Wikipedia](https://es.wikipedia.org/wiki/Francisco_de_Goya) | [`67_La_degollacion.jpg`](./67_La_degollacion.jpg) |
+| 69 | **El castillo de Lacoste, del marqués de Sade** | Anónimo, castillo medieval acondicionado por los Sade (c. 1741-1771) | Lacoste, Vaucluse (Mérimée PA00082229) | [Wikipedia](https://es.wikipedia.org/wiki/Lacoste_(Vaucluse)) | [`87_El_castillo_de_Lacoste_del_marques_de_Sade.jpg`](./87_El_castillo_de_Lacoste_del_marques_de_Sade.jpg) |
+| 70 | **El castillo de Machecoul, de Gilles de Rais** | Anónimo, castillo de los señores de Retz (c. 1235-1600) | Machecoul-Saint-Même, Loira Atlántico (Mérimée PA00108639) | [Wikipedia](https://es.wikipedia.org/wiki/Machecoul) | [`88_El_castillo_de_Machecoul_de_Gilles_de_Rais.jpg`](./88_El_castillo_de_Machecoul_de_Gilles_de_Rais.jpg) |
+| 71 | **El castillo de Čachtice, de Erzsébet Báthory** | Anónimo, Reino de Hungría (s. XIII, 1200-1250) | Čachtice, región de Trenčín, Eslovaquia | [Wikipedia](https://es.wikipedia.org/wiki/Isabel_B%C3%A1thory) | [`68_El_castillo_de_Cachtice_de_Erzsebet_Bathory.jpg`](./68_El_castillo_de_Cachtice_de_Erzsebet_Bathory.jpg) |
+| 72 | **Leda y el cisne** | Théodore Géricault (c. 1816-1817) | École nationale supérieure des beaux-arts, París (EBA 956 a-d) | [Wikipedia](https://es.wikipedia.org/wiki/Th%C3%A9odore_G%C3%A9ricault) | [`69_Leda_y_el_cisne.jpg`](./69_Leda_y_el_cisne.jpg) |
+| 73 | **Phrosine y Mélidore** | Pierre-Paul Prud'hon (1797) | Rijksmuseum, Ámsterdam (RP-P-1955-57) | [Wikipedia](https://es.wikipedia.org/wiki/Pierre-Paul_Prud%27hon) | [`70_Phrosine_y_Melidore.jpg`](./70_Phrosine_y_Melidore.jpg) |
+| 74 | **Júpiter y Tetis** | Jean-Auguste-Dominique Ingres (1811) | Musée Granet, Aix-en-Provence, Francia (depósito del Estado de 1835; propiedad de la ciudad desde 2024) | [Wikipedia](https://es.wikipedia.org/wiki/J%C3%BApiter_y_Tetis) | [`71_Jupiter_y_Tetis.jpg`](./71_Jupiter_y_Tetis.jpg) |
+| 75 | **Estudio de mujer desnuda tendida en un diván, llamado «La mujer de las medias blancas»** | Eugène Delacroix (1825-1826) | Musée du Louvre, París (RF 1657) | [Wikipedia](https://es.wikipedia.org/wiki/Eug%C3%A8ne_Delacroix) | [`72_Estudio_de_mujer_desnuda_tendida_en_un_divan_llamado_La_muje.jpg`](./72_Estudio_de_mujer_desnuda_tendida_en_un_divan_llamado_La_muje.jpg) |
+| 76 | **Mujer acariciando un loro** | Eugène Delacroix (1827) | Musée des Beaux-Arts, Lyon (B 566) | [Wikipedia](https://es.wikipedia.org/wiki/Mujer_acariciando_un_loro) | [`73_Mujer_acariciando_un_loro.jpg`](./73_Mujer_acariciando_un_loro.jpg) |
+| 77 | **La muerte de Sardanápalo** | Eugène Delacroix (1827) | Musée du Louvre, París (RF 2346) | [Wikipedia](https://es.wikipedia.org/wiki/La_muerte_de_Sard%C3%A1n%C3%A1palo) | [`74_La_muerte_de_Sardanapalo.jpg`](./74_La_muerte_de_Sardanapalo.jpg) |
+| 78 | **Olympia (aguafuerte, plancha pequeña)** | Édouard Manet (1867) | Metropolitan Museum of Art, Nueva York (31.31.1) | [Wikipedia](https://es.wikipedia.org/wiki/Olympia_(Manet)) | [`75_Olympia_aguafuerte_plancha_pequena.jpg`](./75_Olympia_aguafuerte_plancha_pequena.jpg) |
+| 79 | **El festín (La orgía)** | Paul Cézanne (c. 1867) | Colección particular (FWN 596) | [Wikipedia](https://es.wikipedia.org/wiki/Paul_C%C3%A9zanne) | [`76_El_festin_La_orgia.jpg`](./76_El_festin_La_orgia.jpg) |
+| 80 | **Una moderna Olympia** | Paul Cézanne (1873-1874) | Musée d'Orsay, París (RF 1951 31) | [Wikipedia](https://es.wikipedia.org/wiki/Paul_C%C3%A9zanne) | [`77_Una_moderna_Olympia.jpg`](./77_Una_moderna_Olympia.jpg) |
+| 81 | **Tres muchachas sentadas (La Maison Tellier)** | Edgar Degas (1877-1881) | Rijksmuseum, Ámsterdam (RP-P-1967-88) | [Wikipedia](https://es.wikipedia.org/wiki/Edgar_Degas) | [`78_Tres_muchachas_sentadas_La_Maison_Tellier.jpg`](./78_Tres_muchachas_sentadas_La_Maison_Tellier.jpg) |
+| 82 | **El abandono (Las dos amigas)** | Henri de Toulouse-Lautrec (1895) | Colección particular | [Wikipedia](https://es.wikipedia.org/wiki/Henri_de_Toulouse-Lautrec) | [`79_El_abandono_Las_dos_amigas.jpg`](./79_El_abandono_Las_dos_amigas.jpg) |
+| 83 | **Salomé tatuada (Salomé bailando)** | Gustave Moreau (c. 1874) | Musée national Gustave Moreau, París (Cat. 211) | [Wikipedia](https://es.wikipedia.org/wiki/Salom%C3%A9_tatuada) | [`80_Salome_tatuada_Salome_bailando.jpg`](./80_Salome_tatuada_Salome_bailando.jpg) |
+| 84 | **La aparición** | Gustave Moreau (1876) | Musée du Louvre, departamento de Artes Gráficas, fondo del Musée d'Orsay, París (RF 2130) | [Wikipedia](https://es.wikipedia.org/wiki/Gustave_Moreau) | [`81_La_aparicion.jpg`](./81_La_aparicion.jpg) |
+| 85 | **Suplicio chino de los Cien Pedazos (lingchi), Pekín** | Fotógrafo desconocido (c. 1904-1905) | copia de Georges Bataille (colección particular); placa de la Agence Rol en la Bibliothèque nationale de France (Gallica, btv1b6914446r) | [Wikipedia](https://es.wikipedia.org/wiki/Muerte_por_mil_cortes) | [`82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg`](./82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg) |
+| 86 | **De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620)** | David Vinckboons y Dirck Eversen Lons (1620) | ejemplar digitalizado por la Biblioteca Digital Mundial (ítem 515) | [Wikipedia](https://es.wikipedia.org/wiki/Brev%C3%ADsima_relaci%C3%B3n_de_la_destrucci%C3%B3n_de_las_Indias) | [`83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg`](./83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg) |
+| 87 | **La decapitación de James Scott, duque de Monmouth, en Londres en 1685** | Jan Luyken (1698) | Rijksmuseum, Ámsterdam (RP-P-OB-44.637) | [Wikipedia](https://es.wikipedia.org/wiki/James_Scott,_I_duque_de_Monmouth) | [`84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg`](./84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg) |
+| 88 | **Sátiro llorando a una ninfa (La muerte de Procris)** | Piero di Cosimo (c. 1495) | National Gallery, Londres (NG698) | [Wikipedia](https://es.wikipedia.org/wiki/Piero_di_Cosimo) | [`85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg`](./85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg) |
 
 ---
 
@@ -1571,7 +1574,32 @@ Pedro Pablo Rubens nació en Siegen en 1577 y se crio en Amberes, donde en 1609 
 
 ---
 
-### 57. Las hermanas fatídicas (Macbeth, acto I, escena 3) — John Raphael Smith, según Henry Füssli (1785)
+### 57. Ezzelin Bracciaferro medita ante el cuerpo de Meduna — Henry Fuseli (1779)
+
+![Ezzelin Bracciaferro medita ante el cuerpo de Meduna](./86_Ezzelin_Bracciaferro_medita_ante_el_cuerpo_de_Meduna.jpg)
+*Ezzelin Bracciaferro medita ante Meduna — Henry Fuseli (1779), British Museum*
+
+#### Ficha Técnica
+
+- Dibujo
+- medidas sin verificar
+- British Museum, Londres (1892,0314.1)
+
+#### Lo que hace que destaque
+
+El tema es un crimen consumado y su resaca: el catálogo del Museo Soane lo resume, con palabras de Lavater, como «un caballero que acaba de asesinar a su amante», encadenado por el remordimiento y acusado por la presencia de su víctima, que «deplora su locura pero no se arrepiente». La descripción del British Museum para el grabado de Holloway según la misma composición precisa que el conde está sentado con la cabeza en la mano y medita sobre la muerte de su esposa, a la que ha matado por infidelidad y que yace a sus pies. En la lámina que reproduce Bataille el caballero, con la espada al cinto, se apoya la frente en la mano, y junto a él, sobre el lecho, hay un reloj de arena; la mujer yace tendida en el suelo con el cuerpo cubierto por una túnica. El Web Gallery of Art ve en la figura sentada, de «mirada hueca», el motivo con que Fuseli expresa el horror, la incredulidad y la impotencia ante el destino. Bataille coloca la lámina, sin comentarla, en el capítulo «El libertinaje en el siglo XVIII y el marqués de Sade», entre Boucher y las brujas de Macbeth del propio Fuseli. El pie la titula «Open Heart…» y remite a la Bibliothèque Nationale y a «The Drawings of Henry Füseli», Nueva York, 1949.
+
+#### Contexto Histórico y Arqueológico
+
+Fuseli pintó tres versiones del tema, y la del Museo Soane de Londres (P143) es la única que se conoce hoy. Esa pintura se expuso en la Royal Academy en 1780 con el título «The Italian Count» y parece ser una versión reducida hecha como modelo para la mezzotinta de Smith de 1781. La composición se difundió después por los «Ensayos de fisionomía» de Lavater: la grabó Lips para la edición francesa de 1781-1786 y Holloway para la inglesa. El catálogo del Soane menciona un boceto preparatorio en el British Museum (Schiff 417), inscrito «Zurich Feb 1779», relacionado con una de las pinturas perdidas. El archivo de Commons reproduce un dibujo del British Museum con el número 1892,0314.1 y la fecha 1779. John Soane compró la pintura al pintor Henry Tresham en julio de 1802, y Antoine-Jean Gros hizo un dibujo a partir de ella (Louvre, R.F. 29956/22).
+
+#### Autoría y Procedencia
+
+Henry Fuseli, Johann Heinrich Füssli (1741-1825), fue pintor, poeta, dibujante e ilustrador suizo afincado en Inglaterra. Martin Myrone lo cuenta entre las mentes creativas más inventivas de su tiempo, dedicado a lo misterioso y lo imaginativo. Los personajes de este cuadro son invención suya: cuando Lord Byron quiso averiguar la fuente de «Ezzelin y Meduna», el pintor le respondió que se los había inventado. Según Tomory, citado por el Soane, la figura de Ezzelin se inspira en el tirano Ezzelino da Romano (muerto en 1259), llamado Braccioferro o Brazo de Hierro. Byron se refirió a la pintura en su diario el 20 de marzo de 1814.
+
+---
+
+### 58. Las hermanas fatídicas (Macbeth, acto I, escena 3) — John Raphael Smith, según Henry Füssli (1785)
 
 ![Las hermanas fatídicas (Macbeth, acto I, escena 3)](./57_Las_hermanas_fatidicas_Macbeth_acto_I_escena_3.jpg)
 *Las hermanas fatídicas — John Raphael Smith según Henry Füssli (1785), Metropolitan Museum of Art*
@@ -1596,7 +1624,7 @@ Johann Heinrich Füssli nació en Zúrich en 1741, hijo del pintor y escritor Jo
 
 ---
 
-### 58. La pesadilla — Henry Füssli (1781)
+### 59. La pesadilla — Henry Füssli (1781)
 
 ![La pesadilla](./58_La_pesadilla.jpg)
 *La pesadilla — Henry Füssli (1781), Detroit Institute of Arts*
@@ -1621,7 +1649,7 @@ Johann Heinrich Füssli (1741-1825) nació en Zúrich, hijo del pintor y escrito
 
 ---
 
-### 59. Las viejas (El Tiempo) — Francisco de Goya (c. 1810-1812)
+### 60. Las viejas (El Tiempo) — Francisco de Goya (c. 1810-1812)
 
 ![Las viejas (El Tiempo)](./59_Las_viejas_El_Tiempo.jpg)
 *Las viejas (El Tiempo) — Francisco de Goya (c. 1810-1812), Palais des Beaux-Arts, Lille*
@@ -1646,7 +1674,7 @@ Francisco de Goya nació en 1746 en Fuendetodos, en la provincia de Zaragoza. El
 
 ---
 
-### 60. La maja desnuda — Francisco de Goya (1795-1800)
+### 61. La maja desnuda — Francisco de Goya (1795-1800)
 
 ![La maja desnuda](./60_La_maja_desnuda.jpg)
 *La maja desnuda — Francisco de Goya (1795-1800), Museo Nacional del Prado, Madrid*
@@ -1671,7 +1699,7 @@ Francisco de Goya nació en 1746 en Fuendetodos (Zaragoza). En 1786 fue nombrado
 
 ---
 
-### 61. Tántalo (Capricho 9) — Francisco de Goya (c. 1798-1799)
+### 62. Tántalo (Capricho 9) — Francisco de Goya (c. 1798-1799)
 
 ![Tántalo (Capricho 9)](./61_Tantalo_Capricho_9.jpg)
 *Tántalo, Capricho 9 (prueba de estado) — Francisco de Goya (c. 1798-1799), Metropolitan Museum of Art, Nueva York*
@@ -1696,7 +1724,7 @@ Francisco de Goya nació en 1746 en Fuendetodos (Zaragoza) y fue nombrado pintor
 
 ---
 
-### 62. El amor y la muerte (Capricho 10) — Francisco de Goya (c. 1797-1799)
+### 63. El amor y la muerte (Capricho 10) — Francisco de Goya (c. 1797-1799)
 
 ![El amor y la muerte (Capricho 10)](./62_El_amor_y_la_muerte_Capricho_10.jpg)
 *El amor y la muerte, Capricho 10 — Francisco de Goya (c. 1797-1799), Rijksmuseum, Ámsterdam*
@@ -1721,7 +1749,7 @@ Francisco de Goya nació en 1746 en Fuendetodos (Zaragoza). En 1786 fue nombrado
 
 ---
 
-### 63. Disparate desordenado (Disparate matrimonial) — Francisco de Goya (c. 1815-1819)
+### 64. Disparate desordenado (Disparate matrimonial) — Francisco de Goya (c. 1815-1819)
 
 ![Disparate desordenado (Disparate matrimonial)](./63_Disparate_desordenado_Disparate_matrimonial.jpg)
 *Disparate desordenado — Francisco de Goya (c. 1815-1819), Metropolitan Museum of Art, Nueva York*
@@ -1746,7 +1774,7 @@ Francisco de Goya nació en 1746 en Fuendetodos (Zaragoza). En 1792 cayó gravem
 
 ---
 
-### 64. Procesión de disciplinantes — Francisco de Goya (1808-1812)
+### 65. Procesión de disciplinantes — Francisco de Goya (1808-1812)
 
 ![Procesión de disciplinantes](./64_Procesion_de_disciplinantes.jpg)
 *Procesión de disciplinantes — Francisco de Goya (1808-1812), Real Academia de Bellas Artes de San Fernando, Madrid*
@@ -1771,7 +1799,7 @@ Francisco de Goya nació en 1746 en Fuendetodos (Zaragoza). En 1786 fue nombrado
 
 ---
 
-### 65. Caníbales preparando a sus víctimas — Francisco de Goya (c. 1798-1800)
+### 66. Caníbales preparando a sus víctimas — Francisco de Goya (c. 1798-1800)
 
 ![Caníbales preparando a sus víctimas](./65_Canibales_preparando_a_sus_victimas.jpg)
 *Caníbales preparando a sus víctimas — Francisco de Goya (c. 1798-1800), Musée des Beaux-Arts et d'Archéologie, Besanzón*
@@ -1796,7 +1824,7 @@ Francisco de Goya nació en 1746 en Fuendetodos (Zaragoza). En 1792 una grave en
 
 ---
 
-### 66. Caníbales contemplando restos humanos — Francisco de Goya (c. 1798-1800)
+### 67. Caníbales contemplando restos humanos — Francisco de Goya (c. 1798-1800)
 
 ![Caníbales contemplando restos humanos](./66_Canibales_contemplando_restos_humanos.jpg)
 *Caníbales contemplando restos humanos — Francisco de Goya (c. 1798-1800), Musée des Beaux-Arts et d'Archéologie, Besanzón*
@@ -1821,7 +1849,7 @@ Francisco de Goya nació en 1746 en Fuendetodos (Zaragoza). Fue nombrado pintor 
 
 ---
 
-### 67. La degollación — Seguidor de Goya (c. 1808)
+### 68. La degollación — Seguidor de Goya (c. 1808)
 
 ![La degollación](./67_La_degollacion.jpg)
 *La degollación — Seguidor de Goya (c. 1808), Museo del Prado*
@@ -1846,7 +1874,57 @@ El Prado la atribuye a un anónimo seguidor de Francisco de Goya y señala que r
 
 ---
 
-### 68. El castillo de Čachtice, de Erzsébet Báthory — Anónimo, Reino de Hungría (s. XIII, 1200-1250)
+### 69. El castillo de Lacoste, del marqués de Sade — Anónimo, castillo medieval acondicionado por los Sade (c. 1741-1771)
+
+![El castillo de Lacoste, del marqués de Sade](./87_El_castillo_de_Lacoste_del_marques_de_Sade.jpg)
+*El castillo de Lacoste — fotografía de Suwannee.payne (2013), Lacoste*
+
+#### Ficha Técnica
+
+- Castillo en ruinas; fotografía de 2013
+- —
+- Lacoste, Vaucluse (Mérimée PA00082229)
+
+#### Lo que hace que destaque
+
+Bataille reproduce una fotografía del castillo de Lacoste en la misma página que la del castillo de Machecoul, al abrir el capítulo «Gilles de Rais y Erzsébet Báthory». El pie solo dice «Lacoste (Vaucluse): el castillo del marqués de Sade» y remite a la página 111, donde Bataille escribe que Sade pasó treinta años de su vida en prisión y pobló su soledad de sueños de gritos terribles y cuerpos ensangrentados. El sentido de la lámina lo da la crítica sadiana: para Geneviève Goubier-Robert, La Coste es la matriz que engendra los castillos de la ficción, y en particular el más acabado de todos, Silling, propiedad de Durcet en «Las 120 jornadas de Sodoma». La ficha del Ministerio de Cultura francés declara como interés del edificio su vínculo con la obra literaria del marqués de Sade. La fotografía de la colección no es la de 1961 del libro sino una de 2013, que la ficha del archivo describe solo como «Château de Lacoste, Vaucluse, France». El archivo figura en la categoría de esculturas de Vaucluse, y otra fotografía de Commons describe un «monumento al marqués de Sade delante del castillo de Lacoste», sin dar su autor ni su fecha.
+
+#### Contexto Histórico y Arqueológico
+
+Según François Champarnaud, entre 1771 y 1777 el castillo de La Coste, cerca de Aviñón, puede considerarse la residencia principal del marqués. El edificio se amuebló en el siglo XVIII en dos oleadas: la del conde de Sade, padre del marqués, hacia 1741-1743, y la del hijo hacia 1767 y 1771, antes de que se entregara al teatro en el verano de 1772. Los cuadros de su galería se conocen por dos inventarios, de 1769 y de 1778. Henri Fauville reconstruyó en «Lacoste: Sade en Provence» (Edisud, 1984) la historia del castillo desde la Edad Media, y en ella Sade aparece, según la reseña de Michel Delon, como «un aristócrata arrogante, imbuido de sus privilegios, aferrado a una fortuna que mengua». El castillo, con sus patios y sus fosos secos, está inscrito como monumento histórico por orden del 21 de agosto de 1992 y es de propiedad privada.
+
+#### Autoría y Procedencia
+
+No es obra de un autor: es un castillo señorial cuya construcción, según la reseña del libro de Fauville, se remonta a la Edad Media. Lo acondicionaron en el siglo XVIII el conde de Sade y su hijo, el marqués Donatien Alphonse François de Sade. La base Mérimée no da fechas de construcción, solo su protección y su vínculo con la obra de Sade. La fotografía es de la usuaria de Commons Suwannee.payne, tomada el 10 de junio de 2013 y publicada con licencia CC BY-SA 3.0.
+
+---
+
+### 70. El castillo de Machecoul, de Gilles de Rais — Anónimo, castillo de los señores de Retz (c. 1235-1600)
+
+![El castillo de Machecoul, de Gilles de Rais](./88_El_castillo_de_Machecoul_de_Gilles_de_Rais.jpg)
+*El castillo de Machecoul — fotografía de Melutopia (2011), Machecoul-Saint-Même*
+
+#### Ficha Técnica
+
+- Castillo en ruinas; fotografía de 2011
+- —
+- Machecoul-Saint-Même, Loira Atlántico (Mérimée PA00108639)
+
+#### Lo que hace que destaque
+
+Bataille abre con esta fotografía, y la del castillo de Sade en Lacoste, el capítulo «Gilles de Rais y Erzsébet Báthory», bajo el pie «Machecoul: el castillo de Gilles de Rais». En la misma página escribe que Sade conocía a Gilles de Rais y apreciaba en él «una dureza de piedra», y cita las declaraciones del proceso sobre los niños asesinados. Más adelante presenta a Gilles de Rais como el extremo de una violencia que después decae: «En sus fortalezas, Gilles de Rais torturó y mató a decenas de niños, quizá incluso a cientos». La lámina no es, pues, una obra de arte sino el escenario de los crímenes cuyo proceso Bataille había editado dos años antes en «Le Procès de Gilles de Rais» (1959). La fotografía de la colección no es la del libro: es de 2011 y su ficha la describe como «Château de Gilles de Retz - Machecoul, Loire-Atlantique».
+
+#### Contexto Histórico y Arqueológico
+
+La base Mérimée describe un antiguo castillo feudal de finales del siglo XIII con tres campañas de construcción en alzado: una torre circular de comienzos del siglo XIII, un châtelet del siglo XV y el basamento de una residencia de hacia 1500 con troneras a la francesa. Hacia 1580-1600 se le añadieron nuevas fortificaciones. El ayuntamiento atribuye su construcción, entre 1235 y 1248, a Pierre de Dreux, duque de Bretaña, y señala que los Gondy lo transformaron después en fortaleza abaluartada. Situado sobre el Falleron, controlaba el comercio de la sal y la gestión del agua, y se excava arqueológicamente desde 2008. En su castillo de Machecoul fue detenido Gilles de Rais en 1440, antes de ser juzgado en Nantes por brujería, herejía y asesinato. Fue ejecutado en Nantes el 26 de octubre de 1440. Las ruinas están inscritas como monumento histórico desde el 17 de marzo de 2004.
+
+#### Autoría y Procedencia
+
+No es obra de un autor: es el castillo de los señores de Retz, levantado según el ayuntamiento por Pierre de Dreux y rehecho en los siglos XIV y XV. Fue residencia de Gilles de Rais, mariscal de Francia. Salomon Reinach resumía en 1904 que el mariscal, compañero de Juana de Arco desde 1428 y encargado de velar por ella, fue acusado en 1440 de haber mancillado y matado a varios centenares de niños. Bataille publicó los documentos del proceso con una introducción suya (Club français du livre, 1959). Jean-Pierre Le Bouler ha estudiado esa introducción a propósito de lo que Bataille pensaba de la caballería medieval. La fotografía es del usuario de Commons Melutopia, tomada el 29 de septiembre de 2011 y publicada con licencia CC BY-SA 3.0.
+
+---
+
+### 71. El castillo de Čachtice, de Erzsébet Báthory — Anónimo, Reino de Hungría (s. XIII, 1200-1250)
 
 ![El castillo de Čachtice, de Erzsébet Báthory](./68_El_castillo_de_Cachtice_de_Erzsebet_Bathory.jpg)
 *El castillo de Čachtice — fotografía de LMih (2011), Čachtice, Eslovaquia*
@@ -1871,7 +1949,7 @@ Erzsébet Báthory nació en 1560 y en 1575, con quince años, se casó con Fere
 
 ---
 
-### 69. Leda y el cisne — Théodore Géricault (c. 1816-1817)
+### 72. Leda y el cisne — Théodore Géricault (c. 1816-1817)
 
 ![Leda y el cisne](./69_Leda_y_el_cisne.jpg)
 *Leda y el cisne, cuatro apuntes — Théodore Géricault (c. 1816-1817), École des Beaux-Arts, París*
@@ -1896,7 +1974,7 @@ Théodore Géricault (Ruan, 1791 - París, 1824) fue pintor y dibujante francés
 
 ---
 
-### 70. Phrosine y Mélidore — Pierre-Paul Prud'hon (1797)
+### 73. Phrosine y Mélidore — Pierre-Paul Prud'hon (1797)
 
 ![Phrosine y Mélidore](./70_Phrosine_y_Melidore.jpg)
 *Phrosine y Mélidore — Pierre-Paul Prud'hon (1797), Rijksmuseum, Ámsterdam*
@@ -1921,7 +1999,7 @@ Pierre-Paul Prud'hon nació en Cluny el 4 de abril de 1758 y murió en París en
 
 ---
 
-### 71. Júpiter y Tetis — Jean-Auguste-Dominique Ingres (1811)
+### 74. Júpiter y Tetis — Jean-Auguste-Dominique Ingres (1811)
 
 ![Júpiter y Tetis](./71_Jupiter_y_Tetis.jpg)
 *Júpiter y Tetis — Ingres (1811), reproducción del Musée Granet*
@@ -1949,7 +2027,7 @@ Jean-Auguste-Dominique Ingres nació en Montauban el 29 de agosto de 1780 y muri
 
 ---
 
-### 72. Estudio de mujer desnuda tendida en un diván, llamado «La mujer de las medias blancas» — Eugène Delacroix (1825-1826)
+### 75. Estudio de mujer desnuda tendida en un diván, llamado «La mujer de las medias blancas» — Eugène Delacroix (1825-1826)
 
 ![Estudio de mujer desnuda tendida en un diván, llamado «La mujer de las medias blancas»](./72_Estudio_de_mujer_desnuda_tendida_en_un_divan_llamado_La_muje.jpg)
 *La mujer de las medias blancas — Eugène Delacroix (1825-1826), Musée du Louvre, París*
@@ -1974,7 +2052,7 @@ Eugène Delacroix nació en Charenton-Saint-Maurice en 1798 y murió en París e
 
 ---
 
-### 73. Mujer acariciando un loro — Eugène Delacroix (1827)
+### 76. Mujer acariciando un loro — Eugène Delacroix (1827)
 
 ![Mujer acariciando un loro](./73_Mujer_acariciando_un_loro.jpg)
 *Mujer acariciando un loro — Eugène Delacroix (1827), Musée des Beaux-Arts, Lyon*
@@ -2002,7 +2080,7 @@ Eugène Delacroix nació en Charenton-Saint-Maurice en 1798 y murió en París e
 
 ---
 
-### 74. La muerte de Sardanápalo — Eugène Delacroix (1827)
+### 77. La muerte de Sardanápalo — Eugène Delacroix (1827)
 
 ![La muerte de Sardanápalo](./74_La_muerte_de_Sardanapalo.jpg)
 *La muerte de Sardanápalo — Eugène Delacroix (1827), Musée du Louvre, París*
@@ -2030,7 +2108,7 @@ Eugène Delacroix nació en Charenton-Saint-Maurice en 1798 y murió en París e
 
 ---
 
-### 75. Olympia (aguafuerte, plancha pequeña) — Édouard Manet (1867)
+### 78. Olympia (aguafuerte, plancha pequeña) — Édouard Manet (1867)
 
 ![Olympia (aguafuerte, plancha pequeña)](./75_Olympia_aguafuerte_plancha_pequena.jpg)
 *Olympia, plancha pequeña — Édouard Manet (1867), Metropolitan Museum of Art, Nueva York*
@@ -2058,7 +2136,7 @@ El ejemplar de la vista principal es un aguafuerte en tinta parda sobre papel ve
 
 ---
 
-### 76. El festín (La orgía) — Paul Cézanne (c. 1867)
+### 79. El festín (La orgía) — Paul Cézanne (c. 1867)
 
 ![El festín (La orgía)](./76_El_festin_La_orgia.jpg)
 *El festín (La orgía) — Paul Cézanne (c. 1867), colección particular*
@@ -2083,7 +2161,7 @@ Paul Cézanne nació en Aix-en-Provence en 1839 y murió allí en 1906. En sus c
 
 ---
 
-### 77. Una moderna Olympia — Paul Cézanne (1873-1874)
+### 80. Una moderna Olympia — Paul Cézanne (1873-1874)
 
 ![Una moderna Olympia](./77_Una_moderna_Olympia.jpg)
 *Una moderna Olympia — Paul Cézanne (1873-1874), Musée d'Orsay, París*
@@ -2108,7 +2186,7 @@ Paul Cézanne nació en Aix-en-Provence en 1839 y murió allí en 1906. En sus c
 
 ---
 
-### 78. Tres muchachas sentadas (La Maison Tellier) — Edgar Degas (1877-1881)
+### 81. Tres muchachas sentadas (La Maison Tellier) — Edgar Degas (1877-1881)
 
 ![Tres muchachas sentadas (La Maison Tellier)](./78_Tres_muchachas_sentadas_La_Maison_Tellier.jpg)
 *Tres muchachas sentadas — Edgar Degas (1877-1881), Rijksmuseum*
@@ -2136,7 +2214,7 @@ Edgar Degas (París, 1834-1917) figura en la ficha del Petit Palais como ilustra
 
 ---
 
-### 79. El abandono (Las dos amigas) — Henri de Toulouse-Lautrec (1895)
+### 82. El abandono (Las dos amigas) — Henri de Toulouse-Lautrec (1895)
 
 ![El abandono (Las dos amigas)](./79_El_abandono_Las_dos_amigas.jpg)
 *El abandono (Las dos amigas) — Henri de Toulouse-Lautrec (1895), colección particular*
@@ -2161,7 +2239,7 @@ Henri de Toulouse-Lautrec nació en Albi en 1864, hijo del conde Alphonse de Tou
 
 ---
 
-### 80. Salomé tatuada (Salomé bailando) — Gustave Moreau (c. 1874)
+### 83. Salomé tatuada (Salomé bailando) — Gustave Moreau (c. 1874)
 
 ![Salomé tatuada (Salomé bailando)](./80_Salome_tatuada_Salome_bailando.jpg)
 *Salomé tatuada — Gustave Moreau (c. 1874), Musée Gustave Moreau, París*
@@ -2189,7 +2267,7 @@ Gustave Moreau nació en París el 6 de abril de 1826, hijo del arquitecto Louis
 
 ---
 
-### 81. La aparición — Gustave Moreau (1876)
+### 84. La aparición — Gustave Moreau (1876)
 
 ![La aparición](./81_La_aparicion.jpg)
 *La aparición — Gustave Moreau (1876), Musée du Louvre (fondo del Musée d'Orsay), París*
@@ -2214,7 +2292,7 @@ Gustave Moreau nació en París el 6 de abril de 1826, hijo del arquitecto Louis
 
 ---
 
-### 82. Suplicio chino de los Cien Pedazos (lingchi), Pekín — Fotógrafo desconocido (c. 1904-1905)
+### 85. Suplicio chino de los Cien Pedazos (lingchi), Pekín — Fotógrafo desconocido (c. 1904-1905)
 
 ![Suplicio chino de los Cien Pedazos (lingchi), Pekín](./82_Suplicio_chino_de_los_Cien_Pedazos_lingchi_Pekin.jpg)
 *El condenado atado al poste, la fotografía que Bataille poseía desde 1925 — fotógrafo desconocido (c. 1904-1905), reproducida en «Las lágrimas de Eros»*
@@ -2242,7 +2320,7 @@ Sin autor identificado: la base Turandot de Bourgon no da el nombre del fotógra
 
 ---
 
-### 83. De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620) — David Vinckboons y Dirck Eversen Lons (1620)
+### 86. De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620) — David Vinckboons y Dirck Eversen Lons (1620)
 
 ![De la tiranía en Yucatán (El espejo de la cruel y horrible tiranía española, 1620)](./83_De_la_tirania_en_Yucatan_El_espejo_de_la_cruel_y_horrible_ti.jpg)
 *De la tiranía en Yucatán, p. 33 — David Vinckboons y Dirck Eversen Lons (1620), Biblioteca Digital Mundial*
@@ -2267,7 +2345,7 @@ La ficha de Commons atribuye las láminas al dibujante David Vinckboons (1576-16
 
 ---
 
-### 84. La decapitación de James Scott, duque de Monmouth, en Londres en 1685 — Jan Luyken (1698)
+### 87. La decapitación de James Scott, duque de Monmouth, en Londres en 1685 — Jan Luyken (1698)
 
 ![La decapitación de James Scott, duque de Monmouth, en Londres en 1685](./84_La_decapitacion_de_James_Scott_duque_de_Monmouth_en_Londres.jpg)
 *La decapitación del duque de Monmouth — Jan Luyken (1698), Rijksmuseum, Ámsterdam*
@@ -2292,7 +2370,7 @@ Jan Luyken nació en Ámsterdam el 16 de abril de 1649 y murió allí el 5 de ab
 
 ---
 
-### 85. Sátiro llorando a una ninfa (La muerte de Procris) — Piero di Cosimo (c. 1495)
+### 88. Sátiro llorando a una ninfa (La muerte de Procris) — Piero di Cosimo (c. 1495)
 
 ![Sátiro llorando a una ninfa (La muerte de Procris)](./85_Satiro_llorando_a_una_ninfa_La_muerte_de_Procris.jpg)
 *Sátiro llorando a una ninfa — Piero di Cosimo (c. 1495), National Gallery, Londres*

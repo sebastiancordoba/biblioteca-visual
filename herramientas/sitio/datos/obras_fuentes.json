@@ -5329,6 +5329,200 @@
   "notas": "",
   "retirado": []
  },
+ "eros:86": {
+  "analysis": "El tema es un crimen consumado y su resaca: el catálogo del Museo Soane lo resume, con palabras de Lavater, como «un caballero que acaba de asesinar a su amante», encadenado por el remordimiento y acusado por la presencia de su víctima, que «deplora su locura pero no se arrepiente»[2]. La descripción del British Museum para el grabado de Holloway según la misma composición precisa que el conde está sentado con la cabeza en la mano y medita sobre la muerte de su esposa, a la que ha matado por infidelidad y que yace a sus pies[5]. En la lámina que reproduce Bataille el caballero, con la espada al cinto, se apoya la frente en la mano, y junto a él, sobre el lecho, hay un reloj de arena; la mujer yace tendida en el suelo con el cuerpo cubierto por una túnica[6]. El Web Gallery of Art ve en la figura sentada, de «mirada hueca», el motivo con que Fuseli expresa el horror, la incredulidad y la impotencia ante el destino[4]. Bataille coloca la lámina, sin comentarla, en el capítulo «El libertinaje en el siglo XVIII y el marqués de Sade», entre Boucher y las brujas de Macbeth del propio Fuseli[6]. El pie la titula «Open Heart…» y remite a la Bibliothèque Nationale y a «The Drawings of Henry Füseli», Nueva York, 1949[6].",
+  "bio": "Henry Fuseli, Johann Heinrich Füssli (1741-1825), fue pintor, poeta, dibujante e ilustrador suizo afincado en Inglaterra[1]. Martin Myrone lo cuenta entre las mentes creativas más inventivas de su tiempo, dedicado a lo misterioso y lo imaginativo[3]. Los personajes de este cuadro son invención suya: cuando Lord Byron quiso averiguar la fuente de «Ezzelin y Meduna», el pintor le respondió que se los había inventado[3]. Según Tomory, citado por el Soane, la figura de Ezzelin se inspira en el tirano Ezzelino da Romano (muerto en 1259), llamado Braccioferro o Brazo de Hierro[2]. Byron se refirió a la pintura en su diario el 20 de marzo de 1814[2, 3].",
+  "discrepancias": [
+   "La lámina del libro está invertida en espejo respecto al dibujo del archivo de Commons, y el pie la sitúa en la Bibliothèque Nationale: lo que reprodujo Bataille es con toda probabilidad un grabado según la composición, no el dibujo del British Museum[1, 6]. Las fuentes leídas registran la mezzotinta de Smith (1781) y los grabados de Lips y Holloway para Lavater, pero ninguna dice cuál conserva la Bibliothèque Nationale ni cuál está invertido[2]. La descripción del grabado de Holloway menciona un altar con crucifijo y calavera junto a la cabeza de la mujer, que no se ven en la lámina de Bataille, donde aparece en cambio un reloj de arena; no es, por tanto, el grabado de Holloway[5, 6].",
+   "El título «Open Heart…» del pie no coincide con ninguno de los que dan las fuentes («The Italian Count» en la Royal Academy de 1780; «Ezzelin Bracciaferro musing over Meduna» en el British Museum); no se ha encontrado su origen[1, 2, 6].",
+   "Que el dibujo 1892,0314.1 del archivo de Commons sea el boceto Schiff 417 inscrito «Zurich Feb 1779» que cita el Soane es probable por la fecha, pero no se ha podido confirmar: la ficha del British Museum no fue accesible y la de Commons no da técnica, medidas ni inscripciones[1, 2].",
+   "La pintura del Soane se fecha «c. 1780» y mide 49 × 61 cm según el museo; el Web Gallery of Art la fecha en 1779 con 45,7 × 50,8 cm[2, 4]. El Soane fecha el grabado de Holloway en 1792 y la ficha de Commons del ejemplar del British Museum en 1791[2, 5]."
+  ],
+  "fuentes": [
+   {
+    "autor": null,
+    "n": 1,
+    "obra": "Wikimedia Commons (ficha del archivo)",
+    "titulo": "File:Füssli - Ezzelin Bracciaferro musing over Meduna. 1779, 1892,0314.1.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:F%C3%BCssli_-_Ezzelin_Bracciaferro_musing_over_Meduna._1779,_1892,0314.1.jpg"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Sir John Soane's Museum, Londres (catálogo en línea)",
+    "titulo": "The Italian Count, Henry Fuseli RA (P143)",
+    "url": "https://collections.soane.org/object-p143"
+   },
+   {
+    "autor": "Martin Myrone",
+    "n": 3,
+    "obra": "Tate Papers, n.º 1 (2004)",
+    "titulo": "Gothic Romance and the Quixotic Hero: A Pageant for Henry Fuseli in 1783",
+    "url": "https://www.tate.org.uk/research/tate-papers/01/gothic-romance-and-the-quixotic-hero-a-pageant-for-henry-fuseli-1783"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Web Gallery of Art",
+    "titulo": "Ezzelin and Meduna",
+    "url": "https://www.wga.hu/html/f/fuseli/03ezzeli.html"
+   },
+   {
+    "autor": null,
+    "n": 5,
+    "obra": "Wikimedia Commons (ficha del archivo)",
+    "titulo": "File:Thomas Holloway - Count Ezzelin Bracciaferro Musing over the Body of Meduna, 1791.jpg (British Museum, P_1853-1210-565)",
+    "url": "https://commons.wikimedia.org/wiki/File:Thomas_Holloway_-_Count_Ezzelin_Bracciaferro_Musing_over_the_Body_of_Meduna,_1791.jpg"
+   },
+   {
+    "autor": "Georges Bataille",
+    "n": 6,
+    "obra": "City Lights Books, San Francisco (1989), trad. de Peter Connor, p. 125",
+    "titulo": "The Tears of Eros",
+    "url": "https://archive.org/details/tearsoferos0000bata"
+   }
+  ],
+  "history": "Fuseli pintó tres versiones del tema, y la del Museo Soane de Londres (P143) es la única que se conoce hoy[2]. Esa pintura se expuso en la Royal Academy en 1780 con el título «The Italian Count» y parece ser una versión reducida hecha como modelo para la mezzotinta de Smith de 1781[2]. La composición se difundió después por los «Ensayos de fisionomía» de Lavater: la grabó Lips para la edición francesa de 1781-1786 y Holloway para la inglesa[2]. El catálogo del Soane menciona un boceto preparatorio en el British Museum (Schiff 417), inscrito «Zurich Feb 1779», relacionado con una de las pinturas perdidas[2]. El archivo de Commons reproduce un dibujo del British Museum con el número 1892,0314.1 y la fecha 1779[1]. John Soane compró la pintura al pintor Henry Tresham en julio de 1802, y Antoine-Jean Gros hizo un dibujo a partir de ella (Louvre, R.F. 29956/22)[2].",
+  "id": "eros:86",
+  "meta": "Dibujo | medidas sin verificar | British Museum, Londres (1892,0314.1)",
+  "notas": "No pude abrir la ficha del British Museum (la web devuelve 403 a las peticiones automáticas): técnica, medidas y procedencia del dibujo quedan por verificar en https://www.britishmuseum.org/collection/object/P_1892-0314-1. En Commons hay además una estampa de la Vanderbilt Fine Arts Gallery (1965-020, «Ezzelin Mourning Meduna», 1791) y la pintura del Soane (WGA08330); si se quiere una vista que coincida con la lámina de Bataille, habría que comprobar si alguna de esas estampas está invertida. No busqué alternativas en la API. Bataille no comenta la obra: cita_bataille es null.",
+  "retirado": []
+ },
+ "eros:87": {
+  "analysis": "Bataille reproduce una fotografía del castillo de Lacoste en la misma página que la del castillo de Machecoul, al abrir el capítulo «Gilles de Rais y Erzsébet Báthory»[6]. El pie solo dice «Lacoste (Vaucluse): el castillo del marqués de Sade» y remite a la página 111, donde Bataille escribe que Sade pasó treinta años de su vida en prisión y pobló su soledad de sueños de gritos terribles y cuerpos ensangrentados[6]. El sentido de la lámina lo da la crítica sadiana: para Geneviève Goubier-Robert, La Coste es la matriz que engendra los castillos de la ficción, y en particular el más acabado de todos, Silling, propiedad de Durcet en «Las 120 jornadas de Sodoma»[4]. La ficha del Ministerio de Cultura francés declara como interés del edificio su vínculo con la obra literaria del marqués de Sade[2]. La fotografía de la colección no es la de 1961 del libro sino una de 2013, que la ficha del archivo describe solo como «Château de Lacoste, Vaucluse, France»[1]. El archivo figura en la categoría de esculturas de Vaucluse, y otra fotografía de Commons describe un «monumento al marqués de Sade delante del castillo de Lacoste», sin dar su autor ni su fecha[1, 7].",
+  "bio": "No es obra de un autor: es un castillo señorial cuya construcción, según la reseña del libro de Fauville, se remonta a la Edad Media[5]. Lo acondicionaron en el siglo XVIII el conde de Sade y su hijo, el marqués Donatien Alphonse François de Sade[3]. La base Mérimée no da fechas de construcción, solo su protección y su vínculo con la obra de Sade[2]. La fotografía es de la usuaria de Commons Suwannee.payne, tomada el 10 de junio de 2013 y publicada con licencia CC BY-SA 3.0[1].",
+  "discrepancias": [
+   "El pie remite a la página 111, pero allí Bataille habla de la vida de Sade en prisión y no nombra Lacoste[6]."
+  ],
+  "fuentes": [
+   {
+    "autor": "Suwannee.payne",
+    "n": 1,
+    "obra": "Wikimedia Commons (ficha del archivo)",
+    "titulo": "File:Château de Lacoste, Lacoste.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Lacoste,_Lacoste.jpg"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Base Mérimée, Ministère de la Culture (Plateforme ouverte du patrimoine)",
+    "titulo": "Château de Lacoste (PA00082229)",
+    "url": "https://www.pop.culture.gouv.fr/notice/merimee/PA00082229"
+   },
+   {
+    "autor": "François Champarnaud",
+    "n": 3,
+    "obra": "Dix-huitième Siècle, n.º 21 (1989)",
+    "titulo": "La galerie du marquis de Sade au Château de La Coste",
+    "url": "https://www.persee.fr/doc/dhs_0070-6760_1989_num_21_1_1719"
+   },
+   {
+    "autor": "Geneviève Goubier-Robert",
+    "n": 4,
+    "obra": "Littérales, n.º 11 (1992)",
+    "titulo": "Le château sadien",
+    "url": "https://www.persee.fr/doc/litra_0989-4322_1992_num_11_1_1390"
+   },
+   {
+    "autor": "Michel Delon",
+    "n": 5,
+    "obra": "Dix-huitième Siècle, n.º 17 (1985)",
+    "titulo": "Henri Fauville: Lacoste: Sade en Provence (reseña)",
+    "url": "https://www.persee.fr/doc/dhs_0070-6760_1985_num_17_1_1573_t1_0492_0000_3"
+   },
+   {
+    "autor": "Georges Bataille",
+    "n": 6,
+    "obra": "City Lights Books, San Francisco (1989), trad. de Peter Connor, pp. 111 y 138",
+    "titulo": "The Tears of Eros",
+    "url": "https://archive.org/details/tearsoferos0000bata"
+   },
+   {
+    "autor": null,
+    "n": 7,
+    "obra": "Wikimedia Commons (ficha del archivo)",
+    "titulo": "File:Lacoste Sade.JPG",
+    "url": "https://commons.wikimedia.org/wiki/File:Lacoste_Sade.JPG"
+   }
+  ],
+  "history": "Según François Champarnaud, entre 1771 y 1777 el castillo de La Coste, cerca de Aviñón, puede considerarse la residencia principal del marqués[3]. El edificio se amuebló en el siglo XVIII en dos oleadas: la del conde de Sade, padre del marqués, hacia 1741-1743, y la del hijo hacia 1767 y 1771, antes de que se entregara al teatro en el verano de 1772[3]. Los cuadros de su galería se conocen por dos inventarios, de 1769 y de 1778[3]. Henri Fauville reconstruyó en «Lacoste: Sade en Provence» (Edisud, 1984) la historia del castillo desde la Edad Media, y en ella Sade aparece, según la reseña de Michel Delon, como «un aristócrata arrogante, imbuido de sus privilegios, aferrado a una fortuna que mengua»[5]. El castillo, con sus patios y sus fosos secos, está inscrito como monumento histórico por orden del 21 de agosto de 1992 y es de propiedad privada[2].",
+  "id": "eros:87",
+  "meta": "Castillo en ruinas; fotografía de 2013 | — | Lacoste, Vaucluse (Mérimée PA00082229)",
+  "notas": "Bataille no comenta el castillo de Lacoste: el pie solo lo identifica, y cita_bataille es null. Ojo con lo que circula: la «dureza de piedra» («a hardness of stone», p. 138) es lo que, según Bataille, Sade apreciaba en Gilles de Rais, no una frase sobre Lacoste; y la expresión «la piedra solitaria» no aparece en el libro. No pude ver la imagen de Commons (sin descarga posible en esta sesión), así que no identifico la escultura que aparece delante de las ruinas: ninguna ficha de Commons leída (este archivo, «Statue at Château de Lacoste.jpg», «Lacoste Sade.JPG») da su autor, título ni fecha. No encontré una fuente legible que dé fechas de construcción del castillo; «artist» usa las fechas del acondicionamiento por los Sade que da Champarnaud.",
+  "retirado": []
+ },
+ "eros:88": {
+  "analysis": "Bataille abre con esta fotografía, y la del castillo de Sade en Lacoste, el capítulo «Gilles de Rais y Erzsébet Báthory», bajo el pie «Machecoul: el castillo de Gilles de Rais»[7]. En la misma página escribe que Sade conocía a Gilles de Rais y apreciaba en él «una dureza de piedra», y cita las declaraciones del proceso sobre los niños asesinados[7]. Más adelante presenta a Gilles de Rais como el extremo de una violencia que después decae: «En sus fortalezas, Gilles de Rais torturó y mató a decenas de niños, quizá incluso a cientos»[7]. La lámina no es, pues, una obra de arte sino el escenario de los crímenes cuyo proceso Bataille había editado dos años antes en «Le Procès de Gilles de Rais» (1959)[7]. La fotografía de la colección no es la del libro: es de 2011 y su ficha la describe como «Château de Gilles de Retz - Machecoul, Loire-Atlantique»[1].",
+  "bio": "No es obra de un autor: es el castillo de los señores de Retz, levantado según el ayuntamiento por Pierre de Dreux y rehecho en los siglos XIV y XV[3]. Fue residencia de Gilles de Rais, mariscal de Francia[3, 4]. Salomon Reinach resumía en 1904 que el mariscal, compañero de Juana de Arco desde 1428 y encargado de velar por ella, fue acusado en 1440 de haber mancillado y matado a varios centenares de niños[6]. Bataille publicó los documentos del proceso con una introducción suya (Club français du livre, 1959)[7, 8]. Jean-Pierre Le Bouler ha estudiado esa introducción a propósito de lo que Bataille pensaba de la caballería medieval[8]. La fotografía es del usuario de Commons Melutopia, tomada el 29 de septiembre de 2011 y publicada con licencia CC BY-SA 3.0[1].",
+  "discrepancias": [
+   "El ayuntamiento dice que el castillo está «clasificado como monumento histórico en 1925»; la base Mérimée indica que la inscripción de 1925 (ruinas del castillo) fue anulada y que la protección vigente es una inscripción del 17 de marzo de 2004[2, 3].",
+   "El ayuntamiento fecha la construcción entre 1235 y 1248; la base Mérimée habla de un castillo feudal de finales del siglo XIII con una torre circular de comienzos de ese siglo[2, 3].",
+   "Bataille habla de «decenas de niños, quizá incluso cientos»; Reinach, de «varios centenares» en la acusación de 1440[6, 7]."
+  ],
+  "fuentes": [
+   {
+    "autor": "Melutopia",
+    "n": 1,
+    "obra": "Wikimedia Commons (ficha del archivo)",
+    "titulo": "File:Chateau de Machecoul ( de Gilles de Rais ).jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Chateau_de_Machecoul_(_de_Gilles_de_Rais_).jpg"
+   },
+   {
+    "autor": null,
+    "n": 2,
+    "obra": "Base Mérimée, Ministère de la Culture (Plateforme ouverte du patrimoine)",
+    "titulo": "Château dit « de Gilles de Retz » et place forte (PA00108639)",
+    "url": "https://www.pop.culture.gouv.fr/notice/merimee/PA00108639"
+   },
+   {
+    "autor": null,
+    "n": 3,
+    "obra": "Ayuntamiento de Machecoul-Saint-Même",
+    "titulo": "Parcours patrimoine: 4. Le Château des Seigneurs de Retz",
+    "url": "https://www.machecoul-saint-meme.fr/bouger-sortir/decouvrir/parcours-patrimoine/"
+   },
+   {
+    "autor": null,
+    "n": 4,
+    "obra": "Ayuntamiento de Machecoul-Saint-Même",
+    "titulo": "Histoire",
+    "url": "https://www.machecoul-saint-meme.fr/bouger-sortir/decouvrir/histoire/"
+   },
+   {
+    "autor": "Auguste Molinier",
+    "n": 5,
+    "obra": "Les Sources de l'histoire de France, Société de l'histoire de France (1904)",
+    "titulo": "Gilles de Rais, maréchal de France",
+    "url": "https://www.persee.fr/doc/shf_0000-0000_1904_num_4_1_970_t1_0265_0000_10"
+   },
+   {
+    "autor": "Salomon Reinach",
+    "n": 6,
+    "obra": "Comptes rendus des séances de l'Académie des Inscriptions et Belles-Lettres (1904)",
+    "titulo": "Le procès de Gilles de Rais",
+    "url": "https://www.persee.fr/doc/crai_0065-0536_1904_num_48_6_20332"
+   },
+   {
+    "autor": "Georges Bataille",
+    "n": 7,
+    "obra": "City Lights Books, San Francisco (1989), trad. de Peter Connor, pp. 138-139 y 142",
+    "titulo": "The Tears of Eros",
+    "url": "https://archive.org/details/tearsoferos0000bata"
+   },
+   {
+    "autor": "Jean-Pierre Le Bouler",
+    "n": 8,
+    "obra": "Bibliothèque de l'École des chartes, 164-2 (2006)",
+    "titulo": "Georges Bataille, le Moyen Âge et la chevalerie",
+    "url": "https://www.persee.fr/doc/bec_0373-6237_2006_num_164_2_463709"
+   }
+  ],
+  "history": "La base Mérimée describe un antiguo castillo feudal de finales del siglo XIII con tres campañas de construcción en alzado: una torre circular de comienzos del siglo XIII, un châtelet del siglo XV y el basamento de una residencia de hacia 1500 con troneras a la francesa[2]. Hacia 1580-1600 se le añadieron nuevas fortificaciones[2]. El ayuntamiento atribuye su construcción, entre 1235 y 1248, a Pierre de Dreux, duque de Bretaña, y señala que los Gondy lo transformaron después en fortaleza abaluartada[3]. Situado sobre el Falleron, controlaba el comercio de la sal y la gestión del agua, y se excava arqueológicamente desde 2008[3]. En su castillo de Machecoul fue detenido Gilles de Rais en 1440, antes de ser juzgado en Nantes por brujería, herejía y asesinato[4]. Fue ejecutado en Nantes el 26 de octubre de 1440[5]. Las ruinas están inscritas como monumento histórico desde el 17 de marzo de 2004[2].",
+  "id": "eros:88",
+  "meta": "Castillo en ruinas; fotografía de 2011 | — | Machecoul-Saint-Même, Loira Atlántico (Mérimée PA00108639)",
+  "notas": "No pude ver la imagen de Commons (sin descarga posible en esta sesión), así que no afirmo qué parte del castillo se ve en la fotografía de 2011; la base Mérimée confirma que se conservan una torre circular y el basamento de la residencia de hacia 1500, pero falta comprobar en la imagen cuáles aparecen. La fotografía de 1961 del libro muestra una torre alta cubierta de hiedra. Bataille no nombra Machecoul en su texto; la cita elegida es su frase sobre las fortalezas de Gilles de Rais, que es lo que la lámina representa.",
+  "retirado": []
+ },
  "exodo:01": {
   "analysis": "Según Levon Chookaszian, esta miniatura del Ritual de 1266 es la primera representación del paso del mar Rojo en el arte armenio[1]. La escena se lee de izquierda a derecha y conserva recursos de la miniatura bizantina de los siglos IX al XII: el faraón, a la cabeza de su ejército, muere en el remolino, y Moisés aparece como un joven imberbe en la retaguardia de los hebreos[1]. La caballería egipcia carga en formación cerrada, como en los rollos de Exultet italianos, y el ángel que baja del cielo con la espada desenvainada es, para Chookaszian, una invención del maestro ciliciano[1]. El mismo autor lee la imagen como alegoría: en 1266 los mamelucos invadieron Cilicia, y los armenios llamaban a Egipto «la casa del faraón»[1]. En la reproducción, la vara de Moisés toca el agua y el ejército queda encerrado en una ola oscura erizada de lanzas[2].",
   "bio": "Para la Enciclopedia dell'Arte Medievale, Toros Roslin es la máxima expresión de la miniatura armenia; trabajó en Cilicia, el reino armenio autónomo que duró de 1199 a 1375 y mantuvo estrechos lazos con la Europa meridional[4]. Hromkla, monasterio y sede del escritorio del patriarcado, lo acogió al menos de 1250 a 1260, y su obra documentada va de 1256 a 1268[4]. Se le reconocen siete obras seguras, repartidas entre Ereván, Jerusalén y Baltimore[4]. Sus colofones nombran a sus mecenas: el católicos Constantino I, el rey Hetum I, la reina Isabel y el príncipe León[5]. Firmaba «Toros, de sobrenombre Roslin», y del colofón de 1260 se deduce que tenía hijos y era sacerdote[5]. Chookaszian propone, como hipótesis, que nació entre 1210 y 1216 y vivía aún en 1269-1270[5].",
